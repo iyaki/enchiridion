@@ -9,12 +9,18 @@ linters:
   enable:
     - errcheck
     - revive
+    - forbidigo
   disable:
     - depguard
     - wsl
   settings:
     errcheck:
       check-type-assertions: true
+    forbidigo:
+      forbid:
+        # All HTTP traffic must flow through internal/notion (ADR-08: auditable chain).
+        - pattern: '^http\.(Get|Head|Post|PostForm)\('
+        - pattern: 'http\.DefaultClient'
 
 issues:
   max-same-issues: 0

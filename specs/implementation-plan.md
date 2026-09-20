@@ -57,6 +57,8 @@ propio produce el espejo esperado.
 
 Workflows según `integration.md` (CI de enchiridion): incremental nocturno,
 full mensual con sweep, releases con binarios multiplataforma y checksums.
+Los workflows de sync corren el scan de secretos sobre el espejo antes de
+conmutar `data/` (specs/integration.md — Secretos en el espejo).
 
 **AC**: corrida manual de cada workflow en verde; binario de release instalable
 y funcional; `data/` conmutado solo por corridas exitosas.
@@ -74,4 +76,6 @@ el cache local.
 - Los 5 criterios de éxito de `specs/vision.md` verificados — con evidencia
   real, no simulada.
 - Suite de pruebas offline completa en verde.
+- `make deps-audit` en verde (ADR-08 reforzado mecánicamente, no solo
+  documentado).
 - `ADR.md` actualizado con cualquier desvío de estas specs.

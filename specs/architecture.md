@@ -42,6 +42,10 @@ El comando elige modo automáticamente; un flag explícito fuerza el modo full.
 archivo existente se actualiza in-place (identificación por `notion_id` en el
 frontmatter) — nunca quedan duplicados entre fulls.
 
+**Exclusividad**: una corrida de sync adquiere acceso exclusivo al cache; una
+segunda invocación simultánea falla rápido con mensaje claro. Sin lock, un cron
+mensual y un sync local simultáneos podrían corromper el estado.
+
 ## Formato del espejo (contrato observable)
 
 Nombre de archivo: `{slug}--{id8}.md` — slug kebab-case sin acentos del título +

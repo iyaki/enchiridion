@@ -50,6 +50,15 @@ Cada usuario provee la suya — el binario no conoce valores de nadie (ADR-11).
 | `KNOWLEDGE_BASE_DATASOURCE_ID` | sí | data source a espejar |
 | `ENCHIRIDION_HOME` | no (default `~/.local/share/enchiridion`) | raíz del cache local |
 
+**Least privilege**: el sync solo lee — la integración de Notion debe crearse con
+capacidades de solo lectura (Read content, Read user info sin email). Espejo el
+contenido de la KB tal cual es; si el token puede escribir, cualquier bug del
+sync tendría alcance destructivo sin necesidad.
+
+**Secretos en el espejo**: la KB es texto libre — puede llegar a contener un
+token. Antes de conmutar `data/` en los workflows de sync, correr el scan de
+secretos sobre el espejo (gitleaks); un espejo con secreto no se conmuta.
+
 ## Distribución (ADR-09)
 
 1. **Releases**: binarios autocontenidos por plataforma (linux amd64/arm64,

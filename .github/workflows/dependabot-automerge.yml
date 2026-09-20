@@ -1,0 +1,20 @@
+name: auto-merge dependencies
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  auto-merge:
+    permissions:
+      contents: write
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      # NOTE: gomod PRs must NEVER be auto-merged (ADR-08 zero-dependency policy).
+      # The deps-audit gate fails any PR that adds a `require`, so such PRs are
+      # never in a mergeable state — do not bypass it.
+      - uses: fastify/github-action-merge-dependabot@v3.15.0
+        with:
+          target: minor

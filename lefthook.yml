@@ -15,6 +15,8 @@ pre-commit:
     - run: make format
       stage_fixed: true
   jobs:
+    - name: gitleaks
+      run: gitleaks protect --staged --redact -v
     - name: test-coverage
       run: make test-coverage
       glob: "*.go"

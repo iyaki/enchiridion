@@ -15,8 +15,8 @@
 - Follow Test Driven Development practices: write failing tests before implementation.
 - Local suite: `make quality`.
 - Targeted runs:
-  - `make lint|test|test-race|test-flaky|coverage|mutation|security|arch`.
-- Coverage gate: min 90%.
+  - `make lint|test|test-race|test-flaky|coverage|mutation|security|arch|deps-audit|secrets`.
+- Coverage gate: min 90% (deferred until `internal/` exists — phase 1).
 - Execute mutation testing with `make mutation` ONLY in final stages of the task development. **NEVER** execute mutation testing during the Test Driven Development process.
 
 ## Build and Run
@@ -33,7 +33,7 @@
 
 ## Implementation Guidance
 
-- **Zero third-party dependencies** (ADR-08): stdlib only; any new `require` in `go.mod` needs a new ADR.
+- **Zero third-party dependencies** (ADR-08): stdlib only — the `deps-audit` gate enforces it mechanically; any new `require` needs a new ADR *and* removing the gate, never a bypass.
 - The mirror never lies silently: unsupported blocks render as visible comments (ADR-05); a sync with partial failures must exit non-zero.
 - The renderer stays pure (no I/O, no clock, no env) — everything testable offline.
 - Mirror fidelity rules live in ADR-04; user values (tokens, datasource ids) never enter the code (ADR-11).

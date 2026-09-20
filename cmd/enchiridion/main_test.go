@@ -4,8 +4,11 @@ import (
 	"errors"
 	"os"
 	"os/exec"
+	"path/filepath"
 	"strings"
 	"testing"
+
+	"github.com/iyaki/enchiridion/internal/sync"
 )
 
 // Child mode: smoke tests re-execute the test binary to cover main().
@@ -57,6 +60,65 @@ func TestRunSyncMissingConfigExitsOne(t *testing.T) {
 
 	if code := runSync(nil); code != exitError {
 		t.Fatalf("sync without config: got exit %d, want %d", code, exitError)
+	}
+}
+
+func TestRunSyncSuccess(t *testing.T) {
+	t.Setenv(envToken, "secret")
+	t.Setenv(envSource, "ds-1")
+	home := t.TempDir()
+	t.Setenv(envHome, home)
+
+	var gotOpts sync.Options
+	orig := runEngine
+	runEngine = func(_ sync.NotionAPI, opts sync.Options) (sync.Stats, error) {
+		gotOpts = opts
+
+		return sync.Stats{Mode: "full", Kept: 1, Written: 1}, nil
+	}
+	defer func() { runEngine = orig }()
+
+	if code := runSync([]string{"--full"}); code != exitOK {
+		t.Fatalf("sync: got exit %d, want %d", code, exitOK)
+	}
+	if !gotOpts.ForceFull || gotOpts.DataSourceID != "ds-1" || gotOpts.Home != home {
+		t.Fatalf("unexpected options: %+v", gotOpts)
+	}
+}
+
+func TestRunSyncEngineErrorExitsOne(t *testing.T) {
+	t.Setenv(envToken, "secret")
+	t.Setenv(envSource, "ds-1")
+	t.Setenv(envHome, t.TempDir())
+
+	orig := runEngine
+	runEngine = func(sync.NotionAPI, sync.Options) (sync.Stats, error) {
+		return sync.Stats{}, errors.New("1 of 2 pages failed")
+	}
+	defer func() { runEngine = orig }()
+
+	if code := runSync(nil); code != exitError {
+		t.Fatalf("sync: got exit %d, want %d", code, exitError)
+	}
+}
+
+func TestResolveHome(t *testing.T) {
+	t.Setenv(envHome, "/custom/home")
+	t.Setenv(envXDGData, "/xdg")
+	if got, err := resolveHome(); err != nil || got != "/custom/home" {
+		t.Fatalf("ENCHIRIDION_HOME: got (%q, %v)", got, err)
+	}
+
+	t.Setenv(envHome, "")
+	if got, err := resolveHome(); err != nil || got != filepath.Join("/xdg", "enchiridion") {
+		t.Fatalf("XDG_DATA_HOME: got (%q, %v)", got, err)
+	}
+
+	t.Setenv(envXDGData, "")
+	t.Setenv("HOME", "/home/user")
+	want := filepath.Join("/home/user", ".local", "share", "enchiridion")
+	if got, err := resolveHome(); err != nil || got != want {
+		t.Fatalf("default: got (%q, %v), want %q", got, err, want)
 	}
 }
 

@@ -17,6 +17,10 @@ import (
 // version is injected at build time via -ldflags (see .goreleaser.yml).
 var version = "dev"
 
+// runEngine is the sync entry point; a variable so the command wiring stays
+// testable without network (specs/architecture.md — testability).
+var runEngine = sync.Run
+
 const (
 	envToken   = "NOTION_TOKEN"
 	envSource  = "KNOWLEDGE_BASE_DATASOURCE_ID"
@@ -94,7 +98,7 @@ func runSync(args []string) int {
 		return exitError
 	}
 
-	stats, err := sync.Run(notion.NewClient(token), sync.Options{
+	stats, err := runEngine(notion.NewClient(token), sync.Options{
 		DataSourceID: dataSourceID,
 		Home:         home,
 		ForceFull:    forceFull,

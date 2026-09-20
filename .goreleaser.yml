@@ -14,10 +14,14 @@ builds:
     goos:
       - linux
       - darwin
-      - windows
     goarch:
       - amd64
       - arm64
+    # Spec (integration.md — Distribution): linux amd64/arm64, macos arm64.
+    # Also avoids syscall.Flock, which has no Windows implementation.
+    ignore:
+      - goos: darwin
+        goarch: amd64
     ldflags:
       - -s -w -X main.version={{ .Version }}
 

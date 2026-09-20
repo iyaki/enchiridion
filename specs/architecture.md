@@ -1,78 +1,51 @@
 # Arquitectura
 
-Stack: **Go stdlib-only** (ADR-08) — `net/http`, `encoding/json`, sin dependencias
-externas. Binario estático único.
+Especificación del comportamiento del sistema. Las decisiones de fondo viven en
+`ADR.md`; el detalle de implementación pertenece al código.
 
-## Componentes
+## Componentes lógicos
 
 ```mermaid
 graph LR
-    Notion["Notion KB<br>(dataSources/query + blocks/children)"] -->|"sync"| Cache["Cache local<br>~/.local/share/enchiridion/"]
-    Cache -->|"grep/read"| Agent["Agentes locales"]
-    Repo["Repo privado (CI)<br>data/knowledge/ conmutado"] -->|"checkout + GITHUB_TOKEN"| CI["CI de proyectos consumidores"]
-    CI2["CI enchiridion<br>nocturno/mensual"] --> Repo
-    CI2 --> Notion
+    Notion["Knowledge base de Notion"] -->|"sync"| Cache["Cache local<br>(espejo + estado)"]
+    Cache -->|"lectura directa"| Agent["Agentes en proyectos locales"]
+    Repo["Espejo conmutado en el repo<br>(por CI)"] -->|"solo GITHUB_TOKEN"| CIC["CI de proyectos consumidores"]
+    CIR["CI de enchiridion"] --> Repo
+    CIR --> Notion
 ```
 
-## Layout del repo
+- **Comando de sync**: único punto de entrada; actualiza el espejo y el estado.
+- **Espejo**: archivos markdown greppables, un archivo por página de la KB.
+- **Estado de sincronización**: marca de agua de la última edición sincronizada
+  y fecha de la última sync full. Viaja **conmutado junto al espejo** — un cache
+  recién clonado incrementa de forma correcta sin re-sincronizar todo.
+- **Espejo conmutado en el repo**: copia mantenida por CI para auditoría
+  (historial en git) y para consumidores de CI sin credenciales de Notion.
 
-```
-enchiridion/
-  cmd/enchiridion/main.go     # CLI: flag --full, exit codes, logging
-  internal/notion/            # cliente HTTP stdlib: query, blocks, retry/backoff
-  internal/notion/*_test.go   # fixtures JSON + httptest
-  internal/render/            # blocks -> markdown (puro)
-  internal/render/*_test.go   # golden tests offline
-  internal/sync/              # modos, watermark, sweep, rename-safe write
-  internal/sync/*_test.go     # temp dirs + httptest
-  data/                       # espejo conmutado por CI (solo en este repo)
-  specs/ · ADR.md
-```
+## Modos de sincronización (ADR-07)
 
-El scaffold JS (commit `378a521`) se elimina en la fase 0 (ADR-08).
+El comando elige modo automáticamente; un flag explícito fuerza el modo full.
 
-## Directorios en runtime
+| Regla de selección | Modo |
+|---|---|
+| Sin estado previo o espejo vacío | **Full** (auto-backfill: la falta de datos se resuelve sola, sin pasos manuales) |
+| La última sync full es más vieja que ~30 días | **Full** |
+| Cualquier otro caso | **Incremental** |
 
-| Variable | Default | Contenido |
-|---|---|---|
-| `ENCHIRIDION_HOME` | `~/.local/share/enchiridion` | raíz del cache |
-| — | `$ENCHIRIDION_HOME/knowledge/` | espejo: un `.md` por página |
-| — | `$ENCHIRIDION_HOME/.sync-state.json` | watermark y última sync full |
+- **Full**: sincroniza todas las páginas del data source, limpia los espejos de
+  páginas que ya no existen (sweep) y reinicia la marca de agua. Es el único
+  modo que propaga borrados (~mensual, aceptado en ADR-04).
+- **Incremental**: sincroniza solo las páginas editadas desde la marca de agua,
+  con un margen de solape que absorbe diferencias de reloj. No hace sweep.
 
-`.sync-state.json` se conmuta junto al espejo (commiteado): un clone/cache fresco
-incrementa correcto.
+**Consistencia de identidad**: si el título de una página editada cambia, el
+archivo existente se actualiza in-place (identificación por `notion_id` en el
+frontmatter) — nunca quedan duplicados entre fulls.
 
-```json
-{ "last_full_at": "2026-09-20T09:00:00Z", "watermark": "2026-09-20T14:32:11Z" }
-```
+## Formato del espejo (contrato observable)
 
-## Modos de sync (ADR-07)
-
-Algoritmo de selección (flag `--full` fuerza full):
-
-```
-sin .sync-state.json o knowledge/ vacío   -> full   (auto-backfill, ADR-07)
-now - last_full_at > 30 días              -> full
-otro caso                                 -> incremental
-```
-
-**Full**: paginar *todas* las páginas del data source (`page_size` 100) →
-descargar bloques de cada una → escribir `.md` → **sweep** de espejos sin página
-vigente → reset watermark. Correcciones de borrados solo acá (~mensual).
-
-**Incremental**: query con filtro
-`{"timestamp": "last_edited_time", "last_edited_time": {"on_or_after": watermark - 60s}}`
-(margen anti clock-skew) → reescribir solo esas páginas → avanzar watermark.
-Sin sweep: los borrados quedan hasta el próximo full (aceptado: ADR-04).
-
-**Rename-safe write**: antes de escribir, escanear `knowledge/*.md` por
-`notion_id:` en frontmatter; si existe archivo con ese id, reescribir *ese path*
-(aunque el slug del título haya cambiado). Cero duplicados entre fulls.
-
-## Formato del espejo (ADR-03)
-
-Nombre: `{slug}--{id8}.md` — slug kebab-case sin acentos del título + primeros 8
-caracteres del `notion_id`.
+Nombre de archivo: `{slug}--{id8}.md` — slug kebab-case sin acentos del título +
+prefijo corto del `notion_id`.
 
 ```markdown
 ---
@@ -84,57 +57,53 @@ notion_url: https://notion.so/a1b2c3d4e5f6...
 last_edited: 2026-09-20T10:00:00.000Z
 ---
 
-<cuerpo renderizado>
+<cuerpo de la página, renderizado a markdown>
 ```
 
-- `tags`: `Category` (multi_select) + todas las selects/multi_selects/status
-  presentes; valores únicos, orden de llegada. El mapeo de propiedades reales
-  está en integration.md.
-- `source_url` solo si la página tiene `URL`; escapado de `"` en strings YAML.
+- Un `.md` por página; el espejo completo es greppable sin ninguna herramienta
+  más que las estándar del sistema.
+- `tags` incluye la categoría y todos los temas de la página (incluidas las
+  clasificaciones dinámicas del curador automático). El filtrado por tema es
+  responsabilidad del lector.
+- `source_url` solo está presente si la página referencia una fuente externa.
 
-## Contrato del renderer (ADR-05)
+## Contrato de renderizado (ADR-05)
 
-Flat: sin recursión de bloques hijos, **excepto tablas** (celdas vía
-`table_row`). Todo tipo no listado produce marcador visible
-`<!-- unsupported block: X -->`.
+Regla cardinal: **ninguna pérdida de contenido puede pasar inadvertida** — todo
+bloque que no pueda renderizarse queda como comentario visible en el markdown.
 
-| Bloque Notion | Markdown |
+| Bloque | Markdown |
 |---|---|
-| `paragraph` | texto inline |
-| `heading_1/2/3` | `#`/`##`/`###` |
-| `bulleted_list_item` | `- ` |
-| `numbered_list_item` | `1.` `2.` … (contador propio, resetea con otro bloque) |
-| `quote`, `callout` | `> ` |
-| `code` | fenced, con language |
-| `divider` | `---` |
-| `bookmark`, `embed`, `link_preview` | `[url](url)` |
-| `image` | external → `![image](url)`; internal (file) → `<!-- imagen interna de Notion: expira; no se descarga (ADR-05) -->` |
-| `toggle` | `**texto**` (hijos no se descargan) |
-| `child_page` | `<!-- child page: {title} -->` |
-| `table` | tabla markdown: header de fila 1 si `has_column_header`; celdas con `\|` escapado y newlines → `<br>`; filas vía fetch de children (`table_row.cells`) |
-| otros | `<!-- unsupported block: X -->` |
+| Párrafos, headings (3 niveles), listas (viñetas y numeradas), quotes | su equivalente directo |
+| Callouts | como quote |
+| Código | bloque fenced con su lenguaje |
+| Divisor | `---` |
+| Enlaces guardados (bookmark, embed, preview) | link al recurso |
+| Imágenes externas | imagen markdown con su URL |
+| Imágenes internas de Notion | comentario visible explicando que no se preservan (su URL expira; decisión en ADR-05) |
+| Toggles | texto destacado (su contenido oculto no se descarga) |
+| Sub-páginas | comentario visible con el título |
+| Tablas | tabla markdown, con fila de encabezado cuando la tabla la declara |
+| Cualquier otro bloque | comentario visible `<!-- unsupported block: X -->` |
 
-Inline (`rich_text`): `code` → backticks, luego `bold` → `**`, `italic` → `_`,
-`strikethrough` → `~~`, `href` → `[texto](href)`.
+Formato inline: negrita, itálica, tachado, código y enlaces según el texto
+original.
 
-## Errores y códigos de salida
+## Comportamiento ante errores
 
-| Situación | Comportamiento |
+| Situación | Comportamiento observable |
 |---|---|
-| Env faltante (token / datasource id) | mensaje claro, exit 1, sin llamar a la API |
-| HTTP 401/403 | fail-fast con mensaje explícito de credenciales — sin fallback silencioso |
-| HTTP 429 | respetar `Retry-After`, backoff exponencial, reintento |
-| 5xx / red | retry con backoff (máx. 3 por request) |
-| Fallo por página (bloques, etc.) | log a stderr, continuar con las demás |
-| Fin de corrida con fallos | exit 1 y reporte `X de N páginas fallaron` (patrón organizer) |
+| Configuración faltante o inválida | mensaje claro, sin intento de contacto con la API, código de salida de error |
+| Credenciales rechazadas | fallo explícito e inmediato con mensaje orientado a la solución — nunca un fallback silencioso |
+| Límite de tasa o error transitorio de la API | reintento con espera, respetando las señales de la API |
+| Fallo al sincronizar una página | se registra, continúa con el resto |
+| Fin de corrida con fallos parciales | código de salida de error + resumen (`X de N fallaron`) |
 
-## Testing
+## Requisitos no funcionales
 
-- **Offline por diseño**: `internal/render` puro (golden tests de la tabla de
-  bloques); `internal/notion` con `httptest` + fixtures JSON capturados;
-  `internal/sync` con directorios temporales (`t.TempDir()`).
-- Suite obligatoria verde: `go test ./... && go vet ./...`.
-- **Smoke real** (no automatizable sin secret): primera corrida contra la API
-  viva con token propio; luego el workflow de CI la ejercita.
-- La lógica de selección de modo, sweep y rename es la de mayor riesgo → tests
-  obligatorios por tabla de casos.
+- **Cero dependencias de terceros** (ADR-08): toda la cadena de red y parseo es
+  auditable en el propio repo.
+- Sync incremental imperceptible para una KB de ~1000 entradas (< 1 min); sync
+  full tolerable como job nocturno (presupuesto de requests en integration.md).
+- **Toda la lógica es testeable sin red** — la única verificación que requiere
+  credenciales reales es el smoke contra la API viva.

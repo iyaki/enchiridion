@@ -15,4 +15,8 @@ Mapa de la documentación. El registro de *por qué* de cada decisión vive en
 - Planificación: **cerrada** (2026-09-20, ADR-01..12).
 - Implementación: **no iniciada**. El scaffold JS del commit `378a521` está
   **descartado** (ADR-08); se elimina en la fase 0 del plan.
-- Stack: Go stdlib-only, cero dependencias de terceros.
+- Decisiones de stack: ver ADR-08.
+
+> Regla de documentación: las specs describen **qué, para qué y por qué** —
+> nunca el cómo. El detalle de implementación vive en el código; las decisiones
+> técnicas, en los ADR.

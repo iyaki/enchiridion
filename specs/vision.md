@@ -58,6 +58,6 @@ que obliga a los agentes a consultarlos y citarlos antes de recomendar.
    (checkout del repo privado), sin token de Notion.
 3. Sync incremental invisible (< 1 min para KB ~1000 entradas); full mensual
    tolerable en job nocturno.
-4. Cero dependencias de terceros: `go.mod` sin `require` externos.
+4. Cero dependencias de terceros (ADR-08).
 5. Pérdida de contenido imposible de pasar inadvertida: bloques no soportados
    quedan marcados en el markdown.

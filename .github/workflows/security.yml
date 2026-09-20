@@ -10,11 +10,6 @@ on:
 permissions:
   contents: read
 
-# secrets context is not available inside `if` conditionals; expose it as a
-# workflow-level env flag instead.
-env:
-  SEMGREP_ENABLED: ${{ secrets.SEMGREP_APP_TOKEN != '' }}
-
 jobs:
   gitleaks:
     runs-on: ubuntu-latest
@@ -49,11 +44,15 @@ jobs:
 
     # Skip any PR created by dependabot to avoid permission issues;
     # opt-in: runs only when the SEMGREP_APP_TOKEN secret exists.
-    if: github.actor != 'dependabot[bot]' && env.SEMGREP_ENABLED == 'true'
+    # (secrets and env are not available in job-level `if`; job env + step `if` are.)
+    if: github.actor != 'dependabot[bot]'
+    env:
+      SEMGREP_ENABLED: ${{ secrets.SEMGREP_APP_TOKEN != '' }}
 
     steps:
       - uses: actions/checkout@v7
       - name: semgrep
+        if: env.SEMGREP_ENABLED == 'true'
         run: semgrep ci
         env:
           # Connect to Semgrep AppSec Platform through your SEMGREP_APP_TOKEN.

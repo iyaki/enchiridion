@@ -1,209 +1,208 @@
-# ADR — Registro de decisiones de enchiridion
+# ADR — enchiridion decision record
 
-Cada entrada: contexto → decisión → consecuencias. Las alternativas rechazadas se
-anotan para no repetir las mismas discusiones. Última actualización: 2026-09-20.
+Each entry: context → decision → consequences. Rejected alternatives are
+recorded so we don't repeat the same discussions. Last updated: 2026-09-20.
 
-## Estado del proyecto
+## Project status
 
-Planificación cerrada, implementación iniciada (2026-09-20):
-- **Fase 0 ejecutada**: scaffold JS eliminado; módulo Go inicializado
-  (`github.com/iyaki/enchiridion`, Go 1.25, cero dependencias).
-- **Harness instalado** (patrón reglint/specralph): Makefile de gates
+Planning closed, implementation started (2026-09-20):
+- **Phase 0 executed**: JS scaffold removed; Go module initialized
+  (`github.com/iyaki/enchiridion`, Go 1.25, zero dependencies).
+- **Harness installed** (reglint/specralph pattern): gates Makefile
   (`make quality`), lefthook pre-commit (format + coverage + mutation-diff +
   lint + security + arch), golangci-lint, go-arch-lint (sync→notion+render;
-  notion y render puros), gremlins, govulncheck/gosec, goreleaser, workflows
+  notion and render pure), gremlins, govulncheck/gosec, goreleaser, workflows
   (quality/security/release/update-agent-skills), devcontainer, editorconfig,
-  opencode.jsonc con protecciones del harness.
+  opencode.jsonc with harness protections.
 
 ---
 
-## ADR-01 — Propósito y nombre
+## ADR-01 — Purpose and name
 
-**Contexto**: se busca que agentes de IA usen la knowledge base de Notion como
-fuente primaria de verdad al recomendar arquitectura, patrones o asistir
-decisiones. Serie de posts "Yo soy iyaki" como contexto del pipeline actual
-(Feedly → triage → KB Notion → curated site).
+**Context**: we want AI agents to use the Notion knowledge base as the primary
+source of truth when recommending architecture, patterns, or assisting
+decisions. The "Yo soy iyaki" post series as context for the current pipeline
+(Feedly → triage → Notion KB → curated site).
 
-**Decisión**: nombre **enchiridion** (ἐγχειρίδιον, "lo que tenés en la mano":
-manual compacto de consulta permanente; el de Epicteto es el manual clásico de
-buenas decisiones). Repositorio propio bajo `iyaki/`.
+**Decision**: the name **enchiridion** (ἐγχειρίδιον, "what you hold in your
+hand": a compact manual for permanent consultation; Epictetus's is the classic
+manual of good decisions). Own repository under `iyaki/`.
 
-**Rechazados**: `second-opinion` (colisión semántica: el ecosistema MCP ya lo usa
-para "consultar otros LLMs"), `lore` y `grimoire` (ocupados por herramientas de
-función idéntica), `heavens-door` (guiño JoJo, descartado por el usuario),
-`precedent` / `ground-truth` / `knowledge-judge` (finalistas, no elegidos).
+**Rejected**: `second-opinion` (semantic collision: the MCP ecosystem already
+uses it for "consulting other LLMs"), `lore` and `grimoire` (taken by tools of
+identical function), `heavens-door` (JoJo reference, discarded by the user),
+`precedent` / `ground-truth` / `knowledge-judge` (finalists, not chosen).
 
-## ADR-02 — Sync vs. query en vivo
+## ADR-02 — Sync vs. live query
 
-**Contexto**: limitaciones de la API de Notion verificadas: ~3 req/s promedio por
-integración; `search` solo matchea títulos; `dataSource/query` filtra solo
-propiedades; el cuerpo se lee bloque a bloque (paginado, JSON que hay que
-renderizar).
+**Context**: verified Notion API limitations: ~3 req/s average per
+integration; `search` only matches titles; `dataSource/query` filters only
+properties; the body is read block by block (paginated, JSON that has to be
+rendered).
 
-**Decisión**: **sync** (espejo programado a archivos locales). La razón
-estructural: la API no sabe buscar en cuerpos — "¿qué anoté sobre X?" es
-irrespondible en vivo si X no está en un título o tag. Además: el costo de
-requests se paga una vez por corrida (no por consulta de agente), auditoría en
-git, consultables offline, sin credenciales en los consumidores. `query` en vivo
-queda como escape futuro, YAGNI.
+**Decision**: **sync** (scheduled mirror to local files). The structural
+reason: the API cannot search bodies — "what did I note about X?" is
+unanswerable live if X is not in a title or tag. Additionally: the request
+cost is paid once per run (not per agent query), auditability in git,
+queryable offline, no credentials in consumers. Live `query` remains a future
+escape hatch, YAGNI.
 
-## ADR-03 — Formato del espejo
+## ADR-03 — Mirror format
 
-**Decisión**: un `.md` por página en `knowledge/`, frontmatter:
+**Decision**: one `.md` per page in `knowledge/`, frontmatter:
 
 ```yaml
 title:        # Name.title → plain_text
-tags:         # Category (multi_select) + selects/multi_selects dinámicas del classifier
-source_url:   # URL.url — ya normalizada (tracking strippado por organizer)
-notion_id:    # page.id — identidad estable del espejo
+tags:         # Category (multi_select) + dynamic selects/multi_selects from the classifier
+source_url:   # URL.url — already normalized (tracking stripped by organizer)
+notion_id:    # page.id — stable identity of the mirror
 notion_url:   # page.url
 last_edited:  # page.last_edited_time
 ```
 
-Propiedades confirmadas en código de producción (`organizer`, `curator/cms.js`):
+Properties confirmed in production code (`organizer`, `curator/cms.js`):
 `Name` (title), `URL` (url), `Category` (multi_select: Tool, Service, Website,
-Note, Framework/Library, Game, ...) y selects dinámicas del clasificador IA.
+Note, Framework/Library, Game, ...) and dynamic selects from the AI
+classifier.
 
-**Rechazado**: índice único / JSON / SQLite (rompen files-as-API: obligan a
-tooling para leer); `INDEX.md` en v1 (grep sobre frontmatter alcanza).
+**Rejected**: single index / JSON / SQLite (they break files-as-API: they
+force tooling to read); `INDEX.md` in v1 (grep over frontmatter suffices).
 
-## ADR-04 — Espejo fiel con sweep
+## ADR-04 — Faithful mirror with sweep
 
-**Decisión**: si una página muere en Notion, muere en el espejo. El sweep corre
-solo en full sync. Git es el archivo de historia: borrar hoy es recuperable con
-`git log`.
+**Decision**: if a page dies in Notion, it dies in the mirror. The sweep runs
+only on full sync. Git is the history archive: deleting today is recoverable
+with `git log`.
 
-**Razón**: un fantasma desactualizado envenena decisiones ("la KB dice X" cuando
-X fue borrado). El usuario confirmó que rara vez borra → sweep mensual alcanza.
+**Reason**: an outdated ghost poisons decisions ("the KB says X" when X was
+deleted). The user confirmed they rarely delete → a monthly sweep suffices.
 
-## ADR-05 — Renderer propio, minimalista
+## ADR-05 — Own, minimalist renderer
 
-**Contexto**: la KB es texto curado (párrafos, headings, listas, quotes, código,
-callouts, tablas — las tablas existen: `getAllPageBlocks` hace fetch recursivo de
-children solo para tables).
+**Context**: the KB is curated text (paragraphs, headings, lists, quotes,
+code, callouts, tables — tables do exist: `getAllPageBlocks` fetches children
+recursively only for tables).
 
-**Decisión**: renderer propio (~100 líneas) sobre los tipos de bloque usados.
-Tablas → markdown. Imágenes: external → link directo; internal → marcador visible
-(las URLs internas de Notion expiran en ~1h: commitearlas es inútil, y el propio
-`sanitizeBlocks` del organizer ya las descarta al copiar triage → KB).
-**Bloques no soportados se marcan visibles** (`<!-- unsupported block: X -->`) —
-en un artefacto de verdad, la pérdida silenciosa de contenido es el peor modo de
-fallo.
+**Decision**: own renderer (~100 lines) over the used block types. Tables →
+markdown. Images: external → direct link; internal → visible placeholder
+(internal Notion URLs expire in ~1h: committing them is useless, and the
+organizer's own `sanitizeBlocks` already discards them when copying triage →
+KB).
+**Unsupported blocks are marked visibly** (`<!-- unsupported block: X -->`) —
+in a source-of-truth artifact, silent content loss is the worst failure mode.
 
-**Rechazado**: `notion-to-md` (riesgo de desactualización frente al datamodel
-`2025-09-03`; swap futuro si aparecen bloques exóticos).
+**Rejected**: `notion-to-md` (risk of falling behind the `2025-09-03`
+datamodel; future swap if exotic blocks appear).
 
-## ADR-06 — Scope del espejo: todo el data source
+## ADR-06 — Mirror scope: the whole data source
 
-**Decisión**: baja Tool, Service, Website, Game, etc. incluidos. Para decisiones
-de arquitectura, las entradas Tool/Framework son de las más consultadas ("¿qué
-usamos para X?"). El filtro por tipo es decisión de presentación de cada
-consumidor (trivial vía `tags`). El filtro "solo artículos" del curated site NO
-se replica: es de la capa de presentación.
+**Decision**: Tool, Service, Website, Game, etc. downloads included. For
+architecture decisions, Tool/Framework entries are among the most consulted
+("what do we use for X?"). Filtering by type is a presentation decision for
+each consumer (trivial via `tags`). The curated site's "articles only" filter
+is NOT replicated: it belongs to the presentation layer.
 
-## ADR-07 — Cadencia y modos de sync
+## ADR-07 — Sync cadence and modes
 
-**Decisión** (definida por el usuario):
-- **Incremental** en cada startup/corrida local (filtro `last_edited_time
-  on_or_after` + margen de solape por clock skew). Sin sweep.
-- **Full** mensual en GH Action, con sweep.
-- **Selección automática de modo**: sin state o `knowledge/` vacío → full
-  (auto-backfill: la herramienta resuelve la falta de datos sola, sin paso
-  manual); watermark >30 días → full; resto → incremental. Flag `--full` fuerza.
-- **Watermark** commiteada junto al espejo (`.sync-state.json`) — un clone fresco
-  incrementa correcto.
-- **Renames**: reescritura por lookup de `notion_id` en frontmatter (el path
-  conserva el slug viejo, el contenido el nuevo) — cero duplicados entre fulls.
+**Decision** (defined by the user):
+- **Incremental** on every startup/local run (`last_edited_time
+  on_or_after` filter + clock-skew overlap margin). No sweep.
+- **Full** monthly on a GH Action, with sweep.
+- **Automatic mode selection**: no state or empty `knowledge/` → full
+  (auto-backfill: the tool resolves missing data on its own, no manual step);
+  watermark >30 days → full; otherwise → incremental. `--full` flag forces.
+- **Watermark** committed alongside the mirror (`.sync-state.json`) — a fresh
+  clone increments correctly.
+- **Renames**: rewrite by `notion_id` lookup in frontmatter (the path keeps
+  the old slug, the content the new one) — zero duplicates between fulls.
 
 ## ADR-08 — Stack: Go stdlib-only
 
-**Contexto**: criterio del usuario (era AI-first): tecnologías lo más verificables
-y seguras posibles. Los proyectos JS previos (`content-curator`,
-`knowledge-base-clasificator`) preceden a esa era y no son la referencia.
+**Context**: the user's criterion (was AI-first): technologies as verifiable
+and secure as possible. The previous JS projects (`content-curator`,
+`knowledge-base-clasificator`) predate that era and are not the reference.
 
-**Decisión**: **Go, cero dependencias de terceros**. Los 2 endpoints usados
-(`dataSources/query`, `blocks/children`) van sobre `net/http` +
-`encoding/json` con structs tipados: toda la cadena de red y parsing vive en el
-repo, supply chain de tamaño 1, `go vet` / `govulncheck`, binario estático único.
+**Decision**: **Go, zero third-party dependencies**. The 2 endpoints used
+(`dataSources/query`, `blocks/children`) go over `net/http` +
+`encoding/json` with typed structs: the whole network and parsing chain lives
+in the repo, supply chain of size 1, `go vet` / `govulncheck`, single static
+binary.
 
-**Rechazados**: Rust (máxima garantía, costo de desarrollo injustificado para un
-sync), TypeScript estricto (tipos pero conserva runtime + árbol de dependencias),
-JS puro (el criterio previo, superado). **Nota**: el scaffold JS del commit
-`378a521` implementa decisiones ya revocadas; descartado.
+**Rejected**: Rust (maximum guarantee, unjustified development cost for a
+sync), strict TypeScript (types but keeps the runtime + dependency tree),
+plain JS (the previous, superseded criterion). **Note**: the JS scaffold from
+commit `378a521` implements already-revoked decisions; discarded.
 
-## ADR-09 — Distribución: repo privado + binarios + devcontainer feature
+## ADR-09 — Distribution: private repo + binaries + devcontainer feature
 
-**Decisión**:
-- Repositorio **privado** (el usuario no busca publicarlo).
-- Binarios por release vía goreleaser (patrón `web-archiver`).
-- Feature propio en el repo `devcontainer-features` que instala el binario con
-  `GITHUB_TOKEN` y expone `NOTION_TOKEN` / `KNOWLEDGE_BASE_DATASOURCE_ID` como env
-  del container. Los proyectos consumidores no clonan este repo.
+**Decision**:
+- **Private** repository (the user does not seek to publish it).
+- Binaries per release via goreleaser (`web-archiver` pattern).
+- Own feature in the `devcontainer-features` repo that installs the binary
+  with `GITHUB_TOKEN` and exposes `NOTION_TOKEN` / `KNOWLEDGE_BASE_DATASOURCE_ID` as container
+  env. Consumer projects do not clone this repo.
 
-## ADR-10 — Cache central de conocimiento
+## ADR-10 — Central knowledge cache
 
-**Contexto**: si los consumidores solo instalan el binario, ¿dónde greppan los
-agentes?
+**Context**: if consumers only install the binary, where do agents grep?
 
-**Decisión**: espejo central por máquina en `~/.local/share/enchiridion/knowledge/`
-(XDG), override con `ENCHIRIDION_HOME`. Todos los proyectos de la máquina
-comparten un solo espejo y watermark. El snippet de política en el `AGENTS.md` de
-cada proyecto apunta a esa ruta absoluta. El repo mantiene además su propio
-espejo commiteado (CI: incremental nocturno + full mensual) — audit log en git, y
-los CI consumidores pueden leer el espejo con solo `GITHUB_TOKEN`, sin token de
-Notion.
+**Decision**: central mirror per machine in `~/.local/share/enchiridion/knowledge/`
+(XDG), override with `ENCHIRIDION_HOME`. All projects on the machine share a
+single mirror and watermark. The policy snippet in each project's `AGENTS.md`
+points to that absolute path. The repo also keeps its own committed mirror
+(CI: nightly incremental + monthly full) — audit log in git, and consumer CIs
+can read the mirror with only `GITHUB_TOKEN`, no Notion token.
 
-**Costo registrado**: rebuild de devcontainer = cache vacío → full sync en
-postCreate (minutos). Correcto por el auto-backfill; mejora futura: named volume
-para el data dir en el feature.
+**Recorded cost**: devcontainer rebuild = empty cache → full sync in
+postCreate (minutes). Correct thanks to auto-backfill; future improvement:
+named volume for the data dir in the feature.
 
-## ADR-11 — Config multi-usuario, cero hardcode
+## ADR-11 — Multi-user config, zero hardcoding
 
-**Decisión**: cada usuario provee su propio `NOTION_TOKEN` y su
-`KNOWLEDGE_BASE_DATASOURCE_ID` — el binario no conoce ni el token ni la KB de
-nadie. Ningún valor específico de iyaki vive en el código (el ID del datasource
-de su KB va solo en su config).
+**Decision**: each user provides their own `NOTION_TOKEN` and their
+`KNOWLEDGE_BASE_DATASOURCE_ID` — the binary knows neither anyone's token nor
+anyone's KB. No iyaki-specific value lives in the code (the datasource ID of
+his KB goes only in his config).
 
-## ADR-12 — Alcance v1
+## ADR-12 — v1 scope
 
-**Decisión**: sync (auto full/incremental) + archivos greppables + política de
-consumo (`AGENTS.md` snippet). El producto v1 es el espejo y la política que
-obliga a consultarlo.
+**Decision**: sync (auto full/incremental) + greppable files + consumption
+policy (`AGENTS.md` snippet). The v1 product is the mirror and the policy
+that mandates consulting it.
 
-**Postergados con disparador observable**: CLI de búsqueda con ranking (cuando
-grep alcance mal), adaptador MCP (wrapper del mismo núcleo, cuando se quiera
-tool-calls de primera clase), RAG/embeddings (cuando grep mida mal), descarga de
-assets internos (cuando aparezcan imágenes internas en la KB), named volume en el
-feature (cuando el full-en-rebuild moleste).
+**Deferred with observable trigger**: search CLI with ranking (when grep
+performs badly), MCP adapter (wrapper over the same core, when first-class
+tool-calls are wanted), RAG/embeddings (when grep measures badly), download of
+internal assets (when internal images appear in the KB), named volume in the
+feature (when full-on-rebuild becomes annoying).
 
-## ADR-13 — Trigger de consumo: skill global + snippet por-proyecto
+## ADR-13 — Consumption trigger: global skill + per-project snippet
 
-**Contexto**: sin un mecanismo de trigger, ningún agente usaría la herramienta —
-la única referencia existente era la conversación misma. El consumo es
-policy-based (archivos + instrucciones), no tool-calls.
+**Context**: without a trigger mechanism, no agent would use the tool — the
+only existing reference was the conversation itself. Consumption is
+policy-based (files + instructions), not tool-calls.
 
-**Decisión**:
-1. **Skill global** (primaria): la skill vive como artefacto versionado del repo
-   en `.agents/skills/enchiridion/SKILL.md`, con una description que enumera
-   disparadores concretos (elegir librerías, diseñar módulos, recomendar
-   patrones, resolver disputas técnicas, citar precedentes). Instalación única
-   vía `npx skills add` (o symlink `.omp/skills` para omp) → dispara en todas
-   las sesiones, en cualquier directorio.
-2. **Snippet por-proyecto** (complemento): regla explícita en el `AGENTS.md` de
-   proyectos específicos, con los mismos disparadores concretos — la abstracción
-   "arquitectura" sola perdía casos como "¿qué ORM uso?".
+**Decision**:
+1. **Global skill** (primary): the skill lives as a versioned artifact of the
+   repo in `.agents/skills/enchiridion/SKILL.md`, with a description that
+   lists concrete triggers (choosing libraries, designing modules,
+   recommending patterns, resolving technical disputes, citing precedents).
+   One-time install via `npx skills add` (or `.omp/skills` symlink for omp) →
+   triggers in all sessions, in any directory.
+2. **Per-project snippet** (complement): explicit rule in the `AGENTS.md` of
+   specific projects, with the same concrete triggers — the "architecture"
+   abstraction alone missed cases like "which ORM do I use?".
 
-La instalación de ambos es **paso post-implementación** (nada se instala hasta
-que la fase 4 produzca el primer sync real).
+Installing both is a **post-implementation step** (nothing is installed until
+phase 4 produces the first real sync).
 
-**Rechazados**: presencia del tool en el toolset vía MCP como recordatorio
-per-turn (over-engineering, ADR-12); hooks que inyecten resultados
-automáticamente ante ciertos edits (matching difuso + costo por turno, sin
-evidencia de necesidad).
+**Rejected**: tool presence in the toolset via MCP as a per-turn reminder
+(over-engineering, ADR-12); hooks that inject results automatically on
+certain edits (fuzzy matching + per-turn cost, no evidence of need).
 
 ---
 
-## Verificación del sync real (pendiente de implementación)
+## Verification of the real sync (pending implementation)
 
-La única pieza no verificable offline: las llamadas vivas a la API. Smoke manual
-con token propio la primera vez + el workflow en CI.
+The only piece not verifiable offline: live API calls. Manual smoke with an
+own token the first time + the workflow in CI.

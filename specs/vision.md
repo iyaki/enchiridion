@@ -1,63 +1,63 @@
-# Vision y objetivos
+# Vision and goals
 
-## Problema
+## Problem
 
-Los agentes de IA con los que trabaja iyaki necesitan una fuente primaria de
-verdad al recomendar arquitectura, patrones de diseño o asistir decisiones. La
-knowledge base vive en Notion, cuya API no permite búsqueda por contenido (solo
-títulos y propiedades), limita a ~3 req/s promedio por integración y entrega el
-cuerpo de las páginas como JSON de bloques. Consultar en vivo es lento, caro en
-presupuesto de rate, irreproducible y sin auditoría. Detalle completo: ADR-02.
+The AI agents iyaki works with need a primary source of truth when recommending
+architecture, design patterns, or assisting decisions. The knowledge base lives
+in Notion, whose API does not allow content search (only titles and properties),
+limits to ~3 req/s average per integration, and delivers page bodies as block
+JSON. Querying live is slow, costly in rate budget, non-reproducible, and
+lacks an audit trail. Full detail: ADR-02.
 
-## Producto
+## Product
 
-`enchiridion` — "lo que tenés en la mano" (ἐγχειρίδιον), como el manual de
-Epicteto, pero para decisiones de arquitectura.
+`enchiridion` — "what you have in your hand" (ἐγχειρίδιον), like Epictetus's
+manual, but for architecture decisions.
 
-Un binario único (`enchiridion sync`) que espeja una knowledge base de Notion a
-archivos markdown greppables, más la política de consumo (`AGENTS.md` snippet)
-que obliga a los agentes a consultarlos y citarlos antes de recomendar.
+A single binary (`enchiridion sync`) that mirrors a Notion knowledge base to
+greppable markdown files, plus the consumption policy (`AGENTS.md` snippet)
+that obliges agents to consult and cite them before recommending.
 
-- **Un archivo por página** de la KB, con frontmatter (`title`, `tags`,
-  `source_url`, `notion_id`, `notion_url`, `last_edited`).
-- **Cache central por máquina** (`~/.local/share/enchiridion/`): todos los
-  proyectos del equipo/máquina greppan el mismo espejo.
-- **Audit log en git**: el repo mantiene su propio espejo conmutado por CI
-  (incremental nocturno + full mensual con sweep).
+- **One file per KB page**, with frontmatter (`title`, `tags`, `source_url`,
+  `notion_id`, `notion_url`, `last_edited`).
+- **Central per-machine cache** (`~/.local/share/enchiridion/`): all projects
+  on the team/machine grep the same mirror.
+- **Audit log in git**: the repo keeps its own mirror toggled by CI
+  (nightly incremental + monthly full with sweep).
 
-## Usuario
+## User
 
-- **Primario**: iyaki, en sus devcontainers (creados desde cero) y proyectos
-  locales. Multi-proyecto: un solo cache compartido por máquina.
-- **Secundario**: cualquier persona con su propia clave de Notion y su propio
-  data source — el binario no conoce valores de nadie (ADR-11).
+- **Primary**: iyaki, in their devcontainers (created from scratch) and local
+  projects. Multi-project: a single shared cache per machine.
+- **Secondary**: anyone with their own Notion key and their own data source —
+  the binary knows no one's values (ADR-11).
 
-## Alcance v1 (ADR-12)
+## v1 scope (ADR-12)
 
-1. `enchiridion sync` con selección automática de modo (full/incremental,
-   auto-backfill ante falta de datos).
-2. Espejo markdown greppable (formato en architecture.md).
-3. Snippet de política de consumo para `AGENTS.md`.
-4. Distribución: binarios goreleaser + devcontainer feature.
+1. `enchiridion sync` with automatic mode selection (full/incremental,
+   auto-backfill when data is missing).
+2. Greppable markdown mirror (format in architecture.md).
+3. Consumption policy snippet for `AGENTS.md`.
+4. Distribution: goreleaser binaries + devcontainer feature.
 
-## Fuera de alcance v1 (con disparador observable para incluirlas)
+## Out of scope for v1 (with observable trigger for inclusion)
 
-| Función | Se incorpora cuando |
+| Feature | Included when |
 |---|---|
-| CLI de búsqueda con ranking | grep alcance mal en la práctica |
-| Adaptador MCP | se quiera tool-calls de primera clase |
-| RAG / embeddings | grep mida mal semánticamente |
-| Descarga de assets internos | aparezcan imágenes internas de Notion en la KB |
-| Named volume en el feature | el full-sync-en-rebuild de devcontainers moleste |
+| Search CLI with ranking | grep falls short in practice |
+| MCP adapter | first-class tool-calls are wanted |
+| RAG / embeddings | grep measures semantics poorly |
+| Downloading internal assets | internal Notion images appear in the KB |
+| Named volume in the feature | the full-sync-on-rebuild in devcontainers becomes a pain |
 
-## Criterios de éxito
+## Success criteria
 
-1. Un agente en cualquier proyecto de la máquina encuentra y cita precedentes de
-   la KB greppeando el cache, sin credenciales de Notion en el proyecto.
-2. Un CI de un proyecto consumidor lee el espejo con solo `GITHUB_TOKEN`
-   (checkout del repo privado), sin token de Notion.
-3. Sync incremental invisible (< 1 min para KB ~1000 entradas); full mensual
-   tolerable en job nocturno.
-4. Cero dependencias de terceros (ADR-08).
-5. Pérdida de contenido imposible de pasar inadvertida: bloques no soportados
-   quedan marcados en el markdown.
+1. An agent in any project on the machine finds and cites KB precedents by
+   grepping the cache, with no Notion credentials in the project.
+2. A consumer project's CI reads the mirror with only `GITHUB_TOKEN`
+   (checkout of the private repo), without a Notion token.
+3. Invisible incremental sync (< 1 min for a ~1000-entry KB); monthly full
+   tolerable in a nightly job.
+4. Zero third-party dependencies (ADR-08).
+5. Content loss impossible to miss: unsupported blocks are marked in the
+   markdown.

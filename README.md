@@ -1,37 +1,37 @@
 # enchiridion
 
-*The handbook agents consult before deciding.* — Del griego ἐγχειρίδιον, "lo que
-tenés en la mano": manual compacto de consulta permanente, como el de Epicteto,
-pero para decisiones de arquitectura.
+*The handbook agents consult before deciding.* — From the Greek ἐγχειρίδιον,
+"what you have in your hand": a compact permanent-reference manual, like
+Epictetus's, but for architecture decisions.
 
-Espeja una knowledge base de Notion como archivos markdown greppables, para que
-agentes de IA la usen como fuente primaria de verdad al recomendar arquitectura,
-patrones de diseño o asistir decisiones.
+Mirrors a Notion knowledge base as greppable markdown files, so AI agents use
+it as the primary source of truth when recommending architecture, design
+patterns, or assisting decisions.
 
-## Estado
+## Status
 
-Planificación cerrada (`specs/`, `ADR.md`); implementación en curso — fase 0/1 de
-[`specs/implementation-plan.md`](specs/implementation-plan.md). El comando `sync`
-aún no está implementado.
+Planning closed (`specs/`, `ADR.md`); implementation in progress — phase 0/1 of
+[`specs/implementation-plan.md`](specs/implementation-plan.md). The `sync`
+command is not implemented yet.
 
-## Desarrollo
+## Development
 
-Requisitos: Go 1.25. Tooling (lint, seguridad, mutación, arquitectura) se
-instala con `.devcontainer/install-go-tools.sh`.
+Requirements: Go 1.25. Tooling (lint, security, mutation, architecture) is
+installed with `.devcontainer/install-go-tools.sh`.
 
 ```sh
-make quality          # gates completos: test, lint, race, flaky, coverage, mutation, security, arch
-make test             # suite offline
-make build            # binario en bin/enchiridion
-make help             # todos los targets
+make quality          # full gates: test, lint, race, flaky, coverage, mutation, security, arch
+make test             # offline suite
+make build            # binary at bin/enchiridion
+make help             # all targets
 ```
 
-Convenciones y reglas para agentes: [`AGENTS.md`](AGENTS.md). Decisiones:
-[`ADR.md`](ADR.md). Especificaciones: [`specs/`](specs/README.md).
+Conventions and rules for agents: [`AGENTS.md`](AGENTS.md). Decisions:
+[`ADR.md`](ADR.md). Specifications: [`specs/`](specs/README.md).
 
-## Consumo (una vez implementado)
+## Consumption (once implemented)
 
-El trigger es la skill global (`.agents/skills/enchiridion/SKILL.md`, instalable
-con `npx skills add`) más el snippet para `AGENTS.md` de proyectos consumidores —
-disparadores concretos y reglas de citación en `specs/integration.md`. Cache
-central en `~/.local/share/enchiridion/`.
+The trigger is the global skill (`.agents/skills/enchiridion/SKILL.md`,
+installable with `npx skills add`) plus the snippet for consumer projects'
+`AGENTS.md` — concrete triggers and citation rules in `specs/integration.md`.
+Central cache at `~/.local/share/enchiridion/`.

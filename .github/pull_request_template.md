@@ -1,7 +1,7 @@
-<!-- Checklist — borrar lo que no aplique -->
+<!-- Checklist — delete whatever doesn't apply -->
 
-- [ ] `make quality` en verde
-- [ ] `make deps-audit` en verde (sin nuevos `require` — ADR-08)
-- [ ] Specs actualizadas si cambió comportamiento (`specs/`)
-- [ ] ADR nuevo o actualizado si se tomó una decisión (`ADR.md`)
-- [ ] Smoke real contra la API si se tocó `internal/notion`
+- [ ] `make quality` in green
+- [ ] `make deps-audit` in green (no new `require` — ADR-08)
+- [ ] Specs updated if behavior changed (`specs/`)
+- [ ] New or updated ADR if a decision was made (`ADR.md`)
+- [ ] Real smoke test against the API if `internal/notion` was touched

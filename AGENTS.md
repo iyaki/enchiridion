@@ -31,6 +31,12 @@
 - Mutation testing tool: `gremlins`.
 - Lint and security via `golangci-lint`, `govulncheck`, `gosec`, `go-arch-lint`, `gofmt`.
 
+## Language
+
+- All code, code comments, documentation (specs, ADRs, README), workflow files,
+  and commit messages are written in **English**.
+- Applies to all new content; do not rewrite existing history to comply.
+
 ## Implementation Guidance
 
 - **Zero third-party dependencies** (ADR-08): stdlib only — the `deps-audit` gate enforces it mechanically; any new `require` needs a new ADR *and* removing the gate, never a bypass.

@@ -1,124 +1,127 @@
-# Integración
+# Integration
 
-Contratos con sistemas externos y condiciones de borde. El registro de decisiones
-vive en `ADR.md`.
+Contracts with external systems and edge conditions. The decision record lives
+in `ADR.md`.
 
-## Integración con Notion
+## Notion Integration
 
-**Qué consume**: el contenido completo (propiedades + cuerpo) de todas las
-páginas de un data source de knowledge base, más — solo cuando existen — los
-bloques de tabla anidados.
+**What it consumes**: the full content (properties + body) of all pages of a
+knowledge base data source, plus — only when present — nested table blocks.
 
-**Restricciones externas que condicionan el diseño** (detalle en ADR-02):
+**External constraints that shape the design** (detail in ADR-02):
 
-- ~3 requests/segundo promedio por integración, presupuesto compartido por token.
-- La búsqueda de la API no cubre el cuerpo de las páginas (solo títulos y
-  propiedades): por eso existe el espejo.
-- El cuerpo llega paginado y en un formato propio de bloques que debe
-  transformarse a markdown.
-- Misma superficie de API que `content-curator/organizer` usa en producción
-  (versión `2025-09-03`), para no abrir un segundo frente de compatibilidad.
+- ~3 requests/second average per integration, budget shared by token.
+- The API search does not cover page bodies (only titles and properties):
+  that is why the mirror exists.
+- The body arrives paginated and in a proprietary block format that must be
+  transformed to markdown.
+- Same API surface that `content-curator/organizer` uses in production
+  (version `2025-09-03`), to avoid opening a second compatibility front.
 
-**Presupuesto**: una sync full de N páginas cuesta ~N+1+T requests (T = tablas).
-Para N ≈ 1000 son minutos — invisible en job nocturno, intolerable dentro de la
-sesión de un agente: otra razón del modelo sync (ADR-02). El incremental solo
-toca páginas editadas.
+**Budget**: a full sync of N pages costs ~N+1+T requests (T = tables).
+For N ≈ 1000 that means minutes — invisible in a nightly job, intolerable
+inside an agent session: another reason for the sync model (ADR-02). The
+incremental sync only touches edited pages.
 
-## Mapeo de propiedades (schema real, confirmado en producción)
+## Property Mapping (real schema, confirmed in production)
 
-Fuente de verdad: `content-curator/organizer/index.js` y
+Source of truth: `content-curator/organizer/index.js` and
 `content-curator/curator/cms.js`.
 
-| Propiedad Notion | Tipo | Destino |
+| Notion Property | Type | Destination |
 |---|---|---|
-| `Name` | título | `title` |
-| `URL` | url | `source_url` (opcional; ya viene normalizada sin parámetros de tracking por el organizer) |
-| `Category` | multi_select | `tags` (options conocidas: Tool, Service, Website, Note, Framework/Library, Game, …) |
-| otras categorías/temas | select / multi_select dinámicas (creadas por el curador automático) | `tags` |
-| — (metadata de página) | — | `notion_id`, `notion_url`, `last_edited` |
+| `Name` | title | `title` |
+| `URL` | url | `source_url` (optional; already normalized without tracking parameters by the organizer) |
+| `Category` | multi_select | `tags` (known options: Tool, Service, Website, Note, Framework/Library, Game, …) |
+| other categories/topics | dynamic select / multi_select (created by the automatic curator) | `tags` |
+| — (page metadata) | — | `notion_id`, `notion_url`, `last_edited` |
 
-Las clasificaciones dinámicas nuevas que cree el curador automático entran sin
-cambios: el schema no se hardcodea.
+New dynamic classifications created by the automatic curator come in without
+changes: the schema is not hardcoded.
 
-## Configuración (contrato con el usuario)
+## Configuration (contract with the user)
 
-Cada usuario provee la suya — el binario no conoce valores de nadie (ADR-11).
+Each user provides their own — the binary does not know anyone's values
+(ADR-11).
 
-| Variable | Obligatoria | Significado |
+| Variable | Required | Meaning |
 |---|---|---|
-| `NOTION_TOKEN` | sí | integración de Notion del usuario, con acceso al data source |
-| `KNOWLEDGE_BASE_DATASOURCE_ID` | sí | data source a espejar |
-| `ENCHIRIDION_HOME` | no (default `~/.local/share/enchiridion`) | raíz del cache local |
+| `NOTION_TOKEN` | yes | the user's Notion integration, with access to the data source |
+| `KNOWLEDGE_BASE_DATASOURCE_ID` | yes | data source to mirror |
+| `ENCHIRIDION_HOME` | no (default `~/.local/share/enchiridion`) | root of the local cache |
 
-**Least privilege**: el sync solo lee — la integración de Notion debe crearse con
-capacidades de solo lectura (Read content, Read user info sin email). Espejo el
-contenido de la KB tal cual es; si el token puede escribir, cualquier bug del
-sync tendría alcance destructivo sin necesidad.
+**Least privilege**: the sync only reads — the Notion integration must be
+created with read-only capabilities (Read content, Read user info without
+email). It mirrors the KB content as it is; if the token could write, any sync
+bug would have destructive reach without need.
 
-**Secretos en el espejo**: la KB es texto libre — puede llegar a contener un
-token. Antes de conmutar `data/` en los workflows de sync, correr el scan de
-secretos sobre el espejo (gitleaks); un espejo con secreto no se conmuta.
+**Secrets in the mirror**: the KB is free text — it may end up containing a
+token. Before switching `data/` in the sync workflows, run the secrets scan
+over the mirror (gitleaks); a mirror containing a secret is not switched.
 
-## Distribución (ADR-09)
+## Distribution (ADR-09)
 
-1. **Releases**: binarios autocontenidos por plataforma (linux amd64/arm64,
-   macos arm64) con checksums, adjuntos a cada release del repo.
-2. **Devcontainer feature** (repo `devcontainer-features`): instala el binario
-   desde la release usando el token de GitHub del usuario; expone las variables
-   de configuración al container; permite fijar versión y raíz del cache.
-   Opciones: `version` (default: última), `enchiridion_home`.
+1. **Releases**: self-contained binaries per platform (linux amd64/arm64,
+   macos arm64) with checksums, attached to each release of the repo.
+2. **Devcontainer feature** (repo `devcontainer-features`): installs the
+   binary from the release using the user's GitHub token; exposes the
+   configuration variables to the container; allows pinning the version and
+   the cache root.
+   Options: `version` (default: latest), `enchiridion_home`.
 
-## Consumo
+## Consumption
 
-El trigger de consumo tiene dos mecanismos complementarios (ADR-13):
+The consumption trigger has two complementary mechanisms (ADR-13):
 
-1. **Skill global** (caso primario): la skill vive en este repo
-   (`.agents/skills/enchiridion/SKILL.md`) y se instala una sola vez con
-   `npx skills add` (o symlink para omp). Dispara en todas las sesiones, en
-   cualquier directorio.
-2. **Snippet por-proyecto**: para proyectos donde se quiera la regla explícita
-   en el `AGENTS.md`:
+1. **Global skill** (primary case): the skill lives in this repo
+   (`.agents/skills/enchiridion/SKILL.md`) and is installed once with
+   `npx skills add` (or symlink for omp). It triggers in all sessions, in any
+   directory.
+2. **Per-project snippet**: for projects where the explicit rule is wanted in
+   the `AGENTS.md`:
 
 ```markdown
 ## enchiridion
 
-Fuente primaria de verdad: espejo de la knowledge base en
+Primary source of truth: mirror of the knowledge base in
 `~/.local/share/enchiridion/knowledge/` (override: `$ENCHIRIDION_HOME`).
 
-Consultá el espejo (rg/grep) ANTES de responder cuando la tarea implique:
-- elegir o recomendar una librería, framework o herramienta
-- definir la estructura o el diseño de un módulo o servicio
-- recomendar patrones de diseño o arquitectura
-- resolver una disputa técnica entre alternativas
-- citar cómo se resolvió algo antes
+Consult the mirror (rg/grep) BEFORE answering when the task involves:
+- choosing or recommending a library, framework or tool
+- defining the structure or design of a module or service
+- recommending design or architecture patterns
+- resolving a technical dispute between alternatives
+- citing how something was solved before
 
-Cité las entradas usadas (archivo + `notion_url`). Sin precedentes, decilo
-explícitamente. Cache inexistente: informalo — nunca inventes precedentes.
-Actualizar: `enchiridion sync`.
+Cite the entries used (file + `notion_url`). With no precedent, say so
+explicitly. Missing cache: report it — never invent precedents.
+To update: `enchiridion sync`.
 ```
 
-Sin credenciales de Notion en el proyecto: solo archivos locales.
+Without Notion credentials in the project: local files only.
 
-### CI de un proyecto consumidor
+### CI of a consumer project
 
-Checkout del repo privado con `GITHUB_TOKEN` y lectura del espejo conmutado en
-`data/`. Sin token de Notion.
+Checkout of the private repo with `GITHUB_TOKEN` and reading of the mirror
+switched into `data/`. No Notion token.
 
-### CI de enchiridion (este repo)
+### CI of enchiridion (this repo)
 
-| Workflow | Schedule | Comportamiento |
+| Workflow | Schedule | Behavior |
 |---|---|---|
-| Incremental | nocturno | sincroniza y conmuta `data/` si hubo cambios |
-| Full | mensual (día 1) | sincroniza todo, aplica sweep, conmuta `data/` |
-| Release | tag `v*` | publica binarios por plataforma |
+| Incremental | nightly | syncs and switches `data/` if there were changes |
+| Full | monthly (day 1) | syncs everything, applies sweep, switches `data/` |
+| Release | tag `v*` | publishes binaries per platform |
 
-Corridas con fallos parciales terminan en error visible — nunca se conmuta un
-espejo parcial sin señal (patrón organizer).
+Runs with partial failures end in a visible error — a partial mirror is never
+switched without a signal (organizer pattern).
 
-## Límites conocidos (registrados, aceptados)
+## Known Limits (recorded, accepted)
 
-- Rebuild de devcontainer → cache vacío → sync full en el arranque (minutos).
-  Mejora futura: volumen persistente para el cache (ADR-10).
-- Imágenes internas de Notion quedan como marcador (ADR-05); el ingest actual ya
-  las descarta al copiar triage → KB, por lo que se espera ~cero presencia.
-- Los borrados en Notion tardan hasta el full mensual en reflejarse (ADR-04).
+- devcontainer rebuild → empty cache → full sync on startup (minutes).
+  Future improvement: persistent volume for the cache (ADR-10).
+- Notion internal images remain as a placeholder (ADR-05); the current ingest
+  already discards them when copying triage → KB, so ~zero presence is
+  expected.
+- Deletions in Notion take up to the monthly full sync to be reflected
+  (ADR-04).

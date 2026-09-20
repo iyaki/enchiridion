@@ -1,93 +1,92 @@
-# Plan de implementación
+# Implementation plan
 
-Secuencia de entregables. Cada fase define **qué debe ser verdad al terminar**
-(criterios de aceptación), no cómo escribirlo. Decisiones de fondo: `ADR.md`.
-Comportamiento esperado: `architecture.md` e `integration.md`.
+Sequence of deliverables. Each phase defines **what must be true at the end**
+(acceptance criteria), not how to write it. Fundamental decisions: `ADR.md`.
+Expected behavior: `architecture.md` and `integration.md`.
 
-Regla transversal: cero dependencias de terceros (ADR-08) y toda la lógica
-testeable sin red (architecture.md, Requisitos no funcionales).
+Cross-cutting rule: zero third-party dependencies (ADR-08) and all logic
+testable without network (architecture.md, Non-functional requirements).
 
-## Fase 0 — Limpieza
+## Phase 0 — Cleanup
 
-Eliminar el scaffold JS descartado (ADR-08) e inicializar el módulo del lenguaje
-elegido.
+Remove the discarded JS scaffold (ADR-08) and initialize the module of the
+chosen language.
 
-**AC**: el repo contiene únicamente documentación vigente y la base del nuevo
-proyecto; sin rastros del scaffold.
+**AC**: the repo contains only current documentation and the base of the new
+project; no traces of the scaffold.
 
-## Fase 1 — Acceso a Notion
+## Phase 1 — Notion access
 
-Cliente del data source: query completo con paginación, lectura del cuerpo de
-una página (incluidas tablas anidadas), reintentos según
-`architecture.md` (Comportamiento ante errores).
+Data source client: full query with pagination, reading of a page's body
+(including nested tables), retries per `architecture.md`
+(Error behavior).
 
-**AC**: verificado offline contra respuestas reales de ejemplo; los errores
-definidos producen los comportamientos definidos.
+**AC**: verified offline against real sample responses; the defined errors
+produce the defined behaviors.
 
-## Fase 2 — Renderer
+## Phase 2 — Renderer
 
-Transformación de bloques a markdown según el contrato de
-`architecture.md` (Contrato de renderizado).
+Block-to-markdown transformation per the contract in `architecture.md`
+(Rendering contract).
 
-**AC**: cada fila del contrato tiene un caso de prueba con su salida esperada
-(exacta, predefinida), incluido el caso mixto y los marcadores de
-no-soportados.
+**AC**: each row of the contract has a test case with its expected output
+(exact, predefined), including the mixed case and the unsupported markers.
 
-## Fase 3 — Motor de sync
+## Phase 3 — Sync engine
 
-Selección automática de modo, full con sweep, incremental con marca de agua,
-actualización in-place por identidad de página, frontmatter y nombres de
-archivo según el formato del espejo.
+Automatic mode selection, full with sweep, incremental with watermark,
+in-place update by page identity, frontmatter and file names per the mirror
+format.
 
-**AC**: tabla de casos de `architecture.md` (Modos de sincronización) cubierta
-con pruebas sobre directorios temporales: backfill automático, sweep que
-preserva vigentes y elimina stale, renames sin duplicados, watermark que
-avanza, fallos parciales → salida de error.
+**AC**: the case table from `architecture.md` (Sync modes) covered with tests
+over temporary directories: automatic backfill, sweep that keeps current
+entries and removes stale ones, renames without duplicates, advancing
+watermark, partial failures → error output.
 
-## Fase 4 — CLI
+## Phase 4 — CLI
 
-`enchiridion sync` con flag para forzar full, variables de configuración según
-`integration.md`, logging de progreso y resumen final.
+`enchiridion sync` with a flag to force full, configuration variables per
+`integration.md`, progress logging and final summary.
 
-**AC**: configuración faltante produce mensaje claro sin contacto con la API;
-códigos de salida según spec; **smoke real manual** contra la API con token
-propio produce el espejo esperado.
+**AC**: missing configuration produces a clear message without contacting the
+API; exit codes per spec; **real manual smoke test** against the API with own
+token produces the expected mirror.
 
-## Fase 5 — CI y releases del repo
+## Phase 5 — CI and repo releases
 
-Workflows según `integration.md` (CI de enchiridion): incremental nocturno,
-full mensual con sweep, releases con binarios multiplataforma y checksums.
-Los workflows de sync corren el scan de secretos sobre el espejo antes de
-conmutar `data/` (specs/integration.md — Secretos en el espejo).
+Workflows per `integration.md` (enchiridion CI): nightly incremental, monthly
+full with sweep, releases with multi-platform binaries and checksums. The sync
+workflows run the secret scan over the mirror before swapping `data/`
+(specs/integration.md — Secrets in the mirror).
 
-**AC**: corrida manual de cada workflow en verde; binario de release instalable
-y funcional; `data/` conmutado solo por corridas exitosas.
+**AC**: manual run of each workflow in green; release binary installable and
+functional; `data/` swapped only by successful runs.
 
-## Fase 6 — Devcontainer feature (repo `devcontainer-features`)
+## Phase 6 — Devcontainer feature (repo `devcontainer-features`)
 
-Feature que instala el binario desde la release y expone la configuración
-según `integration.md` (Distribución).
+Feature that installs the binary from the release and exposes configuration
+per `integration.md` (Distribution).
 
-**AC**: un devcontainer desde cero instala el binario, corre el sync y puebla
-el cache local.
+**AC**: a devcontainer from scratch installs the binary, runs the sync and
+populates the local cache.
 
-## Post-implementación (instalación del trigger)
+## Post-implementation (trigger installation)
 
-No ejecutar hasta que la fase 4 produzca el primer sync real:
+Do not run until phase 4 produces the first real sync:
 
-1. Instalar la skill global: `npx skills add iyaki/enchiridion` (o symlink de
-   `.agents/skills` para omp) — verifica que la skill dispare en una sesión
-   cualquiera con una pregunta tipo "¿qué ORM uso?".
-2. Agregar el snippet de `specs/integration.md` (Consumo) al `AGENTS.md` de los
-   proyectos agent-driven donde se quiera la regla explícita.
-3. Drill de verificación: en un proyecto consumidor, preguntar algo cubierto por
-   la KB y confirmar que el agente grepea el cache y cita entradas.
+1. Install the global skill: `npx skills add iyaki/enchiridion` (or symlink
+   `.agents/skills` for omp) — verify the skill fires in any session with a
+   question like "which ORM do I use?".
+2. Add the snippet from `specs/integration.md` (Consumption) to the
+   `AGENTS.md` of agent-driven projects where the explicit rule is wanted.
+3. Verification drill: in a consumer project, ask something covered by the KB
+   and confirm the agent greps the cache and cites entries.
 
 ## Definition of Done (global)
 
-- Los 5 criterios de éxito de `specs/vision.md` verificados — con evidencia
-  real, no simulada.
-- Suite de pruebas offline completa en verde.
-- `make deps-audit` en verde (ADR-08 reforzado mecánicamente, no solo
-  documentado).
-- `ADR.md` actualizado con cualquier desvío de estas specs.
+- The 5 success criteria of `specs/vision.md` verified — with real evidence,
+  not simulated.
+- Complete offline test suite in green.
+- `make deps-audit` in green (ADR-08 enforced mechanically, not just
+  documented).
+- `ADR.md` updated with any deviation from these specs.

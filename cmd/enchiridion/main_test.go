@@ -12,6 +12,7 @@ import (
 func TestMain(m *testing.M) {
 	if os.Getenv("ENCHIRIDION_MAIN") != "" {
 		main()
+
 		return
 	}
 	os.Exit(m.Run())

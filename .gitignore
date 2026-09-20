@@ -6,3 +6,4 @@
 coverage.out
 gremlins-output.json
 *.tmp
+.sync.lock

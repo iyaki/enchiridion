@@ -1,0 +1,56 @@
+name: sync-full
+
+on:
+  schedule:
+    - cron: "0 5 1 * *" # monthly, day 1
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Serialize with the nightly incremental: concurrent runs would race the
+# data/ swap (specs/architecture.md — exclusivity).
+concurrency:
+  group: enchiridion-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Go
+        uses: actions/setup-go@v7
+        with:
+          go-version: "~1.25.8"
+
+      - name: Build
+        run: go build -o enchiridion ./cmd/enchiridion
+
+      # Full is the only mode that propagates deletions (ADR-04: sweep).
+      - name: Sync (full)
+        run: ./enchiridion sync --full | tee "$GITHUB_STEP_SUMMARY"
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          KNOWLEDGE_BASE_DATASOURCE_ID: ${{ secrets.KNOWLEDGE_BASE_DATASOURCE_ID }}
+          ENCHIRIDION_HOME: data
+
+      # A mirror containing a secret is never switched (specs/integration.md).
+      - name: Scan mirror for secrets
+        run: |
+          go install github.com/gitleaks/gitleaks/v8@v8.30.1
+          "$(go env GOPATH)/bin/gitleaks" detect --no-git --source data --redact -v
+
+      - name: Commit and push mirror
+        run: |
+          git config user.name "enchiridion-bot"
+          git config user.email "enchiridion-bot@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "Mirror unchanged — nothing to commit."
+            exit 0
+          fi
+          git commit -m "sync: full $(date -u +%F)"
+          git push

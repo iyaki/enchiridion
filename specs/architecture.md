@@ -48,8 +48,9 @@ monthly cron and a local sync running concurrently could corrupt the state.
 
 ## Mirror format (observable contract)
 
-File name: `{slug}--{id8}.md` — kebab-case slug without accents from the title +
-short prefix of the `notion_id`.
+File name: `{slug}--{id-prefix}.md` — kebab-case slug without accents from
+the title (capped at 100 characters) + prefix of the `notion_id`, extended on
+the rare collision until the name is unique (ADR-14).
 
 ```markdown
 ---

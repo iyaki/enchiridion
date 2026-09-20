@@ -202,6 +202,34 @@ certain edits (fuzzy matching + per-turn cost, no evidence of need).
 
 ---
 
+## ADR-14 — Mirror file names: collision-proof and size-capped
+
+**Context**: the mirror format specced `{slug}--{id8}.md` assuming the
+8-character id prefix is unique. The first live sync (2623 pages) falsified
+that: Notion page IDs are time-ordered, pages created in the same batch share
+long prefixes (105 pages share `2b754f1c`), and a same-slug pair produced one
+name for two pages — the second write silently overwrote the first. Also, a
+~250-character title exceeded the 255-byte filesystem name limit and the
+write failed.
+
+**Decision**:
+- **Slug capped at 100 characters** (post accent-folding ASCII), so
+  `slug + "--" + prefix + ".md"` always fits the filesystem limit with margin.
+- **On collision, the id prefix extends** (8 → 9 → … characters) until the
+  target name belongs to no other `notion_id`; at worst it reaches the full
+  id, which is unique. First-sync write order decides which page keeps the
+  short name; afterwards each page rewrites its own file in place, so paths
+  stay stable across syncs and fresh clones.
+
+**Consequences**: the format remains `{slug}--{id-prefix}.md` and greppable;
+consumers must read `notion_id` from frontmatter instead of parsing the
+suffix (they never had a reason to parse it). `architecture.md` mirror-format
+section updated accordingly. Alternatives (hash suffixes, full id always)
+rejected: longer names for every file to solve a rare case, and grep noise
+without benefit.
+
+---
+
 ## Verification of the real sync (pending implementation)
 
 The only piece not verifiable offline: live API calls. Manual smoke with an

@@ -10,6 +10,9 @@ components:
   cli:
     in:
       - internal/cli/**
+  model:
+    in:
+      - internal/model/**
   notion:
     in:
       - internal/notion/**
@@ -27,8 +30,17 @@ deps:
     anyProjectDeps: true
   sync:
     mayDependOn:
+      - model
       - notion
       - render
+    anyVendorDeps: false
+  notion:
+    mayDependOn:
+      - model
+    anyVendorDeps: false
+  render:
+    mayDependOn:
+      - model
     anyVendorDeps: false
   # notion and render are intentionally absent from deps: with no rule and no
   # commonComponents, they cannot depend on any other component (ADR-08).

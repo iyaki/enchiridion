@@ -40,7 +40,7 @@ jobs:
       # A mirror containing a secret is never switched (specs/integration.md).
       - name: Scan mirror for secrets
         run: |
-          go install github.com/gitleaks/gitleaks/v8@v8.30.1
+          go install github.com/zricethezav/gitleaks/v8@v8.30.1
           "$(go env GOPATH)/bin/gitleaks" detect --no-git --source data --redact -v
 
       - name: Commit and push mirror

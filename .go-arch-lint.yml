@@ -30,9 +30,5 @@ deps:
       - notion
       - render
     anyVendorDeps: false
-  notion:
-    anyProjectDeps: false
-    anyVendorDeps: false
-  render:
-    anyProjectDeps: false
-    anyVendorDeps: false
+  # notion and render are intentionally absent from deps: with no rule and no
+  # commonComponents, they cannot depend on any other component (ADR-08).

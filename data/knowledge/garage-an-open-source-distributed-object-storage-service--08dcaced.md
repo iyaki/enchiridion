@@ -4,7 +4,7 @@ notion_id: 08dcaced-89ce-468a-981b-543bcac459d1
 notion_url: https://app.notion.com/p/Garage-An-open-source-distributed-object-storage-service-08dcaced89ce468a981b543bcac459d1
 last_edited: 2023-08-16T14:13:00.000Z
 source_url: https://garagehq.deuxfleurs.fr/
-tags: ["English", "File/Object Storage", "Untried", "Tool"]
+tags: ["Tool", "English", "File/Object Storage", "Untried"]
 ---
 
 

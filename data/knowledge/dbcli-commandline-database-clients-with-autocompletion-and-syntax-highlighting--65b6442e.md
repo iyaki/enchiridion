@@ -4,7 +4,7 @@ notion_id: 65b6442e-4c8a-43f3-9198-a7b94913031e
 notion_url: https://app.notion.com/p/DBCLI-Commandline-Database-Clients-with-Autocompletion-and-Syntax-Highlighting-65b6442e4c8a43f39198a7b94913031e
 last_edited: 2024-03-01T19:25:00.000Z
 source_url: https://www.dbcli.com/
-tags: ["Tool", "English", "Databases", "SysAdmin"]
+tags: ["English", "Databases", "SysAdmin", "Tool"]
 ---
 ## 
 

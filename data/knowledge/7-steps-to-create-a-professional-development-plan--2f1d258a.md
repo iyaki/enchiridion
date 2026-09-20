@@ -4,7 +4,7 @@ notion_id: 2f1d258a-c934-4964-987b-028d47b562c7
 notion_url: https://app.notion.com/p/7-Steps-to-Create-a-Professional-Development-Plan-2f1d258ac9344964987b028d47b562c7
 last_edited: 2023-08-04T18:21:00.000Z
 source_url: https://toggl.com/blog/examples-of-a-professional-development-plan
-tags: ["Article", "Guide", "Toggl Blog", "English", "Line/People/Team Management", "Career Growth", "Human Resources (HH.RR.)"]
+tags: ["English", "Line/People/Team Management", "Career Growth", "Human Resources (HH.RR.)", "Article", "Guide", "Toggl Blog"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

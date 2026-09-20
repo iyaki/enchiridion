@@ -4,6 +4,6 @@ notion_id: d83783c0-d7a3-49fb-9a91-aa50a1877451
 notion_url: https://app.notion.com/p/CSS-Icons-d83783c0d7a349fb9a91aa50a1877451
 last_edited: 2022-12-19T19:31:00.000Z
 source_url: https://css.gg/
-tags: ["Tool", "Service", "English", "UI/UX", "Untried"]
+tags: ["English", "UI/UX", "Untried", "Tool", "Service"]
 ---
 

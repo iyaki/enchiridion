@@ -4,7 +4,7 @@ notion_id: 90bb88e5-b7f9-4c0a-95f0-7146ce93fa72
 notion_url: https://app.notion.com/p/DataTables-Javascript-table-library-90bb88e5b7f94c0a95f07146ce93fa72
 last_edited: 2024-08-16T19:43:00.000Z
 source_url: https://datatables.net/
-tags: ["Framework/Library", "English", "Frontend", "Javascript"]
+tags: ["English", "Frontend", "Javascript", "Framework/Library"]
 ---
 ## 
 

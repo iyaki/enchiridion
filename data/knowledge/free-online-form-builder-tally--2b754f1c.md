@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-8170-8afc-e989ee6f1138
 notion_url: https://app.notion.com/p/Free-Online-Form-Builder-Tally-2b754f1c7d2381708afce989ee6f1138
 last_edited: 2025-11-26T18:01:00.000Z
 source_url: https://tally.so/
-tags: ["English", "Web Development", "Productivity", "Forms", "Privacy", "Tool", "Service", "Tally"]
+tags: ["Web Development", "Productivity", "Forms", "Privacy", "Tool", "Service", "Tally", "English"]
 ---
 
 

@@ -4,7 +4,7 @@ notion_id: 252f9424-f875-486b-972e-954e1ac9d61c
 notion_url: https://app.notion.com/p/Design-Principles-Collection-of-System-Design-Principles-by-Jeremy-Keith-adactio-252f9424f875486b972e954e1ac9d61c
 last_edited: 2023-09-13T15:09:00.000Z
 source_url: https://principles.adactio.com/
-tags: ["Website", "adactio (Jeremy Keith)", "English", "System Design / Software Architecture", "Principles"]
+tags: ["English", "System Design / Software Architecture", "Principles", "Website", "adactio (Jeremy Keith)"]
 ---
 # 
 

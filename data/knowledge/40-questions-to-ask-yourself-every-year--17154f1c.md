@@ -4,7 +4,7 @@ notion_id: 17154f1c-7d23-81eb-a958-e4e48bd582ce
 notion_url: https://app.notion.com/p/40-questions-to-ask-yourself-every-year-17154f1c7d2381eba958e4e48bd582ce
 last_edited: 2025-02-12T22:01:00.000Z
 source_url: https://stephango.com/40-questions
-tags: ["Article", "Steph Ango", "English", "Reflection", "?"]
+tags: ["English", "Reflection", "?", "Article", "Steph Ango"]
 ---
 
 

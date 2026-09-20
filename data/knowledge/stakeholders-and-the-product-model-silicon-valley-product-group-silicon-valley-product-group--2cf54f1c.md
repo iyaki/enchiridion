@@ -4,7 +4,7 @@ notion_id: 2cf54f1c-7d23-81d0-8127-ede60a3caf38
 notion_url: https://app.notion.com/p/Stakeholders-and-the-Product-Model-Silicon-Valley-Product-Group-Silicon-Valley-Product-Group-2cf54f1c7d2381d08127ede60a3caf38
 last_edited: 2026-09-18T00:53:00.000Z
 source_url: https://www.svpg.com/stakeholders-and-the-product-model/
-tags: ["English", "Product Management", "Agile", "Team Management", "Collaboration", "Article", "Guide", "Silicon Valley Product Group"]
+tags: ["Product Management", "Agile", "Team Management", "Collaboration", "Article", "Guide", "Silicon Valley Product Group", "English"]
 ---
 
 

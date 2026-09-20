@@ -4,7 +4,7 @@ notion_id: c78f6e69-6137-43db-acbb-ef5940434e59
 notion_url: https://app.notion.com/p/ECSS-Simple-Rules-for-efficient-CSS-c78f6e69613743dbacbbef5940434e59
 last_edited: 2024-06-11T16:32:00.000Z
 source_url: https://ecss.info/en/
-tags: ["English", "CSS", "Frontend", "Website", "Tool"]
+tags: ["Website", "Tool", "English", "CSS", "Frontend"]
 ---
 ## 
 

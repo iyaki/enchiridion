@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-817e-bf1f-e31a3a460b0d
 notion_url: https://app.notion.com/p/gitmoji-An-emoji-guide-for-your-commit-messages-2b754f1c7d23817ebf1fe31a3a460b0d
 last_edited: 2025-11-26T19:08:00.000Z
 source_url: https://gitmoji.dev/
-tags: ["English", "Git", "Programming", "Productivity", "Tool", "Article", "gitmoji.dev"]
+tags: ["gitmoji.dev", "English", "Git", "Programming", "Productivity", "Tool", "Article"]
 ---
 ## 
 

@@ -4,7 +4,7 @@ notion_id: c979cb03-7898-4d38-9765-8986d0dd0ecb
 notion_url: https://app.notion.com/p/100-things-you-can-do-on-your-personal-website-c979cb0378984d3897658986d0dd0ecb
 last_edited: 2024-03-01T19:28:00.000Z
 source_url: https://jamesg.blog/2024/02/19/personal-website-ideas/
-tags: ["Article", "James' Coffee Blog", "Blogging/Content Creation", "?"]
+tags: ["Blogging/Content Creation", "?", "Article", "James' Coffee Blog"]
 ---
 
 

@@ -4,7 +4,7 @@ notion_id: c9853c89-c191-43a1-979f-4d47124d6e1d
 notion_url: https://app.notion.com/p/Agile-Project-Management-In-Marketing-A-Complete-Guide-c9853c89c19143a1979f4d47124d6e1d
 last_edited: 2023-01-25T18:33:00.000Z
 source_url: https://toggl.com/blog/agile-project-management-in-marketing
-tags: ["Article", "Guide", "Toggl Blog", "English", "Agile", "Entrepreneurship"]
+tags: ["English", "Agile", "Entrepreneurship", "Article", "Guide", "Toggl Blog"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

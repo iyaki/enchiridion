@@ -4,7 +4,7 @@ notion_id: 17e54f1c-7d23-816e-bb81-f8384047eac5
 notion_url: https://app.notion.com/p/Patterns-dev-Improve-how-you-architect-webapps-17e54f1c7d23816ebb81f8384047eac5
 last_edited: 2025-02-14T20:40:00.000Z
 source_url: https://www.patterns.dev/
-tags: ["Website", "English", "System Design / Software Architecture", "Producer (Individual Contributor)"]
+tags: ["English", "System Design / Software Architecture", "Producer (Individual Contributor)", "Website"]
 ---
 
 

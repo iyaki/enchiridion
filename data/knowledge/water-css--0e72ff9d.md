@@ -4,7 +4,7 @@ notion_id: 0e72ff9d-9cc5-4067-b996-d6fd6c14c293
 notion_url: https://app.notion.com/p/Water-css-0e72ff9d9cc54067b996d6fd6c14c293
 last_edited: 2023-06-23T11:44:00.000Z
 source_url: https://watercss.kognise.dev/
-tags: ["CSS", "Frontend", "Untried", "Framework/Library"]
+tags: ["Framework/Library", "CSS", "Frontend", "Untried"]
 ---
 
 

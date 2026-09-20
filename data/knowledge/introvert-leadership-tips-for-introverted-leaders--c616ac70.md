@@ -4,7 +4,7 @@ notion_id: c616ac70-c23f-4b3c-9e32-27e796e9ccae
 notion_url: https://app.notion.com/p/Introvert-Leadership-Tips-for-Introverted-Leaders-c616ac70c23f4b3c9e3227e796e9ccae
 last_edited: 2023-03-30T13:39:00.000Z
 source_url: https://management30.com/blog/introvert-leadership/
-tags: ["Article", "Management 3.0 Blog", "English", "Leadersheep"]
+tags: ["English", "Leadersheep", "Article", "Management 3.0 Blog"]
 ---
 
 

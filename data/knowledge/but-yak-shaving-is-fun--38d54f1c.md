@@ -4,7 +4,7 @@ notion_id: 38d54f1c-7d23-81dc-9af0-f00d7c563191
 notion_url: https://app.notion.com/p/But-yak-shaving-is-fun-38d54f1c7d2381dc9af0f00d7c563191
 last_edited: 2026-09-18T00:52:00.000Z
 source_url: https://parksb.github.io/en/article/32.html
-tags: ["parksb.github.io", "English", "Web Development", "Programming", "Tool", "Learning", "Documentation", "Tool", "Article"]
+tags: ["English", "Web Development", "Programming", "Tool", "Learning", "Documentation", "Tool", "Article", "parksb.github.io"]
 ---
 ## 
 

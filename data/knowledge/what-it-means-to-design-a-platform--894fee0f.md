@@ -4,7 +4,7 @@ notion_id: 894fee0f-c024-47be-8089-bdd0a49496b3
 notion_url: https://app.notion.com/p/What-it-means-to-design-a-platform-894fee0fc02447be8089bdd0a49496b3
 last_edited: 2023-01-27T17:54:00.000Z
 source_url: https://matthewstrom.com/writing/platform-design/
-tags: ["English", "System Design / Software Architecture", "Product Management", "UI/UX", "Article"]
+tags: ["System Design / Software Architecture", "Product Management", "UI/UX", "Article", "English"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

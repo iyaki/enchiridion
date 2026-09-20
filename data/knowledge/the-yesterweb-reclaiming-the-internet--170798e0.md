@@ -4,7 +4,7 @@ notion_id: 170798e0-4056-4b11-95d9-e5222a046c47
 notion_url: https://app.notion.com/p/The-Yesterweb-Reclaiming-the-Internet-170798e040564b1195d9e5222a046c47
 last_edited: 2023-12-19T13:43:00.000Z
 source_url: https://yesterweb.org/
-tags: ["English", "Principles", "Blogging/Content Creation", "Website", "Article"]
+tags: ["Website", "Article", "English", "Principles", "Blogging/Content Creation"]
 ---
 
 

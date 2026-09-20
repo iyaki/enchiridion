@@ -4,7 +4,7 @@ notion_id: 1ee54f1c-7d23-814e-a8ec-e7422b23ba16
 notion_url: https://app.notion.com/p/Are-CSS-Carousels-accessible-1ee54f1c7d23814ea8ece7422b23ba16
 last_edited: 2025-07-26T22:47:00.000Z
 source_url: https://www.sarasoueidan.com/blog/css-carousels-accessibility/
-tags: ["English", "CSS", "Frontend", "Article", "Sara Soueidan"]
+tags: ["CSS", "Frontend", "Article", "Sara Soueidan", "English"]
 ---
 
 

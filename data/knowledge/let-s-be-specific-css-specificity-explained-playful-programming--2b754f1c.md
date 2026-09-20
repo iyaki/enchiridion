@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-81d9-8ea8-cd3543497a72
 notion_url: https://app.notion.com/p/Let-s-Be-Specific-CSS-Specificity-Explained-Playful-Programming-2b754f1c7d2381d98ea8cd3543497a72
 last_edited: 2025-11-26T19:07:00.000Z
 source_url: https://playfulprogramming.com/posts/css-specificity-explained
-tags: ["Playful Programming", "English", "Web Development", "CSS", "Article"]
+tags: ["English", "Web Development", "CSS", "Article", "Playful Programming"]
 ---
 
 

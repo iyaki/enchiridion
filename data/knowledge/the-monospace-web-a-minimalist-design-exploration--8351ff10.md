@@ -4,7 +4,7 @@ notion_id: 8351ff10-f392-4a2e-98ff-c1ecc6a13358
 notion_url: https://app.notion.com/p/The-Monospace-Web-A-minimalist-design-exploration-8351ff10f3924a2e98ffc1ecc6a13358
 last_edited: 2024-09-17T19:10:00.000Z
 source_url: https://owickstrom.github.io/the-monospace-web
-tags: ["English", "Web Development", "UI/UX", "Article", "Website"]
+tags: ["Web Development", "UI/UX", "Article", "Website", "English"]
 ---
 | **The Monospace Web** A minimalist design exploration |  | Version | v0.1.1 |
 | --- | --- | --- | --- |

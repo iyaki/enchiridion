@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-81d0-b2af-fec053e29116
 notion_url: https://app.notion.com/p/aaPanel-BillionMail-BillionMail-gives-you-open-source-MailServer-NewsLetter-Email-Marketing-ful-2b754f1c7d2381d0b2affec053e29116
 last_edited: 2025-12-17T13:13:00.000Z
 source_url: https://github.com/aaPanel/BillionMail
-tags: ["Tool", "GitHub", "English", "Others", "Email", "Automation", "Productivity"]
+tags: ["GitHub", "English", "Others", "Email", "Automation", "Productivity", "Tool"]
 ---
 # 
 

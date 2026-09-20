@@ -4,7 +4,7 @@ notion_id: 31a54f1c-7d23-81c7-b147-d752dd1b9e6f
 notion_url: https://app.notion.com/p/Expose-Your-Design-System-to-LLMs-Hardik-Pandya-31a54f1c7d2381c7b147d752dd1b9e6f
 last_edited: 2026-03-05T01:56:00.000Z
 source_url: https://hvpandya.com/llm-design-systems
-tags: ["hvpandya.com", "English", "UI/UX", "Design", "Artificial Intelligence (AI)", "Productivity", "Article"]
+tags: ["Article", "hvpandya.com", "English", "UI/UX", "Design", "Artificial Intelligence (AI)", "Productivity"]
 ---
 
 

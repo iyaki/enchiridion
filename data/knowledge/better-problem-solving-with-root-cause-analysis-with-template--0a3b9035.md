@@ -4,7 +4,7 @@ notion_id: 0a3b9035-5ad6-47be-881c-5a7abfe304bf
 notion_url: https://app.notion.com/p/Better-problem-solving-with-root-cause-analysis-with-template-0a3b90355ad647be881c5a7abfe304bf
 last_edited: 2023-05-12T11:00:00.000Z
 source_url: https://blog.logrocket.com/product-management/what-is-root-cause-analysis/
-tags: ["Productivity", "Documentation", "On Call", "Help Desk", "Article", "LogRocket Blog", "English"]
+tags: ["English", "Productivity", "Documentation", "On Call", "Help Desk", "Article", "LogRocket Blog"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

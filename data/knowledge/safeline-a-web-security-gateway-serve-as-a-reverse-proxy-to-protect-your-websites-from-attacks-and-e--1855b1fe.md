@@ -4,7 +4,7 @@ notion_id: 1855b1fe-806c-4a93-9289-1070e55cfc5a
 notion_url: https://app.notion.com/p/SafeLine-A-web-security-gateway-serve-as-a-reverse-proxy-to-protect-your-websites-from-attacks-an-1855b1fe806c4a9392891070e55cfc5a
 last_edited: 2024-07-15T23:41:00.000Z
 source_url: https://github.com/chaitin/SafeLine
-tags: ["Tool", "English", "Information Security", "Network", "Infrastructure", "REST API", "Untried"]
+tags: ["English", "Information Security", "Network", "Infrastructure", "REST API", "Untried", "Tool"]
 ---
 # 
 

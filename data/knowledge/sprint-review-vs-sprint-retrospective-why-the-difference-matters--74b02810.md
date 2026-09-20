@@ -4,7 +4,7 @@ notion_id: 74b02810-30eb-409a-80ef-5d87b8e79004
 notion_url: https://app.notion.com/p/Sprint-review-vs-sprint-retrospective-Why-the-difference-matters-74b0281030eb409a80ef5d87b8e79004
 last_edited: 2022-12-19T14:31:00.000Z
 source_url: https://blog.logrocket.com/product-management/sprint-review-vs-retrospective/
-tags: ["Article", "LogRocket Blog", "English", "Product Management", "Project Management", "Agile"]
+tags: ["English", "Product Management", "Project Management", "Agile", "Article", "LogRocket Blog"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

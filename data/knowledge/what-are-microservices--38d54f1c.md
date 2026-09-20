@@ -4,7 +4,7 @@ notion_id: 38d54f1c-7d23-8160-b665-ceada4ddf9bc
 notion_url: https://app.notion.com/p/What-are-microservices-38d54f1c7d238160b665ceada4ddf9bc
 last_edited: 2026-06-28T03:34:00.000Z
 source_url: https://microservices.io/index.html
-tags: ["English", "Microservices", "System Design / Software Architecture", "Cloud", "Event Driven Architecture", "Article", "Tool", "Chris Richardson"]
+tags: ["Microservices", "System Design / Software Architecture", "Cloud", "Event Driven Architecture", "Article", "Tool", "Chris Richardson", "English"]
 ---
 ![image](https://microservices.io/i/home-page/home-page-microservices-teams-subdomains.png)
 

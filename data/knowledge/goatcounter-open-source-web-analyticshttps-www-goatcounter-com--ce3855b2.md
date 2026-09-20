@@ -4,7 +4,7 @@ notion_id: ce3855b2-c811-46d5-ba47-e50ec8c33d6d
 notion_url: https://app.notion.com/p/GoatCounter-Open-source-web-analyticshttps-www-goatcounter-com-ce3855b2c81146d5ba47e50ec8c33d6d
 last_edited: 2023-08-31T18:46:00.000Z
 source_url: https://www.goatcounter.com/
-tags: ["English", "Blogging/Content Creation", "Untried", "Decision Making", "Tool", "Service"]
+tags: ["Tool", "Service", "English", "Blogging/Content Creation", "Untried", "Decision Making"]
 ---
 
 

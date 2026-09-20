@@ -4,7 +4,7 @@ notion_id: fa417030-b852-46c4-8f84-c5490a637a7e
 notion_url: https://app.notion.com/p/Javascript-algorithms-Algorithms-and-data-structures-implemented-in-JavaScript-fa417030b85246c48f84c5490a637a7e
 last_edited: 2023-01-18T14:08:00.000Z
 source_url: https://github.com/trekhleb/javascript-algorithms#javascript-algorithms-and-data-structures
-tags: ["Book", "English", "Español", "Others", "Programming", "Javascript"]
+tags: ["English", "Español", "Others", "Programming", "Javascript", "Book"]
 ---
 # 
 

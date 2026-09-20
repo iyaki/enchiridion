@@ -4,7 +4,7 @@ notion_id: 38d54f1c-7d23-819e-a494-c4070399576d
 notion_url: https://app.notion.com/p/Here-s-The-Rub-We-Don-t-Believe-You-Rands-in-Repose-38d54f1c7d23819ea494c4070399576d
 last_edited: 2026-09-18T00:52:00.000Z
 source_url: https://randsinrepose.com/archives/heres-the-rub-we-dont-believe-you/
-tags: ["English", "Leadership", "Team Management", "Communication", "Remote Access", "Article", "Rands in Repose"]
+tags: ["Article", "Rands in Repose", "English", "Leadership", "Team Management", "Communication", "Remote Access"]
 ---
 
 

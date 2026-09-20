@@ -4,7 +4,7 @@ notion_id: 36054f1c-7d23-815b-b310-c04f50582b73
 notion_url: https://app.notion.com/p/Why-senior-developers-fail-to-communicate-their-expertise-nair-sh-36054f1c7d23815bb310c04f50582b73
 last_edited: 2026-09-18T00:52:00.000Z
 source_url: https://www.nair.sh/guides-and-opinions/communicating-your-expertise/why-senior-developers-fail-to-communicate-their-expertise
-tags: ["English", "Communication", "Career Growth", "Leadership", "Article", "nair.sh"]
+tags: ["nair.sh", "English", "Communication", "Career Growth", "Leadership", "Article"]
 ---
 ![image](https://www.nair.sh/_next/image?url=%2Fimages%2Fwsdftc%2Fwsdftc_cover.png&w=3840&q=75&dpl=dpl_CZhe51ErSMJNxyPtgz3AzsmDapwW)
 

@@ -4,7 +4,7 @@ notion_id: 30054f1c-7d23-818b-a264-da1571314828
 notion_url: https://app.notion.com/p/sqldef-sqldef-Idempotent-schema-management-for-MySQL-PostgreSQL-SQLite-and-SQL-Server-30054f1c7d23818ba264da1571314828
 last_edited: 2026-02-07T01:51:00.000Z
 source_url: https://github.com/sqldef/sqldef
-tags: ["Databases", "DevOps", "Cloud", "Software Development", "SQL", "Automation", "Tool", "GitHub", "English"]
+tags: ["Tool", "GitHub", "English", "Databases", "DevOps", "Cloud", "Software Development", "SQL", "Automation"]
 ---
 # 
 

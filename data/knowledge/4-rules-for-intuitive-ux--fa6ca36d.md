@@ -4,7 +4,7 @@ notion_id: fa6ca36d-70cd-4257-bceb-ff52557a89ef
 notion_url: https://app.notion.com/p/4-Rules-for-Intuitive-UX-fa6ca36d70cd4257bcebff52557a89ef
 last_edited: 2024-09-10T19:54:00.000Z
 source_url: https://www.learnui.design/blog/4-rules-intuitive-ux.html
-tags: ["Article", "LEARN UI DESIGN", "English", "UI/UX", "Product Management"]
+tags: ["UI/UX", "Product Management", "Article", "LEARN UI DESIGN", "English"]
 ---
 
 

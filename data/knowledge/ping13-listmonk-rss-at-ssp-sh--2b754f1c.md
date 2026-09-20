@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-8169-85ea-f946240511ad
 notion_url: https://app.notion.com/p/ping13-listmonk-rss-at-ssp-sh-2b754f1c7d23816985eaf946240511ad
 last_edited: 2026-09-18T00:53:00.000Z
 source_url: https://github.com/ping13/listmonk-rss
-tags: ["Github Blog", "English", "DevOps", "Automation", "Productivity", "Email", "Open Source", "Tool", "Article"]
+tags: ["English", "DevOps", "Automation", "Productivity", "Email", "Open Source", "Tool", "Article", "Github Blog"]
 ---
 # 
 

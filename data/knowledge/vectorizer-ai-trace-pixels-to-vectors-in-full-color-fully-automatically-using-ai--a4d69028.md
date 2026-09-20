@@ -4,7 +4,7 @@ notion_id: a4d69028-2b66-4a88-bf8c-fe71eb3d3b34
 notion_url: https://app.notion.com/p/Vectorizer-AI-Trace-Pixels-To-Vectors-in-Full-Color-Fully-Automatically-Using-AI-a4d690282b664a88bf8cfe71eb3d3b34
 last_edited: 2023-10-12T21:30:00.000Z
 source_url: https://vectorizer.ai/
-tags: ["Graphic Design", "Multimedia", "Service", "English"]
+tags: ["Service", "English", "Graphic Design", "Multimedia"]
 ---
 
 

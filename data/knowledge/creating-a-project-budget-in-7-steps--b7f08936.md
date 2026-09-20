@@ -4,7 +4,7 @@ notion_id: b7f08936-29dc-43d9-a4ee-0bdfcc1d8e8d
 notion_url: https://app.notion.com/p/Creating-a-Project-Budget-in-7-Steps-b7f0893629dc43d9a4ee0bdfcc1d8e8d
 last_edited: 2023-03-30T13:56:00.000Z
 source_url: https://toggl.com/blog/how-to-create-a-project-budget
-tags: ["Article", "Guide", "Toggl Blog", "English", "Project Management"]
+tags: ["Project Management", "Article", "Guide", "Toggl Blog", "English"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

@@ -4,7 +4,7 @@ notion_id: 1c954f1c-7d23-81fa-bc87-fb5dc76ed7f6
 notion_url: https://app.notion.com/p/how-wtf-Helpful-posts-on-programming-cloud-infrastructure-AI-and-other-software-engineering-top-1c954f1c7d2381fabc87fb5dc76ed7f6
 last_edited: 2025-04-20T19:05:00.000Z
 source_url: https://how.wtf/posts.html
-tags: ["Website", "Article", "English", "Programming", "SysAdmin", "DevOps", "Infrastructure"]
+tags: ["English", "Programming", "SysAdmin", "DevOps", "Infrastructure", "Website", "Article"]
 ---
 
 

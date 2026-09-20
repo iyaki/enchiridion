@@ -4,7 +4,7 @@ notion_id: 46f98382-7fc9-489e-a42d-e5598664a0ec
 notion_url: https://app.notion.com/p/How-to-Assess-Attention-to-Detail-in-Job-Applicants-46f983827fc9489ea42de5598664a0ec
 last_edited: 2023-04-20T18:53:00.000Z
 source_url: https://toggl.com/blog/how-to-assess-attention-to-detail-in-job-applicants
-tags: ["Toggl Blog", "English", "Human Resources (HH.RR.)", "Article"]
+tags: ["English", "Human Resources (HH.RR.)", "Article", "Toggl Blog"]
 ---
 
 

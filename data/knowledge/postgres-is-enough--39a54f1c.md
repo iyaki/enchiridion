@@ -4,7 +4,7 @@ notion_id: 39a54f1c-7d23-8187-aa1c-d8c71b595086
 notion_url: https://app.notion.com/p/Postgres-Is-Enough-39a54f1c7d238187aa1cd8c71b595086
 last_edited: 2026-09-18T00:52:00.000Z
 source_url: https://postgresisenough.dev/
-tags: ["Postgres Is Enough", "English", "Databases", "PostgreSQL", "Microservices", "System Design / Software Architecture", "Article"]
+tags: ["English", "Databases", "PostgreSQL", "Microservices", "System Design / Software Architecture", "Article", "Postgres Is Enough"]
 ---
 
 

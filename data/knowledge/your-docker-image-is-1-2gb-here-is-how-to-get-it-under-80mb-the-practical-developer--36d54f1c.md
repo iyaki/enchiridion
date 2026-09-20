@@ -4,7 +4,7 @@ notion_id: 36d54f1c-7d23-818f-8560-c331bd45675a
 notion_url: https://app.notion.com/p/Your-Docker-Image-Is-1-2GB-Here-Is-How-To-Get-It-Under-80MB-The-Practical-Developer-36d54f1c7d23818f8560c331bd45675a
 last_edited: 2026-09-18T00:52:00.000Z
 source_url: https://the-practical-developer.online/posts/docker-image-from-1gb-to-80mb/
-tags: ["The Practical Developer", "English", "Docker", "Node.js", "DevOps", "Backend", "Containerization", "Article", "Tutorial"]
+tags: ["Docker", "Node.js", "DevOps", "Backend", "Containerization", "Article", "Tutorial", "The Practical Developer", "English"]
 ---
 
 

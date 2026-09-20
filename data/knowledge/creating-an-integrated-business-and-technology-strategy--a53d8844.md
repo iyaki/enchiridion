@@ -4,7 +4,7 @@ notion_id: a53d8844-2ae9-43c8-bcce-2e9c4e4f96fc
 notion_url: https://app.notion.com/p/Creating-an-integrated-business-and-technology-strategy-a53d88442ae943c8bcce2e9c4e4f96fc
 last_edited: 2023-08-29T12:19:00.000Z
 source_url: https://martinfowler.com/articles/creating-integrated-tech-strategy.html
-tags: ["Article", "Martin Fowler", "English", "Entrepreneurship", "Decision Making", "Product Management"]
+tags: ["English", "Entrepreneurship", "Decision Making", "Product Management", "Article", "Martin Fowler"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

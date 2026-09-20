@@ -4,7 +4,7 @@ notion_id: 9d7d795b-40c5-4109-8047-4a6ac851c966
 notion_url: https://app.notion.com/p/Experiment-The-hidden-costs-of-waiting-on-slow-build-times-9d7d795b40c5410980474a6ac851c966
 last_edited: 2023-04-16T22:46:00.000Z
 source_url: https://github.blog/2022-12-08-experiment-the-hidden-costs-of-waiting-on-slow-build-times/
-tags: ["English", "DevOps", "Productivity", "Continuous Integration/Continuous Delivery", "Article", "Github Blog"]
+tags: ["Github Blog", "English", "DevOps", "Productivity", "Continuous Integration/Continuous Delivery", "Article"]
 ---
 
 

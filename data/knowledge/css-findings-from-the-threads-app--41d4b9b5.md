@@ -4,7 +4,7 @@ notion_id: 41d4b9b5-65c7-4965-966a-cdf00d39ce29
 notion_url: https://app.notion.com/p/CSS-Findings-From-The-Threads-App-41d4b9b565c74965966acdf00d39ce29
 last_edited: 2023-07-14T17:26:00.000Z
 source_url: https://ishadeed.com/article/threads-app-css/
-tags: ["English", "CSS", "Article", "Ahmad Shadeed's Blog"]
+tags: ["Article", "Ahmad Shadeed's Blog", "English", "CSS"]
 ---
 
 

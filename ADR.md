@@ -5,9 +5,15 @@ anotan para no repetir las mismas discusiones. Última actualización: 2026-09-2
 
 ## Estado del proyecto
 
-Planificación cerrada, implementación no iniciada. El scaffold JS del commit
-`378a521` quedó **descartado** por la decisión de stack (ADR-08): se elimina al
-iniciar la implementación en Go.
+Planificación cerrada, implementación iniciada (2026-09-20):
+- **Fase 0 ejecutada**: scaffold JS eliminado; módulo Go inicializado
+  (`github.com/iyaki/enchiridion`, Go 1.25, cero dependencias).
+- **Harness instalado** (patrón reglint/specralph): Makefile de gates
+  (`make quality`), lefthook pre-commit (format + coverage + mutation-diff +
+  lint + security + arch), golangci-lint, go-arch-lint (sync→notion+render;
+  notion y render puros), gremlins, govulncheck/gosec, goreleaser, workflows
+  (quality/security/release/update-agent-skills), devcontainer, editorconfig,
+  opencode.jsonc con protecciones del harness.
 
 ---
 

@@ -1,0 +1,38 @@
+version: 3
+workdir: .
+allow:
+  ignoreNotFoundComponents: true
+
+components:
+  cmd:
+    in:
+      - cmd/**
+  cli:
+    in:
+      - internal/cli/**
+  notion:
+    in:
+      - internal/notion/**
+  render:
+    in:
+      - internal/render/**
+  sync:
+    in:
+      - internal/sync/**
+
+deps:
+  cmd:
+    anyProjectDeps: true
+  cli:
+    anyProjectDeps: true
+  sync:
+    mayDependOn:
+      - notion
+      - render
+    anyVendorDeps: false
+  notion:
+    anyProjectDeps: false
+    anyVendorDeps: false
+  render:
+    anyProjectDeps: false
+    anyVendorDeps: false

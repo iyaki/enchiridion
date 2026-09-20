@@ -1,0 +1,87 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+	"name": "Enchiridion Dev Container",
+	"image": "mcr.microsoft.com/devcontainers/universal:5-linux",
+
+	"runArgs": [
+		"--env-file", "${localWorkspaceFolder}/.env",
+		"--memory", "8g"
+	],
+
+	"mounts": [
+		// GitHub CLI config
+		{
+			"source": "${localEnv:HOME}/.config/gh/",
+			"target": "/home/codespace/.config/gh/",
+			"type": "bind"
+		},
+		// Override Git LFS artifacts script to avoid conflicts with pre configured git hooks (e.g, lefthook).
+		{
+			"source": "${localWorkspaceFolder}/.devcontainer/pull-git-lfs-artifacts-override.sh",
+			"target": "/usr/local/share/pull-git-lfs-artifacts.sh",
+			"type": "bind"
+		},
+		{
+			"source": "${localEnv:HOME}/.omp",
+			"target": "/home/codespace/.omp",
+			"type": "bind"
+		}
+	],
+
+	"remoteEnv": {
+		// https://opencode.ai/docs/cli/#environment-variables
+		"OPENCODE_EXPERIMENTAL_LSP_TOOL": "true",
+		"OPENCODE_EXPERIMENTAL_LSP_TY": "true",
+		"OPENCODE_ENABLE_EXPERIMENTAL_MODELS": "true",
+		"OPENCODE_DISABLE_AUTOCOMPACT": "true",
+		"OPENCODE_DISABLE_CLAUDE_CODE": "true",
+		"OPENCODE_DISABLE_FILETIME_CHECK": "true",
+		"OPENCODE_EXPERIMENTAL_DISABLE_FILEWATCHER": "true",
+		"OPENCODE_EXPERIMENTAL_MARKDOWN": "true",
+		"OPENCODE_EXPERIMENTAL_PLAN_MODE": "true",
+		"OPENCODE_EXPERIMENTAL_ICON_DISCOVERY": "true",
+		"OPENCODE_EXPERIMENTAL_BASH_DEFAULT_TIMEOUT_MS": "300000",
+		"PATH": "${containerEnv:PATH}:bin",
+		// For usage with /editr command from OpenCode - https://opencode.ai/docs/tui/#editor-setup
+		"EDITOR": "code --wait",
+		"VISUAL": "code --wait",
+		"XDG_CONFIG_HOME": "/home/codespace/.config",
+		"XDG_CACHE_HOME": "/home/codespace/.cache",
+		"XDG_DATA_HOME": "/home/codespace/.local/share",
+		"XDG_STATE_HOME": "/home/codespace/.local/state"
+	},
+
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:": {
+			"installZsh": false,
+			"installOhMyZsh": false,
+			"installOhMyZshConfig": false,
+			"username": "automatic"
+		},
+		"ghcr.io/devcontainers-extra/features/shfmt:": {},
+		"ghcr.io/devcontainers-extra/features/opencode:": {},
+		"ghcr.io/iyaki/devcontainer-features/oh-my-pi:": {},
+		"ghcr.io/iyaki/devcontainer-features/ralph:": {},
+		"ghcr.io/iyaki/devcontainer-features/lefthook:": {}
+	},
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"editorconfig.editorconfig",
+				"golang.go",
+				"nhoizey.gremlins"
+			]
+		}
+	},
+
+	"initializeCommand": "${localWorkspaceFolder}/.devcontainer/setup.sh",
+	"postCreateCommand": {
+		"Install go tools": "/bin/bash .devcontainer/install-go-tools.sh",
+		"Setup lefthook": "lefthook install"
+	}
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}

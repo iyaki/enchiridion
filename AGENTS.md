@@ -1,34 +1,40 @@
-# enchiridion — espejo de la knowledge base de Notion como markdown
+# Agent Guidelines
 
-Conocimiento del proyecto para agentes que trabajan en este repo.
+## Spec-First Workflow
 
-## Qué es
+- Read `specs/README.md` before any feature work.
+- Assume specs describe intent, not implementation.
+- Verify reality in the codebase before claiming something exists.
+- Implement to spec patterns and data shapes; update specs only when asked.
+- When writing specs, **NEVER** follow Test Driven Development practices. Write the spec first and stop.
+- For programming tasks, always load Test Driven Development skill.
+- Decisions and their rationale live in `ADR.md`; do not re-litigate closed decisions — propose a new ADR if one must change.
 
-`enchiridion` baja la knowledge base de Notion (data source `KNOWLEDGE_BASE_DATASOURCE_ID`)
-y la escribe como `knowledge/*.md` — un archivo por página, con frontmatter
-(`title`, `tags`, `notion_id`, `notion_url`, `source_url`, `last_edited`).
+## Testing and Quality Gates
 
-## Convenciones
+- Follow Test Driven Development practices: write failing tests before implementation.
+- Local suite: `make quality`.
+- Targeted runs:
+  - `make lint|test|test-race|test-flaky|coverage|mutation|security|arch`.
+- Coverage gate: min 90%.
+- Execute mutation testing with `make mutation` ONLY in final stages of the task development. **NEVER** execute mutation testing during the Test Driven Development process.
 
-- JavaScript plano ESM, Node 24, tabs — igual que `content-curator/organizer`.
-- Tests con `node:test` + `assert/strict` en archivos `*.test.mjs`, sin red:
-  todo lo testeable vive en `render.js` (funciones puras).
-- `index.js` es la única pieza con I/O (cliente Notion + fs); mantenerlo así.
-- El renderer de bloques es flat: no baja a bloques hijos anidados (toggles,
-  sub-páginas). Si hiciera falta, evaluar `notion-to-md`, no crecer el renderer a mano.
+## Build and Run
 
-## Verificación
+- Build the CLI binary: `make build`.
+- Run from source (no build): `make run ARGS='<command> [flags]'`.
+- Current state: `sync` is not implemented yet — see `specs/implementation-plan.md`.
 
-- `npm test` — offline, rápido, siempre debe pasar.
-- El sync real requiere `NOTION_TOKEN` (no hay en CI más que en el secret del workflow).
+## Tooling Expectations
 
-## Consumo por agentes (el propósito del proyecto)
+- Go version: 1.25 (see `go.mod`).
+- Mutation testing tool: `gremlins`.
+- Lint and security via `golangci-lint`, `govulncheck`, `gosec`, `go-arch-lint`, `gofmt`.
 
-En proyectos donde se quiera consultar el conocimiento, agregar al `AGENTS.md`:
+## Implementation Guidance
 
-```markdown
-## enchiridion
-Antes de recomendar arquitectura o patrones de diseño, buscá en
-`<ruta>/enchiridion/knowledge/` y citá las entradas que usaste.
-Si no hay precedentes, decilo explícitamente.
-```
+- **Zero third-party dependencies** (ADR-08): stdlib only; any new `require` in `go.mod` needs a new ADR.
+- The mirror never lies silently: unsupported blocks render as visible comments (ADR-05); a sync with partial failures must exit non-zero.
+- The renderer stays pure (no I/O, no clock, no env) — everything testable offline.
+- Mirror fidelity rules live in ADR-04; user values (tokens, datasource ids) never enter the code (ADR-11).
+- Keep the consumer contract stable: file naming, frontmatter fields and cache paths are relied upon by other projects' `AGENTS.md` (ADR-10).

@@ -17,6 +17,9 @@ const (
 	untitled    = "untitled"
 	dirPerm     = 0o755
 	filePerm    = 0o600
+	// maxSlugLen keeps file names well under the 255-byte filesystem limit
+	// even for pathologically long titles.
+	maxSlugLen = 100
 )
 
 // Accented Latin letters folded to ASCII. // ponytail: explicit table because
@@ -52,14 +55,20 @@ func Slugify(title string) string {
 	return s
 }
 
-// PageFileName is the mirror file name for a page: {slug}--{id8}.md.
+// PageFileName is the mirror file name for a page: {slug}--{id8}.md. The slug
+// is capped so over-long titles cannot exceed filesystem limits.
 func PageFileName(meta model.PageMeta) string {
 	id := meta.ID
 	if len(id) > idPrefixLen {
 		id = id[:idPrefixLen]
 	}
 
-	return Slugify(meta.Title) + "--" + id + ".md"
+	slug := Slugify(meta.Title)
+	if len(slug) > maxSlugLen {
+		slug = slug[:maxSlugLen]
+	}
+
+	return slug + "--" + id + ".md"
 }
 
 // quote escapes a value for its double-quoted frontmatter field.

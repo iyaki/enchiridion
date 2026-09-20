@@ -31,6 +31,18 @@ func TestPageFileName(t *testing.T) {
 	}
 }
 
+func TestPageFileNameCapsSlugLength(t *testing.T) {
+	longTitle := strings.Repeat("word ", 60)
+	meta := model.PageMeta{ID: "a1b2c3d4-e5f6-7890", Title: longTitle}
+	got := PageFileName(meta)
+	if len(got) > 255 {
+		t.Fatalf("file name exceeds filesystem limit: %d bytes", len(got))
+	}
+	if !strings.HasSuffix(got, "--a1b2c3d4.md") {
+		t.Fatalf("truncated name lost the id suffix: %q", got)
+	}
+}
+
 func TestFrontmatter(t *testing.T) {
 	meta := model.PageMeta{
 		ID:         "a1b2c3d4-e5f6",

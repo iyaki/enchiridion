@@ -90,6 +90,10 @@ be rendered is left as a visible comment in the markdown.
 | Tables | markdown table, with a header row when the table declares one |
 | Any other block | visible comment `<!-- unsupported block: X -->` |
 
+Known-type blocks that arrive without their expected payload (a link with no
+URL, an image with no source) also render a visible marker — never an empty or
+silent output.
+
 Inline formatting: bold, italic, strikethrough, code, and links according to the
 original text.
 

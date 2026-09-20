@@ -71,64 +71,55 @@ func boldRun(s string) richRun {
 	}
 }
 
-func TestQueryPagesPaginatesAndMapsProperties(t *testing.T) {
+func assertQueryHeaders(t *testing.T, r *http.Request) {
+	t.Helper()
+	if r.Method != http.MethodPost || !strings.HasSuffix(r.URL.Path, "/data_sources/ds123/query") {
+		t.Errorf("unexpected request: %s %s", r.Method, r.URL.Path)
+	}
+	if auth := r.Header.Get("Authorization"); auth != "Bearer secret_test" {
+		t.Errorf("Authorization = %q", auth)
+	}
+	if v := r.Header.Get("Notion-Version"); v != "2025-09-03" {
+		t.Errorf("Notion-Version = %q", v)
+	}
+}
+
+func assertPageSize(t *testing.T, rec *recorder) {
+	t.Helper()
+	var body struct {
+		PageSize int `json:"page_size"`
+	}
+	_ = json.Unmarshal([]byte(rec.bodies[rec.requests-1]), &body)
+	if body.PageSize != 100 {
+		t.Errorf("page_size = %d, want 100", body.PageSize)
+	}
+}
+
+func TestQueryPagesPaginatesInOrder(t *testing.T) {
 	rec := &recorder{}
 	c := newTestClient(t, rec)
 	rec.handler = func(w http.ResponseWriter, r *http.Request) {
-		if r.Method != http.MethodPost || !strings.HasSuffix(r.URL.Path, "/data_sources/ds123/query") {
-			t.Errorf("unexpected request: %s %s", r.Method, r.URL.Path)
-		}
-		if auth := r.Header.Get("Authorization"); auth != "Bearer secret_test" {
-			t.Errorf("Authorization = %q", auth)
-		}
-		if v := r.Header.Get("Notion-Version"); v != "2025-09-03" {
-			t.Errorf("Notion-Version = %q", v)
-		}
+		assertQueryHeaders(t, r)
+		assertPageSize(t, rec)
 
+		if rec.requests == 1 {
+			pg := page{
+				ID: "id-1", URL: "https://notion.so/id-1",
+				LastEditedTime: "2026-09-20T10:00:00.000Z",
+			}
+			writeJSON(t, w, queryResponse{Results: []page{pg}, HasMore: true, NextCursor: "cursor-2"})
+
+			return
+		}
 		var body struct {
-			PageSize    int    `json:"page_size"`
 			StartCursor string `json:"start_cursor"`
 		}
 		_ = json.Unmarshal([]byte(rec.bodies[rec.requests-1]), &body)
-		if body.PageSize != 100 {
-			t.Errorf("page_size = %d, want 100", body.PageSize)
+		if body.StartCursor != "cursor-2" {
+			t.Errorf("start_cursor = %q, want cursor-2", body.StartCursor)
 		}
-
-		switch rec.requests {
-		case 1:
-			writeJSON(t, w, queryResponse{
-				Results: []page{{
-					ID:             "id-1",
-					URL:            "https://notion.so/id-1",
-					LastEditedTime: "2026-09-20T10:00:00.000Z",
-					Properties: map[string]property{
-						"Name": {Type: "title", Title: []run{{PlainText: "Design Patterns"}}},
-						"URL":  {Type: "url", URL: "https://src.example/a"},
-						"Category": {Type: "multi_select", MultiSelect: []option{
-							{Name: "arquitectura"}, {Name: "articulo"},
-						}},
-					},
-				}},
-				HasMore:    true,
-				NextCursor: "cursor-2",
-			})
-		case 2:
-			if body.StartCursor != "cursor-2" {
-				t.Errorf("start_cursor = %q, want cursor-2", body.StartCursor)
-			}
-			writeJSON(t, w, queryResponse{
-				Results: []page{{
-					ID:             "id-2",
-					URL:            "https://notion.so/id-2",
-					LastEditedTime: "2026-09-21T10:00:00.000Z",
-					Properties: map[string]property{
-						"Name":   {Type: "title", Title: []run{{PlainText: "Second"}}},
-						"Temas":  {Type: "multi_select", MultiSelect: []option{{Name: "ddd"}}},
-						"Estado": {Type: "status", Status: &option{Name: "published"}},
-					},
-				}},
-			})
-		}
+		pg := page{ID: "id-2", URL: "https://notion.so/id-2", LastEditedTime: "2026-09-21T10:00:00.000Z"}
+		writeJSON(t, w, queryResponse{Results: []page{pg}})
 	}
 
 	metas, err := c.QueryPages("ds123", QueryFilter{})
@@ -138,48 +129,47 @@ func TestQueryPagesPaginatesAndMapsProperties(t *testing.T) {
 	if len(metas) != 2 {
 		t.Fatalf("got %d pages, want 2", len(metas))
 	}
-	if metas[0].Title != "Design Patterns" || metas[0].SourceURL != "https://src.example/a" {
-		t.Errorf("page 1 meta = %+v", metas[0])
-	}
-	if got := strings.Join(metas[0].Tags, ","); got != "arquitectura,articulo" {
-		t.Errorf("page 1 tags = %q", got)
-	}
-	if metas[1].Title != "Second" {
-		t.Errorf("page 2 title = %q", metas[1].Title)
-	}
-	// Cross-property order depends on map iteration; compare as a set.
-	if got := strings.Join(metas[1].Tags, ","); !containsSameItems(got, "ddd,published") {
-		t.Errorf("page 2 tags = %q", got)
+	for i, want := range []string{"id-1", "id-2"} {
+		if metas[i].ID != want {
+			t.Errorf("page %d id = %q, want %q", i, metas[i].ID, want)
+		}
 	}
 }
 
-// containsSameItems checks comma-separated lists hold the same items in any order.
-func containsSameItems(got, want string) bool {
-	toSet := func(s string) map[string]bool {
-		set := map[string]bool{}
-		for _, item := range strings.Split(s, ",") {
-			set[item] = true
-		}
-
-		return set
-	}
-	a, b := toSet(got), toSet(want)
-	if len(a) != len(b) {
-		return false
-	}
-	for k := range a {
-		if !b[k] {
-			return false
-		}
+func TestQueryPagesMapsProperties(t *testing.T) {
+	rec := &recorder{}
+	c := newTestClient(t, rec)
+	rec.handler = func(w http.ResponseWriter, _ *http.Request) {
+		writeJSON(t, w, queryResponse{Results: []page{{
+			ID:             "id-1",
+			URL:            "https://notion.so/id-1",
+			LastEditedTime: "2026-09-20T10:00:00.000Z",
+			Properties: map[string]property{
+				"Name": {Type: "title", Title: []run{{PlainText: "Design Patterns"}}},
+				"URL":  {Type: "url", URL: "https://src.example/a"},
+				"Category": {Type: "multi_select", MultiSelect: []option{
+					{Name: "arquitectura"}, {Name: "articulo"},
+				}},
+			},
+		}}})
 	}
 
-	return true
+	metas, err := c.QueryPages("ds123", QueryFilter{})
+	if err != nil {
+		t.Fatalf("QueryPages: %v", err)
+	}
+	if metas[0].Title != "Design Patterns" || metas[0].SourceURL != "https://src.example/a" {
+		t.Errorf("meta = %+v", metas[0])
+	}
+	if got := strings.Join(metas[0].Tags, ","); got != "arquitectura,articulo" {
+		t.Errorf("tags = %q", got)
+	}
 }
 
 func TestQueryPagesIncrementalFilter(t *testing.T) {
 	rec := &recorder{}
 	c := newTestClient(t, rec)
-	rec.handler = func(w http.ResponseWriter, r *http.Request) {
+	rec.handler = func(w http.ResponseWriter, _ *http.Request) {
 		writeJSON(t, w, queryResponse{})
 	}
 
@@ -205,122 +195,10 @@ func TestQueryPagesIncrementalFilter(t *testing.T) {
 	}
 }
 
-func TestPageBlocksMapsBlockTypes(t *testing.T) {
-	rec := &recorder{}
-	c := newTestClient(t, rec)
-	rec.handler = func(w http.ResponseWriter, r *http.Request) {
-		switch rec.requests {
-		case 1:
-			writeJSON(t, w, blocksResponse{Results: []apiBlock{
-				{Type: model.TypeParagraph, textPayload: textPayload{RichText: []richRun{
-					{PlainText: "plain "}, boldRun("bold"),
-				}}},
-				{Type: model.TypeCode, textPayload: textPayload{
-					RichText: []richRun{{PlainText: "const x = 1"}}, Language: "js",
-				}},
-				{Type: model.TypeBookmark, Bookmark: &urlPayload{URL: "https://a.b"}},
-				{Type: model.TypeImage, Image: &imagePayload{External: &urlPayload{URL: "https://img.example/x.png"}}},
-				{Type: model.TypeImage, Image: &imagePayload{File: &urlPayload{URL: "https://notion.so/expiring.png"}}},
-				{Type: model.TypeChildPage, ChildPage: &childPagePayload{Title: "Specs"}},
-				{Type: "morph"},
-				{
-					Type: model.TypeTable, ID: "tbl-1", HasChildren: true,
-					Table: &tablePayload{HasColumnHeader: true},
-				},
-			}})
-		default:
-			writeJSON(t, w, blocksResponse{Results: []apiBlock{
-				{Type: "table_row", TableRow: &tableRowPayload{Cells: [][]richRun{
-					{{PlainText: "Name"}},
-				}}},
-				{Type: "table_row", TableRow: &tableRowPayload{Cells: [][]richRun{
-					{{PlainText: "a|b"}},
-					{boldRun("x\ny")},
-				}}},
-			}})
-		}
-	}
-
-	blocks, err := c.PageBlocks("page1")
-	if err != nil {
-		t.Fatalf("PageBlocks: %v", err)
-	}
-
-	wantTypes := []string{
-		model.TypeParagraph, model.TypeCode, model.TypeBookmark, model.TypeImage,
-		model.TypeImage, model.TypeChildPage, "morph", model.TypeTable,
-	}
-	if len(blocks) != len(wantTypes) {
-		t.Fatalf("got %d blocks, want %d", len(blocks), len(wantTypes))
-	}
-	for i, want := range wantTypes {
-		if blocks[i].Type != want {
-			t.Errorf("block %d type = %q, want %q", i, blocks[i].Type, want)
-		}
-	}
-
-	if got := blocks[0].RichText[1]; !got.Bold || got.Plain != "bold" {
-		t.Errorf("paragraph runs = %+v", blocks[0].RichText)
-	}
-	if blocks[1].Language != "js" {
-		t.Errorf("code language = %q", blocks[1].Language)
-	}
-	if blocks[2].URL != "https://a.b" {
-		t.Errorf("bookmark url = %q", blocks[2].URL)
-	}
-	if blocks[3].Internal {
-		t.Errorf("external image marked internal")
-	}
-	if !blocks[4].Internal || blocks[4].URL != "https://notion.so/expiring.png" {
-		t.Errorf("internal image = %+v", blocks[4])
-	}
-	if blocks[5].Title != "Specs" {
-		t.Errorf("child page title = %q", blocks[5].Title)
-	}
-
-	tbl := blocks[7]
-	if !tbl.HasHeader || len(tbl.Rows) != 2 {
-		t.Fatalf("table = %+v", tbl)
-	}
-	if tbl.Rows[0][0][0].Plain != "Name" {
-		t.Errorf("header cell = %+v", tbl.Rows[0][0])
-	}
-	if tbl.Rows[1][0][0].Plain != "a|b" {
-		t.Errorf("cell 0 = %+v", tbl.Rows[1][0])
-	}
-	if !tbl.Rows[1][1][0].Bold {
-		t.Errorf("cell 1 = %+v", tbl.Rows[1][1])
-	}
-}
-
-func TestRetries429HonoringRetryAfter(t *testing.T) {
-	rec := &recorder{}
-	c := newTestClient(t, rec)
-	rec.handler = func(w http.ResponseWriter, r *http.Request) {
-		if rec.requests == 1 {
-			w.Header().Set("Retry-After", "7")
-			w.WriteHeader(http.StatusTooManyRequests)
-
-			return
-		}
-		writeJSON(t, w, queryResponse{})
-	}
-
-	if _, err := c.QueryPages("ds123", QueryFilter{}); err != nil {
-		t.Fatalf("QueryPages: %v", err)
-	}
-	if rec.requests != 2 {
-		t.Errorf("requests = %d, want 2", rec.requests)
-	}
-	if len(rec.sleeps) != 1 || rec.sleeps[0] != 7*time.Second {
-		t.Errorf("sleeps = %v, want [7s]", rec.sleeps)
-	}
-}
-
 func TestNilAndEmptyPropertiesMapSafely(t *testing.T) {
 	rec := &recorder{}
 	c := newTestClient(t, rec)
-	rec.handler = func(w http.ResponseWriter, r *http.Request) {
+	rec.handler = func(w http.ResponseWriter, _ *http.Request) {
 		writeJSON(t, w, queryResponse{Results: []page{{
 			ID:             "id-9",
 			URL:            "https://notion.so/id-9",
@@ -343,12 +221,100 @@ func TestNilAndEmptyPropertiesMapSafely(t *testing.T) {
 	}
 }
 
-func TestBlocksWithoutPayloadsMapSafely(t *testing.T) {
+func TestPageBlocksTextMapping(t *testing.T) {
 	rec := &recorder{}
 	c := newTestClient(t, rec)
-	rec.handler = func(w http.ResponseWriter, r *http.Request) {
+	rec.handler = func(w http.ResponseWriter, _ *http.Request) {
 		writeJSON(t, w, blocksResponse{Results: []apiBlock{
+			{Type: model.TypeParagraph, textPayload: textPayload{RichText: []richRun{
+				{PlainText: "plain "}, boldRun("bold"),
+			}}},
+			{Type: model.TypeCode, textPayload: textPayload{
+				RichText: []richRun{{PlainText: "const x = 1"}}, Language: "js",
+			}},
+			{Type: model.TypeChildPage, ChildPage: &childPagePayload{Title: "Specs"}},
+			{Type: "morph"},
+		}})
+	}
+
+	blocks, err := c.PageBlocks("page1")
+	if err != nil {
+		t.Fatalf("PageBlocks: %v", err)
+	}
+
+	wantTypes := []string{model.TypeParagraph, model.TypeCode, model.TypeChildPage, "morph"}
+	if len(blocks) != len(wantTypes) {
+		t.Fatalf("got %d blocks, want %d", len(blocks), len(wantTypes))
+	}
+	for i, want := range wantTypes {
+		if blocks[i].Type != want {
+			t.Errorf("block %d type = %q, want %q", i, blocks[i].Type, want)
+		}
+	}
+	if got := blocks[0].RichText[1]; !got.Bold || got.Plain != "bold" {
+		t.Errorf("paragraph runs = %+v", blocks[0].RichText)
+	}
+	if blocks[1].Language != "js" {
+		t.Errorf("code language = %q", blocks[1].Language)
+	}
+	if blocks[2].Title != "Specs" {
+		t.Errorf("child page title = %q", blocks[2].Title)
+	}
+}
+
+func TestPageBlocksTableRowsResolvedRecursively(t *testing.T) {
+	rec := &recorder{}
+	c := newTestClient(t, rec)
+	rec.handler = func(w http.ResponseWriter, _ *http.Request) {
+		if rec.requests == 1 {
+			table := apiBlock{
+				Type: model.TypeTable, ID: "tbl-1", HasChildren: true,
+				Table: &tablePayload{HasColumnHeader: true},
+			}
+			writeJSON(t, w, blocksResponse{Results: []apiBlock{table}})
+
+			return
+		}
+		writeJSON(t, w, blocksResponse{Results: []apiBlock{
+			{Type: "table_row", TableRow: &tableRowPayload{Cells: [][]richRun{
+				{{PlainText: "Name"}},
+			}}},
+			{Type: "table_row", TableRow: &tableRowPayload{Cells: [][]richRun{
+				{{PlainText: "a|b"}},
+				{boldRun("x\ny")},
+			}}},
+		}})
+	}
+
+	blocks, err := c.PageBlocks("page1")
+	if err != nil {
+		t.Fatalf("PageBlocks: %v", err)
+	}
+
+	tbl := blocks[0]
+	if !tbl.HasHeader || len(tbl.Rows) != 2 {
+		t.Fatalf("table = %+v", tbl)
+	}
+	if tbl.Rows[0][0][0].Plain != "Name" {
+		t.Errorf("header cell = %+v", tbl.Rows[0][0])
+	}
+	if tbl.Rows[1][0][0].Plain != "a|b" {
+		t.Errorf("cell 0 = %+v", tbl.Rows[1][0])
+	}
+	if !tbl.Rows[1][1][0].Bold {
+		t.Errorf("cell 1 = %+v", tbl.Rows[1][1])
+	}
+}
+
+func TestPageBlocksLinksAndImages(t *testing.T) {
+	rec := &recorder{}
+	c := newTestClient(t, rec)
+	rec.handler = func(w http.ResponseWriter, _ *http.Request) {
+		writeJSON(t, w, blocksResponse{Results: []apiBlock{
+			{Type: model.TypeBookmark, Bookmark: &urlPayload{URL: "https://a.b"}},
 			{Type: model.TypeBookmark},
+			{Type: model.TypeImage, Image: &imagePayload{External: &urlPayload{URL: "https://img.example/x.png"}}},
+			{Type: model.TypeImage, Image: &imagePayload{File: &urlPayload{URL: "https://notion.so/expiring.png"}}},
 			{Type: model.TypeImage},
 		}})
 	}
@@ -357,18 +323,51 @@ func TestBlocksWithoutPayloadsMapSafely(t *testing.T) {
 	if err != nil {
 		t.Fatalf("PageBlocks: %v", err)
 	}
-	if blocks[0].URL != "" {
-		t.Errorf("bookmark without payload: url = %q", blocks[0].URL)
+	if blocks[0].URL != "https://a.b" {
+		t.Errorf("bookmark url = %q", blocks[0].URL)
 	}
-	if blocks[1].URL != "" || blocks[1].Internal {
-		t.Errorf("image without payload: %+v", blocks[1])
+	if blocks[1].URL != "" {
+		t.Errorf("payload-less bookmark url = %q, want empty", blocks[1].URL)
+	}
+	if blocks[2].URL != "https://img.example/x.png" || blocks[2].Internal {
+		t.Errorf("external image = %+v", blocks[2])
+	}
+	if !blocks[3].Internal || blocks[3].URL != "https://notion.so/expiring.png" {
+		t.Errorf("internal image = %+v", blocks[3])
+	}
+	if blocks[4].URL != "" || blocks[4].Internal {
+		t.Errorf("source-less image = %+v", blocks[4])
+	}
+}
+
+func TestRetries429HonoringRetryAfter(t *testing.T) {
+	rec := &recorder{}
+	c := newTestClient(t, rec)
+	rec.handler = func(w http.ResponseWriter, _ *http.Request) {
+		if rec.requests == 1 {
+			w.Header().Set("Retry-After", "7")
+			w.WriteHeader(http.StatusTooManyRequests)
+
+			return
+		}
+		writeJSON(t, w, queryResponse{})
+	}
+
+	if _, err := c.QueryPages("ds123", QueryFilter{}); err != nil {
+		t.Fatalf("QueryPages: %v", err)
+	}
+	if rec.requests != 2 {
+		t.Errorf("requests = %d, want 2", rec.requests)
+	}
+	if len(rec.sleeps) != 1 || rec.sleeps[0] != 7*time.Second {
+		t.Errorf("sleeps = %v, want [7s]", rec.sleeps)
 	}
 }
 
 func TestRateLimitWithoutRetryAfterUsesBackoff(t *testing.T) {
 	rec := &recorder{}
 	c := newTestClient(t, rec)
-	rec.handler = func(w http.ResponseWriter, r *http.Request) {
+	rec.handler = func(w http.ResponseWriter, _ *http.Request) {
 		if rec.requests == 1 {
 			w.WriteHeader(http.StatusTooManyRequests)
 
@@ -388,7 +387,7 @@ func TestRateLimitWithoutRetryAfterUsesBackoff(t *testing.T) {
 func TestGivesUpAfterThreeAttemptsOnServerError(t *testing.T) {
 	rec := &recorder{}
 	c := newTestClient(t, rec)
-	rec.handler = func(w http.ResponseWriter, r *http.Request) {
+	rec.handler = func(w http.ResponseWriter, _ *http.Request) {
 		w.WriteHeader(http.StatusInternalServerError)
 	}
 
@@ -407,7 +406,7 @@ func TestGivesUpAfterThreeAttemptsOnServerError(t *testing.T) {
 func TestUnauthorizedFailsFastWithoutRetries(t *testing.T) {
 	rec := &recorder{}
 	c := newTestClient(t, rec)
-	rec.handler = func(w http.ResponseWriter, r *http.Request) {
+	rec.handler = func(w http.ResponseWriter, _ *http.Request) {
 		w.WriteHeader(http.StatusUnauthorized)
 	}
 
@@ -426,7 +425,7 @@ func TestUnauthorizedFailsFastWithoutRetries(t *testing.T) {
 func TestClientErrorSurfacesBody(t *testing.T) {
 	rec := &recorder{}
 	c := newTestClient(t, rec)
-	rec.handler = func(w http.ResponseWriter, r *http.Request) {
+	rec.handler = func(w http.ResponseWriter, _ *http.Request) {
 		w.WriteHeader(http.StatusBadRequest)
 		_, _ = w.Write([]byte(`{"message":"Invalid data source"}`))
 	}

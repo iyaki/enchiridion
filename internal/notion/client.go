@@ -22,6 +22,8 @@ const (
 	apiVersion     = "2025-09-03"
 	pageSize       = 100
 	maxAttempts    = 3
+	requestTimeout = 30 * time.Second
+	maxErrorBody   = 4096
 )
 
 // QueryFilter narrows a data source query. Empty fields mean "no filter".
@@ -44,7 +46,7 @@ func NewClient(token string) *Client {
 	return &Client{
 		baseURL: defaultBaseURL,
 		token:   token,
-		http:    &http.Client{Timeout: 30 * time.Second},
+		http:    &http.Client{Timeout: requestTimeout},
 		sleep:   time.Sleep,
 	}
 }
@@ -100,9 +102,11 @@ func (c *Client) PageBlocks(pageID string) ([]model.Block, error) {
 		}
 		blocks = append(blocks, blk)
 	}
+
 	return blocks, nil
 }
 
+// children fetches every child block of a block/page, following pagination.
 func (c *Client) children(blockID string) ([]apiBlock, error) {
 	var raws []apiBlock
 	cursor := ""
@@ -127,42 +131,77 @@ func (c *Client) children(blockID string) ([]apiBlock, error) {
 	}
 }
 
-// distill maps a raw API block into a model.Block.
+// distill maps a raw API block into a model.Block, delegating to focused
+// helpers so each stays simple.
 func (c *Client) distill(raw apiBlock) (model.Block, error) {
 	blk := model.Block{Type: raw.Type}
-	switch raw.Type {
+	switch {
+	case isTextBlock(raw.Type):
+		blk.RichText = richText(raw.text())
+	case raw.Type == model.TypeCode:
+		blk.RichText = richText(raw.text())
+		blk.Language = raw.Language
+	case isLinkBlock(raw.Type):
+		blk.URL = raw.url(raw.Type)
+	case raw.Type == model.TypeImage:
+		distillImage(&blk, raw.Image)
+	case raw.Type == model.TypeChildPage:
+		blk.Title = raw.ChildPage.Title
+	case raw.Type == model.TypeTable:
+		if err := c.distillTable(&blk, raw); err != nil {
+			return model.Block{}, err
+		}
+	}
+
+	return blk, nil
+}
+
+func isTextBlock(blockType string) bool {
+	switch blockType {
 	case model.TypeParagraph, model.TypeHeading1, model.TypeHeading2,
 		model.TypeHeading3, model.TypeBulletedItem, model.TypeNumberedItem,
 		model.TypeQuote, model.TypeCallout, model.TypeToggle:
-		blk.RichText = richText(raw.text())
-	case model.TypeCode:
-		blk.RichText = richText(raw.text())
-		blk.Language = raw.Language
-	case model.TypeBookmark, model.TypeEmbed, model.TypeLinkPreview:
-		blk.URL = raw.url(raw.Type)
-	case model.TypeImage:
-		if raw.Image != nil {
-			switch {
-			case raw.Image.External != nil:
-				blk.URL = raw.Image.External.URL
-			case raw.Image.File != nil:
-				blk.URL = raw.Image.File.URL
-				blk.Internal = true
-			}
-		}
-	case model.TypeChildPage:
-		blk.Title = raw.ChildPage.Title
-	case model.TypeTable:
-		blk.HasHeader = raw.Table.HasColumnHeader
-		if raw.HasChildren {
-			rows, err := c.tableRows(raw.ID)
-			if err != nil {
-				return model.Block{}, err
-			}
-			blk.Rows = rows
-		}
+		return true
 	}
-	return blk, nil
+
+	return false
+}
+
+func isLinkBlock(blockType string) bool {
+	switch blockType {
+	case model.TypeBookmark, model.TypeEmbed, model.TypeLinkPreview:
+		return true
+	}
+
+	return false
+}
+
+func distillImage(blk *model.Block, img *imagePayload) {
+	if img == nil {
+		return
+	}
+	switch {
+	case img.External != nil:
+		blk.URL = img.External.URL
+	case img.File != nil:
+		blk.URL = img.File.URL
+		blk.Internal = true
+	}
+}
+
+func (c *Client) distillTable(blk *model.Block, raw apiBlock) error {
+	blk.HasHeader = raw.Table.HasColumnHeader
+	if !raw.HasChildren {
+		return nil
+	}
+
+	rows, err := c.tableRows(raw.ID)
+	if err != nil {
+		return err
+	}
+	blk.Rows = rows
+
+	return nil
 }
 
 func (c *Client) tableRows(tableID string) ([][]model.Cell, error) {
@@ -182,6 +221,7 @@ func (c *Client) tableRows(tableID string) ([][]model.Cell, error) {
 		}
 		rows = append(rows, cells)
 	}
+
 	return rows, nil
 }
 
@@ -208,17 +248,19 @@ func (c *Client) do(method, path string, body any, out any) error {
 		case resp.StatusCode == http.StatusUnauthorized || resp.StatusCode == http.StatusForbidden:
 			drain(resp)
 
-			return fmt.Errorf("notion rejected the credentials (HTTP %d): check NOTION_TOKEN and that the integration has access to this data source", resp.StatusCode)
+			return fmt.Errorf("notion rejected the credentials (HTTP %d): "+
+				"check NOTION_TOKEN and that the integration has access to this data source",
+				resp.StatusCode)
 		case resp.StatusCode == http.StatusTooManyRequests:
 			lastErr = fmt.Errorf("notion rate limit exceeded (HTTP 429)")
 			c.pauseFor(attempt, retryAfter(resp))
 			drain(resp)
-		case resp.StatusCode >= 500:
+		case resp.StatusCode >= http.StatusInternalServerError:
 			lastErr = fmt.Errorf("notion server error (HTTP %d)", resp.StatusCode)
 			c.pause(attempt)
 			drain(resp)
-		case resp.StatusCode >= 400:
-			msg, _ := io.ReadAll(io.LimitReader(resp.Body, 4096))
+		case resp.StatusCode >= http.StatusBadRequest:
+			msg, _ := io.ReadAll(io.LimitReader(resp.Body, maxErrorBody))
 			drain(resp)
 
 			return fmt.Errorf("notion API error (HTTP %d): %s", resp.StatusCode, strings.TrimSpace(string(msg)))
@@ -280,5 +322,5 @@ func retryAfter(resp *http.Response) time.Duration {
 
 func drain(resp *http.Response) {
 	_, _ = io.Copy(io.Discard, resp.Body)
-	resp.Body.Close()
+	_ = resp.Body.Close()
 }

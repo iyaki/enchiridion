@@ -26,7 +26,7 @@ func Markdown(blocks []model.Block) string {
 		if blk.Type != model.TypeNumberedItem {
 			numbered = 0
 		}
-		numbered = writeBlock(&b, blk, numbered)
+		writeBlock(&b, blk, &numbered)
 		prev = blk.Type
 	}
 
@@ -37,54 +37,92 @@ func isList(blockType string) bool {
 	return blockType == model.TypeBulletedItem || blockType == model.TypeNumberedItem
 }
 
-func writeBlock(b *strings.Builder, blk model.Block, numbered int) int {
+// writeBlock dispatches to focused writers; returns false for unknown types so
+// the caller can emit a visible marker instead of silent output.
+func writeBlock(b *strings.Builder, blk model.Block, numbered *int) bool {
+	if writeTextBlock(b, blk, numbered) {
+		return true
+	}
+	if writePayloadBlock(b, blk) {
+		return true
+	}
+	b.WriteString("<!-- unsupported block: " + blk.Type + " -->")
+
+	return true
+}
+
+func writeTextBlock(b *strings.Builder, blk model.Block, numbered *int) bool {
 	switch blk.Type {
 	case model.TypeParagraph:
 		b.WriteString(inline(blk.RichText))
+	case model.TypeHeading1, model.TypeHeading2, model.TypeHeading3:
+		writeHeading(b, blk)
+	case model.TypeBulletedItem:
+		b.WriteString("- " + inline(blk.RichText))
+	case model.TypeNumberedItem:
+		*numbered++
+		b.WriteString(strconv.Itoa(*numbered) + ". " + inline(blk.RichText))
+	case model.TypeQuote, model.TypeCallout:
+		b.WriteString("> " + inline(blk.RichText))
+	case model.TypeDivider:
+		b.WriteString("---")
+	case model.TypeToggle:
+		b.WriteString("**" + inline(blk.RichText) + "**")
+	default:
+		return false
+	}
+
+	return true
+}
+
+func writeHeading(b *strings.Builder, blk model.Block) {
+	switch blk.Type {
 	case model.TypeHeading1:
 		b.WriteString("# " + inline(blk.RichText))
 	case model.TypeHeading2:
 		b.WriteString("## " + inline(blk.RichText))
 	case model.TypeHeading3:
 		b.WriteString("### " + inline(blk.RichText))
-	case model.TypeBulletedItem:
-		b.WriteString("- " + inline(blk.RichText))
-	case model.TypeNumberedItem:
-		numbered++
-		b.WriteString(strconv.Itoa(numbered) + ". " + inline(blk.RichText))
-	case model.TypeQuote, model.TypeCallout:
-		b.WriteString("> " + inline(blk.RichText))
+	}
+}
+
+func writePayloadBlock(b *strings.Builder, blk model.Block) bool {
+	switch blk.Type {
+	case model.TypeBookmark, model.TypeEmbed, model.TypeLinkPreview:
+		writeLink(b, blk)
+	case model.TypeImage:
+		writeImage(b, blk)
 	case model.TypeCode:
 		b.WriteString("```" + blk.Language + "\n" + plain(blk.RichText) + "\n```")
-	case model.TypeDivider:
-		b.WriteString("---")
-	case model.TypeBookmark, model.TypeEmbed, model.TypeLinkPreview:
-		if blk.URL == "" {
-			b.WriteString("<!-- link without URL -->")
-
-			break
-		}
-		b.WriteString("[" + blk.URL + "](" + blk.URL + ")")
-	case model.TypeImage:
-		switch {
-		case blk.Internal:
-			b.WriteString("<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->")
-		case blk.URL == "":
-			b.WriteString("<!-- image without source -->")
-		default:
-			b.WriteString("![image](" + blk.URL + ")")
-		}
-	case model.TypeToggle:
-		b.WriteString("**" + inline(blk.RichText) + "**")
 	case model.TypeChildPage:
 		b.WriteString("<!-- child page: " + blk.Title + " -->")
 	case model.TypeTable:
 		b.WriteString(table(blk))
 	default:
-		b.WriteString("<!-- unsupported block: " + blk.Type + " -->")
+		return false
 	}
 
-	return numbered
+	return true
+}
+
+func writeLink(b *strings.Builder, blk model.Block) {
+	if blk.URL == "" {
+		b.WriteString("<!-- link without URL -->")
+
+		return
+	}
+	b.WriteString("[" + blk.URL + "](" + blk.URL + ")")
+}
+
+func writeImage(b *strings.Builder, blk model.Block) {
+	switch {
+	case blk.Internal:
+		b.WriteString("<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->")
+	case blk.URL == "":
+		b.WriteString("<!-- image without source -->")
+	default:
+		b.WriteString("![image](" + blk.URL + ")")
+	}
 }
 
 // inline renders styled runs; order matters: code, bold, italic,

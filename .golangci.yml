@@ -13,6 +13,8 @@ linters:
   disable:
     - depguard
     - wsl
+    # White-box tests construct clients with unexported fields (httptest).
+    - testpackage
   settings:
     errcheck:
       check-type-assertions: true

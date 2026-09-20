@@ -48,10 +48,11 @@ type tableRowPayload struct {
 // textPayload is embedded (flattened on decode) because most block types carry
 // rich_text at the top level of their payload.
 type apiBlock struct {
-	Type        string `json:"type"`
-	ID          string `json:"id"`
-	HasChildren bool   `json:"has_children"`
 	textPayload
+
+	Type        string            `json:"type"`
+	ID          string            `json:"id"`
+	HasChildren bool              `json:"has_children"`
 	Bookmark    *urlPayload       `json:"bookmark"`
 	Embed       *urlPayload       `json:"embed"`
 	LinkPreview *urlPayload       `json:"link_preview"`
@@ -130,33 +131,48 @@ func (p page) meta() model.PageMeta {
 	}
 
 	for _, prop := range p.Properties {
-		switch prop.Type {
-		case "title":
-			var title strings.Builder
-			for _, r := range prop.Title {
-				title.WriteString(r.PlainText)
-			}
-			if title.Len() > 0 {
-				meta.Title = title.String()
-			}
-		case "select":
-			if prop.Select != nil {
-				meta.Tags = append(meta.Tags, prop.Select.Name)
-			}
-		case "multi_select":
-			for _, o := range prop.MultiSelect {
-				meta.Tags = append(meta.Tags, o.Name)
-			}
-		case "status":
-			if prop.Status != nil {
-				meta.Tags = append(meta.Tags, prop.Status.Name)
-			}
-		case "url":
-			if prop.URL != "" {
-				meta.SourceURL = prop.URL
-			}
-		}
+		applyProperty(&meta, prop)
 	}
 
 	return meta
+}
+
+func applyProperty(meta *model.PageMeta, prop property) {
+	switch prop.Type {
+	case "title":
+		setTitle(meta, prop.Title)
+	case "select", "multi_select", "status":
+		applyTags(meta, prop)
+	case "url":
+		if prop.URL != "" {
+			meta.SourceURL = prop.URL
+		}
+	}
+}
+
+func setTitle(meta *model.PageMeta, runs []run) {
+	var title strings.Builder
+	for _, r := range runs {
+		title.WriteString(r.PlainText)
+	}
+	if title.Len() > 0 {
+		meta.Title = title.String()
+	}
+}
+
+func applyTags(meta *model.PageMeta, prop property) {
+	switch prop.Type {
+	case "select":
+		if prop.Select != nil {
+			meta.Tags = append(meta.Tags, prop.Select.Name)
+		}
+	case "multi_select":
+		for _, o := range prop.MultiSelect {
+			meta.Tags = append(meta.Tags, o.Name)
+		}
+	case "status":
+		if prop.Status != nil {
+			meta.Tags = append(meta.Tags, prop.Status.Name)
+		}
+	}
 }

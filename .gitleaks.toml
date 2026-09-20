@@ -1,0 +1,18 @@
+# Config for the sync workflows' mirror scan (specs/integration.md —
+# Secrets in the mirror). Default rules plus an allowlist for KB articles
+# that QUOTE key formats as content: they are documentation, not
+# credentials. A real secret appearing anywhere else still fails the scan
+# and the mirror is never switched.
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Example keys quoted inside KB articles"
+paths = [
+  '''capo-js-get-your-head-in-order--7346d7ec\.md$''',
+  '''humanlayer-12-factor-agents-.*--39054f1c\.md$''',
+  '''jgthms-picknplace-js-.*--2d154f1c\.md$''',
+  '''steffest-dpaint-js-.*--2f554f1c\.md$''',
+  '''vert-sh-vert-.*--2cc54f1c\.md$''',
+]

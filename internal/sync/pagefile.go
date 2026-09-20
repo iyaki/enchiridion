@@ -15,6 +15,8 @@ import (
 const (
 	idPrefixLen = 8
 	untitled    = "untitled"
+	dirPerm     = 0o755
+	filePerm    = 0o600
 )
 
 // Accented Latin letters folded to ASCII. // ponytail: explicit table because
@@ -100,7 +102,7 @@ func PageContent(meta model.PageMeta, blocks []model.Block) string {
 // so renames never accumulate duplicates (specs/architecture.md — identity
 // consistency). Returns the written path.
 func WritePage(dir string, meta model.PageMeta, blocks []model.Block) (string, error) {
-	if err := os.MkdirAll(dir, 0o755); err != nil {
+	if err := os.MkdirAll(dir, dirPerm); err != nil {
 		return "", err
 	}
 
@@ -112,12 +114,13 @@ func WritePage(dir string, meta model.PageMeta, blocks []model.Block) (string, e
 	}
 	for _, path := range matches {
 		if idOf(path) == meta.ID {
-			return path, os.WriteFile(path, []byte(PageContent(meta, blocks)), 0o600)
+			return path, os.WriteFile(path, []byte(PageContent(meta, blocks)), filePerm)
 		}
 	}
 
 	path := filepath.Join(dir, PageFileName(meta))
-	return path, os.WriteFile(path, []byte(PageContent(meta, blocks)), 0o600)
+
+	return path, os.WriteFile(path, []byte(PageContent(meta, blocks)), filePerm)
 }
 
 // idOf returns the notion_id declared in a mirror file's frontmatter, or ""

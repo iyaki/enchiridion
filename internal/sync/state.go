@@ -48,5 +48,5 @@ func SaveState(home string, s State) error {
 		return err
 	}
 
-	return os.WriteFile(filepath.Join(home, stateFile), append(data, '\n'), 0o600)
+	return os.WriteFile(filepath.Join(home, stateFile), append(data, '\n'), filePerm)
 }

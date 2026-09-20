@@ -15,6 +15,15 @@ linters:
     - wsl
     # White-box tests construct clients with unexported fields (httptest).
     - testpackage
+  exclusions:
+    rules:
+      # internal/sync names the sync engine (specs/architecture.md); the
+      # stdlib name collision is harmless — the package never imports stdlib
+      # sync.
+      - path: internal/sync/
+        text: "avoid package names that conflict"
+        linters:
+          - revive
   settings:
     errcheck:
       check-type-assertions: true

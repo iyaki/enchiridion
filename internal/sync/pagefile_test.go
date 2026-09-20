@@ -120,6 +120,60 @@ func TestWritePageRenameSafe(t *testing.T) {
 	}
 }
 
+func TestWritePageIDPrefixCollision(t *testing.T) {
+	dir := t.TempDir()
+	// Time-ordered page IDs can share their first characters across pages
+	// created in the same batch; a shared slug narrows the name further.
+	pages := []model.PageMeta{
+		{ID: "2b754f1c-aaaa-1111", Title: "Same Slug", LastEdited: "ts"},
+		{ID: "2b754f1c-bbbb-2222", Title: "Same Slug", LastEdited: "ts"},
+		{ID: "2b754f1c-cccc-3333", Title: "Same Slug", LastEdited: "ts"},
+	}
+
+	paths := make(map[string]string) // notion_id -> written path
+	for _, meta := range pages {
+		path, err := WritePage(dir, meta, nil)
+		if err != nil {
+			t.Fatalf("write %s: %v", meta.ID, err)
+		}
+		paths[meta.ID] = path
+	}
+
+	if len(paths) != len(pages) {
+		t.Fatalf("got %d paths, want %d", len(paths), len(pages))
+	}
+	for id, path := range paths {
+		if got := idOf(path); got != id {
+			t.Fatalf("path %q belongs to %q, want %q", path, got, id)
+		}
+	}
+
+	// Rewrites must land on the same paths (stable across syncs) and no file
+	// may be duplicated.
+	rewriteStable(t, dir, pages, paths)
+}
+
+func rewriteStable(t *testing.T, dir string, pages []model.PageMeta, paths map[string]string) {
+	t.Helper()
+	for _, meta := range pages {
+		path, err := WritePage(dir, meta, nil)
+		if err != nil {
+			t.Fatalf("rewrite %s: %v", meta.ID, err)
+		}
+		if path != paths[meta.ID] {
+			t.Fatalf("rewrite of %s moved the file: %q -> %q", meta.ID, paths[meta.ID], path)
+		}
+	}
+
+	entries, err := os.ReadDir(dir)
+	if err != nil {
+		t.Fatalf("read dir: %v", err)
+	}
+	if len(entries) != len(pages) {
+		t.Fatalf("got %d files, want %d", len(entries), len(pages))
+	}
+}
+
 func TestSweep(t *testing.T) {
 	dir := t.TempDir()
 	kept := "kept.md"

@@ -58,9 +58,14 @@ func Slugify(title string) string {
 // PageFileName is the mirror file name for a page: {slug}--{id8}.md. The slug
 // is capped so over-long titles cannot exceed filesystem limits.
 func PageFileName(meta model.PageMeta) string {
+	return fileName(meta, idPrefixLen)
+}
+
+// fileName builds the mirror file name with an explicit id prefix length.
+func fileName(meta model.PageMeta, idLen int) string {
 	id := meta.ID
-	if len(id) > idPrefixLen {
-		id = id[:idPrefixLen]
+	if len(id) > idLen {
+		id = id[:idLen]
 	}
 
 	slug := Slugify(meta.Title)
@@ -128,6 +133,12 @@ func WritePage(dir string, meta model.PageMeta, blocks []model.Block) (string, e
 	}
 
 	path := filepath.Join(dir, PageFileName(meta))
+	// Time-ordered page IDs can share their first characters across pages
+	// created in the same batch, so the short prefix alone may not name this
+	// page; extend it until the name belongs to this page alone.
+	for idLen := idPrefixLen + 1; idOf(path) != "" && idOf(path) != meta.ID && idLen <= len(meta.ID); idLen++ {
+		path = filepath.Join(dir, fileName(meta, idLen))
+	}
 
 	return path, os.WriteFile(path, []byte(PageContent(meta, blocks)), filePerm)
 }

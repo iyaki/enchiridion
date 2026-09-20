@@ -1,7 +1,6 @@
 package sync
 
 import (
-	"fmt"
 	"io"
 	"os"
 	"path/filepath"
@@ -87,19 +86,19 @@ func quote(s string) string {
 func Frontmatter(meta model.PageMeta) string {
 	var b strings.Builder
 	b.WriteString("---\n")
-	fmt.Fprintf(&b, "title: \"%s\"\n", quote(meta.Title))
-	fmt.Fprintf(&b, "notion_id: %s\n", meta.ID)
-	fmt.Fprintf(&b, "notion_url: %s\n", meta.NotionURL)
-	fmt.Fprintf(&b, "last_edited: %s\n", meta.LastEdited)
+	b.WriteString("title: \"" + quote(meta.Title) + "\"\n")
+	b.WriteString("notion_id: " + meta.ID + "\n")
+	b.WriteString("notion_url: " + meta.NotionURL + "\n")
+	b.WriteString("last_edited: " + meta.LastEdited + "\n")
 	if meta.SourceURL != "" {
-		fmt.Fprintf(&b, "source_url: %s\n", meta.SourceURL)
+		b.WriteString("source_url: " + meta.SourceURL + "\n")
 	}
 	if len(meta.Tags) > 0 {
 		quoted := make([]string, len(meta.Tags))
 		for i, tag := range meta.Tags {
 			quoted[i] = `"` + quote(tag) + `"`
 		}
-		fmt.Fprintf(&b, "tags: [%s]\n", strings.Join(quoted, ", "))
+		b.WriteString("tags: [" + strings.Join(quoted, ", ") + "]\n")
 	}
 	b.WriteString("---")
 

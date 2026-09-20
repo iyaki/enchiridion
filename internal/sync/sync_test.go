@@ -44,6 +44,17 @@ func (f *fakeAPI) PageBlocks(pageID string) ([]model.Block, error) {
 	return f.blocks[pageID], nil
 }
 
+// queryErrAPI fails the page query itself: the data source is unreachable.
+type queryErrAPI struct{ err error }
+
+func (f *queryErrAPI) QueryPages(string, notion.QueryFilter) ([]model.PageMeta, error) {
+	return nil, f.err
+}
+
+func (f *queryErrAPI) PageBlocks(string) ([]model.Block, error) {
+	return nil, errors.New("unreachable")
+}
+
 var (
 	now       = time.Date(2026, 9, 20, 12, 0, 0, 0, time.UTC)
 	editedOld = now.Add(-2 * time.Hour).Format(time.RFC3339)
@@ -228,6 +239,21 @@ func TestPartialFailureKeepsWatermark(t *testing.T) {
 	if state == nil || !state.LastFullAt.Equal(old.LastFullAt) || !state.Watermark.Equal(old.Watermark) {
 		t.Fatalf("watermark advanced despite failure: %+v", state)
 	}
+}
+
+func TestQueryFailureFailsRunAndKeepsState(t *testing.T) {
+	home := t.TempDir()
+	if err := SaveState(home, State{LastFullAt: now, Watermark: now}); err != nil {
+		t.Fatalf("seed state: %v", err)
+	}
+
+	api := &queryErrAPI{err: errors.New("notion rejected the credentials")}
+	_, err := Run(api, Options{Home: home, Now: now})
+	if err == nil {
+		t.Fatal("Run succeeded despite query failure")
+	}
+
+	wantState(t, home, now, now) // the watermark must not advance
 }
 
 func TestRunLockedHome(t *testing.T) {

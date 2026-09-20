@@ -2,6 +2,7 @@ package sync
 
 import (
 	"fmt"
+	"io"
 	"os"
 	"path/filepath"
 	"regexp"
@@ -120,33 +121,66 @@ func WritePage(dir string, meta model.PageMeta, blocks []model.Block) (string, e
 		return "", err
 	}
 
-	// ponytail: linear scan per page; build an id->path index if the KB grows
-	// past a few thousand entries.
-	matches, err := filepath.Glob(filepath.Join(dir, "*.md"))
+	root, err := os.OpenRoot(dir)
 	if err != nil {
 		return "", err
 	}
-	for _, path := range matches {
-		if idOf(path) == meta.ID {
+	defer func() { _ = root.Close() }()
+
+	// ponytail: linear scan per page; build an id->path index if the KB grows
+	// past a few thousand entries.
+	entries, err := os.ReadDir(dir)
+	if err != nil {
+		return "", err
+	}
+	for _, entry := range entries {
+		name := entry.Name()
+		if isMarkdown(name) && idOf(root, name) == meta.ID {
+			path := filepath.Join(dir, name)
+
 			return path, os.WriteFile(path, []byte(PageContent(meta, blocks)), filePerm)
 		}
 	}
 
-	path := filepath.Join(dir, PageFileName(meta))
 	// Time-ordered page IDs can share their first characters across pages
-	// created in the same batch, so the short prefix alone may not name this
-	// page; extend it until the name belongs to this page alone.
-	for idLen := idPrefixLen + 1; idOf(path) != "" && idOf(path) != meta.ID && idLen <= len(meta.ID); idLen++ {
-		path = filepath.Join(dir, fileName(meta, idLen))
+	// created in the same batch, so the short prefix may not name this page;
+	// extend it until the name is unambiguous.
+	name := PageFileName(meta)
+	for idLen := idPrefixLen + 1; idTaken(root, name, meta.ID); idLen++ {
+		if idLen > len(meta.ID) {
+			break
+		}
+
+		name = fileName(meta, idLen)
 	}
+
+	path := filepath.Join(dir, name)
 
 	return path, os.WriteFile(path, []byte(PageContent(meta, blocks)), filePerm)
 }
 
+// isMarkdown reports whether a directory entry is a mirror page file.
+func isMarkdown(name string) bool {
+	return strings.HasSuffix(name, ".md")
+}
+
+// idTaken reports whether name exists in root and belongs to a different page.
+func idTaken(root *os.Root, name, id string) bool {
+	owner := idOf(root, name)
+
+	return owner != "" && owner != id
+}
+
 // idOf returns the notion_id declared in a mirror file's frontmatter, or ""
 // when absent.
-func idOf(path string) string {
-	data, err := os.ReadFile(path)
+func idOf(root *os.Root, name string) string {
+	f, err := root.Open(name)
+	if err != nil {
+		return ""
+	}
+	defer func() { _ = f.Close() }()
+
+	data, err := io.ReadAll(f)
 	if err != nil {
 		return ""
 	}
@@ -164,21 +198,28 @@ func idOf(path string) string {
 // (or carries no notion_id at all) and returns the removed file names. Full
 // mode only: it is the sole propagator of deletions (ADR-04).
 func Sweep(dir string, keptIDs map[string]bool) ([]string, error) {
-	matches, err := filepath.Glob(filepath.Join(dir, "*.md"))
+	root, err := os.OpenRoot(dir)
+	if err != nil {
+		return nil, err
+	}
+	defer func() { _ = root.Close() }()
+
+	entries, err := os.ReadDir(dir)
 	if err != nil {
 		return nil, err
 	}
 
 	var removed []string
-	for _, path := range matches {
-		if keptIDs[idOf(path)] {
+	for _, entry := range entries {
+		name := entry.Name()
+		if !isMarkdown(name) || keptIDs[idOf(root, name)] {
 			continue
 		}
 
-		if err := os.Remove(path); err != nil {
+		if err := root.Remove(name); err != nil {
 			return removed, err
 		}
-		removed = append(removed, filepath.Base(path))
+		removed = append(removed, name)
 	}
 
 	return removed, nil

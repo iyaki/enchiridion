@@ -165,13 +165,21 @@ func writeOne(api NotionAPI, knowledge string, meta model.PageMeta) error {
 // lock acquires exclusive access to the cache so concurrent runs (local +
 // cron) cannot corrupt the state (specs/architecture.md — exclusivity).
 func lock(home string) (func(), error) {
-	f, err := os.OpenFile(filepath.Join(home, lockFile), os.O_CREATE|os.O_RDWR, filePerm)
+	root, err := os.OpenRoot(home)
 	if err != nil {
+		return nil, err
+	}
+
+	f, err := root.OpenFile(lockFile, os.O_CREATE|os.O_RDWR, filePerm)
+	if err != nil {
+		_ = root.Close()
+
 		return nil, err
 	}
 
 	if err := syscall.Flock(int(f.Fd()), syscall.LOCK_EX|syscall.LOCK_NB); err != nil {
 		_ = f.Close()
+		_ = root.Close()
 
 		return nil, fmt.Errorf("sync already in progress (locked %s)", filepath.Join(home, lockFile))
 	}
@@ -179,6 +187,7 @@ func lock(home string) (func(), error) {
 	return func() {
 		_ = syscall.Flock(int(f.Fd()), syscall.LOCK_UN)
 		_ = f.Close()
+		_ = root.Close()
 	}, nil
 }
 

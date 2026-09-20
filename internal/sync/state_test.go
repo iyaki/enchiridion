@@ -37,6 +37,16 @@ func TestLoadStateMissingFile(t *testing.T) {
 	}
 }
 
+func TestLoadStateMissingHome(t *testing.T) {
+	got, err := LoadState(filepath.Join(t.TempDir(), "nope"))
+	if err != nil {
+		t.Fatalf("LoadState on missing home: %v", err)
+	}
+	if got != nil {
+		t.Fatalf("got %+v, want nil", got)
+	}
+}
+
 func TestLoadStateCorruptJSON(t *testing.T) {
 	home := t.TempDir()
 	if err := os.WriteFile(filepath.Join(home, stateFile), []byte("{not json"), 0o600); err != nil {

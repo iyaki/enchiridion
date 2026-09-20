@@ -5,6 +5,7 @@ package sync
 
 import (
 	"encoding/json"
+	"io"
 	"os"
 	"path/filepath"
 	"time"
@@ -24,12 +25,28 @@ type State struct {
 // (nil, nil): mode selection degrades to a full sync (auto-backfill) instead
 // of blocking the run.
 func LoadState(home string) (*State, error) {
-	data, err := os.ReadFile(filepath.Join(home, stateFile))
+	root, err := os.OpenRoot(home)
 	if err != nil {
 		if os.IsNotExist(err) {
 			return nil, nil
 		}
 
+		return nil, err
+	}
+	defer func() { _ = root.Close() }()
+
+	f, err := root.Open(stateFile)
+	if err != nil {
+		if os.IsNotExist(err) {
+			return nil, nil
+		}
+
+		return nil, err
+	}
+	defer func() { _ = f.Close() }()
+
+	data, err := io.ReadAll(f)
+	if err != nil {
 		return nil, err
 	}
 

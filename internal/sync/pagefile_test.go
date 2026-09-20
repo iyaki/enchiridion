@@ -9,6 +9,19 @@ import (
 	"github.com/iyaki/enchiridion/internal/model"
 )
 
+// idOfPath reads the notion_id of a mirror file by path (test helper over
+// the root-based idOf).
+func idOfPath(t *testing.T, path string) string {
+	t.Helper()
+	root, err := os.OpenRoot(filepath.Dir(path))
+	if err != nil {
+		t.Fatalf("open root of %q: %v", path, err)
+	}
+	defer func() { _ = root.Close() }()
+
+	return idOf(root, filepath.Base(path))
+}
+
 func TestSlugify(t *testing.T) {
 	cases := []struct{ in, want string }{
 		{"El desafío del lenguaje ubicuo", "el-desafio-del-lenguaje-ubicuo"},
@@ -143,7 +156,7 @@ func TestWritePageIDPrefixCollision(t *testing.T) {
 		t.Fatalf("got %d paths, want %d", len(paths), len(pages))
 	}
 	for id, path := range paths {
-		if got := idOf(path); got != id {
+		if got := idOfPath(t, path); got != id {
 			t.Fatalf("path %q belongs to %q, want %q", path, got, id)
 		}
 	}

@@ -70,15 +70,31 @@ secretos sobre el espejo (gitleaks); un espejo con secreto no se conmuta.
 
 ## Consumo
 
-### Agente en proyecto local (caso primario)
+El trigger de consumo tiene dos mecanismos complementarios (ADR-13):
 
-Snippet para el `AGENTS.md` de cada proyecto consumidor:
+1. **Skill global** (caso primario): la skill vive en este repo
+   (`.agents/skills/enchiridion/SKILL.md`) y se instala una sola vez con
+   `npx skills add` (o symlink para omp). Dispara en todas las sesiones, en
+   cualquier directorio.
+2. **Snippet por-proyecto**: para proyectos donde se quiera la regla explícita
+   en el `AGENTS.md`:
 
 ```markdown
 ## enchiridion
-Antes de recomendar arquitectura o patrones de diseño, buscá en
-`~/.local/share/enchiridion/knowledge/` y citá las entradas que usaste.
-Si no hay precedentes, decilo explícitamente.
+
+Fuente primaria de verdad: espejo de la knowledge base en
+`~/.local/share/enchiridion/knowledge/` (override: `$ENCHIRIDION_HOME`).
+
+Consultá el espejo (rg/grep) ANTES de responder cuando la tarea implique:
+- elegir o recomendar una librería, framework o herramienta
+- definir la estructura o el diseño de un módulo o servicio
+- recomendar patrones de diseño o arquitectura
+- resolver una disputa técnica entre alternativas
+- citar cómo se resolvió algo antes
+
+Cité las entradas usadas (archivo + `notion_url`). Sin precedentes, decilo
+explícitamente. Cache inexistente: informalo — nunca inventes precedentes.
+Actualizar: `enchiridion sync`.
 ```
 
 Sin credenciales de Notion en el proyecto: solo archivos locales.

@@ -176,6 +176,31 @@ tool-calls de primera clase), RAG/embeddings (cuando grep mida mal), descarga de
 assets internos (cuando aparezcan imágenes internas en la KB), named volume en el
 feature (cuando el full-en-rebuild moleste).
 
+## ADR-13 — Trigger de consumo: skill global + snippet por-proyecto
+
+**Contexto**: sin un mecanismo de trigger, ningún agente usaría la herramienta —
+la única referencia existente era la conversación misma. El consumo es
+policy-based (archivos + instrucciones), no tool-calls.
+
+**Decisión**:
+1. **Skill global** (primaria): la skill vive como artefacto versionado del repo
+   en `.agents/skills/enchiridion/SKILL.md`, con una description que enumera
+   disparadores concretos (elegir librerías, diseñar módulos, recomendar
+   patrones, resolver disputas técnicas, citar precedentes). Instalación única
+   vía `npx skills add` (o symlink `.omp/skills` para omp) → dispara en todas
+   las sesiones, en cualquier directorio.
+2. **Snippet por-proyecto** (complemento): regla explícita en el `AGENTS.md` de
+   proyectos específicos, con los mismos disparadores concretos — la abstracción
+   "arquitectura" sola perdía casos como "¿qué ORM uso?".
+
+La instalación de ambos es **paso post-implementación** (nada se instala hasta
+que la fase 4 produzca el primer sync real).
+
+**Rechazados**: presencia del tool en el toolset vía MCP como recordatorio
+per-turn (over-engineering, ADR-12); hooks que inyecten resultados
+automáticamente ante ciertos edits (matching difuso + costo por turno, sin
+evidencia de necesidad).
+
 ---
 
 ## Verificación del sync real (pendiente de implementación)

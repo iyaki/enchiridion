@@ -31,6 +31,7 @@ Convenciones y reglas para agentes: [`AGENTS.md`](AGENTS.md). Decisiones:
 
 ## Consumo (una vez implementado)
 
-Ver `specs/integration.md` — distribución vía releases + devcontainer feature,
-cache central en `~/.local/share/enchiridion/`, y el snippet de política para
-los `AGENTS.md` de los proyectos consumidores.
+El trigger es la skill global (`.agents/skills/enchiridion/SKILL.md`, instalable
+con `npx skills add`) más el snippet para `AGENTS.md` de proyectos consumidores —
+disparadores concretos y reglas de citación en `specs/integration.md`. Cache
+central en `~/.local/share/enchiridion/`.

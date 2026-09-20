@@ -71,6 +71,18 @@ según `integration.md` (Distribución).
 **AC**: un devcontainer desde cero instala el binario, corre el sync y puebla
 el cache local.
 
+## Post-implementación (instalación del trigger)
+
+No ejecutar hasta que la fase 4 produzca el primer sync real:
+
+1. Instalar la skill global: `npx skills add iyaki/enchiridion` (o symlink de
+   `.agents/skills` para omp) — verifica que la skill dispare en una sesión
+   cualquiera con una pregunta tipo "¿qué ORM uso?".
+2. Agregar el snippet de `specs/integration.md` (Consumo) al `AGENTS.md` de los
+   proyectos agent-driven donde se quiera la regla explícita.
+3. Drill de verificación: en un proyecto consumidor, preguntar algo cubierto por
+   la KB y confirmar que el agente grepea el cache y cita entradas.
+
 ## Definition of Done (global)
 
 - Los 5 criterios de éxito de `specs/vision.md` verificados — con evidencia

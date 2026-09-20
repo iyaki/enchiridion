@@ -1,5 +1,9 @@
 # enchiridion
 
+> **⚠ DESCARTADO**: este scaffold JS implementa decisiones revocadas (ADR-08).
+> El stack definitivo es Go stdlib-only. Ver `ADR.md` — el estado de verdad de las
+> decisiones es ese registro, no este README. Se elimina al iniciar la implementación.
+
 *The handbook agents consult before deciding.* — Del griego ἐγχειρίδιον, "lo que tenés en la mano": manual compacto de consulta permanente, como el de Epicteto, pero para decisiones de arquitectura.
 
 Espeja la [knowledge base de Notion](https://iyaki.notion.site/066daa9a7abb4c029724323209c85ca6) como archivos markdown grepeables. Existe porque la API de Notion **no busca en el cuerpo de las páginas** (solo títulos y propiedades) y cada consulta en vivo gasta el presupuesto de ~3 req/s de la integración; el sync lo paga una vez por día y deja el conocimiento versionado, auditable y consultable offline por cualquier agente con shell.

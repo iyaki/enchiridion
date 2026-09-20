@@ -1,0 +1,11 @@
+---
+title: "37signals — Know no"
+notion_id: 2dc54f1c-7d23-818f-a62b-cec315ec2284
+notion_url: https://app.notion.com/p/37signals-Know-no-2dc54f1c7d23818fa62bcec315ec2284
+last_edited: 2026-01-02T17:50:00.000Z
+source_url: https://37signals.com/21
+tags: ["Reflection", "Product Management", "Decision Making", "Note", "37 Signals", "English"]
+---
+<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
+
+

@@ -4,7 +4,7 @@ notion_id: da89bb5c-78f1-4926-b3d1-6fbfe7217c21
 notion_url: https://app.notion.com/p/Doing-support-makes-you-a-better-engineer-da89bb5c78f14926b3d16fbfe7217c21
 last_edited: 2024-10-18T18:42:00.000Z
 source_url: https://newsletter.posthog.com/p/doing-support-makes-you-a-better
-tags: ["English", "Programming", "On Call", "Career Growth", "Article", "PostHog"]
+tags: ["Article", "PostHog", "English", "Programming", "On Call", "Career Growth"]
 ---
 
 

@@ -4,7 +4,7 @@ notion_id: aef61692-8a39-4018-8726-625c9aa7f045
 notion_url: https://app.notion.com/p/What-is-asynchronous-communication-and-how-to-balance-it-aef616928a3940188726625c9aa7f045
 last_edited: 2023-05-12T11:08:00.000Z
 source_url: https://blog.logrocket.com/product-management/what-is-asynchronous-communication/
-tags: ["English", "Communication", "Article", "LogRocket Blog"]
+tags: ["LogRocket Blog", "English", "Communication", "Article"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

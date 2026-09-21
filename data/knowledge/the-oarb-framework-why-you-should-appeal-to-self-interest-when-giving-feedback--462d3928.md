@@ -4,7 +4,7 @@ notion_id: 462d3928-13c9-4734-a7dd-e778ee5a8421
 notion_url: https://app.notion.com/p/The-OARB-framework-Why-you-should-appeal-to-self-interest-when-giving-feedback-462d392813c94734a7dde778ee5a8421
 last_edited: 2026-09-18T00:53:00.000Z
 source_url: https://newsletter.weskao.com/p/oarb-framework-appeal-to-self-interest
-tags: ["English", "Human Resources (HH.RR.)", "Communication", "Article", "Wes Kao's Newsletter"]
+tags: ["Article", "Wes Kao's Newsletter", "English", "Human Resources (HH.RR.)", "Communication"]
 ---
 
 

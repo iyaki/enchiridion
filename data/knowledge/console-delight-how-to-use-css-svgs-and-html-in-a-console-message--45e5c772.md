@@ -4,7 +4,7 @@ notion_id: 45e5c772-1ce1-4539-be22-738711a78f92
 notion_url: https://app.notion.com/p/console-delight-how-to-use-CSS-SVGs-and-HTML-in-a-console-message-45e5c7721ce14539be22738711a78f92
 last_edited: 2024-03-11T14:18:00.000Z
 source_url: https://frontendmasters.com/blog/console-delight/
-tags: ["Article", "Frontend Masters Blog", "English", "Javascript", "Web Development"]
+tags: ["Frontend Masters Blog", "English", "Javascript", "Web Development", "Article"]
 ---
 ![image](https://i0.wp.com/frontendmasters.com/blog/wp-content/uploads/2024/01/console-delight-thumb.jpg?w=1000&ssl=1)
 

@@ -4,7 +4,7 @@ notion_id: c860ea27-c660-4a36-8ad4-3e5a89ca82b7
 notion_url: https://app.notion.com/p/Linking-Modular-Architecture-to-Development-Teams-c860ea27c6604a368ad43e5a89ca82b7
 last_edited: 2023-06-15T23:51:00.000Z
 source_url: https://martinfowler.com/articles/linking-modular-arch.html
-tags: ["English", "Line/People/Team Management", "System Design / Software Architecture", "Productivity", "Article", "Martin Fowler"]
+tags: ["Article", "Martin Fowler", "English", "Line/People/Team Management", "System Design / Software Architecture", "Productivity"]
 ---
 
 

@@ -4,7 +4,7 @@ notion_id: 30054f1c-7d23-8101-b3b7-c9dbb229412d
 notion_url: https://app.notion.com/p/Forget-technical-debt-It-is-not-only-about-technical-debt-but-rather-about-many-more-things-that-h-30054f1c7d238101b3b7c9dbb229412d
 last_edited: 2026-09-18T00:53:00.000Z
 source_url: https://www.ufried.com/blog/forget_technical_debt/
-tags: ["Article", "Note", "ufried.com", "English", "Technical Debt", "Software Development", "Product Management"]
+tags: ["Technical Debt", "Software Development", "Product Management", "Article", "Note", "ufried.com", "English"]
 ---
 
 

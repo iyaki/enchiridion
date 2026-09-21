@@ -4,7 +4,7 @@ notion_id: a7e4a534-5f4d-4cd2-ab18-cb62aae67d9a
 notion_url: https://app.notion.com/p/10-Tips-How-to-Evaluate-Leadership-Skills-When-Hiring-a7e4a5345f4d4cd2ab18cb62aae67d9a
 last_edited: 2023-07-14T17:18:00.000Z
 source_url: https://toggl.com/blog/evaluate-leadership-skills
-tags: ["Article", "Toggl Blog", "English", "Human Resources (HH.RR.)", "Leadersheep", "Line/People/Team Management"]
+tags: ["English", "Human Resources (HH.RR.)", "Leadersheep", "Line/People/Team Management", "Article", "Toggl Blog"]
 ---
 
 

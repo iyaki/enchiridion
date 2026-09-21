@@ -4,7 +4,7 @@ notion_id: e71842ef-0c5d-4d13-a3dd-1ccefefac00b
 notion_url: https://app.notion.com/p/Conventional-Comments-e71842ef0c5d4d13a3dd1ccefefac00b
 last_edited: 2023-10-12T18:22:00.000Z
 source_url: https://conventionalcomments.org/
-tags: ["Programming", "Communication", "Website", "Article", "English"]
+tags: ["English", "Programming", "Communication", "Website", "Article"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

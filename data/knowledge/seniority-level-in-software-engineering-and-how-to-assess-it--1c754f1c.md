@@ -4,7 +4,7 @@ notion_id: 1c754f1c-7d23-8119-833f-c063d0b43fc4
 notion_url: https://app.notion.com/p/Seniority-level-in-software-engineering-and-how-to-assess-it-1c754f1c7d238119833fc063d0b43fc4
 last_edited: 2025-04-20T19:03:00.000Z
 source_url: https://madewithlove.com/blog/seniority-level-in-software-engineering-and-how-to-assess-it/
-tags: ["English", "Line/People/Team Management", "Human Resources (HH.RR.)", "Article", "madewithlove Blog"]
+tags: ["Article", "madewithlove Blog", "English", "Line/People/Team Management", "Human Resources (HH.RR.)"]
 ---
 ![image](https://cdn.madewithlove.com/wp-content/uploads/2021/01/19141545/blogpost-seniority-1.png)
 

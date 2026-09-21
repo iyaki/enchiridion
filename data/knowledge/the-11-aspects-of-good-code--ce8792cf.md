@@ -4,7 +4,7 @@ notion_id: ce8792cf-d301-47f3-99a7-8559f90a9547
 notion_url: https://app.notion.com/p/The-11-Aspects-of-Good-Code-ce8792cfd30147f399a78559f90a9547
 last_edited: 2023-07-28T15:08:00.000Z
 source_url: https://www.pathsensitive.com/2023/07/the-11-aspects-of-good-code.html
-tags: ["English", "Programming", "Article", "Path-Sensitive"]
+tags: ["Programming", "Article", "Path-Sensitive", "English"]
 ---
 
 

@@ -4,7 +4,7 @@ notion_id: 30954f1c-7d23-818e-9db5-cad8a7535031
 notion_url: https://app.notion.com/p/Waiting-is-the-new-interruption-30954f1c7d23818e9db5cad8a7535031
 last_edited: 2026-09-18T00:53:00.000Z
 source_url: https://jennywanger.com/articles/waiting-is-the-new-interruption/
-tags: ["English", "Productivity", "AI", "Web Development", "Team Management", "Behavior Design", "Article", "jennywanger.com"]
+tags: ["jennywanger.com", "English", "Productivity", "AI", "Web Development", "Team Management", "Behavior Design", "Article"]
 ---
 ### 
 

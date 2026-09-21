@@ -4,7 +4,7 @@ notion_id: c903a14c-92c2-431a-a46e-f388fbcd1672
 notion_url: https://app.notion.com/p/Improve-your-SQL-skills-X2-in-5-minutes-c903a14c92c2431aa46ef388fbcd1672
 last_edited: 2024-04-10T13:23:00.000Z
 source_url: https://zaidesanton.substack.com/p/the-most-underrated-skill-sql-for
-tags: ["English", "Databases", "Programming", "Product Management", "Article", "Guide", "Anton Zaides"]
+tags: ["Article", "Guide", "Anton Zaides", "English", "Databases", "Programming", "Product Management"]
 ---
 
 

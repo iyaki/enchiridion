@@ -4,7 +4,7 @@ notion_id: a06c8ecf-6fc7-4446-a694-153cf7b1bb3f
 notion_url: https://app.notion.com/p/How-to-Create-a-Work-Breakdown-Structure-in-6-Steps-Template-a06c8ecf6fc74446a694153cf7b1bb3f
 last_edited: 2023-01-25T19:59:00.000Z
 source_url: https://toggl.com/blog/work-breakdown-structure
-tags: ["Productivity", "Project Management", "Article", "CheatSheet", "Toggl Blog", "English"]
+tags: ["Toggl Blog", "English", "Productivity", "Project Management", "Article", "CheatSheet"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

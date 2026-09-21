@@ -4,7 +4,7 @@ notion_id: f77db4dc-05cf-44a9-b35a-4bcdb0c18bdc
 notion_url: https://app.notion.com/p/CSS-One-Liners-to-Improve-Almost-Every-Project-f77db4dc05cf44a9b35a4bcdb0c18bdc
 last_edited: 2024-08-16T19:18:00.000Z
 source_url: https://alvaromontoro.com/blog/68055/ten-css-one-liners-for-almost-every-project
-tags: ["English", "CSS", "Frontend", "UI/UX", "Article", "Alvaro Montoro"]
+tags: ["Alvaro Montoro", "English", "CSS", "Frontend", "UI/UX", "Article"]
 ---
 ![image](https://alvaromontoro.com/images/blog/one-liners.webp)
 

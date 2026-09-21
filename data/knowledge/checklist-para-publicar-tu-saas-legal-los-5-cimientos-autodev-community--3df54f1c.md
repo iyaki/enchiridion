@@ -4,7 +4,7 @@ notion_id: 3df54f1c-7d23-81de-a6b7-d7f78678cd5a
 notion_url: https://app.notion.com/p/Checklist-para-publicar-tu-SaaS-legal-los-5-cimientos-AutoDev-Community-3df54f1c7d2381dea6b7d7f78678cd5a
 last_edited: 2026-09-18T01:18:00.000Z
 source_url: https://comunidad.eriktaveras.com/resources/checklist-para-publicar-tu-saas-legal-los-5-cimientos/
-tags: ["Español", "Legal", "SaaS", "Product Management", "Startup Management", "Documentation", "Article", "Guide", "AutoDev Community"]
+tags: ["Article", "Guide", "AutoDev Community", "Español", "Legal", "SaaS", "Product Management", "Startup Management", "Documentation"]
 ---
 
 

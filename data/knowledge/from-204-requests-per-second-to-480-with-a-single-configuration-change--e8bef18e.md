@@ -4,7 +4,7 @@ notion_id: e8bef18e-4651-42e8-9994-19f5cd97d5e1
 notion_url: https://app.notion.com/p/From-204-requests-per-second-to-480-with-a-single-configuration-change-e8bef18e465142e8999419f5cd97d5e1
 last_edited: 2023-01-13T17:02:00.000Z
 source_url: https://getparthenon.com/blog/php-performance-tunning-from-204-to-480-with-a-single-config-change/
-tags: ["PHP", "Article", "Tutorial", "English"]
+tags: ["English", "PHP", "Article", "Tutorial"]
 ---
 
 

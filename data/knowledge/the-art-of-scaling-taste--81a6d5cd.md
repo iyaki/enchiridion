@@ -4,7 +4,7 @@ notion_id: 81a6d5cd-6139-47ca-a6b0-c4fe2f5f95b4
 notion_url: https://app.notion.com/p/The-Art-of-Scaling-Taste-81a6d5cd613947caa6b0c4fe2f5f95b4
 last_edited: 2024-06-10T19:38:00.000Z
 source_url: https://every.to/napkin-math/the-art-of-scaling-taste
-tags: ["Napkin Math", "English", "Entrepreneurship", "Product Management", "Article"]
+tags: ["English", "Entrepreneurship", "Product Management", "Article", "Napkin Math"]
 ---
 
 

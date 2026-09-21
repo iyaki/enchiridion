@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-81ae-ab47-e219497c8f43
 notion_url: https://app.notion.com/p/Vertical-Slice-Architecture-2b754f1c7d2381aeab47e219497c8f43
 last_edited: 2025-11-26T14:57:00.000Z
 source_url: https://www.jimmybogard.com/vertical-slice-architecture/
-tags: ["Article", "Jimmy Bogard's Blog", "English", "System Design / Software Architecture", "Programming", "Agile"]
+tags: ["System Design / Software Architecture", "Programming", "Agile", "Article", "Jimmy Bogard's Blog", "English"]
 ---
 
 

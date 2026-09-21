@@ -4,7 +4,7 @@ notion_id: 569ef94c-54ff-40f5-b9ea-2b6fe507b0b8
 notion_url: https://app.notion.com/p/Tips-for-a-Great-Exit-Interview-The-Best-20-Questions-to-Ask-569ef94c54ff40f5b9ea2b6fe507b0b8
 last_edited: 2024-08-16T19:27:00.000Z
 source_url: https://toggl.com/blog/exit-interview
-tags: ["Article", "Toggl Blog", "English", "Human Resources (HH.RR.)", "Line/People/Team Management"]
+tags: ["Human Resources (HH.RR.)", "Line/People/Team Management", "Article", "Toggl Blog", "English"]
 ---
 
 

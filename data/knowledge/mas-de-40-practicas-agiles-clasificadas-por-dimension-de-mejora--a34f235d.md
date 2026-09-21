@@ -4,7 +4,7 @@ notion_id: a34f235d-42a1-48b8-92a7-dd94ceacef00
 notion_url: https://app.notion.com/p/M-s-de-40-pr-cticas-giles-clasificadas-por-dimensi-n-de-mejora-a34f235d42a148b892a7dd94ceacef00
 last_edited: 2023-03-16T14:44:00.000Z
 source_url: https://www.233academy.com/p/this-is-the-agile-way-model
-tags: ["Agile", "Article", "Website", "This is the Agile Way (Javier Garzas)", "English"]
+tags: ["Article", "Website", "This is the Agile Way (Javier Garzas)", "English", "Agile"]
 ---
 
 

@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-8177-bfbd-e41f5f8d7ed1
 notion_url: https://app.notion.com/p/Introduction-Jujutsu-for-everyone-2b754f1c7d238177bfbde41f5f8d7ed1
 last_edited: 2025-11-26T19:07:00.000Z
 source_url: https://jj-for-everyone.github.io/introduction.html
-tags: ["English", "Version Control", "Unix", "Git", "Automation", "Learning", "Article", "Tutorial", "GitHub"]
+tags: ["Article", "Tutorial", "GitHub", "English", "Version Control", "Unix", "Git", "Automation", "Learning"]
 ---
 
 

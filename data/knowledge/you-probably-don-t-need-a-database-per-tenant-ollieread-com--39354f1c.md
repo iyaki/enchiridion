@@ -4,7 +4,7 @@ notion_id: 39354f1c-7d23-814d-a1bf-dbe7fb899940
 notion_url: https://app.notion.com/p/You-Probably-Don-t-Need-a-Database-Per-Tenant-ollieread-com-39354f1c7d23814da1bfdbe7fb899940
 last_edited: 2026-09-18T00:52:00.000Z
 source_url: https://ollieread.com/articles/you-probably-dont-need-a-database-per-tenant
-tags: ["English", "Databases", "Software Architecture", "Multitenancy", "Problem Solving", "Article", "Guide", "ollieread.com"]
+tags: ["Article", "Guide", "ollieread.com", "English", "Databases", "Software Architecture", "Multitenancy", "Problem Solving"]
 ---
 - 
 - 

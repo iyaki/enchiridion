@@ -4,7 +4,7 @@ notion_id: 5a4b2e97-055a-4107-ac88-d9056c879440
 notion_url: https://app.notion.com/p/The-difference-between-product-sprint-and-release-backlogs-5a4b2e97055a4107ac88d9056c879440
 last_edited: 2022-12-19T14:30:00.000Z
 source_url: https://blog.logrocket.com/product-management/product-vs-sprint-vs-release-backlog/
-tags: ["English", "Project Management", "Product Management", "Article", "LogRocket Blog"]
+tags: ["Article", "LogRocket Blog", "English", "Project Management", "Product Management"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

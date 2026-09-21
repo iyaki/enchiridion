@@ -4,7 +4,7 @@ notion_id: 2020c4be-0e8b-4ccc-9d19-e5587d70c5c5
 notion_url: https://app.notion.com/p/Deep-Dive-Learning-from-Customers-2020c4be0e8b4ccc9d19e5587d70c5c5
 last_edited: 2024-06-05T18:37:00.000Z
 source_url: https://productcollective.com/learning-from-customers/
-tags: ["PRODUCT COLLECTIVE", "English", "Product Management", "Article"]
+tags: ["English", "Product Management", "Article", "PRODUCT COLLECTIVE"]
 ---
 
 

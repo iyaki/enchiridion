@@ -4,7 +4,7 @@ notion_id: 9cc279e5-207f-44d4-8ddd-cc27f46b4ad5
 notion_url: https://app.notion.com/p/Sell-Design-Build-9cc279e5207f44d48dddcc27f46b4ad5
 last_edited: 2024-09-08T01:05:00.000Z
 source_url: https://tylerhogge.com/2024/07/23/sell-%e2%86%92-design-%e2%86%92-build
-tags: ["Article", "Tyler Hogge", "English", "Entrepreneurship", "Product Management"]
+tags: ["English", "Entrepreneurship", "Product Management", "Article", "Tyler Hogge"]
 ---
 > 
 

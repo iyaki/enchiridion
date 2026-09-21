@@ -4,7 +4,7 @@ notion_id: da6bfbc7-fa57-4627-ac7d-058e22de40b4
 notion_url: https://app.notion.com/p/The-Original-Sin-of-Free-Software-da6bfbc7fa574627ac7d058e22de40b4
 last_edited: 2023-08-01T00:17:00.000Z
 source_url: https://lipu.dgold.eu/original-sin
-tags: ["English", "Reflection", "Programming", "Article"]
+tags: ["Article", "English", "Reflection", "Programming"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

@@ -4,7 +4,7 @@ notion_id: 366e3143-0bdb-46ff-90ad-7e35c40cb401
 notion_url: https://app.notion.com/p/Learn-these-keyboard-shortcuts-to-become-a-VS-Code-ninja-366e31430bdb46ff90ad7e35c40cb401
 last_edited: 2022-12-21T17:19:00.000Z
 source_url: https://blog.logrocket.com/learn-these-keyboard-shortcuts-to-become-a-vs-code-ninja/
-tags: ["Programming", "Productivity", "Article", "LogRocket Blog", "English"]
+tags: ["Article", "LogRocket Blog", "English", "Programming", "Productivity"]
 ---
 ![image](https://blog.logrocket.com/wp-content/uploads/2019/08/keyboard-shortcuts-vs-code-ninja-nocdn.jpg)
 

@@ -4,7 +4,7 @@ notion_id: 36d54f1c-7d23-8181-8c0f-daaa5ab28143
 notion_url: https://app.notion.com/p/Notes-on-software-quality-36d54f1c7d2381818c0fdaaa5ab28143
 last_edited: 2026-05-27T03:34:00.000Z
 source_url: https://anthonyhobday.com/blog/20260410
-tags: ["English", "Quality", "Software Development", "Testing", "Principles", "Management", "Article", "anthonyhobday"]
+tags: ["Article", "anthonyhobday", "English", "Quality", "Software Development", "Testing", "Principles", "Management"]
 ---
 
 

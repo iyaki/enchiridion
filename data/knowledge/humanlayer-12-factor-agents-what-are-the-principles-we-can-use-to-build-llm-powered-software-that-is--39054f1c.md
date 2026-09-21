@@ -4,7 +4,7 @@ notion_id: 39054f1c-7d23-8157-8964-e35d08727132
 notion_url: https://app.notion.com/p/humanlayer-12-factor-agents-What-are-the-principles-we-can-use-to-build-LLM-powered-software-that-i-39054f1c7d2381578964e35d08727132
 last_edited: 2026-09-18T00:52:00.000Z
 source_url: https://github.com/humanlayer/12-factor-agents
-tags: ["Tool", "Article", "GitHub", "English", "Artificial Intelligence (AI)", "Software Development", "Programming", "Systems Design / Software Architecture", "Product Management"]
+tags: ["English", "Artificial Intelligence (AI)", "Software Development", "Programming", "Systems Design / Software Architecture", "Product Management", "Tool", "Article", "GitHub"]
 ---
 # 
 

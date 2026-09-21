@@ -4,7 +4,7 @@ notion_id: 2f754f1c-7d23-818d-8b63-cdeff05468bd
 notion_url: https://app.notion.com/p/Google-Testing-Blog-Tech-on-the-Toilet-Driving-Software-Excellence-One-Bathroom-Break-at-a-Time-2f754f1c7d23818d8b63cdeff05468bd
 last_edited: 2026-01-29T01:52:00.000Z
 source_url: https://testing.googleblog.com/2024/12/tech-on-toilet-driving-software.html
-tags: ["Software Development", "Testing", "Web Development", "Productivity", "Article", "Google Testing Blog", "English"]
+tags: ["English", "Software Development", "Testing", "Web Development", "Productivity", "Article", "Google Testing Blog"]
 ---
 
 

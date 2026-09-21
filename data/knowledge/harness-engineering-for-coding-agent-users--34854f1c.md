@@ -4,7 +4,7 @@ notion_id: 34854f1c-7d23-81dc-a9d3-ebfe421305de
 notion_url: https://app.notion.com/p/Harness-engineering-for-coding-agent-users-34854f1c7d2381dca9d3ebfe421305de
 last_edited: 2026-09-18T00:53:00.000Z
 source_url: https://martinfowler.com/articles/harness-engineering.html
-tags: ["Tool", "Article", "Martin Fowler", "English", "Software Architecture", "Artificial Intelligence (AI)", "Programming", "DevOps"]
+tags: ["Martin Fowler", "English", "Software Architecture", "Artificial Intelligence (AI)", "Programming", "DevOps", "Tool", "Article"]
 ---
 
 

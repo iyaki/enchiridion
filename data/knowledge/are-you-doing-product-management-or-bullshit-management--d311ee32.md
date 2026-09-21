@@ -4,7 +4,7 @@ notion_id: d311ee32-38de-4722-b8d1-51546a92e8f2
 notion_url: https://app.notion.com/p/Are-You-Doing-Product-Management-or-Bullshit-Management-d311ee3238de4722b8d151546a92e8f2
 last_edited: 2026-09-18T00:53:00.000Z
 source_url: https://www.productcompass.pm/p/backlog-manager-product-manager-david-pereira
-tags: ["Article", "The Product Compass (Pawel Huryn)", "English", "Product Management", "Career Growth", "Entrepreneurship"]
+tags: ["English", "Product Management", "Career Growth", "Entrepreneurship", "Article", "The Product Compass (Pawel Huryn)"]
 ---
 
 

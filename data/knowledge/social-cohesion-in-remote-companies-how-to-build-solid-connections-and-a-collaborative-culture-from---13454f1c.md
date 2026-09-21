@@ -4,7 +4,7 @@ notion_id: 13454f1c-7d23-8122-8c54-e6639fb55f6f
 notion_url: https://app.notion.com/p/Social-cohesion-in-remote-companies-how-to-build-solid-connections-and-a-collaborative-culture-from-13454f1c7d2381228c54e6639fb55f6f
 last_edited: 2024-11-15T20:11:00.000Z
 source_url: https://madewithlove.com/blog/social-cohesion-in-remote-companies-how-to-build-solid-connections-and-a-collaborative-culture-from-afar/
-tags: ["English", "Line/People/Team Management", "Communication", "Article", "madewithlove Blog"]
+tags: ["Line/People/Team Management", "Communication", "Article", "madewithlove Blog", "English"]
 ---
 ![image](https://madewithlove.com/blog/content/images/size/w2000/2024/10/banner-21.png)
 

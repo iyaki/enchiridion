@@ -7,6 +7,7 @@ import (
 	"io"
 	"os"
 	"path/filepath"
+	"slices"
 	"strings"
 	"time"
 
@@ -46,6 +47,10 @@ func main() {
 func run(args []string) int {
 	if len(args) > 0 {
 		switch args[0] {
+		case "help", "-h", "--help":
+			printUsage(os.Stdout)
+
+			return exitOK
 		case "version":
 			fmt.Printf("enchiridion %s\n", version)
 
@@ -57,19 +62,23 @@ func run(args []string) int {
 		}
 	}
 
-	usage()
+	printUsage(os.Stderr)
 
 	return exitUsage
 }
 
-// usage prints the command summary to stderr.
-func usage() {
-	fmt.Fprint(os.Stderr, `enchiridion mirrors a Notion knowledge base as greppable markdown.
+// printUsage prints the command summary to w (stderr on errors, stdout for
+// explicit help requests).
+func printUsage(w io.Writer) {
+	// ponytail: best-effort write; usage errors are not actionable
+	_, _ = fmt.Fprint(w, `enchiridion mirrors a Notion knowledge base as greppable markdown.
 
 usage:
+  enchiridion help
   enchiridion version
-  enchiridion sync [--full]
+  enchiridion sync [--full] [--quiet]
   enchiridion pull [--out DIR]
+  enchiridion doctor
 
 configuration (environment):
   NOTION_TOKEN                   Notion integration token (sync)
@@ -79,11 +88,62 @@ configuration (environment):
   ENCHIRIDION_REPO               distribution repo (default: `+pull.DefaultRepo+`)
 
 sync chooses its mode automatically (full or incremental); --full forces a
-full sync, the only mode that propagates page deletions.
+full sync, the only mode that propagates page deletions; --quiet suppresses
+progress output. "enchiridion <command> --help" explains each command.
 
 pull vendors the published mirror into the current project (--out, default
 "data"): no Notion credentials and no shared machine are required (ADR-18);
 commit the result so every checkout of the project carries the mirror.
+
+doctor checks the local configuration and connectivity without syncing.
+`)
+}
+
+// wantsHelp reports whether the argument list is a help request, checked
+// before flag parsing so --help always wins.
+func wantsHelp(args []string) bool {
+	return slices.Contains(args, "-h") || slices.Contains(args, "--help")
+}
+
+// syncUsage prints the sync command contract to w.
+func syncUsage(w io.Writer) {
+	_, _ = fmt.Fprint(w, `enchiridion sync mirrors the knowledge base into the local cache.
+
+usage:
+  enchiridion sync [--full] [--quiet]
+
+flags:
+  --full     force a full sync (the only mode that propagates page deletions)
+  --quiet    suppress progress output on stderr; only the final summary prints
+
+configuration (environment):
+  NOTION_TOKEN                   Notion integration token
+  KNOWLEDGE_BASE_DATASOURCE_ID   data source to mirror
+  ENCHIRIDION_HOME               cache root (default: ~/.local/share/enchiridion)
+
+sync chooses its mode automatically (full or incremental); --full forces a
+full sync, the only mode that propagates page deletions. Progress is written
+to stderr; stdout carries a single summary line.
+`)
+}
+
+// pullUsage prints the pull command contract to w.
+func pullUsage(w io.Writer) {
+	_, _ = fmt.Fprint(w, `enchiridion pull vendors the published mirror into the current project.
+
+usage:
+  enchiridion pull [--out DIR]
+
+flags:
+  --out DIR    target directory for knowledge/ and tools/ (default "data")
+
+configuration (environment):
+  GITHUB_TOKEN      token that can read the distribution repo
+  ENCHIRIDION_REPO  distribution repo (default: `+pull.DefaultRepo+`)
+
+The download completes before anything on disk is touched, so a failed pull
+never damages an existing mirror; commit the result so every checkout of the
+project carries it (ADR-18).
 `)
 }
 
@@ -92,9 +152,15 @@ commit the result so every checkout of the project carries the mirror.
 // behavior); per-page failures are logged by the engine and make the run
 // exit non-zero.
 func runSync(args []string) int {
+	if wantsHelp(args) {
+		syncUsage(os.Stdout)
+
+		return exitOK
+	}
+
 	forceFull, err := parseSyncArgs(args)
 	if err != nil {
-		usage()
+		syncUsage(os.Stderr)
 
 		return exitUsage
 	}
@@ -133,9 +199,15 @@ func runSync(args []string) int {
 // GitHub token that can read the distribution repo, never Notion credentials
 // (ADR-18). The result is meant to be committed by the consumer project.
 func runPull(args []string) int {
+	if wantsHelp(args) {
+		pullUsage(os.Stdout)
+
+		return exitOK
+	}
+
 	out, err := parsePullArgs(args)
 	if err != nil {
-		usage()
+		pullUsage(os.Stderr)
 
 		return exitUsage
 	}

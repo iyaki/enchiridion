@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bytes"
 	"errors"
 	"os"
 	"os/exec"
@@ -28,9 +29,33 @@ func TestRunVersionExitsZero(t *testing.T) {
 }
 
 func TestRunUnknownCommandExitsTwo(t *testing.T) {
-	for _, args := range [][]string{nil, {"nope"}, {"--help"}} {
+	for _, args := range [][]string{nil, {"nope"}} {
 		if code := run(args); code != exitUsage {
 			t.Fatalf("run(%v): got exit %d, want %d", args, code, exitUsage)
+		}
+	}
+}
+
+func TestRunHelpExitsZero(t *testing.T) {
+	for _, args := range [][]string{{"help"}, {"--help"}, {"-h"}} {
+		if code := run(args); code != exitOK {
+			t.Fatalf("run(%v): got exit %d, want %d", args, code, exitOK)
+		}
+	}
+}
+
+func TestCommandHelpExitsZero(t *testing.T) {
+	for _, tc := range []struct {
+		name string
+		code int
+	}{
+		{"sync --help", runSync([]string{"--help"})},
+		{"sync -h", runSync([]string{"-h"})},
+		{"pull --help", runPull([]string{"--help"})},
+		{"pull -h", runPull([]string{"-h"})},
+	} {
+		if tc.code != exitOK {
+			t.Fatalf("%s: got exit %d, want %d", tc.name, tc.code, exitOK)
 		}
 	}
 }
@@ -166,6 +191,25 @@ func TestMainSmokeUsageExitsTwo(t *testing.T) {
 	var exitErr *exec.ExitError
 	if !errors.As(err, &exitErr) || exitErr.ExitCode() != exitUsage {
 		t.Fatalf("no args: got %v, want exit code %d", err, exitUsage)
+	}
+}
+
+func TestMainSmokeHelpPrintsToStdout(t *testing.T) {
+	t.Setenv("ENCHIRIDION_MAIN", "1")
+	var out, errOut bytes.Buffer
+	cmd := exec.Command(os.Args[0], "--help")
+	cmd.Stdout, cmd.Stderr = &out, &errOut
+
+	err := cmd.Run()
+	var exitErr *exec.ExitError
+	if err != nil && (!errors.As(err, &exitErr) || exitErr.ExitCode() != exitOK) {
+		t.Fatalf("--help: got %v, want exit code %d (stderr: %s)", err, exitOK, errOut.String())
+	}
+	if !strings.Contains(out.String(), "usage:") {
+		t.Fatalf("--help must print usage to stdout, got: %q", out.String())
+	}
+	if errOut.Len() != 0 {
+		t.Fatalf("--help must not write to stderr, got: %q", errOut.String())
 	}
 }
 

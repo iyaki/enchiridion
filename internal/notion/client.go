@@ -160,17 +160,16 @@ func (c *Client) children(blockID string) ([]apiBlock, error) {
 // helpers so each stays simple.
 func (c *Client) distill(raw apiBlock) (model.Block, error) {
 	blk := model.Block{Type: raw.Type}
+	if tp := raw.text(); tp != nil {
+		blk.RichText = richText(tp.RichText)
+		blk.Language = tp.Language
+	}
 	switch {
 	case raw.Type == model.TypeToDo:
-		blk.RichText = richText(raw.text())
 		if raw.ToDo != nil {
+			blk.RichText = richText(raw.ToDo.RichText)
 			blk.Checked = raw.ToDo.Checked
 		}
-	case isTextBlock(raw.Type):
-		blk.RichText = richText(raw.text())
-	case raw.Type == model.TypeCode:
-		blk.RichText = richText(raw.text())
-		blk.Language = raw.Language
 	case isLinkBlock(raw.Type):
 		blk.URL = raw.url(raw.Type)
 	case raw.media() != nil:
@@ -178,23 +177,10 @@ func (c *Client) distill(raw apiBlock) (model.Block, error) {
 	case raw.Type == model.TypeChildPage:
 		blk.Title = raw.ChildPage.Title
 	case raw.Type == model.TypeTable:
-		if err := c.distillTable(&blk, raw); err != nil {
-			return model.Block{}, err
-		}
+		return c.distillTable(raw)
 	}
 
 	return blk, nil
-}
-
-func isTextBlock(blockType string) bool {
-	switch blockType {
-	case model.TypeParagraph, model.TypeHeading1, model.TypeHeading2,
-		model.TypeHeading3, model.TypeBulletedItem, model.TypeNumberedItem,
-		model.TypeQuote, model.TypeCallout, model.TypeToggle:
-		return true
-	}
-
-	return false
 }
 
 func isLinkBlock(blockType string) bool {
@@ -221,19 +207,23 @@ func distillMedia(blk *model.Block, img *imagePayload) {
 	}
 }
 
-func (c *Client) distillTable(blk *model.Block, raw apiBlock) error {
-	blk.HasHeader = raw.Table.HasColumnHeader
+// distillTable distills a table block, resolving its rows into cells.
+func (c *Client) distillTable(raw apiBlock) (model.Block, error) {
+	blk := model.Block{Type: raw.Type}
+	if raw.Table != nil {
+		blk.HasHeader = raw.Table.HasColumnHeader
+	}
 	if !raw.HasChildren {
-		return nil
+		return blk, nil
 	}
 
 	rows, err := c.tableRows(raw.ID)
 	if err != nil {
-		return err
+		return model.Block{}, err
 	}
 	blk.Rows = rows
 
-	return nil
+	return blk, nil
 }
 
 func (c *Client) tableRows(tableID string) ([][]model.Cell, error) {

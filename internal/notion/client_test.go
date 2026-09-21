@@ -226,10 +226,10 @@ func TestPageBlocksTextMapping(t *testing.T) {
 	c := newTestClient(t, rec)
 	rec.handler = func(w http.ResponseWriter, _ *http.Request) {
 		writeJSON(t, w, blocksResponse{Results: []apiBlock{
-			{Type: model.TypeParagraph, textPayload: textPayload{RichText: []richRun{
+			{Type: model.TypeParagraph, Paragraph: &textPayload{RichText: []richRun{
 				{PlainText: "plain "}, boldRun("bold"),
 			}}},
-			{Type: model.TypeCode, textPayload: textPayload{
+			{Type: model.TypeCode, Code: &textPayload{
 				RichText: []richRun{{PlainText: "const x = 1"}}, Language: "js",
 			}},
 			{Type: model.TypeChildPage, ChildPage: &childPagePayload{Title: "Specs"}},
@@ -444,15 +444,15 @@ func flattenChildrenHandler(t *testing.T, w http.ResponseWriter, r *http.Request
 	switch {
 	case strings.Contains(path, "tg-1"):
 		writeJSON(t, w, blocksResponse{Results: []apiBlock{
-			{Type: model.TypeParagraph, textPayload: textPayload{RichText: []richRun{{PlainText: "inside toggle"}}}},
+			{Type: model.TypeParagraph, Paragraph: &textPayload{RichText: []richRun{{PlainText: "inside toggle"}}}},
 		}})
 	case strings.Contains(path, "td-1"):
 		writeJSON(t, w, blocksResponse{Results: []apiBlock{
-			{Type: model.TypeBulletedItem, textPayload: textPayload{RichText: []richRun{{PlainText: "nested"}}}},
+			{Type: model.TypeBulletedItem, BulletedItem: &textPayload{RichText: []richRun{{PlainText: "nested"}}}},
 		}})
 	case strings.Contains(path, "sb-1"):
 		writeJSON(t, w, blocksResponse{Results: []apiBlock{
-			{Type: model.TypeHeading2, textPayload: textPayload{RichText: []richRun{{PlainText: "synced content"}}}},
+			{Type: model.TypeHeading2, Heading2: &textPayload{RichText: []richRun{{PlainText: "synced content"}}}},
 		}})
 	case strings.Contains(path, "cl-1"):
 		writeJSON(t, w, blocksResponse{Results: []apiBlock{
@@ -460,7 +460,7 @@ func flattenChildrenHandler(t *testing.T, w http.ResponseWriter, r *http.Request
 		}})
 	case strings.Contains(path, "col-1"):
 		writeJSON(t, w, blocksResponse{Results: []apiBlock{
-			{Type: model.TypeBulletedItem, textPayload: textPayload{RichText: []richRun{{PlainText: "in column"}}}},
+			{Type: model.TypeBulletedItem, BulletedItem: &textPayload{RichText: []richRun{{PlainText: "in column"}}}},
 		}})
 	case strings.Contains(path, "tbl-1"):
 		writeJSON(t, w, blocksResponse{Results: []apiBlock{
@@ -469,10 +469,12 @@ func flattenChildrenHandler(t *testing.T, w http.ResponseWriter, r *http.Request
 	default:
 		writeJSON(t, w, blocksResponse{Results: []apiBlock{
 			{Type: model.TypeToggle, ID: "tg-1", HasChildren: true,
-				textPayload: textPayload{RichText: []richRun{{PlainText: "how to"}}}},
+				Toggle: &textPayload{RichText: []richRun{{PlainText: "how to"}}}},
 			{Type: model.TypeToDo, ID: "td-1", HasChildren: true,
-				textPayload: textPayload{RichText: []richRun{{PlainText: "ship"}}},
-				ToDo:        &toDoPayload{Checked: true}},
+				ToDo: &toDoPayload{
+					textPayload: textPayload{RichText: []richRun{{PlainText: "ship"}}},
+					Checked:     true,
+				}},
 			{Type: "synced_block", ID: "sb-1", HasChildren: true},
 			{Type: "column_list", ID: "cl-1", HasChildren: true},
 			{Type: model.TypeTable, ID: "tbl-1", HasChildren: true,

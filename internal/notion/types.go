@@ -34,6 +34,8 @@ type imagePayload struct {
 }
 
 type toDoPayload struct {
+	textPayload
+
 	Checked bool `json:"checked"`
 }
 
@@ -49,19 +51,30 @@ type tableRowPayload struct {
 	Cells [][]richRun `json:"cells"`
 }
 
-// textPayload is embedded (flattened on decode) because most block types carry
-// rich_text at the top level of their payload.
+// Notion nests each block's payload under a key equal to its type
+// (paragraph.rich_text, to_do.checked, ...), so the fields below mirror that
+// one-level shape.
 type apiBlock struct {
-	textPayload
+	Type        string `json:"type"`
+	ID          string `json:"id"`
+	HasChildren bool   `json:"has_children"`
 
-	Type        string            `json:"type"`
-	ID          string            `json:"id"`
-	HasChildren bool              `json:"has_children"`
+	Paragraph    *textPayload `json:"paragraph"`
+	Heading1     *textPayload `json:"heading_1"`
+	Heading2     *textPayload `json:"heading_2"`
+	Heading3     *textPayload `json:"heading_3"`
+	BulletedItem *textPayload `json:"bulleted_list_item"`
+	NumberedItem *textPayload `json:"numbered_list_item"`
+	Quote        *textPayload `json:"quote"`
+	Callout      *textPayload `json:"callout"`
+	Code         *textPayload `json:"code"`
+	Toggle       *textPayload `json:"toggle"`
+	ToDo         *toDoPayload `json:"to_do"`
+
 	Bookmark    *urlPayload       `json:"bookmark"`
 	Embed       *urlPayload       `json:"embed"`
 	LinkPreview *urlPayload       `json:"link_preview"`
 	Image       *imagePayload     `json:"image"`
-	ToDo        *toDoPayload      `json:"to_do"`
 	PDF         *imagePayload     `json:"pdf"`
 	File        *imagePayload     `json:"file"`
 	Video       *imagePayload     `json:"video"`
@@ -70,7 +83,31 @@ type apiBlock struct {
 	TableRow    *tableRowPayload  `json:"table_row"`
 }
 
-func (b apiBlock) text() []richRun { return b.RichText }
+// text returns the rich-text payload for the block's type; nil for types that
+// carry none.
+func (b apiBlock) text() *textPayload {
+	for _, c := range []struct {
+		typ string
+		tp  *textPayload
+	}{
+		{model.TypeParagraph, b.Paragraph},
+		{model.TypeHeading1, b.Heading1},
+		{model.TypeHeading2, b.Heading2},
+		{model.TypeHeading3, b.Heading3},
+		{model.TypeBulletedItem, b.BulletedItem},
+		{model.TypeNumberedItem, b.NumberedItem},
+		{model.TypeQuote, b.Quote},
+		{model.TypeCallout, b.Callout},
+		{model.TypeCode, b.Code},
+		{model.TypeToggle, b.Toggle},
+	} {
+		if c.typ == b.Type {
+			return c.tp
+		}
+	}
+
+	return nil
+}
 
 // media returns the url payload for block types sharing the external|file
 // shape (image, pdf, file, video); nil for any other type.

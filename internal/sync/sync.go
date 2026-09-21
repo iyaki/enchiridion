@@ -19,7 +19,6 @@ const (
 	// drift between Notion and the local machine never skips an edit.
 	OverlapMargin = time.Minute
 
-	knowledgeDir    = "knowledge"
 	lockFile        = ".sync.lock"
 	modeFull        = "full"
 	modeIncremental = "incremental"
@@ -75,21 +74,26 @@ func Run(api NotionAPI, opts Options) (Stats, error) {
 	defer release()
 
 	state, _ := LoadState(opts.Home)
-	knowledge := filepath.Join(opts.Home, knowledgeDir)
-	mode := SelectMode(state, mirrorIsEmpty(knowledge), opts.Now, opts.ForceFull)
+	dirs, err := classDirs(opts.Home)
+	if err != nil {
+		return Stats{}, err
+	}
+	mode := SelectMode(state, mirrorIsEmpty(dirs[dirKnowledge]) && mirrorIsEmpty(dirs[dirTools]), opts.Now, opts.ForceFull)
 
 	metas, err := query(api, opts, state, mode)
 	if err != nil {
 		return Stats{}, err
 	}
 
-	stats, keptIDs := syncAll(api, knowledge, mode, metas)
+	stats, keptByDir := syncAll(api, dirs, mode, metas)
 	if mode == modeFull {
-		removed, sweepErr := Sweep(knowledge, keptIDs)
-		if sweepErr != nil {
-			return stats, sweepErr
+		for _, name := range []string{dirKnowledge, dirTools} {
+			removed, sweepErr := Sweep(dirs[name], keptByDir[name])
+			if sweepErr != nil {
+				return stats, sweepErr
+			}
+			stats.Removed += len(removed)
 		}
-		stats.Removed = len(removed)
 	}
 
 	if stats.Failed > 0 {
@@ -101,6 +105,22 @@ func Run(api NotionAPI, opts Options) (Stats, error) {
 	}
 
 	return stats, nil
+}
+
+// classDirs resolves both class directories under home, creating them so a
+// first full-mode sweep of an old-layout cache cannot fail on a missing dir.
+func classDirs(home string) (map[string]string, error) {
+	dirs := map[string]string{
+		dirKnowledge: filepath.Join(home, dirKnowledge),
+		dirTools:     filepath.Join(home, dirTools),
+	}
+	for _, dir := range dirs {
+		if err := os.MkdirAll(dir, dirPerm); err != nil {
+			return nil, err
+		}
+	}
+
+	return dirs, nil
 }
 
 // query fetches page metadata for the mode: everything on full, only pages
@@ -115,14 +135,17 @@ func query(api NotionAPI, opts Options, state *State, mode string) ([]model.Page
 }
 
 // syncAll writes every page, logging and counting failures without stopping
-// (specs/architecture.md — error behavior). Returns the stats and the set of
-// page IDs that must remain in the mirror.
-func syncAll(api NotionAPI, knowledge string, mode string, metas []model.PageMeta) (Stats, map[string]bool) {
+// (specs/architecture.md — error behavior). Returns the stats and, per class
+// directory, the set of page IDs that must remain there (a page reclassified
+// in Notion must be swept from its old directory on the next full run).
+func syncAll(api NotionAPI, dirs map[string]string, mode string, metas []model.PageMeta) (
+	Stats, map[string]map[string]bool,
+) {
 	stats := Stats{Mode: mode, Kept: len(metas)}
-	keptIDs := make(map[string]bool, len(metas))
+	keptByDir := map[string]map[string]bool{dirKnowledge: {}, dirTools: {}}
 	for _, meta := range metas {
-		keptIDs[meta.ID] = true
-		if err := writeOne(api, knowledge, meta); err != nil {
+		keptByDir[Class(meta)][meta.ID] = true
+		if err := writeOne(api, dirs[Class(meta)], meta); err != nil {
 			fmt.Fprintf(os.Stderr, "sync: page %s: %v\n", meta.ID, err)
 			stats.Failed++
 
@@ -131,7 +154,7 @@ func syncAll(api NotionAPI, knowledge string, mode string, metas []model.PageMet
 		stats.Written++
 	}
 
-	return stats, keptIDs
+	return stats, keptByDir
 }
 
 // persistState advances the watermark to the run instant; incremental runs
@@ -147,17 +170,17 @@ func persistState(opts Options, state *State, mode string) error {
 
 // writeOne fetches a page's blocks and writes it into the mirror, printing
 // the mirrored file name.
-func writeOne(api NotionAPI, knowledge string, meta model.PageMeta) error {
+func writeOne(api NotionAPI, dir string, meta model.PageMeta) error {
 	blocks, err := api.PageBlocks(meta.ID)
 	if err != nil {
 		return err
 	}
 
-	path, err := WritePage(knowledge, meta, blocks)
+	path, err := WritePage(dir, meta, blocks)
 	if err != nil {
 		return err
 	}
-	fmt.Printf("synced: %s\n", filepath.Base(path))
+	fmt.Printf("synced: %s/%s\n", filepath.Base(dir), filepath.Base(path))
 
 	return nil
 }

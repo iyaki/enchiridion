@@ -278,10 +278,100 @@ func TestRunLockedHome(t *testing.T) {
 
 func countMD(t *testing.T, home string) int {
 	t.Helper()
-	matches, err := filepath.Glob(filepath.Join(home, "knowledge", "*.md"))
+	n := 0
+	for _, dir := range []string{dirKnowledge, dirTools} {
+		matches, err := filepath.Glob(filepath.Join(home, dir, "*.md"))
+		if err != nil {
+			t.Fatalf("glob %s: %v", dir, err)
+		}
+		n += len(matches)
+	}
+
+	return n
+}
+
+func countDirMD(t *testing.T, home, dir string) int {
+	t.Helper()
+	matches, err := filepath.Glob(filepath.Join(home, dir, "*.md"))
 	if err != nil {
-		t.Fatalf("glob mirror: %v", err)
+		t.Fatalf("glob %s: %v", dir, err)
 	}
 
 	return len(matches)
+}
+
+func TestFullRunPlacesClasses(t *testing.T) {
+	home := t.TempDir()
+	api := &fakeAPI{pages: map[string]model.PageMeta{
+		"p1": {ID: "p1", Title: "Article With Tool Tag", Tags: []string{"Article", "Tool"}, LastEdited: editedOld},
+		"p2": {ID: "p2", Title: "Pure Service", Tags: []string{"Service"}, LastEdited: editedNew},
+	}}
+
+	stats, err := Run(api, Options{Home: home, Now: now})
+	if err != nil {
+		t.Fatalf("Run: %v", err)
+	}
+
+	wantStats(t, stats, Stats{Mode: modeFull, Kept: 2, Written: 2})
+	if n := countDirMD(t, home, dirKnowledge); n != 1 {
+		t.Fatalf("knowledge/ has %d files, want 1", n)
+	}
+	if n := countDirMD(t, home, dirTools); n != 1 {
+		t.Fatalf("tools/ has %d files, want 1", n)
+	}
+	if _, err := os.Stat(filepath.Join(home, dirTools, "pure-service--p2.md")); err != nil {
+		t.Fatalf("p2 missing from tools/: %v", err)
+	}
+}
+
+func TestFullSweepRemovesReclassified(t *testing.T) {
+	home := t.TempDir()
+	api := &fakeAPI{pages: map[string]model.PageMeta{
+		"p1": {ID: "p1", Title: "Once A Tool", Tags: []string{"Tool"}, LastEdited: editedOld},
+	}}
+	if _, err := Run(api, Options{Home: home, Now: now}); err != nil {
+		t.Fatalf("seed full run: %v", err)
+	}
+
+	api.pages["p1"] = model.PageMeta{ID: "p1", Title: "Once A Tool", Tags: []string{"Article"}, LastEdited: editedNew}
+	stats, err := Run(api, Options{Home: home, Now: now.Add(time.Hour), ForceFull: true})
+	if err != nil {
+		t.Fatalf("sweeping run: %v", err)
+	}
+
+	if stats.Removed != 1 {
+		t.Fatalf("removed %d stale files, want 1", stats.Removed)
+	}
+	if n := countMD(t, home); n != 1 {
+		t.Fatalf("got %d mirror files, want 1", n)
+	}
+	if n := countDirMD(t, home, dirKnowledge); n != 1 {
+		t.Fatalf("reclassified page not in knowledge/")
+	}
+}
+
+func TestIncrementalReclassifyKeepsStaleCopy(t *testing.T) {
+	home := t.TempDir()
+	api := &fakeAPI{pages: map[string]model.PageMeta{
+		"p1": {ID: "p1", Title: "Once A Tool", Tags: []string{"Tool"}, LastEdited: editedOld},
+	}}
+	if _, err := Run(api, Options{Home: home, Now: now}); err != nil {
+		t.Fatalf("seed full run: %v", err)
+	}
+
+	api.pages["p1"] = model.PageMeta{ID: "p1", Title: "Once A Tool", Tags: []string{"Article"}, LastEdited: editedNew}
+	stats, err := Run(api, Options{Home: home, Now: now.Add(time.Hour)})
+	if err != nil {
+		t.Fatalf("incremental run: %v", err)
+	}
+
+	// Documented ADR-15 exception: reclassification propagates on the next
+	// full sync, same cadence as deletions (ADR-04).
+	wantStats(t, stats, Stats{Mode: modeIncremental, Kept: 1, Written: 1})
+	if n := countDirMD(t, home, dirKnowledge); n != 1 {
+		t.Fatalf("knowledge/ has %d files, want 1", n)
+	}
+	if n := countDirMD(t, home, dirTools); n != 1 {
+		t.Fatalf("tools/ has %d files, want 1 (stale copy until next full)", n)
+	}
 }

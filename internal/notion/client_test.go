@@ -476,6 +476,7 @@ func flattenChildrenHandler(t *testing.T, w http.ResponseWriter, r *http.Request
 					Checked:     true,
 				}},
 			{Type: "synced_block", ID: "sb-1", HasChildren: true},
+			{Type: "synced_block", ID: "sb-2"},
 			{Type: "column_list", ID: "cl-1", HasChildren: true},
 			{Type: model.TypeTable, ID: "tbl-1", HasChildren: true,
 				Table: &tablePayload{HasColumnHeader: false}},
@@ -504,6 +505,7 @@ func TestPageBlocksFlattensAllChildren(t *testing.T) {
 		{model.TypeToDo, "ship", true},
 		{model.TypeBulletedItem, "nested", false},
 		{model.TypeHeading2, "synced content", false},
+		{"synced_block", "", false},
 		{model.TypeBulletedItem, "in column", false},
 		{model.TypeTable, "", false},
 	}
@@ -519,11 +521,12 @@ func TestPageBlocksFlattensAllChildren(t *testing.T) {
 	assertNoContainers(t, blocks)
 }
 
-// assertNoContainers fails if pure container blocks leaked into the output.
+// assertNoContainers fails if pure list containers leaked into the output.
+// synced_block is exempt: a childless instance surfaces as a visible marker.
 func assertNoContainers(t *testing.T, blocks []model.Block) {
 	t.Helper()
 	for _, blk := range blocks {
-		if blk.Type == "synced_block" || blk.Type == "column_list" || blk.Type == "column" {
+		if blk.Type == "column_list" || blk.Type == "column" {
 			t.Errorf("container block %q leaked into output", blk.Type)
 		}
 	}

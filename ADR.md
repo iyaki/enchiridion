@@ -296,7 +296,9 @@ KB pages carry none.
 **Consequences**: one extra API call per `has_children` block (rate-limit
 handling already retries); nested-list indentation flattens and numbering
 restarts at splice boundaries — accepted for grep-ability; supersedes the
-ADR-05 rendering-contract line that toggle content is not downloaded.
+ADR-05 rendering-contract line that toggle content is not downloaded; a
+`synced_block` instance (content lives in the original block, outside this
+page's tree) surfaces as a visible comment instead of silence.
 
 ---
 

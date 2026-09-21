@@ -104,8 +104,12 @@ func (c *Client) PageBlocks(pageID string) ([]model.Block, error) {
 func (c *Client) distillAll(raws []apiBlock) ([]model.Block, error) {
 	var blocks []model.Block
 	for _, raw := range raws {
-		switch raw.Type {
-		case "synced_block", "column_list", "column":
+		switch {
+		case raw.Type == "synced_block" && !raw.HasChildren:
+			// Synced instance: its content lives in the original block,
+			// not in this page's tree — surface it, never silence (ADR-17).
+			blocks = append(blocks, model.Block{Type: raw.Type})
+		case raw.Type == "synced_block", raw.Type == "column_list", raw.Type == "column":
 			// Container: emit children only.
 		default:
 			blk, err := c.distill(raw)
@@ -114,21 +118,34 @@ func (c *Client) distillAll(raws []apiBlock) ([]model.Block, error) {
 			}
 			blocks = append(blocks, blk)
 		}
-		// table_row children are cells, resolved by distillTable.
-		if raw.HasChildren && raw.Type != model.TypeTable {
-			kids, err := c.children(raw.ID)
-			if err != nil {
-				return nil, err
-			}
-			flat, err := c.distillAll(kids)
-			if err != nil {
-				return nil, err
-			}
-			blocks = append(blocks, flat...)
+		var err error
+		blocks, err = c.appendChildren(blocks, raw)
+		if err != nil {
+			return nil, err
 		}
 	}
 
 	return blocks, nil
+}
+
+// appendChildren fetches raw's children, flattens them, and appends the
+// result in document order.
+func (c *Client) appendChildren(blocks []model.Block, raw apiBlock) ([]model.Block, error) {
+	// table_row children are cells, resolved by distillTable.
+	if !raw.HasChildren || raw.Type == model.TypeTable {
+		return blocks, nil
+	}
+
+	kids, err := c.children(raw.ID)
+	if err != nil {
+		return nil, err
+	}
+	flat, err := c.distillAll(kids)
+	if err != nil {
+		return nil, err
+	}
+
+	return append(blocks, flat...), nil
 }
 
 // children fetches every child block of a block/page, following pagination.

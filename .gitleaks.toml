@@ -23,3 +23,8 @@ paths = [
   '''gitleaks-protect-and-discover-secrets--6a4c0769\.md$''',
   '''keygraphhq-shannon-.*--31c54f1c\.md$''',
 ]
+regexes = [
+  # Dropbox share-link keys embedded in clipped URLs: published link tokens
+  # that grant the same access as the link itself, not credentials.
+  '''rlkey=[A-Za-z0-9_-]+''',
+]

@@ -16,7 +16,7 @@ Documentation map. The record of *why* for every decision lives in
 - Implementation: **shipped** — phases 0–5 released as `v0.1.0` (sync engine,
   CLI, sync workflows, multi-platform releases); mirror split into
   `knowledge/` + `tools/` released as `v0.2.0` (ADR-15). Devcontainer feature
-  implemented in `iyaki/devcontainer-features` (release pending).
+  published (`ghcr.io/iyaki/devcontainer-features/enchiridion:1`).
   `implementation-plan.md` keeps the per-phase acceptance criteria as the
   record of what shipped.
 - Stack decisions: see ADR-08.

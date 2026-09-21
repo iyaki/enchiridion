@@ -12,9 +12,10 @@ patterns, or assisting decisions.
 
 `v0.2.0` — shipped and validated against the live API: sync engine, CLI,
 nightly/monthly sync workflows (this repository keeps a committed mirror
-under [`data/`](data/)), multi-platform releases, the devcontainer feature
-([`iyaki/devcontainer-features`](https://github.com/iyaki/devcontainer-features),
-release pending) and the consumption triggers below.
+under [`data/`](data/)), multi-platform releases, the published devcontainer
+feature
+([`ghcr.io/iyaki/devcontainer-features/enchiridion`](https://github.com/iyaki/devcontainer-features/tree/main/src/enchiridion))
+and the consumption triggers below.
 
 ## Install
 
@@ -29,9 +30,7 @@ install -m 0755 enchiridion /usr/local/bin/enchiridion
 enchiridion version
 ```
 
-In devcontainers, use the feature (once the
-[`devcontainer-features`](https://github.com/iyaki/devcontainer-features)
-release workflow publishes it):
+In devcontainers, use the feature:
 
 ```json
 "features": {

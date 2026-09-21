@@ -10,12 +10,15 @@ patterns, or assisting decisions.
 
 ## Status
 
-`v0.2.0` — shipped and validated against the live API: sync engine, CLI,
+`v0.2.3` — shipped and validated against the live API: sync engine, CLI,
 nightly/monthly sync workflows (this repository keeps a committed mirror
 under [`data/`](data/)), multi-platform releases, the published devcontainer
 feature
 ([`ghcr.io/iyaki/devcontainer-features/enchiridion`](https://github.com/iyaki/devcontainer-features/tree/main/src/enchiridion))
-and the consumption triggers below.
+and the consumption triggers below. Content completeness: every block's
+children fetched and flattened, to-do checkboxes, media links, synced-block
+resolution (ADR-17). Consumer projects vendor the mirror with
+`enchiridion pull` (ADR-18).
 
 ## Install
 

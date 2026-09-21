@@ -90,3 +90,64 @@ Do not run until phase 4 produces the first real sync:
 - `make deps-audit` in green (ADR-08 enforced mechanically, not just
   documented).
 - `ADR.md` updated with any deviation from these specs.
+
+## Pending work
+
+Gaps recorded after `v0.2.3`, in the order they should be tackled. Each item
+names its driver: an ADR, marker evidence from the live mirror, or an
+accepted limit. Shipped phases above stay as the record of what shipped.
+
+### Phase 7 — Mirror completeness follow-ups (pending)
+
+The post-ADR-17 mirror (2026-09-21) still leaves 80 visible comments of four
+block types: `link_to_page` (65), `child_database` (8), `table_of_contents`
+(6), and Notion's literal `unsupported` type (1).
+
+1. `table_of_contents` — the page's own headings are already in the mirror;
+   either render the anchor list or drop the block to nothing. Decision +
+   small implementation.
+2. `link_to_page` — resolve the target: when it lives in the KB, emit a link
+   to the mirror file (the engine already owns a page-id → file index); when
+   outside, keep the visible comment.
+3. `child_database` — decide whether the comment stays permanent (the
+   database lives outside the page) or the database view becomes a new API
+   surface (new scope, new ADR).
+4. Notion `unsupported` — permanent visible marker by design; document it as
+   expected output, no action.
+
+**AC**: no `link_to_page` / `table_of_contents` / `child_database` marker
+remains without either a rendered form or an explicit ADR/spec line saying
+why it stays; a full-sync regeneration confirms the counts.
+
+### Phase 8 — Web enrichment via `source_url` (pending)
+
+Pages whose Notion body is only a bookmark carry almost no mirror content;
+the real content lives at `source_url`. ADR-17 deliberately stops
+completeness at the Notion page boundary — this phase decides whether to
+cross it: fetch at sync time (network in the sync path, caching, failure
+budget) vs fetch at consumption time vs never.
+
+**AC**: an ADR decides the approach before any code; if fetch-at-sync wins,
+`integration.md` gains the request budget and failure behavior.
+
+### Phase 9 — Consumer vendoring rollout (pending)
+
+ADR-18's `enchiridion pull` shipped in `v0.2.3` but is not yet exercised by
+a real consumer project.
+
+**AC**: one real consumer project vendors `data/`, commits it, carries the
+`AGENTS.md` snippet, and an agent session in that project greps the vendored
+mirror and cites entries — verified on a machine with no enchiridion
+installation.
+
+### Operational backlog (owner; not phases)
+
+- **Persistent devcontainer cache**: mount a volume for `ENCHIRIDION_HOME`
+  so rebuilds don't wipe the cache and force a full sync (accepted limit in
+  `integration.md`; noted in ADR-10).
+- **Local refresh cadence**: monthly full (automated in this repo's CI) +
+  incremental sync at agent startup; consumer projects refresh via
+  `enchiridion pull` + commit.
+- **Deletion latency**: deletions reach the mirror only with the monthly
+  full sync (ADR-04); consumers inherit the same latency through `pull` —
+  accepted.

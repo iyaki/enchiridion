@@ -12,13 +12,19 @@ Documentation map. The record of *why* for every decision lives in
 
 ## Status
 
-- Planning: **closed** (2026-09-20, ADR-01..13; extended by ADR-14..16).
+- Planning: **closed** (2026-09-20, ADR-01..13; extended by ADR-14..18).
 - Implementation: **shipped** — phases 0–5 released as `v0.1.0` (sync engine,
   CLI, sync workflows, multi-platform releases); mirror split into
   `knowledge/` + `tools/` released as `v0.2.0` (ADR-15). Devcontainer feature
   published (`ghcr.io/iyaki/devcontainer-features/enchiridion:1`).
   `implementation-plan.md` keeps the per-phase acceptance criteria as the
   record of what shipped.
+- `v0.2.1`–`v0.2.3` (2026-09-21): full content completeness — every
+  `has_children` block fetched and flattened, to-do checkboxes, media links,
+  nested rich-text decode, synced-block instances (ADR-17) — and the
+  `enchiridion pull` vendoring command for consumer projects (ADR-18).
+- Pending work (remaining block types, web enrichment, consumer rollout):
+  **`implementation-plan.md` — Pending work**.
 - Stack decisions: see ADR-08.
 
 > Documentation rule: specs describe **what, for what purpose, and why** —

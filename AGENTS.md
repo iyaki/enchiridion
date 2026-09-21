@@ -23,9 +23,10 @@
 
 - Build the CLI binary: `make build`.
 - Run from source (no build): `make run ARGS='<command> [flags]'`.
-- Current state: `sync` shipped (`v0.2.0`: full/incremental modes, mirror
-  split into `knowledge/` + `tools/` per ADR-15). `specs/implementation-plan.md`
-  records the phases and their acceptance criteria.
+- Current state: `v0.2.3` — `sync` (full/incremental, mirror split into
+  `knowledge/` + `tools/` per ADR-15), full content completeness (ADR-17)
+  and `enchiridion pull` for consumer projects (ADR-18). Pending work and
+  remaining block types: `specs/implementation-plan.md` (Pending work).
 
 ## Tooling Expectations
 

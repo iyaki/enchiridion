@@ -16,14 +16,16 @@
 - Local suite: `make quality`.
 - Targeted runs:
   - `make lint|test|test-race|test-flaky|coverage|mutation|security|arch|deps-audit|secrets`.
-- Coverage gate: min 90% (deferred until `internal/` exists — phase 1).
+- Coverage gate: min 90%.
 - Execute mutation testing with `make mutation` ONLY in final stages of the task development. **NEVER** execute mutation testing during the Test Driven Development process.
 
 ## Build and Run
 
 - Build the CLI binary: `make build`.
 - Run from source (no build): `make run ARGS='<command> [flags]'`.
-- Current state: `sync` is not implemented yet — see `specs/implementation-plan.md`.
+- Current state: `sync` shipped (`v0.2.0`: full/incremental modes, mirror
+  split into `knowledge/` + `tools/` per ADR-15). `specs/implementation-plan.md`
+  records the phases and their acceptance criteria.
 
 ## Tooling Expectations
 

@@ -10,13 +10,11 @@ patterns, or assisting decisions.
 
 ## Status
 
-`v0.1.0` — phases 0–5 of
-[`specs/implementation-plan.md`](specs/implementation-plan.md) shipped and
-validated against the live API: sync engine, CLI, nightly/monthly sync
-workflows (this repository keeps a committed mirror under [`data/`](data/)),
-and multi-platform releases. Remaining: devcontainer feature (implemented in
-[`iyaki/devcontainer-features`](https://github.com/iyaki/devcontainer-features))
-and the consumption triggers below.
+`v0.2.0` — shipped and validated against the live API: sync engine, CLI,
+nightly/monthly sync workflows (this repository keeps a committed mirror
+under [`data/`](data/)), multi-platform releases, the devcontainer feature
+([`iyaki/devcontainer-features`](https://github.com/iyaki/devcontainer-features),
+release pending) and the consumption triggers below.
 
 ## Install
 
@@ -24,9 +22,9 @@ Releases are private (the repository is private): download with an
 authenticated `gh` CLI or from the release page in the browser.
 
 ```sh
-gh release download v0.1.0 --repo iyaki/enchiridion \
+gh release download v0.2.0 --repo iyaki/enchiridion \
     --pattern '*linux_amd64.tar.gz'
-tar xzf enchiridion_0.1.0_linux_amd64.tar.gz
+tar xzf enchiridion_0.2.0_linux_amd64.tar.gz
 install -m 0755 enchiridion /usr/local/bin/enchiridion
 enchiridion version
 ```
@@ -86,7 +84,11 @@ where the explicit rule is wanted, this snippet in their `AGENTS.md`:
 ## enchiridion
 
 Primary source of truth: mirror of the knowledge base in
-`~/.local/share/enchiridion/knowledge/` (override: `$ENCHIRIDION_HOME`).
+`~/.local/share/enchiridion/knowledge/` (curated knowledge) and
+`~/.local/share/enchiridion/tools/` (tools, services, websites) — override
+with `$ENCHIRIDION_HOME`. Consumption is two-phase (ADR-15): search
+`knowledge/` first for the recorded precedent, then use the topic tags found
+there to search `tools/` for supporting options.
 
 Consult the mirror (rg/grep) BEFORE answering when the task involves:
 - choosing or recommending a library, framework or tool

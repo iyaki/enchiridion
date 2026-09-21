@@ -4,140 +4,140 @@ notion_id: d613a938-13d4-4d87-96c4-e6c48154be74
 notion_url: https://app.notion.com/p/Regex-Isn-t-Hard-d613a93813d44d8796c4e6c48154be74
 last_edited: 2023-07-14T17:19:00.000Z
 source_url: https://timkellogg.me/blog/2023/07/11/regex
-tags: ["English", "Programming", "Article", "Tim Kellogg Blog"]
+tags: ["Programming", "Article", "Tim Kellogg Blog", "English"]
 ---
+Regex gets a bad reputation for being very complex. That’s fair, but I also think that if you focus on a certain core subset of regex, it’s not that hard. Most of the complexity comes from various “shortcuts” that are hard to remember. If you ignore those, the language itself is fairly small and portable across programming languages.
 
+It’s worth knowing regex because you can get **A LOT** done in very little code. If I try to replicate what my regex does using normal procedural code, it’s often very verbose, buggy and significantly slower. It often takes hours or days to do better than a couple minutes of writing regex.
 
+NOTE: Some languages, like Rust, have parser combinators which can be as good or better than regex in most of the ways I care about. However, I often opt for regex anyway because it’s less to fit in my brain. There’s a single core subset of regex that all major programming languages support.
 
+There’s four major concepts you need to know
 
+1. Character sets
+2. Repetition
+3. Groups
+4. The `|`, `^` and `$` operators
 
+Here I’ll highlight a subset of the regex language that’s not hard to understand or remember. Throughout I’ll also tell you what to ignore. Most of these things are shortcuts that save a little verbosity at the expense of a lot of complexity. I’d rather verbosity than complexity, so I stick to this subset.
 
+# Character Sets
 
+A character set is the smallest unit of text matching available in regex. It’s just one character.
 
-1. 
-2. 
-3. 
-4. 
+## Single characters
 
+`a` matches a single character, always lowercase `a`. `aaa` is 3 consecutive character sets, each matches only `a`. Same with `abc`, but the second and third match `b` and `c` respectively.
 
+## Ranges
 
-# 
+Match one of a set of characters.
 
+- `[a]` — same as just `a`
+- `[abc]` — Matches `a`, `b`, or `c`.
+- `[a-c]` — Same, but using  to specify a range of characters
+- `[a-z]` — any lowercase character
+- `[a-zA-Z]` — any lowercase or uppercase character
+- `[a-zA-Z0-9!@#$%^&*()-]` — alphanumeric plus any of these symbols: `!@#$%^&*()-`
 
+Note in that last point how `-` comes last. Also note that `^` isn’t the first character in the range, the `^` can become an operator if it occurs as the first character in a character set or regex.
 
-## 
+There’s a parallel to boolean logic here:
 
+- `ab` means “`a` AND `b`”
+- `[ab]` means `a` OR `b`”
 
+You can build more complex logic using groups and negation.
 
-## 
+## Negation (`^`)
 
+I mention this operator later, but in the context of character sets, it means “everything but these”.
 
+Example:
 
-- 
-- 
-- 
-- 
-- 
-- 
+- `[^ab]` means “everything but `a` or `b`
+- `[ab^]` means “`a`, `b` or `^`. The `^` has to be the first character to have special meaning.
 
+## [Ignore this stuff]
 
+These things are unnecessarily complex. They save some verbosity at the expense of a lot of complexity.
 
+- `\w`, `\s`, etc. — These are shortcuts for ranges like `[a-zA-Z0-9]`. Ignore them because they’re not portable. Most programming languages have them to some extent, but they’re hard to remember. Some languages use different syntax, like `:word:`, which is almost as long as writing it out explicitly.
+- `.` — The dot (`.`) matches any character, but not always. Sometimes it doesn’t match newlines. In some programming languages it never matches newlines. I’ve gotten bitten too often by the `.` not behaving like I think it should. It’s best to ignore this entirely. Instead, use a range negation, like `[^%]` if you know the `%` character won’t show up. It doesn’t hurt to be a little more explicit.
 
+# Repetition
 
-- 
-- 
+These operators change the immediately previous character set to match a certain number of times:
 
+- `?` — zero or one
+-  — zero or more
+- `+` — one or more
 
+All these also work on entire groups as well.
 
-## 
+## [Ignore this stuff]
 
+These are unnecessarily complex. You can accomplish the same thing through other means.
 
+- Non-greedy matching, `?` and `+?`. This comes up a lot when you use the `.` character set. Instead, you can usually use a stricter negation character set like `[^%]`.
+- Repetition ranges, i.e. `{1,2}`. Just duplicate your pattern or use `?` or  on the group.
 
+# Groups
 
+A group is basically a sub-regex. There’s three common uses for groups:
 
-- 
-- 
+## 1. Repeat a sub-pattern
 
-## 
+e.g. This pattern `([0-9][0-9]?[0-9]][.])+` matches one, two or three digits followed by a `.` and also matches repeated patterns of this. This wold match an IP address (albeit not strictly).
 
+## 2. Substitutions
 
+The most common regex operations are match and substitute. However, the API for subtitution varies quite a bit depending on the host langauge.
 
-- 
-- 
+- Methods — in C#, Java, Python, etc. there’s typically a method or function named something like `sub`, `substitute` or `replace`.
+- `sed` style — in sed, Perl, and bash it flows like `s/pattern/replacement/`, where the leading `s` means to “substitute”.
 
-# 
+In both cases you can use `$1` or `\1`. Lookup in the docs for which is appropriate.
 
+## 3. Extract text
 
+You can extract the text that the group matches.
 
-- 
-- 
-- 
+- `0` — the entire regex match
+- `1`∞ — the text matched by the 1-indexed group. The first set of parentheses is group `1`, seconnd is `2`, etc.
 
+The non-portable part is that the API for accessing groups is almost always different in every programming language. Still, group extraction is extremely useful, so just look it up.
 
+The most common APIs look like:
 
-## 
+- `Match.group(1)` — Python, C#, Java, etc. offer a method from the main programming language to extract a group from a match object. The exact method name is usually some something like `group` or `getGroup`.
+- `$1` — Perl will set variables like `$1` and `$2` in the local scope. Most programming languages can’t do this, but you’ll see the syntax come up, e.g. with replacements often you can use either `$1` or `\1` in the substitution text.
 
+If those APIs don’t exist, or if you don’t feel like remembering it, you can replicate extraction via subtitution. For example, in Python you can do `re.sub("([^\n]*\\.foo)[^\n]*", "$1", input_str)` to extract the first group
 
+## [Ignore this stuff]
 
-- 
-- 
+There are some operators at the beginning of groups, like `(?:` that can mean various things like “non-capturing group” or “look-ahead” or “look-behind”. These are fairly advanced and you can generally get away without knowing about them.
 
-# 
+# The, `|`, `^` and `$` Operators
 
+The `|` operator is OR, but for entire regex or groups.
 
+- `foo|bar` matches either `foo` or `bar`
+- `(foo|bar)+` adds some repetition on it, e.g. it matches `barfoobarfoo`
 
-## 
+The `^` is only ever significant when it’s the first character:
 
+- First in the pattern — match starting at the beginning of the string or line. e.g. `^foo` will match `foobar` but not `barfoo`. 
+- WARNING: Some regex APIs always behave like the pattern is always surrounded by `^` and `$`. You can test for this pretty easily with trial and error.
+- First in character set — negation, match everything but those characters
 
+The `$` character only ever means “the end” and it’s only used in top-level regex.
 
-## 
+# Conclusion
 
+It’s not a bad idea to always only stick to this subset of regex because it’s mostly portable across programming languages. That means less things to remember, so you get a lot of “bang for the buck” in terms of jamming info into your brain. The quirks that do exist are relatively few, and are usually worth the effort because of the value they provide.
 
+Regarding portability — most modern implementations try to copy some subset of Perl regex. The subset I’ve outlined here is pretty consistent accross the major programming languages of today. However, you might run into some surprises if you’re using old tools like `sed` and `grep` that were created around the same time Perl was developing the idea of regex. Newer implementations are reasonaby stable though.
 
-- 
-- 
-
-
-
-## 
-
-
-
-- 
-- 
-
-
-
-
-
-- 
-- 
-
-
-
-## 
-
-
-
-# 
-
-
-
-- 
-- 
-
-
-
-- 
-- 
-- 
-
-
-
-# 
-
-
-
-
-
-
+Too often people entirely reject regex, which is a shame because it’s an incredibly powerful language for text processing. A little bit of regex knowledge goes a very long way. I hope this helps!

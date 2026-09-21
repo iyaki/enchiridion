@@ -6,6 +6,6 @@ last_edited: 2022-12-30T14:14:00.000Z
 source_url: https://codingdojo.org/
 tags: ["Website", "English", "Programming", "Learning"]
 ---
-
+The purpose of this website is to gather resources, sessions and stories from users around the world that the Coding Dojo website should provide to its user community.
 
 

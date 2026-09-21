@@ -6,14 +6,14 @@ last_edited: 2023-12-19T13:51:00.000Z
 source_url: https://www.bad.ge/
 tags: ["English", "Web Development", "Frontend", "Graphic Design", "Blogging/Content Creation", "Service", "Tool"]
 ---
+FOR THE BADGE IS A
 
+~~GRASSROOTS MOVEMENT~~~~SCIENTIFIC ENDEAVOR~~~~HUMANITARIAN SOCIETY~~~~LITERARY MASTERPIECE~~~~KNITTING CLUB~~
 
+POWERFUL WAY TO EXPRESS EMOTION.
 
+We don’t develop for the money, power, fame, or codebabes. We do it For the Badge.
 
+It all started because of an obsession with two words: “build passing”.
 
-
-
-
-
-
-
+It all ended with this: badges, for badges’ sake.

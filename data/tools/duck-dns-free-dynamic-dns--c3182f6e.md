@@ -6,8 +6,8 @@ last_edited: 2024-03-25T17:24:00.000Z
 source_url: https://www.duckdns.org/
 tags: ["Service", "English", "Network", "Untried"]
 ---
-## 
+## free dynamic DNS hosted on AWS
 
+**news:** [login with Reddit is no more](https://www.duckdns.org/reddit.jsp) - legal request
 
-
-
+**support us:** become a [Patreon](https://www.patreon.com/user?u=3209735&u=3209735&ty=h)

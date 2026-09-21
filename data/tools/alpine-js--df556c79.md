@@ -8,16 +8,16 @@ tags: ["English", "HTML", "Javascript", "Framework/Library"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+[ Get started →](https://alpinejs.dev/start-here)
+
+`<script src="//unpkg.com/alpinejs" defer></script>`    `<div x-data="{ open: false }">` `    <button @click="open = true">Expand</button>`   `    <span x-show="open">` `      Content...` `    </span>` `</div>`
+
+Alpine is a rugged, minimal tool for composing behavior directly in your markup. Think of it like jQuery for the modern web. Plop in a script tag and get going.
+
+Alpine is a collection of **15 attributes**, **6 properties**, and **2 methods**.
 
 
 
-
-
-
-
-
-
-
-## 
+## Related
 
 <!-- unsupported block: link_to_page -->

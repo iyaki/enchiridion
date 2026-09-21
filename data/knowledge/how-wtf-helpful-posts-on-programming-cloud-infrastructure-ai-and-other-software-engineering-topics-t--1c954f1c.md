@@ -4,198 +4,198 @@ notion_id: 1c954f1c-7d23-81fa-bc87-fb5dc76ed7f6
 notion_url: https://app.notion.com/p/how-wtf-Helpful-posts-on-programming-cloud-infrastructure-AI-and-other-software-engineering-top-1c954f1c7d2381fabc87fb5dc76ed7f6
 last_edited: 2025-04-20T19:05:00.000Z
 source_url: https://how.wtf/posts.html
-tags: ["English", "Programming", "SysAdmin", "DevOps", "Infrastructure", "Website", "Article"]
+tags: ["Website", "Article", "English", "Programming", "SysAdmin", "DevOps", "Infrastructure"]
 ---
+191 posts filterable by [categories](https://how.wtf/categories.html) or [tags](https://how.wtf/tags.html).
 
-
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+- [API Key Authentication with API Gateway using AWS CDK](https://how.wtf/api-key-authentication-with-api-gateway-using-aws-cdk.html)
+- _2024-06-02 _[A step-by-step guide on how to use the Amazon Bedrock Converse API](https://how.wtf/a-step-by-step-guide-on-how-to-use-the-amazon-bedrock-converse-api.html)
+- _2024-04-28 _[Multiple operations in a single DynamoDB update expression](https://how.wtf/multiple-operations-in-a-single-dynamodb-update-expression.html)
+- _2024-04-23 _[Detecting and redacting PII using Amazon Bedrock](https://how.wtf/detecting-and-redacting-pii-using-amazon-bedrock.html)
+- _2024-04-21 _[Anthropic Claude with tools using Python SDK](https://how.wtf/anthropic-claude-with-tools-using-python-sdk.html)
+- _2024-04-14 _[Applying event filters to AWS Lambda Functions with the AWS CDK](https://how.wtf/applying-event-filters-to-aws-lambda-functions-with-the-aws-cdk.html)
+- _2024-04-06 _[Deploy serverless Lambda TypeScript API with function url using AWS CDK](https://how.wtf/deploy-serverless-lambda-typescript-api-with-function-url-using-aws-cdk.html)
+- _2024-03-09 _[Using Claude 3 Opus with Anthropic API in Python](https://how.wtf/using-claude-3-opus-with-anthropic-api-in-python.html)
+- _2024-03-04 _[Amazon Bedrock with images using Claude 3 Sonnet with Python](https://how.wtf/amazon-bedrock-with-images-using-claude-3-sonnet-with-python.html)
+- _2024-02-11 _[Create and run Bash programs with LangChain](https://how.wtf/create-and-run-bash-programs-with-langchain.html)
+- _2024-02-10 _[Step by step guide for the date in Bash](https://how.wtf/step-by-step-guide-for-the-date-in-bash.html)
+- _2024-02-10 _[Get Anthropic Claude Amazon Bedrock token counts](https://how.wtf/get-anthropic-claude-amazon-bedrock-token-counts.html)
+- _2024-02-03 _[The right way to test exit codes in Bash](https://how.wtf/the-right-way-to-test-exit-codes-in-bash.html)
+- _2024-02-03 _[How to use Embedchain with AWS Bedrock](https://how.wtf/how-to-use-embedchain-with-aws-bedrock.html)
+- _2024-01-28 _[How to use JSON files in vector stores with Langchain](https://how.wtf/how-to-use-json-files-in-vector-stores-with-langchain.html)
+- _2024-01-27 _[DynamoDB PartiQL guide](https://how.wtf/dynamodb-partiql-guide.html)
+- _2024-01-26 _[Using type annotations with kwargs in Python](https://how.wtf/using-type-annotations-with-kwargs-in-python.html)
+- _2024-01-21 _[Bruno: The Postman alternative you are looking for](https://how.wtf/bruno-the-postman-alternative-you-are-looking-for.html)
+- _2024-01-17 _[Tagging in AWS CDK](https://how.wtf/tagging-in-aws-cdk.html)
+- _2024-01-14 _[A guide for deploying CloudFormation with CLI using Rain](https://how.wtf/a-guide-for-deploying-cloudformation-with-cli-using-rain.html)
+- _2024-01-13 _[Implement version control in DynamoDB](https://how.wtf/implement-version-control-in-dynamodb.html)
+- _2024-01-10 _[Create IAM role with multiple principals in AWS CDK](https://how.wtf/create-iam-role-with-multiple-principals-in-aws-cdk.html)
+- _2024-01-07 _[Serverless FastAPI with AWS Lambda, API Gateway, and AWS CDK](https://how.wtf/serverless-fastapi-with-aws-lambda-api-gateway-and-aws-cdk.html)
+- _2024-01-05 _[Creating a serverless API using AWS Lambda Powertools and CDK](https://how.wtf/creating-a-serverless-api-using-aws-lambda-powertools-and-cdk.html)
+- _2024-01-02 _[Lambda Bash custom runtime with AWS CDK](https://how.wtf/lambda-bash-custom-runtime-with-aws-cdk.html)
+- _2023-12-31 _[Goatcounter for blog analytics](https://how.wtf/goatcounter-for-blog-analytics.html)
+- _2023-12-27 _[How to get top used Linux commands](https://how.wtf/how-to-get-top-used-linux-commands.html)
+- _2023-12-24 _[How to wait for all threads to finish in Python](https://how.wtf/how-to-wait-for-all-threads-to-finish-in-python.html)
+- _2023-12-22 _[Stable Diffusion with Amazon Bedrock Python boto3](https://how.wtf/stable-diffusion-with-amazon-bedrock-python-boto3.html)
+- _2023-12-20 _[Invoke Amazon Bedrock models from Step Functions with AWS CDK](https://how.wtf/invoke-amazon-bedrock-models-from-step-functions-with-aws-cdk.html)
+- _2023-12-17 _[Amazon Bedrock Runtime examples using boto3](https://how.wtf/amazon-bedrock-runtime-examples-using-boto3.html)
+- _2023-12-16 _[ABC vs Protocol in Python](https://how.wtf/abc-vs-protocol-in-python.html)
+- _2023-12-12 _[How to use CSV files in vector stores with Langchain](https://how.wtf/how-to-use-csv-files-in-vector-stores-with-langchain.html)
+- _2023-12-09 _[Open a GitHub pull request using the command line](https://how.wtf/open-a-github-pull-request-using-the-command-line.html)
+- _2023-12-08 _[Set up time-to-live (TTL) attribute in DynamoDB](https://how.wtf/set-up-time-to-live-ttl-attribute-in-dynamodb.html)
+- _2023-12-06 _[How to use NordVPN on Linux step-by-step guide](https://how.wtf/how-to-use-nordvpn-on-linux-step-by-step-guide.html)
+- _2023-12-01 _[How to use Docker without Docker Desktop on MacOS](https://how.wtf/how-to-use-docker-without-docker-desktop-on-macos.html)
+- _2023-11-29 _[Golang AWS Lambda project structure](https://how.wtf/golang-aws-lambda-project-structure.html)
+- _2023-11-24 _[How to count Amazon Bedrock Anthropic tokens with Langchain](https://how.wtf/how-to-count-amazon-bedrock-anthropic-tokens-with-langchain.html)
+- _2023-11-22 _[How to count Amazon Bedrock Claude tokens step-by-step guide](https://how.wtf/how-to-count-amazon-bedrock-claude-tokens-step-by-step-guide.html)
+- _2023-11-21 _[How to prompt DALL-E effectively](https://how.wtf/how-to-prompt-dall-e-effectively.html)
+- _2023-11-19 _[OpenAI Assistants vs GPTs](https://how.wtf/openai-assistants-vs-gpts.html)
+- _2023-11-18 _[Langchain with Amazon Bedrock](https://how.wtf/langchain-with-amazon-bedrock.html)
+- _2023-11-17 _[A simple guide for hosting LLMs locally](https://how.wtf/a-simple-guide-for-hosting-llms-locally.html)
+- _2023-11-16 _[How to use Chroma DB step-by-step guide](https://how.wtf/how-to-use-chroma-db-step-by-step-guide.html)
+- _2023-11-14 _[Differences between Langchain and LlamaIndex and their use cases](https://how.wtf/differences-between-langchain-and-llamaindex-and-their-use-cases.html)
+- _2023-11-13 _[Reverting changes to Git submodules](https://how.wtf/reverting-changes-to-git-submodules.html)
+- _2023-11-12 _[Create Lambda Function URL using AWS CDK](https://how.wtf/create-lambda-function-url-using-aws-cdk.html)
+- _2023-11-11 _[Custom memory in Langchain](https://how.wtf/custom-memory-in-langchain.html)
+- _2023-06-13 _[How to iterate through JSON arrays in Bash using jq](https://how.wtf/how-to-iterate-through-json-arrays-in-bash-using-jq.html)
+- _2023-06-11 _[DynamoDB auto incrementing keys: Why UUIDs are the recommended choice](https://how.wtf/dynamodb-auto-incrementing-keys-why-uuids-are-the-recommended-choice.html)
+- _2023-06-10 _[Pico vs Nano A Comparison of Lightweight Text Editors](https://how.wtf/pico-vs-nano-a-comparison-of-lightweight-text-editors.html)
+- _2023-06-08 _[Use virtualenv with a Python Jupyter notebook](https://how.wtf/use-virtualenv-with-a-python-jupyter-notebook.html)
+- _2023-06-07 _[Create an HTTP server in one line](https://how.wtf/create-an-http-server-in-one-line.html)
+- _2023-06-05 _[shuf command in Linux](https://how.wtf/shuf-command-in-linux.html)
+- _2023-06-04 _[rev command in Linux and how to reverse strings](https://how.wtf/rev-command-in-linux-and-how-to-reverse-strings.html)
+- _2023-06-03 _[Undo and redo changes in Vim](https://how.wtf/undo-and-redo-changes-in-vim.html)
+- _2023-06-03 _[Invalid constructor name error in Apex](https://how.wtf/invalid-constructor-name-error-in-apex.html)
+- _2023-06-01 _[What is the apropos command in Linux](https://how.wtf/what-is-the-apropos-command-in-linux.html)
+- _2023-05-31 _[What is double asterisk kwargs in Python](https://how.wtf/what-is-double-asterisk-kwargs-in-python.html)
+- _2023-05-30 _[Sort a dictionary by key or value in Python](https://how.wtf/sort-a-dictionary-by-key-or-value-in-python.html)
+- _2023-05-29 _[Iterate through two lists in parallel in Python](https://how.wtf/iterate-through-two-lists-in-parallel-in-python.html)
+- _2023-05-28 _[How to install Neovim on Ubuntu](https://how.wtf/how-to-install-neovim-on-ubuntu.html)
+- _2023-05-27 _[Find devices on a network in Linux](https://how.wtf/find-devices-on-a-network-in-linux.html)
+- _2023-05-26 _[Merge JSON objects using jq](https://how.wtf/merge-json-objects-using-jq.html)
+- _2023-05-24 _[Get key names from JSON using jq](https://how.wtf/get-key-names-from-json-using-jq.html)
+- _2023-05-23 _[Uninstall AWS CLI](https://how.wtf/uninstall-aws-cli.html)
+- _2023-05-22 _[Full scan of DynamoDB table in Python](https://how.wtf/full-scan-of-dynamodb-table-in-python.html)
+- _2023-05-21 _[Python switch statement example](https://how.wtf/python-switch-statement-example.html)
+- _2023-05-20 _[Command line recycle bin for Linux](https://how.wtf/command-line-recycle-bin-for-linux.html)
+- _2023-05-19 _[Check if a variable is set in Bash](https://how.wtf/check-if-a-variable-is-set-in-bash.html)
+- _2023-05-18 _[Count number of files in Linux](https://how.wtf/count-number-of-files-in-linux.html)
+- _2023-05-17 _[Great alternatives to man pages everyone needs](https://how.wtf/great-alternatives-to-man-pages-everyone-needs.html)
+- _2023-05-16 _[AWS SigV4 requests with curl](https://how.wtf/aws-sigv4-requests-with-curl.html)
+- _2023-05-15 _[How to use curl for HTTP requests](https://how.wtf/how-to-use-curl-for-http-requests.html)
+- _2023-05-14 _[How to make a PATCH request using curl](https://how.wtf/how-to-make-a-patch-request-using-curl.html)
+- _2023-05-14 _[How to make a DELETE request using curl](https://how.wtf/how-to-make-a-delete-request-using-curl.html)
+- _2023-05-13 _[How to make a PUT request using curl](https://how.wtf/how-to-make-a-put-request-using-curl.html)
+- _2023-05-13 _[How to make a GET request using curl](https://how.wtf/how-to-make-a-get-request-using-curl.html)
+- _2023-05-13 _[How to make a POST request using curl](https://how.wtf/how-to-make-a-post-request-using-curl.html)
+- _2023-05-12 _[What is the curl command](https://how.wtf/what-is-the-curl-command.html)
+- _2023-05-11 _[Build a dead simple CLI in Bash](https://how.wtf/build-a-dead-simple-cli-in-bash.html)
+- _2023-05-10 _[Get file name or extension in Bash](https://how.wtf/get-file-name-or-extension-in-bash.html)
+- _2023-05-09 _[Convert a string to lowercase in Bash](https://how.wtf/convert-a-string-to-lowercase-in-bash.html)
+- _2023-05-08 _[Use Linux terminal as a calculator](https://how.wtf/use-linux-terminal-as-a-calculator.html)
+- _2023-05-06 _[Installing Docker on Ubuntu](https://how.wtf/installing-docker-on-ubuntu.html)
+- _2023-05-05 _[Test AWS credentials using AWS CLI](https://how.wtf/test-aws-credentials-using-aws-cli.html)
+- _2023-05-04 _[Split a list into evenly sized batches in Python](https://how.wtf/split-a-list-into-evenly-sized-batches-in-python.html)
+- _2023-05-03 _[Delete local branches not on remote using Git](https://how.wtf/delete-local-branches-not-on-remote-using-git.html)
+- _2023-05-02 _[Access the current index in for loops in Python](https://how.wtf/access-the-current-index-in-for-loops-in-python.html)
+- _2023-05-01 _[Kill all processes that match a name](https://how.wtf/kill-all-processes-that-match-a-name.html)
+- _2023-04-30 _[Confirmation prompt yes/no in Bash](https://how.wtf/confirmation-prompt-yes/no-in-bash.html)
+- _2023-04-29 _[Create dictionaries or maps in Bash](https://how.wtf/create-dictionaries-or-maps-in-bash.html)
+- _2023-04-28 _[Get seconds since Epoch in Bash](https://how.wtf/get-seconds-since-epoch-in-bash.html)
+- _2023-04-27 _[Catch and handle errors in Bash](https://how.wtf/catch-and-handle-errors-in-bash.html)
+- _2023-04-27 _[Top free PostgreSQL database hosting options](https://how.wtf/top-free-postgresql-database-hosting-options.html)
+- _2023-04-26 _[Find all files containing a specific text or pattern on Linux](https://how.wtf/find-all-files-containing-a-specific-text-or-pattern-on-linux.html)
+- _2023-04-25 _[Write jq output to a file](https://how.wtf/write-jq-output-to-a-file.html)
+- _2023-04-23 _[Python title method in JavaScript](https://how.wtf/python-title-method-in-javascript.html)
+- _2023-04-22 _[Deep clone an object in JavaScript](https://how.wtf/deep-clone-an-object-in-javascript.html)
+- _2023-04-22 _[Search across all object values in an array in JavaScript](https://how.wtf/search-across-all-object-values-in-an-array-in-javascript.html)
+- _2023-04-20 _[Sort array of objects by single or multiple keys in JavaScript](https://how.wtf/sort-array-of-objects-by-single-or-multiple-keys-in-javascript.html)
+- _2023-04-19 _[Function and method overloading in TypeScript](https://how.wtf/function-and-method-overloading-in-typescript.html)
+- _2023-04-18 _[Dynamic variable names in Bash](https://how.wtf/dynamic-variable-names-in-bash.html)
+- _2023-04-17 _[Parallel commands in Bash](https://how.wtf/parallel-commands-in-bash.html)
+- _2023-04-16 _[Return a string from a function in Bash](https://how.wtf/return-a-string-from-a-function-in-bash.html)
+- _2023-04-15 _[jq starts with query](https://how.wtf/jq-starts-with-query.html)
+- _2023-04-14 _[Getters and setters in Python](https://how.wtf/getters-and-setters-in-python.html)
+- _2023-04-13 _[Difference between is and equal in Python](https://how.wtf/difference-between-is-and-equal-in-python.html)
+- _2023-04-12 _[Promise all in Python](https://how.wtf/promise-all-in-python.html)
+- _2023-04-11 _[Enums in Python](https://how.wtf/enums-in-python.html)
+- _2023-04-10 _[Enums in Golang](https://how.wtf/enums-in-golang.html)
+- _2023-04-09 _[AWS CLI starts with query](https://how.wtf/aws-cli-starts-with-query.html)
+- _2023-04-08 _[Executing Python scripts with a shebang](https://how.wtf/executing-python-scripts-with-a-shebang.html)
+- _2023-04-07 _[gyp no xcode or clt version detected](https://how.wtf/gyp-no-xcode-or-clt-version-detected.html)
+- _2023-04-06 _[Check for valid json string or file with jq](https://how.wtf/check-for-valid-json-string-or-file-with-jq.html)
+- _2023-04-05 _[Patch operations for updating api resources with the AWS CLI](https://how.wtf/patch-operations-for-updating-api-resources-with-the-aws-cli.html)
+- _2023-04-04 _[AWS Lambda caching in Python](https://how.wtf/aws-lambda-caching-in-python.html)
+- _2023-04-03 _[Calculate the middle between two dates in JavaScript](https://how.wtf/calculate-the-middle-between-two-dates-in-javascript.html)
+- _2023-04-02 _[Python dataclass validation](https://how.wtf/python-dataclass-validation.html)
+- _2023-04-01 _[Check if a variable is an array in JavaScript](https://how.wtf/check-if-a-variable-is-an-array-in-javascript.html)
+- _2023-03-31 _[Pull latest changes from submodules in Git](https://how.wtf/pull-latest-changes-from-submodules-in-git.html)
+- _2023-03-30 _[Reset a single file in Git](https://how.wtf/reset-a-single-file-in-git.html)
+- _2023-03-29 _[Match everything between two characters in Regex](https://how.wtf/match-everything-between-two-characters-in-regex.html)
+- _2023-03-28 _[JSON prettify in Python](https://how.wtf/json-prettify-in-python.html)
+- _2023-03-27 _[Specify a log group for a lambda function in AWS CloudFormation](https://how.wtf/specify-a-log-group-for-a-lambda-function-in-aws-cloudformation.html)
+- _2023-03-26 _[What does PHONY mean in a Makefile](https://how.wtf/what-does-phony-mean-in-a-makefile.html)
+- _2023-03-25 _[List public IP addresses of EC2 instances using AWS CLI](https://how.wtf/list-public-ip-addresses-of-ec2-instances-using-aws-cli.html)
+- _2023-03-24 _[Turn off the pager for AWS CLI](https://how.wtf/turn-off-the-pager-for-aws-cli.html)
+- _2023-03-23 _[Use multiple AWS accounts using AWS CLI](https://how.wtf/use-multiple-aws-accounts-using-aws-cli.html)
+- _2023-03-22 _[Filter S3 files in bucket by pattern using AWS CLI](https://how.wtf/filter-s3-files-in-bucket-by-pattern-using-aws-cli.html)
+- _2023-03-21 _[STS assume role in one command using AWS CLI](https://how.wtf/sts-assume-role-in-one-command-using-aws-cli.html)
+- _2023-03-20 _[Invalid base64 error Lambda AWS CLI](https://how.wtf/invalid-base64-error-lambda-aws-cli.html)
+- _2023-03-19 _[Add new element to JSON array with jq](https://how.wtf/add-new-element-to-json-array-with-jq.html)
+- _2023-03-18 _[Passing variables to jq](https://how.wtf/passing-variables-to-jq.html)
+- _2023-03-17 _[How to source shell scripts in Fish](https://how.wtf/how-to-source-shell-scripts-in-fish.html)
+- _2023-03-16 _[Executing a script with dot vs source in Bash](https://how.wtf/executing-a-script-with-dot-vs-source-in-bash.html)
+- _2023-03-15 _[Ternary operator in Python](https://how.wtf/ternary-operator-in-python.html)
+- _2023-03-14 _[Grep for contents after pattern match](https://how.wtf/grep-for-contents-after-pattern-match.html)
+- _2023-03-13 _[How to pass variables to Makefiles](https://how.wtf/how-to-pass-variables-to-makefiles.html)
+- _2023-03-12 _[Write a multi-line command in a Makefile](https://how.wtf/write-a-multi-line-command-in-a-makefile.html)
+- _2023-03-11 _[Check if a program exists from a Makefile](https://how.wtf/check-if-a-program-exists-from-a-makefile.html)
+- _2023-03-10 _[Convert OrderedDict to dict in Python](https://how.wtf/convert-ordereddict-to-dict-in-python.html)
+- _2023-03-09 _[Set cache control on S3 objects using the AWS CLI](https://how.wtf/set-cache-control-on-s3-objects-using-the-aws-cli.html)
+- _2023-03-08 _[Conditionally add properties to an object in JavaScript](https://how.wtf/conditionally-add-properties-to-an-object-in-javascript.html)
+- _2023-03-07 _[Run workflow, step, or job based on file changes GitHub Actions](https://how.wtf/run-workflow-step-or-job-based-on-file-changes-github-actions.html)
+- _2023-03-06 _[How to unadd or uncommit files in Git](https://how.wtf/how-to-unadd-or-uncommit-files-in-git.html)
+- _2023-03-05 _[How to remove or delete a PPA in Ubuntu](https://how.wtf/how-to-remove-or-delete-a-ppa-in-ubuntu.html)
+- _2023-03-04 _[How to catch Boto3 errors](https://how.wtf/how-to-catch-boto3-errors.html)
+- _2023-03-03 _[How to install Microsoft fonts on Ubuntu](https://how.wtf/how-to-install-microsoft-fonts-on-ubuntu.html)
+- _2023-03-02 _[How to install Microsoft Edge on Ubuntu](https://how.wtf/how-to-install-microsoft-edge-on-ubuntu.html)
+- _2023-03-01 _[Disable welcome message in Fish Shell](https://how.wtf/disable-welcome-message-in-fish-shell.html)
+- _2023-02-28 _[Get size of an S3 bucket with AWS CLI](https://how.wtf/get-size-of-an-s3-bucket-with-aws-cli.html)
+- _2023-02-27 _[Difference between init and new in Python](https://how.wtf/difference-between-init-and-new-in-python.html)
+- _2023-02-26 _[Singleton in Python](https://how.wtf/singleton-in-python.html)
+- _2023-02-25 _[Read environment variables from file in Python](https://how.wtf/read-environment-variables-from-file-in-python.html)
+- _2023-02-24 _[Execute CLI commands in Python](https://how.wtf/execute-cli-commands-in-python.html)
+- _2023-02-23 _[Play sounds or music from Linux terminal](https://how.wtf/play-sounds-or-music-from-linux-terminal.html)
+- _2023-02-22 _[Difference between continue and pass in Python](https://how.wtf/difference-between-continue-and-pass-in-python.html)
+- _2023-02-21 _[Static methods in Python](https://how.wtf/static-methods-in-python.html)
+- _2023-02-20 _[How to delete files and directories in Python](https://how.wtf/how-to-delete-files-and-directories-in-python.html)
+- _2023-02-19 _[Python dataclasses with optional fields](https://how.wtf/python-dataclasses-with-optional-fields.html)
+- _2023-02-18 _[CloudFormation create stack vs deploy in AWS CLI](https://how.wtf/cloudformation-create-stack-vs-deploy-in-aws-cli.html)
+- _2023-02-17 _[How to view or tail AWS logs in real time](https://how.wtf/how-to-view-or-tail-aws-logs-in-real-time.html)
+- _2023-02-16 _[How to copy files in Linux](https://how.wtf/how-to-copy-files-in-linux.html)
+- _2023-02-15 _[How to move files in Linux](https://how.wtf/how-to-move-files-in-linux.html)
+- _2023-02-14 _[Create multiple directories at once in terminal](https://how.wtf/create-multiple-directories-at-once-in-terminal.html)
+- _2023-02-13 _[Adding a new IAM User using the AWS CLI](https://how.wtf/adding-a-new-iam-user-using-the-aws-cli.html)
+- _2023-02-12 _[Clear all CloudFront cache and files using AWS CLI](https://how.wtf/clear-all-cloudfront-cache-and-files-using-aws-cli.html)
+- _2023-02-11 _[Find AWS Account Id using CLI or Boto3](https://how.wtf/find-aws-account-id-using-cli-or-boto3.html)
+- _2023-02-10 _[How to get start or end of a day in Python](https://how.wtf/how-to-get-start-or-end-of-a-day-in-python.html)
+- _2023-02-09 _[Resource vs Client in Python Boto3](https://how.wtf/resource-vs-client-in-python-boto3.html)
+- _2023-02-08 _[DynamoDB error: key element does not match the schema](https://how.wtf/dynamodb-error-key-element-does-not-match-the-schema.html)
+- _2023-02-07 _[You must specify a region error AWS](https://how.wtf/you-must-specify-a-region-error-aws.html)
+- _2023-02-06 _[Storing large items in DynamoDB](https://how.wtf/storing-large-items-in-dynamodb.html)
+- _2022-12-01 _[How to push an empty commit in Git](https://how.wtf/how-to-push-an-empty-commit-in-git.html)
+- _2022-10-01 _[Interfaces in Python](https://how.wtf/interfaces-in-python.html)
+- _2022-06-27 _[How to Set Default Audio in Ubuntu](https://how.wtf/how-to-set-default-audio-in-ubuntu.html)
+- _2022-06-24 _[Check if a String Contains a Substring in Python](https://how.wtf/check-if-a-string-contains-a-substring-in-python.html)
+- _2022-06-19 _[For Loops in Bash](https://how.wtf/for-loops-in-bash.html)
+- _2021-12-12 _[Deploy AWS Cloudfront and security headers with Terraform](https://how.wtf/deploy-aws-cloudfront-and-security-headers-with-terraform.html)
+- _2021-12-11 _[How to split a string in Bash](https://how.wtf/how-to-split-a-string-in-bash.html)
+- _2021-08-28 _[How to upgrade the AWS CDK CLI](https://how.wtf/how-to-upgrade-the-aws-cdk-cli.html)
+- _2021-07-10 _[Using Virtualenv with Python](https://how.wtf/using-virtualenv-with-python.html)
+- _2021-07-04 _[Deploy Cloudfront Functions to add security headers with AWS CDK](https://how.wtf/deploy-cloudfront-functions-to-add-security-headers-with-aws-cdk.html)
+- _2021-05-22 _[Convert two lists into a dictionary in Python](https://how.wtf/convert-two-lists-into-a-dictionary-in-python.html)
+- _2021-05-08 _[Sort a list of tuples by an item in Python](https://how.wtf/sort-a-list-of-tuples-by-an-item-in-python.html)
+- _2021-05-02 _[Ternary operator in Bash](https://how.wtf/ternary-operator-in-bash.html)
+- _2021-04-28 _[Spread operator in Python](https://how.wtf/spread-operator-in-python.html)
+- _2021-04-24 _[AWS CLI query examples](https://how.wtf/aws-cli-query-examples.html)
+- _2021-04-21_

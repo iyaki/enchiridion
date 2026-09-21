@@ -8,4 +8,4 @@ tags: ["English", "CSS", "Frontend", "Framework/Library"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
-
+WebTUI is a modular CSS library that brings the beauty of Terminal UIs to the browser

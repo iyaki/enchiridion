@@ -12,10 +12,10 @@ tags: ["Hosting", "Serverless", "Untried", "Service", "English"]
 
 ![image](https://begin.com/_public/illustrations/illustration-portal-icon-bg-50c8a897fb.svg)
 
-## 
+## It’s time to Begin focusing on what really matters. Own your data, and your code.
 
+Build fullstack apps with confidence. Begin gives you the best local development experience with deterministic deployments. We’ve got you covered for infrastructure complexity and scaling, so you can spend more time building the experiences your users want.
 
-
-
+We’re doing away with clunky build steps, clusters, instances, and pods, and taking care of all of that for you, while giving you the tools you need to build resilient, future-proof, full stack products as pure cloud functions.
 
 ![image](https://begin.com/_public/illustrations/illustration-pedestal-c2e235cbdb.svg)

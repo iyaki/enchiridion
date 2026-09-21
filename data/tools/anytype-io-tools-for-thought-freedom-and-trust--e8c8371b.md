@@ -4,14 +4,14 @@ notion_id: e8c8371b-94c5-4755-8394-807da9fe5aec
 notion_url: https://app.notion.com/p/Anytype-io-tools-for-thought-freedom-and-trust-e8c8371b94c547558394807da9fe5aec
 last_edited: 2023-06-21T14:41:00.000Z
 source_url: https://anytype.io/en
-tags: ["Service", "English", "?", "Untried"]
+tags: ["?", "Untried", "Service", "English"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+tools for thought,
 
+freedom and trust.
 
+Welcome to Anytype, where the digital assets and communities you create are truly yours.
 
-
-
-
-
+Here, you can decide how your data is used, shared, and valued.

@@ -8,6 +8,6 @@ tags: ["Website", "Course", "English", "Crypto", "Programming"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+useWeb3 is a platform for developers to explore and learn about Web3. Whether you're a new dev getting your hands dirty for the first time, or a seasoned developer making the transition into the Web3 space.
 
-
-
+**Explore. Learn. Build.**

@@ -6,15 +6,15 @@ last_edited: 2023-06-27T22:06:00.000Z
 source_url: https://stanford-cs242.github.io/f18/
 tags: ["English", "Programming", "Course"]
 ---
+### Course summary
+
+CS 242 explores models of computation, both old, like functional programming with the lambda calculus (circa 1930), and new, like memory-safe systems programming with Rust (circa 2010). The study of programming languages is equal parts systems and theory, looking at how a rigorous understanding of the syntax, structure, and semantics of computation enables formal reasoning about the behavior and properties of complex real-world systems. In light of today’s Cambrian explosion of new programming languages, this course also seeks to provide a conceptual clarity on how to compare and contrast the multitude of programming languages, models, and paradigms in the modern programming landscape. See the schedule below for full topic list. Prerequisites: 103, 110.
+
+Previous iterations of this course: [Fall 2017](https://stanford-cs242.github.io/f17).
+
 ### 
 
-
-
-
-
-### 
-
-# 
+# Schedule
 
 | Lectures | Assignments | Readings |
 | --- | --- | --- |

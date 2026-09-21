@@ -10,6 +10,6 @@ tags: ["English", "Programming", "Domain Driven Design", "Object Oriented Progra
 
 
 
+Related:
 
-
-- 
+- [Domain model purity vs. domain model completeness (DDD Trilemma)](https://app.notion.com/p/0d00f3e9bd9b49a09cf315a07066a8f3) 

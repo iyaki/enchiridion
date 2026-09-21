@@ -6,12 +6,12 @@ last_edited: 2023-01-27T17:36:00.000Z
 source_url: https://www.unscreen.com/
 tags: ["English", "Untried", "Multimedia", "Service"]
 ---
-## 
+## Goodbye Greenscreen
 
+Producing background-free video used to require complex and fiddly techniques like chroma keying and greenscreens. With Unscreen you can record your footage anywhere, then simply get rid of the background.
 
+## 100% Automatically, without a single click
 
-## 
-
-
+No need to pick pixels, select colors, paint masks or move paths: Unscreen analyzes your video 100% automatically and generates a high-quality result. Simple, good.
 
 

@@ -4,7 +4,7 @@ notion_id: 38d54f1c-7d23-8160-b665-ceada4ddf9bc
 notion_url: https://app.notion.com/p/What-are-microservices-38d54f1c7d238160b665ceada4ddf9bc
 last_edited: 2026-06-28T03:34:00.000Z
 source_url: https://microservices.io/index.html
-tags: ["Microservices", "System Design / Software Architecture", "Cloud", "Event Driven Architecture", "Article", "Tool", "Chris Richardson", "English"]
+tags: ["English", "Microservices", "System Design / Software Architecture", "Cloud", "Event Driven Architecture", "Article", "Tool", "Chris Richardson"]
 ---
 ![image](https://microservices.io/i/home-page/home-page-microservices-teams-subdomains.png)
 
@@ -20,12 +20,12 @@ tags: ["Microservices", "System Design / Software Architecture", "Cloud", "Event
 
 ![image](https://microservices.io/i/decompose-your-monolith-devnexus-feb-2020.001.jpeg)
 
+Microservices.io is created by [Chris Richardson](https://microservices.io/about.html), software architect, creator of the original CloudFoundry.com, and author of _Microservices Patterns_. Chris advises organizations on modernization, architecture, and building systems that avoid becoming modern legacy systems.
 
+Read Chris Richardson's book:
 
+The regular price is $395/person but use coupon OFFEFKCW to sign up for $95 (valid until Sept 30th, 2025). There are deeper discounts for buying multiple seats.
 
+Ready to start using the microservice architecture?
 
-
-
-
-
-
+Use the [Eventuate.io platform](https://eventuate.io/) to tackle distributed data management challenges in your microservices architecture.

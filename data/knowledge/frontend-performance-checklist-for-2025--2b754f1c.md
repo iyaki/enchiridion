@@ -4,180 +4,180 @@ notion_id: 2b754f1c-7d23-8184-b13e-c24b85f6a0cb
 notion_url: https://app.notion.com/p/Frontend-Performance-Checklist-For-2025-2b754f1c7d238184b13ec24b85f6a0cb
 last_edited: 2025-11-26T19:05:00.000Z
 source_url: https://crystallize.com/blog/frontend-performance-checklist
-tags: ["Frontend", "Performance", "Web Development", "User Experience", "CSS", "Javascript", "Article", "Guide", "Crystallize", "English"]
+tags: ["English", "Frontend", "Performance", "Web Development", "User Experience", "CSS", "Javascript", "Article", "Guide", "Crystallize"]
 ---
 ![image](https://media.crystallize.com/crystallize_marketing/25/6/3/1/frontend-performance-checklist-2.png)
 
+In the speed-obsessed world of today, better performance translates directly into business gains. You only have about eight seconds (source [link](https://time.com/3858309/attention-spans-goldfish/)) – that’s the average human attention span – before users lose concentration. From that stat alone, it’s obvious why website performance matters. No?
 
+Google found that 53% of mobile visitors abandon a site that takes longer than 3 seconds to load (source [link](https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/mobile-site-load-time-statistics/#:~:text=Google%20www.thinkwithgoogle.com%20%2053,statistics%20on%20Think%20with%20Google)).
 
+And nearly 70% of consumers admit that page speed influences their likelihood to buy (source [link](https://unbounce.com/page-speed-report/#:~:text=Nearly%2070%25%20of%20consumers%20admit%20that%20page%20speed%20influences%20their,time%20is%20slower%20than%20expected.)).
 
+Faster sites see more engagement and higher conversion rates – for example, Walmart observed up to a 2% increase in conversions for every 1 second of improvement in page load time (source [link](https://wpostats.com/2015/11/04/walmart-revenue/#:~:text=Walmart%20saw%20up%20to%20a,increase%20in)).
 
+Performance also plays a crucial role in retaining users (fewer will bounce) and ensuring a pleasant user experience, which boosts customer loyalty. It even affects your search engine ranking (Google uses page speed/Core Web Vitals as a ranking signal) and impacts your Google Ads Quality Score (slow landing pages can raise ad costs). In short, web performance influences:
 
+- **Time on site** (users stay longer on fast sites)
+- **Page views** (users view more pages when each loads quickly)
+- **Bounce rate** (slow pages cause users to leave)
+- **Conversions / Revenue** (speed encourages purchases – _milliseconds can be millions_)
+- **User satisfaction and retention**
+- **Organic search traffic** (page experience is an SEO factor)
+- **Bandwidth/CDN costs** (efficient sites use less data)
+- **Ad Quality Score** (fast landing pages improve ad performance)
 
+Having all these benefits in mind, it pays off to have a performant website, right? So, how do you achieve that?
 
+## Measuring Performance
 
+Before diving into the checklist, start by [**measuring your website’s performance**](https://crystallize.com/blog/frontend-performance-measuring-and-kpis). Benchmarking current speeds and pain points will help you pinpoint the main issues to tackle first. There are many tools available to get both lab and field performance metrics. Here are some of the popular options:
 
+- [**Chrome Lighthouse**](https://developers.google.com/web/tools/lighthouse)** (in DevTools)** – Run an in-browser audit (or use Lighthouse CI) for performance, best practices, SEO, etc..
+- [**CrUX data**](https://developer.chrome.com/docs/crux/methodology/tools)** in Google Search Console or via API** – Chrome User Experience Report data (or [CrUX](https://crystallize.com/answers/tech-dev/what-is-crux)) or field data (real user metrics) is what Google uses for SEO rankings. Check your **Core Web Vitals report** in Search Console for the actual user experience stats.
 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-
-
-
-## 
-
-
-
-- 
-- 
-
-
+Ideally, use a combination of lab tools (for a controlled baseline) and real-user monitoring. For the latter, you can instrument your site with the [Web Vitals JS library](https://github.com/GoogleChrome/web-vitals) or use a monitoring platform ([SpeedCurve](https://www.speedcurve.com/), [Calibre](https://calibreapp.com/), etc.) to track performance over time in production. You’ll know where to focus your optimization efforts with metrics in hand.
 
 ![image](https://crystallize.com/newsletter-signup.svg)
 
+Guy sitting at a desk fixing a robot looking like a browser
 
+## Frontend Performance Checklist 2025
 
-## 
+So, we’ve established **why performance matters** and **how to measure it**. But who’s responsible for making a site fast? In reality, everybody on your dev team has a part to play.
 
+It starts with choosing an [**eCommerce platform**](https://crystallize.com/blog/ecommerce-platforms)**/backend** that can scale and respond quickly (able to handle your product catalog, orders, multiple regions, etc., with low latency). Then, it’s on the UX designers to create pages that balance rich content and media with efficient user flows (don’t design something _too_ heavy or complex without considering speed). Finally, it’s up to frontend developers to implement those designs in an optimal way.
 
+**The following checklist is platform-agnostic.** You can apply these suggestions whether you’re building with Crystallize, [Shopify](https://crystallize.com/compare/commerce/crystallize-vs-shopify), WordPress, [Next.js](https://crystallize.com/frontend/nextjs-ecommerce), Astro, Qwik, or PHP – you name it. Not every project will need every item here, but it’s a great starting point. Use it to build your project-specific performance checklist.
 
+And BTW we did focus a bit more on Astro and Next simply because one we like while other is so damn popular one just can not NOT mention it.
 
+Alright, performance-first mindset on. Let’s get to the checklist.
 
+## 💡Individual Metrics.
 
+This checklist looks at overall frontend performance. If you need to target and improve a specific metric (like a particular Core Web Vitals), we have dedicated pages for individual metrics.
 
+Those guides dive deeper into optimizing [**Core Web Vitals**](https://crystallize.com/learn/best-practices/frontend-performance/core-web-vitals) such as LCP, CLS, and the new responsiveness metric, **Interaction to Next Paint (INP)**. (Yes, **INP officially replaced First Input Delay (FID)** as a Core Web Vital in 2024 (source [link](https://searchengineland.com/google-replace-fid-inp-core-web-vitals-414546#:~:text=metric%20searchengineland,announced%20at%20Google%20I%2FO%20today)), so make sure you’re looking at INP in your reports going forward!).
 
+Now, on to the general best practices.
 
+HTML is the foundation of your page. Optimizing the HTML output and delivery can reduce page load time and improve the user experience. Key considerations for HTML:
 
+- **Prioritize critical HTML:** Ensure the HTML for above-the-fold content is delivered first and fast, so it can start rendering quickly. If using [SSR (server-side rendering) or SSG (static site generation)](https://crystallize.com/blog/web-rendering), send the essential HTML without waiting for all scripts. Frameworks like Next.js or Astro help here by pre-rendering HTML on the server, which can improve First Contentful Paint significantly by delivering ready-to-render markup to the browser.
+- **Clean up any redundant code:** Remove unnecessary HTML, comments, and extra whitespace. Every byte counts – a leaner HTML document means faster downloads and parsing. Small reductions in HTML size can especially help on mobile networks.
+- **Enable compression:** Always serve HTML (and other text-based resources) with compression. [GZIP](https://en.wikipedia.org/wiki/Gzip) or, even better, [Brotli](https://en.wikipedia.org/wiki/Brotli) compression can dramatically shrink the size of HTML files sent over the network. This reduces bandwidth usage and speeds up transfer. Most web servers and CDNs support enabling Brotli/GZIP compression with a simple configuration.
+- **Load external files in the correct order:** External CSS and JS files referenced in your HTML should be ordered for optimal loading. CSS is render-blocking, so it should ideally appear in the `<head>` (so the browser can start downloading styles early). Conversely, scripts should be loaded in a non-blocking way. If a script must be in the `<head>`, include it after the CSS links so it doesn’t delay critical CSS. In general, put your `<script>` tags just before the closing `</body>` or use async/defer (more on this later), so they don’t block the initial HTML parse.
+- **Avoid unnecessary iframes:** `<iframe>` elements can significantly slow down a page because they load an entire additional page/context. If you embed third-party content (videos, maps, etc.) via iframes, use them sparingly and only when needed. Consider adding `loading="lazy"` to iframes that are below the fold (just like images), so they don’t load until the user scrolls near them. Alternatively, use a static placeholder or thumbnail and load the iframe on demand (click or scroll) to save resources.
 
-## 
+_(__**🫵Bonus tip:**__ when using frameworks, be aware of your HTML hydration cost on the client. For example, a large DOM can be expensive to hydrate. Tools like Astro mitigate this by splitting the page into islands, so not all HTML gets hydrated with JS. Regardless of framework, keep the DOM size reasonable to avoid slow DOM manipulation and rendering issues.)_
 
+CSS might not always be top-of-mind for performance, but it can have a big impact if not handled well. Render-blocking CSS or huge CSS files will slow down how quickly your page can show content. Optimize your stylesheets with these practices:
 
+- **Remove unused styles:** Regularly audit and purge CSS that isn’t used in your pages. Especially in large projects or when using utility frameworks, it’s easy to accumulate dead CSS. Tools like [PurgeCSS](https://purgecss.com/) (for Tailwind or others) or coverage in Chrome DevTools can help identify CSS not used in any DOM. By removing it, you reduce file size and eliminate unnecessary style calculations.
+- **Modularize and split CSS:** Rather than one giant CSS file, consider splitting your styles by functionality or route. Load only the CSS needed for the current page. Modular CSS (through CSS modules, SCSS partials, or other build techniques) allows you to **defer non-essential CSS**, improving initial load. For example, critical styles can be inline (or in a small file) and secondary styles can load later or on demand. This way, above-the-fold content isn’t waiting on styles for features further down the page.
+- **Avoid ****`@import`**** in CSS:** The `@import` rule in CSS creates additional HTTP requests and is render-blocking. Each imported file is fetched sequentially, which delays the overall CSS parsing. Instead of `@import`, use `<link rel="stylesheet">` tags in HTML (which can load in parallel) or better yet, combine CSS files at build time when possible.,
+- **Use Critical CSS:** “Critical CSS” means inlining the CSS needed for the above-the-fold content directly in the HTML `<head>` so it loads immediately, and deferring the rest of the CSS. By applying only the critical styles for the initial view, you avoid a flash of unstyled content without loading the entirety of your CSS upfront. You can generate critical CSS manually or use tools like [Critical](https://www.npmjs.com/package/critical). After inlining critical CSS, load the remaining CSS asynchronously (e.g., using `media="print"` trick or dynamic loading) to prevent render-blocking.
+- **Optimize and minify CSS:** Minifying your CSS (removing whitespace, comments, and shortening identifiers) reduces file size and download time. There are many build tools (like [Clean-CSS](https://www.npmjs.com/package/clean-css), cssnano, etc.) that can do this automatically. Also consider using **postCSS** or similar to autoprefix and optimize at build time.
+- **Preload critical CSS files:** If you have a small critical CSS file or a key stylesheet that you know is needed ASAP, you can use `<link rel="preload" as="style">` to hint to the browser to fetch it sooner. This can improve performance by loading CSS in parallel with other critical resources. Just remember to also include a regular `<link rel="stylesheet">` for it (with `onload `handler) when using preload for styles.
+- **Simplify selectors:** Complex CSS selectors (deeply nested or overly specific chains) not only increase CSS file size but can also slow down style calculations in the browser. Prefer simpler, flat selectors (e.g. use classes on the elements you need to style directly) over long descendant chains. This makes CSS parsing and matching more efficient. For example: use `.headline {…}` instead of body `div#main-content article.post h1.headline {…}`.
+- **Leverage modern CSS for performance:** Newer CSS features can improve performance. One notable example is `content-visibility: auto`. This property allows the browser to skip rendering work for off-screen content until it is needed. Using `content-visibility: auto ` on containers far down the page can significantly boost render performance by deferring work for content not yet visible. This means faster initial load and better interaction timing (INP) because the browser isn’t busy painting things the user can’t see yet. Use it for large lists or sections that start off-screen – you’ll reduce memory usage and speed up the parts that matter most to the user. (Be mindful to test, as it can sometimes affect lazy-loading or in-page search since off-screen content is not rendered until scrolled into view.)
 
+JavaScript is often the biggest weight on modern webpages – both in bytes and execution time. We love JS for its power and flexibility, but too much of it (or poorly managed scripts) can crush performance. Here’s how to handle JavaScript smartly:
 
+- **Use HTML/CSS over JS whenever possible:** Before reaching for JavaScript, ask if the same effect can be achieved with HTML or CSS alone. Modern CSS and HTML have capabilities that used to require JS. For example, CSS animations/transitions, the `details/summary` element for simple toggles, form validation attributes, etc., can eliminate the need for extra JS code. Less JS means less to download and execute.
+- **Don’t overuse frameworks or libraries for trivial tasks:** If you include large JS frameworks or multiple libraries for things you could do with native JS or simpler logic, you add unnecessary overhead. Each dependency increases bundle size and often runtime cost. Consider if a dependency is truly needed for the functionality. Sometimes vanilla JS or a smaller utility will do. [Third-party scripts](https://crystallize.com/blog/cost-of-3rd-party-scripts) (analytics tags, ad networks, trackers) deserve scrutiny too – they can be huge performance culprits. Audit all third-party scripts and remove any that aren’t critical. For those you do need, see if they offer lighter versions or load them in a way that doesn’t block your main content (such as after user interaction or using async).
+- **Code-split and defer non-critical JS:** Rather than shipping one monolithic JS bundle, use code-splitting (dynamic `import()` or framework-specific splitting) to break your JS into smaller chunks. Load the critical parts up front and defer loading of feature-specific code until it’s needed. For example, if certain scripts are only used on specific pages or after a user clicks something, don’t include them in the initial bundle. This prevents users from downloading and executing code that isn’t immediately required. Most modern build tools ([Webpack](https://webpack.js.org/), [Vite](https://vite.dev/), etc.) and frameworks (like Next.js with dynamic imports) make code-splitting easier.
+- **Preload critical scripts:** Similar to CSS, you can hint the browser to download an important script sooner using `<link rel="preload" as="script" href="...">`. If you have a critical JS file (perhaps a runtime or config needed early), preloading it can reduce the delay. Just ensure you mark it as `as="script"` and include the actual script tag as well.
+- **Use ****`async`**** and ****`defer`**** for scripts:** When adding external scripts, default to using async or defer attributes on the `<script>` tag. **Async** scripts load in parallel to HTML parsing and execute as soon as they’re ready (without blocking other async scripts), while **defer** scripts load in parallel but execute after the HTML is fully parsed. In practice, if the script doesn’t need to run before the DOM is ready, using defer is often ideal (it preserves execution order and won’t block rendering). If the script is truly independent, async is fine. Only leave off these attributes for critical inline scripts or very specific cases, because a plain `<script>` without them will block page rendering until it’s loaded and executed.
+- **Minify and tree-shake your JS**: Just like CSS, remove anything you don’t need from your JavaScript. Use your bundler’s minification ([UglifyJs](https://github.com/mishoo/UglifyJS), [Minify](https://www.minifier.org/). etc.) to eliminate whitespace, shorten variable names, and drop dead code. Even better, use tree shaking to automatically omit any unused exports from libraries. Ensure your build is set to production mode and your libraries are ESmodule-compatible for tree-shaking. The result is smaller JS files that load faster.
+- **Keep dependencies up to date:** Modern frameworks and libraries often improve performance with new releases. By keeping your dependencies updated, you not only get security patches but potentially performance optimizations too. Tools like [Renovate](https://github.com/apps/renovate) or [Dependabot](https://github.com/dependabot) can assist with automating updates. (Of course, always test after upgrades.) Newer bundlers ([esbuild](https://esbuild.github.io/), SWC, rollup) and frameworks can also produce more efficient code – consider them if you’re starting fresh.
+- **Remove unused code:** It sounds obvious, but as a project evolves it’s easy to accumulate unused functions, console.log statements, debug code, etc. Use linter rules and build-time tools to strip out things like `console.*` calls and dead branches. Less code = less to parse and execute. Every kilobyte less in your JS bundle is a win.
+- **Choose your framework wisely (and leverage its features):** There are countless [frontend frameworks](https://crystallize.com/blog/best-frontend-frameworks) out there – pick one that fits your project’s needs _and_ helps with performance (linked post holds a couple we like working with). Sometimes you might not need a heavy framework at all for a simple site. If you use one, ensure you take advantage of its performance optimizations. For example, **Next.js** offers hybrid static/SSR rendering and React Server Components, meaning less JS on the client for many pages (it can render components on the server and deliver them as HTML) – this results in smaller client-side bundles and faster page loads. With its island architecture, **Astro **ships no JavaScript by default for static content, which massively reduces initial load and increases speed, especially for content-heavy sites. When using such frameworks, use their image optimization, routing, and caching features to maximize performance. The bottom line: a well-chosen framework (or none at all) plus using its capabilities can dramatically improve your app’s real-world performance.
 
+Who doesn’t like having beautiful, high-resolution images on their web page? Images are often the largest assets on a page, and unoptimized images can cripple your load times, resulting in a slow page speed and a sub-par performance score. Let’s see how we can have gorgeous images without negatively affecting performance or quality.
 
-
-
-
-- 
-- 
-- 
-- 
-- 
-
-
-
-
-
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-
-
-
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-
-
-
-- 
+- **Use properly sized images:** Serve images at their displayed dimensions. A common issue is using an image much larger (in pixel dimensions) than the UI needs, which wastes bandwidth. Audit your pages (PageSpeed Insights will flag oversized images for example) to find any that are being downscaled in HTML/CSS. Then, resize those source images to the appropriate resolution. For example, don’t load a 2000px-wide image if shown as a 500px thumbnail. The savings can be huge, often hundreds of KB per image. Batch image processing tools like [ImageMagick](https://www.imagemagick.org/script/index.php) or [Sharp](https://sharp.pixelplumbing.com/) can help automate the generation of resized versions.
 
 ![image](https://media.crystallize.com/crystallize_marketing/22/8/25/4/image-handling-.png)
 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+- **Use responsive images (****`<img srcset>`**** and ****`<picture>`****):** Don’t serve the same image to a small mobile screen and a large desktop if you can help it. Responsive images allow the browser to choose an appropriate file based on device width or screen density. Use the `srcset` attribute to provide multiple resolutions of an image, and `sizes` to hint the display size in CSS pixels. For more complex art direction (e.g., a different crop or format for mobile vs desktop), use the `<picture>` element with media queries. This way, a phone can get a smaller, lighter image while a desktop gets a higher-res one, saving bandwidth for smaller devices. (_For React developers, check out our detailed post on using _[_srcset in React apps_](https://crystallize.com/blog/react-srcset-for-responsive-images)_._)
+- **Compress and optimize images:** Run your images through compression tools to reduce file size without visibly hurting quality. For raster images (photos), JPEG compression can often be increased – utilities like [ImageOptim](https://imageoptim.com/) or [mozJPEG](https://github.com/mozilla/mozjpeg) can help find the right balance. For PNGs, tools like [PNGQuant](https://pngquant.org/) or [TinyPNG](https://tinypng.com/) apply efficient compression. Even SVGs benefit from optimization (try [SVGO](https://github.com/svg/svgo) to remove unnecessary SVG metadata and minify paths). Many build processes can integrate these optimizations so that every image you add is automatically compressed.
+- **Preload your hero image:** If your page has a large hero/banner image at the top (which likely contributes to your **Largest Contentful Paint**, or LCP), consider preloading it. Using a `<link rel="preload" as="image"> `for the main above-the-fold image can instruct the browser to fetch it sooner, which can improve LCP timing. Additionally, you can mark an <img> as high priority in newer browsers by adding `fetchpriority="high"` – this is a [priority hint](https://crystallize.com/answers/tech-dev/what-are-priority-hints) telling the browser this image is crucial. Setting your LCP image to high priority can yield a noticeable LCP improvement (in one case, Etsy sped up LCP by ~4% by doing this (source [link](https://addyosmani.com/blog/fetch-priority/#:~:text=sooner%20addyosmani,up%20Etsy%27s%20LCP%20by%204)). Use these techniques for your critical images to load as early as possible.
+- **Lazy-load below-the-fold images:** For images that are not immediately visible (say, product images further down, or blog post images in a list), use [lazy loading](https://crystallize.com/answers/tech-dev/what-is-lazy-loading) so they only load when the user scrolls near them. Native lazy loading is as simple as adding `loading="lazy"` on your `<img> `tags. This defers loading of those images, cutting initial page load time and saving bandwidth for users who might not scroll all the way. All modern browsers support this attribute for images (and iframes). It’s a low-effort, high-impact optimization – browsers will intelligently load the images when needed.
+- **Use modern image formats (WebP/AVIF):** Next-gen formats provide much better compression than traditional JPEG/PNG. **WebP** images are significantly smaller for the same quality and are supported in all major browsers. **AVIF** goes even further in compression efficiency; it can produce even smaller file sizes than WebP for equivalent quality. You can serve these formats by converting your images and using `<picture>` for fallbacks (e.g., AVIF source, then WebP, then a JPEG fallback for any old browser). Many image CDNs and frameworks will do this conversion automatically. The payoff is faster loads and less data usage. _(See our deep dive on _[_WebP vs AVIF_](https://crystallize.com/learn/best-practices/frontend-performance/avif-vs-webp)_ for more information.)_
+- **Specify width and height (or aspect-ratio) for images:** Always include the `width` and `height` attributes in your `<img>` (or the equivalent CSS that sets an aspect-ratio box). This ensures the browser can allocate the correct space for the image before it loads. Without these, the image load can cause layout shifts – the content below might jump down once the image appears, contributing to a bad **Cumulative Layout Shift (CLS)** score. By defining dimensions, you make the page layout more stable and improve the user experience (no jarring shifts). If you’re using CSS to resize images (responsive designs), using the new CSS `aspect-ratio` property on a wrapper or the image can also preserve space—the bottom line: reserve space for images to maintain layout stability.
+- **Leverage your framework or CDN for images:** Many modern frameworks have built-in image optimization. For example, **Next.js** has a `<Image>` component that automatically resizes, compresses, and converts images to modern formats like WebP/AVIF for you. Similarly, **Astro** introduced an `<Image>` component (and related utilities) that by default serves images as WebP, includes proper `width/height` to avoid CLS, and lazy-loads images by default. Utilizing these means many best practices are handled out-of-the-box – your images will be optimized at build time or on-the-fly. If you’re not using a framework with these features, consider an external image optimization service or CDN (like Cloudinary, Imgix, etc.), which can deliver optimized images (responsive sizes, WebP/AVIF, compression) from URLs. The goal is to automate image optimization.
 
+Finally, remember that image optimization is an ongoing task on an e-commerce site or any media-heavy site. As you add or change images, watch those audits to catch any heavy assets.
 
+**Every byte saved on images is time saved for your users.**
 
+_(__**🫵On that note, **__Crystallize users get a head start: our platform’s __**image and video pipelines**__ automatically compress images and transcode videos to multiple formats and sizes. The Crystallize _[_Image_](https://crystallize.com/learn/concepts/pim/component/images)_ and _[_Video_](https://crystallize.com/learn/concepts/pim/component/videos)_ components are built to serve optimized media by default, so you can focus on building your site while we handle the heavy lifting behind the scenes.)_
 
+Videos can be even heavier than images, so they require careful handling too. If you have auto-play background videos, product demo videos, or any embedded videos on your page, follow these tips to optimize them.
 
+- **Compress video files:** Like images, videos should be compressed to reduce file size. Use tools like [Handbrake](https://handbrake.fr/features.php) for an easy way to compress MP4/WebM videos without significant quality loss. Often, you can lower the bitrate or resolution a bit and cut file size dramatically while still providing a good visual experience. For instance, a 1080p video might be overkill if it’s displayed in a small portion of the screen – consider whether 720p would suffice.
+- **Choose modern video codecs/formats:** Whenever possible, use HTML5-friendly and efficient formats. [MP4 (H.264)](https://videoconvert.minitool.com/video-converter/h264-vs-mp4.html) is widely supported and a good default for compatibility, but newer codecs like [WebM (VP9)](https://en.wikipedia.org/wiki/VP9) or [AV1](https://en.wikipedia.org/wiki/AV1) (if you can encode to AV1 and target newer browsers) offer better compression. By providing a WebM source, browsers that can play it will usually prefer it due to its smaller size, falling back to MP4 for others. This means faster loads on browsers that support modern codecs.
+- **Use the correct ****`preload`**** value:** The video `<video>` tag’s `preload` attribute instructs the browser how much of the video to load before playback. It can be `auto `(load the entire video or as much as possible), `metadata `(only load metadata and the first few seconds), or `none `(don’t preload any data). For background/decorative videos that start automatically, auto might be desired to ensure smooth play, but remember it can be very data-heavy. For videos that might not be played, use metadata or none to avoid downloading a huge file unnecessarily. This prevents the user from wasting bandwidth on media that they might never watch.
+- **Lazy-load videos below the fold:** If the video element is not immediately visible (e.g., a video gallery further down the page), don’t load it on initial page load. There are a couple of approaches: you could use the `loading="lazy"` attribute on iframes (for embedded YouTube/Vimeo) or for self-hosted videos, you might not create the `<video>` element until the user is about to scroll into view. Another simple technique for self-hosted videos is to use a placeholder image (poster) and only switch it to the video source on interaction or when scrolled into view. The idea is to delay loading video data until needed, similar to image lazy-loading.
+- **Strip audio if not needed:** Many homepage background videos are muted served purely for visual effect. If your video doesn’t require audio, remove the audio track entirely to save space. You can do this in the video encoding step ([FFmpeg](https://www.ffmpeg.org/) has commands to drop audio tracks). No audio track means a smaller file and no wasted bytes on something users can’t hear.
+- **Consider streaming for long videos:** Loading it via standard progressive download might be inefficient if you have a particularly large or long video (several minutes or more). Consider using adaptive streaming ([HLS or DASH](https://www.gumlet.com/learn/hls-vs-dash/)), which allows the video to be delivered in chunks and even adapt quality based on connection. For most small marketing videos it might be overkill, but for lengthy videos it ensures users don’t download the _entire_ file if they only watch part of it.
+- **Embedding third-party videos (like a YouTube iframe)**: many of these optimizations are handled by the provider, but you can still optimize when and how the iframe loads (e.g., use the YouTube API to not auto-load the video until clicked, or use the lite-youtube-embed approach to only load a lightweight preview).
 
+The key is to **treat videos with the same care as images** – load them lazily, compress them, and choose efficient formats to keep your site fast.
 
+_(__**🫵Bonus tip:**__ Crystallize platform will automatically transcode your uploaded videos into multiple resolutions and bitrates. This means you can deliver, say, a 720p and a 1080p version and let the browser pick, or provide WebM versions – all handled for you. This multi-bitrate approach ensures optimal playback depending on user device and connection.)_
 
+Custom web fonts can greatly enhance your brand identity but also introduce extra resource loads that can impact performance. Font files, if large or loaded incorrectly, can delay text rendering or cause layout shifts (influencing your CWV and perceived page speed). Optimize your fonts with these best practices.
 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+- **Limit the number of font families and weights:** Be selective with how many custom fonts you use. Each font family (and each weight/style) typically requires a separate file. Loading 5 different font families or a dozen weights will bog down your page. Every font file you eliminate is one less request and potentially hundreds of KB saved.
+- **Use modern font formats (WOFF2):** Always use [WOFF2](https://www.w3.org/TR/WOFF2/) for your web fonts if possible. WOFF2 is a highly compressed font format, significantly smaller (30%+ reduction) than older formats like TTF or WOFF. All modern browsers support WOFF2 and include WOFF as a fallback.
+- **Preconnect to font host origins:** If you’re loading fonts from a third-party host (e.g., [Google Fonts](https://fonts.google.com/) or [Adobe Fonts](https://fonts.adobe.com/)), add a preconnect hint early in your HTML:` <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>` (and to the font file domain if different). This establishes the network connection to the font server sooner, so when the browser later tries to download the font, the DNS/TLS negotiation is already done. It shaves off some latency, making font loading faster.
+- **Use ****`font-display`**** to avoid invisible text:** In your `@font-face` CSS, set `font-display: swap` (or optional) so that text using the font is rendered immediately with a fallback font, then swaps to the custom font once loaded. This prevents the dreaded [FOIT (flash of invisible text)](https://fonts.google.com/knowledge/glossary/foit) where text doesn’t show at all until the font loads. A brief [FOUT (flash of unstyled text)](https://fonts.google.com/knowledge/glossary/fout) is better for user experience and avoids layout jank if you’ve matched fallback font metrics. Tools like Google Fonts now include `&display=swap` by default for this reason.
+- **Avoid layout shifts when fonts load:** Even with font-display swap, you want to minimize the shift when the new font appears. Strategies to achieve this include using font metrics adjustments (CSS `font-size-adjust`) or using fallback fonts with similar metrics. At the very least, ensure your line heights are not too tight to the font’s bounding box. The referenced guides on [_fast web fonts_](https://crystallize.com/blog/frontend-performance-fast-web-fonts) and [_web-safe fonts_](https://crystallize.com/blog/web-safe-fonts) provide more detail on how to do this – the goal is to make swapping as subtle as possible.
+- **Consider variable fonts:** [Variable font technology](https://www.monotype.com/resources/expertise/variable-fonts-101) allows multiple styles (weights, widths, etc.) to be encapsulated in _one font file_. Instead of separate files for Light, Regular, Bold, etc., a single variable font can cover that range. This reduces the number of HTTP requests and can reduce total bytes if you need many variants.
 
+Finally, don’t forget that system fonts (fonts already on the user’s device) are the fastest of all – they require no downloads. If you go that route, you eliminate the font loading issue entirely.
 
+But if custom fonts are a must (often they are in branding), implement the above tactics to load them as efficiently as possible.
 
+Your choice of hosting and server configuration plays a big role in performance, especially for the initial load and backend processing. A great frontend can be held back by a slow server or a poor network setup.
 
+- **Use HTTPS (TLS):** This is non-negotiable today. Apart from security, modern HTTPS is faster than HTTP in many cases. Every modern browser also **flags non-HTTPS sites as insecure** and may even limit their features. Moreover, Google uses HTTPS as a **ranking signal** for SEO. So, enable HTTPS and HTTP/2+ (most hosting platforms have this by default now).
+- **Minimize total HTTP requests:** In the past, combining files to reduce requests was crucial due to HTTP/1.x limitations. With [HTTP/2+](https://www.cloudflare.com/en-gb/learning/performance/http2-vs-http1.1/) this is less of an issue, since multiple files can load in parallel over one connection. However, each script or resource still has overhead, and numerous requests can add up on high-latency connections. Audit the number of resources your pages load. Remove any that aren’t necessary (fonts, icons, analytics, etc., that aren’t providing value).
+- **Use HTTP/2 or HTTP/3:** If your hosting still uses HTTP/1.1, it’s time to upgrade. HTTP/2 brought significant performance improvements, like multiplexing (many resources over one connection) and header compression, which reduce latency. Going a step further, [HTTP/3 (QUIC)](https://www.cloudflare.com/en-gb/learning/performance/what-is-http3/) is now emerging as the next standard – it runs over UDP with encryption and offers even faster connection setup and better resilience to network issues. HTTP/3 can improve page load times, especially on mobile or poor networks, thanks to zero round-trip handshakes and eliminating head-of-line blocking.
+- **Use a **[**CDN (Content Delivery Network)**](https://crystallize.com/learn/best-practices/architecture/content-delivery-network-cdn)**:** Serving your content from a single origin server is suboptimal if you have a global audience. A CDN caches your static assets (and even dynamic pages, with the proper setup) on edge servers around the world. Then, the nearest location serves a user’s requests, dramatically lowering latency. This speeds up delivery of JS, CSS, images, and even API responses if cached. It also offloads traffic from your origin server (which can help reliability). You can compare options and performance on [CDNPerf](https://www.cdnperf.com/).
+- **Enable server-side caching:** Not everything needs to be regenerated on each request. Use caching at various layers – HTTP caching (with proper `Cache-Control` headers) for static resources and API responses, server-side page caching for rendered pages, and even application-level caching (in-memory caches, database query caching) to reduce work. Cached content is served much faster than dynamically generated content. Just be cautious to invalidate or update caches when content changes to avoid stale data.
+- **Optimize **[**server processing time**](https://crystallize.com/answers/tech-dev/what-is-server-processing-time)**:** When the server _does_ have to do work (building pages, querying a database, calling APIs), ensure that code is efficient. Profile your backend – slow database queries or heavy computations will slow down Time to First Byte (TTFB). Aim for _server response times under 200ms_ for the initial HTML as a rough goal (as Google recommends for good TTFB).
+- **Serve pages statically when possible:** One of the biggest boosts is to serve pre-built [static pages](https://crystallize.com/blog/what-is-static-site) (when your content can be static). [Static site generators](https://crystallize.com/blog/react-static-site-generators) (or the **ISR** – Incremental Static Regeneration – approach in Next.js) allow you to serve pages essentially as static files (HTML) from a CDN, which is incredibly fast. If your site’s content doesn’t change per user, consider generating it ahead of time. For content that is dynamic, try to cache parts of it or use edge logic to personalize a static shell. Static files have near-zero processing time and, combined with a CDN, the user gets a response from a nearby server with minimal delay.
 
+_(__**🫵Bonus tip: **__For a deeper exploration of hosting options, see our post comparing _[_**static website hosting**_](https://crystallize.com/blog/static-hosting)_ platforms, where we discuss trade-offs and benefits of different solutions.)_
 
+Beyond the big-ticket items above, there are a number of smaller best practices and tweaks that can collectively enhance your site’s performance. Think of these as a final **quality check** to squeeze out extra speed.
 
-- 
-- 
-- 
-- 
-- 
-- 
+- **Avoid layout shifts:** As mentioned earlier with images and iframes, always try to reserve space for dynamic content to prevent unexpected layout shifts. **Cumulative Layout Shift (CLS)** is one of the Core Web Vitals, and it measures how much the page jumps around as it loads. Layout shifts annoy users and make your site feel janky. The primary culprits are images without dimensions, ads or embeds that inject late, or DOM elements that get added with no space reserved. The solution: set explicit width/height or aspect ratios for media, and maybe use skeleton placeholders for content that loads late. Also, avoid inserting new content above existing content (prepend) unless absolutely necessary. A stable UI is a user-friendly (and Google-friendly) UI.
+- **Use priority hints for important resources:** Make use of [_priority hints_](https://crystallize.com/answers/tech-dev/what-are-priority-hints) to tell the browser which resources are most important. We already discussed `fetchpriority="high"` on images – that’s one example of a priority hint. You can also use the `importance` attribute on `<link rel="preload">` or on` <iframe>` (for example, an above-fold iframe could be marked high importance). By default, browsers make their best guess, but you, as the developer, often know what is truly critical. Properly using priority hints lets the browser focus network bandwidth on the most important assets first. Just be judicious – overusing `high` priority on too many things can worsen performance by competing for bandwidth. Use it for your hero image, maybe a crucial font or script, and let less important things be low (you can mark images that are off-screen as `fetchpriority="low"` as well).
+- **Minimize external HTTP requests and 3d-parties:** Every script or resource you pull in from another origin (or even your own) adds overhead. Review all the scripts, styles, pixel trackers, etc., on your site. If there are ones you can remove without hurting functionality or revenue, do it. For the ones you keep, see if you can delay their loading until after the main content is loaded or user interaction occurs. For example, some sites load analytics only after the user has been on the page for a few seconds or after the first interaction, ensuring it doesn’t interfere with initial loading. Fewer requests = faster load, especially on slower networks. Also, if you serve files from different domains, consider using `<link rel="dns-prefetch">` or `<link rel="preconnect">` for those domains to save lookup time.
+- **Maintain a single protocol (no mixed content):** Ensure that all resources are requested via the same protocol as your page (which should be HTTPS). Mixing HTTPS and HTTP can lead to blocking of content or at best a performance hit (and security risk).
+- **Set proper cache headers:** Leverage HTTP caching by setting appropriate `Cache-Control` headers on your responses. Static assets (CSS, JS, images) should have a long max-age (and you can use content hashes in filenames to bust cache on updates). This allows repeat visitors (or users navigating multiple pages on your site) to reuse cached resources instead of re-downloading them. Even for HTML or API responses, a short-term cache can help. Cached content served from the [browser cache](https://crystallize.com/answers/tech-dev/what-is-a-browser-cache) is essentially instant and doesn’t even require a network trip, so use that power.
+- **Prefetch likely next pages:** Consider using `<link rel="prefetch">` or framework-specific prefetching for pages or resources the user is likely to navigate to next. For example, on an e-commerce product listing page, you might prefetch the first product detail page link, or on an article, prefetch the next article link when the user nears the end. This fetches resources in the background when the browser is idle so that if the user does click, the page loads much faster, almost instantly in some cases.
+- **Leverage Service Workers for caching:** A [Service Worker](https://web.dev/learn/pwa/service-workers) is like a client-side proxy that can intercept network requests and serve responses from a cache you manage. With a service worker, you can cache key assets and even complete pages (shell HTML, API calls, etc.) on the first visit, and then on subsequent visits, the service worker can **serve content directly from cache**, making it _blazingly fast_ (even fully offline).
 
+By checking off these **quick wins** and smaller optimizations, you ensure there are no weak links in your performance chain. It’s often the accumulation of many little improvements that leads to a fast and smooth user experience.
 
+**Seriously. **Each checklist we provide is crafted from a blend of our hands-on experience and insights from working closely with clients, ensuring it’s tailored to address real-world challenges. We’ve covered performance here, but don’t stop there!
 
+We have more checklists to help you level up every aspect of your web presence.
 
+By following these checklists, you’ll benefit from **proven strategies** that enhance performance, boost conversions, and optimize content – setting you up for sustainable success online.
 
+I wish it were as easy as it sounds in the title above. Web performance is a journey, not a one-time task. Shaving off milliseconds here and there adds up to tangible improvements in user experience and business outcomes.
 
+Performance is just one piece of the puzzle for online success – you also need great content, effective marketing, solid SEO, and intuitive design. But speed lays the groundwork: it ensures that your other efforts actually get a chance to shine before the user bounces away.
 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+**But it all starts with your product or service, though.**
 
+The rest – performance, CRO, SEO, social media – is there to help you reach your audience and meet their expectations. So keep this checklist handy, involve your whole team in a performance-first mindset, and start chopping off those milliseconds. Every improvement counts when striving for that lightning-fast, **Superfast** web experience.
 
-
-
-
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Happy optimizing, and may your site be **fast** and your users delighted!

@@ -6,10 +6,10 @@ last_edited: 2023-01-17T01:00:00.000Z
 source_url: https://flywaydb.org/
 tags: ["Databases", "Untried", "DevOps", "Continuous Integration/Continuous Delivery", "Tool"]
 ---
-# 
+# It just works. Refreshingly simple.
 
+Migrate from any version (including an empty database) to the latest version of the schema.
 
+# Your relational database. Supported.
 
-# 
-
-
+Choose from the wide range of supported databases.

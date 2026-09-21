@@ -14,6 +14,6 @@ tags: ["English", "Programming", "IDE/Extendable Text Editor", "Tool"]
 
 
 
+Related:
 
-
-- 
+- [Visual Studio Code](https://app.notion.com/p/4bb6ba4fbdb64c299484e3dd58f9fdfd) 

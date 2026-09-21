@@ -6,7 +6,7 @@ last_edited: 2023-02-01T16:36:00.000Z
 source_url: https://www.treblle.com/
 tags: ["Service", "English", "REST API", "Untried", "Documentation", "Site Reliability Engineering"]
 ---
-
+Treblle is a lightweight SDK that helps Engineering and DevOps teams build, ship & maintain REST based APIs faster
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

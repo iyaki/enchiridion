@@ -6,6 +6,6 @@ last_edited: 2025-11-26T19:07:00.000Z
 source_url: https://freefilesync.org/
 tags: ["English", "Open Source", "File/Object Storage", "System Design / Software Architecture", "Tool", "FreeCodeCamp"]
 ---
-## 
+## Synchronize Files and Folders
 
-
+FreeFileSync is a folder comparison and synchronization software that creates and manages backup copies of all your important files. Instead of copying every file every time, FreeFileSync determines the differences between a source and a target folder and transfers only the minimum amount of data needed. FreeFileSync is Open Source software, available for Windows, macOS, and Linux.

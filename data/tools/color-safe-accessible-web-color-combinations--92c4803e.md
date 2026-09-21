@@ -6,4 +6,4 @@ last_edited: 2023-09-13T14:43:00.000Z
 source_url: http://colorsafe.co/
 tags: ["English", "Web Development", "Frontend", "UI/UX", "Service"]
 ---
-
+Empowering designers with beautiful and accessible color palettes based on [WCAG Guidelines](http://webaim.org/blog/wcag-2-0-and-link-colors/) of text and background contrast ratios.

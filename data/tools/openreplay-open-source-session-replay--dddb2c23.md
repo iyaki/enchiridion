@@ -8,26 +8,29 @@ tags: ["English", "Help Desk", "Site Reliability Engineering", "Untried", "On Ca
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
-### 
+### Self-hostable
 
+No more sharing of your data with 3rd parties. Have full control over what's captured.
 
+### Compliance-friendly
 
-### 
+Stop wasting time on lengthy compliance and
+ security checks.
 
+### Privacy controls
 
+Fine-grained privacy features for sanitizing 
+user data.
 
-### 
+## Self-Host or Cloud
 
+Host your session replay tool yourself and stop sending data to third parties. 
+Not a big fan of self-deployments? Use our Cloud and get started in minutes.
 
+### Open-Source
 
-## 
+Select your environment for the deployment guide
 
+Deployment Questions? [Ask on Slack](https://openreplay.slack.com/archives/C020F3VP0J2)
 
-
-### 
-
-
-
-
-
-### 
+### OpenReplay Cloud

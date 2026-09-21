@@ -6,12 +6,14 @@ last_edited: 2024-01-30T14:09:00.000Z
 source_url: https://retriever.corgea.io/
 tags: ["English", "Information Security", "Privacy", "Communication", "Service", "Tool"]
 ---
-## 
+## Secure Secrets Retrieval
 
+Retriever lets you request secrets from anyone
 
+without any of the data going to a server.
 
+## **How it works**
 
-
-## 
-
-
+1. 1Send the above link to someone you want to get a secret from.
+2. 2They add their secret and share the URL Retriever generates.
+3. 3Only you can open that URL in the browser to see their secret. 🪄

@@ -6,4 +6,4 @@ last_edited: 2023-02-01T17:02:00.000Z
 source_url: https://unpoly.com/
 tags: ["English", "Javascript", "Web Development", "Untried", "Framework/Library"]
 ---
-
+It has **no dependencies** and plays nice with existing code.

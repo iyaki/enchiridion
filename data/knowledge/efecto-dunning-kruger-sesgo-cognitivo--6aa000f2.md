@@ -6,7 +6,7 @@ last_edited: 2023-04-25T15:06:00.000Z
 source_url: https://es.wikipedia.org/wiki/Efecto_Dunning-Kruger
 tags: ["Español", "Learning", "Note"]
 ---
-> 
+> La tendencia de las personas con baja habilidad en un área específica a dar evaluaciones demasiado positivas de esta habilidad.
 
 
 

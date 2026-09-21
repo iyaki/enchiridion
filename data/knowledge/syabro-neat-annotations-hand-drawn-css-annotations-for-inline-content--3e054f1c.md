@@ -4,99 +4,99 @@ notion_id: 3e054f1c-7d23-8135-a5d1-db07b15a091a
 notion_url: https://app.notion.com/p/syabro-neat-annotations-Hand-drawn-CSS-annotations-for-inline-content-3e054f1c7d238135a5d1db07b15a091a
 last_edited: 2026-09-19T03:05:00.000Z
 source_url: https://github.com/syabro/neat-annotations
-tags: ["GitHub", "English", "Web Development", "CSS", "Frontend", "Development", "User Experience", "Tool", "Article"]
+tags: ["Web Development", "CSS", "Frontend", "Development", "User Experience", "Tool", "Article", "GitHub", "English"]
 ---
 ![image](https://github.com/syabro/neat-annotations/raw/main/social-preview.png)
 
+Hand-drawn arrows and handwritten labels for your website. Pure CSS, no JavaScript, no build step — one self-contained file.
 
+[Demo](https://neat-annotations.syabro.com/) · [CSS file](https://github.com/syabro/neat-annotations/blob/main/neat-annotations.css) · [GitHub](https://github.com/syabro/neat-annotations)
 
+## Quick start
 
+Add the stylesheet from jsDelivr, or download [`neat-annotations.css`](https://github.com/syabro/neat-annotations/blob/main/neat-annotations.css) and serve it locally:
 
-## 
-
-
-
+```plain text
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/syabro/neat-annotations/neat-annotations.css">
 ```
 
+Wrap the element you want to annotate:
+
+```plain text
+The dashboard updates <span class="ann ann-n ann-amber" data-note="no refresh needed">in real time</span>
 ```
 
+Shantell Sans is optional. Load it to match the demo; otherwise labels fall back to a cursive font:
 
-
+```plain text
+<link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 ```
 
-```
-
-
-
-```
-
-```
-
-
+**Layout note:** annotations are positioned outside their target and do not reserve space. Leave enough margin around annotated lines for the arrow and label.
 
 ![image](https://github.com/syabro/neat-annotations/raw/main/assets/readme-basic.png)
 
-## 
+## API
 
+Start with `ann`, then add a direction and color when needed. The label comes from `data-note`.
 
+### Directions
 
-### 
-
-
+A direction class names where the arrow points. For example, `ann-n` places the label below the target and points the arrow north toward it.
 
 ![image](https://github.com/syabro/neat-annotations/raw/main/assets/readme-directions.png)
 
+`ann-n` · `ann-ne` · `ann-e` · `ann-se` · `ann-s` · `ann-sw` · `ann-w` · `ann-nw`
 
-
+```plain text
+<span class="ann ann-n" data-note="points north">target</span>
 ```
 
-```
+### Colors
 
-### 
-
-
+The default is a theme-aware warm gray. Six built-in classes change the arrow, label, and target highlight together, adapting to light and dark themes:
 
 ![image](https://github.com/syabro/neat-annotations/raw/main/assets/readme-colors.png)
 
+`ann-amber` · `ann-blue` · `ann-green` · `ann-red` · `ann-purple` · `ann-rainbow`
 
+`ann-rainbow` animates through hues and respects `prefers-reduced-motion`.
 
+### Custom colors
 
+Set any CSS color directly with `--ann-color`:
 
-### 
-
-
-
+```plain text
+<span class="ann ann-n" data-note="..." style="--ann-color: #ff1493">hot pink</span>
 ```
 
+Use `light-dark()` to adapt custom colors to light and dark themes:
+
+```plain text
+<span class="ann ann-n" data-note="..." style="--ann-color: light-dark(#111111, #f5f5f7)">adaptive</span>
 ```
 
+### Highlight only
 
+Omit `data-note` and the direction class to use an annotation as a text marker without an arrow or label:
 
+```plain text
+<span class="ann ann-amber">important</span>
 ```
 
+### Target highlight
+
+Add `ann-no-mark` when the target already has its own fill:
+
+```plain text
+<span class="ann ann-n ann-purple ann-no-mark" data-note="keeps its own fill"><span class="badge">stable</span></span>
 ```
 
-### 
+Annotations can be nested to point at one target from different sides. Long notes wrap according to `--ann-label-max-width`. See the [demo](https://neat-annotations.syabro.com/) for both patterns.
 
+## Fine-tuning
 
-
-```
-
-```
-
-### 
-
-
-
-```
-
-```
-
-
-
-## 
-
-
+Set these variables directly on an annotated element:
 
 | Variable | Default | What it controls |
 | --- | --- | --- |
@@ -111,10 +111,10 @@ tags: ["GitHub", "English", "Web Development", "CSS", "Frontend", "Development",
 | `--ann-text-x` / `--ann-text-y` | `0px` / `5px` | label position |
 | `--ann-rotate` | `-4deg` | label tilt |
 
-## 
+## Accessibility
 
+Annotations are visual enhancements. Do not use `data-note` as the only source of instructions, status, validation, or other essential information. Repeat important content in visible HTML or connect a real description to the target with `aria-describedby`.
 
+## License
 
-## 
-
-
+[MIT](https://github.com/syabro/neat-annotations/blob/main/LICENSE)

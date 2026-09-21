@@ -8,6 +8,6 @@ tags: ["?", "Untried", "Tool", "Service"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
-## 
+## **“I have read and agree to the Terms” is the biggest lie on the web. We aim to fix that.**
 
 

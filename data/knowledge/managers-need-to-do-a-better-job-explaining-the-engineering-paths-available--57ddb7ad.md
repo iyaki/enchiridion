@@ -4,16 +4,16 @@ notion_id: 57ddb7ad-96b4-4af3-86ad-f22fe69f7e94
 notion_url: https://app.notion.com/p/Managers-need-to-do-a-better-job-explaining-the-engineering-paths-available-57ddb7ad96b44af386adf22fe69f7e94
 last_edited: 2023-01-18T13:54:00.000Z
 source_url: https://des.wtf/post/1-12-23-engineering-paths.html
-tags: ["Line/People/Team Management", "Career Growth", "Article", "English"]
+tags: ["English", "Line/People/Team Management", "Career Growth", "Article"]
 ---
+I recently started to hit a mental ceiling in my career that has made me wonder what comes next. I’ve grown my skills in a pillar of software engineering that's enough to land a coding job fairly easily, especially in this market (there's still plenty of jobs!). I know enough about the languages I use and the problems I’m tasked with that it feels like 95% of my time coding has become mundane. This might sound benign and probably a little egotistical but it's had a effect on my motivation. I've also noticed others in the same conundrum time and time again in our communities: solicitation for advice about getting out of a funk at work, or a senior dev's worriment about having to eventually manage people. Work is at its worst when it’s boring and when there’s no foreseeable path forward it feels like a drag. And so, I finally had time to think about why I’ve been so burned out the last few years over the span of two jobs — I had no idea what paths were available.
 
+It wasn’t until I started looking for my next opportunity that I realized I’ve been ignorant to what career paths are available to me. I say ignorant because of course this is all information I could have learned on my own at any time. This interview loop is the first time I've considered applying for Staff roles. I’ve been spending a tremendous amount of time reading more about what staff means and I was pretty surprised to learn just how different a staff+ role is from senior. It’s triggered a resurgence of enthusiasm for my own career. I feel like I’ve found a path forward that will challenge me, involves new skills, and fills my desire to keep developing software. Your path might be totally different -- you may find the manager’s path or the senior SWE role a best fit for you. My problem was that I had no clue what my next step could be and I was never told what my options are.
 
+I realized that of the half dozen companies I’ve been at I’ve had one manager describe to me the bigger picture I should strive for and that was when I was very junior. I know this is company-specific and I’m sure this is absolutely not the case at many companies, but I’ve spoken to managers who’s direct reports have no idea what they want to do and fellow engineers who think being the best coder possible is the end game. One manager I know asked a new direct report what their aspirations were and was told that nobody had asked him that before. There are wonderful resources that explain how to be a manager, or a CTO, or a staff engineer, but it’s hard to find something if you don’t know what you’re looking for.
 
+It’s in a manager’s best interest to work with their team to help them discover what they want to do. You need to do more than ask someone what they want or where they see themselves in X years because most times we don’t know. Explain to them the different archetypes of staff engineers, the different managerial paths they can aim for, or what it takes to get to a senior level of engineering. At a certain point most software engineers start to think about how they can level-up their engineering acumen with side projects, technical books, tech talks, or new languages. It’s the non-technical skills that are often overlooked: project management, documentation, communication, cross-team collaboration. Those might provide a jumping off point for discussion around what to work on and, most importantly, why they’re important. It’s worth sharing higher level material like [https://www.staffeng.com](https://www.staffeng.com/) to show them what possibly lies ahead. Get people excited by giving them purpose and a goal to reach for. The US Army summarizes the goal of leadership well:
 
-
-
-
-
-> 
+> Leadership is the activity of influencing people by providing purpose, direction, and motivation to accomplish the mission and improve the organization. ([Page 1-13 of the Army Leadership Handbook](https://armypubs.army.mil/epubs/DR_pubs/DR_a/ARN20039-ADP_6-22-001-WEB-0.pdf))
 
 

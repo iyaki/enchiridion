@@ -6,6 +6,6 @@ last_edited: 2023-01-13T16:53:00.000Z
 source_url: https://resume.github.io/
 tags: ["English", "Jobs", "Untried", "Tool", "Service"]
 ---
+As a software startup owner I really enjoy when people send us their résumés and they include their github account so we can see tangible work they have done.
 
-
-
+After a [tweet by John Resig](https://twitter.com/#!/jeresig/status/33968704983138304) I imagined that it may be nice for people to be able to generate their [GitHub](https://github.com/) résumés.

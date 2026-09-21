@@ -6,7 +6,7 @@ last_edited: 2023-04-25T15:06:00.000Z
 source_url: https://es.wikipedia.org/wiki/Ley_de_Conway
 tags: ["English", "System Design / Software Architecture", "Note"]
 ---
-> 
+> Las organizaciones dedicadas al diseño de sistemas [...] están abocadas a producir diseños que son copias de las estructuras de comunicación de dichas organizaciones.
 
 
 

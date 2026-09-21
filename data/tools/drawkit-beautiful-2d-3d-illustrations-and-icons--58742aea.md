@@ -8,7 +8,7 @@ tags: ["English", "Graphic Design", "Untried", "Service"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
-
+Trusted by these fine companies and many more
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

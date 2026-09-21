@@ -6,4 +6,4 @@ last_edited: 2023-07-13T11:56:00.000Z
 source_url: https://error404.fun/
 tags: ["English", "Graphic Design", "UI/UX", "Web Development", "Tool"]
 ---
-
+Make a unique journey through 404 error pages on your website Use these illustrations that describe better than words

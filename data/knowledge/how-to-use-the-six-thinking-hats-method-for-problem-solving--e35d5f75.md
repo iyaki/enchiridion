@@ -10,6 +10,6 @@ tags: ["English", "Producer (Individual Contributor)", "Article", "Toggl Blog"]
 
 
 
+Related:
 
-
-- 
+- [Six Thinking Hats](https://app.notion.com/p/5f4a44d01fea4a57a1bbec6dc5da7223) 

@@ -4,82 +4,82 @@ notion_id: 15e54f1c-7d23-8143-baa1-f451790649d6
 notion_url: https://app.notion.com/p/A-high-velocity-style-of-software-development-15e54f1c7d238143baa1f451790649d6
 last_edited: 2025-02-10T18:01:00.000Z
 source_url: https://mihaiolteanu.me/interactive-dev
-tags: ["English", "Programming", "Producer (Individual Contributor)", "Productivity", "Article", "Mihai Olteanu"]
+tags: ["Programming", "Producer (Individual Contributor)", "Productivity", "Article", "Mihai Olteanu", "English"]
 ---
+Yet another crowd of souls staring into the abyss of endless meetings, discussing, analyzing, voting, brainstorming, envisioning, sprinting, reviewing, refining, making so much noise, applying so many tools, writing so many cursed documents in so many different, incompatible formats and inventing so many non-formal languages and methodologies all the time.
 
+## Write code and experiment instead of talking and planning
 
-## 
+I want to have a chat with the computer in its own language right from the start. But your attempts will lead you on so many fruitless avenues! the committee heads admonish me. You will waste so much time! Let's have a grand plan and write the perfect solution right from the start, ehh?
 
+That doesn't vibe, though. Iterating through solutions, even if bad ones, uncovers so many corner cases, reveals so much about the project, busts so many myths, rewrites the requirements so often and thoroughly, keeps the feedback-loop so tight that it's cheaper in the long run than being afraid to constantly engage in computer-speak and face reality. I'll take an example to connect the dots.
 
+When browsing online recipes for the perfect cinnamon bun, tons of wow, these are the best buns I've ever had in my life! videos can be salivated over, which helps greatly, but the decision will mostly be based on the presenter's charisma and video editing skills. The alternative is to experiment. Build bundles of flour, add different amounts of salt, sugar and yeast then let the dough rise, sprinkle the cinnamon and bake each batch at different temperatures. If none are delicious, start over. Build afresh. Ingredients are relatively cheap. Make legions of rolls in a single day with subtle yet important differences between them. Taste and decide. After all, you are the I/O of your dough, as Chef John always says.
 
+To put this idea into software practice, write code not documents. Reduce the ephemeral chit-chats. Express ideas in code and execute them often, test them, play with variation of them, make code easy to handle, read, mix and match. Make errors and failures cheap. All things should move smooth, all ingredients at an arms length, busy all the time, no useless interruptions, no going out to fetch an egg from the chicken's ass during development. Ideally, I would have a project consisting of just a single file that I don't have to leave for hours on end.
 
+## Keep experimental and mock data alongside production code
 
+I'm a developer, not only a user. I build these systems. I have access to professional software tools. The source code is right in front of me, all of it. I can modify anything and however I like behind the scenes. If at the end of the day the project looks and behaves like expected, no one really cares what tools or methods I've used.
 
+Therefore, side by side, in the same file with the code I'm currently working on, I keep function calls, variables, lists, objects and all kinds of mocked or experimental data. They're all there, living locally on my machine, alongside the official code, uncommitted. No extra tools, no outside calls, no extra files nor unit tests for now. Some stuff is incomplete, wrong or under development so I temporarily comment it out. When working on something new, and if the language allows it, there's not even a function definition yet, my code lives in the global scope. All this inspires a certain kind of freedom where I can quickly iterate through possible implementations with short feedback-loops and without much planning. There's no finished, sparkling product with the scaffolding, the building tools and the resulting waste out of sight. It's all bundled together, close at hand, ready to be used.
 
+When functions query databases, fetch data from remote urls, are involved in authentication, are time and resource intensive or require extra tools to setup or initialize, and I don't develop that part of the code at that moment, I comment their bodies out or use mock implementations that return authentication successful or some hard-coded data. Or I call them once, copy the result, assign it to a variables and paste this assignment, like it was hand-written, in other parts of the code. If there are big lists or tables, I save them in local files, modify or adjust them and read back as needed. All this scaffolding is not commited. Nobody sees these ugly scraps but me. I can decouple and isolate parts of the project as a result, and work on them independently without the need to keep calling all the different modules all the time or fire-up all parts of the project on each code change.
 
+## Minimize restart times and restart the project often
 
-## 
+How do I inspect what my project is doing, how do I check return values, intermediate results and variables? By printing to stdout. Yes, this is historically seen as a waste of time and a poor man's debugger. Yet, the alternative, the rich man's debugger, introduces another tool into the project, something I try to avoid, and still has this shortcoming: a debugger can inspect the system's state at runtime but it cannot change the implementation. A code change still requires a restart, which might include compilation, linking, flashing, code generation, restarting of tools and devices, or what have you, and that still means careful planning before I can touch the code, an activity I want to do often.
 
+Instead, I accept that code changes in most systems lead to restarts and try instead to minimize restart times and make them automatic with a hot-reloading tool like nodemon. I save the code file and everything starts anew. If I happen to see an advantage, development-speed wise, I'll split the project into independently executable files, and I'll reload and work just on those, sometimes for hours or days on end. Otherwise, I will keep one file for the entire project. As a result, code changes become cheap, can happen often and the introspection can be done with tools the language already has by default.
 
+This might look like chaos from outside, but for me it feels like a lab, like an on-going code experiment, which every project kinda is, like it or not. And it's all written in computer-speak, in a formal, executable, consistent language which takes the place of so many tickets, discussions and plans written in English. Much better than imagining how the project might respond to such and such an input or how would this or that feature look in practice.
 
+## Eye level is buy level
 
+I keep the entry point, that weighty function calling all other functions, or that big table that all the code actually revolves around, right at the top of the file. Then the second most significant bits follow and so on. The alternative would be to have the most used functions at the top and as you read the file everything builds on the previous code, which is a nice, artistic way to go about it, like reading a book, waiting for that suspenseful finale. But I don't aim for surprises when writing code. When looking at a file I like it to reveal itself to me instantly. I want to know the ending. A parseData function, even though used everywhere throughout the file and as such the most important character in the story, tells me nothing at a first glance so it's useless if I see it at the head of a file.
 
+No organization whatsoever is the third scenario. New code goes where there is an empty space available. With this strategy I have to scroll to find the interesting bits, I have to guess the intention of all this code gathered together in the same file. Is it really related, even?! Or it is there, together, by pure chance?
 
+## A single coding style
 
-## 
+I keep, or adopt, the same code style throughout the project even when I dislike it and can't do a thing about it, like in big teams. I resist the urge of writing a subjectively better alternative here and there. A short and costly highway in the woods adds no real benefit. It will be expensive, it will create conflict, raise eyebrows and frustration for everyone, myself included. This isolated island, which, for the sake of the argument let's say is just perfect code, won't play nice with the rest of the project, it won't be an improvement. What I sometimes do is I implement my ideal solution and then reimplement it in the style of the project. I satisfy my curiosity and I can throw a solution away, meaning I have a better understanding of what I'm trying to achieve.
 
+Some languages express the same thing in different ways. For example, the function keyword or a lambda function assigned to a constant are two different ways of defining a function. I pick one and stick with it, usually the second since there are already anonymous functions defined throughout the code. If, let's say, in some instances the function version would be clearer or shorter, I would still use the second version, just for consistency.
 
+Some languages have the ternary operator which does the same thing as an if/else clause, but shorter, and smarter. I try not to be smarter. In fact, if possible, I'll avoid the if/else altogether and use an ifElse function which accepts a predicate and two functions and always return a value from it. It might seem pedantic or extreme, but it keeps things consistent, it brings everything closer to everything is just a function call and avoids surprises for the reader, myself included. That applies even for accessing the elements of lists, for example. Instead of the subscript notation I can also use a function here.
 
+Some functions return values, other can be called for side-effects only, like assigning to global variables or mutating arguments, writing to databases or logging to stdout, among others. I like to keep the side-effects functions separately, maybe in a different file (here is another good reason then to split the one-file project). These are usually functions that interact with the user or with the outside world. The rest of the code can be side-effect free, functions without local variable assignment, that don't change global variables, don't mutate arguments, don't print to stdout, don't throw errors, functions that are always expressions, that always return a value. Thereafter, every-time I look at a function definition I don't have to guess. I know it will accept some arguments and it will return something, like a pure mathematical function does. I know it will compose and play well with the rest of my functions since they all have the same style (the beautiful highway in the middle of nowhere doesn't play nice with the dirt roads surrounding it). I know I can test it in isolation, play with it independently and reduce those restart times or even avoid them completley since I'm only working with a few lines of code at a time.
 
+## Compose functions and flow data through pipes
 
+There is a certain style, a point-free style, if the language allows it, where I do not have to declare parameters of functions. They are implicit. Flowing data through pipes allows the execution of functions to also take place without specifying the arguments. They are implicit, like one would flow data through a Linux pipe. There are no intermediate variables and assignments. I can tap at any point in the pipeline and print the intermediate results similar to a tee command in a Linux pipeline. It makes writing, reading and playing with code, taking it apart, moving it around and reassembling it so much faster. Combined with the ease of commenting code out, independently executable files and hot-reloading, this is closer to a live, interactive, high-velocity development session.
 
+Sure enough, unless the whole project is written in the same style, functional in this case, this strategy doesn't work. It is quite useless if only a handful of my functions are written in such a way as to be composable but the other hundreds of functions are not. At each step the pipe would be broken, some workaround would be needed, some functions do not return a value, some functions have side effects, etc. For debugging purposes, at each execution point.
 
-## 
+## General-purpose functions
 
+Somewhere along the way the idea of short functions has lost its meaning. It's often-times translated as number of lines of code. Past a certain threshold, cut them in two and improve code quality. The result is a chain of function calls, like pages in a book. If there is no room for words on this page, start a new one. With such an approach functions are nothing more than wrappers around rigid blocks of code. The idea of small functions is for them to be sweet, as well. To be generic, accept abstract data, if possible, to be clear of their unique intentions and be general-purpose.
 
+I'll recall, approximately, an example from SICP: implement a function that takes a list of numbers and increases each by one. Solution: iterate through the list, take each number in turn, apply plusOne, create and return a new list with the new values. Later, a new function wants to multiply each number by ten. Again, the same scenario, but now the function is timesTen. Similar with divideByTwo or any other such variations. What SICP then does, instead of implementing each such function from scratch, is spread all these different solutions on a table and asks: can I see some pattern? And if so, can I extract it and create a more generic, usable function? Besides coming up with a solution to iterate over whatever kind of lists and never bother with for loops and list lengths as one does in C, SICP also extracts the function applied on each of the elements. That function becomes a parameter to a more general function. And so, subsequent variations of such requirements only need to pass the list and the action to take on each of the elements, which elements can be anything now, not just numbers. General utilities like map are born from such playing fields.
 
+Keeping a function small is hard, iterative, back and forth work. A task for high velocity programming. It's where a clean, big table like SICP teaches is needed to spread all the available functions and see how are they different, how are they really the same and the speed, agility and courage needed to actually try them out. It's a dificult thing to achieve in meetings.
 
+## A clean work environment
 
-## 
+Code is all there is on my screen. No extra buttons, no text editor menus, no taskbar with clickable icons, no RAM/CPU usage statistics, no clock or calendar, no project file structure, no git tree. Just the file with the source code that I'm currently working on. The rest of the things that I occasionally need are available either with shortcuts or with easy accessible commands, either from my text editor or window manager. Since there is zero clutter, there is ample space to gaze at stuff that matters. I split this extra space in two or three and add a shell session where I switch to occasionally and run commands, like installing new libraries or execute the project via hot-reloading and see it's output always on screen. All this requires a capable development environment, mastering the command line and text editor, lots of keyboard shortcuts and ideally touch-typing, a programmable keyboard and hands always on the keyboard, always on the home row. An intimate friendship with the computer, in short.
 
+## Consistent naming
 
+Do the names of functions and variables take as much time to read as eating a biscuit would? And do they mix and match? Some are just a sweet one word while others are like freight trains? Do you even mix this in in the same piece of code? All these poison mixtures makes the act of reading the code, just reading it not understanding it, that much harder. I keep the same font, so to speak. There is a certain style, a certain tempo that you get used to. After a while, it goes into the background, you're not noticing anymore, you're not expecting any surprises from it. The meaning and the contents can shine through.
 
+I like the naming conventions where a predicate name ends with "p", like in evenp or emptyp. It takes discipline, but keeps the code intuitive and clean, even without types. Or x:xs thing, where is is the head of the list and xs its tail. Always. Everywhere you see that, it means the same thing. No need to invent fancy names, put comments or annotate the code with types. Just one or two chars.
 
+## Keep playgrounds
 
+Sometimes when I try new database features or a new library or play with code that is highly experimental, I end up starting a new playground. A project from scratch that I only keep locally. I'll sometimes use the same libraries and tools as the main project or even slightly different ones just to see different implementation or how one choice would affect the rest of the code. At the end of the day, with a better understanding of the problem, I'll reimplement it in the main project, and this approach is usually faster than trying to implement it directly in a project of hundreds of thousands of lines of code where I have to deal with so many unknowns. It's like the cinnamon buns recipe, to continue with this analogy, where the resulting desert is part of a bigger meal, but there is no need to cook the tenderloin while experimenting with the buns. The two can be separated, developed independently and only brought together at the big moment.
 
+## There is little engineering in software engineering
 
+The second word in software engineering does the field a disservice. In the long run, all these detailed plans make things worse for everybody. Some have only experienced this meeting-intensive approach to building software their whole careers. This only encourages us to think big of ourselves, to think that what we're doing with Jira tickets and Agile sprints and all the methodologies and voting systems is actual engineering. That we work with hard facts and solid results. While it is only guesswork and wishful thinking most of the times. What I see, instead, is that actual practice and gut feeling is probably more important. That gut feeling is only developed through experience, through trying things out, failing and trying again.
 
-
-## 
-
-
-
-
-
-## 
-
-
-
-
-
-
-
-## 
-
-
-
-## 
-
-
-
-
-
-## 
-
-
-
-## 
-
-
-
-
+If there's only one thing that really counts for a successful result but you have ten variables in front of you and a desire or request to make the project work on the first try, then you optimize for all ten variables. If the projects fails, you don't know why it failed. If it works, you're not sure which variable was the one responsible for the success. On the next project, the same story unfolds. That's why it's important to see things fail, to start simple and see if it works. It might not. Then you move on. Like a scientist. I understand what is mean by simple things require lots of work. By default, you have lots of things floating around. Knowing which is worthy to grab and which not is a hard thing. It might be obvious after the fact but not before. Start with the gut feeling, go for engineering after!

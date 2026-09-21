@@ -8,30 +8,30 @@ tags: ["Service", "English", "Web Development"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
-
-
-<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
-
-
+screenshot of wpt results page
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+screenshot of wpt results page
 
+<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
+
+screenshot of wpt results page
 
 [https://www.webpagetest.org/assets/images/pro-intro-1152.mp4](https://www.webpagetest.org/assets/images/pro-intro-1152.mp4)
 
+Simple Configuration _ 3 test runs from recommended location and browser presets_
 
-
-- 
-
-<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
+- **Mobile**  4G Virginia, US Chrome on an Emulated Motorola G (gen 4) tested from Virginia, US on a 9 Mbps 4G connection with 170ms of latency.**Desktop** Cable Chrome Desktop tested from Dulles, Virginia, US on a 5 Mbps cable connection with 28ms of latency.**Mobile** 3G Mumbai, INChrome on an Emulated Motorola G (gen 4) tested from Mumbai, IN on a 1.6 Mbps 3G connection with 300ms of latency.**Desktop** Cable Toronto, CAEdge Desktop tested from Toronto, CA on a 5 Mbps cable connection with 28ms of latency.**Desktop** Cable Frankfurt, DEFirefox Desktop tested from Frankfurt, DE on a 5 Mbps cable connection with 28ms of latency.
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+Virginia, USA
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
-
+Mumbai, India

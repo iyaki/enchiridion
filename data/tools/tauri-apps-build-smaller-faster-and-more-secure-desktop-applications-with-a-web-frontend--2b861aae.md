@@ -4,6 +4,6 @@ notion_id: 2b861aae-2c92-4c4d-beff-c05287164720
 notion_url: https://app.notion.com/p/Tauri-Apps-Build-smaller-faster-and-more-secure-desktop-applications-with-a-web-frontend-2b861aae2c924c4dbeffc05287164720
 last_edited: 2023-04-23T04:24:00.000Z
 source_url: https://tauri.app/
-tags: ["Tool", "English", "Programming", "Untried"]
+tags: ["English", "Programming", "Untried", "Tool"]
 ---
 

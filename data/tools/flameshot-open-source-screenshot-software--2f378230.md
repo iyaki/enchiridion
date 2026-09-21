@@ -10,60 +10,60 @@ tags: ["English", "Office", "Untried", "Tool"]
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
-## 
+## Free & open source screenshot software
 
+Flameshot is a free and open-source, cross-platform tool to take screenshots with many built-in features to save you time.
 
+### Flameshot Features
 
-### 
+### Highly customizable
 
-### 
-
-
-
-<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
-
-<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
-
-### 
-
-
-
-### 
-
-
+Customize the interface color, button selection, keyboard shortcuts, how images are saved, and more with Flameshot's accessible configuration dialog.
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
-### 
+### In-app screenshot editing
 
+You can choose to add an arrow mark, highlight text, blur a section (blur or pixelate an area), add a text, draw something, add a rectangular/circular shaped border, add an incrementing counter number, and add a solid color box with Flameshot's built-in editing tools.
 
+### Simple & intuitive
 
-### 
-
-
+Using Flameshot is as simple as launching, dragging the selection box to cover the area you want to capture, making annotations as needed in on-screen and saving the shot to your computer, all with a very simple and straightforward interface.
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
-### 
+<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
+
+### Upload to online platforms
+
+Flameshot allows users to simply upload their screenshots directly to the cloud in order to easily share it with others. You can upload your image directly to [Imgur](https://imgur.com/) with a single click and share the URL with others.
+
+### Command-line interface (CLI)
+
+Flameshot has several commands you can use in the terminal without launching the GUI via a command line interface. The command line interface lets you script Flameshot and use it as the subject of key binds.
+
+<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
+
+### Download Flameshot
 
 - 
 
-
-
-- 
-
-
+Windows
 
 - 
 
+Apple
 
+- 
 
-### 
+Linux
 
-### 
+### Get the latest Flameshot
 
+### **Windows Downloads**
 
+64-bit only, either installer or portable version available
 
-
+[Looking for older releases?](https://github.com/flameshot-org/flameshot/releases)

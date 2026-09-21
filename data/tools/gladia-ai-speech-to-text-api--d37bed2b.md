@@ -6,11 +6,11 @@ last_edited: 2023-02-23T00:20:00.000Z
 source_url: https://www.gladia.io/
 tags: ["English", "Multimedia", "Office", "Untried", "Service"]
 ---
-### 
+### We are simplifying the most advanced AI models to help you extract 100% value from your data — with a single line of code.
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
-
+Alpha release
 
 
 

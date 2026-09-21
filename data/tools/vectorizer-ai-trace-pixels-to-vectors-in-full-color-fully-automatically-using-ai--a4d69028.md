@@ -4,15 +4,15 @@ notion_id: a4d69028-2b66-4a88-bf8c-fe71eb3d3b34
 notion_url: https://app.notion.com/p/Vectorizer-AI-Trace-Pixels-To-Vectors-in-Full-Color-Fully-Automatically-Using-AI-a4d690282b664a88bf8cfe71eb3d3b34
 last_edited: 2023-10-12T21:30:00.000Z
 source_url: https://vectorizer.ai/
-tags: ["Service", "English", "Graphic Design", "Multimedia"]
+tags: ["English", "Graphic Design", "Multimedia", "Service"]
 ---
+Convert your JPEG and PNG bitmaps to SVG vectors quickly and easily.
 
+Fully Automatically. Using AI.
 
+Free while in Beta.
 
-
-
-
-
+Paste Target
 
 ![image](data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20viewBox%3D%220%200%2081.83%20110.59%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0D%0A%20%3Cdefs%3E%0D%0A%20%20%3CradialGradient%20id%3D%22paper-shadow-gradient%22%20cx%3D%2255.58%22%20cy%3D%2229.83%22%20r%3D%2235%22%20fx%3D%2280.58%22%20fy%3D%225.83%22%20gradientTransform%3D%22matrix%28.80002%20-.00067782%20.00076905%20.90769%2011.092%202.7912%29%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%0D%0A%20%20%20%3Cstop%20stop-color%3D%22%234876ff%22%20stop-opacity%3D%22.2%22%20offset%3D%220%22%2F%3E%0D%0A%20%20%20%3Cstop%20stop-color%3D%22%234876ff%22%20stop-opacity%3D%22.12%22%20offset%3D%22.19%22%2F%3E%0D%0A%20%20%20%3Cstop%20stop-color%3D%22%234876ff%22%20stop-opacity%3D%22.06%22%20offset%3D%22.42%22%2F%3E%0D%0A%20%20%20%3Cstop%20stop-color%3D%22%234876ff%22%20stop-opacity%3D%22.01%22%20offset%3D%22.68%22%2F%3E%0D%0A%20%20%20%3Cstop%20stop-color%3D%22%234876ff%22%20stop-opacity%3D%220%22%20offset%3D%221%22%2F%3E%0D%0A%20%20%3C%2FradialGradient%3E%0D%0A%20%20%3ClinearGradient%20id%3D%22corner-shadow-gradient%22%20x1%3D%2261.737%22%20x2%3D%2273.471%22%20y1%3D%2224.742%22%20y2%3D%2212.467%22%20gradientTransform%3D%22scale%28.93808%201.066%29%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%0D%0A%20%20%20%3Cstop%20stop-color%3D%22%234876ff%22%20stop-opacity%3D%220%22%20offset%3D%220%22%2F%3E%0D%0A%20%20%20%3Cstop%20stop-color%3D%22%234876ff%22%20stop-opacity%3D%22.023593%22%20offset%3D%22.52%22%2F%3E%0D%0A%20%20%20%3Cstop%20stop-color%3D%22%234876ff%22%20stop-opacity%3D%22.04%22%20offset%3D%22.7%22%2F%3E%0D%0A%20%20%20%3Cstop%20stop-color%3D%22%234876ff%22%20stop-opacity%3D%22.07%22%20offset%3D%22.84%22%2F%3E%0D%0A%20%20%20%3Cstop%20stop-color%3D%22%234876ff%22%20stop-opacity%3D%22.18%22%20offset%3D%22.94%22%2F%3E%0D%0A%20%20%20%3Cstop%20stop-color%3D%22%234876ff%22%20stop-opacity%3D%22.25%22%20offset%3D%221%22%2F%3E%0D%0A%20%20%3C%2FlinearGradient%3E%0D%0A%20%3C%2Fdefs%3E%0D%0A%20%3Ctitle%3Epng-file%3C%2Ftitle%3E%0D%0A%20%3Cpath%20id%3D%22paper-white%22%20d%3D%22m81.73%2029.79-26.18-29.73h-42.55a13%2013%200%200%200-13%2012.94v84.63a13%2013%200%200%200%2013%2013h55.88a13%2013%200%200%200%2013-13z%22%20fill%3D%22%23fff%22%2F%3E%0D%0A%20%3Cpath%20id%3D%22paper-shadow%22%20d%3D%22m81.73%2029.79-26.18-29.73h-42.55a13%2013%200%200%200-13%2012.94v84.63a13%2013%200%200%200%2013%2013h55.88a13%2013%200%200%200%2013-13z%22%20fill%3D%22url%28%23paper-shadow-gradient%29%22%2F%3E%0D%0A%20%3Cpath%20id%3D%22corner-white%22%20d%3D%22m55.58%200%200.6%2022.13a6.09%206.09%200%200%200%206.09%206.08l19.56%201.62z%22%20fill%3D%22%23fff%22%2F%3E%0D%0A%20%3Cpath%20id%3D%22corner-shadow%22%20d%3D%22m55.58%200%200.6%2022.13a6.09%206.09%200%200%200%206.09%206.08l19.56%201.62z%22%20fill%3D%22url%28%23corner-shadow-gradient%29%22%2F%3E%0D%0A%20%3Cpath%20id%3D%22icon%22%20d%3D%22m66.5%2055.49a0.28%200.28%200%200%200%200-0.13%200.21%200.21%200%200%200%200-0.06%200.65%200.65%200%200%200-0.19-0.18l-25.59-14.77a0.58%200.58%200%200%200-0.57%200l-17%209.82a0.35%200.35%200%200%200-0.21%200.12l-6.15%203.56a0.65%200.65%200%200%200-0.16%200.13v5.16a0.56%200.56%200%200%200%200.29%200.49l25.5%2014.73a0.58%200.58%200%200%200%200.28%200.07%200.59%200.59%200%200%200%200.29-0.07l23.23-13.36a0.56%200.56%200%200%200%200.29-0.49v-4.95a0.17%200.17%200%200%200-0.01-0.07zm-26.06-14%2024.37%2014.07-9.39%205.44-6.55%203.79-3.87-2.25a9.58%209.58%200%200%200%203.13-1.08%203.88%203.88%200%200%200%202.28-3.22%203.89%203.89%200%200%200-2.32-3.24%209.54%209.54%200%200%200-3-1.05l2.12-4.56a0.33%200.33%200%200%200%200-0.33%200.33%200.33%200%200%200-0.31-0.06l-15.46%202.35a0.32%200.32%200%200%200-0.27%200.26%200.32%200.32%200%200%200%200.15%200.34l5.81%203.36a4.2%204.2%200%200%200-1.6%201.85l-11.18-6.38zm-4.44%2016.66%206.89%203.93a10.05%2010.05%200%200%201-4.94-1.18%203.27%203.27%200%200%201-1.95-2.66zm0.14-0.67a3.72%203.72%200%200%201%201.66-1.81l4.89%202.82a0.29%200.29%200%200%200%200.16%200h0.1a0.33%200.33%200%200%200%200.19-0.18l1.75-3.77a9.17%209.17%200%200%201%202.92%201%203.28%203.28%200%200%201%201.95%202.66%203.27%203.27%200%200%201-1.95%202.66%209.42%209.42%200%200%201-3.76%201.14zm8.08-3-1.52%203.27-4.23-2.44-0.67-0.39-5.32-3.07%2014-2.16-1.94%204.18zm-20.52-3.32%2011.65%206.64a2.18%202.18%200%200%200%200%200.44%203.88%203.88%200%200%200%202.27%203.22%2010.74%2010.74%200%200%200%205.26%201.26h1l4.33%202.47-5.65%203.21-11.23-6.48-13.14-7.58zm-6.07%204.16%2024.37%2014.07v3.61l-24.37-14.09zm25.5%2016.47v-2.4l5.51-3.18v3.61l-5.51%203.18zm22.24-11.65-16.11%209.3v-3.61l16.08-9.29z%22%20fill%3D%22%234876ff%22%2F%3E%0D%0A%20%3Ctext%20id%3D%22label%22%20transform%3D%22rotate%28-.12%29%22%20x%3D%2212.07291%22%20y%3D%2298.885506%22%20fill%3D%22%234876ff%22%20font-family%3D%22sans-serif%22%20font-size%3D%2212.27px%22%20font-weight%3D%22700%22%3E.png%3C%2Ftext%3E%0D%0A%3C%2Fsvg%3E%0D%0A)
 
@@ -20,132 +20,132 @@ tags: ["Service", "English", "Graphic Design", "Multimedia"]
 
 ![image](data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20viewBox%3D%220%200%2081.83%20110.59%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0D%0A%20%3Cdefs%3E%0D%0A%20%20%3CradialGradient%20id%3D%22paper-shadow-gradient%22%20cx%3D%2255.58%22%20cy%3D%2229.83%22%20r%3D%2235%22%20fx%3D%2280.58%22%20fy%3D%225.83%22%20gradientTransform%3D%22matrix%28.80002%20-.00067782%20.00076905%20.90769%2011.092%202.7912%29%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%0D%0A%20%20%20%3Cstop%20stop-color%3D%22%234876ff%22%20stop-opacity%3D%22.2%22%20offset%3D%220%22%2F%3E%0D%0A%20%20%20%3Cstop%20stop-color%3D%22%234876ff%22%20stop-opacity%3D%22.12%22%20offset%3D%22.19%22%2F%3E%0D%0A%20%20%20%3Cstop%20stop-color%3D%22%234876ff%22%20stop-opacity%3D%22.06%22%20offset%3D%22.42%22%2F%3E%0D%0A%20%20%20%3Cstop%20stop-color%3D%22%234876ff%22%20stop-opacity%3D%22.01%22%20offset%3D%22.68%22%2F%3E%0D%0A%20%20%20%3Cstop%20stop-color%3D%22%234876ff%22%20stop-opacity%3D%220%22%20offset%3D%221%22%2F%3E%0D%0A%20%20%3C%2FradialGradient%3E%0D%0A%20%20%3ClinearGradient%20id%3D%22corner-shadow-gradient%22%20x1%3D%2261.737%22%20x2%3D%2273.471%22%20y1%3D%2224.742%22%20y2%3D%2212.467%22%20gradientTransform%3D%22scale%28.93808%201.066%29%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%0D%0A%20%20%20%3Cstop%20stop-color%3D%22%234876ff%22%20stop-opacity%3D%220%22%20offset%3D%220%22%2F%3E%0D%0A%20%20%20%3Cstop%20stop-color%3D%22%234876ff%22%20stop-opacity%3D%22.023593%22%20offset%3D%22.52%22%2F%3E%0D%0A%20%20%20%3Cstop%20stop-color%3D%22%234876ff%22%20stop-opacity%3D%22.04%22%20offset%3D%22.7%22%2F%3E%0D%0A%20%20%20%3Cstop%20stop-color%3D%22%234876ff%22%20stop-opacity%3D%22.07%22%20offset%3D%22.84%22%2F%3E%0D%0A%20%20%20%3Cstop%20stop-color%3D%22%234876ff%22%20stop-opacity%3D%22.18%22%20offset%3D%22.94%22%2F%3E%0D%0A%20%20%20%3Cstop%20stop-color%3D%22%234876ff%22%20stop-opacity%3D%22.25%22%20offset%3D%221%22%2F%3E%0D%0A%20%20%3C%2FlinearGradient%3E%0D%0A%20%3C%2Fdefs%3E%0D%0A%20%3Ctitle%3Epng-file%3C%2Ftitle%3E%0D%0A%20%3Cpath%20id%3D%22paper-white%22%20d%3D%22m81.73%2029.79-26.18-29.73h-42.55a13%2013%200%200%200-13%2012.94v84.63a13%2013%200%200%200%2013%2013h55.88a13%2013%200%200%200%2013-13z%22%20fill%3D%22%23fff%22%2F%3E%0D%0A%20%3Cpath%20id%3D%22paper-shadow%22%20d%3D%22m81.73%2029.79-26.18-29.73h-42.55a13%2013%200%200%200-13%2012.94v84.63a13%2013%200%200%200%2013%2013h55.88a13%2013%200%200%200%2013-13z%22%20fill%3D%22url%28%23paper-shadow-gradient%29%22%2F%3E%0D%0A%20%3Cpath%20id%3D%22corner-white%22%20d%3D%22m55.58%200%200.6%2022.13a6.09%206.09%200%200%200%206.09%206.08l19.56%201.62z%22%20fill%3D%22%23fff%22%2F%3E%0D%0A%20%3Cpath%20id%3D%22corner-shadow%22%20d%3D%22m55.58%200%200.6%2022.13a6.09%206.09%200%200%200%206.09%206.08l19.56%201.62z%22%20fill%3D%22url%28%23corner-shadow-gradient%29%22%2F%3E%0D%0A%20%3Cpath%20id%3D%22icon%22%20d%3D%22m66.5%2055.49a0.28%200.28%200%200%200%200-0.13%200.21%200.21%200%200%200%200-0.06%200.65%200.65%200%200%200-0.19-0.18l-25.59-14.77a0.58%200.58%200%200%200-0.57%200l-17%209.82a0.35%200.35%200%200%200-0.21%200.12l-6.15%203.56a0.65%200.65%200%200%200-0.16%200.13v5.16a0.56%200.56%200%200%200%200.29%200.49l25.5%2014.73a0.58%200.58%200%200%200%200.28%200.07%200.59%200.59%200%200%200%200.29-0.07l23.23-13.36a0.56%200.56%200%200%200%200.29-0.49v-4.95a0.17%200.17%200%200%200-0.01-0.07zm-26.06-14%2024.37%2014.07-9.39%205.44-6.55%203.79-3.87-2.25a9.58%209.58%200%200%200%203.13-1.08%203.88%203.88%200%200%200%202.28-3.22%203.89%203.89%200%200%200-2.32-3.24%209.54%209.54%200%200%200-3-1.05l2.12-4.56a0.33%200.33%200%200%200%200-0.33%200.33%200.33%200%200%200-0.31-0.06l-15.46%202.35a0.32%200.32%200%200%200-0.27%200.26%200.32%200.32%200%200%200%200.15%200.34l5.81%203.36a4.2%204.2%200%200%200-1.6%201.85l-11.18-6.38zm-4.44%2016.66%206.89%203.93a10.05%2010.05%200%200%201-4.94-1.18%203.27%203.27%200%200%201-1.95-2.66zm0.14-0.67a3.72%203.72%200%200%201%201.66-1.81l4.89%202.82a0.29%200.29%200%200%200%200.16%200h0.1a0.33%200.33%200%200%200%200.19-0.18l1.75-3.77a9.17%209.17%200%200%201%202.92%201%203.28%203.28%200%200%201%201.95%202.66%203.27%203.27%200%200%201-1.95%202.66%209.42%209.42%200%200%201-3.76%201.14zm8.08-3-1.52%203.27-4.23-2.44-0.67-0.39-5.32-3.07%2014-2.16-1.94%204.18zm-20.52-3.32%2011.65%206.64a2.18%202.18%200%200%200%200%200.44%203.88%203.88%200%200%200%202.27%203.22%2010.74%2010.74%200%200%200%205.26%201.26h1l4.33%202.47-5.65%203.21-11.23-6.48-13.14-7.58zm-6.07%204.16%2024.37%2014.07v3.61l-24.37-14.09zm25.5%2016.47v-2.4l5.51-3.18v3.61l-5.51%203.18zm22.24-11.65-16.11%209.3v-3.61l16.08-9.29z%22%20fill%3D%22%234876ff%22%2F%3E%0D%0A%20%3Ctext%20id%3D%22label%22%20transform%3D%22rotate%28-.12%29%22%20x%3D%2212.07291%22%20y%3D%2298.885506%22%20fill%3D%22%234876ff%22%20font-family%3D%22sans-serif%22%20font-size%3D%2212.27px%22%20font-weight%3D%22700%22%3E.gif%3C%2Ftext%3E%0D%0A%3C%2Fsvg%3E%0D%0A)
 
+DRAG IMAGE HERE TO BEGIN
 
+or you canor press
 
+CTRL + V
 
+File Picker
 
+## See It in Action
 
+BEFORE
 
+AFTER
 
-
-## 
-
-
-
-
-
-## 
+## How It Works
 
 ![image](data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20viewBox%3D%220%200%20126.74%20144.83%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0D%0A%20%3Cg%20fill%3D%22%23f5f5ff%22%3E%0D%0A%20%20%3Cg%20stroke%3D%22%234876ff%22%3E%0D%0A%20%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m83.18%20125.55%2042.81-24.72v11.47l-43.14%2024.91v-11.47z%22%2F%3E%0D%0A%20%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m125.99%20100.83-42.81%2024.72-69.88-39.99%2042.88-24.77zm-43.14%2024.91-11.48%206.63-29.16-16.72-0.36-0.21-11.75-6.73-28.54-16.37%2011.74-6.78%2069.88%2039.99z%22%2F%3E%0D%0A%20%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m82.85%20125.74v11.47l-11.48%206.63v-11.47z%22%2F%3E%0D%0A%20%20%3C%2Fg%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m71.37%20132.37v11.47l-20.69-11.87%200.06-1.99-8.53-4.9v-9.43zm-20.69-0.4-0.27%209.32-5.08%202.78%200.16-11.14%203.47-1.95zm-1.72-0.99-3.47%201.95-44.73-26.05%203.16-1.73z%22%2F%3E%0D%0A%20%20%3Cg%20stroke%3D%22%234876ff%22%3E%0D%0A%20%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m45.49%20132.93-0.16%2011.14-44.57-25.56v-11.63zm-3.28-17.28v9.43l-5.74-3.29v-0.05c0-2%204-5.27%205.35-6.3z%22%2F%3E%0D%0A%20%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m30.1%20108.71%2011.75%206.73c-1.32%201-5.35%204.33-5.35%206.3v0.05l-16.85-9.67%200.13-0.22c2.93-0.19%2010.31-3.12%2010.31-3.12z%22%2F%3E%0D%0A%20%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m1.56%2092.34%2028.54%2016.37v0.07s-7.38%202.93-10.31%203.12l-0.13%200.22-13.88-8-1.82%201-2.37-1.36z%22%2F%3E%0D%0A%20%20%3C%2Fg%3E%0D%0A%20%3C%2Fg%3E%0D%0A%20%3Cg%20fill%3D%22none%22%20stroke%3D%22%234876ff%22%20stroke-linejoin%3D%22round%22%3E%0D%0A%20%20%3Cg%20stroke-width%3D%221.51px%22%3E%0D%0A%20%20%20%3Cpath%20class%3D%22cls-2%22%20d%3D%22m48.96%20130.98%201.72%200.99%2020.69%2011.87m-69.81-51.5-0.01%2011.45%202.37%201.36m67.45%2027.22v11.47l11.48-6.63%2043.14-24.91v-11.47%22%2F%3E%0D%0A%20%20%20%3Cpath%20class%3D%22cls-2%22%20d%3D%22m1.56%2092.34%2011.74-6.78%2042.88-24.77%2069.81%2040.04-42.81%2024.72-0.33%200.19-11.48%206.63-29.16-16.72-0.36-0.21-11.75-6.73zm-0.8%2014.54v11.63l44.57%2025.56m0.16-11.14-44.73-26.05%203.16-1.73%201.82-1%2013.88%207.97%2016.85%209.67%205.74%203.29%208.53%204.9%22%2F%3E%0D%0A%20%20%20%3Cpath%20class%3D%22cls-2%22%20d%3D%22m50.68%20131.97-0.27%209.32-5.08%202.78%200.16-11.14%203.47-1.95%201.78-1zm-8.47-6.71v-9.64%22%2F%3E%0D%0A%20%20%3C%2Fg%3E%0D%0A%20%20%3Cpath%20d%3D%22m42.27%20115.12-0.42%200.32c-1.32%201-5.35%204.33-5.35%206.3%22%20stroke-width%3D%221.5%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-2%22%20d%3D%22m30.06%20108.78s-7.38%202.93-10.31%203.12m-6.53-26.39%200.08%200.05%2069.88%2039.99%200.05%200.03m-0.38%200v11.73%22%20stroke-width%3D%221.51px%22%2F%3E%0D%0A%20%3C%2Fg%3E%0D%0A%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m72.56%2023.18-1.82%201.4-1.13%200.88c1.27-1.24%201.21-4.28-0.18-7l-2.06-4.09c-1.45-2.88-3.58-6.8-5.67-8.07l-4.29-2.46c-2.11-1.22-4-1.21-5.45-0.22l-0.05-0.08c2.64-2.13%205.84-3.73%208.66-2.1l4.26%202.46c2.09%201.27%204.23%205.19%205.67%208.1l2.06%204.09c1.44%202.77%202.37%205.69%200%207.09z%22%20fill%3D%22%23f5f5ff%22%20stroke%3D%22%234876ff%22%2F%3E%0D%0A%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m69.4%2018.46c1.39%202.68%201.45%205.72%200.18%207l-0.18%200.16-1.7%201.35h-0.29v24a1.85%201.85%200%200%201-0.36%201.2%201.42%201.42%200%200%201-1.89%200.1%205%205%200%200%201-2.24-3.89v-14.1c-0.08%201.3-1.05%201.8-2.24%201.12a5%205%200%200%201-2.24-3.89v-1.2c-0.08%201.3-1%201.8-2.24%201.11a5.06%205.06%200%200%201-2.2-3.61v-1.15a1.09%201.09%200%200%201%200%200.18c-0.08%201.3-1.05%201.8-2.23%201.12a5%205%200%200%201-2.25-3.89v-14.07c0-3.07%201-5.27%202.48-6.34s3.34-1%205.45%200.22l4.22%202.42c2.09%201.27%204.22%205.19%205.67%208.07z%22%20fill%3D%22%23f5f5ff%22%20stroke%3D%22%234876ff%22%2F%3E%0D%0A%20%3Cg%20fill%3D%22none%22%20stroke%3D%22%234876ff%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%0D%0A%20%20%3Cg%20stroke-width%3D%221.51px%22%3E%0D%0A%20%20%20%3Cpath%20class%3D%22cls-4%22%20d%3D%22m54%2023v4.51a2.44%202.44%200%200%200%200%200.27%205.06%205.06%200%200%200%202.23%203.61c1.19%200.69%202.16%200.19%202.24-1.11a1.09%201.09%200%200%200%200-0.18v-1.22%22%2F%3E%0D%0A%20%20%20%3Cpath%20class%3D%22cls-4%22%20d%3D%22m58.44%2025.34v6.17a5%205%200%200%200%202.24%203.89c1.19%200.68%202.16%200.18%202.24-1.12a1.09%201.09%200%200%200%200-0.18v-2%22%2F%3E%0D%0A%20%20%20%3Cpath%20class%3D%22cls-4%22%20d%3D%22m62.92%2027.42v20.93a5%205%200%200%200%202.24%203.89%201.42%201.42%200%200%200%201.89-0.1%201.85%201.85%200%200%200%200.36-1.2v-29.25%22%2F%3E%0D%0A%20%20%20%3Cpath%20class%3D%22cls-4%22%20d%3D%22m67.11%2052.2c1.51-0.32%203.28-1.31%203.74-2.45l0.1-24.9%22%2F%3E%0D%0A%20%20%3C%2Fg%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-5%22%20d%3D%22m67.7%2026.93%201.7-1.35%200.18-0.16c1.27-1.24%201.21-4.28-0.18-7l-2.06-4.09c-1.45-2.88-3.58-6.8-5.67-8.07l-4.26-2.42c-2.11-1.22-4-1.21-5.45-0.22s-2.48%203.27-2.48%206.38v14.07a5%205%200%200%200%202.25%203.93c1.18%200.68%202.15%200.18%202.23-1.12a1.09%201.09%200%200%200%200-0.18v1.78%22%20stroke-width%3D%221.54px%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-5%22%20d%3D%22m69.61%2025.46%201.13-0.88%201.82-1.4c2.37-1.4%201.46-4.32%200-7.12l-2.06-4.06c-1.44-2.88-3.58-6.8-5.67-8.07l-4.26-2.49c-2.82-1.63-6%200-8.66%202.1%22%20stroke-width%3D%221.54px%22%2F%3E%0D%0A%20%3C%2Fg%3E%0D%0A%20%3Cg%20fill%3D%22%23f5f5ff%22%20stroke%3D%22%234876ff%22%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m79.42%2097.65v7.53l-4.29%202.15v-7.53z%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m79.42%2090.8v6.85l-4.29%202.15v-6.86l4.29-2.15z%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m79.42%2072.28v18.51l-4.29%202.15v-18.52z%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m79.42%2072.28-4.29%202.14-34.66-20.01%204.29-2.14zm-4.29%2027.52v7.53l-34.66-20.01v-7.54l1.19%200.69%2033.47%2019.32z%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m54.71%2080.57%200.1-0.05%2010.76-3.39%209.56%2015.8v6.86l-33.47-19.32%2011.36-3.05z%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m75.13%2074.42v18.51l-9.56-15.8-10.76%203.39h-0.1l-1.71-3.1-11.36%203-1.19-0.69v-25.32zm-24.5-5.92a6.59%206.59%200%200%200-3-5.15c-1.65-1-3-0.19-3%201.7a6.61%206.61%200%200%200%203%205.16c1.66%200.95%203%200.19%203-1.71z%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m47.64%2063.35a6.59%206.59%200%200%201%203%205.15c0%201.9-1.34%202.66-3%201.71a6.61%206.61%200%200%201-3-5.16c0.01-1.89%201.36-2.65%203-1.7z%22%2F%3E%0D%0A%20%3C%2Fg%3E%0D%0A%20%3Cg%20fill%3D%22none%22%20stroke%3D%22%234876ff%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%221.51px%22%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-4%22%20d%3D%22m75.13%20107.33-34.66-20.01v-32.91l34.66%2020.01z%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-4%22%20d%3D%22m79.42%20105.18v-32.9l-34.66-20.01m-4.29%2027.51%201.19%200.69%2033.47%2019.32m-24.5-31.29c0%201.9-1.34%202.66-3%201.71a6.61%206.61%200%200%201-3-5.16c0-1.89%201.34-2.65%203-1.7a6.59%206.59%200%200%201%203%205.15z%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-4%22%20d%3D%22m41.66%2080.47%2011.36-3.05%201.69%203.15%203.09%205.78m-2.99-5.83%2010.76-3.39%209.56%2015.8m-34.66-38.52%204.29-2.14m30.37%2022.15%204.29-2.14m-4.29%2035.05%204.29-2.15m-4.29-5.38%204.29-2.15m-4.29-4.71%204.29-2.15%22%2F%3E%0D%0A%20%3C%2Fg%3E%0D%0A%3C%2Fsvg%3E%0D%0A)
 
-### 
+### PICK
 
+Pick a bitmap image that you want to vectorize and drag and drop it onto the page.
 
-
-
+Bitmap images, such as JPEGs and PNGs, are represented as a grid of little squares called 'pixels', each with its own color.
 
 ![image](data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20viewBox%3D%220%200%20130.24%20135.64%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0D%0A%20%3Cg%20fill%3D%22%23f5f5ff%22%20stroke%3D%22%234876ff%22%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m129.42%2088.14%200.12%2011.73-6.17%203.61-0.26-0.45v-11.22zm0.12-0.07-0.12%200.07v-0.07l-6.31%203.67v-0.4l-68.61-39.51-0.08-0.14%205.92-3.48z%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m123.11%20103.03%200.26%200.45-53.77%2031.46-0.03-12%200.03%200.02%2053.51-31.15zm0-11.69v0.4l-53.54%2031.16-21.58-12.42-47.18-27.24%2053.61-31.55%200.08%200.14z%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m69.57%20122.94%200.03%2012-68.9-40.01v-11.66l47.29%2027.21z%22%2F%3E%0D%0A%20%3C%2Fg%3E%0D%0A%20%3Cg%20fill%3D%22none%22%20stroke%3D%22%234876ff%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%221.4px%22%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-2%22%20d%3D%22m47.99%20110.48-47.18-27.24%2053.61-31.55%205.92-3.48%2069.2%2039.86-0.12%200.07-6.31%203.67-53.51%2031.15-0.03-0.02z%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-2%22%20d%3D%22m69.57%20122.9-21.58-12.42-47.29-27.21v11.66l68.9%2040.01%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-2%22%20d%3D%22m69.6%20134.94%2059.94-35.07-0.12-11.73v-0.07l-6.31%203.67-53.54%2031.16v0.04z%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-2%22%20d%3D%22m54.5%2051.83%2068.61%2039.51v11.69%22%2F%3E%0D%0A%20%3C%2Fg%3E%0D%0A%20%3Cg%20fill%3D%22%234876ff%22%3E%0D%0A%20%20%3Cellipse%20class%3D%22cls-3%22%20cx%3D%22117.23%22%20cy%3D%2284.42%22%20rx%3D%221.01%22%20ry%3D%22.59%22%2F%3E%0D%0A%20%20%3Cellipse%20class%3D%22cls-3%22%20cx%3D%22120.3%22%20cy%3D%2286.2%22%20rx%3D%221.01%22%20ry%3D%22.59%22%2F%3E%0D%0A%20%20%3Cellipse%20class%3D%22cls-3%22%20cx%3D%22123.38%22%20cy%3D%2287.98%22%20rx%3D%221.01%22%20ry%3D%22.59%22%2F%3E%0D%0A%20%3C%2Fg%3E%0D%0A%20%3Cg%20fill%3D%22%23f5f5ff%22%20stroke%3D%22%234876ff%22%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m93.56%203.21c1.1%201.91%201.1%204%200%204.61l-3.4%201.88c0.81-0.81%200.71-2.66-0.28-4.39-0.88-1.53-2.2-2.5-3.25-2.5a2.43%202.43%200%200%200-1%200.28l3.93-2.2a1.42%201.42%200%200%201%200.73-0.19c1.06%200%202.38%201%203.27%202.5z%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m89.88%205.31c1%201.73%201.09%203.58%200.28%204.39l-15.76%208.69v0.07l-3.7%202c0.71%202.57%200.48%204.86-0.62%206.15a3.28%203.28%200%200%201-2.28%201.39c-1.66%200.3-3.74-0.64-5.59-2.51l3.59-2.09v-4.62l-4-2.31-3.59%202.13c-0.71-2.57-0.49-4.86%200.62-6.15a3.18%203.18%200%200%201%200.89-0.83l0.5-0.26a3.39%203.39%200%200%201%200.91-0.24c1.66-0.3%203.73%200.64%205.59%202.51l3.7-2.06%2015.24-8.48a2.43%202.43%200%200%201%201-0.28c1%200%202.37%201%203.25%202.5z%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m74.4%2018.39%2015.76-8.69a1.58%201.58%200%200%201-0.29%200.22l-15.45%208.54zm11.25-15.33-15.23%208.51-3.7%202.06c-1.86-1.87-3.93-2.81-5.59-2.51a3.39%203.39%200%200%200-0.91%200.24l3.1-1.64%201.49-0.72c1.66-0.29%203.74%200.64%205.59%202.52zm-11.23%2015.4c0.7%202.54%200.46%204.81-0.64%206.09l-0.15%200.16-4.36%202.78a3.26%203.26%200%200%200%200.85-0.81c1.1-1.29%201.33-3.58%200.62-6.15zm-14.2-7.1-0.5%200.26a2%202%200%200%201%200.5-0.26z%22%2F%3E%0D%0A%20%3C%2Fg%3E%0D%0A%20%3Cpath%20class%3D%22cls-2%22%20d%3D%22m59.72%2011.62a3.18%203.18%200%200%200-0.89%200.83c-1.11%201.29-1.33%203.58-0.62%206.15l3.59-2.13%204%202.31v4.62l-3.59%202.07c1.85%201.87%203.93%202.81%205.59%202.51a3.28%203.28%200%200%200%202.3-1.33c1.1-1.29%201.33-3.58%200.62-6.15l3.7-2%2015.45-8.58a1.58%201.58%200%200%200%200.29-0.22c0.81-0.81%200.71-2.66-0.28-4.39-0.88-1.53-2.2-2.5-3.25-2.5a2.43%202.43%200%200%200-1%200.28l-15.21%208.48-3.7%202.06c-1.86-1.87-3.93-2.81-5.59-2.51a3.39%203.39%200%200%200-0.91%200.24%202%202%200%200%200-0.5%200.26z%22%20fill%3D%22none%22%20stroke%3D%22%234876ff%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%221.4px%22%2F%3E%0D%0A%20%3Cpath%20class%3D%22cls-2%22%20d%3D%22m90.16%209.7%203.4-1.88c1.1-0.64%201.1-2.7%200-4.61-0.89-1.54-2.21-2.51-3.27-2.51a1.42%201.42%200%200%200-0.73%200.19l-3.91%202.17-15.25%208.47c-1.85-1.88-3.93-2.81-5.59-2.53l-1.49%200.71-3.1%201.64-0.5%200.26m9.55%2015.88%204.36-2.78%200.15-0.16c1.1-1.28%201.34-3.55%200.64-6.09%22%20fill%3D%22none%22%20stroke%3D%22%234876ff%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%221.4px%22%2F%3E%0D%0A%20%3Cg%20fill%3D%22%23f5f5ff%22%20stroke%3D%22%234876ff%22%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m91.64%2082.47v7.53l-4.29%202.14v-7.53l4.29-2.15z%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m91.64%2075.61v6.85l-4.29%202.15v-6.86l4.29-2.15z%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m91.64%2057.09v18.51l-4.29%202.15v-18.51z%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m91.64%2057.09-4.29%202.15-34.66-20.02%204.29-2.14zm-4.29%2027.52v7.53l-34.66-20.01v-7.54l1.19%200.69%2033.47%2019.32z%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m66.92%2065.39%200.11-0.06%2010.76-3.39%209.56%2015.8v6.86l-33.47-19.32%2011.36-3.04z%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m87.35%2059.24v18.5l-9.56-15.8-10.79%203.39-0.11%200.06-1.68-3.15-11.36%203-1.19-0.69v-25.33zm-24.5-5.92a6.61%206.61%200%200%200-3-5.16c-1.65-0.95-3-0.19-3%201.71a6.59%206.59%200%200%200%203%205.15c1.66%200.98%203%200.19%203-1.7z%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22m59.86%2048.16a6.61%206.61%200%200%201%203%205.16c0%201.89-1.34%202.65-3%201.7a6.59%206.59%200%200%201-3-5.15c0.01-1.87%201.35-2.66%203-1.71z%22%2F%3E%0D%0A%20%3C%2Fg%3E%0D%0A%20%3Cg%20fill%3D%22none%22%20stroke%3D%22%234876ff%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%221.51px%22%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-4%22%20d%3D%22m87.35%2092.14-34.66-20.01v-32.91l34.66%2020.02z%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-4%22%20d%3D%22m91.64%2090v-32.91l-34.66-20.01m-4.29%2027.51%201.19%200.69%2033.47%2019.32m-24.5-31.28c0%201.89-1.34%202.65-3%201.7a6.59%206.59%200%200%201-3-5.15c0-1.9%201.34-2.66%203-1.71a6.61%206.61%200%200%201%203%205.16z%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-4%22%20d%3D%22m53.88%2065.28%2011.36-3.04%201.68%203.15%203.1%205.78m-2.99-5.84%2010.76-3.39%209.56%2015.8m-34.66-38.52%204.29-2.14m30.37%2022.16%204.29-2.15m-4.29%2035.05%204.29-2.14m-4.29-5.39%204.29-2.15m-4.29-4.71%204.29-2.15%22%2F%3E%0D%0A%20%3C%2Fg%3E%0D%0A%20%3Cg%20stroke%3D%22%234876ff%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%221.4px%22%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-5%22%20d%3D%22m74.65%2098.68-32.12-18.55v-30.49l32.12%2018.55z%22%20fill%3D%22%23f5f5ff%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-2%22%20d%3D%22m47.5%2053.03v29.34m5.47-26.07v29.34m5.46-26.41v29.34m5.47-26.42v29.34m5.46-25.48v29.34m-26.65-39.63%2031.45%2017.88m-31.68-11.8%2031.44%2017.88m-30.97-11.57%2030.97%2017.65m-30.97-11.57%2030.97%2017.65%22%20fill%3D%22none%22%2F%3E%0D%0A%20%20%3Cpath%20class%3D%22cls-5%22%20d%3D%22m61.56%20105.34-32.12-18.54%200.06-7.35%2011.28-0.94%203.57%203.74%208.35-4.89%208.86%2014.64z%22%20fill%3D%22%23f5f5ff%22%2F%3E%0D%0A%20%3C%2Fg%3E%0D%0A%20%3Cg%20fill%3D%22%234876ff%22%3E%0D%0A%20%20%3Cellipse%20class%3D%22cls-3%22%20transform%3D%22rotate%28-30%29%22%20cx%3D%22-14.017%22%20cy%3D%2283.512%22%20rx%3D%221.82%22%20ry%3D%223.15%22%2F%3E%0D%0A%20%20%3Cellipse%20class%3D%22cls-3%22%20transform%3D%22rotate%28-30%29%22%20cx%3D%22-3.412%22%20cy%3D%2289.227%22%20rx%3D%221.82%22%20ry%3D%223.15%22%2F%3E%0D%0A%20%20%3Cellipse%20class%3D%22cls-3%22%20transform%3D%22rotate%28-30%29%22%20cx%3D%226.7039%22%20cy%3D%2293.453%22%20rx%3D%221.82%22%20ry%3D%223.15%22%2F%3E%0D%0A%20%3C%2Fg%3E%0D%0A%3C%2Fsvg%3E%0D%0A)
 
-### 
+### PROCESS
 
+Our servers use powerful GPUs and multi-core CPUs to analyze, process, and convert your image from pixels into geometric shapes.
 
+The resulting vector image can be scaled to any resolution without getting blurry, and can be used to print, cut, embroider, and more!
 
+### DOWNLOAD
 
+Inspect a full preview of the result and download it if you like. Downloads are free while in Beta. Right now we support SVG, PDF, EPS, DXF, and PNG, and more formats are coming soon!
 
-### 
+## Full Featured
 
+**Deep Vector Engine:** Building on our 15 years of experience in the field, we have created deep learning networks and classical algorithms that together form the core functionality of Vectorizer.AI. We have trained the AI networks that underpin this service from scratch, and based on our own proprietary dataset.
 
+**Vector Graph:** Our proprietary computational geometry framework lets us make automated edits and localized optimizations that are simply not possible with conventional vector image representations.
 
-## 
+**Full Shape Fitting:** Going beyond simple Bezier curves, we fit complex whole geometric shapes where possible to get a perfect fit and unmatched consistency. We support fully parameterized circles, ellipses, rounded rectangles, and stars, all with optionally rounded corners and arbitrary rotation angles.
 
+**Curve Support:** In addition to whole geometric shapes, vector shapes can be built from straight lines, circular arcs, elliptical arcs, and quadratic and cubic Bezier curves. When modeling generalized curves, most vector graphics software apps try to simplify things to contain only cubic Bezier curves, a convenient but limited approximation. Vectorizer.AI supports the full range of curve types and uses them where appropriate.
 
+**Clean Corners:** Shape outlines often consist of straight or smoothly varying sections separated from one another by discrete corners. We analyze, model, and optimize every corner in the Vector Graph to craft results that are more natural than other vectorizers.
 
+**High Performance:** Nobody likes to wait. We respect your time, so we make sure we are fully utilizing state of the art GPUs for deep learning, and run carefully tuned and massively parallel classical algorithms on multi-core CPUs to bring you the best vectors in the industry ASAP.
 
+**Sub-Pixel Precision:** We tease out features that are less than a pixel wide, and place boundaries according to the anti-aliasing pixel values. Details matter.
 
+**Fully Automatic:** No user input is required to produce the result.
 
+**Image Types:** While originally designed for logos and other rasterized vector art, the algorithm also works really well on scans or photos of sketches and other drawn artwork, as well as photographs.
 
+**Pre-Crop:** Since we have a maximum allowable resolution, we let you make the most of it by cropping out the portion of your bitmap that you wish to vectorize. Only the cropped area counts against your resolution limit, letting you maximize the quality of the result.
 
+**Full Color & Transparancy:** We support full 32-bit color, including the alpha channel, which was incorporated as a first-class concept right from the start. Partially transparent areas and anti-aliasing are all fully supported.
 
+**Export Choices:** We support SVG, PDF, EPS, DXF, and PNG as output formats. SVG is the most flexible and widely supported format, and is the default. Our full-featured export options allow you to control how shapes are drawn, how they are grouped, and a number of other format-specific options.
 
+## FAQ
 
+### What makes Vectorizer.AI better than the competition?
 
+If I had to pick one thing, it would be the AI. We've been working in this space for 15 years and adding AI has been a game changer. It is able to tease out details that traditional methods miss, and it makes sensible guesses when the pixel data is ambiguous. We developed the Deep Learning models for this product fully in-house, and they are trained on our own proprietary dataset.
 
+But there are a lot of other things that we do better to clean up and improve the output of the AI vectorizer. These improvements include fitting whole geometric shapes, cleaning up corners, tangent matching, curve fairing, and many others. Our Vector Graph allows us to make these changes while maintaining inter-shape consistency, which is a weak point of many of our competitors.
 
+And we are just getting started. The whole site is under active development, and we have a lot of exciting features in the pipeline.
 
+When you are looking for an online tool to help you convert a JPG or PNG to vector, you will find a number of options on the web. Most of them are based on the same old algorithms that have been around for decades, and they frankly don't work very well. Vectorizer.AI is a new approach to vectorization, and we are confident that you will be impressed with the results.
 
+### File formats?
 
+We currently support JPEG, PNG, WEBP, BMP and GIF as input, and produce SVG, PDF, EPS, DXF, and PNG as output. More output formats and options will be coming soon!
 
+If you have a file format that you would like us to support, please let us know.
 
+### Will you add configuration options?
 
+We are working hard to make the AI smart enough that the fully automatic results get it right most of the time. But some things are a matter of preference, and we will add options for those.
 
+A top request has been to add a way to control the number of colors in the output, and we're looking to get that in there soon. Please let us know if you think of any other must-have features.
 
+### Resolution?
 
+The max image pixel size is 2 megapixels. The max image file size is 30 megabytes.
 
+### Transparency?
 
-## 
+We support full 32-bit ARGB input, so both full and partial transparency work well.
 
-### 
+### Pricing?
 
+The service is free while in beta.
 
+We will come out of beta on October 3rd, 2023, and will start charging API customers for access at that time. Please see our intended [API subscription plans](https://vectorizer.ai/api#pricing) and terms on the API documentation page.
 
+We will not start charging for interactive web-based usage of the app at that time, so it will still be free to use in a non-API capacity for the time being.
 
+### Does this work on AI-generated images?
 
+Yes, in fact they seem to be a popular category, and we've been pleased to see how well our algorithm works on those images!
 
+### Is there a difference between vectorizing and embedding?
 
+Yes, there is a huge difference between vectorizing a bitmap and just embedding it in a vector file.
 
+The process of automatically converting bitmap images into vector art is called a variety of things, including vectorizing, vectoring, tracing, bitmap to vector, raster to vector, convert to vector, and probably many others. This process involves detecting the shapes in the image, fitting curves to them, and exporting the result as a vector file. The end result does not contain any pixel data and can be scaled to any size without loss of quality.
 
-### 
+But vector files can also just contain copies of bitmaps inside of them, and putting a bitmap into a vector file is called embedding. Some services just embed, but Vectorizer.AI does actual vectorization.
 
+### What are vector images useful for?
 
+Vector images are composed of geometric shapes, and can be scaled to any size without loss of quality. They are commonly used for printed graphics, and increasingly for web graphics, now that high-DPI screens are becoming the norm and browser support for SVG images has become ubiquitous. They are also necessary for some types of printing processes, such as laser engraving, vinyl cutting, and screen printing.
 
+Vector graphics are also useful because they can be easily edited and changed in a vector editor. In contrast, bitmap images are difficult and time consuming to edit because the graphics present in the image have been flattened down one or more layers of pixels. Editing pixels is tedious, it is easy to make mistakes, and the process often leaves small defects or artifacts behind.
 
+### Do you make any claims on the input images or vectorized results?
 
-### 
+Our terms of service just grant us the rights we need to deliver the service to you, and to improve our products. We don't claim any rights to the vectorized results, and we won't share your images with third parties unless you explicitly authorize us to do so.
 
+Please see our [Terms of Service](https://vectorizer.ai/policies/terms) for more details.
 
+### What are your data retention policies?
 
-
-
-### 
-
-
-
-### 
-
-
-
-### 
-
-
-
-
-
-
-
-### 
-
-
-
-### 
-
-
-
-
-
-
-
-### 
-
-
-
-
-
-### 
-
-
-
-
-
-### 
-
-
+Right now, we retain uploaded images and results for 24 hours, and permanently delete them shortly thereafter. Please note that our data retention policies may change over time, and this current policy does not bind us in the future, or require your affirmative consent to change.

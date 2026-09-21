@@ -6,32 +6,32 @@ last_edited: 2025-04-19T23:52:00.000Z
 source_url: https://mirawelner.com/posts/checkout.html
 tags: ["Mira Welner"]
 ---
+I will start with the disclaimer that I really like git. I use it on nearly all of my programming projects, have read the entirety of Pro Git, and every lab or company I have worked at has held its codebase on GitHub, with the exception of the National Ignition Facility. For some reason, they use Accurev, or at least they did when I worked there in 2019, which was much worse.
 
+I understand that git is an evolving open-source system, meaning that there are going to be redundant commands. This has resulted in many people having their own git 'workflows' consisting of somewhat arbitrary decisions they happened to make regarding which commands to use. For example, when attempting to squash the last n commits together, I prefer to use `git rebase -i HEAD~n` rather than `git reset --soft HEAD~n` or `git merge --squash HEAD@{n}`. Why? In part, because I like creating a new commit message based on a concatenation of the commit messages for each commit I am squashing, but mostly because of muscle memory. The only time I ever consciously changed which command I use for a process was when I learned of the existence of `git switch`, and started using it to change and create branches rather than `git checkout`. This is because `git checkout`, as a command, is a complete and total disaster.
 
+Git checkout seems to go out of its way to be an absolute fiasco of a command. The official git documentation describes `git checkout` as a function to "Switch branches or restore working tree files." That is _already_ two different things that have little to do with each other, and it's not even the full picture of what this sprawling, overloaded command is capable of. I think a more thorough description would be: "It moves you from one branch to another, or creates a new branch which it moves you to, or it reverts specific files to versions of themselves n commits prior. It also can remove all unstaged files while reverting staged files to the version of themselves when they were staged, or it can create a detached HEAD state." What does this even mean? That is not even a coherent sentence! Why did people decide to make a single command do _all of Git's functionality?_ What is this madness?
 
+Pro Git, the official book on git written by one of the founders of GitHub, fully admits that the checkout command is an utterly cursed incarnation of Cthulhu, along with the reset function:
 
+> These commands are two of the most confusing parts of git when you first encounter them. They do so many things that it seems hopeless to actually understand them and employ them properly.
 
-
-
-
-> 
-
-
+The book then proceeds to give a thorough explanation of the checkout and reset functions (you can find it [here](https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified)), which ends up being one of the best explanations I have found of how Git functions as a whole. The reason it is such an excellent explaination of git is because the only way to really understand deeply how `git checkout` works, _you have to fundamentally understand the internal workings of git_. And that is all well and good, but `git checkout` is a command taught to people who are new to git, and a command that requires such a deep understanding of how git works should, _not be a general-use command_.
 
 ![image](https://mirawelner.com/images/xkcd_github.webp)
 
+In all seriousness, I do believe that, given a proper understanding of how git actually works, `git checkout` makes sense. If you have a good grasp of how HEAD points to the current branch, and the branch is just a pointer to a commit, `git checkout` can be viewed as a command which moves the HEAD from branch to branch or sometimes from branch to a specific commit. Normally, I would just say that this means that programmers should develop a deeper understanding of how git works before using it, but the reason that git is different is that the vast majority of people who I have taught how to use git were not developers. For non-programmers, git can be useful not as a version control system, but as a way to access GitHub.
 
+The first time I ever explained git to somebody, they had not asked me to explain git, they had asked me to explain GitHub. They were in a biomedical engineering lab which had decided to put all their code in GitHub so it could be centralized, and they could all see each other's code. People didn't typically collaborate on individual code projects so they didn't really need branches, they just needed to all have the code in the same location so everybody could access it. The lab had asked one of the undergraduate programmers to explain to the group how to use GitHub. They had done a bad job at explaining how it worked, so I explained `git init`, `git add`, `git commit`, `git push`, and `git pull` which is a very small fraction of git functionality, but if the only reason that a lab uses git is to put all the code in one location, that is the extent of what you need.
 
+The second time I explained git to somebody, it was as part of a presentation to Specere Labs at Purdue University. I again focused on `git init`, `git add`, `git commit`, `git push`, and `git pull`. However, because it was a fairly large lab and some projects involved multiple people working on the same codebase, I also explained `git branch` and `git switch` because branches are useful with larger groups. However, despite their use of branches, I never explained to them how `git merge` and `git rebase` work because all of their branch merging would be done on GitHub via pull requests. Merge is complicated, and it wasn't very useful given what the lab was doing.
 
-
-
-
-
+For these groups of people using git, `git checkout` is extremely confusing! And they are also the most likely to stumble upon it since rather than reading the documentation they will look up pre-written scripts online. I know that as software engineers, we don't typically want to change our methodologies for the sake of people who are using tools built for us despite not being real software engineers themselves, but at this point GitHub isn't just for software engineers. Also, we wouldn't be losing anything because `git checkout` is a pain to us as well!
 
 ![image](https://mirawelner.com/images/workflow.webp)
 
+I'm not calling for Git to remove `git checkout`. They have been pretty clear that it isn't something they are looking to do, since removing the backward compatibility of basic git commands would break a lot of scripts, and they have already added the more sensible `git switch` and `git restore`. If somebody wants to update their workflow to more sane commands, they can simply use those two rather than the ungodly `git checkout`. Git is an open-source project which has to provide functional version control for groups ranging from the Linux development team, who presumably use commands like `git rerere` and `git bisect`, to mechanical engineering labs who just want to put MATLAB on an accessible website, and it is doing a fantastic job of it.
 
+The issue, however, is that most people who know git don't learn it from Pro Git, they learn it from their friends and Stack Overflow. I used git badly for an embarrassingly long time before actually going through the documentation and learning what each command really does. Most people are learning the individual workflows of their friends and internet people, which often include `git checkout`. So I am not asking for an official deprecation, but rather a communal deprecation. Just stop teaching junior developers to use checkout because chances are it will be entombed in their muscle memory for a long while after.
 
-
-
-
+If you are a person who contributes to Stack Overflow (thank you, by the way) or gives advice to junior developers (also thank you), please stop teaching them to use `git checkout`! Teach them `git switch` and `git restore`. Or if you don't like restore, try reset which is also somewhat cursed but less cursed than checkout. Git is an amazing version control system, but it's better if you avoid the eldritch horrors hidden within.

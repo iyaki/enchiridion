@@ -8,6 +8,6 @@ tags: ["English", "Blogging/Content Creation", "Website", "Article", "CheatSheet
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+Slash pages are common pages you can add to your website, usually with a standard, root-level slug like `/now`, `/about`, or `/uses`. They tend to describe the individual behind the site and are distinguishing characteristics of the IndieWeb.
 
-
-
+The name was coined independently by both [Caleb Hearth](https://calebhearth.com/) and [Shellsharks](https://shellsharks.com/). This page was made by [Robb Knight](https://rknight.me/).

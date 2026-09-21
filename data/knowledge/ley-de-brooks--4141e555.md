@@ -6,7 +6,7 @@ last_edited: 2023-04-25T15:06:00.000Z
 source_url: https://es.wikipedia.org/wiki/Ley_de_Brooks
 tags: ["Español", "Project Management", "Note"]
 ---
-> 
+> Añadir más efectivos a un proyecto de software en retraso, lo retrasará más.
 
 
 

@@ -4,45 +4,45 @@ notion_id: 5b61ec6f-6e7e-464b-a68e-d049ed740e18
 notion_url: https://app.notion.com/p/The-Zen-of-Proverbs-5b61ec6f6e7e464ba68ed049ed740e18
 last_edited: 2023-01-13T19:00:00.000Z
 source_url: https://wagslane.dev/posts/zen-of-proverbs/
-tags: ["Lane's Blog", "English", "Principles", "Programming", "Article"]
+tags: ["English", "Principles", "Programming", "Article", "Lane's Blog"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+20 rules of thumb for writing better software.
 
+- Optimize for simplicity first
+- Write code for humans, not computers
+- Reading is more important than writing
+- Any style is fine, as long as it’s black
+- There should be one way to do it, but seriously this time
+- Hide the sharp knives
+- Changing the rules is better than adding exceptions
+- Libraries are better than frameworks
+- Transitive dependencies are a problem
+- Dynamic runtime dependencies are a bigger problem
+- API surface area is a liability
+- Returning early is a good thing
+- Use more plain text
+- Compiler errors are better than runtime errors
+- Runtime errors are better than bugs
+- Tooling is better than documentation
+- Documentation is better than nothing
+- Configuration sucks, but so does convention
+- The cost of building a feature is its smallest cost
+- Types are one honking great idea – let’s do more of those!
 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+## Homage and references
 
-## 
+- [The Zen of Python](https://peps.python.org/pep-0020/)
+- [The Go Proverbs](https://go-proverbs.github.io/)
+- [The Zen of Zig](https://ziglang.org/documentation/master/#Zen)
+- [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy#Origin)
+- [Sharp Knives](https://rubyonrails.org/doctrine#provide-sharp-knives)
 
-- 
-- 
-- 
-- 
-- 
+> Any color the customer wants, as long as it’s black.
 
-> 
+– Henry Ford (maybe)
 
+> Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
 
-
-> 
-
-
+―- Martin Fowler

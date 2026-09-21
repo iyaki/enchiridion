@@ -6,197 +6,197 @@ last_edited: 2023-07-21T11:30:00.000Z
 source_url: https://practicaltypography.com/
 tags: ["English", "UI/UX", "Graphic Design", "Book"]
 ---
-# 
+# [Typography in ten minutes](https://practicaltypography.com/typography-in-ten-minutes.html)
 
-# 
+# [Summary of key rules](https://practicaltypography.com/summary-of-key-rules.html)
 
-# 
+# [Start](https://practicaltypography.com/introduction.html)
 
-- 
-- 
-- 
-- 
-- 
+- [introduction](https://practicaltypography.com/introduction.html)
+- [how to use this book](https://practicaltypography.com/how-to-use.html)
+- [acknowledgments](https://practicaltypography.com/acknowledgments.html)
+- [about Matthew Butterick](https://practicaltypography.com/about-matthew-butterick.html)
+- [legal](https://practicaltypography.com/legal.html)
 
-# 
+# [Please pay for this book](https://practicaltypography.com/how-to-pay-for-this-book.html)
 
-- 
-- 
-- 
+- [how to pay for this book](https://practicaltypography.com/how-to-pay-for-this-book.html)
+- [why you should pay](https://practicaltypography.com/why-you-should-pay.html)
+- [MB fonts](https://practicaltypography.com/mb-fonts.html)
 
-# 
+# [Why typography matters](https://practicaltypography.com/why-typography-matters.html)
 
-- 
-- 
-- 
-- 
-- 
+- [what is typography?](https://practicaltypography.com/what-is-typography.html)
+- [who is typography for?](https://practicaltypography.com/who-is-typography-for.html)
+- [why does typography matter?](https://practicaltypography.com/why-does-typography-matter.html)
+- [what is good typography?](https://practicaltypography.com/what-is-good-typography.html)
+- [where do the rules come from?](https://practicaltypography.com/where-do-the-rules-come-from.html)
 
-# 
+# [Type composition](https://practicaltypography.com/type-composition.html)
 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+- [straight and curly quotes](https://practicaltypography.com/straight-and-curly-quotes.html)
+- [one space between sentences](https://practicaltypography.com/one-space-between-sentences.html)
+- [question marks and exclamation points](https://practicaltypography.com/question-marks-and-exclamation-points.html)
+- [emoticons & emoji](https://practicaltypography.com/emoticons-and-emoji.html)
+- [semicolons and colons](https://practicaltypography.com/semicolons-and-colons.html)
+- [paragraph and section marks](https://practicaltypography.com/paragraph-and-section-marks.html)
+- [parentheses, brackets, and braces](https://practicaltypography.com/parentheses-brackets-and-braces.html)
+- [hyphens and dashes](https://practicaltypography.com/hyphens-and-dashes.html)
+- [ampersands](https://practicaltypography.com/ampersands.html)
+- [signature lines](https://practicaltypography.com/signature-lines.html)
+- [trademark & copyright symbols](https://practicaltypography.com/trademark-and-copyright-symbols.html)
+- [ellipses](https://practicaltypography.com/ellipses.html)
+- [apostrophes](https://practicaltypography.com/apostrophes.html)
+- [accented characters](https://practicaltypography.com/accented-characters.html)
+- [foot and inch marks](https://practicaltypography.com/foot-and-inch-marks.html)
+- [white-space characters](https://practicaltypography.com/white-space-characters.html)
+- [word spaces](https://practicaltypography.com/word-spaces.html)
+- [nonbreaking spaces](https://practicaltypography.com/nonbreaking-spaces.html)
+- [tabs and tab stops](https://practicaltypography.com/tabs-and-tab-stops.html)
+- [hard line breaks](https://practicaltypography.com/hard-line-breaks.html)
+- [carriage returns](https://practicaltypography.com/carriage-returns.html)
+- [hard page breaks](https://practicaltypography.com/hard-page-breaks.html)
+- [optional hyphens](https://practicaltypography.com/optional-hyphens.html)
+- [math symbols](https://practicaltypography.com/math-symbols.html)
+- [ligatures](https://practicaltypography.com/ligatures.html)
 
-# 
+# [Text formatting](https://practicaltypography.com/text-formatting.html)
 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+- [underlining](https://practicaltypography.com/underlining.html)
+- [goofy fonts](https://practicaltypography.com/goofy-fonts.html)
+- [monospaced fonts](https://practicaltypography.com/monospaced-fonts.html)
+- [bold or italic](https://practicaltypography.com/bold-or-italic.html)
+- [all caps](https://practicaltypography.com/all-caps.html)
+- [point size](https://practicaltypography.com/point-size.html)
+- [headings](https://practicaltypography.com/headings.html)
+- [letterspacing](https://practicaltypography.com/letterspacing.html)
+- [kerning](https://practicaltypography.com/kerning.html)
+- [color](https://practicaltypography.com/color.html)
+- [alternate figures](https://practicaltypography.com/alternate-figures.html)
+- [ordinals](https://practicaltypography.com/ordinals.html)
+- [web & email addresses](https://practicaltypography.com/web-and-email-addresses.html)
+- [emails](https://practicaltypography.com/emails.html)
+- [small caps](https://practicaltypography.com/small-caps.html)
+- [hierarchical headings](https://practicaltypography.com/hierarchical-headings.html)
+- [OpenType features](https://practicaltypography.com/opentype-features.html)
+- [mixing fonts](https://practicaltypography.com/mixing-fonts.html)
+- [metrics vs. optical spacing](https://practicaltypography.com/metrics-vs-optical-spacing.html)
 
-# 
+# [Font recommendations](https://practicaltypography.com/font-recommendations.html)
 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+- [font basics](https://practicaltypography.com/font-basics.html)
+- [Equity](https://practicaltypography.com/equity.html)
+- [Valkyrie](https://practicaltypography.com/valkyrie.html)
+- [Century Supra](https://practicaltypography.com/century-supra.html)
+- [Concourse](https://practicaltypography.com/concourse.html)
+- [Hermes Maia](https://practicaltypography.com/hermes-maia.html)
+- [Heliotrope](https://practicaltypography.com/heliotrope.html)
+- [Triplicate](https://practicaltypography.com/triplicate.html)
+- [Advocate](https://practicaltypography.com/advocate.html)
+- [system fonts](https://practicaltypography.com/system-fonts.html)
+- [free fonts](https://practicaltypography.com/free-fonts.html)
+- [Charter](https://practicaltypography.com/charter.html)
+- [Helvetica & Arial alternatives](https://practicaltypography.com/helvetica-and-arial-alternatives.html)
+- [Times New Roman alternatives](https://practicaltypography.com/times-new-roman-alternatives.html)
+- [Courier alternatives](https://practicaltypography.com/courier-alternatives.html)
+- [Palatino alternatives](https://practicaltypography.com/palatino-alternatives.html)
+- [Baskerville alternatives](https://practicaltypography.com/baskerville-alternatives.html)
+- [Century Schoolbook alternatives](https://practicaltypography.com/century-schoolbook-alternatives.html)
+- [Georgia alternatives](https://practicaltypography.com/georgia-alternatives.html)
+- [Verdana alternatives](https://practicaltypography.com/verdana-alternatives.html)
+- [Gill Sans alternatives](https://practicaltypography.com/gill-sans-alternatives.html)
+- [Cambria alternatives](https://practicaltypography.com/cambria-alternatives.html)
+- [Calibri alternatives](https://practicaltypography.com/calibri-alternatives.html)
+- [Minion alternatives](https://practicaltypography.com/minion-alternatives.html)
+- [bad fonts](https://practicaltypography.com/bad-fonts.html)
 
-# 
+# [Page layout](https://practicaltypography.com/page-layout.html)
 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+- [centered text](https://practicaltypography.com/centered-text.html)
+- [justified text](https://practicaltypography.com/justified-text.html)
+- [first-line indents](https://practicaltypography.com/first-line-indents.html)
+- [space between paragraphs](https://practicaltypography.com/space-between-paragraphs.html)
+- [line spacing](https://practicaltypography.com/line-spacing.html)
+- [line length](https://practicaltypography.com/line-length.html)
+- [page margins](https://practicaltypography.com/page-margins.html)
+- [body text](https://practicaltypography.com/body-text.html)
+- [hyphenation](https://practicaltypography.com/hyphenation.html)
+- [block quotations](https://practicaltypography.com/block-quotations.html)
+- [bulleted and numbered lists](https://practicaltypography.com/bulleted-and-numbered-lists.html)
+- [tables](https://practicaltypography.com/tables.html)
+- [rules & borders](https://practicaltypography.com/rules-and-borders.html)
+- [widow and orphan control](https://practicaltypography.com/widow-and-orphan-control.html)
+- [space above & below](https://practicaltypography.com/space-above-and-below.html)
+- [page break before](https://practicaltypography.com/page-break-before.html)
+- [keep lines together](https://practicaltypography.com/keep-lines-together.html)
+- [keep with next paragraph](https://practicaltypography.com/keep-with-next-paragraph.html)
+- [columns](https://practicaltypography.com/columns.html)
+- [grids](https://practicaltypography.com/grids.html)
+- [paragraph & character styles](https://practicaltypography.com/paragraph-and-character-styles.html)
+- [maxims of page layout](https://practicaltypography.com/maxims-of-page-layout.html)
 
-# 
+# [Sample documents](https://practicaltypography.com/sample-documents.html)
 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+- [research papers](https://practicaltypography.com/research-papers.html)
+- [letterhead](https://practicaltypography.com/letterhead.html)
+- [business cards](https://practicaltypography.com/business-cards.html)
+- [résumés](https://practicaltypography.com/resumes.html)
+- [grids of numbers](https://practicaltypography.com/grids-of-numbers.html)
+- [presentations](https://practicaltypography.com/presentations.html)
+- [websites](https://practicaltypography.com/websites.html)
 
-# 
+# [Afterword](https://practicaltypography.com/afterword.html)
 
-# 
+# [Appendix](https://practicaltypography.com/appendix.html)
 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+- [typewriter habits](https://practicaltypography.com/typewriter-habits.html)
+- [printers and paper](https://practicaltypography.com/printers-and-paper.html)
+- [how to make a PDF](https://practicaltypography.com/how-to-make-a-pdf.html)
+- [how to embed fonts in a Word document](https://practicaltypography.com/how-to-embed-fonts-in-a-word-document.html)
+- [identifying fonts](https://practicaltypography.com/identifying-fonts.html)
+- [em sizing](https://practicaltypography.com/em-sizing.html)
+- [bibliography](https://practicaltypography.com/bibliography.html)
+- [screen-reading considerations](https://practicaltypography.com/screen-reading-considerations.html)
+- [responsive web design](https://practicaltypography.com/responsive-web-design.html)
+- [how to work with a designer](https://practicaltypography.com/how-to-work-with-a-designer.html)
+- [the copyright status of fonts](https://practicaltypography.com/the-copyright-status-of-fonts.html)
+- [how this book was made](https://practicaltypography.com/how-this-book-was-made.html)
+- [typographic humor](https://practicaltypography.com/typographic-humor.html)
+- [common accented characters](https://practicaltypography.com/common-accented-characters.html)
+- [Concourse Index](https://practicaltypography.com/concourse-index.html)
+- [contact](https://practicaltypography.com/contact.html)
 
-# 
+# [Commentary](https://practicaltypography.com/commentary.html)
 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+- [Why there’s no e-book or PDF](https://practicaltypography.com/why-theres-no-e-book-or-pdf.html)
+- [The economics of a web-based book: year one](https://practicaltypography.com/economics-year-one.html)
+- [Why Racket? Why Lisp?](https://practicaltypography.com/why-racket-why-lisp.html)
+- [The billionaire’s typewriter](https://practicaltypography.com/billionaires-typewriter.html)
+- [The infinite-pixel screen](https://practicaltypography.com/the-infinite-pixel-screen.html)
+- [Effluents influence affluence](https://practicaltypography.com/effluents-influence-affluence.html)
+- [Vote with your wallet, not your ad blocker](https://practicaltypography.com/vote-with-your-wallet.html)
+- [Drowning the “Crystal Goblet”](https://practicaltypography.com/drowning-the-crystal-goblet.html)
+- [To pay or not to pay](https://practicaltypography.com/to-pay-or-not-to-pay.html)
+- [The scorpion express: thoughts on variable fonts](https://practicaltypography.com/the-scorpion-express.html)
+- [Are two spaces better than one?](https://practicaltypography.com/are-two-spaces-better-than-one.html)
+- [Ligatures in programming fonts: hell no](https://practicaltypography.com/ligatures-in-programming-fonts-hell-no.html)
+- [Typography 2020: a special listicle for America](https://practicaltypography.com/typography-2020.html)
+- [The cowardice of Brave](https://practicaltypography.com/the-cowardice-of-brave.html)
+- [Oscars 2020: best-picture typography](https://practicaltypography.com/oscars-2020.html)
+- [Typography 2024: for America! for America’s best](https://practicaltypography.com/typography-2024.html)
+- [MB lectures & articles](https://practicaltypography.com/mb-lectures-and-articles.html)
 
-# 
+# Also by Matthew Butterick
 
-- 
-- 
-- 
-- 
-- 
-- 
+- [MB Type (fonts used in this book)](https://mbtype.com/)
+- [Typography for Lawyers (paperback)](https://typographyforlawyers.com/)
+- [Beautiful Racket (book about making programming languages)](https://beautifulracket.com/)
+- [Pollen (software used to make this book)](https://pollenpub.com/)
+- [Typography-discussion forum (hosted by me, open to all)](https://forums.matthewbutterick.com/c/typography)
+- [Chron (= my blog, roughly)](https://matthewbutterick.com/chron/)
 
-# 
+# MB XS mailing list
 
-- 
+- My mailing list is free, occasional, and covers a variety of topics (typography, law, programming, and writing among them). I will never sell or share your email address.
 
-
+[Reader-supported & ad-free since 2013](https://practicaltypography.com/how-to-pay-for-this-book.html)

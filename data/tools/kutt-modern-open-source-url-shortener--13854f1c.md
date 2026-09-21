@@ -6,28 +6,28 @@ last_edited: 2024-11-15T20:41:00.000Z
 source_url: https://kutt.it/
 tags: ["Service", "Tool", "English", "Network", "Programming", "Untried"]
 ---
-## 
+## Manage links, set custom **domains** and view **stats**.
 
 ![image](https://kutt.it/images/callout.png)
 
+callout image
 
+### Kutting edge features.
 
-### 
+### Managing links
 
-### 
+Create, protect and delete your links and monitor them with detailed statistics.
 
+### Custom domain
 
+Use custom domains for your links. Add or remove them for free.
 
-### 
+### API
 
+Use the provided API to create, delete, and get URLs from anywhere.
 
+### Free & open source
 
-### 
+Completely open source and free. You can host it on your own server.
 
-
-
-### 
-
-
-
-### 
+### Browser extentions.

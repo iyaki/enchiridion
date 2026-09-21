@@ -6,18 +6,18 @@ last_edited: 2026-09-18T00:52:00.000Z
 source_url: https://zero.rocicorp.dev/#pricing
 tags: ["Tool", "Service", "unknown", "English", "Web Development", "DevOps", "Cloud", "Self-hosted", "Open Source"]
 ---
+Your browser does not support the video tag.
 
+[Gigabugs](https://gigabugs.rocicorp.dev/) – Our 1.2 million row issue tracker.
 
+Zero Architecture Diagram
 
+Zero is [open-source](https://zero.rocicorp.dev/docs/open-source) and fully self-hostable.
 
-
-
-
-
-
+We also offer a fully-managed service, which can run on either your servers or ours.
 
 ![image](https://zero.rocicorp.dev/images/cloud-zero-dashboard.png)
 
+Cloud Zero Dashboard
 
-
-
+Answer a few questions about your project and we'll get you running on Cloud Zero today.

@@ -4,7 +4,7 @@ notion_id: bb069929-535f-453d-9486-4fa8e0198f75
 notion_url: https://app.notion.com/p/DistroSea-Test-drive-Linux-distros-online-bb069929535f453d94864fa8e0198f75
 last_edited: 2023-07-05T19:11:00.000Z
 source_url: https://distrosea.com/
-tags: ["Website", "Service", "English", "Linux", "Virtualization"]
+tags: ["English", "Linux", "Virtualization", "Website", "Service"]
 ---
 ![image](https://distrosea.com/distro-icons/alma.svg)
 

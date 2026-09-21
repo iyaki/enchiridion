@@ -4,72 +4,72 @@ notion_id: 36e54f1c-7d23-810f-a181-fed50433bd05
 notion_url: https://app.notion.com/p/DigitalPlatDev-FreeDomain-DigitalPlat-FreeDomain-Free-Domain-For-Everyone-36e54f1c7d23810fa181fed50433bd05
 last_edited: 2026-05-28T02:53:00.000Z
 source_url: https://github.com/DigitalPlatDev/FreeDomain
-tags: ["English", "Web Development", "Domain Driven Design", "Hosting", "SaaS", "Service", "GitHub"]
+tags: ["Service", "GitHub", "English", "Web Development", "Domain Driven Design", "Hosting", "SaaS"]
 ---
-## 
+## 🌐 Welcome to DigitalPlat Domain
 
 ![image](https://github.com/DigitalPlatDev/FreeDomain/raw/main/opensource/static/img/logo.jpg)
 
+Welcome to **DigitalPlat FreeDomain**, where we believe everyone deserves a digital identity. Whether you're an individual, or an organization, we’re offering free domain names to bring your ideas to life – no strings attached!
 
+With FreeDomain, you’re free to register a unique domain and host it with your favorite DNS provider, like Cloudflare, FreeDNS by Afraid.org, or Hostry. Get online with complete freedom, and keep your wallet happy.
 
+### ✔️ Why Free Domains?
 
-
-### 
-
-
+At **DigitalPlat FreeDomain**, we’re on a mission to make the web more accessible. We believe that the cost of a domain shouldn’t hold anyone back from creating a website. Our goal is to make the internet an open space where everyone can have their own place online, regardless of budget.
 
 > 
 
-### 
+### 🌍 Available Domain Extensions
 
-- 
-- 
-- 
-- 
-- 
+- **.DPDNS.ORG**
+- **.US.KG**
+- **.QZZ.IO**
+- **.XX.KG**
+- **.QD.JE**
 
+_(More extensions coming soon!)_
 
+### 🌍 Ready to Claim Your Free Domain?
 
-### 
+Jump in and register your domain by visiting our site:
 
+➡️ [DigitalPlat FreeDomain Dashboard](https://dash.domain.digitalplat.org/)
 
+📝 [Read our tutorial](https://github.com/DigitalPlatDev/FreeDomain/blob/main/documents/tutorial/index.md)
 
+### 🌟 Trusted by Thousands
 
+With over 500,000 domains already registered, DigitalPlat FreeDomain is a trusted choice for individuals and organizations alike. Join our growing community and claim your own free domain today!
 
+### ❔ FAQ
 
+Check [FAQ Page](https://github.com/DigitalPlatDev/FreeDomain/blob/main/documents/domains/faq.md)
 
-### 
+### 🤝 Join Our Community!
 
+🆕 Join our official [DigitalPlat FreeDomain Discord server](https://discord.gg/ma4RZzMmVW) today! Be the first to know about the latest updates, get support, and connect with the community. Got questions? Facing challenges? Or just want to share what you're building? Come hang out with us 🚀
 
+⚠️ **Security Notice** Our previous Telegram account and group were compromised and are no longer under our control. Please **do not trust any messages, links, or announcements** from Telegram, especially anything related to bonuses, earnings, or external sites. We are no longer using Telegram as an official communication channel.
 
-### 
+### ⏭️ What's next
 
+We might introduce more domain options and free hosting in the future to help as many people as possible!
 
+**We can’t wait to see what you build!**
 
-### 
+### 🚨 Abuse Reporting
 
+We take domain name abuse seriously and are committed to maintaining a safer and more open internet. Every report is carefully reviewed, and response times may vary from a few hours to several days, depending on the complexity of the case.
 
+Email: abusereport@digitalplat.org
 
+## 🧠 Story
 
+This started as a small DNS experiment when I was 15, letting a few friends use subdomains.
 
-### 
+Over time, it grew into something people actually rely on, and running it turned out to be much harder than building it.
 
+I wrote a bit about how it evolved here:
 
-
-
-
-### 
-
-
-
-
-
-## 
-
-
-
-
-
-
-
-
+[https://dev.to/edwardhsing/i-bought-a-domain-at-15-now-it-powers-400000-users-7ol](https://dev.to/edwardhsing/i-bought-a-domain-at-15-now-it-powers-400000-users-7ol)

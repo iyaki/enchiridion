@@ -4,20 +4,20 @@ notion_id: 9d63dcea-a09a-4934-ba51-942b775c82de
 notion_url: https://app.notion.com/p/Why-we-always-end-up-with-waterfall-even-with-Scrum-9d63dceaa09a4934ba51942b775c82de
 last_edited: 2023-02-01T16:57:00.000Z
 source_url: https://www.amazingcto.com/why-we-always-endup-with-waterfall-even-scrum/
-tags: ["Article", "Amazing CTO", "English", "Agile", "Productivity", "Project Management", "Product Management"]
+tags: ["English", "Agile", "Productivity", "Project Management", "Product Management", "Article", "Amazing CTO"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+A coachee recently wanted to make their process less waterfally. He wanted to talk about a new process that was less waterfall than their current one - they were doing Scrum.
 
+This made me wonder why we always end up with waterfall and how to fix it. I realized a new process will not be sufficient. We got Scrum and ended up with Scrumfall. It is not the process that brings waterfall, but drivers beyond the process that forge our environment. How does that work?
 
+We had elaborated waterfall processes like Rational Unified Process (RUP) in the 90s, mainly because people believed software development was about engineering. So, they copied processes from engineering machines or buildings. Other driving forces were the focus on correctness at the first time (because of difficult releases and long release cycles) and predictability.
 
+Then the internet arrived, and things speed up. The market and competitors changed faster as ever. Innovation brought an explosion of new business and product ideas. With waterfall, we were building things correct and on time, but we build things that no one wanted in the first place or no longer wanted. Waterfall works for known products in well understood markets. Without iterations and long lead times in unknown markets waterfall breaks down. Agile arrived. I remember going to my prof at the university putting an eXtreme Programming book on his table saying, “We now do extreme development!”. Slightly later Scrum took over. We were living in an iterative and agile world. Or so we thought.
 
+What happened? Drivers beyond agile processes brought back waterfall. Scrum and in some way eXtreme Programming were prescribing product owners (POs). POs have a product vision and make the decisions about what is developed. They own the product just as someone owns a car. If you own the car, you decide where it goes. Sadly, I haven’t seen many product owners, most are product managers that manage external stakeholders. Those stakeholders drive the product, madly pulling the steering wheel to the right and left. These external stakeholders want predictability, because they don’t care about the product but see the product as a tool for their goals. When will it be ready? These external stakeholders want to solve a problem for them not learn about the market. The stakeholders queue up in a long line. And just like in Disneyland where it says “60 min from here” they want to know when “their” feature is developed. This drives waterfall. To coordinate and communicate about the queue product management draws up roadmaps. With a roadmap the product team will sprint ahead and work on future things – for the sake of efficiency. “I can already work on the UI of the next feature”. Efficiency is the key driver for waterfall. In a culture of permanent business pressure with a long queue of stakeholders everything gets sacrificed on the altar of efficiency. Efficiency drives waterfall into everything. Why work on things together as a team? Why work together on designing the feature? We write the code while you draw the UI. Product is two sprints ahead, design is one sprint ahead, developers write the code and QA – if there is QA – is one sprint behind. Waterfall kills agile because you can’t change course with a queue and roadmaps. Waterfall kills iterations because everything needs to be finished the first time for waterfall to work. But waterfall is handy, I can work on my own says the developer plus I don’t need to talk to people. Win-Win. People who don’t work as a team can work in different orgs, product management and development. Then it’s even more efficient with waterfall.
 
+Scrumfall is born.
 
-
-
-
-
-
-
-
+Now comes remote, glad we do waterfall, remote fits waterfall like a glove. Can we invent new processes and methodologies? Yes, we can and yes we will. I believe we urgently need a new process for working remote. The Internet brought agile, what will remote work bring? But if we do not think about the drivers and work on them one after the other, the new process will be waterfall.

@@ -18,12 +18,12 @@ tags: ["English", "Programming", "Website", "Tool"]
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+Kaggle offers a no-setup, customizable, Jupyter Notebooks environment. Access GPUs at no cost to you and a huge repository of community published data & code.
 
+### Inside Kaggle you’ll find all the code & data you need to do your data science work. Use over 50,000 public [datasets](https://www.kaggle.com/datasets) and 400,000 public [notebooks](https://www.kaggle.com/kernels) to conquer any analysis in no time.
 
-### 
+[Machine Learning is the hottest field in data science, and this track will get you started quickly](https://www.kaggle.com/learn/intro-to-machine-learning)
 
+[Start here! Predict survival on the Titanic and get familiar with Machine Learning basics](https://www.kaggle.com/competitions/titanic)
 
-
-
-
-
+[Predict sales prices and practice feature engineering, RFs, and gradient boosting](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques)

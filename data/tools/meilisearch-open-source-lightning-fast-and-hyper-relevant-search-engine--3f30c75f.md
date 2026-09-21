@@ -6,10 +6,10 @@ last_edited: 2023-02-16T19:26:00.000Z
 source_url: https://www.meilisearch.com/
 tags: ["English", "Databases", "System Design / Software Architecture", "Untried", "Tool"]
 ---
+An open-source, lightning-fast, and hyper-relevant search engine that fits effortlessly into your apps, websites, and workflow.
 
+Trusted by amazing companies
 
-
-
-## 
+## The next generation of search
 
 

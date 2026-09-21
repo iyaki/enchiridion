@@ -8,8 +8,8 @@ tags: ["English", "Blogging/Content Creation", "Service"]
 ---
 ![image](https://politepol.com/static/frontend/images/pol.2741bd41f79b.png)
 
+Create your feed yourself!
 
+© 2018 - 2025, [PolitePol](https://politepol.com/)  |  Language / Язык:   English (en)   Русский (ru)    |       |  [Privacy Policy](https://politepol.com/en/privacy)  |  [Contact](https://politepol.com/en/contact)  |
 
-
-
-
+Hi! Could we please enable some additional services for **Marketing**? You can always change or withdraw your consent later.

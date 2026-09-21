@@ -8,4 +8,4 @@ tags: ["English", "UI/UX", "Graphic Design", "Guide"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
-
+A comprehensive guide for exploring and learning about the theory, science, and perception of color and contrast.

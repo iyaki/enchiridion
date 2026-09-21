@@ -4,101 +4,101 @@ notion_id: de184e62-56ac-4db6-98ab-afe8fe633dfe
 notion_url: https://app.notion.com/p/HTML-Standard-de184e6256ac4db698abafe8fe633dfe
 last_edited: 2023-02-23T00:31:00.000Z
 source_url: https://html.spec.whatwg.org/
-tags: ["Web Development", "HTML", "Website", "Guide", "English"]
+tags: ["English", "Web Development", "HTML", "Website", "Guide"]
 ---
-## 
+## Full table of contents
 
-1. 
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
-8. 
-9. 
-10. 
-11. 
-12. 
-13. 
-14. 
-15. 
-16. 
-17. 
-18. 
-19. 
-20. 
-21. 
-22. 
-23. 
-24. 
-25. 
-26. 
-27. 
-28. 
-29. 
-30. 
-31. 
-32. 
-33. 
-34. 
-35. 
-36. 
-37. 
-38. 
-39. 
-40. 
-41. 
-42. 
-43. 
-44. 
-45. 
-46. 
-47. 
-48. 
-49. 
-50. 
-51. 
-52. 
-53. 
-54. 
-55. 
-56. 
-57. 
-58. 
-59. 
-60. 
-61. 
-62. 
-63. 
-64. 
-65. 
-66. 
-67. 
-68. 
-69. 
-70. 
-71. 
-72. 
-73. 
-74. 
-75. 
-76. 
-77. 
-78. 
-79. 
-80. 
-81. 
-82. 
-83. 
-84. 
-85. 
-86. 
-87. 
-88. 
-89. 
-90. 
-91. 
-92. 
-93. 
-94. 
+1. [1 Introduction](https://html.spec.whatwg.org/multipage/introduction.html#introduction)
+2. [2 Common infrastructure](https://html.spec.whatwg.org/multipage/infrastructure.html#infrastructure)
+3. [2.1 Terminology](https://html.spec.whatwg.org/multipage/infrastructure.html#terminology)
+4. [2.3 Common microsyntaxes](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#common-microsyntaxes)
+5. [2.3.4 Numbers](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers)
+6. [2.3.5 Dates and times](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#dates-and-times)
+7. [2.5 Fetching resources](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#fetching-resources)
+8. [2.6 Common DOM interfaces](https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#common-dom-interfaces)
+9. [2.7 Safe passing of structured data](https://html.spec.whatwg.org/multipage/structured-data.html#safe-passing-of-structured-data)
+10. [3 Semantics, structure, and APIs of HTML documents](https://html.spec.whatwg.org/multipage/dom.html#dom)
+11. [3.2 Elements](https://html.spec.whatwg.org/multipage/dom.html#elements)
+12. [3.2.5 Content models](https://html.spec.whatwg.org/multipage/dom.html#content-models)
+13. [3.2.5.2 Kinds of content](https://html.spec.whatwg.org/multipage/dom.html#kinds-of-content)
+14. [4 The elements of HTML](https://html.spec.whatwg.org/multipage/semantics.html#semantics)
+15. [4.2 Document metadata](https://html.spec.whatwg.org/multipage/semantics.html#document-metadata)
+16. [4.3 Sections](https://html.spec.whatwg.org/multipage/sections.html#sections)
+17. [4.4 Grouping content](https://html.spec.whatwg.org/multipage/grouping-content.html#grouping-content)
+18. [4.5 Text-level semantics](https://html.spec.whatwg.org/multipage/text-level-semantics.html#text-level-semantics)
+19. [4.6 Links](https://html.spec.whatwg.org/multipage/links.html#links)
+20. [4.6.7 Link types](https://html.spec.whatwg.org/multipage/links.html#linkTypes)
+21. [4.8 Embedded content](https://html.spec.whatwg.org/multipage/embedded-content.html#embedded-content)
+22. [4.8.4 Images](https://html.spec.whatwg.org/multipage/images.html#images)
+23. [4.8.4.3 Processing model](https://html.spec.whatwg.org/multipage/images.html#images-processing-model)
+24. [4.8.4.4 Requirements for providing text to act as an alternative for images](https://html.spec.whatwg.org/multipage/images.html#alt)
+25. [4.8.11 Media elements](https://html.spec.whatwg.org/multipage/media.html#media-elements)
+26. [4.9 Tabular data](https://html.spec.whatwg.org/multipage/tables.html#tables)
+27. [4.10 Forms](https://html.spec.whatwg.org/multipage/forms.html#forms)
+28. [4.10.1 Introduction](https://html.spec.whatwg.org/multipage/forms.html#introduction-4)
+29. [4.10.5 The ](https://html.spec.whatwg.org/multipage/input.html#the-input-element)[`input`](https://html.spec.whatwg.org/multipage/input.html#the-input-element)[ element](https://html.spec.whatwg.org/multipage/input.html#the-input-element)
+30. [4.10.5.1 States of the ](https://html.spec.whatwg.org/multipage/input.html#states-of-the-type-attribute)[`type`](https://html.spec.whatwg.org/multipage/input.html#states-of-the-type-attribute)[ attribute](https://html.spec.whatwg.org/multipage/input.html#states-of-the-type-attribute)
+31. [4.10.5.3 Common ](https://html.spec.whatwg.org/multipage/input.html#common-input-element-attributes)[`input`](https://html.spec.whatwg.org/multipage/input.html#common-input-element-attributes)[ element attributes](https://html.spec.whatwg.org/multipage/input.html#common-input-element-attributes)
+32. [4.10.18 Attributes common to form controls](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attributes-common-to-form-controls)
+33. [4.10.18.3 Limiting user input length: the ](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#limiting-user-input-length:-the-maxlength-attribute)[`maxlength`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#limiting-user-input-length:-the-maxlength-attribute)[ attribute](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#limiting-user-input-length:-the-maxlength-attribute)
+34. [4.10.21 Form submission](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2)
+35. [4.11 Interactive elements](https://html.spec.whatwg.org/multipage/interactive-elements.html#interactive-elements)
+36. [4.11.3 Commands](https://html.spec.whatwg.org/multipage/interactive-elements.html#commands)
+37. [4.12 Scripting](https://html.spec.whatwg.org/multipage/scripting.html#scripting-3)
+38. [4.12.5 The ](https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-element)[`canvas`](https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-element)[ element](https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-element)
+39. [4.12.5.1 The 2D rendering context](https://html.spec.whatwg.org/multipage/canvas.html#2dcontext)
+40. [4.13 Custom elements](https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements)
+41. [4.16 Matching HTML elements using selectors and CSS](https://html.spec.whatwg.org/multipage/semantics-other.html#selectors)
+42. [5 Microdata](https://html.spec.whatwg.org/multipage/microdata.html#microdata)
+43. [5.3 Sample microdata vocabularies](https://html.spec.whatwg.org/multipage/microdata.html#mdvocabs)
+44. [6 User interaction](https://html.spec.whatwg.org/multipage/interaction.html#editing)
+45. [6.4 Tracking user activation](https://html.spec.whatwg.org/multipage/interaction.html#tracking-user-activation)
+46. [6.5 Activation behavior of elements](https://html.spec.whatwg.org/multipage/interaction.html#activation)
+47. [6.6 Focus](https://html.spec.whatwg.org/multipage/interaction.html#focus)
+48. [6.8 Editing](https://html.spec.whatwg.org/multipage/interaction.html#editing-2)
+49. [6.10 Drag and drop](https://html.spec.whatwg.org/multipage/dnd.html#dnd)
+50. [6.11 The ](https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute)[`popover`](https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute)[ attribute](https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute)
+51. [7 Loading web pages](https://html.spec.whatwg.org/multipage/browsers.html#browsers)
+52. [7.1 Supporting concepts](https://html.spec.whatwg.org/multipage/browsers.html#loading-web-pages-supporting-concepts)
+53. [7.2 APIs related to navigation and session history](https://html.spec.whatwg.org/multipage/nav-history-apis.html#nav-traversal-apis)
+54. [7.2.1 Security infrastructure for ](https://html.spec.whatwg.org/multipage/nav-history-apis.html#cross-origin-objects)[`Window`](https://html.spec.whatwg.org/multipage/nav-history-apis.html#cross-origin-objects)[, ](https://html.spec.whatwg.org/multipage/nav-history-apis.html#cross-origin-objects)[`WindowProxy`](https://html.spec.whatwg.org/multipage/nav-history-apis.html#cross-origin-objects)[, and ](https://html.spec.whatwg.org/multipage/nav-history-apis.html#cross-origin-objects)[`Location`](https://html.spec.whatwg.org/multipage/nav-history-apis.html#cross-origin-objects)[ objects](https://html.spec.whatwg.org/multipage/nav-history-apis.html#cross-origin-objects)
+55. [7.2.3 The ](https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-windowproxy-exotic-object)[`WindowProxy`](https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-windowproxy-exotic-object)[ exotic object](https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-windowproxy-exotic-object)
+56. [7.2.4 The ](https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-location-interface)[`Location`](https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-location-interface)[ interface](https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-location-interface)
+57. [7.3 Infrastructure for sequences of documents](https://html.spec.whatwg.org/multipage/document-sequences.html#infrastructure-for-sequences-of-documents)
+58. [7.3.1 Navigables](https://html.spec.whatwg.org/multipage/document-sequences.html#navigables)
+59. [7.4 Navigation and session history](https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-and-session-history)
+60. [7.4.2 Navigation](https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigating-across-documents)
+61. [7.5 Document lifecycle](https://html.spec.whatwg.org/multipage/document-lifecycle.html#document-lifecycle)
+62. [7.8 Browser user interface considerations](https://html.spec.whatwg.org/multipage/document-lifecycle.html#nav-traversal-ui)
+63. [8 Web application APIs](https://html.spec.whatwg.org/multipage/webappapis.html#webappapis)
+64. [8.1 Scripting](https://html.spec.whatwg.org/multipage/webappapis.html#scripting)
+65. [8.1.3 Realms and their counterparts](https://html.spec.whatwg.org/multipage/webappapis.html#realms-and-their-counterparts)
+66. [8.1.4 Script processing model](https://html.spec.whatwg.org/multipage/webappapis.html#scripting-processing-model)
+67. [8.1.6 JavaScript specification host hooks](https://html.spec.whatwg.org/multipage/webappapis.html#javascript-specification-host-hooks)
+68. [8.9 System state and capabilities](https://html.spec.whatwg.org/multipage/system-state.html#system-state-and-capabilities)
+69. [8.9.1 The ](https://html.spec.whatwg.org/multipage/system-state.html#the-navigator-object)[`Navigator`](https://html.spec.whatwg.org/multipage/system-state.html#the-navigator-object)[ object](https://html.spec.whatwg.org/multipage/system-state.html#the-navigator-object)
+70. [9 Communication](https://html.spec.whatwg.org/multipage/comms.html#comms)
+71. [9.2 Server-sent events](https://html.spec.whatwg.org/multipage/server-sent-events.html#server-sent-events)
+72. [9.4 Channel messaging](https://html.spec.whatwg.org/multipage/web-messaging.html#channel-messaging)
+73. [9.4.1 Introduction](https://html.spec.whatwg.org/multipage/web-messaging.html#introduction-13)
+74. [10 Web workers](https://html.spec.whatwg.org/multipage/workers.html#workers)
+75. [10.1 Introduction](https://html.spec.whatwg.org/multipage/workers.html#introduction-14)
+76. [10.2 Infrastructure](https://html.spec.whatwg.org/multipage/workers.html#infrastructure-2)
+77. [11 Worklets](https://html.spec.whatwg.org/multipage/worklets.html#worklets)
+78. [11.3 Infrastructure](https://html.spec.whatwg.org/multipage/worklets.html#worklets-infrastructure)
+79. [12 Web storage](https://html.spec.whatwg.org/multipage/webstorage.html#webstorage)
+80. [13 The HTML syntax](https://html.spec.whatwg.org/multipage/syntax.html#syntax)
+81. [13.1 Writing HTML documents](https://html.spec.whatwg.org/multipage/syntax.html#writing)
+82. [13.2 Parsing HTML documents](https://html.spec.whatwg.org/multipage/parsing.html#parsing)
+83. [13.2.5 Tokenization](https://html.spec.whatwg.org/multipage/parsing.html#tokenization)
+84. [13.2.6 Tree construction](https://html.spec.whatwg.org/multipage/parsing.html#tree-construction)
+85. [13.2.6.4 The rules for parsing tokens in HTML content](https://html.spec.whatwg.org/multipage/parsing.html#parsing-main-inhtml)
+86. [15 Rendering](https://html.spec.whatwg.org/multipage/rendering.html#rendering)
+87. [15.3 Non-replaced elements](https://html.spec.whatwg.org/multipage/rendering.html#non-replaced-elements)
+88. [15.5 Widgets](https://html.spec.whatwg.org/multipage/rendering.html#widgets)
+89. [16 Obsolete features](https://html.spec.whatwg.org/multipage/obsolete.html#obsolete)
+90. [17 IANA considerations](https://html.spec.whatwg.org/multipage/iana.html#iana)
+91. [Index](https://html.spec.whatwg.org/multipage/indices.html#index)
+92. [Elements](https://html.spec.whatwg.org/multipage/indices.html#elements-3)
+93. [Attributes](https://html.spec.whatwg.org/multipage/indices.html#attributes-3)
+94. [Events](https://html.spec.whatwg.org/multipage/indices.html#events-2)

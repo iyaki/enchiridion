@@ -6,12 +6,12 @@ last_edited: 2023-01-18T13:56:00.000Z
 source_url: https://semver.org/
 tags: ["Website", "English", "Programming", "System Design / Software Architecture", "Project Management"]
 ---
-## 
+## Summary
 
+Given a version number MAJOR.MINOR.PATCH, increment the:
 
+1. MAJOR version when you make incompatible API changes
+2. MINOR version when you add functionality in a backwards compatible manner
+3. PATCH version when you make backwards compatible bug fixes
 
-1. 
-2. 
-3. 
-
-
+Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.

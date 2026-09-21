@@ -10,16 +10,16 @@ tags: ["English", "Security", "User Experience", "Web Development", "Databases",
 
 ![image](https://better-auth.com/right-3d-logo.svg?dpl=dpl_bQKg2ogLsV8Ft8pswNPAEohSJAoN)
 
+Use any database you want. Connect directly with a connection string, or use your favorite ORM adapter. Your data stays in your database.
 
+Your auth lives in your codebase — so AI can configure it. Ships with MCP server, Claude Code skills, and Cursor rules.
 
+### User management and monitoring platform.
 
+Monitor sign-ups, manage users, track sessions, and surface security insights — with an agentic Cmd+K to do it all in natural language.
 
-### 
+### Security infrastructure for your app.
 
+Bot detection, brute force protection, disposable email blocking, geo restrictions, and more — all working in real time before threats reach your users.
 
-
-### 
-
-
-
-
+Built by a community of 473+ contributors.

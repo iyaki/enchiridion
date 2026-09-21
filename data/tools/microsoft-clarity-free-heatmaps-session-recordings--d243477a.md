@@ -10,16 +10,16 @@ tags: ["English", "Programming", "Product Management", "Decision Making", "Proje
 
 
 
-# 
+# **Comprenda a los usuarios. Mejore sus productos.**
 
-# 
+# **Mejore su negocio.**
 
+Clarity es una herramienta gratuita que captura cómo los usuarios usan su sitio. El programa de instalación es fácil y empezará a obtener datos en cuestión de minutos.
 
-
-
-
-
-
-# 
+**Listo para RGPD y CCPA****Sin muestreo****Basado en código abierto**
 
 
+
+# **Clarity es gratis para siempre**
+
+Disfrute de todas las características de Clarity a un costo cero. Nunca se encontrará con límites de tráfico ni se verá obligado a actualizar a una versión de pago.

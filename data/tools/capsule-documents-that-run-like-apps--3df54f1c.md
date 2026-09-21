@@ -6,130 +6,142 @@ last_edited: 2026-09-18T01:17:00.000Z
 source_url: https://withcapsule.app/
 tags: ["English", "Web Development", "Software Development", "Productivity", "SQL", "Automation", "Tool", "official"]
 ---
-
-
----
-
-
-
-<!-- unsupported block: heading_4 -->
-
-
-
-
-
-<!-- unsupported block: heading_4 -->
-
-
-
-
-
-<!-- unsupported block: heading_4 -->
-
-
-
-
+Capsule packs your entire app — UI, data, and everything — into a single portable `.capsule` file. No cloud. No accounts. Just share it.
 
 ---
 
+01 / PROMPT YOUR IDEA
 
+<!-- unsupported block: heading_4 -->
 
-### 
+Describe the application, layout, or features you want to build.
 
+02 / INSTANT CAPSULE APP
 
+<!-- unsupported block: heading_4 -->
 
+Generates a complete single-file `.capsule` container with HTML UI, schema, and local
+          SQLite data.
 
+03 / ITERATE ON THE FLY
 
+<!-- unsupported block: heading_4 -->
 
+Modify features, dark mode, or schemas on the fly via direct AI prompts or MCP coding
+          tools.
 
-
-
-
-
-
-
-
-
-
-
-
-
-### 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Choose an AI assistant below to start building your app.
 
 ---
 
+01 / PORTABILITY
 
+### What If an App Was Just a Document?
 
-## 
+Forget cloud accounts, servers, and subscriptions. Capsule bundles your user interface, media
+      assets, and local database into a single, portable `.capsule` file.
 
+Send it via WhatsApp, AirDrop, or email just like a PDF or Word document. When the recipient
+      taps the file, it launches instantly with all your data preloaded, ready to use.
 
+💬
 
-### 
+**Share Apps in Chat**
 
+Send interactive trackers, portfolios, or tools in standard message threads. Tapping
+            open works immediately.
 
+🎨
 
+**Zero Vendor Lock-in**
 
+Capsules use standard HTML and CSS. Your code and data belong to you, entirely free of
+            cloud silos.
 
+02 / PRIVACY FIRST
 
+### 100% Private by Design
 
+Capsule keeps your personal data where it belongs, on your device. Everything you create is
+      saved directly into the file, giving you complete ownership with zero cloud servers.
 
+Write tasks, list recipe notes, or save project logs. There is no cloud storage, no account
+      registration, and no network requirement. Everything is secured right inside the file.
 
+🔒
 
+**Offline-First Storage**
 
+Works 100% offline. Access your apps on a plane, on the subway, or completely
+            disconnected.
 
+🔑
 
-### 
+**Secure Local Vault**
 
+Data stays safely packed inside the single file. Absolute protection from server
+            breaches.
 
+03 / CROSS-PLATFORM
 
+### One File, Every Operating System
 
+Capsule files are completely cross-platform by default. Open the exact same file on macOS,
+      Windows, or Linux without conversion or special setup.
 
-### 
+Your apps launch with full desktop performance on any computer, with native iOS and Android
+      support coming soon.
 
+⚡
 
+**Instant Desktop Launch**
 
+Launches seamlessly on macOS, Windows, and Linux with zero setup or configuration.
 
+📱
 
+**Mobile Support Coming Soon**
 
+Open and run the exact same `.capsule` files on iOS and Android devices.
 
+---
 
+GET CAPSULE
 
+## Ready to run portable apps?
 
+Capsule is completely free. Download the host player for your platform and open any `.capsule` file in seconds.
 
+### Desktop
 
+macOS
+
+macOS 12 Monterey or later
+
+Windows
+
+Windows 10 or later (64-bit)
+
+Linux
+
+Ubuntu / Debian / Fedora
+
+### Web
+
+Web
+
+Runs in your browser for a quick preview. Cannot open or save files directly on your computer.
+
+### Mobile (Coming Soon)
+
+iOS
+
+iOS 16 or later
+
+App Store
+
+Android
+
+Android 9 or later
+
+Google Play

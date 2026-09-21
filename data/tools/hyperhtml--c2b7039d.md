@@ -8,11 +8,11 @@ tags: ["English", "Frontend", "HTML", "Javascript", "Untried", "Framework/Librar
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+Created to [simplify ](https://medium.com/@WebReflection/hyperhtml-a-virtual-dom-alternative-279db455ee0e) DOM performance best practices, [hyperHTML](https://github.com/WebReflection/hyperHTML) is 100% ECMAScript compliant and it weights about 5Kb, featuring:
 
+- best in class repeated renders and updates performance
+- auto sanitized text content when needed
+- partial outputs between nodes
+- asynchronous content, renders on demand
 
-- 
-- 
-- 
-- 
-
-
+**Framework agnostic**, _hyperHTML_ can be used to render any view, including [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/) and Web Components.

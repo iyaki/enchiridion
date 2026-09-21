@@ -6,12 +6,42 @@ last_edited: 2023-09-04T18:32:00.000Z
 source_url: https://getbem.com/
 tags: ["English", "CSS", "Website", "Guide"]
 ---
+[ Learn why it's better](https://getbem.com/introduction)
 
+```css
+#opinions_box h1 {
+margin: 0 0 8px 0;
+text-align: center;
+}
 
+#opinions_box {
+p.more_pp {
+a {
+text-decoration: underline;
+        }
+    }
+
+input[type="text"] {
+border: 1px solid #ccc!important;
+    }
+}
 ```
 
-```
+```css
+.opinions_box {
+margin: 0 0 8px 0;
+text-align: center;
 
-```
+&__view-more {
+text-decoration: underline;
+    }
 
+&__text-input {
+border: 1px solid #ccc;
+    }
+
+&--is-inactive {
+color: gray;
+    }
+}
 ```

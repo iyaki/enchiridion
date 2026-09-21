@@ -6,12 +6,12 @@ last_edited: 2023-03-12T15:38:00.000Z
 source_url: https://pdfroom.us/
 tags: ["English", "Learning", "Website", "Book"]
 ---
+PDF Room is a **search engine** where you can find educational and leisure PDF books. Currently, thousands of different topics are indexed with over 178,460 PDF books.
 
+At a glance, you can see the year of publication, number of pages, language, and document size in MB.
 
+## Quote
 
-
-## 
-
-> 
+> "We can spend our whole lives escaping from the monsters of our minds."
 
 

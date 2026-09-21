@@ -6,42 +6,42 @@ last_edited: 2023-07-03T11:24:00.000Z
 source_url: https://eruda.liriliri.io/
 tags: ["English", "Frontend", "Website", "Service", "Tool"]
 ---
+Click the right bottom button to inspect this page!
 
+- Trigger Error
+- Send Ajax Request
+- Log Message
 
-- 
-- 
-- 
+## PLUGINS
 
-## 
+- MONITOR
 
-- 
+Display fps and memory
 
+- FEATURES
 
+Browser feature detections
 
-- 
+- BENCHMARK
 
+Run JavaScript benchmarks
 
+- GEOLOCATION
 
-- 
+Test geolocation
 
+- TIMING
 
+Show performance and resource timing
 
-- 
+- CODE
 
+Edit and run JavaScript
 
+- ORIENTATION
 
-- 
+Test orientation api
 
+- TOUCHES
 
-
-- 
-
-
-
-- 
-
-
-
-- 
-
-
+Visualize screen touches

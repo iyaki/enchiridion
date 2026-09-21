@@ -6,34 +6,34 @@ last_edited: 2023-02-18T01:50:00.000Z
 source_url: https://paperless.blog/we-need-programming-mentors
 tags: ["English", "Reflection", "Learning", "Programming", "Article"]
 ---
+tl;dr Mentoring is probably the best way to advance the art of programming, by keeping hard-earned lessons fresh.
 
+Programming is a new discipline. Mathematics and logic had existed for millennia and even the scientific method had existed for generations before Ada Lovelace wrote the first thing recognizable as a precursor to the `for` loop. And programming as an activity available to the general public is so recent that some of its earliest participants are still with us today.
 
+In this time the art of programming has advanced enormously¹. But we can only continue advancing if we take a cue from science: the new generation must have the hard-earned knowledge (theories and, ideally, data) of the past generations available to build on. Without it each generation goes through the same mistakes, stumbling for months or years before being able to advance the state of the art². The following are entirely preventable mistakes from my own wandering career:
 
+- Programming using text editors with no knowledge of the code base was a big mistake, because it leads to other mistakes like trivial typos and trying to do refactoring using regular expressions. That’s not to say I never tried IDEs early in my career, but the first one I tried which was not awful was IntelliJ IDEA around 2014. It’s by no means perfect, but I could never go back to programming in a plain text editor now, knowing what a difference IDEs can make. One caveat to this is that IDEs are by their nature extremely complex, and as a beginner it can be difficult to treat it as anything _other_ than a text editor. But modern ones like IDEA can be learned piecewise, because the file hierarchy and file contents are up front and centre, not something you have to “earn” by first doing a whole bunch of configuration and then learning some obscure interaction patterns which have no connection to any of the other software you’ve ever seen.
+- Not knowing the _weaknesses_ of different technologies. Today it’s basically assumed that if anyone criticises any technology for any reason the fans are going to be there to retaliate, either by attacking the writer for being entitled or the content for being at least in some technical way wrong. Criticism of a technology shouldn’t be an excuse for the experts to denounce anyone less invested in the technology than they are. Instead we should be open to the idea that no technology is perfect, and that _it’s useful to know which things a technology is bad at._ Some projects are even courageous and insightful enough to list their conscious trade-offs. By now I’m one of those naughty people who will occasionally suggest to askers on Stack Overflow to use a different technology, because while most programming languages are Turing complete and therefore in a very technical sense “equivalent,” no, it’s not a good idea to [parse HTML with regular expressions](https://stackoverflow.com/a/1732454/96588).
+- Not knowing the real side effects of having a good test suite. Limiting what your code can do (and thereby limiting the amount of damage any change can introduce) is just a small part of it. Tests act as living documentation and enable fearless refactoring, and test-driven development encourages thinking more productively about a problem before coding (compared to DDT, where you write the tests after the code) and splitting each task into the smallest useful changes.
+- Not knowing when to refactor. Refactoring early has a high risk of not being worth it: premature abstraction has a negative gain, since it usually has to be reverted, and using a lot of time for a tiny decrease in complexity can be wasteful. Refactoring late has a high risk of having already wasted a lot of time dealing with messy code. While I think I have a better idea these days of when to refactor it’s still a challenge every time.
+- Not knowing how to name things. Just a few I’m guilty of: 
+- including the product name in a name within the product, such as `class `_`ProjectName`_`Server`.
+- Other redundancy such as putting “tbl” in table names or a class name in one of its method names.
+- On the flip side, not understanding the difference between bad and [good Hungarian notation](https://www.joelonsoftware.com/2005/05/11/making-wrong-code-look-wrong/). For example, a URL parameter goes from a sequence of bytes at the HTTP layer, then usually via a UTF-8-encoded string in a web framework, and finally to the application level type, which could be arbitrarily complex. When dealing with more than one of these representations in the same context it’s useful to use different variable names to keep them apart, such as `start_string` and `start_datetime`.
+- Single letter variables, such as `i`. With modern IDEs there’s not much excuse to use that, and it becomes inexcusable as soon as _another_ index like `j` inevitably comes along. Now the maintainer is _forced_ to read the full loop definitions to understand what they both do. Now add another three loops inside of that (with `k`, `kk` and no prizes for guessing the next index variable name) and you end up with a ball of mud my boss assured me two others had already tried and failed to refactor.
 
+I was very lucky in my first job as a programmer. My excellent manager Elena let me experiment (aka. bumble about), ask questions, try new technology, and join meetings to see how the software was being used. Stephan, the also excellent tech lead, patiently reviewed my code and gave feedback. In retrospect, for those three years I probably gained more long-lasting knowledge from that feedback than from any other source.
 
+Some of the next few jobs were fine, but it wasn’t until the next time working closely with a much more senior developer that I really felt I was learning quickly. We consciously worked against siloing anyone with a specific part of the code, so we were all intimately familiar with basically every part of the code base. We also paired basically all the time, and changed pairs daily. Because of that, any suggestions I got were highly specific and relevant, which meant that I could apply them immediately and therefore internalize them better. Many of them would also be broadly applicable, which became the superpower of this way of working. Heaps of suggestions, imparted at the moment they are applicable, meant that over time they became ingrained, like keyboard shortcuts.
 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+I don’t think this kind of knowledge can be imparted as successfully from anything other than another person. When learning something new which is even slightly out of context,
 
+- even if you understand the concept you don’t necessarily know how to recognize when it is applicable (see for example the infamous over-use of the singleton pattern),
+- it is unlikely to be applicable to what you are doing right now, when the knowledge is fresh, and
+- unless you have the time to go looking for somewhere it’s applicable or invent some throw-away code where it would be applicable, you may not find a use for it until you’ve forgotten about it.
 
+Basically, a mentor is able to provide suggestions relevant _right now_ to the person _right next to them,_ and to provide in-depth explanation when a quick hint isn’t enough. That is just not possible with any other type of learning.
 
+¹ Some will say the art of programming has regressed, because we now use enormously more resources to accomplish the same things as before. Personally I think this is a combination of survivorship bias and stretching the definition of “same” past breaking point. The first because only software which was capable of running on the hardware at the time was actually developed and used by anyone. Nobody could possibly have written a fully functional spreadsheet application and simply waited 20 years for the hardware to become capable of running it. The second because modern applications really are very different in every way which matters to the end user from their 20+-year-old “equivalents.” At the same time a lot of applications have definitely _stagnated,_ becoming less and less useful every year in which they don’t catch up with what people expect.
 
-
-
-
-- 
-- 
-- 
-
-
-
-
-
-
+² No, I’m not saying I’ve _personally_ advanced the state of the art in any useful way, only that I believe it is vanishingly unlikely for _anyone_ to improve things until they have learned many hard lessons, either by getting through them on their own or by being taught and therefore forewarned.

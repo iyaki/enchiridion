@@ -5,15 +5,15 @@ notion_url: https://app.notion.com/p/Principio-de-Pareto-Regla-del-80-20-527be83
 last_edited: 2023-04-25T15:06:00.000Z
 source_url: https://es.wikipedia.org/wiki/Principio_de_Pareto
 ---
-> 
+> Cualquier población que contribuye a un efecto común, es una proporción pequeña la que contribuye a la mayor parte del efecto.
 
 
 
+Derivados:
 
+> El 80% del esfuerzo de desarrollo (en tiempo y recursos) produce el 20% del código, mientras que el 80% restante es producido con tan solo un 20% del esfuerzo.
 
-> 
-
-> 
+> El 80% de los fallos de un software es generado por un 20% del código de dicho software, mientras que el otro 80% genera tan solo un 20% de los fallos
 
 
 
@@ -21,6 +21,6 @@ source_url: https://es.wikipedia.org/wiki/Principio_de_Pareto
 
 
 
+Related:
 
-
-- 
+- [Regla del noventa-noventa](https://es.wikipedia.org/wiki/Regla_del_noventa-noventa): El primer 90% del código ocupa el 90% del tiempo de desarrollo. El 10% restante del código ocupa el otro 90% de tiempo de desarrollo.

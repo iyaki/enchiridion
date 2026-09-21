@@ -12,6 +12,6 @@ tags: ["English", "Español", "Others", "PHP", "Website"]
 
 
 
-
+Note: The non english versions are, usually, not updated to the latest and some page translations can be pretty bad.
 
 

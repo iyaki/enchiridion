@@ -6,10 +6,10 @@ last_edited: 2023-01-11T14:32:00.000Z
 source_url: https://nightwatchjs.org/
 tags: ["Tool", "English", "Testing"]
 ---
-## 
+## Why Nightwatch?
 
-
+Simple syntax and intuitive commands to avoid clutter and make testing an intuitive experience. Test as you want with support for Typescript and JS.
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
-
+Nightwatch supports testing on mobile browsers and native apps as well. Learn once and deliver amazing experiences across different platforms.

@@ -6,10 +6,10 @@ last_edited: 2026-02-13T02:04:00.000Z
 source_url: https://github.com/jezweb/claude-skills/blob/main/skills/playwright-local/SKILL.md
 tags: ["English", "Web Development", "Testing", "Javascript", "Developer Tools", "Tool", "GitHub"]
 ---
+[Skip to content](https://github.com/jezweb/claude-skills/blob/main/skills/playwright-local/SKILL.md/#start-of-content)
 
+## Navigation Menu
 
-## 
+Toggle navigation
 
-
-
-
+You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert

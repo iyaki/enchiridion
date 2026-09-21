@@ -5,94 +5,94 @@ notion_id: 164f2286-adba-4a40-bbbb-c48b307ac977
 notion_url: https://app.notion.com/p/Keycloak-Open-Source-Identity-and-Access-Management-164f2286adba4a40bbbbc48b307ac977
 last_edited: 2024-02-12T15:16:00.000Z
 source_url: https://www.keycloak.org/
-tags: ["English", "Information Security", "Programming", "System Design / Software Architecture", "Untried", "Tool"]
+tags: ["Tool", "English", "Information Security", "Programming", "System Design / Software Architecture", "Untried"]
 ---
+Add authentication to applications and secure services with minimum effort.
 
+No need to deal with storing users or authenticating users.
 
-
-
-
-
-
-
-<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
-
-## 
-
-
+Keycloak provides user federation, strong authentication, user management, fine-grained authorization, and more.
 
 
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+## Single-Sign On
 
+Users authenticate with Keycloak rather than individual applications. This means that your applications don't have to deal with login forms, authenticating users, and storing users. Once logged-in to Keycloak, users don't have to login again to access a different application.
 
-## 
-
-
-
-
+This also applies to logout. Keycloak provides single-sign out, which means users only have to logout once to be logged-out of all applications that use Keycloak.
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+Screenshot showing a user's login screen as presented by Keycloak
 
+## Identity Brokering and Social Login
 
-## 
+Enabling login with social networks is easy to add through the admin console. It's just a matter of selecting the social network you want to add. No code or changes to your application is required.
 
-
-
-<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
-
-
-
-## 
-
-
-
-
-
-
-
-
+Keycloak can also authenticate users with existing OpenID Connect or SAML 2.0 Identity Providers. Again, this is just a matter of configuring the Identity Provider through the admin console.
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+Diagram illustrating brokering
 
+## User Federation
 
-## 
-
-
-
-
-
-
+Keycloak has built-in support to connect to existing LDAP or Active Directory servers. You can also implement your own provider if you have users in other stores, such as a relational database.
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+Diagram illustrating user federation
 
+## Admin Console
 
-## 
+Through the admin console administrators can centrally manage all aspects of the Keycloak server.
 
+They can enable and disable various features. They can configure identity brokering and user federation.
 
+They can create and manage applications and services, and define fine-grained authorization policies.
 
+They can also manage users, including permissions and sessions.
 
+<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+Screenshot of the admin console
 
+## Account Management Console
 
+Through the account management console users can manage their own accounts. They can update the profile, change passwords, and setup two-factor authentication.
 
+Users can also manage sessions as well as view history for the account.
 
+If you've enabled social login or identity brokering users can also link their accounts with additional providers to allow them to authenticate to the same account with different identity providers.
 
+<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+Screenshot of the account management console
 
+## Authorization Services
 
+If role based authorization doesn't cover your needs, Keycloak provides fine-grained authorization services as well. This allows you to manage permissions for all your services from the Keycloak admin console and gives you the power to define exactly the policies you need.
 
+Standard Protocols OpenID Connect, OAuth 2.0 and SAML 2.0
 
+Centralized Management For admins and users
 
+Adapters Secure applications and services easily
 
+Social Login Easily enable social login
 
+High Performance Lightweight, fast and scalable
 
+Clustering For scalability and availability
 
+Themes Customize look and feel
 
+Extensible Customize through code
 
+Password Policies Customize password policies
 
+Keycloak is a Cloud Native Computing Foundation incubation project
 
+© Keycloak Authors 2023. © 2023 The Linux Foundation. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our [Trademark Usage page](https://www.linuxfoundation.org/trademark-usage).

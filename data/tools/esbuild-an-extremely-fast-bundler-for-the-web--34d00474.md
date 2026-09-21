@@ -6,8 +6,8 @@ last_edited: 2023-02-22T18:47:00.000Z
 source_url: https://esbuild.github.io/
 tags: ["Framework/Library", "Tool", "English", "Javascript", "Untried"]
 ---
+Our current build tools for the web are 10-100x slower than they could be. The main goal of the esbuild bundler project is to bring about a new era of build tool performance, and create an easy-to-use modern bundler along the way.
 
+Major features:
 
-
-
-
+Check out the [getting started](https://esbuild.github.io/getting-started/) instructions if you want to give esbuild a try.

@@ -8,28 +8,28 @@ tags: ["English", "Graphic Design", "Frontend", "UI/UX", "Tool", "Service", "Fra
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+Download, Customize, Edit and Personalize.
 
+### 100k+
 
-### 
+High quality icons to choose from.
 
+### 120+
 
+High quality open source icon sets
 
-### 
+### 6
 
+Different formats to get icons in
 
+## Diverse formats to choose from
 
-### 
+We have a wide range of formats to choose from, so you can download the icons in the format you want. We have SVG, PNG, WEBP, JSX, VUE and BASE64, URLs, CSS background snippers, HTML Image tags. We have it all.
 
+[Start Playing around](https://iconbuddy.app/heroicons)
 
+## We're shipping things fast af!
 
-## 
-
-
-
-
-
-## 
-
-
+We're soon launching a powerful api, sign up to keep updated.
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->

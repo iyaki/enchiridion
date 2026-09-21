@@ -6,40 +6,40 @@ last_edited: 2023-05-03T19:04:00.000Z
 source_url: https://openapi.tools/
 tags: ["English", "Programming", "REST API", "Tool", "Service", "Website"]
 ---
-## 
+## Tool Types
 
+We've organised everything into categories so you can jump to the section you're interested in.
 
+- [**Auto Generators:**](https://openapi.tools/#auto-generators) Tools that will take your code and turn it into an OpenAPI Specification document
+- [**Converters:**](https://openapi.tools/#converters) Various tools to convert to and from OpenAPI and other API description formats.
+- [**Data Validators:**](https://openapi.tools/#data-validators) Check to see if API requests and responses are lining up with the API description.
+- [**Description Validators:**](https://openapi.tools/#description-validators) Check your API description to see if it is valid OpenAPI.
+- [**Documentation:**](https://openapi.tools/#documentation) Render API Description as HTML (or maybe a PDF) so slightly less technical people can figure out how to work with the API.
+- [**DSL:**](https://openapi.tools/#dsl) Writing YAML by hand is no fun, and maybe you don't want a GUI, so use a Domain Specific Language to write OpenAPI in your language of choice.
+- [**Gateways:**](https://openapi.tools/#gateway) API Gateways and related tools that have integrated support for OpenAPI.
+- [**GUI Editors:**](https://openapi.tools/#gui-editors) Visual editors help you design APIs without needing to memorize the entire OpenAPI specification.
+- [**Learning:**](https://openapi.tools/#learning) Whether you're trying to get documentation for a third party API based on traffic, or are trying to switch to design-first at an organization with no OpenAPI at all, learning can help you move your API spec forward and keep it up to date.
+- [**Miscellaneous:**](https://openapi.tools/#miscellaneous) Anything else that does stuff with OpenAPI but hasn't quite got enough to warrant its own category.
+- [**Mock Servers:**](https://openapi.tools/#mock) Fake servers that take description document as input, then route incoming HTTP requests to example responses or dynamically generates examples.
+- [**Parsers:**](https://openapi.tools/#parsers) Loads and read OpenAPI descriptions, so you can work with them programmatically.
+- [**SDK Generators:**](https://openapi.tools/#sdk) Generate code to give to consumers, to help them avoid interacting at a HTTP level.
+- [**Security:**](https://openapi.tools/#security) By poking around your OpenAPI description, some tools can look out for attack vectors you might not have noticed.
+- [**Server Implementations:**](https://openapi.tools/#server) Easily create and implement resources and routes for your APIs.
+- [**Testing:**](https://openapi.tools/#testing) Quickly execute API requests and validate responses on the fly through command line or GUI interfaces.
+- [**Text Editors:**](https://openapi.tools/#text-editors) Text editors give you visual feedback whilst you write OpenAPI, so you can see what docs might look like.
 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+## [Auto Generators](https://openapi.tools/#auto-generators)
 
-## 
-
-
+Tools that will take your code and turn it into an OpenAPI Specification document
 
 | Name | Language | v3.1 | v3.0 | v2.0 | GitHub |
 | --- | --- | --- | --- | --- | --- |
 | [ har-to-openapi ](https://github.com/jonluca/har-to-openapi) - Automatically generate OpenAPI 3.0 Spec by using network requests captured in one or more HAR files | TypeScript | ❌ | ✅ | ❌ |  |
 | [ har2openapi ](https://github.com/dcarr178/har2openapi) - Automatically generate OpenAPI 3.0 Spec by using network requests captured in one or more HAR files | TypeScript | ❌ | ✅ | ❌ |  |
 
-## 
+## [Converters](https://openapi.tools/#converters)
 
-
+Various tools to convert to and from OpenAPI and other API description formats.
 
 | Name | Language | v3.1 | v3.0 | v2.0 | GitHub |
 | --- | --- | --- | --- | --- | --- |
@@ -64,9 +64,9 @@ tags: ["English", "Programming", "REST API", "Tool", "Service", "Website"]
 | [ portman ](http://getportman.com/) - Port OpenAPI Spec to Postman Collection, with contract & variation tests included! | Node.js | ❌ | ✅ | ❌ |  |
 | [ swagger2openapi ](https://mermade.org.uk/openapi-converter) - Upgrade files from OpenAPI v2.0 to v3.0, bundling into one mega file or respecting $refs. Part of oas-kit. | Node.js / CLI | ❌ | ✅ | ✅ |  |
 
-## 
+## [Data Validators](https://openapi.tools/#data-validators)
 
-
+Check to see if API requests and responses are lining up with the API description.
 
 | Name | Language | v3.1 | v3.0 | v2.0 | GitHub |
 | --- | --- | --- | --- | --- | --- |
@@ -91,9 +91,9 @@ tags: ["English", "Programming", "REST API", "Tool", "Service", "Website"]
 | [ openVALIDATION ](https://docs.openvalidation.io/openapi/openapi-specification) - Allows complex validation rules to be specified in openAPI spec files using natural language. | Java | ❌ | ✅ | ❌ |  |
 | [ vacuum ](https://quobix.com/vacuum) - The worlds fastest OpenAPI linter and validator. Compatible with Spectral rule-sets and designed for enterprise-grade speed and scale. | go | ✅ | ✅ | ✅ |  |
 
-## 
+## [Documentation](https://openapi.tools/#documentation)
 
-
+Render API Description as HTML (or maybe a PDF) so slightly less technical people can figure out how to work with the API.
 
 | Name | Language | v3.1 | v3.0 | v2.0 | GitHub |
 | --- | --- | --- | --- | --- | --- |
@@ -128,9 +128,9 @@ tags: ["English", "Programming", "REST API", "Tool", "Service", "Website"]
 | [ widdershins ](https://mermade.github.io/shins) - Generate Slate/Shins markdown from OpenAPI 2.0/3.0.x | Node.js | ❌ | ✅ | ✅ |  |
 | [ Zuplo (OpenAPI-based gateway and documentation) ](https://www.zuplo.com/) - Zuplo is an API gateway designed for developers. Natively powered by OpenAPI (3.1 or 3.0), zuplo offers an OpenAPI design surface, API documentation and a serverless, programmable edge gateway that includes request validation, auth, rate-limiting and more. | Web / SaaS | ✅ | ✅ | ❌ |  |
 
-## 
+## [DSL](https://openapi.tools/#dsl)
 
-
+Writing YAML by hand is no fun, and maybe you don't want a GUI, so use a Domain Specific Language to write OpenAPI in your language of choice.
 
 | Name | Language | v3.1 | v3.0 | v2.0 | GitHub |
 | --- | --- | --- | --- | --- | --- |
@@ -141,9 +141,9 @@ tags: ["English", "Programming", "REST API", "Tool", "Service", "Website"]
 | [ Spot ](https://github.com/airtasker/spot) - A concise, developer-friendly way to describe your API contract. | TypeScript | ❌ | ✅ | ✅ |  |
 | [ Supermodel ](https://supermodel.io/) - Model your data using JSON Schema, refer and remix the models freely, convert to various formats including OAS v2/v3. | SaaS | ❌ | ✅ | ✅ |  |
 
-## 
+## [Text Editors](https://openapi.tools/#text-editors)
 
-
+Text editors give you visual feedback whilst you write OpenAPI, so you can see what docs might look like.
 
 | Name | Language | v3.1 | v3.0 | v2.0 | GitHub |
 | --- | --- | --- | --- | --- | --- |
@@ -158,9 +158,9 @@ tags: ["English", "Programming", "REST API", "Tool", "Service", "Website"]
 | [ VSCode/openapi-lint ](https://marketplace.visualstudio.com/items?itemName=mermade.openapi-lint) - OpenAPI 2.0/3.0.x intellisense, validator and linter for Visual Studio Code | Node.js | ❌ | ✅ | ✅ |  |
 | [ VSCode/Redocly OpenAPI ](https://marketplace.visualstudio.com/items?itemName=Redocly.openapi-vs-code) - Redocly OpenAPI is a Visual Studio Code extension that helps you write, validate, preview, and maintain your OpenAPI documents. | Node.js | ✅ | ✅ | ✅ |  |
 
-## 
+## [GUI Editors](https://openapi.tools/#gui-editors)
 
-
+Visual editors help you design APIs without needing to memorize the entire OpenAPI specification.
 
 | Name | Language | v3.1 | v3.0 | v2.0 | GitHub |
 | --- | --- | --- | --- | --- | --- |
@@ -176,9 +176,9 @@ tags: ["English", "Programming", "REST API", "Tool", "Service", "Website"]
 | [ Stoplight Studio ](https://stoplight.io/studio) - Stoplight Studio is a GUI/text editor with linting and mocking built right in. It can run on the desktop with local files, and in the browser powered by your existing GitHub, GitLab, or BitBucket repos. | Desktop / SaaS | ✅ | ✅ | ✅ |  |
 | [ Zuplo (OpenAPI-based gateway and documentation) ](https://www.zuplo.com/) - Zuplo is an API gateway designed for developers. Natively powered by OpenAPI (3.1 or 3.0), zuplo offers an OpenAPI design surface, API documentation and a serverless, programmable edge gateway that includes request validation, auth, rate-limiting and more. | Web / SaaS | ✅ | ✅ | ❌ |  |
 
-## 
+## [Learning](https://openapi.tools/#learning)
 
-
+Whether you're trying to get documentation for a third party API based on traffic, or are trying to switch to design-first at an organization with no OpenAPI at all, learning can help you move your API spec forward and keep it up to date.
 
 | Name | Language | v3.1 | v3.0 | v2.0 | GitHub |
 | --- | --- | --- | --- | --- | --- |
@@ -188,9 +188,9 @@ tags: ["English", "Programming", "REST API", "Tool", "Service", "Website"]
 | [ Response2Schema ](https://github.com/dsuurlant/response2schema) - Takes any JSON response and generates an OpenAPI definition document with the component schema and a default endpoint. | PHP | ❌ | ✅ | ❌ |  |
 | [ Swagger Inspector ](https://swagger.io/tools/swagger-inspector/) - Run mock requests in a webapp and Swagger Inspector infers your OpenAPI description. | SaaS | ❌ | ✅ | ✅ |  |
 
-## 
+## [Mock Servers](https://openapi.tools/#mock)
 
-
+Fake servers that take description document as input, then route incoming HTTP requests to example responses or dynamically generates examples.
 
 | Name | Language | v3.1 | v3.0 | v2.0 | GitHub |
 | --- | --- | --- | --- | --- | --- |
@@ -214,9 +214,9 @@ tags: ["English", "Programming", "REST API", "Tool", "Service", "Website"]
 | [ Unmock ](https://unmock.io/) - API integration testing library that intercepts outgoing requests and serves back mock data based on the OpenAPI descriptions. | Node.js | ❌ | ✅ | ❌ |  |
 | [ yii2-app-api ](https://github.com/cebe/yii2-app-api) - Generate Server side API code with routing, models, data validation and database schema from an OpenAPI description. Based on Yii Framework. | PHP | ❌ | ✅ | ❌ |  |
 
-## 
+## [Description Validators](https://openapi.tools/#description-validators)
 
-
+Check your API description to see if it is valid OpenAPI.
 
 | Name | Language | v3.1 | v3.0 | v2.0 | GitHub |
 | --- | --- | --- | --- | --- | --- |
@@ -237,9 +237,9 @@ tags: ["English", "Programming", "REST API", "Tool", "Service", "Website"]
 | [ super-linter ](https://github.com/github/super-linter) - GitHub Action to lint repositories as part of CI/CD. Implements the latest version of Spectral. | CLI / Docker | ❌ | ✅ | ✅ |  |
 | [ vacuum ](https://quobix.com/vacuum) - The worlds fastest OpenAPI linter and validator. Compatible with Spectral rule-sets and designed for enterprise-grade speed and scale. | go | ✅ | ✅ | ✅ |  |
 
-## 
+## [Security](https://openapi.tools/#security)
 
-
+By poking around your OpenAPI description, some tools can look out for attack vectors you might not have noticed.
 
 | Name | Language | v3.1 | v3.0 | v2.0 | GitHub |
 | --- | --- | --- | --- | --- | --- |
@@ -254,9 +254,9 @@ tags: ["English", "Programming", "REST API", "Tool", "Service", "Website"]
 | [ RESTler ](https://github.com/microsoft/restler) - RESTler is the first stateful REST API fuzzing tool for automatically testing cloud services through their REST APIs and finding security and reliability bugs in these services. RESTler analyzes the OpenAPI description of a cloud service, and then generates and executes tests that exercise the service through its REST API. During testing, it checks for specific classes of bugs and dynamically learns how the service behaves from prior service responses. | Any | ❌ | ✅ | ✅ |  |
 | [ StackHawk HawkScan ](https://stackhawk.com/) - StackHawk is an application vulnerability scanner purpose built for developers to use in the DevOps pipeline. It leverages a provided OpenAPI v2 or v3 spec file for route discovery and enhanced scanning. | SaaS | ❌ | ✅ | ✅ |  |
 
-## 
+## [SDK Generators](https://openapi.tools/#sdk)
 
-
+Generate code to give to consumers, to help them avoid interacting at a HTTP level.
 
 | Name | Language | v3.1 | v3.0 | v2.0 | GitHub |
 | --- | --- | --- | --- | --- | --- |
@@ -283,9 +283,9 @@ tags: ["English", "Programming", "REST API", "Tool", "Service", "Website"]
 | [ Typoas ](https://github.com/Embraser01/typoas) - Fully typed OpenAPI Typescript generator | Typescript | ❌ | ✅ | ❌ |  |
 | [ Unchase.OpenAPI.Connectedservice ](https://github.com/unchase/Unchase.OpenAPI.Connectedservice) - Visual Studio extension to generate C# (TypeScript) HttpClient (or C# Controllers) code for OpenAPI web service with NSwag. | .NET | ❌ | ✅ | ✅ |  |
 
-## 
+## [Server Implementations](https://openapi.tools/#server)
 
-
+Easily create and implement resources and routes for your APIs.
 
 | Name | Language | v3.1 | v3.0 | v2.0 | GitHub |
 | --- | --- | --- | --- | --- | --- |
@@ -311,9 +311,9 @@ tags: ["English", "Programming", "REST API", "Tool", "Service", "Website"]
 | [ Whook ](https://github.com/nfroidure/whook) - OpenAPI 3 based NodeJS server. | Javascript / TypeScript | ✅ | ✅ | ❌ |  |
 | [ yii2-app-api ](https://github.com/cebe/yii2-app-api) - Generate Server side API code with routing, models, data validation and database schema from an OpenAPI description. Based on Yii Framework. | PHP | ❌ | ✅ | ❌ |  |
 
-## 
+## [Miscellaneous](https://openapi.tools/#miscellaneous)
 
-
+Anything else that does stuff with OpenAPI but hasn't quite got enough to warrant its own category.
 
 | Name | Language | v3.1 | v3.0 | v2.0 | GitHub |
 | --- | --- | --- | --- | --- | --- |
@@ -342,9 +342,9 @@ tags: ["English", "Programming", "REST API", "Tool", "Service", "Website"]
 | [ schema2dts ](https://github.com/nfroidure/schema2dts) - Create types definitions from an OpenAPI schema. | Javascript / TypeScript | ❌ | ✅ | ❌ |  |
 | [ vacuum ](https://quobix.com/vacuum) - The worlds fastest OpenAPI linter and validator. Compatible with Spectral rule-sets and designed for enterprise-grade speed and scale. | go | ✅ | ✅ | ✅ |  |
 
-## 
+## [Parsers](https://openapi.tools/#parsers)
 
-
+Loads and read OpenAPI descriptions, so you can work with them programmatically.
 
 | Name | Language | v3.1 | v3.0 | v2.0 | GitHub |
 | --- | --- | --- | --- | --- | --- |
@@ -369,9 +369,9 @@ tags: ["English", "Programming", "REST API", "Tool", "Service", "Website"]
 | [ psx-api ](http://phpsx.org/) - Parse and generate API specification formats | PHP | ❌ | ✅ | ✅ |  |
 | [ swagger-parser ](https://github.com/swagger-api/swagger-parser) - Swagger Parser reads OpenAPI definitions into current Java POJOs. | Java | [👷](https://github.com/swagger-api/swagger-parser/pull/1730) | ✅ | ✅ |  |
 
-## 
+## [Testing](https://openapi.tools/#testing)
 
-
+Quickly execute API requests and validate responses on the fly through command line or GUI interfaces.
 
 | Name | Language | v3.1 | v3.0 | v2.0 | GitHub |
 | --- | --- | --- | --- | --- | --- |
@@ -402,9 +402,9 @@ tags: ["English", "Programming", "REST API", "Tool", "Service", "Website"]
 | [ Unmock ](https://unmock.io/) - API integration testing library that intercepts outgoing requests and serves back mock data based on the OpenAPI descriptions. | Node.js | ❌ | ✅ | ❌ |  |
 | [ vREST NG ](https://ng.vrest.io/) - vREST NG is a simple and powerful application for API Automation. It Allows to use OpenAPI specification into vREST NG to drive your API testing that validates the API responses against JSON Schema and also provides powerful response validation capabilities. | JavaScript | ❌ | ✅ | ✅ |  |
 
-## 
+## [Gateways](https://openapi.tools/#gateway)
 
-
+API Gateways and related tools that have integrated support for OpenAPI.
 
 | Name | Language | v3.1 | v3.0 | v2.0 | GitHub |
 | --- | --- | --- | --- | --- | --- |

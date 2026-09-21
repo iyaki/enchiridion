@@ -7,10 +7,10 @@ last_edited: 2023-01-25T19:45:00.000Z
 source_url: https://get-deck.com/
 tags: ["English", "Web Development", "DevOps", "Programming", "Untried", "Tool", "Service"]
 ---
+DECK is powerful and high performant local web development studio unlike any other.
 
+## Jam-packed with almost everything you need!
 
-## 
-
-
+DECK is built by developers for developers. We have put years of experience & research to pack almost everything you will need for building your next web apps
 
 

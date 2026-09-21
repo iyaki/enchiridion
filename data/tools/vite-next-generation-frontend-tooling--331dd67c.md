@@ -6,6 +6,6 @@ last_edited: 2023-02-22T18:48:00.000Z
 source_url: https://vitejs.dev/
 tags: ["English", "Javascript", "Frontend", "Untried", "Tool", "Framework/Library"]
 ---
-
+Get ready for a development environment that can finally catch up with you.
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->

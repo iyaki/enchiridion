@@ -8,18 +8,18 @@ tags: ["English", "Email", "Untried", "Service"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
-# 
+# Completely free anti-transactional email service where messages never get delivered.
 
+MailCoat is a free email testing service. Configure MailCoat as your outbound SMTP service and start sending emails. Nothing is actually delivered, all emails are caught and forward into your mailbox.
 
+## 1. GET CREDENTIALS
 
-## 
+You can simply fill the form above and the system will be sent you an email with your fake SMTP server credentials.
 
+## 2. CONFIGURE APPLICATION
 
+Instead of configuring a real email account for sending emails, your application can use MailCoat's fake SMTP server for message delivery. You get the same experience as using any other email service provider. You can configure it as an outbound mail server and send your transactional or marketing emails through the service.
 
-## 
+## 3. START RECEIVING
 
-
-
-## 
-
-
+Unlike real email services MailCoat only accepts email for delivery but never actually delivers anything. All the messages will be forwarded to your mailbox. So you will get the chance to view emails on your favorite email client.

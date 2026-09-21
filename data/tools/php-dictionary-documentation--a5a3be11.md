@@ -6,6 +6,6 @@ last_edited: 2024-01-03T18:48:00.000Z
 source_url: https://php-dictionary.readthedocs.io/en/latest/index.html
 tags: ["Website", "CheatSheet", "English", "PHP"]
 ---
-- 
+- [PHP Dictionary](https://php-dictionary.readthedocs.io/en/latest/list.html)
 
-# 
+# Indices and tables

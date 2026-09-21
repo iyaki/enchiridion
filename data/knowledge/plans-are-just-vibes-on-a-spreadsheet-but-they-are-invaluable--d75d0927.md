@@ -4,66 +4,66 @@ notion_id: d75d0927-ef1e-4a90-b625-e377c67fc902
 notion_url: https://app.notion.com/p/Plans-are-just-vibes-on-a-spreadsheet-But-they-are-invaluable-d75d0927ef1e4a90b625e377c67fc902
 last_edited: 2023-07-13T11:58:00.000Z
 source_url: https://rexm.substack.com/p/plans-are-just-vibes-on-a-spreadsheet
-tags: ["English", "Line/People/Team Management", "Project Management", "Leadersheep", "Product Management", "Decision Making", "Entrepreneurship", "Article", "Engineering Excellence Substack (Rex Morgan)"]
+tags: ["Article", "Engineering Excellence Substack (Rex Morgan)", "English", "Line/People/Team Management", "Project Management", "Leadersheep", "Product Management", "Decision Making", "Entrepreneurship"]
 ---
+I recently chatted with a seasoned IT consultant. Tons of experience. His advice? Never put dates on a plan:
 
+> I’m dodging the towering expectations and demands from everybody to adamantly keep the timeline regardless of what changes. Discussing updated roadmaps, and “why this way and why not that, and why is the date 2 weeks late” are avoided. Most roadmaps are turned into timewhips, creating an illusion of control and planability, turning rough estimates into difficult-to-change forecasts.
 
-> 
+I think that sounds familiar to a lot of folks. Because it does happen - in a dysfunctional organization some people use dates to punish and blame. But the thing that surprised me is the cowering down as a reaction. Sometimes bad actors mis-use an essential piece of information, so respond by withholding it from everyone? I don’t buy it. We don’t do it at Amazon. We didn’t do it at my last company, or the company before that (or the one before that). And it’s not because these places were enlightened. It’s because the people in the trenches building stuff have the tools to outmaneuver the blamers. I’ll try to explain these tools here, and what it looks like to take control of your plan, confidently share dates that you own, and adjust the plan as needed without apologizing.
 
+Thanks for reading Engineering Excellence! Subscribe for free to receive new posts and support my work.
 
+Some folks reading this work in an environment where they probably ought to own the plan (if you build it, you own it!) but their org dictates a Project Manager to come in and make the plan. Good project managers are invaluable, but in this kind of arrangement you and the PM are set up for conflict. If you’re already deep in the dysfunctional cycle and being handed plans, how to you break out of this? We’ll cover that too. The goal is to produce a plan that provides guidance and certainty; is empowering rather than limiting; and reflects rather than ignores uncertainty and change.
 
-
-
-
-
-
-
-<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
-
-
+In software engineering, many of us hate plans. We hate being asked for a plan, we hate taking the time to write a plan. Plans are limiting. They create a false sense of security when we know things will inevitably change. Why bother? Let’s just build. But many of us crave a plan. How can we possibly know what to do without a plan? Plans give us a safety net, provide certainty and a fallback when the project gets tough and we’re not sure what to do next. Both are right!
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
-
-
-
-
-> 
+_This happened to me while writing this post. It’ll probably happen to you reading it._
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+What is a plan? It’s really just a spreadsheet of detail-level “what will be done, and when”. If this spreadsheet gets so large, or the relationships between items gets so complicated that it’s hard to understand, then it might be supplemented with charts or graphs like a [Gantt](https://www.google.com/search?rlz=1C5CHFA_enUS842US842&q=gantt&tbm=isch). But those are just visual layers on top of a spreadsheet. “How detailed?” is a common question. The plan should be detailed enough that it might be wrong. **A common trap teams fall into is writing the easy plan that’s so high-level there’s nothing to disagree with, which means it’s too generic to be wrong.** Which means creating it hasn’t revealed anything we didn’t already know. Which is means it is useless. To create a useful plan, we must spend enough time to ask “yes but how would we _do _that?” deeply enough to debate and disagree. A useful plan is at least somewhat controversial. Which is a lot of work.
 
+This means 2 things are true about a plan: (1) A plan represents point-in-time thinking about an idea. (2) Once we’ve invested the time and energy to make the plan, we’re hesitant to rip it up. And so it ossifies. But we must rip it up. Because right after we’ve finished writing it (see #1), the plan’s already slightly behind the evolving ideas in our minds about how to best deliver. Planning is just another iteration of the idea, and ideas need many iterations. Our understanding of the project evolves as we move through it, and so the best approach is to **formally make regularly updating the plan to reflect our thinking, part of the plan.** If we don’t, it quickly becomes useless again. With individual teams, this is best done **weekly**:
 
-
-
-
-
-> 
-
-
-
-
-
-
-
-
-
-
-
-
+> Are you all working on the exact tasks defined in the plan? If not, it’s either because you got distracted and need a gentle nudge (it happens), or (more likely) there’s something important to be done that got left out of the plan. Either way, we need to reconcile reality (what we are actually doing) and the plan (what is written down). In some cases we need to adjust our actions, in other cases we need to adjust the plan.
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+Especially at the team level, _trust the team’s instincts. _One of the other benefits of constantly reworking the plan is it tears down the sacredness of The Plan. There’s the plan, and there’s The Plan. Another easy trap for teams: once The Plan is written, it’s like lines on the road. We just follow them because they are there. It’s so easy to forget _we put those lines there ourselves not too long ago, based on our best guess at the time_. In my experience, more than half the time, when the team isn’t following The Plan, it’s not because they just got distracted. It’s because they instinctively followed the path to the most important next thing that needs to be done. Reconciling the plan with what we are actually doing is 2-way: sometimes it means course-correcting the team to match the plan, and many times it means updating the plan to match what the team is doing. This system scales from individual teams all the way up to multi-year, cross-organizational programs. The only difference is the level of abstraction (are the plan items for a person, a team, or a group?) and the cadence of updates - weekly, monthly, quarterly.
 
+This is a lot of work, and a lot of meetings. A lot of “management overhead”, as one might say. And we know going into it that this iteration of the plan will also be wrong. **It’s just today’s vibes on a spreadsheet.** So plan-skeptics say **“why bother making a plan?”**.
 
-## 
+Without a plan, we just haven’t thought deeply enough about the idea. “If we chose to build it today; this is how we think we’d do it” does not mean this is how the team will actually do it when code is being written. Planning is one of the best ways to figure out if you’re building the right thing, because it reveals challenges and opportunities with _product viability_ which is a fundamental aspect of product discovery! Amazon has a [Leadership Principle called Are Right, A Lot](https://www.amazon.jobs/content/en/our-workplace/leadership-principles):
 
-1. 
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
+> Leaders are right a lot. They have strong judgment and good instincts. They seek diverse perspectives and work to disconfirm their beliefs.
 
+But it doesn’t say what specific techniques we use to “_work to disconfirm our beliefs”_. Developing a plan is one of the foundational techniques to being right. Forcing ourselves to reason through sequencing at a mechanical level, rather than just intuitively, reveals hidden dependencies and unknowns that could de-rail a project. It also illuminates opportunities and shortcuts to reach the goal faster. Plans are not just useful, they are essential. And again, this is an _iterative _process: we continuously plan, by refining and adjusting the plan looking out from where we are. Making tangible progress on a plan is changing our reality, changing the context we are operating in, and requires recalculation. This is how we manage the [cone of uncertainty](https://www.google.com/search?rlz=1C5CHFA_enUS842US842&q=cone%20of%20uncertainty&tbm=isch), instead of letting it manage us.
 
+So if we commit to planning as an essential part of the continuous building process, and commit to changing plans frequently to reflect reality, how do we deal with the managers, stakeholders, leaders who freak out when we change the plan on them? Especially when “change” means “later than we said”? Nobody, especially an engineer, likes giving a firm estimate. Once we put our estimate into the plan, who knows what unpleasantness will come when it’s inevitably wrong? So we hedge, and we dissemble, and we pad our estimates with magic percentages to try to protect ourselves, but it usually doesn’t work. To really answer this we need to understand the difference between _estimates_ and _commitments. _Unfortunately most managers and leaders don’t really understand this, which leads to fear, anger, conflict, and failed projects. The leader who understands the difference and uses it effectively has an advantage over the rest.
+
+It’s common to treat “estimate” and “commitment” as interchangeable. Somebody asks “what’s your estimate?” or “what’s the Level of Effort (LoE) on that?”. Eyes widen. Faces freeze. Because we know that whatever number we say, will be added into a grand sum, and given to somebody 2-3 levels higher than us as a _commitment_. And when that commitment inevitably fails, we will suffer. But that’s because everybody involved conflated _estimate_ with _commitment._
+
+A commitment is a negotiation. An estimate is not. Estimates are how long we actually think it will take. Do not pad estimates. That’s useless. Other than pure luck, how can some % padding for things we don’t know possibly end up being the right amount of time it actually takes to deal them, plus or minus? It’s impossible. **An estimate is not **_**padded**_**, an estimate is **_**qualified.**_An estimate is only the things we know, with our best reasonable idea at how long they will take, and the things we assume are true or likely to be able to make that estimate. When we think about it this way, it’s pretty easy to come up the list of of assumptions: “if we are wrong about (x), this estimate is worthless”. List those out. Estimates should read kind of like a scientific premise: “given x and y, we will likely deliver by z”. The assumptions provide the foundation of useful conversations, too. Like “are any of these risky enough that we need to investigate them now?”. Those become the first next things we do to continuously manage project risk. Uncertain estimates become mini-research-projects with their own dates to prove out answers. At Amazon, these are called Date-For-Dates (DFDs) - how long do we need to investigate how long something will take. At the end, the team has to decide what level uncertainty in the assumptions we can tolerate to move forward. Those estimates are what we work with. However, estimates are only one input into _commitments_. Commitments are another animal.
+
+Commitments are rooted in organizational realities. Businesses need things by certain dates. Investment capital is spent. Revenue declines. The world does not turn according to how long it takes us to build a thing. It simply turns, and windows of business opportunity come and go with it. The engines that pay our salaries are indifferent to the time it takes build software. A commitment is based on the real - not emotional - consequences of getting the date wrong. If the cost of getting the date wrong is very high, we should be more conservative and build in more padding. This is why we separate padding from estimates. I can’t give you a mathematical formula, but padding shouldn’t be based on a guess at what we don’t know. By definition, that is the part of the estimate we’ll be the most wrong on. It should be based on how bad it will be for the business if we get the delivery date wrong. This is something we can know. One common example is how far-and-wide the date is broadcast. If other organizations we don’t control start to make their own plans around the dates we communicate, it’s very expensive to change. The risk and cost of that change could drive a healthy buffer. But fight Parkinson’s law: “_work expands to fill the time allotted for completion.” _Sometimes it’s the aggressive commitment that de-risks the project, like [forcing the Empire State Building to be built in 8 months](https://chrisgagne.com/1255/mary-poppendiecks-the-tyranny-of-the-plan/). Either way, set the date based on the specific realities of the business context.
+
+**If the date is set, then why did we go through all this work?** Because the point of the plan is not to figure out a date, it’s to figure out if we’re doing the right thing. If our initial estimate is wildly off from what our leaders are willing to spend, then we are not building the right thing. Maybe solving this problem simply isn’t economically feasible. Or maybe we need to come up with a different solution. As we iterate, and re-plan, and our estimate starts to separate from our commitment, it’s a negotiation: we explain where our current understanding is different from our original assumptions, and how that impacts our estimates. Is the project still viable or not? Can we solve the problem in a different way? Reactive managers in reactive organizations deliver this kind of news with their tail tucked between their legs. But if we proactively explain our plan and the assumptions built into the plan from the beginning, and share each iteration, then when reality inevitably breaks our assumptions and therefore our plan, we are simply explaining it, not apologizing for it. We’ve already set a tone of collaboration with our stakeholders and senior leaders. The information may be upsetting, but when we own our own plan, we can stick to the facts and not apologize. **Only apologize when you did something wrong, not when you share information that others may get upset about.**
+
+<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
+
+In a lot of organizations, a Project Manager is someone sent in to make the plan, and communicate the plan to stakeholders and leadership. Reactive managers and teams who don’t have their own plan must “deal” with this person. Project Managers need something to communicate, so they make a plan and drag the reactive team along. Estimates are shared, begrudgingly. It’s really easy to defeat this dynamic: it’s not convincing the organization to not have Project Managers, or bypassing the PM: it’s taking ownership by doing everything we’ve described here to proactively craft our plan, and collaborate with the PM. The project manager will be _thrilled_ to find out the team knows how to plan their own stuff! When we own the plan, our Project Manager is a collaborator who can handle communicating the plan up and out.
+
+## Recap
+
+1. **A continuously-changing plan is a foundation of knowing whether you’re building the right thing. **A useful plan is detailed enough to force real debate.
+2. **Start with a plan.** You need a deep, detailed list of things to complete, in an order and timeframe in which you expect to complete each. It needs to be written down and familiar to every team member. If you don’t have this, take the one-time cost to create it.
+3. **Modify the plan weekly as a team**. Ask if the next-most-important things to do are actually the next things on the plan. More often than not, the answer is no. Re-work the plan to reflect the team’s new best understanding of their current reality. Re-order, add new items, remove irrelevant ones.
+4. **Estimate what you know**. Don’t pad estimates with magic numbers. State your assumptions. If an assumption is too risky, pivot the project to investigate that.
+5. **Be transparent with the team about how estimates are used in developing commitments**.
+6. **Commit based on organizational needs and schedule risks**. Not implementation risks. Understand why things are needed when they are, and work to reconcile estimates with commitments. Openly communicate gaps and don’t apologize for them.
+7. **Own your plan**. Build it before anyone asks. Share it with anyone who asks. Project managers will love you for doing half their job for them.
+
+Thanks for reading Engineering Excellence! Subscribe for free to receive new posts and support my work.

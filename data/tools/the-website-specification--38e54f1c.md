@@ -6,6 +6,6 @@ last_edited: 2026-09-18T00:52:00.000Z
 source_url: https://specification.website/
 tags: ["English", "Web Development", "Productivity", "Technical Debt", "Collaboration", "Tool", "Guide", "Medium"]
 ---
+A platform-agnostic, full specification of the technical features a good website should have. Built in the open under an MIT licence.
 
-
-
+Built in the open. [Contribute on GitHub →](https://github.com/jdevalk/specification.website)

@@ -8,4 +8,4 @@ tags: ["English", "Graphic Design", "UI/UX", "Tool", "Service"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
-
+For primary navigation and marketing sections, with a filled appearance.

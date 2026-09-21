@@ -10,6 +10,6 @@ tags: ["Article", "Tutorial", "SpiralScout Blog", "English", "Event Driven Archi
 
 
 
+Related:
 
-
-- 
+- [Temporal platform](https://app.notion.com/p/f5349c4bd2f3458599a3e72ff0a8096b) 

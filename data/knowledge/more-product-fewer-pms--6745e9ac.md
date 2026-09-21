@@ -4,29 +4,29 @@ notion_id: 6745e9ac-ba69-4dd6-bef7-4d8e31685367
 notion_url: https://app.notion.com/p/More-product-fewer-PMs-6745e9acba694dd6bef74d8e31685367
 last_edited: 2023-12-27T11:37:00.000Z
 source_url: https://kitemaker.co/blog/more_product_fewer_pms
-tags: ["English", "Product Management", "Productivity", "Entrepreneurship", "Article", "Kitemaker Blog"]
+tags: ["Product Management", "Productivity", "Entrepreneurship", "Article", "Kitemaker Blog", "English"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+There has been a lot of discussion about how many Product Managers (PMs) are required in a product team. This conversation gained momentum after [Airbnb](https://www.lennyspodcast.com/brian-cheskys-new-playbook/) restructured their product management organization, followed by articles about how startups are [thriving without any PMs](https://www.commandbar.com/blog/everyone-is-hating-on-product-managers-these-yc-companies-never-hired-one).
 
+I agree that many companies hire too many PMs. As a result, PMs often fill their days with project management tasks and updating roadmaps, while they should instead be focusing on optimizing the product for the business. This generally means you should have fewer PMs than product teams. How many? Well, it depends. Some teams might require a sole PM because there is a lot of product work to be done and the team is junior. With any experienced team of engineers and designers, PM'ing is not a full-time job, or at least, it shouldn't be. So, since the necessity for a PM depends on the product, the team, and the needs of the business, the traditional notion of a 1-to-1 relationship between teams and PMs should be reconsidered.
 
+What does this mean for startups? In our experience, the ideal time to hire a PM at a startup is when the founders can no longer be involved in all the important product decisions. This varies depending on the founders and the product, but generally, you are likely somewhere between 50 and 100 people in the organization and would have 3-5 product teams. You should already have a clear overall product strategy in place, and you need someone to take that strategy and be involved in the direction and decisions at a lower level. You also most likely want a senior PM, not a junior one, and not a CPO. If the candidate can assume the role of a CPO as the organization grows, that's fine, but the founders should still act as the de-facto heads of products.
 
+This approach also demands more from the rest of the product development team. It implies joint responsibility for the product, requiring that the design and engineering teams gain a better understanding of the user and their context. They must actively participate in shaping the product and be the ones leading detailed product discussions. Frankly, PMs are not the ones to handle UX, wireframing, tracking progress, organizing stand-ups, or being the sole authors of PRDs/specs, etc. PMs should focus on articulating the vision of the product, ensuring that the team is addressing the right problems, and maintaining a clear direction for the product and its alignment with business needs.
 
+So, how can this be achieved? Michael Seibel's article “[Guide to product development](https://www.ycombinator.com/library/4e-guide-to-product-development)” illustrates how this was implemented at Social Cam. Fundamentally, it means the team must actively share context and reasoning, ensuring that design and engineering have access to user feedback. Problem-solving should not be done primarily by the PM; instead, it should be a collaborative effort involving product, design, and engineering teams.
 
+## How to make teams product oriented
 
+In building such teams, both in large corporations and in our own startup, there are a few practices we have learned that help a lot:
 
+1. **Start together -** meaning, before there is anything written in a ticket or a specification, and before you decide how to start solving something, sit down and talk together across design, engineering, and product/founders. You might have some user feedback, a business objective, or maybe just an idea. The purpose of this first chat is to agree on how to proceed and make a plan. Often PMs go into these discussions with a rough idea of how to solve something, only to come out with a better solution, or they've realized that they don't really understand the problem well enough. It also becomes a great way to involve the designer and someone from engineering early on.
+2. **Expose everyone to users -** there are many ways to have everyone participate in user research and usability testing. You can have them join in the room, you can video stream while conducting them, or you can use tools like [Lookback](https://lookback.com/). But there are very few things that shift people's minds from opinions to insights more than seeing a user trying to use the product they are building. Even the most introverted backend engineer will gain a better understanding of the user from just a few sessions. And that's the thing - everyone doesn't always have to join, but participating a few times now and then is often enough to change the perspectives of most people.
+3. **Beware of how the team is managed -** the often overlooked killer of an efficient product team is micromanaging and harmful KPIs. If you do everything right, but measure your team's performance by how many tickets they close or by story points, you're telling them their job is to close tickets, not build a great product. It's so easy to destroy the efforts in the name of predictability and getting stuff shipped. But product development is inherently unpredictable, and while shipping stuff is super important, the only thing that will affect the business is shipping the right stuff.
+4. **Don't use PM tools -** harsh advice, but having tasks in an issue tracker while the PMs keep user feedback, insights, data, specs, roadmaps in a separate tool that the rest of the team can't find, or don't have access to, is the opposite of what you want. You want everyone to have access to and care about user feedback. Everyone should know what insights are behind the product they are building. They should know which users need the bug fixed or the new feature. They should know exactly how the thing they are building affects the roadmaps, and what the goals for the business are. The best way to hide all of this information is to use a PM tool.
 
+Hope you find this helpful when thinking about how best to work with your product team. PMs are extremely important for any large, product-oriented company. However, as I have tried to point out above, it's easy to overestimate how many an organization needs. More PMs doesn't necessarily mean that the organization becomes more product-focused. Often, we've seen that too many PMs steal the product focus away from the designers and engineers on the product team
 
-
-## 
-
-
-
-1. 
-2. 
-3. 
-4. 
-
-
-
-
+Want to discuss how to improve the product development work in your teams? Happy to discuss on [X](https://twitter.com/SigurdSeteklev), in our [community Slack](https://join.slack.com/t/kitemakerco/shared_invite/zt-e7zjicw1-zbBpvLSRfOFKh3DutUAJ0A), or book me for a chat [here](https://cal.com/kitemaker/30-min-chat-with-sigurd).

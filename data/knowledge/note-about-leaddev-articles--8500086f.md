@@ -6,13 +6,13 @@ last_edited: 2023-04-25T14:58:00.000Z
 source_url: https://www.notion.so/Note-about-LeadDev-articles-8500086f59e04eb6acffe5096db1e385
 tags: ["Note", "English"]
 ---
+LeadDev has a restriction about how many articles you can read in a day (similar to Medium).
 
 
 
+These restrictions can be:
 
-
-
-- 
-- 
+- Eliminated creating an account
+- Bypassed by using the incognito mode of your browser or a browser extension like [this one](https://chrome.google.com/webstore/detail/cookie-autoclear/bdlecjncfafhlnehekghapanflfcbikk/related?hl=es) (The restriction relies on cookies to work)
 
 

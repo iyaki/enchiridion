@@ -8,36 +8,36 @@ tags: ["English", "Graphic Design", "Multimedia", "Tool"]
 ---
 ![image](https://www.upscayl.org/background_gradient.png)
 
+background gradient
 
+[Introducing Upscayl Cloud ](https://www.upscayl.org/#cloud)
 
+# Let's change the game (again)
 
+Free yourself from all the constraints. Upscayl is now everywhere!
 
-# 
+No more long loading times, hardware issues or quality compromises!
 
+Upscayl anywhere, anytime, any device
 
+No GPU or hardware required
 
+Face Enhancement
 
+10+ models to choose from
 
+5x faster than Upscayl Desktop
 
+Video Upscaling
 
+Commercial Usage
 
+Thank you for the overwhelming response!
 
+We'll be sending out emails to chosen waitlist members soon!
 
+### Join the beta waitlist for free
 
+### Good is not good enough. Make it better!
 
-
-
-
-
-
-
-
-
-
-
-
-### 
-
-### 
-
-
+With state of the art AI, Upscayl helps you turn low resolution images into high resolution. Crisp and sharp!

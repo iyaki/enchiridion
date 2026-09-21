@@ -4,187 +4,345 @@ notion_id: ac658a93-278a-44cb-a60c-44a1fc551233
 notion_url: https://app.notion.com/p/How-to-Mock-Final-Classes-in-PHPUnit-ac658a93278a44cba60c44a1fc551233
 last_edited: 2023-04-20T18:52:00.000Z
 source_url: https://tomasvotruba.com/blog/2019/03/28/how-to-mock-final-classes-in-phpunit
-tags: ["English", "PHP", "Testing", "Article", "Tomas Votruba Blog"]
+tags: ["Article", "Tomas Votruba Blog", "English", "PHP", "Testing"]
 ---
+Do you prefer composition over inheritance? Yes, that's great. Why aren't your classes `final` then? Oh, you have tests and you mock your classes. **But why is that a problem?**
 
+Since I started using _`final`__ first_ [I got rid of many problems](https://tomasvotruba.com/blog/2019/01/24/how-to-kill-parents/). Most programmers I meet already know about the benefits of not having 6 classes extended in a row and that `final` remove this issue.
 
+But many of those programmers are skilled and they write tests.
 
+## How Would You Mock this Class?
 
+...so it returns `20` on `getNumber()` instead:
 
+```plain text
+<?php
 
-## 
-
-
-
-```
-
-```
-
-
-
-- 
-- 
-
-
-
-## 
+final class FinalClass
+{
+public function getNumber(): int
+    {
+return 10;
+    }
+}
 
 ```
 
-```
+We have few options out in the wild:
 
+- [You can use ](https://stackoverflow.com/a/33095281/1348344)[`uopz`](https://stackoverflow.com/a/33095281/1348344)[ extension](https://stackoverflow.com/a/33095281/1348344) ❌
+- [You can use reflection](https://gist.github.com/DragonBe/24761f350984c35b73966809dd439135) ❌
 
+or...
 
-```
+## Extract an Interface
 
-```
+```plain text
+ <?php
 
-
-
-- 
-- 
-- 
-
-
-
-- 
-- 
-
-
-
-## 
-
-
-
-
-
-```
+-final class FinalClass
++final class FinalClass implements FinalClassInterface
+ {
+     public function getNumber(): int
+     {
+         return 10;
+     }
+ }
++
++interface FinalClassInterface
++{
++    public function getNumber(): int;
++}
 
 ```
 
+Then use the interface instead of the class in your test:
 
+```plain text
+ <?php
 
-```
+ use PHPUnit\Framework\TestCase;
 
-```
-
-
-
-
-
-
-
-### 
-
-```
-
-```
-
-
+ final class FinalClassTest extends TestCase
+ {
+     public function testSuccess(): void
+     {
+-        $finalClassMock = $this->createMock(FinalClass::class);
++        $finalClassMock = $this->createMock(FinalClassInterface::class);
+         // ... it works! but at what cost...
+     }
+ }
 
 ```
 
-```
+This will work, but creates **huge debt you'll have to pay later** (usually at a time you would rather skip):
 
+- for every new `public` method in the class, you have to update the interface
+- "interface everything" approach will shift the meaning of interface from "something to be implemented for a reason" to "anything you want to test"
+- do you have 100 classes? you have 200 PHP files now, you're welcome!
 
+This is obviously annoying maintenance and it will lead you to one of 2 bad paths:
 
-```
+- **don't use ****`final`** at all
+- or **do not test**
 
-```
+❌
 
+## By Pass Finals!
 
+Nette packages also missed `final` in the code, so people could mock it. Until David came with [Bypass Finals](https://github.com/dg/bypass-finals) package. Some people think it's only for Nette\Tester, but I happily **use it in PHPUnit universe** as well.
 
-### 
+We just install it:
 
-
-
-```
-
-```
-
-
-
-```
-
-```
-
-
-
-
-
-
-
-
-
-### 
-
-
+```plain text
+composer require dg/bypass-finals --dev
 
 ```
 
-```
+And enable:
 
-
-
-
-
-```
+```plain text
+DG\BypassFinals::enable();
 
 ```
 
+✅
 
+Do you want to know, **how BypassFinals works?** Read author's [blog post](https://phpfashion.com/how-to-mock-final-classes) or check [this line on Github](https://github.com/dg/bypass-finals/blob/8f0f7ab7a17a6b5c188dde1cf5edc6ceb06c70c1/src/BypassFinals.php#L217). 
+ I don't know much, but I think it loads file via stream and removes the `T_FINAL` token.
 
-```
+Hm, where should be put it?
 
-```
+### 1. `bootstrap.php` File?
 
+```plain text
+require_once __DIR__ . '/../vendor/autoload.php';
 
-
-
-
-
-
-
-
-
-
-
-
-### 
-
-
+DG\BypassFinals::enable();
 
 ```
 
-```
+Update path in `phpunit.xml`:
 
-
-
-```
-
-```
-
-
+```plain text
+ <phpunit
+-    bootstrap="vendor/autoload.php"
++    bootstrap="tests/bootstrap.php"
+ >
 
 ```
 
+Let's run the tests:
+
+```plain text
+vendor/bin/phpunit
+
+...
+
+OK (3 tests, 3 assertions)
+
 ```
 
+Hm, mocks are worked, and let's try another approach.
 
+### 2. `setUp()` Method?
 
-### 
+Let's put it into `setUp()` method. It seems like a good idea for these operations:
 
-- 
-- 
-- 
+```plain text
+ <?php
 
-### 
++use DG\BypassFinals;
+ use PHPUnit\Framework\TestCase;
 
-- 
-- 
-- 
-- 
+ final class FinalClassTest extends TestCase
+ {
++    protected function setUp(): void
++    {
++        BypassFinals::enable();
++    }
 
+     public function testFailInside(): void
+     {
+         $this->createMock(FinalClass::class);
+     }
+ }
 
+```
 
+And run tests again:
 
+```plain text
+vendor/bin/phpunit
+
+...
+
+OK (3 tests, 3 assertions)
+
+```
+
+We're getting there, but there are still mocks in the `setUp()` method, and we've also added work to our future self - for every new test case, we [have to remember](https://tomasvotruba.com/blog/2018/08/27/why-and-how-to-avoid-the-memory-lock/) to add `BypassFinals::enable();` manually.
+
+❌
+
+Why it doesn't work. I was angry and frustrated. Honestly, I wanted to give up now and just pick "interface everything" or "final nothing" quick solution. I think **that resolutions in emotions are not a good idea...** so I take a deep breath, pause and go to a toilet to get some fresh air.
+
+Suddenly... I remember that... PHPUnit has some Listeners, right? What if we could use that?
+
+### 3. Own TestListener?
+
+Let's try all the methods of `TestListener`, enable bypass in each of them by trial-error and see what happens:
+
+```plain text
+<?php declare(strict_types=1);
+
+use DG\BypassFinals;
+use PHPUnit\Framework\AssertionFailedError;
+use PHPUnit\Framework\Test;
+use PHPUnit\Framework\TestListener;
+use PHPUnit\Framework\TestSuite;
+use PHPUnit\Framework\Warning;
+
+final class BypassFinalListener implements TestListener
+{
+public function addError(Test $test, \Throwable $t, float $time): void
+    {
+    }
+
+public function addWarning(Test $test, Warning $e, float $time): void
+    {
+    }
+
+public function addFailure(Test $test, AssertionFailedError $e, float $time): void
+    {
+    }
+
+public function addIncompleteTest(Test $test, \Throwable $t, float $time): void
+    {
+    }
+
+public function addRiskyTest(Test $test, \Throwable $t, float $time): void
+    {
+    }
+
+public function addSkippedTest(Test $test, \Throwable $t, float $time): void
+    {
+    }
+
+public function startTestSuite(TestSuite $suite): void
+    {
+    }
+
+public function endTestSuite(TestSuite $suite): void
+    {
+    }
+
+public function startTest(Test $test): void
+    {
+BypassFinals::enable();
+    }
+
+public function endTest(Test $test, float $time): void
+    {
+    }
+}
+
+```
+
+In the end, it was just one method.
+
+Then register listener it in `phpunit.xml`:
+
+```plain text
+<phpunit bootstrap="vendor/autoload.php">
+<listeners>
+<listener class="Listener\BypassFinalListener"/>
+</listeners>
+</phpunit>
+
+```
+
+And run tests again:
+
+```plain text
+vendor/bin/phpunit
+
+...
+
+Success!
+
+```
+
+Great! **All our objects can be final and tests can mock them**.
+
+Is it a good enough solution? Yes, **it works and it's a single place of origin** - use it, close this post and your code will thank you in 2 years later.
+
+✅
+
+Are you a **curious hacker that is never satisfied with his or her solution**? Let's take it one step further.
+
+What do you think about the Listener class? There is **10+ methods** and **only one is used**. It's very hard to read. To add more fire to the fuel, `TestListener` class is [deprecated since PHPUnit 8](https://github.com/sebastianbergmann/phpunit/issues/3388) and will be [removed in PHPUnit 9](https://github.com/sebastianbergmann/phpunit/issues/3389). Don't worry, [Rector already covers the migration path](https://github.com/rectorphp/rector/pull/1270).
+
+After bit of Googling on PHPUnit Github and documentation I found something called _hooks_!
+
+### 4. Single Hook
+
+You can read about them in [the PHPUnit documentation](https://phpunit.readthedocs.io/en/9.5/extending-phpunit.html#extending-the-testrunner), but in short: they're the same as the listener, just **with 1 event**.
+
+```plain text
+<?php declare(strict_types=1);
+
+use DG\BypassFinals;
+use PHPUnit\Runner\BeforeTestHook;
+
+final class BypassFinalHook implements BeforeTestHook
+{
+public function executeBeforeTest(string $test): void
+    {
+BypassFinals::enable();
+    }
+}
+
+```
+
+And again, register it in `phpunit.xml`:
+
+```plain text
+<phpunit bootstrap="vendor/autoload.php">
+<extensions>
+<extension class="Hook\BypassFinalHook"/>
+</extensions>
+</phpunit>
+
+```
+
+The final test, run all tests:
+
+```plain text
+vendor/bin/phpunit
+
+...
+
+Success!
+
+```
+
+✅ ✅ ✅
+
+### Before
+
+- we had to use interface for mocks
+- or we had to remove `final`
+- we had to pick between inheritance hell or poor tests
+
+### After
+
+- A **single solution, in single class**
+- we use PHPUnit feature directly, no weird bending code
+- we can **mock anything**
+- **we can ****`final`**** anything**
+
+Finally :)
+
+Happy coding!

@@ -4,79 +4,79 @@ notion_id: f0228095-b99a-4b6e-a3dc-1d3cb2d4470c
 notion_url: https://app.notion.com/p/trippy-A-network-diagnostic-tool-f0228095b99a4b6ea3dc1d3cb2d4470c
 last_edited: 2023-12-19T14:05:00.000Z
 source_url: https://github.com/fujiapple852/trippy
-tags: ["Tool", "English", "Network", "SysAdmin"]
+tags: ["English", "Network", "SysAdmin", "Tool"]
 ---
-# 
+# Trippy
 
-
+Trippy combines the functionality of traceroute and ping and is designed to assist with the analysis of networking issues.
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
-## 
+## Navigation
 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+- [Trippy](https://github.com/fujiapple852/trippy?utm_source=tldrdevops#trippy) 
+- [Features](https://github.com/fujiapple852/trippy?utm_source=tldrdevops#features)
+- [Versions](https://github.com/fujiapple852/trippy?utm_source=tldrdevops#versions)
+- [Distributions](https://github.com/fujiapple852/trippy?utm_source=tldrdevops#distributions)
+- [Privileges](https://github.com/fujiapple852/trippy?utm_source=tldrdevops#privileges)
+- [Usage Examples](https://github.com/fujiapple852/trippy?utm_source=tldrdevops#usage-examples)
+- [Command Reference](https://github.com/fujiapple852/trippy?utm_source=tldrdevops#command-reference)
+- [Theme Reference](https://github.com/fujiapple852/trippy?utm_source=tldrdevops#theme-reference)
+- [Key Bindings Reference](https://github.com/fujiapple852/trippy?utm_source=tldrdevops#key-bindings-reference)
+- [Configuration Reference](https://github.com/fujiapple852/trippy?utm_source=tldrdevops#configuration-reference)
+- [Frequently Asked Questions](https://github.com/fujiapple852/trippy?utm_source=tldrdevops#frequently-asked-questions)
+- [Acknowledgements](https://github.com/fujiapple852/trippy?utm_source=tldrdevops#acknowledgements)
+- [License](https://github.com/fujiapple852/trippy?utm_source=tldrdevops#license)
 
-## 
+## Features
 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+- Trace using multiple protocols: 
+- `ICMP`, `UDP` & `TCP`
+- `IPv4` & `IPv6`
+- Customizable tracing options: 
+- packet size & payload pattern
+- start and maximum time-to-live (TTL)
+- minimum and maximum round duration
+- round end grace period & maximum number of unknown hops
+- source & destination port (`TCP` & `UDP`)
+- source address and source interface
+- `TOS` (aka `DSCP + ECN`)
+- Support for `classic`, `paris` and `dublin` [Equal Cost Multi-path Routing](https://en.wikipedia.org/wiki/Equal-cost_multi-path_routing) strategies ([tracking issue](https://github.com/fujiapple852/trippy/issues/274))
+- RFC4884 [ICMP Multi-Part Messages](https://datatracker.ietf.org/doc/html/rfc4884) 
+- Generic Extension Objects
+- MPLS Label Stacks
+- Unprivileged mode
+- Tui interface: 
+- Trace multiple targets simultaneously from a single instance of Trippy
+- Per hop stats (sent, received, loss%, last, avg, best, worst, stddev & status)
+- Per hop round-trip-time (RTT) history and frequency distributing charts
+- Interactive chart of RTT for all hops in a trace with zooming capability
+- Interactive GeoIp world map
+- Isolate and filter by individual tracing flows
+- Customizable color theme & key bindings
+- Configuration via both command line arguments and a configuration file
+- Show multiple hosts per hop with ability to cap display to N hosts and show frequency %
+- Show hop details and navigate hosts within each hop
+- Freeze/unfreeze the Tui, reset the stats, flush the cache, preserve screen on exit
+- Responsive UI with adjustable refresh rate
+- Hop privacy
+- DNS: 
+- Use system, external (Google `8.8.8.8` or Cloudflare `1.1.1.1`) or custom resolver
+- Lazy reverse DNS queries
+- Lookup [autonomous system](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) number (ASN) and name
+- GeoIp: 
+- Lookup and display GeoIp information from local `mmdb` files
+- Generate tracing reports: 
+- `json`, `csv` & tabular (pretty-printed and markdown)
+- Tracing `flows` report
+- Graphviz `dot` charts
+- configurable reporting cycles
+- Runs on multiple platform (macOS, Linux, NetBSD, FreeBSD, Windows)
+- Capabilities aware application (Linux only)
 
-## 
+## Versions
 
-
+The following table lists ths versions of Trippy that are available and links to the corresponding release note and documentation:
 
 | Version | Release Date | Status | Release Note | Documentation |
 | --- | --- | --- | --- | --- |
@@ -86,95 +86,95 @@ tags: ["Tool", "English", "Network", "SysAdmin"]
 | 0.7.0 | 2023-03-25 | Deprecated | [note](https://github.com/fujiapple852/trippy/releases/tag/0.7.0) | [docs](https://github.com/fujiapple852/trippy/tree/0.7.0) |
 | 0.6.0 | 2022-08-19 | Deprecated | [note](https://github.com/fujiapple852/trippy/releases/tag/0.6.0) | [docs](https://github.com/fujiapple852/trippy/tree/0.6.0) |
 
+Note
 
+Only the _latest patch versions_ of both the _current_ and _previous_ releases of Trippy are supported.
 
-
-
-## 
-
-<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
-
-### 
+## Distributions
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
-```
-
-```
-
-### 
+### Cargo
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+```plain text
+cargo install trippy
 ```
 
-```
-
-### 
+### Snap (Linux)
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+```plain text
+snap install trippy
 ```
 
-```
-
-### 
+### Homebrew (macOS)
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+```plain text
+brew install trippy
 ```
 
+### WinGet (Windows)
+
+<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
+
+```plain text
+winget install trippy
 ```
 
-### 
+### Scoop (Windows)
 
 ![image](https://camo.githubusercontent.com/de129986731879b01571042a9a80c5c97e0fec77b51a838e28a29ffcb69570b0/68747470733a2f2f7265706f6c6f67792e6f72672f62616467652f76657273696f6e2d666f722d7265706f2f73636f6f702f7472697070792e737667)
 
+```plain text
+scoop install trippy
 ```
 
-```
-
-### 
+### NetBSD
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+```plain text
+pkgin install trippy
 ```
 
-```
-
-### 
+### FreeBSD
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+```plain text
+pkg install trippy
 ```
 
-```
-
-### 
+### Pacman (Arch Linux)
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+```plain text
+pacman -S trippy
 ```
 
-```
-
-### 
+### Nix
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+```plain text
+nix-env -iA trippy
 ```
 
-```
-
-### 
+### Docker
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+```plain text
+docker run -it fujiapple/trippy
 ```
 
-```
-
-### 
+### Binary Asset Download
 
 | OS | Arch | Env | Current | Previous |
 | --- | --- | --- | --- | --- |
@@ -196,239 +196,483 @@ tags: ["Tool", "English", "Network", "SysAdmin"]
 | Debian | `x86_64` | `gnu` | [0.9.0](https://github.com/fujiapple852/trippy/releases/download/0.9.0/trippy_x86_64-unknown-linux-gnu_0.9.0_amd64.deb) | [0.8.0](https://github.com/fujiapple852/trippy/releases/download/0.8.0/trippy_x86_64-unknown-linux-gnu_0.8.0_amd64.deb) |
 | Debian | `x86_64` | `musl` | [0.9.0](https://github.com/fujiapple852/trippy/releases/download/0.9.0/trippy_x86_64-unknown-linux-musl_0.9.0_amd64.deb) | n/a |
 
-## 
+## Privileges
 
+Trippy normally requires elevated privileges due to the use of raw sockets. Enabling the required privileges for your platform can be achieved in several ways, as outlined below. Trippy can also be used without elevated privileged on certain platforms, with some limitations.
 
+### Unix
 
-### 
+1: Run as `root` user via `sudo`:
 
-
-
-```
-
+```plain text
+sudo trip example.com
 ```
 
+2: `chown` `trip` as the `root` user and set the `setuid` bit:
 
-
-```
-
+```plain text
+sudo chown root $(which trip) && sudo chmod +s $(which trip)
 ```
-
-
 
-```
+3: [Linux only] Set the `CAP_NET_RAW` capability:
 
+```plain text
+sudo setcap CAP_NET_RAW+p $(which trip)
 ```
-
 
+Note
 
+Trippy is a capability aware application and will add `CAP_NET_RAW` to the effective set if it is present in the allowed set. Trippy will drop all capabilities after creating the raw sockets.
 
+### Windows
 
-### 
+Trippy must be run with Administrator privileges on Windows.
 
+### Unprivileged mode
 
+Trippy allows running in an unprivileged mode for all tracing modes (`ICMP`, `UDP` and `TCP`) on platforms which support that feature.
 
-### 
+Note
 
+Unprivileged mode is currently only supported on macOS. Linux support is possible and may be added in the future. Unprivileged mode is not supported on NetBSD, FreeBSD or Windows as these platforms do not support the `IPPROTO_ICMP` socket type. See [#101](https://github.com/fujiapple852/trippy/issues/101) for further information.
 
+The unprivileged mode can be enabled by adding the `--unprivileged` (`-u`) command line flag or by adding the `unprivileged` entry in the `trippy` section of the [configuration file](https://github.com/fujiapple852/trippy?utm_source=tldrdevops#configuration-reference):
 
-
+```plain text
+[trippy]
+unprivileged = true
+```
 
+Note
 
+The `paris` and `dublin` `ECMP` strategies are not supported in unprivileged mode as these require manipulating the `UDP` and `IP` and headers which in turn requires the use of a raw socket.
 
+## Usage Examples
 
+Basic usage with default parameters:
 
+```plain text
+trip example.com
 ```
 
+Trace without requiring elevated privileges (supported platforms only, see [privileges](https://github.com/fujiapple852/trippy?utm_source=tldrdevops#privileges)):
+
+```plain text
+trip example.com --unprivileged
 ```
 
+Trace using the `udp` (or `tcp` or `icmp`) protocol (also aliases `--icmp`, `--udp` & `--tcp`):
 
+```plain text
+trip example.com -p udp
+```
 
+Trace to multiple targets simultaneously (`icmp` protocol only, see [#72](https://github.com/fujiapple852/trippy/issues/72)):
 
+```plain text
+trip example.com google.com crates.io
+```
 
-## 
+Trace with a minimum round time of `250ms` and a grace period of `50ms`:
 
+```plain text
+trip example.com -i 250ms -g 50ms
+```
 
+Trace with a custom first and maximum `time-to-live`:
 
+```plain text
+trip example.com --first-ttl 2 --max-ttl 10
 ```
 
-```
+Use custom destination port `443` for `tcp` tracing:
 
+```plain text
+trip example.com -p tcp -P 443
+```
 
+Use custom source port `5000` for `udp` tracing:
 
+```plain text
+trip example.com -p udp -S 5000
 ```
 
-```
+Use the `dublin` (or `paris`) ECMP routing strategy for `udp` with fixed source and destination ports:
 
+```plain text
+trip example.com -p udp -R dublin -S 5000 -P 3500
+```
 
+Trace with a custom source address:
 
+```plain text
+trip example.com -p tcp -A 127.0.0.1
 ```
 
-```
+Trace with a source address determined by the IPv4 address for interface `en0`:
 
+```plain text
+trip example.com -p tcp -I en0
+```
 
+Trace using `IPv6`:
 
+```plain text
+trip example.com -6
 ```
 
-```
+Generate a `json` (or `csv`, `pretty`, `markdown`) tracing report with 5 rounds of data:
 
+```plain text
+trip example.com -m json -C 5
+```
 
+Generate a [Graphviz](https://graphviz.org/) `DOT` file report of all tracing flows for a TCP trace after 5 rounds:
 
+```plain text
+trip example.com --tcp -m dot -C 5
 ```
 
-```
+Generate a textual report of all tracing flows for a UDP trace after 5 rounds:
 
+```plain text
+trip example.com --udp -m flows -C 5
+```
 
+Perform DNS queries using the `google` DNS resolver (or `cloudflare`, `system`, `resolv`):
 
+```plain text
+trip example.com -r google
 ```
 
-```
+Lookup AS information for all discovered IP addresses (not yet available for the `system` resolver, see [#66](https://github.com/fujiapple852/trippy/issues/66)):
 
+```plain text
+trip example.com -r google -z
+```
 
+Lookup and display `short` (or `long` or `location` or `off`) GeoIp information from a `mmdb` file:
 
+```plain text
+trip example.com --geoip-mmdb-file GeoLite2-City.mmdb --tui-geoip-mode short
 ```
 
-```
+Parse `icmp` extensions:
 
+```plain text
+trip example.com -e
+```
 
+Hide the IP address, hostname and GeoIp for the first two hops:
 
+```plain text
+trip example.com --tui-privacy-max-ttl 2
 ```
 
-```
+Customize the color theme:
 
+```plain text
+trip example.com --tui-theme-colors bg-color=blue,text-color=ffff00
+```
 
+List all Tui items that can have a custom color theme:
 
+```plain text
+trip --print-tui-theme-items
 ```
 
-```
+Customize the key bindings:
 
+```plain text
+trip example.com --tui-key-bindings previous-hop=k,next-hop=j,quit=shift-q
+```
 
+List all Tui commands that can have a custom key binding:
 
+```plain text
+trip --print-tui-binding-commands
 ```
 
-```
+Specify the location of the Trippy config file:
 
+```plain text
+trip example.com --config-file /path/to/trippy.toml
+```
 
+Generate a template configuration file:
 
+```plain text
+trip --print-config-template > trippy.toml
 ```
 
-```
+Generate `bash` shell completions (or `fish`, `powershell`, `zsh`, `elvish`):
 
+```plain text
+trip --generate bash
+```
 
+Run in `silent` tracing mode and output `compact` trace logging with `full` span events:
 
+```plain text
+trip example.com -m silent -v --log-format compact --log-span-events full
 ```
 
-```
+## Command Reference
 
+Note
 
+Trippy command line arguments may be given in any order and my occur both before and after the targets.
 
-```
+```plain text
+A network diagnostic tool
 
-```
+Usage: trip [OPTIONS] [TARGETS]...
 
+Arguments:
+  [TARGETS]...
+          A space delimited list of hostnames and IPs to trace
 
+Options:
+  -c, --config-file <CONFIG_FILE>
+          Config file
 
-```
+  -m, --mode <MODE>
+          Output mode [default: tui]
 
-```
+          Possible values:
+          - tui:      Display interactive TUI
+          - stream:   Display a continuous stream of tracing data
+          - pretty:   Generate an pretty text table report for N cycles
+          - markdown: Generate a markdown text table report for N cycles
+          - csv:      Generate a CSV report for N cycles
+          - json:     Generate a JSON report for N cycles
+          - dot:      Generate a Graphviz DOT file for N cycles
+          - flows:    Display all flows
+          - silent:   Do not generate any tracing output for N cycles
 
+  -u, --unprivileged
+          Trace without requiring elevated privileges on supported platforms
+          [default: false]
 
+  -p, --protocol <PROTOCOL>
+          Tracing protocol [default: icmp]
 
-```
+          Possible values:
+          - icmp: Internet Control Message Protocol
+          - udp:  User Datagram Protocol
+          - tcp:  Transmission Control Protocol
 
-```
+      --udp
+          Trace using the UDP protocol
 
+      --tcp
+          Trace using the TCP protocol
 
+      --icmp
+          Trace using the ICMP protocol
 
-```
+  -4, --ipv4
+          Use IPv4 only
 
-```
+  -6, --ipv6
+          Use IPv6 only
 
+  -P, --target-port <TARGET_PORT>
+          The target port (TCP & UDP only) [default: 80]
 
+  -S, --source-port <SOURCE_PORT>
+          The source port (TCP & UDP only) [default: auto]
 
-```
+  -A, --source-address <SOURCE_ADDRESS>
+          The source IP address [default: auto]
 
-```
+  -I, --interface <INTERFACE>
+          The network interface [default: auto]
 
+  -i, --min-round-duration <MIN_ROUND_DURATION>
+          The minimum duration of every round [default: 1s]
 
+  -T, --max-round-duration <MAX_ROUND_DURATION>
+          The maximum duration of every round [default: 1s]
 
-```
+  -g, --grace-duration <GRACE_DURATION>
+          The period of time to wait for additional ICMP responses after the
+          target has responded [default: 100ms]
 
-```
+      --initial-sequence <INITIAL_SEQUENCE>
+          The initial sequence number [default: 33000]
 
+  -R, --multipath-strategy <MULTIPATH_STRATEGY>
+          The Equal-cost Multi-Path routing strategy (UDP only) [default:
+          classic]
 
+          Possible values:
+          - classic:
+            The src or dest port is used to store the sequence number
+          - paris:
+            The UDP `checksum` field is used to store the sequence number
+          - dublin:
+            The IP `identifier` field is used to store the sequence number
 
-```
+  -U, --max-inflight <MAX_INFLIGHT>
+          The maximum number of in-flight ICMP echo requests [default: 24]
 
-```
+  -f, --first-ttl <FIRST_TTL>
+          The TTL to start from [default: 1]
 
+  -t, --max-ttl <MAX_TTL>
+          The maximum number of TTL hops [default: 64]
 
+      --packet-size <PACKET_SIZE>
+          The size of IP packet to send (IP header + ICMP header + payload)
+          [default: 84]
 
-```
+      --payload-pattern <PAYLOAD_PATTERN>
+          The repeating pattern in the payload of the ICMP packet [default: 0]
 
-```
+  -Q, --tos <TOS>
+          The TOS (i.e. DSCP+ECN) IP header value (TCP and UDP only) [default: 0]
 
+  -e, --icmp-extensions
+          Parse ICMP extensions
 
+      --read-timeout <READ_TIMEOUT>
+          The socket read timeout [default: 10ms]
 
-```
+  -r, --dns-resolve-method <DNS_RESOLVE_METHOD>
+          How to perform DNS queries [default: system]
 
-```
+          Possible values:
+          - system:     Resolve using the OS resolver
+          - resolv:     Resolve using the `/etc/resolv.conf` DNS configuration
+          - google:     Resolve using the Google `8.8.8.8` DNS service
+          - cloudflare: Resolve using the Cloudflare `1.1.1.1` DNS service
 
+  -y, --dns-resolve-all
+          Trace to all IPs resolved from DNS lookup [default: false]
 
+      --dns-timeout <DNS_TIMEOUT>
+          The maximum time to wait to perform DNS queries [default: 5s]
 
-```
+  -z, --dns-lookup-as-info
+          Lookup autonomous system (AS) information during DNS queries [default:
+          false]
 
-```
+  -a, --tui-address-mode <TUI_ADDRESS_MODE>
+          How to render addresses [default: host]
 
+          Possible values:
+          - ip:   Show IP address only
+          - host: Show reverse-lookup DNS hostname only
+          - both: Show both IP address and reverse-lookup DNS hostname
 
+      --tui-as-mode <TUI_AS_MODE>
+          How to render AS information [default: asn]
 
-```
+          Possible values:
+          - asn:          Show the ASN
+          - prefix:       Display the AS prefix
+          - country-code: Display the country code
+          - registry:     Display the registry name
+          - allocated:    Display the allocated date
+          - name:         Display the AS name
 
-```
+      --tui-icmp-extension-mode <TUI_ICMP_EXTENSION_MODE>
+          How to render ICMP extensions [default: off]
 
+          Possible values:
+          - off:  Do not show `icmp` extensions
+          - mpls: Show MPLS label(s) only
+          - full: Show full `icmp` extension data for all known extensions
+          - all:  Show full `icmp` extension data for all classes
 
+      --tui-geoip-mode <TUI_GEOIP_MODE>
+          How to render GeoIp information [default: short]
 
-```
+          Possible values:
+          - off:      Do not display GeoIp data
+          - short:    Show short format
+          - long:     Show long format
+          - location: Show latitude and Longitude format
 
-```
+  -M, --tui-max-addrs <TUI_MAX_ADDRS>
+          The maximum number of addresses to show per hop [default: auto]
 
+  -s, --tui-max-samples <TUI_MAX_SAMPLES>
+          The maximum number of samples to record per hop [default: 256]
 
+      --tui-max-flows <TUI_MAX_FLOWS>
+          The maximum number of flows to show [default: 64]
 
-```
+      --tui-preserve-screen
+          Preserve the screen on exit [default: false]
 
-```
+      --tui-refresh-rate <TUI_REFRESH_RATE>
+          The Tui refresh rate [default: 100ms]
 
+      --tui-privacy-max-ttl <TUI_PRIVACY_MAX_TTL>
+          The maximum ttl of hops which will be masked for privacy [default: 0]
 
+      --tui-theme-colors <TUI_THEME_COLORS>
+          The TUI theme colors [item=color,item=color,..]
 
-```
+      --print-tui-theme-items
+          Print all TUI theme items and exit
 
-```
+      --tui-key-bindings <TUI_KEY_BINDINGS>
+          The TUI key bindings [command=key,command=key,..]
 
+      --print-tui-binding-commands
+          Print all TUI commands that can be bound and exit
 
+  -C, --report-cycles <REPORT_CYCLES>
+          The number of report cycles to run [default: 10]
 
-```
+  -G, --geoip-mmdb-file <GEOIP_MMDB_FILE>
+          The MaxMind City GeoLite2 mmdb file
 
-```
+      --generate <GENERATE>
+          Generate shell completion
 
+          [possible values: bash, elvish, fish, powershell, zsh]
 
+      --print-config-template
+          Print a template toml config file and exit
 
-```
+      --log-format <LOG_FORMAT>
+          The debug log format [default: pretty]
 
-```
+          Possible values:
+          - compact: Display log data in a compact format
+          - pretty:  Display log data in a pretty format
+          - json:    Display log data in a json format
+          - chrome:  Display log data in Chrome trace format
 
-## 
+      --log-filter <LOG_FILTER>
+          The debug log filter [default: trippy=debug]
 
+      --log-span-events <LOG_SPAN_EVENTS>
+          The debug log format [default: off]
 
+          Possible values:
+          - off:    Do not display event spans
+          - active: Display enter and exit event spans
+          - full:   Display all event spans
 
+  -v, --verbose
+          Enable verbose debug logging
 
+  -h, --help
+          Print help (see a summary with '-h')
 
-```
+  -V, --version
+          Print version
 
 ```
-
-## 
 
+## Theme Reference
 
+The following table lists the default Tui color theme. These can be overridden with the `--tui-theme-colors` command line option.
 
 | Item | Description | Default |
 | --- | --- | --- |
@@ -464,15 +708,15 @@ tags: ["Tool", "English", "Network", "SysAdmin"]
 | `map-info-panel-bg-color` | The background color of the map info panel | `black` |
 | `map-info-panel-text-color` | The color of text in the map info panel | `gray` |
 
+The supported colors are:
 
+- `Black`, `Red`, `Green`, `Yellow`, `Blue`, `Magenta`, `Cyan`, `Gray`, `DarkGray`, `LightRed`, `LightGreen`, `LightYellow`, `LightBlue`, `LightMagenta`, `LightCyan`, `White`
 
-- 
+Color names are case-insensitive and may contain dashes. Raw hex values, such as `ffffff` for white, may also be used.
 
+## Key Bindings Reference
 
-
-## 
-
-
+The following table lists the default Tui command key bindings. These can be overridden with the `--tui-key-bindings` command line option.
 
 | Command | Description | Default |
 | --- | --- | --- |
@@ -506,75 +750,76 @@ tags: ["Tool", "English", "Network", "SysAdmin"]
 | `toggle-hop-details` | Toggle hop details | `d` |
 | `quit` | Quit the application | `q` |
 
+The supported modifiers are: `shift`, `ctrl`, `alt`, `super`, `hyper` & `meta`. Multiple modifiers may be specified, for example `ctrl+shift+b`.
 
+## Configuration Reference
 
-## 
+Trippy can be configured with via command line arguments or an optional configuration file. If a given configuration item is specified in both the configuration file and via a command line argument then the latter will take precedence.
 
+The configuration file location may be provided to Trippy via the `-c` (`--config-file`) argument. If not provided, Trippy will attempt to locate a `trippy.toml` or `.trippy.toml` configuration file in one of the following locations:
 
+- The current directory
+- The user home directory
+- the XDG config directory (Unix only): `$XDG_CONFIG_HOME` or `~/.config`
+- the Windows data directory (Windows only): `%APPDATA%`
 
+An annotated template configuration file is available for [0.8.0](https://github.com/fujiapple852/trippy/blob/0.8.0/trippy-config-sample.toml) and [0.9.0](https://github.com/fujiapple852/trippy/blob/0.9.0/trippy-config-sample.toml).
 
+Trippy (version `0.9.0` or later) can generate a template configuration file:
 
-- 
-- 
-- 
-- 
-
-
-
-
-
+```plain text
+trip --print-config-template > trippy.toml
 ```
 
+## Frequently Asked Questions
+
+### Why does Trippy show "Awaiting data..."?
+
+Important
+
+If you are using Windows you _must_ [configure](https://github.com/fujiapple852/trippy?utm_source=tldrdevops#how-do-i-allow-incoming-icmp-traffic-in-the-windows-defender-firewall) the Windows Defender firewall to allow incoming ICMP traffic
+
+When Trippy shows “Awaiting data...” it means that it has received zero responses for the probes sent in a trace. This indicates that either probes are not being sent or, more typically, responses are not being received.
+
+Check that local and network firewalls allow ICMP traffic and that the system `traceroute` (or `tracert.exe` on Windows) works as expected. Note that on Windows, even if `tracert.exe` works as expected, you _must_ [configure](https://github.com/fujiapple852/trippy?utm_source=tldrdevops#how-do-i-allow-incoming-icmp-traffic-in-the-windows-defender-firewall) the Windows Defender firewall to allow incoming ICMP traffic.
+
+For deeper diagnostics you can run tools such as [https://www.wireshark.org](https://www.wireshark.org/) and [https://www.tcpdump.org](https://www.tcpdump.org/) to verify that icmp requests and responses are being send and received.
+
+### How do I allow incoming ICMP traffic in the Windows Defender firewall?
+
+The Windows Defender firewall rule can be created using PowerShell:
+
+```plain text
+New-NetFirewallRule -DisplayName "ICMP Trippy Allow" -Name ICMP_TRIPPY_ALLOW -Protocol ICMPv4 -Action Allow
 ```
 
-## 
+The rule can be enabled and disabled as follows:
 
-### 
-
-
-
-
-
-
-
-
-
-
-
-### 
-
-
-
+```plain text
+Enable-NetFirewallRule ICMP_TRIPPY_ALLOW
+Disable-NetFirewallRule ICMP_TRIPPY_ALLOW
 ```
 
-```
+The Windows Defender firewall rule may also be configured manually, see [here](https://github.com/fujiapple852/trippy/issues/578#issuecomment-1565149826) for a step-by-step guide.
 
+## Acknowledgements
 
+Trippy is made possible by [ratatui](https://github.com/ratatui-org/ratatui) ( formerly [tui-rs](https://github.com/fdehau/tui-rs)), [crossterm](https://github.com/crossterm-rs/crossterm) as well as [several](https://github.com/fujiapple852/trippy/blob/master/Cargo.toml) foundational Rust libraries.
 
-```
+Trippy draws heavily from [mtr](https://github.com/traviscross/mtr) and also incorporates ideas from both [libparistraceroute](https://github.com/libparistraceroute/libparistraceroute) & [Dublin Traceroute](https://github.com/insomniacslk/dublin-traceroute).
 
-```
+The Trippy networking code is inspired by [pnet](https://github.com/libpnet/libpnet) and some elements of that codebase are incorporated in Trippy.
 
+The [AS](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) data is retrieved from the [IP to ASN Mapping Service](https://team-cymru.com/community-services/ip-asn-mapping/#dns) provided by [Team Cymru](https://team-cymru.com/).
 
+The [trippy.cli.rs](https://trippy.cli.rs/) CNAME hosting is provided by [cli.rs](https://cli.rs/).
 
-## 
+## License
 
+This project is distributed under the terms of the Apache License (Version 2.0).
 
+Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in time by you, as defined in the Apache-2.0 license, shall be licensed as above, without any additional terms or conditions.
 
+See [LICENSE](https://github.com/fujiapple852/trippy/blob/master/LICENSE) for details.
 
-
-
-
-
-
-
-
-## 
-
-
-
-
-
-
-
-
+Copyright 2022 [Trippy Contributors](https://github.com/fujiapple852/trippy/graphs/contributors)

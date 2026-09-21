@@ -4,64 +4,64 @@ notion_id: ea68b185-7974-4bf2-ba0e-540da4f7bf1a
 notion_url: https://app.notion.com/p/Non-code-contributions-are-the-secret-to-open-source-success-ea68b18579744bf2ba0e540da4f7bf1a
 last_edited: 2023-06-15T23:47:00.000Z
 source_url: https://github.com/readme/featured/open-source-non-code-contributions
-tags: ["The ReadME Project - Github", "English", "Producer (Individual Contributor)", "Documentation", "Reflection", "Article"]
+tags: ["English", "Producer (Individual Contributor)", "Documentation", "Reflection", "Article", "The ReadME Project - Github"]
 ---
+Mathematics teacher [Sarah Rainsberger](https://github.com/sarah11918) wasn’t planning to become an open source contributor when she started rebuilding her choir’s website. She just wanted to learn JavaScript and web development for fun. “I wasn't a programmer, but I often found I was the only remotely technical person in a group,” she explained. “That’s how I ended up building the choir website in the first place.”
 
+She settled on using the front-end framework [Astro](https://github.com/withastro/astro), which was brand new at the time. It had fewer resources for learners than more established frameworks, but she thought following along as the project grew would be a good way to learn. She soon found herself contributing a small piece of code—a configuration file—to the project. Then, as the project grew, Rainsberger became increasingly involved with the community, fielding questions and supporting new Astro users. “I wasn’t the person who knew the most about the inner workings of the project, but I knew how to explain stuff and guide people through the learning process,” she says. “And I knew who to ask when there was something I didn’t know.”
 
+Today, Rainsberger is part of Astro’s core maintainer group. But she still isn’t particularly involved in the codebase, even as she’s deepened her web development skills. As the documentation lead, she spends her time helping others learn the ins and outs of Astro.
 
+When we think about “contributors” in open source, all too often we think of those who write code, whether that's adding features or fixing bugs. But open source projects are more than just code. Much of the work that goes into open source is the type of work Rainsberger does.
 
+“The things you need for a successful open source project overlap with what you need for a successful commercial product,” says [Dawn Foster](https://github.com/geekygirldawn), an open source community manager currently working as director of open source community strategy at VMware. “That includes documentation, localization, marketing, graphic design, testing, community management, and release management.”
 
+It’s difficult to overstate how important non-code contributions are to open source. “Even if you write an amazing program, no one will use it if you don’t explain what it does and how to use it,” says [Nate Waddington](https://github.com/nate-double-u), a developer advocate at the Cloud Native Computing Foundation with a background in design. A very simple project might just need a README, but the more complex the project, the more documentation, tutorials, and support are needed to make the code useful. Easy-to-source documentation boosts productivity by about 50% in both open source and enterprise software projects, according to the [2021 State of the Octoverse](https://octoverse.github.com/2021/) report. Graphic design, branding, and outreach, meanwhile, help signal the health and seriousness of a project that other projects or companies might leverage as dependencies.
 
+While there are plenty of opportunities for non-technical folks to contribute to open source, non-code contributions aren’t necessarily non-technical. Certain testing, documentation, and support tasks might require deep knowledge of a codebase. As more and more people seek to contribute to open source to advance their careers, give back to the community, or both, it’s important to remember that these non-code contributions are crucial to open source and provide plenty of opportunities to develop technical and non-technical skills alike.
 
+Even if you write an amazing program, no one will use it if you don’t explain what it does and how to use it
 
+### **Why YOU should make non-code contributions**
 
+Adding features or fixing bugs might sound more glamorous than localizing documentation, providing support, or filing reproducible bug reports—especially if your goal is to use open source contributions as a path toward employment. But making non-code contributions can be just as rewarding, as Rainsberger’s experience demonstrates.
 
+If you’re interested in technical communications, graphic design, user experience design, or other roles that don’t involve programming, open source provides an opportunity to build a portfolio. However, programmers also benefit from sharpening their non-code skills, particularly in writing and communication. Plus, experience in writing, support, or community organizing can help you pivot into roles like developer relations or product management.
 
+There are opportunities for people of any skill level to get involved. “You don’t need a computer science degree, or an English degree for that matter, to write documentation,” Waddington says. “Even if you’re not a strong writer, you have to start somewhere.”
 
+Besides, it’s hard to make meaningful code contributions until you have a thorough understanding of a project. “Feature requests are fundamentally a different mindset for contributions,” [Winterbloom](https://github.com/wntrblm) founder Thea Flowers said in [a recent contributor relations Q&A with The ReadME Project](https://github.blog/2023-05-03-more-than-meets-the-pull-request-maintainers-talk-contributions/). “The other contributions are really like patching up a wall or repainting a fence, but a feature request is like building a new shed in your backyard. You’ve got to really think about it a bit.” Even what appears to be a small bug fix can have big ramifications.
 
+“Only five percent of the effort to actually get something shipped is writing the code for it,” [Litestream](https://github.com/benbjohnson/litestream) maintainer [Ben Johnson](https://github.com/benbjohnson) said in our [article on different levels of openness for contributions](https://github.com/readme/featured/how-open-is-open-source). “It’s the years of maintenance afterwards, fixing bugs, writing documentation, making tutorials, and all this other stuff. That’s the hard part.” In an informal social media poll in April, The ReadME Project asked maintainers what type of open source contribution they would want if they had to choose only one type from now on. Although code was the most popular answer, with 62.2% of the vote, more than one-third of respondents would prefer documentation, design, or testing.
 
+[Mark Saroufim](https://github.com/msaroufim), an AI engineer at Meta who helps maintain [PyTorch](https://github.com/pytorch/pytorch), recommends reading the documentation for a project you might want to get involved in and fixing any parts that are outdated or broken as a good starting point. Prolific open source maintainer [Jordan Harband](https://github.com/readme/stories/jordan-harband) explained in the Q&A that newcomers are often better at recognizing issues with existing documentation or spotting areas that lack documentation, specifically because they’re not already experts with a particular project. “Any documentation I write will inevitably be tainted by my already knowing how it works,” he said. Likewise, reading and responding to other people’s questions will help you deepen your knowledge, get to know the maintainers, and learn a project’s build process. “It gives you x-ray vision into a project,” Saroufim says.
 
+Even after you’ve transitioned to making code contributions, there are plenty of reasons to keep working on the non-code side. “If you don’t want to work on non-code tasks forever, by all means, don’t,” Saroufim says. “But many of the best, most productive engineers at PyTorch are also active in support.” Providing support helps maintainers learn where users struggle and what features users really want and need, and, in turn, develop better software.
 
-### 
+Sustained community involvement is also a better way to make a name for yourself in open source than one-off code contributions, and there are often more long-term opportunities to help out with a project in non-coding tasks. Rainsberger’s experience is proof of that. Her Chromebook contributions were valuable, but what made her a core contributor was her active involvement in the community.
 
+“The relationships and trust you build are important from a career standpoint,” says Foster. “You will stand out more by consistently being helpful in a community’s Slack or Discord or by helping organize events like community meetups.”
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Providing support helps maintainers learn where users struggle and what features users really want and need, and, in turn, develop better software.
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
-### 
+### **Finding and appreciating non-code contributors**
 
+The importance of non-code contributions is clear, but how can maintainers find people to pitch in? Ideally, contributors will follow Waddington’s advice and jump in without waiting for someone to tell them what to do. However, the opposite advice applies to maintainers: If they want contributions, the best thing to do is to ask people to do specific things. “I search Twitter and if I see someone tweeting about something missing or incorrect in the docs I ask them if they’re interested in fixing it,” said Rainsberger. “It’s a simple way to get the docs fixed and to give people an opportunity to get involved.”
 
+Flowers recommends building a community on a chat platform like Discord, Gitter, or Slack to make it easier for people to get involved informally with a project. “It makes people feel less hesitant to ask quick questions,” she said. “A lot of people are intimidated to ask questions on repositories.” Also, people outside a project’s core team might be more willing to pipe up with an answer.
 
+Maintainers should also file issues and tag them with “Help Wanted” and, when appropriate, “Good First Issue.” The State of the Octoverse report found that projects with about 25% of their issues marked with the “Help Wanted” tag saw 13% more contributors than those without, and those with 40% of issues tagged as “Good First Issues” saw 21% more new contributors than those without.
 
+Projects can also participate in programs like [Summer of Code](https://summerofcode.withgoogle.com/), [Hacktoberfest](https://hacktoberfest.com/), and [Season of Docs](https://developers.google.com/season-of-docs). Astro focused specifically on non-code contributions at Hacktoberfest 2022. “It was phenomenal. We had so much activity; it was really nice to help so many people make their first PR to open source,” Rainsberger says.
 
+But just asking for help isn’t always enough. Depending on the size and complexity of your project, contributors may need additional onboarding and orientation. Mentorship is perhaps the best way to set contributors up for success. The 2021 State of the Octoverse report found that mentorship increased productivity in open source projects by 46% and tripled the chances of having a healthy culture. “Having a dedicated person who engages with new community members helps them overcome hurdles and stay involved with the project,” [Georg Link](https://github.com/GeorgLink), co-founder of open source health metrics organization [CHAOSS](https://github.com/chaoss), told The ReadME Project for our [article on onboarding contributors](https://github.com/readme/featured/contributor-onboarding). Mentorship is time-consuming and can take maintainers away from other tasks, but the time investment usually pays off in the long run. New contributors can take on increasingly important tasks and even become mentors themselves.
 
+It’s also crucial to elevate and appreciate non-code contributors. This not only helps keep current contributors motivated but also helps attract new contributors. “We try to give lots of opportunities for people to feel valued and publicly recognized,” Rainsberger says. Early on, the Astro project required someone to make “significant code contributions” to become a “core contributor.” That language has since changed to include non-code contributions when considering promoting people to core contributor status.
 
+Non-code contributors are also included in the project’s other forms of recognition, such as badges that contributors can display on their GitHub profiles to highlight accomplishments within the project. To help ensure everyone gets their fair share of credit, Astro includes detailed instructions on specifying co-authorship on pull requests. Additionally, the GitHub avatar of every contributor is on the first page of the project’s documentation. For a more tangible reward, the project distributes funds raised on Open Collective to contributors once per quarter.
 
+It’s time for everyone to recognize the role that documentation, support, and other non-code contributions play in making open source viable. It’s never too late or too early to make your own contributions to your favorite projects.
 
-
-
-
-
-
-
-
-
-
+You don’t need to wait for someone to give you something to do, he adds. You can answer questions on chat or in issues without having any formal role in a project.

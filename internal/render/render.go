@@ -37,6 +37,18 @@ func isList(blockType string) bool {
 	return blockType == model.TypeBulletedItem || blockType == model.TypeNumberedItem
 }
 
+// listMark returns the list prefix: checkbox for to-do items, dash otherwise.
+func listMark(blk model.Block) string {
+	switch {
+	case blk.Type == model.TypeToDo && blk.Checked:
+		return "- [x] "
+	case blk.Type == model.TypeToDo:
+		return "- [ ] "
+	}
+
+	return "- "
+}
+
 // writeBlock dispatches to focused writers; returns false for unknown types so
 // the caller can emit a visible marker instead of silent output.
 func writeBlock(b *strings.Builder, blk model.Block, numbered *int) bool {
@@ -57,8 +69,8 @@ func writeTextBlock(b *strings.Builder, blk model.Block, numbered *int) bool {
 		b.WriteString(inline(blk.RichText))
 	case model.TypeHeading1, model.TypeHeading2, model.TypeHeading3:
 		writeHeading(b, blk)
-	case model.TypeBulletedItem:
-		b.WriteString("- " + inline(blk.RichText))
+	case model.TypeBulletedItem, model.TypeToDo:
+		b.WriteString(listMark(blk) + inline(blk.RichText))
 	case model.TypeNumberedItem:
 		*numbered++
 		b.WriteString(strconv.Itoa(*numbered) + ". " + inline(blk.RichText))
@@ -92,6 +104,15 @@ func writePayloadBlock(b *strings.Builder, blk model.Block) bool {
 		writeLink(b, blk)
 	case model.TypeImage:
 		writeImage(b, blk)
+	case model.TypePDF, model.TypeFile, model.TypeVideo:
+		// Notion-hosted media URLs expire, so only external links survive
+		// the mirror (ADR-05).
+		if blk.Internal {
+			b.WriteString("<!-- internal " + blk.Type + ": its URL expires and is not preserved (ADR-05) -->")
+
+			return true
+		}
+		writeLink(b, blk)
 	case model.TypeCode:
 		b.WriteString("```" + blk.Language + "\n" + plain(blk.RichText) + "\n```")
 	case model.TypeChildPage:

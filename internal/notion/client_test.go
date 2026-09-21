@@ -435,3 +435,132 @@ func TestClientErrorSurfacesBody(t *testing.T) {
 		t.Fatalf("err = %v, want surfaced API message", err)
 	}
 }
+
+// flattenChildrenHandler serves a page whose blocks carry every child-bearing
+// shape the flattening must cover (ADR-17), dispatched by block ID.
+func flattenChildrenHandler(t *testing.T, w http.ResponseWriter, r *http.Request) {
+	t.Helper()
+	path := r.URL.Path
+	switch {
+	case strings.Contains(path, "tg-1"):
+		writeJSON(t, w, blocksResponse{Results: []apiBlock{
+			{Type: model.TypeParagraph, textPayload: textPayload{RichText: []richRun{{PlainText: "inside toggle"}}}},
+		}})
+	case strings.Contains(path, "td-1"):
+		writeJSON(t, w, blocksResponse{Results: []apiBlock{
+			{Type: model.TypeBulletedItem, textPayload: textPayload{RichText: []richRun{{PlainText: "nested"}}}},
+		}})
+	case strings.Contains(path, "sb-1"):
+		writeJSON(t, w, blocksResponse{Results: []apiBlock{
+			{Type: model.TypeHeading2, textPayload: textPayload{RichText: []richRun{{PlainText: "synced content"}}}},
+		}})
+	case strings.Contains(path, "cl-1"):
+		writeJSON(t, w, blocksResponse{Results: []apiBlock{
+			{Type: "column", ID: "col-1", HasChildren: true},
+		}})
+	case strings.Contains(path, "col-1"):
+		writeJSON(t, w, blocksResponse{Results: []apiBlock{
+			{Type: model.TypeBulletedItem, textPayload: textPayload{RichText: []richRun{{PlainText: "in column"}}}},
+		}})
+	case strings.Contains(path, "tbl-1"):
+		writeJSON(t, w, blocksResponse{Results: []apiBlock{
+			{Type: "table_row", TableRow: &tableRowPayload{Cells: [][]richRun{{{PlainText: "cell"}}}}},
+		}})
+	default:
+		writeJSON(t, w, blocksResponse{Results: []apiBlock{
+			{Type: model.TypeToggle, ID: "tg-1", HasChildren: true,
+				textPayload: textPayload{RichText: []richRun{{PlainText: "how to"}}}},
+			{Type: model.TypeToDo, ID: "td-1", HasChildren: true,
+				textPayload: textPayload{RichText: []richRun{{PlainText: "ship"}}},
+				ToDo:        &toDoPayload{Checked: true}},
+			{Type: "synced_block", ID: "sb-1", HasChildren: true},
+			{Type: "column_list", ID: "cl-1", HasChildren: true},
+			{Type: model.TypeTable, ID: "tbl-1", HasChildren: true,
+				Table: &tablePayload{HasColumnHeader: false}},
+		}})
+	}
+}
+
+func TestPageBlocksFlattensAllChildren(t *testing.T) {
+	rec := &recorder{}
+	c := newTestClient(t, rec)
+	rec.handler = func(w http.ResponseWriter, r *http.Request) {
+		flattenChildrenHandler(t, w, r)
+	}
+
+	blocks, err := c.PageBlocks("page1")
+	if err != nil {
+		t.Fatalf("PageBlocks: %v", err)
+	}
+
+	want := []struct {
+		typ, text string
+		checked   bool
+	}{
+		{model.TypeToggle, "how to", false},
+		{model.TypeParagraph, "inside toggle", false},
+		{model.TypeToDo, "ship", true},
+		{model.TypeBulletedItem, "nested", false},
+		{model.TypeHeading2, "synced content", false},
+		{model.TypeBulletedItem, "in column", false},
+		{model.TypeTable, "", false},
+	}
+	if len(blocks) != len(want) {
+		t.Fatalf("got %d blocks, want %d", len(blocks), len(want))
+	}
+	for i, w := range want {
+		if blocks[i].Type != w.typ || plainText(blocks[i]) != w.text || blocks[i].Checked != w.checked {
+			t.Errorf("block %d = %s %q checked=%v, want %s %q checked=%v",
+				i, blocks[i].Type, plainText(blocks[i]), blocks[i].Checked, w.typ, w.text, w.checked)
+		}
+	}
+	assertNoContainers(t, blocks)
+}
+
+// assertNoContainers fails if pure container blocks leaked into the output.
+func assertNoContainers(t *testing.T, blocks []model.Block) {
+	t.Helper()
+	for _, blk := range blocks {
+		if blk.Type == "synced_block" || blk.Type == "column_list" || blk.Type == "column" {
+			t.Errorf("container block %q leaked into output", blk.Type)
+		}
+	}
+}
+
+func TestPageBlocksMediaURLs(t *testing.T) {
+	rec := &recorder{}
+	c := newTestClient(t, rec)
+	rec.handler = func(w http.ResponseWriter, _ *http.Request) {
+		writeJSON(t, w, blocksResponse{Results: []apiBlock{
+			{Type: model.TypePDF, PDF: &imagePayload{External: &urlPayload{URL: "https://example.com/doc.pdf"}}},
+			{Type: model.TypeFile, File: &imagePayload{File: &urlPayload{URL: "https://notion.so/expire"}}},
+			{Type: model.TypeVideo, Video: &imagePayload{External: &urlPayload{URL: "https://example.com/clip.mp4"}}},
+		}})
+	}
+
+	blocks, err := c.PageBlocks("page1")
+	if err != nil {
+		t.Fatalf("PageBlocks: %v", err)
+	}
+	if len(blocks) != 3 {
+		t.Fatalf("got %d blocks, want 3", len(blocks))
+	}
+	if blocks[0].URL != "https://example.com/doc.pdf" || blocks[0].Internal {
+		t.Errorf("pdf = %+v", blocks[0])
+	}
+	if blocks[1].URL != "https://notion.so/expire" || !blocks[1].Internal {
+		t.Errorf("file = %+v", blocks[1])
+	}
+	if blocks[2].URL != "https://example.com/clip.mp4" || blocks[2].Internal {
+		t.Errorf("video = %+v", blocks[2])
+	}
+}
+
+func plainText(blk model.Block) string {
+	out := ""
+	for _, r := range blk.RichText {
+		out += r.Plain
+	}
+
+	return out
+}

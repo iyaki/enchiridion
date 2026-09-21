@@ -18,6 +18,10 @@ const (
 	TypeEmbed        = "embed"
 	TypeLinkPreview  = "link_preview"
 	TypeImage        = "image"
+	TypeToDo         = "to_do"
+	TypePDF          = "pdf"
+	TypeFile         = "file"
+	TypeVideo        = "video"
 	TypeToggle       = "toggle"
 	TypeChildPage    = "child_page"
 	TypeTable        = "table"
@@ -44,8 +48,9 @@ type Block struct {
 	Type      string
 	RichText  []RichText // text-carrying blocks
 	Language  string     // code
-	URL       string     // bookmark, embed, link_preview, image (external)
-	Internal  bool       // image hosted by Notion: its URL expires (ADR-05)
+	URL       string     // bookmark, embed, link_preview, image, pdf, file, video (external)
+	Internal  bool       // image/file hosted by Notion: its URL expires (ADR-05)
+	Checked   bool       // to_do: checkbox state
 	Title     string     // child_page
 	HasHeader bool       // table: first row renders as header
 	Rows      [][]Cell   // table: rows -> cells -> runs

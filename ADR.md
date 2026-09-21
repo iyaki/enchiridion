@@ -275,6 +275,31 @@ rule. Agents citing only Notion links are now off-policy.
 
 ---
 
+## ADR-17 — Agent utility over strict mirror fidelity
+
+**Context**: the product exists to feed AI agents greppable knowledge, but the
+first mirror pass rendered for strict fidelity, not completeness: the mirror
+of 2026-09 showed 225 visible dropped-block comments across 127 files
+(`to_do` 79, `synced_block` 41, `video`/`pdf`/`file` 64, `column_list` 2), and
+worse, the children of `toggle` blocks and nested lists were never fetched at
+all — silent loss, invisible even to the marker rule.
+
+**Decision**: content completeness is the contract. The client fetches the
+children of **every** `has_children` block recursively and splices them as
+sibling blocks in document order (no tree in the model, one linear document
+per page). `to_do` blocks render as markdown checkboxes; `pdf`/`file`/`video`
+render as links when externally hosted, or as the expiry comment when
+Notion-hosted (same rule as images, ADR-05). `child_page` stays a title
+comment: the organizer's `sanitizeBlocks` drops child pages at copy time, so
+KB pages carry none.
+
+**Consequences**: one extra API call per `has_children` block (rate-limit
+handling already retries); nested-list indentation flattens and numbering
+restarts at splice boundaries — accepted for grep-ability; supersedes the
+ADR-05 rendering-contract line that toggle content is not downloaded.
+
+---
+
 ## Verification of the real sync (pending implementation)
 
 The only piece not verifiable offline: live API calls. Manual smoke with an

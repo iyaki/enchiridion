@@ -33,6 +33,10 @@ type imagePayload struct {
 	File     *urlPayload `json:"file"`
 }
 
+type toDoPayload struct {
+	Checked bool `json:"checked"`
+}
+
 type childPagePayload struct {
 	Title string `json:"title"`
 }
@@ -57,12 +61,33 @@ type apiBlock struct {
 	Embed       *urlPayload       `json:"embed"`
 	LinkPreview *urlPayload       `json:"link_preview"`
 	Image       *imagePayload     `json:"image"`
+	ToDo        *toDoPayload      `json:"to_do"`
+	PDF         *imagePayload     `json:"pdf"`
+	File        *imagePayload     `json:"file"`
+	Video       *imagePayload     `json:"video"`
 	ChildPage   *childPagePayload `json:"child_page"`
 	Table       *tablePayload     `json:"table"`
 	TableRow    *tableRowPayload  `json:"table_row"`
 }
 
 func (b apiBlock) text() []richRun { return b.RichText }
+
+// media returns the url payload for block types sharing the external|file
+// shape (image, pdf, file, video); nil for any other type.
+func (b apiBlock) media() *imagePayload {
+	switch b.Type {
+	case model.TypeImage:
+		return b.Image
+	case model.TypePDF:
+		return b.PDF
+	case model.TypeFile:
+		return b.File
+	case model.TypeVideo:
+		return b.Video
+	}
+
+	return nil
+}
 
 func richText(runs []richRun) []model.RichText {
 	out := make([]model.RichText, 0, len(runs))

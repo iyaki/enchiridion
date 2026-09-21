@@ -87,20 +87,45 @@ func (c *Client) QueryPages(dataSourceID string, filter QueryFilter) ([]model.Pa
 }
 
 // PageBlocks returns the distilled content blocks of a page, following
-// pagination and resolving table rows recursively so the renderer stays flat.
+// pagination, resolving table rows, and recursively flattening the children of
+// every block in document order (ADR-17) so the renderer stays flat.
 func (c *Client) PageBlocks(pageID string) ([]model.Block, error) {
 	raws, err := c.children(pageID)
 	if err != nil {
 		return nil, err
 	}
 
-	blocks := make([]model.Block, 0, len(raws))
+	return c.distillAll(raws)
+}
+
+// distillAll flattens raw blocks (and, recursively, their children) into a
+// single document-ordered slice (ADR-17). Pure containers (synced_block,
+// column_list, column) contribute no block of their own — only their children.
+func (c *Client) distillAll(raws []apiBlock) ([]model.Block, error) {
+	var blocks []model.Block
 	for _, raw := range raws {
-		blk, err := c.distill(raw)
-		if err != nil {
-			return nil, err
+		switch raw.Type {
+		case "synced_block", "column_list", "column":
+			// Container: emit children only.
+		default:
+			blk, err := c.distill(raw)
+			if err != nil {
+				return nil, err
+			}
+			blocks = append(blocks, blk)
 		}
-		blocks = append(blocks, blk)
+		// table_row children are cells, resolved by distillTable.
+		if raw.HasChildren && raw.Type != model.TypeTable {
+			kids, err := c.children(raw.ID)
+			if err != nil {
+				return nil, err
+			}
+			flat, err := c.distillAll(kids)
+			if err != nil {
+				return nil, err
+			}
+			blocks = append(blocks, flat...)
+		}
 	}
 
 	return blocks, nil
@@ -136,6 +161,11 @@ func (c *Client) children(blockID string) ([]apiBlock, error) {
 func (c *Client) distill(raw apiBlock) (model.Block, error) {
 	blk := model.Block{Type: raw.Type}
 	switch {
+	case raw.Type == model.TypeToDo:
+		blk.RichText = richText(raw.text())
+		if raw.ToDo != nil {
+			blk.Checked = raw.ToDo.Checked
+		}
 	case isTextBlock(raw.Type):
 		blk.RichText = richText(raw.text())
 	case raw.Type == model.TypeCode:
@@ -143,8 +173,8 @@ func (c *Client) distill(raw apiBlock) (model.Block, error) {
 		blk.Language = raw.Language
 	case isLinkBlock(raw.Type):
 		blk.URL = raw.url(raw.Type)
-	case raw.Type == model.TypeImage:
-		distillImage(&blk, raw.Image)
+	case raw.media() != nil:
+		distillMedia(&blk, raw.media())
 	case raw.Type == model.TypeChildPage:
 		blk.Title = raw.ChildPage.Title
 	case raw.Type == model.TypeTable:
@@ -176,7 +206,9 @@ func isLinkBlock(blockType string) bool {
 	return false
 }
 
-func distillImage(blk *model.Block, img *imagePayload) {
+// distillMedia fills URL/Internal for block types whose payload is the
+// external|file url shape: image, pdf, file, video.
+func distillMedia(blk *model.Block, img *imagePayload) {
 	if img == nil {
 		return
 	}

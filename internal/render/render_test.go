@@ -153,3 +153,21 @@ func TestLooseSeparatorsBetweenDifferentBlocks(t *testing.T) {
 		t.Fatalf("got %q, want %q", got, want)
 	}
 }
+
+func TestToDoAndMediaRendering(t *testing.T) {
+	blocks := []model.Block{
+		{Type: model.TypeToDo, RichText: []model.RichText{rt("buy milk")}},
+		{Type: model.TypeToDo, Checked: true, RichText: []model.RichText{rt("done thing")}},
+		{Type: model.TypePDF, URL: "https://example.com/doc.pdf"},
+		{Type: model.TypeFile, URL: "https://notion.so/expire", Internal: true},
+		{Type: model.TypeVideo, URL: "https://example.com/clip.mp4"},
+	}
+
+	want := "- [ ] buy milk\n\n- [x] done thing\n\n" +
+		"[https://example.com/doc.pdf](https://example.com/doc.pdf)\n\n" +
+		"<!-- internal file: its URL expires and is not preserved (ADR-05) -->\n\n" +
+		"[https://example.com/clip.mp4](https://example.com/clip.mp4)"
+	if got := Markdown(blocks); got != want {
+		t.Fatalf("got %q, want %q", got, want)
+	}
+}

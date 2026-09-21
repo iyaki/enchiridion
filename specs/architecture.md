@@ -81,14 +81,16 @@ be rendered is left as a visible comment in the markdown.
 
 | Block | Markdown |
 |---|---|
-| Paragraphs, headings (3 levels), lists (bulleted and numbered), quotes | their direct equivalent |
-| Callouts | as a quote |
-| Code | fenced block with its language |
+| Paragraph, headings, quotes, callouts | markdown text (callouts as blockquotes) |
+| Bulleted / numbered lists | markdown lists (children of any block are fetched recursively and spliced in place — ADR-17) |
+| To-do items | markdown checkbox (`- [x]` / `- [ ]`) — ADR-17 |
+| Code | fenced code block with language |
 | Divider | `---` |
 | Saved links (bookmark, embed, preview) | link to the resource |
 | External images | markdown image with its URL |
 | Notion-internal images | visible comment explaining that they are not preserved (their URL expires; decision in ADR-05) |
-| Toggles | highlighted text (their hidden content is not downloaded) |
+| PDF / file / video (ADR-17) | external: link; Notion-hosted: visible comment (URL expires, ADR-05) |
+| Toggles | highlighted text; their children are fetched and rendered as sibling blocks (ADR-17) |
 | Sub-pages | visible comment with the title |
 | Tables | markdown table, with a header row when the table declares one |
 | Any other block | visible comment `<!-- unsupported block: X -->` |

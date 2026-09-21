@@ -63,6 +63,33 @@ func TestRunSyncMissingConfigExitsOne(t *testing.T) {
 	}
 }
 
+func TestParsePullArgs(t *testing.T) {
+	out, err := parsePullArgs(nil)
+	if err != nil || out != "data" {
+		t.Fatalf("no flags: got (%q, %v), want (\"data\", nil)", out, err)
+	}
+
+	custom, err := parsePullArgs([]string{"--out", "vendor/kb"})
+	if err != nil || custom != "vendor/kb" {
+		t.Fatalf("--out: got (%q, %v), want (\"vendor/kb\", nil)", custom, err)
+	}
+
+	if _, err := parsePullArgs([]string{"--bogus"}); err == nil {
+		t.Fatal("--bogus: got nil error, want error")
+	}
+	if _, err := parsePullArgs([]string{"stray"}); err == nil {
+		t.Fatal("stray argument: got nil error, want error")
+	}
+}
+
+func TestRunPullMissingTokenExitsOne(t *testing.T) {
+	t.Setenv(envGithubToken, "")
+
+	if code := runPull(nil); code != exitError {
+		t.Fatalf("pull without token: got exit %d, want %d", code, exitError)
+	}
+}
+
 func TestRunSyncSuccess(t *testing.T) {
 	t.Setenv(envToken, "secret")
 	t.Setenv(envSource, "ds-1")

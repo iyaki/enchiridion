@@ -303,6 +303,36 @@ visible comment instead of failing the page.
 
 ---
 
+## ADR-18 — Consumer projects vendor the mirror; no shared-machine assumption
+
+**Context**: the consumption docs told agents to read the mirror from
+`~/.local/share/enchiridion/` — a path that only exists on machines where an
+enchiridion installation has been synced. Consumer projects run on other
+machines (other developers' laptops, CI runners, agent sandboxes) that share
+nothing with the installation; pointing them at a home-directory cache made
+the docs unusable outside this computer. The global skill (ADR-13) covers the
+owner's machine only.
+
+**Decision**: a consumer project vendors the mirror into its own repository
+with `enchiridion pull [--out data]`. The command downloads the distribution
+repository's default-branch tarball (`GITHUB_TOKEN` with read access;
+`ENCHIRIDION_REPO` override, default `iyaki/enchiridion`) and **replaces**
+`out/knowledge` and `out/tools`. The consumer commits the result, so every
+checkout of the project — laptop, CI, agent environment — carries the mirror.
+The download completes before anything on disk is touched: a failed pull
+never damages an existing mirror. Replacing the two directories (not merging)
+propagates deletions without needing a full Notion sync locally.
+
+**Consequences**: consumer CI reads the vendored files and no longer needs a
+checkout of the private repo; freshness is bounded by the distribution
+repo's sync cadence (nightly incremental, monthly full) — a consumer
+refreshes by running `enchiridion pull` and committing; the zero-dependency
+rule holds (stdlib net/http, archive/tar, compress/gzip); the global skill
+remains the owner's-machine trigger and now instructs agents to prefer a
+vendored mirror when the project carries one.
+
+---
+
 ## Verification of the real sync (pending implementation)
 
 The only piece not verifiable offline: live API calls. Manual smoke with an

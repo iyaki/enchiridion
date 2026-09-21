@@ -40,6 +40,25 @@ In devcontainers, use the feature:
 }
 ```
 
+### Use in another project (vendor the mirror)
+
+A project that consumes the knowledge base must **not** depend on a machine
+where enchiridion was installed and synced: checkouts live on other laptops,
+CI runners, and agent sandboxes that share nothing. Instead, vendor the
+published mirror into the project's own repository — no Notion token needed:
+
+```sh
+GITHUB_TOKEN=... enchiridion pull          # writes data/knowledge/ + data/tools/
+git add data && git commit -m "vendor: enchiridion mirror"
+```
+
+`pull` replaces the two directories on every run (deletions propagate), and
+only touches them — the download completes before the replacement starts, so
+a failed pull never damages an existing mirror. The source is the
+distribution repository's default branch (`ENCHIRIDION_REPO` to override);
+freshness is bounded by its sync cadence (nightly incremental, monthly
+full). To refresh: run `enchiridion pull` again and commit the diff.
+
 ## Configure
 
 Each user provides their own values — the binary knows no one's token
@@ -75,17 +94,22 @@ system's standard ones. Format and rendering contract:
 
 ## Consumption (agents)
 
-The trigger is the global skill (`.agents/skills/enchiridion/SKILL.md`,
-installable once with `npx skills add iyaki/enchiridion`) plus, for projects
-where the explicit rule is wanted, this snippet in their `AGENTS.md`:
+Two contexts, deliberately separated:
+
+- **This machine (the owner's)**: the global skill
+  (`.agents/skills/enchiridion/SKILL.md`, installable once with
+  `npx skills add iyaki/enchiridion`) triggers on the synced cache in
+  `$ENCHIRIDION_HOME`. This is a personal setup — nothing else may rely on it.
+- **Every other project**: the mirror is vendored in the project repository
+  (`enchiridion pull`, see above) and consumed from the project's own tree,
+  with this snippet in its `AGENTS.md`:
 
 ```markdown
 ## enchiridion
 
-Primary source of truth: mirror of the knowledge base in
-`~/.local/share/enchiridion/knowledge/` (curated knowledge) and
-`~/.local/share/enchiridion/tools/` (tools, services, websites) — override
-with `$ENCHIRIDION_HOME`. Consumption is two-phase (ADR-15): search
+Primary source of truth: mirror of the knowledge base vendored in this
+repository at `data/knowledge/` (curated knowledge) and `data/tools/`
+(tools, services, websites). Consumption is two-phase (ADR-15): search
 `knowledge/` first for the recorded precedent, then use the topic tags found
 there to search `tools/` for supporting options.
 
@@ -97,9 +121,9 @@ Consult the mirror (rg/grep) BEFORE answering when the task involves:
 - citing how something was solved before
 
 Cite the entries used (file + `source_url`; `notion_url` only when the
-entry has no web source). With no precedent, say so
-explicitly. Missing cache: report it — never invent precedents.
-To update: `enchiridion sync`.
+entry has no web source). With no precedent, say so explicitly. Missing or
+stale mirror: run `enchiridion pull` (needs `GITHUB_TOKEN`) and commit the
+result — never invent precedents.
 ```
 
 ## Development

@@ -67,3 +67,9 @@ the phases order the search, they do not gate it.
 5. The mirror is about *recorded* precedents and curated knowledge. For
    everything else, answer normally — do not force the mirror into unrelated
    questions.
+6. **Prefer a vendored mirror when the project carries one**: if the current
+   repository contains its own copy (`data/knowledge/`, `data/tools/`, or a
+   path named in its `AGENTS.md`), grep that copy — it is the project's
+   pinned version and works on any machine; the machine cache in
+   `~/.local/share/enchiridion` only exists where an installation was
+   synced.

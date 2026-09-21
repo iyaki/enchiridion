@@ -16,6 +16,9 @@ components:
   notion:
     in:
       - internal/notion/**
+  pull:
+    in:
+      - internal/pull/**
   render:
     in:
       - internal/render/**

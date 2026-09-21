@@ -68,47 +68,32 @@ over the mirror (gitleaks); a mirror containing a secret is not switched.
    configuration variables to the container; allows pinning the version and
    the cache root.
    Options: `version` (default: latest), `enchiridion_home`.
+3. **Published mirror** (ADR-18): the repository itself carries the mirror
+   under `data/`, refreshed by the sync workflows. `enchiridion pull`
+   vendors it into a consumer project — see Consumption.
 
 ## Consumption
 
-The consumption trigger has two complementary mechanisms (ADR-13):
+Two contexts that must never be conflated (ADR-18):
 
-1. **Global skill** (primary case): the skill lives in this repo
-   (`.agents/skills/enchiridion/SKILL.md`) and is installed once with
-   `npx skills add` (or symlink for omp). It triggers in all sessions, in any
-   directory.
-2. **Per-project snippet**: for projects where the explicit rule is wanted in
-   the `AGENTS.md`:
-
-```markdown
-## enchiridion
-
-Primary source of truth: mirror of the knowledge base in
-`~/.local/share/enchiridion/knowledge/` (curated knowledge) and
-`~/.local/share/enchiridion/tools/` (tools, services, websites) — override
-with `$ENCHIRIDION_HOME`. Consumption is two-phase (ADR-15): search
-`knowledge/` first for the recorded precedent, then use the topic tags found
-there to search `tools/` for supporting options.
-
-Consult the mirror (rg/grep) BEFORE answering when the task involves:
-- choosing or recommending a library, framework or tool
-- defining the structure or design of a module or service
-- recommending design or architecture patterns
-- resolving a technical dispute between alternatives
-- citing how something was solved before
-
-Cite the entries used (file + `source_url`; `notion_url` only when the
-entry has no web source). With no precedent, say so
-explicitly. Missing cache: report it — never invent precedents.
-To update: `enchiridion sync`.
-```
-
-Without Notion credentials in the project: local files only.
+1. **Consumer projects (the default)**: the project vendors the mirror into
+   its own repository with `enchiridion pull [--out data]` and commits it.
+   The command downloads the distribution repository's default-branch
+   tarball with a GitHub token (`GITHUB_TOKEN`; `ENCHIRIDION_REPO` to
+   override the repository) and replaces `out/knowledge` + `out/tools` —
+   replacing propagates deletions, and the replacement starts only after
+   the download succeeded. No Notion credentials and no shared machine with
+   an enchiridion installation are involved. Agent guidance comes from the
+   project's `AGENTS.md` snippet pointing at the vendored paths.
+2. **The owner's machine**: the synced cache in `$ENCHIRIDION_HOME`
+   (sync-driven, ADR-07) plus the global skill (ADR-13). A personal setup —
+   no other project may assume it exists.
 
 ### CI of a consumer project
 
-Checkout of the private repo with `GITHUB_TOKEN` and reading of the mirror
-switched into `data/`. No Notion token.
+Nothing to configure: the mirror is committed in the consumer project, so
+CI — like any checkout — reads the vendored files. Refreshing is a normal
+pull request: run `enchiridion pull`, commit the diff.
 
 ### CI of enchiridion (this repo)
 

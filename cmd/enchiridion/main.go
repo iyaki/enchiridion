@@ -11,6 +11,7 @@ import (
 	"time"
 
 	"github.com/iyaki/enchiridion/internal/notion"
+	"github.com/iyaki/enchiridion/internal/pull"
 	"github.com/iyaki/enchiridion/internal/sync"
 )
 
@@ -26,6 +27,9 @@ const (
 	envSource  = "KNOWLEDGE_BASE_DATASOURCE_ID"
 	envHome    = "ENCHIRIDION_HOME"
 	envXDGData = "XDG_DATA_HOME"
+
+	envGithubToken = "GITHUB_TOKEN" // #nosec G101 -- environment variable name, not a credential
+	envRepo        = "ENCHIRIDION_REPO"
 
 	dirPerm = 0o755
 
@@ -48,6 +52,8 @@ func run(args []string) int {
 			return exitOK
 		case "sync":
 			return runSync(args[1:])
+		case "pull":
+			return runPull(args[1:])
 		}
 	}
 
@@ -63,14 +69,21 @@ func usage() {
 usage:
   enchiridion version
   enchiridion sync [--full]
+  enchiridion pull [--out DIR]
 
 configuration (environment):
-  NOTION_TOKEN                   Notion integration token
-  KNOWLEDGE_BASE_DATASOURCE_ID   data source to mirror
+  NOTION_TOKEN                   Notion integration token (sync)
+  KNOWLEDGE_BASE_DATASOURCE_ID   data source to mirror (sync)
   ENCHIRIDION_HOME               cache root (default: ~/.local/share/enchiridion)
+  GITHUB_TOKEN                   token that can read the distribution repo (pull)
+  ENCHIRIDION_REPO               distribution repo (default: `+pull.DefaultRepo+`)
 
 sync chooses its mode automatically (full or incremental); --full forces a
 full sync, the only mode that propagates page deletions.
+
+pull vendors the published mirror into the current project (--out, default
+"data"): no Notion credentials and no shared machine are required (ADR-18);
+commit the result so every checkout of the project carries the mirror.
 `)
 }
 
@@ -114,6 +127,55 @@ func runSync(args []string) int {
 		stats.Mode, stats.Kept, stats.Written, stats.Removed, stats.Failed)
 
 	return exitOK
+}
+
+// runPull vendors the published mirror into the current project: it needs a
+// GitHub token that can read the distribution repo, never Notion credentials
+// (ADR-18). The result is meant to be committed by the consumer project.
+func runPull(args []string) int {
+	out, err := parsePullArgs(args)
+	if err != nil {
+		usage()
+
+		return exitUsage
+	}
+
+	token := os.Getenv(envGithubToken)
+	if token == "" {
+		fmt.Fprintf(os.Stderr, "enchiridion: missing required environment variable: %s\n", envGithubToken)
+
+		return exitError
+	}
+	repo := os.Getenv(envRepo)
+	if repo == "" {
+		repo = pull.DefaultRepo
+	}
+
+	stats, err := pull.NewClient(token).Pull(repo, out)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "enchiridion: %v\n", err)
+
+		return exitError
+	}
+
+	fmt.Printf("pull complete: knowledge=%d tools=%d out=%s\n", stats.Knowledge, stats.Tools, out)
+
+	return exitOK
+}
+
+// parsePullArgs parses pull flags; only --out is allowed.
+func parsePullArgs(args []string) (out string, err error) {
+	fs := flag.NewFlagSet("pull", flag.ContinueOnError)
+	fs.SetOutput(io.Discard) // usage() explains the contract on any error
+	fs.StringVar(&out, "out", "data", "target directory for knowledge/ and tools/")
+	if err := fs.Parse(args); err != nil {
+		return "", err
+	}
+	if fs.NArg() > 0 {
+		return "", fmt.Errorf("unexpected argument: %s", fs.Arg(0))
+	}
+
+	return out, nil
 }
 
 // parseSyncArgs parses sync flags; only --full is allowed.

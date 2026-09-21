@@ -4,7 +4,7 @@ notion_id: 1a0515bc-2109-410b-895c-b7c66f09f550
 notion_url: https://app.notion.com/p/6-desaf-os-y-estrategias-de-abordaje-de-los-espacios-1-1-1a0515bc2109410b895cb7c66f09f550
 last_edited: 2023-02-16T13:52:00.000Z
 source_url: https://medium.com/redbee/6-desaf%C3%ADos-y-estrategias-de-abordaje-de-los-espacios-1-1-1f727e4e6827
-tags: ["redbee - Medium", "Español", "Line/People/Team Management", "Communication", "Article"]
+tags: ["Español", "Line/People/Team Management", "Communication", "Article", "redbee - Medium"]
 ---
 En artículos anteriores definimos [qué son y para qué sirven los Espacios 1:1](https://medium.com/redbee/espacios-uno-a-uno-qu%C3%A9-son-y-para-qu%C3%A9-sirven-e04942709903) y dimos [tips para prepararlos](https://medium.com/redbee/7-tips-para-la-preparaci%C3%B3n-de-espacios-1-1-205c705f28e9) y [para llevarlos a cabo](https://medium.com/redbee/espacios-1-a-1-de-la-preparaci%C3%B3n-a-la-acci%C3%B3n-9ba799b87fdd). Pero a medida que vayamos teniendo estos espacios de conversación con las personas que lideramos, nos vamos a encontrar con que no con todas ellas funcionan de la misma manera. Esto se debe, principalmente, a que cada persona es distinta, y, lo que nos funciona con una, puede no funcionarnos con otra. Es por eso que necesitamos adaptar estos espacios a las personas con quien los tenemos.
 

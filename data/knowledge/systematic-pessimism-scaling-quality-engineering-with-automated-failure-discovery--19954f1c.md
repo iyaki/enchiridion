@@ -4,7 +4,7 @@ notion_id: 19954f1c-7d23-81d5-ae24-d0ec062f80d2
 notion_url: https://app.notion.com/p/Systematic-Pessimism-Scaling-Quality-Engineering-With-Automated-Failure-Discovery-19954f1c7d2381d5ae24d0ec062f80d2
 last_edited: 2025-02-26T20:57:00.000Z
 source_url: https://blog.usetusk.ai/blog/systematic-pessimism-scaling-quality-engineering
-tags: ["Article", "Tusk Blog", "English", "System Design / Software Architecture", "Testing"]
+tags: ["English", "System Design / Software Architecture", "Testing", "Article", "Tusk Blog"]
 ---
 ![image](https://blog.usetusk.ai/static/images/systematic-pessimism-banner.png)
 

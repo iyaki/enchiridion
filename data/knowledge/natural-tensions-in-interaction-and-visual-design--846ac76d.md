@@ -2,9 +2,9 @@
 title: "Natural tensions in interaction and visual design"
 notion_id: 846ac76d-4abe-4052-84c5-2e718a69c096
 notion_url: https://app.notion.com/p/Natural-tensions-in-interaction-and-visual-design-846ac76d4abe405284c52e718a69c096
-last_edited: 2023-02-17T19:17:00.000Z
-source_url: https://anthonyhobday.com/blog/20220812.html
-tags: ["Guide", "anthonyhobday", "English", "UI/UX"]
+last_edited: 2026-09-21T17:02:00.000Z
+source_url: https://www.notion.so/846ac76d4abe405284c52e718a69c096
+tags: ["English", "UI/UX", "Guide", "anthonyhobday"]
 ---
 You can have too much of a good thing. Here are some good qualities that are a problem if they’re taken too far.
 

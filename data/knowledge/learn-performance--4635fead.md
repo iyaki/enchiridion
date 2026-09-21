@@ -4,7 +4,7 @@ notion_id: 4635fead-485e-4b95-b790-68847abb0c12
 notion_url: https://app.notion.com/p/Learn-Performance-4635fead485e4b95b79068847abb0c12
 last_edited: 2023-11-28T18:18:00.000Z
 source_url: https://web.dev/learn/performance
-tags: ["Guide", "web.dev", "English", "Español", "Others", "Web Development", "HTML", "CSS", "Javascript"]
+tags: ["English", "Español", "Others", "Web Development", "HTML", "CSS", "Javascript", "Guide", "web.dev"]
 ---
 This course is designed for those new to web performance, a vital aspect of the user experience. It covers key web performance concepts and techniques for improving performance.
 

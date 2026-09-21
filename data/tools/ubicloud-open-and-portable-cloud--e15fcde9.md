@@ -4,7 +4,7 @@ notion_id: e15fcde9-8232-47a2-a7dd-848e36d07ba1
 notion_url: https://app.notion.com/p/Ubicloud-Open-and-portable-cloud-e15fcde9823247a2a7dd848e36d07ba1
 last_edited: 2024-03-22T19:32:00.000Z
 source_url: https://www.ubicloud.com/
-tags: ["Tool", "English", "Hosting", "Virtualization", "Untried"]
+tags: ["English", "Hosting", "Virtualization", "Untried", "Tool"]
 ---
 Ubicloud provides cloud services on bare metal providers, such as Hetzner, OVH, or AWS Bare Metal. You can set it up yourself or use our managed service
 

@@ -2,13 +2,15 @@
 title: "Taking out the guesswork: How to set clear expectations as a manager"
 notion_id: 1ebb5f7d-ea62-403d-8aef-e97d78900ff0
 notion_url: https://app.notion.com/p/Taking-out-the-guesswork-How-to-set-clear-expectations-as-a-manager-1ebb5f7dea62403d8aefe97d78900ff0
-last_edited: 2023-04-25T13:32:00.000Z
-source_url: https://leaddev.com/communication-relationships/taking-out-guesswork-how-set-clear-expectations-manager
-tags: ["Line/People/Team Management", "Communication", "Article", "LeadDev", "English"]
+last_edited: 2026-09-21T17:31:00.000Z
+source_url: https://leaddev.com/communication/taking-out-guesswork-how-set-clear-expectations-manager
+tags: ["LeadDev", "English", "Line/People/Team Management", "Communication", "Article"]
 ---
 [https://leaddev.com/communication-relationships/taking-out-guesswork-how-set-clear-expectations-manager](https://leaddev.com/communication-relationships/taking-out-guesswork-how-set-clear-expectations-manager)
 
 
+
+<!-- unsupported block: link_to_page -->
 
 You have 1 article left to read this month before you need to register a free LeadDev.com account.
 

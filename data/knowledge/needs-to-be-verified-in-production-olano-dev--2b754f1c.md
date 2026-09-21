@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-815f-a712-cddc0111d80a
 notion_url: https://app.notion.com/p/Needs-to-be-verified-in-production-olano-dev-2b754f1c7d23815fa712cddc0111d80a
 last_edited: 2025-11-26T19:08:00.000Z
 source_url: https://olano.dev/blog/verified-in-production/
-tags: ["Javier Garzas Blog", "English", "Agile", "Product Management", "Team Management", "Communication", "Testing", "Productivity", "Article"]
+tags: ["English", "Agile", "Product Management", "Team Management", "Communication", "Testing", "Productivity", "Article", "Javier Garzas Blog"]
 ---
 Some developers think that their job is to close Jira tickets, others that it’s solving business problems. Let’s call these mode 1 (process-oriented) and mode 2 (problem-oriented)[1](https://olano.dev/blog/verified-in-production/#footnote-1). While I’m inclined to think that the second mode is more effective and makes my own work more enjoyable, both are valid and honest. What’s more, most of us switch modes based on our perceived relevance of the task at hand, our interest in it, our current level of energy, etc.
 

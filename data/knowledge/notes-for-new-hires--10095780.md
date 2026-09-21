@@ -4,7 +4,7 @@ notion_id: 10095780-5c94-46ca-a206-1a5c7c7b0d87
 notion_url: https://app.notion.com/p/Notes-for-new-hires-100957805c9446caa2061a5c7c7b0d87
 last_edited: 2024-08-16T19:11:00.000Z
 source_url: https://dev.clintonblackburn.com/2024/07/07/notes-for-new-hires
-tags: ["English", "Producer (Individual Contributor)", "Career Growth", "Jobs", "Article", "Clinton Blackburn"]
+tags: ["Producer (Individual Contributor)", "Career Growth", "Jobs", "Article", "Clinton Blackburn", "English"]
 ---
 I’m onboarding new engineers at Vori, and finally took some time to write a few ideas I’ve been kicking around and sharing internally. I have personally found these practices helpful over the past few years, and think others might, as well. This isn’t applicable to only junior engineers, or new hires (despite the title). I didn’t learn some of these lessons until I was eight years into my career as a tech lead at edX, or a couple years later at Stripe.
 

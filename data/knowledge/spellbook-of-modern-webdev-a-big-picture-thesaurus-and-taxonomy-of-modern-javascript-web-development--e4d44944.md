@@ -4,7 +4,7 @@ notion_id: e4d44944-b662-4b44-9726-06f18f74a27f
 notion_url: https://app.notion.com/p/Spellbook-of-modern-webdev-A-Big-Picture-Thesaurus-and-Taxonomy-of-Modern-JavaScript-Web-Developm-e4d44944b6624b44972606f18f74a27f
 last_edited: 2023-01-13T16:15:00.000Z
 source_url: https://github.com/dexteryy/spellbook-of-modern-webdev/#
-tags: ["Book", "English", "Web Development", "Javascript"]
+tags: ["English", "Web Development", "Javascript", "Book"]
 ---
 # Spellbook of Modern Web Dev
 

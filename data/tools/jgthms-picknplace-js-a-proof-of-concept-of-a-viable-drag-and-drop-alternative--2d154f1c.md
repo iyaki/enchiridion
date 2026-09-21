@@ -4,7 +4,7 @@ notion_id: 2d154f1c-7d23-8134-93e8-d99ab2f14f7c
 notion_url: https://app.notion.com/p/jgthms-picknplace-js-A-proof-of-concept-of-a-viable-drag-and-drop-alternative-2d154f1c7d23813493e8d99ab2f14f7c
 last_edited: 2025-12-22T01:39:00.000Z
 source_url: https://github.com/jgthms/picknplace.js
-tags: ["Tool", "GitHub", "English", "Web Development", "Frontend", "Javascript"]
+tags: ["English", "Web Development", "Frontend", "Javascript", "Tool", "GitHub"]
 ---
 # picknplace.js
 

@@ -4,7 +4,7 @@ notion_id: 2ff54f1c-7d23-8188-88e9-dc77047bdee7
 notion_url: https://app.notion.com/p/Open-Source-Society-University-ossu-computer-science-Path-to-a-free-self-taught-education-in-C-2ff54f1c7d23818888e9dc77047bdee7
 last_edited: 2026-02-06T01:54:00.000Z
 source_url: https://github.com/ossu/computer-science
-tags: ["English", "Education", "Software Development", "Curriculum", "Tool", "Guide", "GitHub"]
+tags: ["Tool", "Guide", "GitHub", "English", "Education", "Software Development", "Curriculum"]
 ---
 ![image](https://github.com/ossu/computer-science/raw/master/images/ossu-logo.webp)
 

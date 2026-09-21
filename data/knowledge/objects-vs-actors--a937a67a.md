@@ -2,9 +2,9 @@
 title: "Objects vs. Actors"
 notion_id: a937a67a-ea55-4561-9999-5ffbabf7637d
 notion_url: https://app.notion.com/p/Objects-vs-Actors-a937a67aea55456199995ffbabf7637d
-last_edited: 2023-04-25T14:25:00.000Z
+last_edited: 2026-09-21T17:19:00.000Z
 source_url: https://hackernoon.com/objects-vs-actors-6l1g3ex4
-tags: ["Hackernoon", "English", "Programming", "System Design / Software Architecture", "Article"]
+tags: ["Programming", "System Design / Software Architecture", "Article", "Hackernoon", "English"]
 ---
 [https://hackernoon.com/objects-vs-actors-6l1g3ex4](https://hackernoon.com/objects-vs-actors-6l1g3ex4)
 

@@ -4,7 +4,7 @@ notion_id: 6b34c8a4-732b-4f55-a887-b5fc618397e2
 notion_url: https://app.notion.com/p/Who-builds-it-and-who-runs-it-SRE-team-topologies-6b34c8a4732b4f55a887b5fc618397e2
 last_edited: 2023-03-29T23:35:00.000Z
 source_url: https://stackoverflow.blog/2023/03/20/who-builds-it-and-who-runs-it-sre-team-topologies/
-tags: ["English", "DevOps", "Site Reliability Engineering", "Line/People/Team Management", "Article", "Stack Overflow Blog"]
+tags: ["Stack Overflow Blog", "English", "DevOps", "Site Reliability Engineering", "Line/People/Team Management", "Article"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

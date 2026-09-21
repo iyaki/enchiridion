@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-8198-b2f7-e7e6a0dcea6c
 notion_url: https://app.notion.com/p/Everything-I-know-about-good-system-design-2b754f1c7d238198b2f7e7e6a0dcea6c
 last_edited: 2025-11-26T19:02:00.000Z
 source_url: https://www.seangoedecke.com/good-system-design/
-tags: ["System Design / Software Architecture", "Article", "The Developing Dev - Ryan Peterman", "English"]
+tags: ["English", "System Design / Software Architecture", "Article", "The Developing Dev - Ryan Peterman"]
 ---
 I see a lot of bad system design advice. One classic is the LinkedIn-optimized “bet you never heard of _queues_” style of post, presumably aimed at people who are new to the industry. Another is the Twitter-optimized “you’re a terrible engineer if you ever store booleans in a database” clever trick[1](https://www.seangoedecke.com/good-system-design/#fn-1). Even good system design advice can be kind of bad. I love _Designing Data-Intensive Applications_, but I don’t think it’s particularly useful for most system design problems engineers will run into.
 

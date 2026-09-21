@@ -4,7 +4,7 @@ notion_id: 4e84d04a-10b0-42d9-bf0c-91b5574efcb5
 notion_url: https://app.notion.com/p/Defining-our-ideal-customer-profile-ICP-is-the-most-important-thing-we-ever-did-4e84d04a10b042d9bf0c91b5574efcb5
 last_edited: 2024-02-12T15:20:00.000Z
 source_url: https://newsletter.posthog.com/p/defining-our-icp-is-the-most-important
-tags: ["Article", "Product for Engineers - PostHog newsletter", "English", "Product Management", "Entrepreneurship"]
+tags: ["English", "Product Management", "Entrepreneurship", "Article", "Product for Engineers - PostHog newsletter"]
 ---
 Defining our ideal customer profile (ICP) is one of the most important things we’ve ever done. We wish we’d done it sooner. Most startup founders say the same.
 

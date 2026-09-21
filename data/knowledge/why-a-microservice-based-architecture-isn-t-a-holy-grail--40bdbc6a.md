@@ -4,7 +4,7 @@ notion_id: 40bdbc6a-baaa-4340-bfe9-78c08337882e
 notion_url: https://app.notion.com/p/Why-a-microservice-based-architecture-isn-t-a-holy-grail-40bdbc6abaaa4340bfe978c08337882e
 last_edited: 2023-04-20T19:59:00.000Z
 source_url: https://madewithlove.com/blog/why-a-microservice-based-architecture-isnt-a-holy-grail/
-tags: ["English", "System Design / Software Architecture", "Article", "madewithlove Blog"]
+tags: ["Article", "madewithlove Blog", "English", "System Design / Software Architecture"]
 ---
 There are several reasons why a microservices-based architecture is attractive to your engineering team. We often find startups have made this decision without fully understanding the trade-offs. Here are some reasons to rethink the decision to use microservices as part of your engineering solution.
 

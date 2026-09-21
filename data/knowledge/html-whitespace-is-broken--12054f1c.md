@@ -2,9 +2,9 @@
 title: "HTML Whitespace is Broken"
 notion_id: 12054f1c-7d23-81ff-ba05-fc9429107d39
 notion_url: https://app.notion.com/p/HTML-Whitespace-is-Broken-12054f1c7d2381ffba05fc9429107d39
-last_edited: 2024-11-06T20:26:00.000Z
-source_url: https://blog.dwac.dev/posts/html-whitespace
-tags: ["English", "HTML", "Article", "Devel without a Cause (Douglas Parker)"]
+last_edited: 2026-09-21T16:58:00.000Z
+source_url: https://blog.dwac.dev/posts/html-whitespace/
+tags: ["Article", "Devel without a Cause (Douglas Parker)", "English", "HTML"]
 ---
 Recently, I was working on a project which required a deeper understanding of how whitespace works in HTML. I was never a fan of HTML's whitespace behavior before as I've been burned by it a few times. But as I dug into it more deeply, I found myself discovering complex design issues that I wanted to explore in a blog post. This is partially to write down my knowledge in this space for future reference and partially to vent about how unnecessarily complicated it all is.
 

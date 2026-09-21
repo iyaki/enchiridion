@@ -2,8 +2,8 @@
 title: "Confusing git terminology"
 notion_id: 5da0835c-6c80-4665-ae2b-c55c203f238b
 notion_url: https://app.notion.com/p/Confusing-git-terminology-5da0835c6c804665ae2bc55c203f238b
-last_edited: 2023-11-06T11:32:00.000Z
-source_url: https://jvns.ca/blog/2023/11/01/confusing-git-terminology
+last_edited: 2026-09-21T16:58:00.000Z
+source_url: https://jvns.ca/blog/2023/11/01/confusing-git-terminology/
 tags: ["Article", "Guide", "Julia Evans", "English", "Programming"]
 ---
 Hello! I’m slowly working on explaining git. One of my biggest problems is that after almost 15 years of using git, I’ve become very used to git’s idiosyncracies and it’s easy for me to forget what’s confusing about it.

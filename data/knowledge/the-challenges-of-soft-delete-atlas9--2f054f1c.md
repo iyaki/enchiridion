@@ -4,7 +4,7 @@ notion_id: 2f054f1c-7d23-817b-81d5-d4aa12f31216
 notion_url: https://app.notion.com/p/The-challenges-of-soft-delete-atlas9-2f054f1c7d23817b81d5d4aa12f31216
 last_edited: 2026-09-18T00:53:00.000Z
 source_url: https://atlas9.dev/blog/soft-delete.html
-tags: ["English", "Databases", "Software Development", "System Design / Software Architecture", "Article", "Tutorial", "Guide", "atlas9"]
+tags: ["atlas9", "English", "Databases", "Software Development", "System Design / Software Architecture", "Article", "Tutorial", "Guide"]
 ---
 Software projects often implement "soft delete", maybe with a `deleted` boolean or an `archived_at` timestamp column. If customers accidentally delete their data, they can recover it, which makes work easier for customer support teams. Perhaps archived records are even required for compliance or audit reasons.
 

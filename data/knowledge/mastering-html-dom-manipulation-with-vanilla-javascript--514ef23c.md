@@ -4,7 +4,7 @@ notion_id: 514ef23c-9ca2-4341-a48b-4b3339bda336
 notion_url: https://app.notion.com/p/Mastering-HTML-DOM-manipulation-with-vanilla-JavaScript-514ef23c9ca24341a48b4b3339bda336
 last_edited: 2023-11-28T17:47:00.000Z
 source_url: https://phuoc.ng/collection/html-dom/
-tags: ["English", "Web Development", "HTML", "Javascript", "Guide", "Phuoc Nguyen"]
+tags: ["Web Development", "HTML", "Javascript", "Guide", "Phuoc Nguyen", "English"]
 ---
 Web development moves at lightning speed. I still remember when I first started using libraries like [jQuery](https://jquery.com/), [Prototype](http://prototypejs.org/), [script.aculo.us](https://script.aculo.us/), [Zepto](https://zeptojs.com/), and many more. Even with modern tools like [Angular](https://angular.io/), [VueJS](https://vuejs.org/), [React](https://react.dev/), [Solid](https://www.solidjs.com/) and [Svelte](https://svelte.dev/), we still have to deal with the Document Object Model (DOM). While these frameworks encapsulate and hide direct DOM management, they still give us access to work with the DOM via _refs_ and _event handlers_.
 

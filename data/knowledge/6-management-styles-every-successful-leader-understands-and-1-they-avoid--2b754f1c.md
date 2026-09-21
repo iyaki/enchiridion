@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-81f3-8ce5-dbd48864248b
 notion_url: https://app.notion.com/p/6-Management-Styles-Every-Successful-Leader-Understands-and-1-They-Avoid-2b754f1c7d2381f38ce5dbd48864248b
 last_edited: 2025-11-26T18:23:00.000Z
 source_url: https://www.radicalcandor.com/blog/types-of-management-styles
-tags: ["English", "Leadership", "Management", "Career Growth", "Team Management", "Communication", "Change Management", "Article", "Radical Candor"]
+tags: ["Leadership", "Management", "Career Growth", "Team Management", "Communication", "Change Management", "Article", "Radical Candor", "English"]
 ---
 ![image](https://www.radicalcandor.com/hubfs/Imported_Blog_Media/management-styles-1.webp)
 

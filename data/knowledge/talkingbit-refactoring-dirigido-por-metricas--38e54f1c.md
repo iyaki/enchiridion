@@ -4,7 +4,7 @@ notion_id: 38e54f1c-7d23-81e0-a6a1-f242e64fe356
 notion_url: https://app.notion.com/p/TalkingBit-Refactoring-dirigido-por-m-tricas-38e54f1c7d2381e0a6a1f242e64fe356
 last_edited: 2026-06-29T03:39:00.000Z
 source_url: https://franiglesias.github.io/metric-driven-refactoring/
-tags: ["Español", "Software Architecture", "Quality", "Metrics", "Refactoring", "Article", "The Talking Bit - Fran Iglesias"]
+tags: ["Software Architecture", "Quality", "Metrics", "Refactoring", "Article", "The Talking Bit - Fran Iglesias", "Español"]
 ---
 Lejos de ser una cuestión estética o academicista, el refactoring es una herramienta de control de costes del desarrollo de software. Incluso en tiempos de Inteligencia Artificial.
 

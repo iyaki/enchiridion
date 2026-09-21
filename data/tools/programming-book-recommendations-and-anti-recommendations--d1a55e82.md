@@ -4,7 +4,7 @@ notion_id: d1a55e82-aa43-4756-9879-b344213119de
 notion_url: https://app.notion.com/p/Programming-book-recommendations-and-anti-recommendations-d1a55e82aa4347569879b344213119de
 last_edited: 2023-06-20T13:42:00.000Z
 source_url: https://danluu.com/programming-books/
-tags: ["Programming", "Learning", "Website", "Book", "English"]
+tags: ["Website", "Book", "English", "Programming", "Learning"]
 ---
 There are a lot of “12 CS books every programmer must read” lists floating around out there. That's nonsense. The field is too broad for almost any topic to be required reading for all programmers, and even if a topic is that important, people's learning preferences differ too much for any book on that topic to be the best book on the topic for all people.
 

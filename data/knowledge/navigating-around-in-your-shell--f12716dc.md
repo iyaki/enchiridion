@@ -4,7 +4,7 @@ notion_id: f12716dc-c8ba-4098-a192-1c014102857d
 notion_url: https://app.notion.com/p/Navigating-around-in-your-shell-f12716dcc8ba4098a1921c014102857d
 last_edited: 2023-11-28T17:46:00.000Z
 source_url: https://blog.meain.io/2023/navigating-around-in-shell/
-tags: ["Article", "meain/blog", "English", "Shell/Bash"]
+tags: ["English", "Shell/Bash", "Article", "meain/blog"]
 ---
 I have been using terminals for a long time, initially because I thought they looked cool, and later because I genuinely found them to be easier/faster to get stuff done. And since I've been at it for a while, navigating through directories is something I think I've gotten good at. In this blog, I would like to give some tips on ways you can navigate around in your shell quickly.
 

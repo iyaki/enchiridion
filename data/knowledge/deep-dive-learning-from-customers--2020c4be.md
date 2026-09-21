@@ -2,9 +2,9 @@
 title: "Deep-Dive: Learning from Customers"
 notion_id: 2020c4be-0e8b-4ccc-9d19-e5587d70c5c5
 notion_url: https://app.notion.com/p/Deep-Dive-Learning-from-Customers-2020c4be0e8b4ccc9d19e5587d70c5c5
-last_edited: 2024-06-05T18:37:00.000Z
-source_url: https://productcollective.com/learning-from-customers/
-tags: ["English", "Product Management", "Article", "PRODUCT COLLECTIVE"]
+last_edited: 2026-09-21T16:58:00.000Z
+source_url: https://www.mindtheproduct.com/
+tags: ["Product Management", "Article", "PRODUCT COLLECTIVE", "English"]
 ---
 As Product Managers and Leaders, we’re wired to solve problems. When we see a customer pain point, our instinct is to jump straight into ideation mode, brainstorming elegant solutions that will wow users and make their lives easier. After all, that’s what we’re hired to do, right? Ship products that make a difference.
 

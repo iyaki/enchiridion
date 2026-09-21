@@ -4,7 +4,7 @@ notion_id: d542a0cd-094d-4a4a-9354-7c53b09f69df
 notion_url: https://app.notion.com/p/HyperText-Transfer-Protocol-HTTP-explained-d542a0cd094d4a4a93547c53b09f69df
 last_edited: 2024-05-27T00:20:00.000Z
 source_url: https://http.dev/
-tags: ["English", "Network", "Website", "Guide"]
+tags: ["Network", "Website", "Guide", "English"]
 ---
 The Hyper Text Transfer Protocol, is the foundation and primary means for requesting and receiving hypermedia (web-based) resources, for example _HTML_, images, text and media files, and is part of the internet protocol suite.
 

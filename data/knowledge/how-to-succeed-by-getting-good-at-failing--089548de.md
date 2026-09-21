@@ -2,8 +2,8 @@
 title: "How to succeed by getting good at failing"
 notion_id: 089548de-8d34-46a3-bdd6-b2a57bdcda54
 notion_url: https://app.notion.com/p/How-to-succeed-by-getting-good-at-failing-089548de8d3446a3bdd6b2a57bdcda54
-last_edited: 2023-01-25T19:38:00.000Z
-source_url: https://leaddev.com/continuous-learning/how-succeed-getting-good-failing
+last_edited: 2026-09-21T17:03:00.000Z
+source_url: https://leaddev.com/career-development/how-succeed-getting-good-failing
 tags: ["English", "Leadersheep", "Producer (Individual Contributor)", "Line/People/Team Management", "Article", "LeadDev"]
 ---
 When I embarked on a new career in coding early last year, ‘get good at failing’ was a piece of advice that struck a chord with me. With it, my advisor – a senior developer whom I respect very much – encouraged me to be transparent in areas I lacked experience and to embrace mistakes as learning opportunities. Sounds straightforward, right? Then why did this seemingly logical path to success instill a sense of anxiety?

@@ -2,8 +2,8 @@
 title: "Flagsmith - Open Source Feature Flag & Remote Config Service"
 notion_id: bf59be64-1be1-4512-b03f-3a0609e554d8
 notion_url: https://app.notion.com/p/Flagsmith-Open-Source-Feature-Flag-Remote-Config-Service-bf59be641be14512b03f3a0609e554d8
-last_edited: 2023-01-13T23:56:00.000Z
-source_url: https://flagsmith.com/
+last_edited: 2026-09-21T17:05:00.000Z
+source_url: https://www.flagsmith.com/
 tags: ["English", "Programming", "System Design / Software Architecture", "DevOps", "Product Management", "Continuous Integration/Continuous Delivery", "Tool", "Service"]
 ---
 Release features with confidence; manage feature flags across web, mobile, and server side applications. Use our hosted API, deploy to your own private cloud, or run on-premises

@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-815d-bf2d-fd021bff30e1
 notion_url: https://app.notion.com/p/beclab-Olares-Olares-An-Open-Source-Personal-Cloud-to-Reclaim-Your-Data-2b754f1c7d23815dbf2dfd021bff30e1
 last_edited: 2025-12-17T13:15:00.000Z
 source_url: https://github.com/beclab/Olares
-tags: ["English", "DevOps", "Information Security", "Cloud", "Automation", "Open Source", "Software Architecture", "Tool", "Github Blog"]
+tags: ["DevOps", "Information Security", "Cloud", "Automation", "Open Source", "Software Architecture", "Tool", "Github Blog", "English"]
 ---
 # Olares: An Open-Source Personal Cloud to Reclaim Your Data
 

@@ -5,7 +5,7 @@ notion_id: 13f12200-5812-4364-a1c4-8921243631eb
 notion_url: https://app.notion.com/p/SupportsCSS-Feature-Detection-for-Modern-CSS-13f1220058124364a1c48921243631eb
 last_edited: 2023-06-15T23:49:00.000Z
 source_url: https://supportscss.dev/
-tags: ["English", "Frontend", "CSS", "Untried", "Framework/Library"]
+tags: ["Frontend", "CSS", "Untried", "Framework/Library", "English"]
 ---
 Live, in-browser detection of modern CSS support for selectors, features, and at-rules. Applies support-based classes, exposes a results object, and allows custom tests.
 

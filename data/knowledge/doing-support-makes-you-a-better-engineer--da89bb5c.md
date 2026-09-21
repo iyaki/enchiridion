@@ -4,7 +4,7 @@ notion_id: da89bb5c-78f1-4926-b3d1-6fbfe7217c21
 notion_url: https://app.notion.com/p/Doing-support-makes-you-a-better-engineer-da89bb5c78f14926b3d16fbfe7217c21
 last_edited: 2024-10-18T18:42:00.000Z
 source_url: https://newsletter.posthog.com/p/doing-support-makes-you-a-better
-tags: ["Programming", "On Call", "Career Growth", "Article", "PostHog", "English"]
+tags: ["English", "Programming", "On Call", "Career Growth", "Article", "PostHog"]
 ---
 _Welcome to Product for Engineers, a newsletter created by _[_PostHog_](https://posthog.com/?utm_source=posthog-newsletter&utm_medium=email)_ for engineers and founders who want to build successful startups._
 

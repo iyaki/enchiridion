@@ -4,7 +4,7 @@ notion_id: 3df54f1c-7d23-81d4-8145-da1a43618c3b
 notion_url: https://app.notion.com/p/binwiederhier-ntfy-Send-push-notifications-to-your-phone-or-desktop-using-PUT-POST-3df54f1c7d2381d48145da1a43618c3b
 last_edited: 2026-09-18T01:19:00.000Z
 source_url: https://github.com/binwiederhier/ntfy
-tags: ["English", "Web Development", "Notification", "Open Source", "DevOps", "Automation", "Tool", "Service", "GitHub"]
+tags: ["GitHub", "English", "Web Development", "Notification", "Open Source", "DevOps", "Automation", "Tool", "Service"]
 ---
 ---
 

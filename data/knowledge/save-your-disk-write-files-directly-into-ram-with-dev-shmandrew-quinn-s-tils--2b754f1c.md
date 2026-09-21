@@ -2,8 +2,8 @@
 title: "Save your disk, write files directly into RAM with /dev/shmAndrew Quinn's TILs"
 notion_id: 2b754f1c-7d23-813c-92a0-cf7868bf518d
 notion_url: https://app.notion.com/p/Save-your-disk-write-files-directly-into-RAM-with-dev-shmAndrew-Quinn-s-TILs-2b754f1c7d23813c92a0cf7868bf518d
-last_edited: 2025-11-26T18:57:00.000Z
-source_url: https://hiandrewquinn.github.io/til-site/posts/save-your-disk-write-files-directly-into-ram-with-dev-shm/
+last_edited: 2026-09-21T16:57:00.000Z
+source_url: https://til.andrew-quinn.me/posts/save-your-disk-write-files-directly-into-ram-with-dev-shm/
 tags: ["English", "Linux", "System Design / Software Architecture", "DevOps", "Performance", "Article", "Note", "Hackernoon"]
 ---
 Given my interest in extending the life of my SD cards and hard drives as much as possible, I’m surprised I haven’t come across `/dev/shm` before. In a word it’s a world-accessible RAM scratchpad, which seems baked right into POSIX, so that virtually every Unix system already has it mounted as a `tmpfs` by default:

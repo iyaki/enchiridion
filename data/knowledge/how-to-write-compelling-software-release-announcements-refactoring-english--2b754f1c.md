@@ -2,9 +2,9 @@
 title: "How to Write Compelling Software Release Announcements · Refactoring English"
 notion_id: 2b754f1c-7d23-81a9-bd1c-f30c7b4f0f90
 notion_url: https://app.notion.com/p/How-to-Write-Compelling-Software-Release-Announcements-Refactoring-English-2b754f1c7d2381a9bd1cf30c7b4f0f90
-last_edited: 2025-11-26T17:45:00.000Z
-source_url: https://refactoringenglish.com/chapters/release-announcements/
-tags: ["Refactoring English", "English", "Product Management", "Communication", "Documentation", "Article"]
+last_edited: 2026-09-21T16:57:00.000Z
+source_url: https://refactoringenglish.com/excerpts/release-announcements/
+tags: ["English", "Product Management", "Communication", "Documentation", "Article", "Refactoring English"]
 ---
 A release announcement showcases how the user’s experience is better today than it was yesterday. That sounds obvious, but most release announcements seem to forget that there’s a user at all.
 

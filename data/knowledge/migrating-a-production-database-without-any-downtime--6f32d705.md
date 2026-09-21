@@ -2,9 +2,9 @@
 title: "Migrating a production database without any downtime"
 notion_id: 6f32d705-4871-4f00-8bdf-f25b4ce5c959
 notion_url: https://app.notion.com/p/Migrating-a-production-database-without-any-downtime-6f32d70548714f008bdff25b4ce5c959
-last_edited: 2023-07-10T18:10:00.000Z
-source_url: https://teamplify.com/blog/zero-downtime-DB-migrations/
-tags: ["Article", "English", "Continuous Integration/Continuous Delivery", "SysAdmin", "Databases"]
+last_edited: 2026-09-21T16:59:00.000Z
+source_url: https://ivelum.com/blog/zero-downtime-db-migrations/
+tags: ["English", "Continuous Integration/Continuous Delivery", "SysAdmin", "Databases", "Article"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

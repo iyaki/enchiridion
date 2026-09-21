@@ -4,7 +4,7 @@ notion_id: 1d554f1c-7d23-8194-8983-e9f868ee1272
 notion_url: https://app.notion.com/p/Four-years-of-running-a-SaaS-in-a-competitive-market-Max-Rozen-1d554f1c7d2381948983e9f868ee1272
 last_edited: 2025-11-26T17:51:00.000Z
 source_url: https://maxrozen.com/on-four-years-running-saas-competitive-market
-tags: ["English", "SaaS", "Entrepreneurship", "Product Management", "Article"]
+tags: ["Article", "English", "SaaS", "Entrepreneurship", "Product Management"]
 ---
 When I played around with the technology that would eventually become [OnlineOrNot](https://onlineornot.com/) back in 2021, a quick search showed me that there were 200 listed alternatives to the tool I wanted to replace. I thought most of them sucked.
 

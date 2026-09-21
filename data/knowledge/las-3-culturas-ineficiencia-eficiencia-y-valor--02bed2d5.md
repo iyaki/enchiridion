@@ -2,9 +2,9 @@
 title: "Las 3 culturas, ineficiencia, eficiencia y valor"
 notion_id: 02bed2d5-ce3a-4823-b933-873d099fff93
 notion_url: https://app.notion.com/p/Las-3-culturas-ineficiencia-eficiencia-y-valor-02bed2d5ce3a4823b933873d099fff93
-last_edited: 2022-12-27T13:01:00.000Z
-source_url: https://acumbamail.com/envio/ver/d3d6066c-3a50-11ed-b69e-005056bd5094
-tags: ["Article", "This is the Agile Way (Javier Garzas)", "Español", "Agile", "Project Management", "Line/People/Team Management"]
+last_edited: 2026-09-21T17:06:00.000Z
+source_url: https://acumbamail.com/envio/ver/d3d6066c-3a50-11ed-b69e-005056bd5094/
+tags: ["Español", "Agile", "Project Management", "Line/People/Team Management", "Article", "This is the Agile Way (Javier Garzas)"]
 ---
 Ayer mi amigo Domingo Gaitero y yo dábamos, sorprendentemente, una charla juntos. También era muy sorprendente que la charla fuese en un evento presencial y más sorprendente aún… lleno de gente, 400 cuerpos y almas. Incluso había stands de patrocinadores, de esos que se veían antes, y merchandising y bolsas y paella y todo. Un regreso al pasado en toda regla.
 

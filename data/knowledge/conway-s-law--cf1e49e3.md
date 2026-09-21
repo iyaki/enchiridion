@@ -4,7 +4,7 @@ notion_id: cf1e49e3-9bfe-492a-a79b-3c375cd5c134
 notion_url: https://app.notion.com/p/Conway-s-Law-cf1e49e39bfe492aa79b3c375cd5c134
 last_edited: 2023-03-30T13:44:00.000Z
 source_url: https://martinfowler.com/bliki/ConwaysLaw.html
-tags: ["Article", "Martin Fowler", "English", "Line/People/Team Management", "System Design / Software Architecture"]
+tags: ["Line/People/Team Management", "System Design / Software Architecture", "Article", "Martin Fowler", "English"]
 ---
 Pretty much all the practitioners I favor in Software Architecture are deeply suspicious of any kind of general law in the field. Good software architecture is very context-specific, analyzing trade-offs that resolve differently across a wide range of environments. But if there is one thing they all agree on, it's the importance and power of Conway's Law. Important enough to affect every system I've come across, and powerful enough that you're doomed to defeat if you try to fight it.
 

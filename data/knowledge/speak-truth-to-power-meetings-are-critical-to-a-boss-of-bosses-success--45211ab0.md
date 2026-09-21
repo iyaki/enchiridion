@@ -2,9 +2,9 @@
 title: "Speak-Truth-To-Power Meetings Are Critical To A Boss Of Bosses Success"
 notion_id: 45211ab0-889d-4bae-9209-4a8e3993dc15
 notion_url: https://app.notion.com/p/Speak-Truth-To-Power-Meetings-Are-Critical-To-A-Boss-Of-Bosses-Success-45211ab0889d4bae92094a8e3993dc15
-last_edited: 2023-03-30T13:52:00.000Z
-source_url: https://www.radicalcandor.com/speak-truth-to-power-meetings/
-tags: ["English", "Communication", "Line/People/Team Management", "Leadersheep", "Article", "Radical Candor"]
+last_edited: 2026-09-21T17:01:00.000Z
+source_url: https://www.radicalcandor.com/blog/skip-level-meetings
+tags: ["Radical Candor", "English", "Communication", "Line/People/Team Management", "Leadersheep", "Article"]
 ---
 One of the most important things any manager of managers can do to foster a culture of Radical Candor is to have so-called “[skip-level meetings.](https://www.linkedin.com/pulse/skip-level-meetings-quick-start-guide-steffen-bewersdorff/?trk=public_profile_article_view)” I don’t love the term “skip level” because it reinforces hierarchy and the whole point of this process is to put hierarchy to the side so that people will actually “[speak truth to power](https://www.radicalcandor.com/podcast/quiet-quitting-bad-bosses/).”
 

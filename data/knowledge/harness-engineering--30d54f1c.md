@@ -2,9 +2,9 @@
 title: "Harness Engineering"
 notion_id: 30d54f1c-7d23-81b8-9081-f9e9c6bf8500
 notion_url: https://app.notion.com/p/Harness-Engineering-30d54f1c7d2381b89081f9e9c6bf8500
-last_edited: 2026-02-20T01:56:00.000Z
-source_url: https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html
-tags: ["English", "Artificial Intelligence (AI)", "Software Development", "DevOps", "System Design / Software Architecture", "Performance", "Productivity", "Article", "Service", "martinfowler"]
+last_edited: 2026-09-21T16:57:00.000Z
+source_url: https://martinfowler.com/articles/harness-engineering.html
+tags: ["Article", "Service", "martinfowler", "English", "Artificial Intelligence (AI)", "Software Development", "DevOps", "System Design / Software Architecture", "Performance", "Productivity"]
 ---
 Birgitta is a Distinguished Engineer and AI-assisted delivery expert at Thoughtworks. She has over 20 years of experience as a software developer, architect and technical leader.
 

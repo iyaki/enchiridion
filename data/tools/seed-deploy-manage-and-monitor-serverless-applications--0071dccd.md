@@ -4,7 +4,7 @@ notion_id: 0071dccd-4f15-4b9f-a64f-0d0ddafccae8
 notion_url: https://app.notion.com/p/SEED-Deploy-manage-and-monitor-Serverless-applications-0071dccd4f154b9fa64f0d0ddafccae8
 last_edited: 2023-08-16T14:27:00.000Z
 source_url: https://seed.run/
-tags: ["Service", "English", "Serverless", "Untried"]
+tags: ["Serverless", "Untried", "Service", "English"]
 ---
 [New —  Seed now supports SST v2](https://seed.run/blog/sst-v2-support)
 

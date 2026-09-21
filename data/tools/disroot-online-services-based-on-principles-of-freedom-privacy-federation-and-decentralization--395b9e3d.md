@@ -2,9 +2,9 @@
 title: "Disroot - Online services based on principles of freedom, privacy, federation and decentralization"
 notion_id: 395b9e3d-2a0c-4e1a-9be5-f41dfa981a6f
 notion_url: https://app.notion.com/p/Disroot-Online-services-based-on-principles-of-freedom-privacy-federation-and-decentralization-395b9e3d2a0c4e1a9be5f41dfa981a6f
-last_edited: 2023-08-16T14:12:00.000Z
-source_url: https://disroot.org/en
-tags: ["Email", "Hosting", "Untried", "Privacy", "File/Object Storage", "Service"]
+last_edited: 2026-09-21T16:59:00.000Z
+source_url: https://disroot.org/
+tags: ["Service", "Email", "Hosting", "Untried", "Privacy", "File/Object Storage"]
 ---
 **Disroot** relies on donations and support from its community and users of services. If you would like to keep the project going and help create space for potential new disrooters, please use any of the methods available to make a financial contribution. [Domain linking](https://disroot.org/en/services/email#alias) is available for regular supporters.
 

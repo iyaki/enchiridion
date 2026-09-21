@@ -4,7 +4,7 @@ notion_id: c814ad93-48c2-47be-8f0a-b64c348ff12b
 notion_url: https://app.notion.com/p/A-deeper-dive-into-optimal-PHP-FPM-settings-c814ad9348c247be8f0ab64c348ff12b
 last_edited: 2024-04-12T17:48:00.000Z
 source_url: https://geoligard.com/a-deeper-dive-into-optimal-php-fpm-settings
-tags: ["Article", "Geoligard (Goran Popović)", "English", "PHP", "SysAdmin"]
+tags: ["PHP", "SysAdmin", "Article", "Geoligard (Goran Popović)", "English"]
 ---
 ![image](https://geoligard.com/storage/posts/March2024/PxUugm2CRgm42DGUR2yw.jpg)
 

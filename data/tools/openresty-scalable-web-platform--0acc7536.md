@@ -2,8 +2,8 @@
 title: "OpenResty - Scalable Web Platform"
 notion_id: 0acc7536-2603-425e-95d4-058727f63d17
 notion_url: https://app.notion.com/p/OpenResty-Scalable-Web-Platform-0acc75362603425e95d4058727f63d17
-last_edited: 2022-12-19T18:37:00.000Z
-source_url: https://openresty.org/
+last_edited: 2026-09-21T17:17:00.000Z
+source_url: https://openresty.org/en/
 tags: ["English", "Web Development", "REST API", "Tool"]
 ---
 OpenResty® is a full-fledged web platform that integrates our enhanced version of the Nginx core, our enhanced version of LuaJIT, many carefully written Lua libraries, lots of high quality 3rd-party Nginx modules, and most of their external dependencies. It is designed to help developers easily build scalable web applications, web services, and dynamic web gateways.

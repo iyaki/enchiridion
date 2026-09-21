@@ -4,7 +4,7 @@ notion_id: 90b2ebdc-1f46-4533-94dc-a8c41a89c80a
 notion_url: https://app.notion.com/p/6-Deprecated-Linux-Commands-and-Alternative-Tools-for-Linux-90b2ebdc1f46453394dca8c41a89c80a
 last_edited: 2023-02-09T01:20:00.000Z
 source_url: https://www.tecmint.com/deprecated-linux-commands/
-tags: ["Linux", "Network", "Article", "Tool", "English"]
+tags: ["Article", "Tool", "English", "Linux", "Network"]
 ---
 **Linux** provides [tons of command-line utilities](https://www.tecmint.com/most-used-linux-commands/) to perform various tasks. However, with the passage of time, some of these tools have become outdated and replaced by other alternative command-line tools.
 

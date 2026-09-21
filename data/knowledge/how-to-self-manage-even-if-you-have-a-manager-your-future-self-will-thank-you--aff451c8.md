@@ -4,7 +4,7 @@ notion_id: aff451c8-16b0-4d3d-a01a-9907dc6a5a36
 notion_url: https://app.notion.com/p/How-to-Self-Manage-Even-if-You-Have-a-Manager-Your-Future-Self-Will-Thank-You-aff451c816b04d3da01a9907dc6a5a36
 last_edited: 2024-04-09T18:34:00.000Z
 source_url: https://www.thecaringtechie.com/p/how-to-self-manage-even-if-you-have
-tags: ["Article", "The Caring Techie Newsletter (Irina Stanescu)", "English", "Project Management", "Producer (Individual Contributor)", "Career Growth"]
+tags: ["Project Management", "Producer (Individual Contributor)", "Career Growth", "Article", "The Caring Techie Newsletter (Irina Stanescu)", "English"]
 ---
 _Reading time: 8 minutes_
 

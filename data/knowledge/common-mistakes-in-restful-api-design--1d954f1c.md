@@ -2,8 +2,8 @@
 title: "Common Mistakes in RESTful API Design"
 notion_id: 1d954f1c-7d23-81ff-bc4d-e67f4496605b
 notion_url: https://app.notion.com/p/Common-Mistakes-in-RESTful-API-Design-1d954f1c7d2381ffbc4de67f4496605b
-last_edited: 2025-08-06T21:42:00.000Z
-source_url: https://zuplo.com/blog/2025/03/12/common-pitfalls-in-restful-api-design
+last_edited: 2026-09-21T16:57:00.000Z
+source_url: https://zuplo.com/learning-center/common-pitfalls-in-restful-api-design
 tags: ["English", "REST API", "Programming", "Producer (Individual Contributor)", "Article", "Zuplo Blog"]
 ---
 Ever noticed how some APIs are a joy to work with while others make you want to throw your laptop out the window? It's rarely about the technology stack—it's almost always about design choices. Let's be honest—we've all consumed terrible APIs that made us question our career choices. And if we're being really honest, many of us have created these monsters, too.

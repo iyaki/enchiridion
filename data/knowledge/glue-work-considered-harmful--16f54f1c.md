@@ -4,7 +4,7 @@ notion_id: 16f54f1c-7d23-81a3-8f4e-d2bcb1a29af1
 notion_url: https://app.notion.com/p/Glue-work-considered-harmful-16f54f1c7d2381a38f4ed2bcb1a29af1
 last_edited: 2025-02-10T18:25:00.000Z
 source_url: https://www.seangoedecke.com/glue-work-considered-harmful/
-tags: ["English", "Career Growth", "Line/People/Team Management", "Article", "Sean Goedecke"]
+tags: ["Career Growth", "Line/People/Team Management", "Article", "Sean Goedecke", "English"]
 ---
 “Glue work” is an concept Tanya Reilly [came up with](https://www.noidea.dog/glue) in 2019. The idea is that there’s a large amount of unglamorous work that every team needs in order to be efficient: updating the docs and roadmap, addressing technical debt, onboarding engineers, making sure people talk to their counterparts on other teams, noticing strands that are getting dropped, and so on. Practical, naive engineers gravitate to this work because it’s obviously useful, but at promo or bonus time they’re ignored in favor of the engineers who did more visible work (like delivering new features).
 

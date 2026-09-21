@@ -2,8 +2,8 @@
 title: "How I stay motivated as a solo-creator | ᕕ( ᐛ )ᕗ"
 notion_id: 698b8810-b9a5-483f-8344-a8a1001b486e
 notion_url: https://app.notion.com/p/How-I-stay-motivated-as-a-solo-creator-698b8810b9a5483f8344a8a1001b486e
-last_edited: 2023-10-12T21:24:00.000Z
-source_url: https://herman.bearblog.dev/how-i-stay-motivated-as-a-solo-creator
+last_edited: 2026-09-21T16:59:00.000Z
+source_url: https://herman.bearblog.dev/how-i-stay-motivated-as-a-solo-creator/
 tags: ["English", "Productivity", "Entrepreneurship", "Blogging/Content Creation", "Article", "Herman's blog"]
 ---
 Working solo has its difficulties. For one, my income is somewhat tied to my productivity, and my productivity highly correlates to my state of mind. This is combined with a lack of co-workers. Comrades in the trenches, if you will. And finally there's the ability to not do anything, which can be quite nebulous and dangerous if not managed.

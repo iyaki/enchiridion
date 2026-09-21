@@ -4,7 +4,7 @@ notion_id: 1d978b75-d1ce-464a-a37a-69a3407fa631
 notion_url: https://app.notion.com/p/Shitlist-Driven-Development-1d978b75d1ce464aa37a69a3407fa631
 last_edited: 2023-04-22T01:09:00.000Z
 source_url: https://sirupsen.com/shitlists
-tags: ["Article", "English", "Programming", "System Design / Software Architecture", "Testing", "Product Management"]
+tags: ["English", "Programming", "System Design / Software Architecture", "Testing", "Product Management", "Article"]
 ---
 Recently the team I work with completed a project to [allow Shopify to run in multiple datacenters](https://www.youtube.com/watch?v=7UyDK2bDjc4). This project was a refactoring project in disguise. When you undertake large refactoring of a code-base with 100s of developers and 100,000s of lines of code, you can’t align by sending an email. The merge-conflicts a single pull request would entail makes me shiver. When deprecating in a large code-base the only way to reliably avoid new deprecated behaviour is a failing test that tells you what to do. Otherwise the pace that new deprecated code is introduced can easily outpace the speed at which you can remove them, or be a massive source of frustration.
 

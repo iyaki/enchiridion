@@ -4,7 +4,7 @@ notion_id: e8bef18e-4651-42e8-9994-19f5cd97d5e1
 notion_url: https://app.notion.com/p/From-204-requests-per-second-to-480-with-a-single-configuration-change-e8bef18e465142e8999419f5cd97d5e1
 last_edited: 2023-01-13T17:02:00.000Z
 source_url: https://getparthenon.com/blog/php-performance-tunning-from-204-to-480-with-a-single-config-change/
-tags: ["Article", "Tutorial", "English", "PHP"]
+tags: ["English", "PHP", "Article", "Tutorial"]
 ---
 I'm currently developing a [cookieless Free Live Chat SaaS - Blether.chat](https://blether.chat/?utm_source=getparthenon&utm_campaign=content_marketing) and as part of the development process, I decided to stress test the application and really see the difference PHP OP Cache preload made to the request per second in a real-world application. This led me down a path that resulted in me making a configuration change unrelated to the OP Cache resulting in an almost 100% increase in throughput and adding 200+ requests per second to my server's capabilities.
 

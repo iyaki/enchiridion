@@ -4,7 +4,7 @@ notion_id: bd9b2f8d-def0-4d22-aea5-4a10f7ff7f25
 notion_url: https://app.notion.com/p/neomjs-The-application-worker-driven-frontend-framework-bd9b2f8ddef04d22aea54a10f7ff7f25
 last_edited: 2023-02-17T19:41:00.000Z
 source_url: https://github.com/neomjs/neo
-tags: ["Framework/Library", "English", "Javascript", "Untried", "Frontend"]
+tags: ["English", "Javascript", "Untried", "Frontend", "Framework/Library"]
 ---
 # Welcome to neo.mjs!
 

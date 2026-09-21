@@ -2,8 +2,8 @@
 title: "How to find and become a great engineering mentor"
 notion_id: 81984948-1709-4f55-8562-927b7d3aac04
 notion_url: https://app.notion.com/p/How-to-find-and-become-a-great-engineering-mentor-8198494817094f558562927b7d3aac04
-last_edited: 2023-03-29T23:52:00.000Z
-source_url: https://leaddev.com/mentoring-coaching-feedback/how-find-and-become-great-engineering-mentor
+last_edited: 2026-09-21T17:01:00.000Z
+source_url: https://leaddev.com/management/how-find-and-become-great-engineering-mentor
 tags: ["English", "Leadersheep", "Career Growth", "Article", "LeadDev"]
 ---
 Mentoring is a great way to boost your career. Here's everything you need to know about getting a mentor, and becoming one yourself.

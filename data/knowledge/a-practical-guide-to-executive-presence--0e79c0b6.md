@@ -4,7 +4,7 @@ notion_id: 0e79c0b6-e2fe-4456-909d-b0f9a620d213
 notion_url: https://app.notion.com/p/A-Practical-Guide-to-Executive-Presence-0e79c0b6e2fe4456909db0f9a620d213
 last_edited: 2023-09-11T15:44:00.000Z
 source_url: https://staysaasy.com/leadership/2023/05/27/executive-presence.html
-tags: ["Article", "Stay SaaSy", "English", "Career Growth", "Communication", "Entrepreneurship"]
+tags: ["English", "Career Growth", "Communication", "Entrepreneurship", "Article", "Stay SaaSy"]
 ---
 Let’s talk about an important and somewhat controversial topic: What it means to have executive presence, and how you can build it.
 

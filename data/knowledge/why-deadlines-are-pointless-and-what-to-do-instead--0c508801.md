@@ -2,9 +2,9 @@
 title: "Why deadlines are pointless and what to do instead"
 notion_id: 0c508801-c9bf-4499-a1b4-6f2cae9ae91e
 notion_url: https://app.notion.com/p/Why-deadlines-are-pointless-and-what-to-do-instead-0c508801c9bf4499a1b46f2cae9ae91e
-last_edited: 2023-02-16T13:17:00.000Z
-source_url: https://lucasfcosta.com/2022/09/15/deadlines.html
-tags: ["Lucas F. Costa Blog", "English", "Project Management", "Product Management", "Article"]
+last_edited: 2026-09-21T17:02:00.000Z
+source_url: https://www.lucasfcosta.com/blog/deadlines
+tags: ["English", "Project Management", "Product Management", "Article", "Lucas F. Costa Blog"]
 ---
 Deadlines are the bane of every software engineer’s existence. We’ve all been there: the project is “due” in two weeks, and we’re nowhere near done. So we pull all-nighters, do poor testing, and cut corners just to get it done. And what happens? The project is buggy, the customers are unhappy, and we’re all exhausted.
 

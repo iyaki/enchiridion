@@ -2,9 +2,9 @@
 title: "SPAs were a mistake"
 notion_id: 814dbb2b-9af0-493a-9015-d9dd9ebbe767
 notion_url: https://app.notion.com/p/SPAs-were-a-mistake-814dbb2b9af0493a9015d9dd9ebbe767
-last_edited: 2023-01-17T11:32:00.000Z
-source_url: https://gomakethings.com/spas-were-a-mistake/
-tags: ["Article", "Go Make Things", "English", "Frontend", "Reflection"]
+last_edited: 2026-09-21T17:04:00.000Z
+source_url: https://gomakethings.com/articles/spas-were-a-mistake/
+tags: ["Go Make Things", "English", "Frontend", "Reflection", "Article"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

@@ -2,9 +2,9 @@
 title: "Object Calisthenics"
 notion_id: f234441e-e7d5-4ded-9753-eb2a7c46f1e3
 notion_url: https://app.notion.com/p/Object-Calisthenics-f234441ee7d54ded9753eb2a7c46f1e3
-last_edited: 2023-04-25T15:02:00.000Z
-source_url: https://www.notion.so/Object-Calisthenics-f234441ee7d54ded9753eb2a7c46f1e3
-tags: ["The Talking Bit - Fran Iglesias", "Español", "Object Oriented Programming", "Article", "Guide"]
+last_edited: 2026-09-21T17:06:00.000Z
+source_url: https://app.notion.com/p/Object-Calisthenics-f234441ee7d54ded9753eb2a7c46f1e3
+tags: ["Español", "Object Oriented Programming", "Article", "Guide", "The Talking Bit - Fran Iglesias"]
 ---
 Esta es una recopilación de artículos publicados por [Fran Iglesias](https://github.com/franiglesias) en su blog [The Talking Bit](https://franiglesias.github.io/) relacionados con la práctica conocida como _Object Calisthenics._
 

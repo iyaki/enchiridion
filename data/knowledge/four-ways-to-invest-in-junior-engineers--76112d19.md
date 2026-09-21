@@ -2,13 +2,15 @@
 title: "Four ways to invest in junior engineers"
 notion_id: 76112d19-7076-4772-a1fd-51959e39b7f2
 notion_url: https://app.notion.com/p/Four-ways-to-invest-in-junior-engineers-76112d1970764772a1fd51959e39b7f2
-last_edited: 2023-04-25T13:32:00.000Z
-source_url: https://leaddev.com/hiring-onboarding-retention/four-ways-invest-junior-engineers
+last_edited: 2026-09-21T17:31:00.000Z
+source_url: https://leaddev.com/hiring/four-ways-invest-junior-engineers
 tags: ["English", "Line/People/Team Management", "Article", "LeadDev"]
 ---
 [https://leaddev.com/hiring-onboarding-retention/four-ways-invest-junior-engineers](https://leaddev.com/hiring-onboarding-retention/four-ways-invest-junior-engineers)
 
 
+
+<!-- unsupported block: link_to_page -->
 
 You have 1 article left to read this month before you need to register a free LeadDev.com account.
 

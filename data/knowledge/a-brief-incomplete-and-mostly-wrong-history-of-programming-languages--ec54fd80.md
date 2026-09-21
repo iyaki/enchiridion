@@ -2,9 +2,9 @@
 title: "A Brief, Incomplete, and Mostly Wrong History of Programming Languages"
 notion_id: ec54fd80-4a2b-4013-b17f-e756eed0f0e5
 notion_url: https://app.notion.com/p/A-Brief-Incomplete-and-Mostly-Wrong-History-of-Programming-Languages-ec54fd804a2b4013b17fe756eed0f0e5
-last_edited: 2023-06-27T22:05:00.000Z
+last_edited: 2026-09-21T16:59:00.000Z
 source_url: https://james-iry.blogspot.com/2009/05/brief-incomplete-and-mostly-wrong.html
-tags: ["Article", "English", "Programming"]
+tags: ["English", "Programming", "Article"]
 ---
 1801 - Joseph Marie Jacquard uses punch cards to instruct a loom to weave "hello, world" into a tapestry. Redditers of the time are not impressed due to the lack of tail call recursion, concurrency, or proper capitalization.
 

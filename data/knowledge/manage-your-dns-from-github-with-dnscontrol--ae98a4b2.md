@@ -2,9 +2,9 @@
 title: "Manage your DNS from GitHub with DNSControl"
 notion_id: ae98a4b2-8200-45f1-ae03-b5f9bb10bbd3
 notion_url: https://app.notion.com/p/Manage-your-DNS-from-GitHub-with-DNSControl-ae98a4b2820045f1ae03b5f9bb10bbd3
-last_edited: 2023-01-13T16:48:00.000Z
-source_url: https://svenluijten.com/manage-your-dns-from-github-with-dnscontrol
-tags: ["Article", "English", "Continuous Integration/Continuous Delivery", "DevOps", "Network"]
+last_edited: 2026-09-21T17:05:00.000Z
+source_url: https://www.notion.so/ae98a4b2820045f1ae03b5f9bb10bbd3
+tags: ["English", "Continuous Integration/Continuous Delivery", "DevOps", "Network", "Article"]
 ---
 DNS is a pain. Especially with multiple DNS providers and domains scattered all over the place. What if you could edit a JavaScript file with your desired DNS configuration, submit a pull request on GitHub, see a preview of the changes you are about to make, and when you merge it, have those changes be applied completely automatically?
 

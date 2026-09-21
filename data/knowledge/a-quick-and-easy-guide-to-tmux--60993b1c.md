@@ -2,8 +2,8 @@
 title: "A Quick and Easy Guide to tmux"
 notion_id: 60993b1c-1192-402e-a53a-0328bda4863f
 notion_url: https://app.notion.com/p/A-Quick-and-Easy-Guide-to-tmux-60993b1c1192402ea53a0328bda4863f
-last_edited: 2023-07-12T17:56:00.000Z
-source_url: https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/
+last_edited: 2026-09-21T16:59:00.000Z
+source_url: https://hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/
 tags: ["English", "Shell/Bash", "Linux", "Article", "Guide", "Ham Vocke"]
 ---
 I love working with the command line. I think there’s hardly any more productive and versatile tool for a software developer than the terminal. The additional hacker/wizard/neckbeard kind of feeling you get when using a terminal comes for free, what’s not to love?

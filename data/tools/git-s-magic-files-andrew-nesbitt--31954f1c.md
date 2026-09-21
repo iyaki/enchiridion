@@ -4,7 +4,7 @@ notion_id: 31954f1c-7d23-81c5-8900-d671ad980188
 notion_url: https://app.notion.com/p/Git-s-Magic-Files-Andrew-Nesbitt-31954f1c7d2381c58900d671ad980188
 last_edited: 2026-09-18T00:53:00.000Z
 source_url: https://nesbitt.io/2026/02/05/git-magic-files.html
-tags: ["Andrew Nesbitt", "English", "DevOps", "Git", "Tool", "Version Control", "Tutorial"]
+tags: ["English", "DevOps", "Git", "Tool", "Version Control", "Tutorial", "Andrew Nesbitt"]
 ---
 A follow-up to my post on [extending git functionality](https://nesbitt.io/2025/11/26/extending-git-functionality.html). Git looks for several special files in your repository that control its behavior. These aren’t configuration files in `.git/`, they’re committed files that travel with your code and affect how git treats your files.
 

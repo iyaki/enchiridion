@@ -2,9 +2,9 @@
 title: "What I think “good design” is"
 notion_id: 7a2188c0-a0fa-450b-b840-181bf3096ffd
 notion_url: https://app.notion.com/p/What-I-think-good-design-is-7a2188c0a0fa450bb840181bf3096ffd
-last_edited: 2023-02-17T19:19:00.000Z
-source_url: https://anthonyhobday.com/blog/20220119.html
-tags: ["English", "UI/UX", "Article", "anthonyhobday"]
+last_edited: 2026-09-21T17:02:00.000Z
+source_url: https://www.notion.so/7a2188c0a0fa450bb840181bf3096ffd
+tags: ["Article", "anthonyhobday", "English", "UI/UX"]
 ---
 At this point I’ve looked at a lot of websites and apps and I’ve realised what I prefer. Here it is.
 

@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-8160-9353-d3f6337c96c6
 notion_url: https://app.notion.com/p/50-herramientas-y-comandos-CLI-que-no-vas-a-poder-dejar-de-usar-Sysarmy-El-blog-de-quienes-dan--2b754f1c7d2381609353d3f6337c96c6
 last_edited: 2025-11-26T19:08:00.000Z
 source_url: https://sysarmy.com/blog/posts/50-herramientas-cli-no-vas-a-poder-dejar-de-usar/
-tags: ["Article", "Sysarmy Blog", "Español", "SysAdmin", "Productivity", "Command Line", "Automation"]
+tags: ["Español", "SysAdmin", "Productivity", "Command Line", "Automation", "Article", "Sysarmy Blog"]
 ---
 ![image](https://sysarmy.com/blog/assets/50-cli-command-tools.png)
 

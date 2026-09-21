@@ -2,9 +2,9 @@
 title: "100 things you can do on your personal website"
 notion_id: c979cb03-7898-4d38-9765-8986d0dd0ecb
 notion_url: https://app.notion.com/p/100-things-you-can-do-on-your-personal-website-c979cb0378984d3897658986d0dd0ecb
-last_edited: 2024-03-01T19:28:00.000Z
-source_url: https://jamesg.blog/2024/02/19/personal-website-ideas/
-tags: ["James' Coffee Blog", "Blogging/Content Creation", "?", "Article"]
+last_edited: 2026-09-21T16:58:00.000Z
+source_url: https://jamesg.blog/2024/02/19/personal-website-ideas
+tags: ["Article", "James' Coffee Blog", "Blogging/Content Creation", "?"]
 ---
 One of my favourite things to do in my free time is to tinker with this website. Indeed, this website is the culmination of years of tinkering. I have added features like coffee shop maps that I can share with friends, a way for me to share my bio in two languages, a sitemap.xml file to help search engines find pages on my website, and more.
 

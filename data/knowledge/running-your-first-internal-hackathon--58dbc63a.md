@@ -2,8 +2,8 @@
 title: "Running your first internal hackathon"
 notion_id: 58dbc63a-8343-4970-a8a6-5abbc1f78df4
 notion_url: https://app.notion.com/p/Running-your-first-internal-hackathon-58dbc63a83434970a8a65abbc1f78df4
-last_edited: 2023-01-13T16:09:00.000Z
-source_url: https://leaddev.com/culture-engagement-motivation/running-your-first-internal-hackathon
+last_edited: 2026-09-21T17:06:00.000Z
+source_url: https://leaddev.com/culture/running-your-first-internal-hackathon
 tags: ["English", "Line/People/Team Management", "Communication", "Article", "LeadDev"]
 ---
 A company hackathon is a great way to boost the spirit of your team, especially in Covid times. But how should you go about organizing one?

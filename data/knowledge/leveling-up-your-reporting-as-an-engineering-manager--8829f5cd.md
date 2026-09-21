@@ -2,13 +2,15 @@
 title: "Leveling up your reporting as an engineering manager"
 notion_id: 8829f5cd-79b6-4a20-987f-c004ee231813
 notion_url: https://app.notion.com/p/Leveling-up-your-reporting-as-an-engineering-manager-8829f5cd79b64a20987fc004ee231813
-last_edited: 2023-04-25T13:33:00.000Z
-source_url: https://leaddev.com/reporting-metrics/leveling-your-reporting-engineering-manager
-tags: ["Line/People/Team Management", "Article", "LeadDev", "English"]
+last_edited: 2026-09-21T17:31:00.000Z
+source_url: https://leaddev.com/reporting/leveling-your-reporting-engineering-manager
+tags: ["Article", "LeadDev", "English", "Line/People/Team Management"]
 ---
 [https://leaddev.com/reporting-metrics/leveling-your-reporting-engineering-manager](https://leaddev.com/reporting-metrics/leveling-your-reporting-engineering-manager)
 
 
+
+<!-- unsupported block: link_to_page -->
 
 You have 1 article left to read this month before you need to register a free LeadDev.com account.
 

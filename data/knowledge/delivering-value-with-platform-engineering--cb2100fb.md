@@ -2,9 +2,9 @@
 title: "Delivering Value with Platform Engineering"
 notion_id: cb2100fb-cdfc-4055-ba12-2334616bc829
 notion_url: https://app.notion.com/p/Delivering-Value-with-Platform-Engineering-cb2100fbcdfc4055ba122334616bc829
-last_edited: 2023-02-01T16:48:00.000Z
-source_url: https://www.maxcountryman.com/articles/delivering-value-with-platform-engineering
-tags: ["English", "DevOps", "Productivity", "Article", "Max Countryman articles"]
+last_edited: 2026-09-21T17:03:00.000Z
+source_url: https://www.notion.so/cb2100fbcdfc4055ba122334616bc829
+tags: ["Article", "Max Countryman articles", "English", "DevOps", "Productivity"]
 ---
 ## What is a Platform
 

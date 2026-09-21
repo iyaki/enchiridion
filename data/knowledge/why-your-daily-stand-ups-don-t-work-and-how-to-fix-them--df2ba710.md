@@ -2,9 +2,9 @@
 title: "Why your daily stand-ups don't work and how to fix them"
 notion_id: df2ba710-74a1-407a-bc55-31f6edc481f0
 notion_url: https://app.notion.com/p/Why-your-daily-stand-ups-don-t-work-and-how-to-fix-them-df2ba71074a1407abc5531f6edc481f0
-last_edited: 2023-02-16T13:44:00.000Z
-source_url: https://lucasfcosta.com/2022/08/07/how-to-improve-daily-standups.html
-tags: ["English", "Agile", "Line/People/Team Management", "Project Management", "Communication", "Article", "Lucas F. Costa Blog"]
+last_edited: 2026-09-21T17:02:00.000Z
+source_url: https://www.lucasfcosta.com/blog/how-to-improve-daily-standups
+tags: ["Article", "Lucas F. Costa Blog", "English", "Agile", "Line/People/Team Management", "Project Management", "Communication"]
 ---
 Daily stand-ups are a classic example of [learned helplessness](https://en.wikipedia.org/wiki/Learned_helplessness). We all know they’re useless, but we tell ourselves “that’s just how things are” and do nothing about it.
 

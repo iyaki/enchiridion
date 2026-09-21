@@ -4,7 +4,7 @@ notion_id: 6705e48f-9e7b-4a2b-b016-c0e153298523
 notion_url: https://app.notion.com/p/Founders-Guide-2022-6705e48f9e7b4a2bb016c0e153298523
 last_edited: 2023-01-18T18:06:00.000Z
 source_url: https://vadimkravcenko.com/founders-guide/
-tags: ["Entrepreneurship", "Guide", "Article", "English"]
+tags: ["English", "Entrepreneurship", "Guide", "Article"]
 ---
 _In a world where everything is behind paywalls and subscriptions, we should have helpful and freely available resources. This guide is one of those resources that should give you the tools and skills needed to start your new software venture._
 

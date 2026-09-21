@@ -4,7 +4,7 @@ notion_id: 1ba54f1c-7d23-8165-bb3d-c2b7d79ab3e1
 notion_url: https://app.notion.com/p/Local-First-Ejectable-Apps-1ba54f1c7d238165bb3dc2b7d79ab3e1
 last_edited: 2025-04-20T00:05:00.000Z
 source_url: https://thymer.com/local-first-ejectable
-tags: ["thymer", "English", "Programming", "Product Management", "Article"]
+tags: ["English", "Programming", "Product Management", "Article", "thymer"]
 ---
 An important requirement to ensure you can fully access your data in cloud apps forever is making the backend sync server available for local self-hosting. That's what _EJECTABLE_ apps are about.
 

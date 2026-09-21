@@ -4,7 +4,7 @@ notion_id: 28f46fce-6525-4799-8052-a131ea6da041
 notion_url: https://app.notion.com/p/Valueless-CTO-High-Salary-No-Return-28f46fce652547998052a131ea6da041
 last_edited: 2024-05-10T20:38:00.000Z
 source_url: https://vadimkravcenko.com/shorts/cto-value-high-salary-no-return/
-tags: ["English", "Entrepreneurship", "Career Growth", "Decision Making", "Article", "Vadim Kravcenko"]
+tags: ["Article", "Vadim Kravcenko", "English", "Entrepreneurship", "Career Growth", "Decision Making"]
 ---
 ## Table of Contents
 

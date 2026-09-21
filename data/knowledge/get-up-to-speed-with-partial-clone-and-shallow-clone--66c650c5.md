@@ -2,8 +2,8 @@
 title: "Get up to speed with partial clone and shallow clone"
 notion_id: 66c650c5-cad4-478a-a71a-54d5d0d5ced8
 notion_url: https://app.notion.com/p/Get-up-to-speed-with-partial-clone-and-shallow-clone-66c650c5cad4478aa71a54d5d0d5ced8
-last_edited: 2023-02-18T01:58:00.000Z
-source_url: https://github.blog/2020-12-21-get-up-to-speed-with-partial-clone-and-shallow-clone/
+last_edited: 2026-09-21T17:02:00.000Z
+source_url: https://github.blog/open-source/git/get-up-to-speed-with-partial-clone-and-shallow-clone/
 tags: ["English", "Programming", "Productivity", "Article"]
 ---
 As your Git repositories grow, it becomes harder and harder for new developers to clone and start working on them. Git is designed as a _distributed_ version control system. This means that you can work on your machine without needing a connection to a central server that controls how you interact with the repository. This is only fully realizable if you have all reachable data in your local repository.

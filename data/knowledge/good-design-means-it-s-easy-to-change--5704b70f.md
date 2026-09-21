@@ -4,7 +4,7 @@ notion_id: 5704b70f-f2d0-4163-aebe-d45c22c65e30
 notion_url: https://app.notion.com/p/Good-design-means-it-s-easy-to-change-5704b70ff2d04163aebed45c22c65e30
 last_edited: 2023-01-25T19:53:00.000Z
 source_url: https://matthiasnoback.nl/2022/09/good-design-means-easy-to-change/
-tags: ["English", "System Design / Software Architecture", "Article", "Matthias Noback Blog"]
+tags: ["Matthias Noback Blog", "English", "System Design / Software Architecture", "Article"]
 ---
 Software development seems to be about _change_: the business changes and we need to reflect those changes, so the requirements or specifications change, frameworks and libraries change, so we have to change our integrations with them, etc. Changing the code base accordingly is often quite painful, because we made it _resistant to change_ in many ways.
 

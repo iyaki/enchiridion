@@ -2,8 +2,8 @@
 title: "Building personal and organizational prestige"
 notion_id: 366efca6-9971-4658-9fc4-ca36a4567c00
 notion_url: https://app.notion.com/p/Building-personal-and-organizational-prestige-366efca6997146589fc4ca36a4567c00
-last_edited: 2023-07-05T19:17:00.000Z
-source_url: https://lethain.com/building-prestige
+last_edited: 2026-09-21T16:59:00.000Z
+source_url: https://lethain.com/building-prestige/
 tags: ["English", "Blogging/Content Creation", "Career Growth", "Jobs", "Article", "Irrational Exuberance (Will Larson)"]
 ---
 Most months I get at least one email from an engineering leader who believes they’d be a candidate for significantly more desirable roles if their personal brand were just better known. Similarly, when funding is readily available during periods of tech industry expansion, many companies believe they are principally constrained by their hiring velocity–if their engineering organization’s brand was just a bit better, they believe they’d be hiring much faster.

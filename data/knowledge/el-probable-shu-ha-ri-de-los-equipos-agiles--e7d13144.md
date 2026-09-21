@@ -2,9 +2,9 @@
 title: "El probable Shu-Ha-Ri de los equipos Ágiles"
 notion_id: e7d13144-ee59-4373-9c96-f344b9c79fb6
 notion_url: https://app.notion.com/p/El-probable-Shu-Ha-Ri-de-los-equipos-giles-e7d13144ee5943739c96f344b9c79fb6
-last_edited: 2022-12-27T12:47:00.000Z
-source_url: https://acumbamail.com/envio/ver/697172c8-f6be-11ec-9557-005056bd5094
-tags: ["Article", "This is the Agile Way (Javier Garzas)", "Español", "Agile", "Producer (Individual Contributor)", "Line/People/Team Management"]
+last_edited: 2026-09-21T17:07:00.000Z
+source_url: https://acumbamail.com/envio/ver/697172c8-f6be-11ec-9557-005056bd5094/
+tags: ["Español", "Agile", "Producer (Individual Contributor)", "Line/People/Team Management", "Article", "This is the Agile Way (Javier Garzas)"]
 ---
 Vuelvo con un tema que tenía pendiente… El Shu-Ha-Ri en la práctica, de trinchera, el que me encuentro y el que puede ser tu posible futuro Ágil... o quizá el presente.
 

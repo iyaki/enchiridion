@@ -2,8 +2,8 @@
 title: "The ways software competes"
 notion_id: 85b3ebd0-70ee-4ac0-8e95-8515a1cbdc7d
 notion_url: https://app.notion.com/p/The-ways-software-competes-85b3ebd070ee4ac08e958515a1cbdc7d
-last_edited: 2025-02-10T18:07:00.000Z
-source_url: https://anthonyhobday.com/blog/20220915.html
+last_edited: 2026-09-21T17:02:00.000Z
+source_url: https://anthonyhobday.com/blog/20220915
 tags: ["English", "System Design / Software Architecture", "Product Management", "Article", "anthonyhobday"]
 ---
 Software competes either with other software, or with inaction. These are the ways I’ve found software can compete. This list is useful if you want to consider how design can help software compete.

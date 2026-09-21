@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-8166-9227-d9c989173128
 notion_url: https://app.notion.com/p/Heuristic-Ors-Are-Expensive-2b754f1c7d2381669227d9c989173128
 last_edited: 2025-11-26T19:07:00.000Z
 source_url: https://ethanseal.com/articles/ors-are-expensive
-tags: ["Article", "ethanseal.com", "English", "Databases", "Performance", "Query Planning"]
+tags: ["English", "Databases", "Performance", "Query Planning", "Article", "ethanseal.com"]
 ---
 Query planning is hard. _Sometimes_.
 

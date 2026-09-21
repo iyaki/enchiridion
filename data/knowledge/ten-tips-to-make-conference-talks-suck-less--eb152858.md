@@ -4,7 +4,7 @@ notion_id: eb152858-5677-4e43-95bd-1f63514b556c
 notion_url: https://app.notion.com/p/Ten-Tips-to-Make-Conference-Talks-Suck-Less-eb15285856774e4395bd1f63514b556c
 last_edited: 2023-01-13T02:12:00.000Z
 source_url: https://www.morling.dev/blog/ten-tips-make-conference-talks-suck-less/
-tags: ["Gunnar Morling Blog", "English", "Communication", "Article"]
+tags: ["Article", "Gunnar Morling Blog", "English", "Communication"]
 ---
 Every so often, I come across some conference talk which is highly interesting in terms of its actual contents, but which unfortunately is presented in a less than ideal way. I’m thinking of basic mistakes here, such as the presenter primarily looking at their slides rather than at the audience. I’m always feeling a bit sorry when this happens, as I firmly believe that everyone can do good and even great talks, just by being aware of — and thus avoiding — a few common mistakes, and sticking to some simple principles.
 

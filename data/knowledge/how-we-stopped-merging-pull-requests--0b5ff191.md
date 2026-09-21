@@ -4,7 +4,7 @@ notion_id: 0b5ff191-3e46-406e-a414-f22ffe969949
 notion_url: https://app.notion.com/p/How-We-Stopped-Merging-Pull-Requests-0b5ff1913e46406ea414f22ffe969949
 last_edited: 2022-12-21T17:58:00.000Z
 source_url: https://tomasvotruba.com/blog/2020/10/12/how-we-stopped-merging-pull-requests/
-tags: ["Programming", "Productivity", "Article", "Tomas Votruba Blog", "English"]
+tags: ["Article", "Tomas Votruba Blog", "English", "Programming", "Productivity"]
 ---
 What comes before merging a pull request? Code-review, feedback from developers, and fixes to make the reviewer happy. After that, we only need the tests, coding standard, PHPStan, and Rector to pass in the CI.
 

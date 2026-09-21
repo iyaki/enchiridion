@@ -2,8 +2,8 @@
 title: "One-On-One Meetings: 7 Things To Know Right Now"
 notion_id: ce66cfc8-259e-4cc5-a660-05db5c8eef5e
 notion_url: https://app.notion.com/p/One-On-One-Meetings-7-Things-To-Know-Right-Now-ce66cfc8259e4cc5a66005db5c8eef5e
-last_edited: 2023-03-30T13:40:00.000Z
-source_url: https://www.radicalcandor.com/one-on-one-meetings/
+last_edited: 2026-09-21T17:01:00.000Z
+source_url: https://www.radicalcandor.com/blog/ways-to-improve-one-on-one-meetings
 tags: ["English", "Line/People/Team Management", "Communication", "Article", "Radical Candor"]
 ---
 Having [one-on-one meetings](https://www.radicalcandor.com/podcast/meet-like-a-boss/) on a regular cadence with each of your direct reports is probably the most important thing you do as a manager.

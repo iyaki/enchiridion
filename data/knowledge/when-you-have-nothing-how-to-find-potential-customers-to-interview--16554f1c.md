@@ -4,7 +4,7 @@ notion_id: 16554f1c-7d23-8193-a51a-ffa4b8d44632
 notion_url: https://app.notion.com/p/When-you-have-nothing-How-to-find-potential-customers-to-interview-16554f1c7d238193a51affa4b8d44632
 last_edited: 2025-02-10T18:04:00.000Z
 source_url: https://longform.asmartbear.com/find-customers-to-interview/
-tags: ["A Smart Bear: Longform", "English", "Product Management", "Entrepreneurship", "Article"]
+tags: ["English", "Product Management", "Entrepreneurship", "Article", "A Smart Bear: Longform"]
 ---
 How do you find potential customers to interview before you have a product, a website, or even a name?
 

@@ -4,7 +4,7 @@ notion_id: 30d54f1c-7d23-81ee-8169-c1616f0fefc7
 notion_url: https://app.notion.com/p/The-only-developer-productivity-metrics-that-matter-genehack-blog-30d54f1c7d2381ee8169c1616f0fefc7
 last_edited: 2026-09-18T00:53:00.000Z
 source_url: https://genehack.blog/2026/02/the-only-developer-productivity-metrics-that-matter/
-tags: ["genehack.blog", "English", "Productivity", "Agile", "Team Management", "Project Management", "Software Development", "Article"]
+tags: ["English", "Productivity", "Agile", "Team Management", "Project Management", "Software Development", "Article", "genehack.blog"]
 ---
 I’m not sure if it’s because I’ve been closely following [Agile is Anarchy](https://agileisanarchy.com/), or some recent “how do we work” conversations at work, or what, but Monday morning this rant popped into my head, almost full blown, and what do I even _have_ a blog for if not for posting rants about software development?
 

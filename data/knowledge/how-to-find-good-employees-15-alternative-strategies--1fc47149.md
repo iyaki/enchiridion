@@ -4,7 +4,7 @@ notion_id: 1fc47149-ca3d-43d9-a92b-d2b2e5f87772
 notion_url: https://app.notion.com/p/How-to-find-good-employees-15-alternative-strategies-1fc47149ca3d43d9a92bd2b2e5f87772
 last_edited: 2023-03-02T16:40:00.000Z
 source_url: https://toggl.com/blog/how-to-find-good-employees
-tags: ["Toggl Blog", "English", "Human Resources (HH.RR.)", "Line/People/Team Management", "Article"]
+tags: ["English", "Human Resources (HH.RR.)", "Line/People/Team Management", "Article", "Toggl Blog"]
 ---
 Startup founders, small business owners and less established companies face the immense challenge of finding employees with the right skills. In fact, even top-performing businesses are struggling to attract potential candidates.
 

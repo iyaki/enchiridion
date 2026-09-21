@@ -4,7 +4,7 @@ notion_id: 3c854f1c-7d23-81f4-aa1e-dc2b5dba9304
 notion_url: https://app.notion.com/p/How-to-Design-an-Animation-kciter-so-3c854f1c7d2381f4aa1edc2b5dba9304
 last_edited: 2026-09-18T00:52:00.000Z
 source_url: https://kciter.so/posts/how-to-design-animation/en/
-tags: ["Article", "Tutorial", "kciter.so", "English", "Animation", "Design", "UI/UX"]
+tags: ["English", "Animation", "Design", "UI/UX", "Article", "Tutorial", "kciter.so"]
 ---
 Every so often you come across an animation on a website or in an app that catches your eye. Animation does more than add some fun. It helps people understand what is happening, makes the result of an interaction clear, and carries the personality of a brand.
 

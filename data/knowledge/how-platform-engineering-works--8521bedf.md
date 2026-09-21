@@ -4,7 +4,7 @@ notion_id: 8521bedf-c624-40cd-a7c6-9066d87bdf5f
 notion_url: https://app.notion.com/p/How-Platform-Engineering-Works-8521bedfc62440cda7c69066d87bdf5f
 last_edited: 2023-06-27T22:07:00.000Z
 source_url: https://chadxz.dev/platform/
-tags: ["Article", "Chad McElligott", "English", "DevOps", "Site Reliability Engineering"]
+tags: ["English", "DevOps", "Site Reliability Engineering", "Article", "Chad McElligott"]
 ---
 In April 2023, I gave my first ever public conference talk at [DevOps Days in Birmingham, Alabama](https://devopsdays.org/events/2023-birmingham-al). I shared the lessons I have learned in my first year at Sotheby's about how to make Platform Engineering work. It was an honor to be chosen as one of the few speakers at the event. What follows is the content I used for the talk, along with the slides I used to present.
 

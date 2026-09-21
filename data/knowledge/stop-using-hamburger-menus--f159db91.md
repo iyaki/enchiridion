@@ -2,9 +2,9 @@
 title: "Stop Using Hamburger Menus"
 notion_id: f159db91-17b6-4780-a425-a3e5ddc29a06
 notion_url: https://app.notion.com/p/Stop-Using-Hamburger-Menus-f159db9117b64780a425a3e5ddc29a06
-last_edited: 2023-05-12T10:59:00.000Z
-source_url: https://bt.ht/hamburgers/
-tags: ["Article", "bt.ht - Brad Taunt Blog", "English", "UI/UX"]
+last_edited: 2026-09-21T17:00:00.000Z
+source_url: https://www.notion.so/f159db9117b64780a425a3e5ddc29a06
+tags: ["UI/UX", "Article", "bt.ht - Brad Taunt Blog", "English"]
 ---
 I recently [tooted about my hatred of website hamburger menus](https://fosstodon.org/@tdarb/110264983268249599) which was met with a surprising amount of support from other users. It seems like most people _don't actually like hamburger menus_. So why do we, as developers, keep using them in our products and designs? Is it our only option? Or is it because we have become conditioned to expect it?
 

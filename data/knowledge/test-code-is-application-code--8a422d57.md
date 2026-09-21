@@ -4,7 +4,7 @@ notion_id: 8a422d57-14eb-4e86-91ba-54167956e01f
 notion_url: https://app.notion.com/p/Test-Code-Is-Application-Code-8a422d5714eb4e8691ba54167956e01f
 last_edited: 2023-02-22T19:00:00.000Z
 source_url: https://shawnmc.cool/2022-07-04_test-code-is-application-code
-tags: ["English", "Programming", "Testing", "System Design / Software Architecture", "Article", "ShawnMc.Cool"]
+tags: ["Article", "ShawnMc.Cool", "English", "Programming", "Testing", "System Design / Software Architecture"]
 ---
 Test code requires as much effort in design as the code that processes your payments, manages your business state changes, and empowers your customers. In fact, upholding the idea that they're separate things is expensive. Tests are as much a part of our code base as any design decision that supports rapid delivery or low costs of maintenance.
 

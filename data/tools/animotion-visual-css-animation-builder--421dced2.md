@@ -4,7 +4,7 @@ notion_id: 421dced2-4d10-439d-a940-c3c9e835d97b
 notion_url: https://app.notion.com/p/Animotion-Visual-CSS-Animation-Builder-421dced24d10439da940c3c9e835d97b
 last_edited: 2023-12-05T19:10:00.000Z
 source_url: https://animotion.dev/
-tags: ["Service", "English", "CSS", "Frontend"]
+tags: ["English", "CSS", "Frontend", "Service"]
 ---
 Animotion lets you **create CSS animations visually**, by dragging, resizing, rotating, clipping and more, including a **keyframes editor**, a collection of **ready-to-use animations** and **29 built-in easings**
 

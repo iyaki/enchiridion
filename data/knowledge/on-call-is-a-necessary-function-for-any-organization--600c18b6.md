@@ -2,9 +2,9 @@
 title: "On-call is a necessary function for any organization"
 notion_id: 600c18b6-7984-4dac-9f44-040970d1190d
 notion_url: https://app.notion.com/p/On-call-is-a-necessary-function-for-any-organization-600c18b679844dac9f44040970d1190d
-last_edited: 2023-02-13T11:52:00.000Z
-source_url: https://leaddev.com/process/call-necessary-function-any-organization
-tags: ["Article", "LeadDev", "English", "On Call", "Change Management", "Line/People/Team Management", "Jobs"]
+last_edited: 2026-09-21T17:03:00.000Z
+source_url: https://leaddev.com/technical-direction/call-necessary-function-any-organization
+tags: ["On Call", "Change Management", "Line/People/Team Management", "Jobs", "Article", "LeadDev", "English"]
 ---
 No matter the size of your organization, having an on-call function is a necessary and vital part of day-to-day operations.
 

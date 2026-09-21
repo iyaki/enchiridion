@@ -4,7 +4,7 @@ notion_id: 275bb372-ee52-4c9d-8ce1-4283b33de681
 notion_url: https://app.notion.com/p/Blub-Paradox-275bb372ee524c9d8ce14283b33de681
 last_edited: 2023-04-21T19:39:00.000Z
 source_url: https://wiki.c2.com/?BlubParadox
-tags: ["English", "Programming", "Reflection", "Article"]
+tags: ["Programming", "Reflection", "Article", "English"]
 ---
 An idea developed in an article [BeatingTheAverages](https://wiki.c2.com/?BeatingTheAverages=) by [PaulGraham](https://wiki.c2.com/?PaulGraham=) ([http://paulgraham.com/avg.html](http://paulgraham.com/avg.html)). He argues that some languages are more powerful than others and posits a hypothetical middle of the road language called Blub. He describes the gist of the paradox thus:
 

@@ -2,8 +2,8 @@
 title: "rrweb.io - Open source web session replay library"
 notion_id: fefb33c5-4496-4cef-8558-8741d62647e7
 notion_url: https://app.notion.com/p/rrweb-io-Open-source-web-session-replay-library-fefb33c544964cef85588741d62647e7
-last_edited: 2023-05-03T19:07:00.000Z
-source_url: https://www.rrweb.io/
+last_edited: 2026-09-21T17:00:00.000Z
+source_url: https://rrweb.com/
 tags: ["English", "Web Development", "Programming", "Site Reliability Engineering", "Help Desk", "On Call", "Untried", "Tool"]
 ---
 rrweb refers to 'record and replay the web', which is a tool for recording and replaying users' interactions on the web.

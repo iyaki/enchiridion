@@ -4,7 +4,7 @@ notion_id: 02885c29-c4c8-4375-9a4f-e4722387ed93
 notion_url: https://app.notion.com/p/Email-obfuscation-What-still-works-in-2023-02885c29c4c843759a4fe4722387ed93
 last_edited: 2023-11-28T19:03:00.000Z
 source_url: https://spencermortensen.com/articles/email-obfuscation/
-tags: ["Article", "Spencer Mortensen", "English", "Programming", "Web Development", "Email"]
+tags: ["Spencer Mortensen", "English", "Programming", "Web Development", "Email", "Article"]
 ---
 - 1 [Clickable link](https://spencermortensen.com/articles/email-obfuscation/#link) 
 - 1.1 [URL encoding](https://spencermortensen.com/articles/email-obfuscation/#link-url): blocked 100% of spam

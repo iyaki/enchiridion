@@ -4,7 +4,7 @@ notion_id: 1a654f1c-7d23-81c6-a71f-f461266e0092
 notion_url: https://app.notion.com/p/It-s-still-worth-blogging-in-the-age-of-AI-1a654f1c7d2381c6a71ff461266e0092
 last_edited: 2025-04-19T23:25:00.000Z
 source_url: https://www.gilesthomas.com/2025/02/blogging-in-the-age-of-ai
-tags: ["English", "Blogging/Content Creation", "Reflection", "Article", "Giles' blog"]
+tags: ["Article", "Giles' blog", "English", "Blogging/Content Creation", "Reflection"]
 ---
 My post about blogging as [writing the tutorial that you wished you'd found](https://www.gilesthomas.com/2025/02/20250223-til-deep-dive-posts) really took off [on Hacker News](https://news.ycombinator.com/item?id=43154666). There were a lot of excellent comments, but one thing kept coming up: what's the point in blogging if people are using ChatGPT, Claude and DeepSeek to spoon-feed them answers? Who, apart from the AIs, will read what you write?
 

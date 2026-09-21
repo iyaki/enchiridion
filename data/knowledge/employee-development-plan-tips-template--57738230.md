@@ -2,8 +2,8 @@
 title: "Employee Development Plan: Tips & Template"
 notion_id: 57738230-de9d-43ca-a75a-3d758b620780
 notion_url: https://app.notion.com/p/Employee-Development-Plan-Tips-Template-57738230de9d43caa75a3d758b620780
-last_edited: 2024-06-07T17:44:00.000Z
-source_url: https://toggl.com/blog/employee-development-plan
+last_edited: 2026-09-21T16:58:00.000Z
+source_url: https://toggl.com/blog/toggl-plan
 tags: ["English", "Human Resources (HH.RR.)", "Line/People/Team Management", "Article", "Toggl Blog"]
 ---
 An effective employee development plan is more than just a roadmap for individual career growth. It’s a strategic tool that aligns employees’ aspirations with the evolving needs of the business.

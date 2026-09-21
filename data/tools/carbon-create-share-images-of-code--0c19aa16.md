@@ -2,8 +2,8 @@
 title: "Carbon - Create & Share Images of Code"
 notion_id: 0c19aa16-575e-4237-841f-f522d4b1cc8d
 notion_url: https://app.notion.com/p/Carbon-Create-Share-Images-of-Code-0c19aa16575e4237841ff522d4b1cc8d
-last_edited: 2022-12-20T23:53:00.000Z
+last_edited: 2026-09-21T17:13:00.000Z
 source_url: https://carbon.now.sh/
-tags: ["English", "Programming", "Tool"]
+tags: ["Programming", "Tool", "English"]
 ---
 ## Create and share beautiful images of your source code.Start typing or drop a file into the text area to get started.

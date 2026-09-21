@@ -2,9 +2,9 @@
 title: "Fir - Reactive html apps in Go & alpine.js"
 notion_id: f3c4bedc-f1c7-46e3-ab22-efb754a176e9
 notion_url: https://app.notion.com/p/Fir-Reactive-html-apps-in-Go-alpine-js-f3c4bedcf1c746e3ab22efb754a176e9
-last_edited: 2023-07-10T18:02:00.000Z
-source_url: https://livefir.fly.dev/
-tags: ["English", "Go", "Web Development", "Untried", "Framework/Library"]
+last_edited: 2026-09-21T16:59:00.000Z
+source_url: https://www.notion.so/f3c4bedcf1c746e3ab22efb754a176e9
+tags: ["Framework/Library", "English", "Go", "Web Development", "Untried"]
 ---
 The **Fir** toolkit is designed for Go developers with moderate html/css & js skills who want to progressively build reactive web apps without mastering complex web frameworks. It includes a Go library and an Alpine.js plugin.
 

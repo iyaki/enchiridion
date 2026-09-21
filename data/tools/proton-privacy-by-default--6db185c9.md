@@ -4,7 +4,7 @@ notion_id: 6db185c9-e468-4330-a953-11915814d42b
 notion_url: https://app.notion.com/p/Proton-Privacy-by-default-6db185c9e4684330a95311915814d42b
 last_edited: 2023-07-21T11:50:00.000Z
 source_url: https://proton.me/
-tags: ["Privacy", "Email", "File/Object Storage", "Information Security", "Office", "Service", "English"]
+tags: ["Service", "English", "Privacy", "Email", "File/Object Storage", "Information Security", "Office"]
 ---
 Proton is privacy for everyone
 

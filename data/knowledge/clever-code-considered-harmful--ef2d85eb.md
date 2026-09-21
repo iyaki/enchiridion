@@ -4,7 +4,7 @@ notion_id: ef2d85eb-b214-483a-85e8-577dc8562dfb
 notion_url: https://app.notion.com/p/Clever-Code-Considered-Harmful-ef2d85ebb214483a85e8577dc8562dfb
 last_edited: 2023-01-17T11:29:00.000Z
 source_url: https://www.joshwcomeau.com/career/clever-code-considered-harmful/
-tags: ["Programming", "Reflection", "Productivity", "Article", "English"]
+tags: ["English", "Programming", "Reflection", "Productivity", "Article"]
 ---
 There is something undeniably satisfying about coming up with clever solutions to hard problems. There is a joy when you challenge yourself to use recursion instead of iteration, for example, or when you create elegant, cascading layers of abstraction that ensure code is never duplicated.
 

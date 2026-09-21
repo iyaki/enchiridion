@@ -4,7 +4,7 @@ notion_id: 5a689271-2fe6-447d-b8f5-47e1977e6bf7
 notion_url: https://app.notion.com/p/coolify-An-open-source-self-hostable-Heroku-Netlify-Vercel-alternative-5a6892712fe6447db8f547e1977e6bf7
 last_edited: 2024-02-21T00:08:00.000Z
 source_url: https://github.com/coollabsio/coolify
-tags: ["Hosting", "SysAdmin", "Untried", "Tool", "Service", "English"]
+tags: ["English", "Hosting", "SysAdmin", "Untried", "Tool", "Service"]
 ---
 # About the Project
 

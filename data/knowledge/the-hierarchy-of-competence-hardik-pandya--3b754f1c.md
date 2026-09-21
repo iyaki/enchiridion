@@ -4,7 +4,7 @@ notion_id: 3b754f1c-7d23-81f6-870f-c8da563a851a
 notion_url: https://app.notion.com/p/The-hierarchy-of-competence-Hardik-Pandya-3b754f1c7d2381f6870fc8da563a851a
 last_edited: 2026-08-09T01:26:00.000Z
 source_url: https://hvpandya.com/hierarchy-of-competence
-tags: ["Hardik Pandya", "English", "Career Growth", "Team Management", "Leadership", "Article", "Note"]
+tags: ["English", "Career Growth", "Team Management", "Leadership", "Article", "Note", "Hardik Pandya"]
 ---
 Some people are easy to work with. Not pleasant, not agreeable, easy. You hand them something and it stops being your problem, and the relief you feel has very little to do with whether you enjoy their company.
 

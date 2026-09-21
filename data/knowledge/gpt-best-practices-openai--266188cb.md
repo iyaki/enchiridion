@@ -2,8 +2,8 @@
 title: "GPT best practices - OpenAI"
 notion_id: 266188cb-9026-41b9-858f-54542d668fa1
 notion_url: https://app.notion.com/p/GPT-best-practices-OpenAI-266188cb902641b9858f54542d668fa1
-last_edited: 2023-06-09T19:55:00.000Z
-source_url: https://platform.openai.com/docs/guides/gpt-best-practices
+last_edited: 2026-09-21T17:00:00.000Z
+source_url: https://developers.openai.com/api/docs/guides/prompt-engineering
 tags: ["English", "Artificial Intelligence (AI)", "Guide"]
 ---
 This guide shares strategies and tactics for getting better results from GPTs. The methods described here can sometimes be deployed in combination for greater effect. We encourage experimentation to find the methods that work best for you.

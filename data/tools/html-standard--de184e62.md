@@ -4,7 +4,7 @@ notion_id: de184e62-56ac-4db6-98ab-afe8fe633dfe
 notion_url: https://app.notion.com/p/HTML-Standard-de184e6256ac4db698abafe8fe633dfe
 last_edited: 2023-02-23T00:31:00.000Z
 source_url: https://html.spec.whatwg.org/
-tags: ["English", "Web Development", "HTML", "Website", "Guide"]
+tags: ["Website", "Guide", "English", "Web Development", "HTML"]
 ---
 ## Full table of contents
 

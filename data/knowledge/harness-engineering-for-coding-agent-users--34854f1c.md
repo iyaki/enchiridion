@@ -4,7 +4,7 @@ notion_id: 34854f1c-7d23-81dc-a9d3-ebfe421305de
 notion_url: https://app.notion.com/p/Harness-engineering-for-coding-agent-users-34854f1c7d2381dca9d3ebfe421305de
 last_edited: 2026-09-18T00:53:00.000Z
 source_url: https://martinfowler.com/articles/harness-engineering.html
-tags: ["Software Architecture", "Artificial Intelligence (AI)", "Programming", "DevOps", "Tool", "Article", "Martin Fowler", "English"]
+tags: ["Tool", "Article", "Martin Fowler", "English", "Software Architecture", "Artificial Intelligence (AI)", "Programming", "DevOps"]
 ---
 The term harness has emerged as a shorthand to mean everything in an AI agent except the model itself - [Agent = Model + Harness](https://blog.langchain.com/the-anatomy-of-an-agent-harness/). That is a very wide definition, and therefore worth narrowing down for common categories of agents. I want to take the liberty here of defining its meaning in the bounded context of using a coding agent. In coding agents, part of the harness is already built in (e.g. via the system prompt, or the chosen code retrieval mechanism, or even a [sophisticated orchestration system](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)). But coding agents also provide us, their users, with many features to build an outer harness specifically for our use case and system.
 

@@ -2,9 +2,9 @@
 title: "How Bear does analytics with CSS"
 notion_id: 0a907dea-5aed-4fbf-8ad1-baedf62a27b2
 notion_url: https://app.notion.com/p/How-Bear-does-analytics-with-CSS-0a907dea5aed4fbf8ad1baedf62a27b2
-last_edited: 2023-11-06T11:30:00.000Z
-source_url: https://herman.bearblog.dev/how-bear-does-analytics-with-css
-tags: ["Herman's blog", "English", "Web Development", "Article", "Guide"]
+last_edited: 2026-09-21T16:58:00.000Z
+source_url: https://herman.bearblog.dev/how-bear-does-analytics-with-css/
+tags: ["English", "Web Development", "Article", "Guide", "Herman's blog"]
 ---
 Bear Blog has a few design constraints for speed, efficiency, and stability. There are many great open-source, privacy-focussed analytics platforms out there, but I wanted to build one native to Bear.
 

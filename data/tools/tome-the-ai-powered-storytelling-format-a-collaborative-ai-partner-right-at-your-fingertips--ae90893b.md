@@ -2,9 +2,9 @@
 title: "Tome - The AI-powered storytelling format. A collaborative AI partner, right at your fingertips"
 notion_id: ae90893b-35c7-4f1e-a33e-8c2523c91d18
 notion_url: https://app.notion.com/p/Tome-The-AI-powered-storytelling-format-A-collaborative-AI-partner-right-at-your-fingertips-ae90893b35c74f1ea33e8c2523c91d18
-last_edited: 2023-05-04T13:03:00.000Z
-source_url: https://beta.tome.app/
-tags: ["Service", "English", "Office", "Untried", "Graphic Design"]
+last_edited: 2026-09-21T17:02:00.000Z
+source_url: https://www.notion.so/ae90893b35c74f1ea33e8c2523c91d18
+tags: ["English", "Office", "Untried", "Graphic Design", "Service"]
 ---
 Type in a prompt and watch Tome generate entire narratives from scratch or create additional content pages within seconds. Use our DALL·E 2 tile to create compelling images, tailor-made to bring your idea to life.
 

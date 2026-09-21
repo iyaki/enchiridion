@@ -2,9 +2,9 @@
 title: "How to Write Useful Commit Messages"
 notion_id: 1b254f1c-7d23-81cd-b409-ede5ca338e90
 notion_url: https://app.notion.com/p/How-to-Write-Useful-Commit-Messages-1b254f1c7d2381cdb409ede5ca338e90
-last_edited: 2025-04-19T23:28:00.000Z
-source_url: https://refactoringenglish.com/chapters/commit-messages/
-tags: ["Refactoring English", "English", "Programming", "Project Management", "Article"]
+last_edited: 2026-09-21T16:57:00.000Z
+source_url: https://refactoringenglish.com/excerpts/commit-messages/
+tags: ["English", "Programming", "Project Management", "Article", "Refactoring English"]
 ---
 - [An example of a useful commit message](https://refactoringenglish.com/chapters/commit-messages/#an-example-of-a-useful-commit-message)
 - [What’s the point of a commit message?](https://refactoringenglish.com/chapters/commit-messages/#whats-the-point-of-a-commit-message)

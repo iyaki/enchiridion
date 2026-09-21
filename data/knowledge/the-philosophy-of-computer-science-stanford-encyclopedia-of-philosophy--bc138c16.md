@@ -4,7 +4,7 @@ notion_id: bc138c16-7910-4ca7-a81b-a8e655421fab
 notion_url: https://app.notion.com/p/The-Philosophy-of-Computer-Science-Stanford-Encyclopedia-of-Philosophy-bc138c1679104ca7a81ba8e655421fab
 last_edited: 2023-04-22T19:57:00.000Z
 source_url: https://plato.stanford.edu/entries/computer-science/
-tags: ["Programming", "System Design / Software Architecture", "Book", "English"]
+tags: ["English", "Programming", "System Design / Software Architecture", "Book"]
 ---
 The philosophy of computer science is concerned with the ontological and methodological issues arising from within the academic discipline of computer science, and from the practice of software development and its commercial and industrial deployment. More specifically, the philosophy of computer science considers the ontology and epistemology of computational systems, focusing on problems associated with their specification, programming, implementation, verification and testing. The complex nature of computer programs ensures that many of the conceptual questions raised by the philosophy of computer science have related ones in the [philosophy of mathematics](https://plato.stanford.edu/entries/philosophy-mathematics/), the philosophy of empirical sciences, and the [philosophy of technology](https://plato.stanford.edu/entries/technology/). We shall provide an analysis of such topics that reflects the layered nature of the ontology of computational systems in Sections 1–5; we then discuss topics involved in their methodology in Sections 6–8.
 

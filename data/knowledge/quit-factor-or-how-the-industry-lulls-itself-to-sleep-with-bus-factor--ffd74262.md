@@ -4,7 +4,7 @@ notion_id: ffd74262-a2a7-4a05-b8b8-fbb61d3eb17e
 notion_url: https://app.notion.com/p/Quit-factor-or-How-the-industry-lulls-itself-to-sleep-with-bus-factor-ffd74262a2a74a05b8b8fbb61d3eb17e
 last_edited: 2023-02-16T19:41:00.000Z
 source_url: https://eternal-eval.beehiiv.com/p/p-quit-factor
-tags: ["Reflection", "Project Management", "Article", "English"]
+tags: ["English", "Reflection", "Project Management", "Article"]
 ---
 Back in the day there was a company in the business of recycling printer cartridges. Their market was thriving and you could find their ads everywhere: in magazines, newspapers and on the public transport, especially in buses. There was a cute dead bird in their logo, like a sparrow. Some time later I read an interview with the company’s CEO. He explained that they wanted to visually express this idea of a “dead printer cartridge”. They did research and found out that a small dead bird is basically the only visual that represents the idea of death but almost lacks negative connotations and so could safely be used in advertising.
 

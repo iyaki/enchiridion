@@ -2,8 +2,8 @@
 title: "Automa - An extension for browser automation"
 notion_id: f7c7bc3f-0f2d-4793-b95c-d961d236d82a
 notion_url: https://app.notion.com/p/Automa-An-extension-for-browser-automation-f7c7bc3f0f2d4793b95cd961d236d82a
-last_edited: 2023-03-09T14:52:00.000Z
-source_url: https://www.automa.site/
+last_edited: 2026-09-21T17:02:00.000Z
+source_url: https://www.goautoma.com/
 tags: ["English", "Programming", "DevOps", "Productivity", "Office", "Untried", "Tool", "Service"]
 ---
 Automa is a browser extension for browser automation. From auto-fill forms, doing a repetitive task, taking a screenshot, to scraping data of the website, it's up to you what you want to do with this extension.

@@ -4,7 +4,7 @@ notion_id: abf5c197-d326-4366-853e-04ef46c35954
 notion_url: https://app.notion.com/p/The-Concise-TypeScript-Book-A-Concise-Guide-to-Effective-Development-in-TypeScript-abf5c197d3264366853e04ef46c35954
 last_edited: 2026-09-18T00:54:00.000Z
 source_url: https://github.com/gibbok/typescript-book
-tags: ["TypeScript", "Book", "English"]
+tags: ["Book", "English", "TypeScript"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

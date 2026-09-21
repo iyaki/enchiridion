@@ -4,7 +4,7 @@ notion_id: 537772c6-cda0-457b-9a7e-6ad85e0b5418
 notion_url: https://app.notion.com/p/Database-Migrations-537772c6cda0457b9a7e6ad85e0b5418
 last_edited: 2023-10-12T18:21:00.000Z
 source_url: https://vadimkravcenko.com/shorts/database-migrations/
-tags: ["Vadim Kravcenko", "English", "Databases", "Programming", "DevOps", "Site Reliability Engineering", "System Design / Software Architecture", "Article"]
+tags: ["Article", "Vadim Kravcenko", "English", "Databases", "Programming", "DevOps", "Site Reliability Engineering", "System Design / Software Architecture"]
 ---
 I consider database migrations one of the most annoying problems to deal with during a software engineer’s life. Not only that, if it goes wrong, as it often does, people tend to develop anxiety related to any schema changes.
 

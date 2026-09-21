@@ -2,8 +2,8 @@
 title: "Cómo configurar Nginx para obtener un rendimiento óptimo"
 notion_id: af8f207e-12ba-4067-a3df-e5984b3ae14e
 notion_url: https://app.notion.com/p/C-mo-configurar-Nginx-para-obtener-un-rendimiento-ptimo-af8f207e12ba4067a3dfe5984b3ae14e
-last_edited: 2022-12-21T15:16:00.000Z
-source_url: https://docs.bluehosting.cl/tutoriales/servidores/como-configurar-nginx-para-obtener-un-rendimiento-optimo.html
+last_edited: 2026-09-21T17:12:00.000Z
+source_url: https://www.notion.so/af8f207e12ba4067a3dfe5984b3ae14e
 tags: ["Español", "Web Development", "SysAdmin", "Article"]
 ---
 El servidor web Nginx se ha popularizado en los últimos años tanto por su alto desempeño en el balance de carga y el almacenamiento en caché de contenido web dinámico y estático. Esta guía pretende proporcionar algunos consejos para determinar las mejores optimizaciones de rendimiento necesarias en un servidor Nginx para acelerar la entrega de contenido a sus usuarios finales.

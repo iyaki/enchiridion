@@ -2,8 +2,8 @@
 title: "Make Firing People Less Awful By Doing These 4 Things"
 notion_id: 47280c5a-dff6-49f7-b991-902b1fa8e75e
 notion_url: https://app.notion.com/p/Make-Firing-People-Less-Awful-By-Doing-These-4-Things-47280c5adff649f7b991902b1fa8e75e
-last_edited: 2023-03-02T16:41:00.000Z
-source_url: https://www.radicalcandor.com/make-firing-people-less-awful/
+last_edited: 2026-09-21T17:02:00.000Z
+source_url: https://www.radicalcandor.com/blog/how-to-fire-someone
 tags: ["English", "Line/People/Team Management", "Human Resources (HH.RR.)", "Article", "Radical Candor"]
 ---
 Some companies don’t invest much time in the [hiring process](https://www.radicalcandor.com/hiring-process-radical-candor/), on the theory that it’s easy to [fire people](https://www.businessinsider.com/kim-scott-radical-candor-hiring-recruitment-jobs-firing-employee-2017-3). This is a big mistake.

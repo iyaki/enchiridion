@@ -4,7 +4,7 @@ notion_id: 473e4925-67f9-48ab-a0b2-6fd50e748448
 notion_url: https://app.notion.com/p/Developing-leadership-styles-473e492567f948aba0b26fd50e748448
 last_edited: 2023-10-23T11:26:00.000Z
 source_url: https://lethain.com/developing-leadership-styles/
-tags: ["Article", "Irrational Exuberance (Will Larson)", "Leadersheep", "Decision Making", "Communication", "Line/People/Team Management"]
+tags: ["Leadersheep", "Decision Making", "Communication", "Line/People/Team Management", "Article", "Irrational Exuberance (Will Larson)"]
 ---
 For a long time, I found the micromanager CEO archetype very frustrating to work with. They would often pop out of nowhere, jab holes in the work I had done without understanding the tradeoffs, and then disappear when I wanted to explain my decisions. In those moments, I wished they would trust me based on my track record of doing good work. If they didn’t trust my track record, could they at least take the time to talk through the situation so I could explain my decisions?!
 

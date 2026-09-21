@@ -4,7 +4,7 @@ notion_id: 2b08f32a-26d2-4701-bd35-dab1663ca242
 notion_url: https://app.notion.com/p/Porcelains-2b08f32a26d24701bd35dab1663ca242
 last_edited: 2023-05-18T11:32:00.000Z
 source_url: https://glazkov.com/2023/04/17/porcelains/
-tags: ["English", "Programming", "System Design / Software Architecture", "Article", "Dimitri Glazkov"]
+tags: ["Programming", "System Design / Software Architecture", "Article", "Dimitri Glazkov", "English"]
 ---
 My friend Dion asked me to write this down. It’s a neat little pattern that I just recently uncovered, and it’s been delighting me for the last couple of days. I named it “porcelains”, partially as an homage to spiritually similar [git porcelains](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain), partially because I just love the darned word. _Porcelains!_  So sparkly.
 

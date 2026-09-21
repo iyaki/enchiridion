@@ -4,7 +4,7 @@ notion_id: 31954f1c-7d23-81f9-b444-f39504c75d06
 notion_url: https://app.notion.com/p/The-two-views-of-rationality-Inverted-Passion-31954f1c7d2381f9b444f39504c75d06
 last_edited: 2026-09-18T00:53:00.000Z
 source_url: https://invertedpassion.com/the-two-views-of-rationality/
-tags: ["Product Management", "Behavior Design", "Coaching", "Career Growth", "Learning", "Article", "Inverted Passion", "English"]
+tags: ["Inverted Passion", "English", "Product Management", "Behavior Design", "Coaching", "Career Growth", "Learning", "Article"]
 ---
 This essay is part of the series in which I talk about **my learnings and insights building a habit coaching app** (Nintee) in 2024. It didn’t ultimately work out because an app has marginal influence in a human’s life (v/s that of friends, family, culture and immediate environment). Most apps that work in the category operate like gyms (charge upfront when the motivation is high, and be okay with high churn). I had raised VC funding for it and later it became clear to me that this wouldn’t be a VC scale business, so I shut it down and returned the remaining funding. Hope the insights learned along the way would turn out to be valuable to others.
 

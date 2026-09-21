@@ -4,7 +4,7 @@ notion_id: 19a54f1c-7d23-8176-87a4-ead56f5ff174
 notion_url: https://app.notion.com/p/A-Week-in-My-Life-as-a-Product-Leader-with-AI-19a54f1c7d23817687a4ead56f5ff174
 last_edited: 2025-02-28T21:15:00.000Z
 source_url: https://creatoreconomy.so/p/a-week-in-my-life-as-a-product-leader-with-ai
-tags: ["Creator Economy (Peter Yang)", "English", "Product Management", "Productivity", "Article"]
+tags: ["Article", "Creator Economy (Peter Yang)", "English", "Product Management", "Productivity"]
 ---
 Dear subscribers,
 

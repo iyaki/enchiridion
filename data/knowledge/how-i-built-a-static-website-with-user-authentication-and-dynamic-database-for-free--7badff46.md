@@ -4,7 +4,7 @@ notion_id: 7badff46-551c-4b9c-865f-b585bdca1c16
 notion_url: https://app.notion.com/p/How-I-Built-a-Static-Website-with-User-Authentication-and-Dynamic-Database-for-Free-7badff46551c4b9c865fb585bdca1c16
 last_edited: 2023-01-13T17:42:00.000Z
 source_url: https://hackernoon.com/how-i-built-a-static-website-with-user-authentication-and-dynamic-database-for-free
-tags: ["Hackernoon", "English", "Programming", "Article", "Tutorial"]
+tags: ["English", "Programming", "Article", "Tutorial", "Hackernoon"]
 ---
 ## Too Long; Didn't Read
 

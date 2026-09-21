@@ -4,7 +4,7 @@ notion_id: 34f1d591-b9fa-4729-80c8-a4456495c36b
 notion_url: https://app.notion.com/p/Bring-your-own-interface-34f1d591b9fa472980c8a4456495c36b
 last_edited: 2023-09-13T11:57:00.000Z
 source_url: https://blog.verygoodsoftwarenotvirus.ru/posts/interfaces/
-tags: ["Article", "Very Good Software Not Virus", "English", "Programming", "System Design / Software Architecture"]
+tags: ["English", "Programming", "System Design / Software Architecture", "Article", "Very Good Software Not Virus"]
 ---
 I have a side project which, like most good software, uses a [structured logger](https://stackify.com/what-is-structured-logging-and-why-developers-need-it/). Initially I used [logrus](https://github.com/sirupsen/logrus), then I used [zap](https://github.com/uber-go/zap), and then I found [zerolog](https://github.com/rs/zerolog), which I’ve used now for a number of years.
 

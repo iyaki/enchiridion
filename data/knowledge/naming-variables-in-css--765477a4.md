@@ -2,9 +2,9 @@
 title: "Naming Variables In CSS"
 notion_id: 765477a4-fce6-45fb-bcff-9d02ffa83a5f
 notion_url: https://app.notion.com/p/Naming-Variables-In-CSS-765477a4fce645fbbcff9d02ffa83a5f
-last_edited: 2023-11-09T19:03:00.000Z
-source_url: https://jwdallas.com/posts/namingcssvariables
-tags: ["Article", "Jonathan Dallas", "English", "CSS"]
+last_edited: 2026-09-21T16:58:00.000Z
+source_url: https://jwdallas.com/posts/namingcssvariables/
+tags: ["English", "CSS", "Article", "Jonathan Dallas"]
 ---
 “Naming things is hard” goes the software engineering axiom and CSS is no exception. Here are some collected thoughts related to naming [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*). I’m going to use use the terms “variable” and “custom property” interchangeably since they are effectively the same thing for the purposes of what to call them.
 

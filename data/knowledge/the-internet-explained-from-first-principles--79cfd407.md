@@ -4,7 +4,7 @@ notion_id: 79cfd407-645e-4217-acaa-0083e314d1e2
 notion_url: https://app.notion.com/p/The-Internet-explained-from-first-principles-79cfd407645e4217acaa0083e314d1e2
 last_edited: 2023-02-23T00:34:00.000Z
 source_url: https://explained-from-first-principles.com/internet/
-tags: ["English", "Network", "Web Development", "Article", "Book"]
+tags: ["Article", "Book", "English", "Network", "Web Development"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

@@ -4,7 +4,7 @@ notion_id: 1712f138-6533-43f3-8068-5af1e216e98b
 notion_url: https://app.notion.com/p/Deuda-T-cnica-lo-que-necesit-s-saber-para-poder-gestionarla-1712f138653343f380685af1e216e98b
 last_edited: 2023-02-16T13:56:00.000Z
 source_url: https://medium.com/redbee/deuda-t%C3%A9cnica-lo-que-necesit%C3%A1s-saber-para-poder-gestionarla-8ee255b73501
-tags: ["Article", "redbee - Medium", "Español", "Programming", "Project Management", "System Design / Software Architecture"]
+tags: ["Español", "Programming", "Project Management", "System Design / Software Architecture", "Article", "redbee - Medium"]
 ---
 Para poder gestionar adecuadamente la deuda técnica, es necesario contar con algunas definiciones que le permitan al equipo ponerse de acuerdo en la mejor estrategia para abordarla. En este artículo, revisamos todo sobre este concepto, tan popular entre los equipos.
 

@@ -4,7 +4,7 @@ notion_id: 9c19b9f5-ba27-487a-a654-372b7a30a59d
 notion_url: https://app.notion.com/p/Just-for-Fun-No-Really-9c19b9f5ba27487aa654372b7a30a59d
 last_edited: 2023-09-08T18:00:00.000Z
 source_url: https://justforfunnoreally.dev/
-tags: ["Website", "English", "Programming", "System Design / Software Architecture", "?"]
+tags: ["Programming", "System Design / Software Architecture", "?", "Website", "English"]
 ---
 _We like to write software!_ Coding is a journey of problem-solving, and sometimes the destination is less important than some might think.
 

@@ -2,8 +2,8 @@
 title: "Radical Simplicity in Technology"
 notion_id: 9dc4eaa0-0790-4655-a768-5f6509e642a5
 notion_url: https://app.notion.com/p/Radical-Simplicity-in-Technology-9dc4eaa007904655a7685f6509e642a5
-last_edited: 2023-02-01T17:03:00.000Z
-source_url: http://www.radicalsimpli.city/
+last_edited: 2026-09-21T17:03:00.000Z
+source_url: https://www.radicalsimpli.city/
 tags: ["Website", "Article", "English", "System Design / Software Architecture", "Principles", "Programming"]
 ---
 _As developers we love complexity. We create complexity with SPAs, Vue/React, Transpiling, Typescript, Babel, Webpack, PureCSS, GraphQL, JSON, and on the backend with microservices, protobuf, Kafka, InfluxDB, or NoSQL databases. This complexity is accidental and not in the problem domain. This complexity slows us down and makes development tiresome. This complexity leads to shallow domains. Radical Simplicity makes development fast and joyful again._

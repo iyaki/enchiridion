@@ -4,7 +4,7 @@ notion_id: f4f9807e-3c32-4ff2-a6b5-9b7a374239f9
 notion_url: https://app.notion.com/p/Getting-started-with-View-Transitions-on-multi-page-apps-f4f9807e3c324ff2a6b59b7a374239f9
 last_edited: 2023-11-06T11:35:00.000Z
 source_url: https://daverupert.com/2023/05/getting-started-view-transitions/
-tags: ["English", "Web Development", "HTML", "CSS", "Frontend", "Article", "Tutorial", "Dave Rupert"]
+tags: ["Dave Rupert", "English", "Web Development", "HTML", "CSS", "Frontend", "Article", "Tutorial"]
 ---
 Spurred by [last week’s ShopTalk](https://shoptalkshow.com/565/) I rolled out View Transitions here on my static Jekyll site. I hadn’t realized View Transitions for multi-page apps (MPAs) and static sites are ready for testing behind a flag in Chrome 113+. View Transitions for MPAs are a feature that’s high on my CSS wishlist, so I got to it. It took less than an hour to do, requires zero JavaScript, and two lines of CSS. I’m pleased with the results.
 

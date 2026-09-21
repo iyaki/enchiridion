@@ -2,9 +2,9 @@
 title: "Modern PHP Cheat Sheet"
 notion_id: 3a4005f7-1396-4802-bfd4-7e9796d27ed0
 notion_url: https://app.notion.com/p/Modern-PHP-Cheat-Sheet-3a4005f713964802bfd47e9796d27ed0
-last_edited: 2022-12-21T14:18:00.000Z
+last_edited: 2026-09-21T17:09:00.000Z
 source_url: https://front-line-php.com/cheat-sheet
-tags: ["CheatSheet", "English", "PHP"]
+tags: ["English", "PHP", "CheatSheet"]
 ---
 This sample is an excerpt from the ebook Front Line PHP. Check out the entire book to learn how to build modern applications in PHP 8.3.
 

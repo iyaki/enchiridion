@@ -4,7 +4,7 @@ notion_id: 95018621-03f3-416b-a056-66dbe3e51984
 notion_url: https://app.notion.com/p/CS-242-Programming-Languages-Fall-2018-9501862103f3416ba05666dbe3e51984
 last_edited: 2023-06-27T22:06:00.000Z
 source_url: https://stanford-cs242.github.io/f18/
-tags: ["English", "Programming", "Course"]
+tags: ["Course", "English", "Programming"]
 ---
 ### Course summary
 

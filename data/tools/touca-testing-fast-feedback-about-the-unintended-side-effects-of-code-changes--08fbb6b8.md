@@ -2,8 +2,8 @@
 title: "Touca testing - Fast feedback about the unintended side-effects of code changes"
 notion_id: 08fbb6b8-81fa-4c95-bd12-008bd793cfde
 notion_url: https://app.notion.com/p/Touca-testing-Fast-feedback-about-the-unintended-side-effects-of-code-changes-08fbb6b881fa4c95bd12008bd793cfde
-last_edited: 2023-03-02T17:08:00.000Z
-source_url: https://touca.io/
+last_edited: 2026-09-21T17:02:00.000Z
+source_url: https://www.idiotsguides.com/
 tags: ["English", "Testing", "Tool", "Service"]
 ---
 Xoilac tv là kênh xem bóng đá trực tiếp 24/7 được hàng triệu người hâm mộ tin tưởng mỗi ngày. Hệ thống phát sóng hơn 20 giải đấu lớn nhỏ như Ngoại Hạng Anh, Champions League hay V-League với chất lượng hình ảnh Full HD. Nhờ tốc độ tải nhanh, không giật lag và hoàn toàn miễn phí, xem bd tt xôi lạc tv trở thành lựa chọn hàng đầu của fan bóng đá trực tuyến Việt Nam.

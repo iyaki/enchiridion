@@ -2,9 +2,9 @@
 title: "aaPanel/BillionMail: BillionMail gives you open-source MailServer, NewsLetter, Email Marketing — fully self-hosted, dev-friendly, and free from monthly fees. Join the discord: https://discord.gg/asfXzBUhZr"
 notion_id: 2b754f1c-7d23-81d0-b2af-fec053e29116
 notion_url: https://app.notion.com/p/aaPanel-BillionMail-BillionMail-gives-you-open-source-MailServer-NewsLetter-Email-Marketing-ful-2b754f1c7d2381d0b2affec053e29116
-last_edited: 2025-12-17T13:13:00.000Z
-source_url: https://github.com/aaPanel/BillionMail
-tags: ["English", "Others", "Email", "Automation", "Productivity", "Tool", "GitHub"]
+last_edited: 2026-09-21T16:57:00.000Z
+source_url: https://github.com/Billionmail/BillionMail
+tags: ["Email", "Automation", "Productivity", "Tool", "GitHub", "English", "Others"]
 ---
 # [BillionMail 📧](https://www.billionmail.com/)
 

@@ -2,8 +2,8 @@
 title: "Ghidra - Software reverse engineering (SRE) suite of tools developed by NSA's Research Directorate"
 notion_id: 041bf744-3f60-455e-ae15-65ed113b69ef
 notion_url: https://app.notion.com/p/Ghidra-Software-reverse-engineering-SRE-suite-of-tools-developed-by-NSA-s-Research-Directorate-041bf7443f60455eae1565ed113b69ef
-last_edited: 2023-07-21T11:34:00.000Z
-source_url: https://ghidra-sre.org/
+last_edited: 2026-09-21T16:59:00.000Z
+source_url: https://github.com/NationalSecurityAgency/ghidra
 tags: ["Tool", "English", "Information Security", "Untried"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->

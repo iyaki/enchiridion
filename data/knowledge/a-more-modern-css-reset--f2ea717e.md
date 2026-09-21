@@ -2,9 +2,9 @@
 title: "A (more) Modern CSS Reset"
 notion_id: f2ea717e-d739-4d97-8288-7138defe6cc0
 notion_url: https://app.notion.com/p/A-more-Modern-CSS-Reset-f2ea717ed7394d9782887138defe6cc0
-last_edited: 2023-10-12T15:56:00.000Z
-source_url: https://andy-bell.co.uk/a-more-modern-css-reset/
-tags: ["CSS", "Frontend", "Article", "Guide", "Andy Bell", "English"]
+last_edited: 2026-09-21T16:59:00.000Z
+source_url: https://piccalil.li/blog/a-more-modern-css-reset/
+tags: ["Article", "Guide", "Andy Bell", "English", "CSS", "Frontend"]
 ---
 I wrote [A Modern CSS Reset](https://andy-bell.co.uk/a-modern-css-reset/) almost 4 years ago and, yeh, it’s not aged overly well. I spotted it being linked up again a few days ago and thought it’s probably a good idea to publish an updated version.
 

@@ -4,7 +4,7 @@ notion_id: 39354f1c-7d23-817c-8324-cbc2eef01f68
 notion_url: https://app.notion.com/p/The-Short-Leash-AI-Coding-Method-For-Beating-Fable-39354f1c7d23817c8324cbc2eef01f68
 last_edited: 2026-09-18T00:52:00.000Z
 source_url: https://blog.okturtles.org/2026/07/short-leash-ai-method/
-tags: ["English", "Programming", "Software Development", "Artificial Intelligence (AI)", "Quality", "Performance", "Article", "Tutorial", "blog.okturtles.org"]
+tags: ["blog.okturtles.org", "English", "Programming", "Software Development", "Artificial Intelligence (AI)", "Quality", "Performance", "Article", "Tutorial"]
 ---
 This post is the culmination of over a year of research into how to properly use AI agents to write high-quality software in security-critical systems.
 

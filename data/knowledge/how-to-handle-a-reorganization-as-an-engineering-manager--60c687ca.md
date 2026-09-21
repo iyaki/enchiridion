@@ -2,9 +2,9 @@
 title: "How to handle a reorganization as an engineering manager"
 notion_id: 60c687ca-54d0-4375-b284-a4ca1768d61c
 notion_url: https://app.notion.com/p/How-to-handle-a-reorganization-as-an-engineering-manager-60c687ca54d04375b284a4ca1768d61c
-last_edited: 2023-01-25T19:30:00.000Z
-source_url: https://leaddev.com/managing-time-crisis/how-handle-reorganization-engineering-manager
-tags: ["LeadDev", "English", "Line/People/Team Management", "Change Management", "Article"]
+last_edited: 2026-09-21T17:03:00.000Z
+source_url: https://leaddev.com/leadership/how-handle-reorganization-engineering-manager
+tags: ["Line/People/Team Management", "Change Management", "Article", "LeadDev", "English"]
 ---
 We’ve all been through reorgs before. When you’re an individual contributor, they tend to be mysterious, often frustrating management exercises. Your boss changes suddenly, or your team is dissolved into other teams, or you’re moved into an entirely new organization and even though your job is the same, everything feels different.
 

@@ -4,7 +4,7 @@ notion_id: 3e4e5d72-f088-4cf4-b76d-16cc8dba843e
 notion_url: https://app.notion.com/p/Prompt-Engineering-3e4e5d72f0884cf4b76d16cc8dba843e
 last_edited: 2023-04-20T19:40:00.000Z
 source_url: https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/
-tags: ["Artificial Intelligence (AI)", "Article", "English"]
+tags: ["Article", "English", "Artificial Intelligence (AI)"]
 ---
 **Prompt Engineering**, also known as **In-Context Prompting**, refers to methods for how to communicate with LLM to steer its behavior for desired outcomes _without_ updating the model weights. It is an empirical science and the effect of prompt engineering methods can vary a lot among models, thus requiring heavy experimentation and heuristics.
 

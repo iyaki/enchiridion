@@ -4,7 +4,7 @@ notion_id: 683886da-8804-46cf-827d-909038cbf1a9
 notion_url: https://app.notion.com/p/Delegating-gets-easier-when-you-get-better-at-explaining-your-ideas-683886da880446cf827d909038cbf1a9
 last_edited: 2024-05-27T00:23:00.000Z
 source_url: https://newsletter.weskao.com/p/delegating-and-explaining
-tags: ["English", "Line/People/Team Management", "Communication", "Entrepreneurship", "Leadersheep", "Career Growth", "Decision Making", "Article", "Wes Kao's Newsletter"]
+tags: ["Wes Kao's Newsletter", "English", "Line/People/Team Management", "Communication", "Entrepreneurship", "Leadersheep", "Career Growth", "Decision Making", "Article"]
 ---
 As a manager, your role likely involves assigning projects, tasks, initiatives, areas of responsibility—and, here’s the most important part: setting folks up for success.
 

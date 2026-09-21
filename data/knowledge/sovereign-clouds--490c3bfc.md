@@ -4,7 +4,7 @@ notion_id: 490c3bfc-b98e-4f98-9ae1-92e4206d0e97
 notion_url: https://app.notion.com/p/Sovereign-clouds-490c3bfcb98e4f989ae192e4206d0e97
 last_edited: 2023-05-03T19:05:00.000Z
 source_url: https://world.hey.com/dhh/sovereign-clouds-661eb5e4
-tags: ["English", "Web Development", "Network", "Reflection", "Article", "DAVID HEINEMEIER HANSSON"]
+tags: ["Article", "DAVID HEINEMEIER HANSSON", "English", "Web Development", "Network", "Reflection"]
 ---
 I've been talking about [our departure](https://world.hey.com/dhh/why-we-re-leaving-the-cloud-654b47e0) from renting computers via AWS to owning them in a colocated datacenter as our "cloud exit". But I recognize this terminology can rub some people the wrong way. There's an entire generation of technologists who see themselves as "cloud native", and alienating them just because we want to own our hardware rather than rent it doesn't help anyone. Most of the skills of these cloud natives are useful regardless of where the applications run.
 

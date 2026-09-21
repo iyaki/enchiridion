@@ -2,8 +2,8 @@
 title: "Headline driven development"
 notion_id: dafa0212-ecd4-4315-9b33-318fdf038d42
 notion_url: https://app.notion.com/p/Headline-driven-development-dafa0212ecd443159b33318fdf038d42
-last_edited: 2024-04-09T18:17:00.000Z
-source_url: https://www.spakhm.com/headline-development
+last_edited: 2026-09-21T16:58:00.000Z
+source_url: https://www.notion.so/dafa0212ecd443159b33318fdf038d42
 tags: ["English", "Programming", "Productivity", "Article", "Slava Akhmechet"]
 ---
 Here is a simple process for shipping software projects that works. First, decompose the project into a stream[1](https://www.spakhm.com/headline-development?utm_source=tldrwebdev#footnote-1AV3) of headlines. Then pick an aggressive date to ship the first headline and work like hell to meet that date. Have everyone work only on one headline at a time– the upcoming one. Ignore everything else. Don’t work on anything that doesn’t help you ship the headline. Once the headline is shipped, switch to the next headline in the stream and repeat. That’s all, you can fire your agile consultant.

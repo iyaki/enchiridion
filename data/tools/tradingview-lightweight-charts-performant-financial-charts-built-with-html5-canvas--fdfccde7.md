@@ -4,7 +4,7 @@ notion_id: fdfccde7-e186-4d17-8d0e-9c1142312b8f
 notion_url: https://app.notion.com/p/tradingview-lightweight-charts-Performant-financial-charts-built-with-HTML5-canvas-fdfccde7e1864d178d0e9c1142312b8f
 last_edited: 2024-06-05T18:35:00.000Z
 source_url: https://github.com/tradingview/lightweight-charts
-tags: ["Frontend", "HTML", "Untried", "Framework/Library", "English"]
+tags: ["English", "Frontend", "HTML", "Untried", "Framework/Library"]
 ---
 ![image](https://github.com/tradingview/lightweight-charts/raw/master/.github/logo.svg?sanitize=true)
 

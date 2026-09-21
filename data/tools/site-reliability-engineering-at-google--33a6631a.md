@@ -4,7 +4,7 @@ notion_id: 33a6631a-62e0-4ac7-b6f2-68f3a27e9933
 notion_url: https://app.notion.com/p/Site-Reliability-Engineering-at-Google-33a6631a62e04ac7b6f268f3a27e9933
 last_edited: 2024-06-07T17:44:00.000Z
 source_url: https://sre.google/
-tags: ["English", "Site Reliability Engineering", "Website", "Book"]
+tags: ["Website", "Book", "English", "Site Reliability Engineering"]
 ---
 SRE is what you get when you treat operations as if it’s a software problem. Our mission is to protect, provide for, and progress the software and systems behind all of Google’s public services — Google Search, Ads, Gmail, Android, YouTube, and App Engine, to name just a few — with an ever-watchful eye on their availability, latency, performance, and capacity.
 

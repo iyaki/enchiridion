@@ -2,9 +2,9 @@
 title: "Shift From “Product First” to “Product Last”"
 notion_id: f957ad6b-fb56-4eb4-ade6-f9c4f0dc9ce8
 notion_url: https://app.notion.com/p/Shift-From-Product-First-to-Product-Last-f957ad6bfb564eb4ade6f9c4f0dc9ce8
-last_edited: 2024-04-09T18:03:00.000Z
-source_url: https://rbefored.com/shift-from-product-first-to-product-last-726e0ea64a67
-tags: ["R Before D", "English", "Product Management", "Entrepreneurship", "Custommer Success", "Article"]
+last_edited: 2026-09-21T16:58:00.000Z
+source_url: https://rbefored.com/shift-from-product-first-to-product-last-726e0ea64a67?gi=f466cbd75468
+tags: ["English", "Product Management", "Entrepreneurship", "Custommer Success", "Article", "R Before D"]
 ---
 Once upon a time, “product first” was supposed to be about how to best deliver products and features to best serve customers. After all, if we’re not serving customers well, what are we doing? We need to win customers, make them happy, retain them, and create growth for our company. This is done through great products and services that meet or exceed target audiences’ needs.
 

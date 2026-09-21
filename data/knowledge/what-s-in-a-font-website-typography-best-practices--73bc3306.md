@@ -4,7 +4,7 @@ notion_id: 73bc3306-c0f5-4cd4-b7b2-9050ce73d324
 notion_url: https://app.notion.com/p/What-s-In-A-Font-Website-Typography-Best-Practices-73bc3306c0f54cd4b7b29050ce73d324
 last_edited: 2023-07-21T11:29:00.000Z
 source_url: https://kevquirk.com/whats-in-a-font-researching-website-typography/
-tags: ["English", "UI/UX", "Graphic Design", "Article", "Kev Quirk"]
+tags: ["UI/UX", "Graphic Design", "Article", "Kev Quirk", "English"]
 ---
 I love web design and website typography is a huge part of that. It turns out that I’m somewhat of a typography nerd, so I wanted to share some of what I’ve learned in this regard here.
 

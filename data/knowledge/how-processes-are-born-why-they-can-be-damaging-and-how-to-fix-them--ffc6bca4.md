@@ -2,9 +2,9 @@
 title: "How processes are born, why they can be damaging, and how to fix them"
 notion_id: ffc6bca4-699f-4042-8cc4-d3192e256573
 notion_url: https://app.notion.com/p/How-processes-are-born-why-they-can-be-damaging-and-how-to-fix-them-ffc6bca4699f40428cc4d3192e256573
-last_edited: 2023-03-29T23:31:00.000Z
-source_url: https://lucasfcosta.com/2023/03/16/processes.html
-tags: ["Article", "Lucas F. Costa Blog", "English", "Change Management", "Agile", "Project Management"]
+last_edited: 2026-09-21T17:01:00.000Z
+source_url: https://www.notion.so/ffc6bca4699f40428cc4d3192e256573
+tags: ["English", "Change Management", "Agile", "Project Management", "Article", "Lucas F. Costa Blog"]
 ---
 Process-heavy engineering cultures are like my grandfather’s wallet. They’re stuffed with so many layers of procedures and checklists that by the time you get to the end, you forget what you were trying to accomplish in the first place. It’s like trying to find a single dollar bill in a wallet full of receipts from 1972.
 

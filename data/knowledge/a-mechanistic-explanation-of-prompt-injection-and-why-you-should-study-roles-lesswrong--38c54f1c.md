@@ -4,7 +4,7 @@ notion_id: 38c54f1c-7d23-81b6-87f1-c5231d9b8a76
 notion_url: https://app.notion.com/p/A-Mechanistic-Explanation-of-Prompt-Injection-and-why-you-should-study-roles-LessWrong-38c54f1c7d2381b687f1c5231d9b8a76
 last_edited: 2026-09-18T00:52:00.000Z
 source_url: https://www.lesswrong.com/posts/d8xDGzCEYE639qqEv/a-mechanistic-explanation-of-prompt-injection-and-why-you
-tags: ["English", "Artificial Intelligence (AI)", "Security", "Communication", "Article", "LessWrong"]
+tags: ["Artificial Intelligence (AI)", "Security", "Communication", "Article", "LessWrong", "English"]
 ---
 # **Summary**
 

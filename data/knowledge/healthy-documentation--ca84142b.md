@@ -2,9 +2,9 @@
 title: "Healthy Documentation"
 notion_id: ca84142b-7b32-4188-ba99-59765fa0e076
 notion_url: https://app.notion.com/p/Healthy-Documentation-ca84142b7b324188ba9959765fa0e076
-last_edited: 2024-05-02T15:43:00.000Z
-source_url: https://vadimkravcenko.com/shorts/proper-documentation
-tags: ["English", "Documentation", "Line/People/Team Management", "Communication", "Article", "Vadim Kravcenko"]
+last_edited: 2026-09-21T16:58:00.000Z
+source_url: https://vadimkravcenko.com/shorts/proper-documentation/
+tags: ["Vadim Kravcenko", "English", "Documentation", "Line/People/Team Management", "Communication", "Article"]
 ---
 I’m a big fan of documentation. I think it’s my favorite boring thing to do after coding. It brings the business so much long-term value that every hour invested into documentation by anyone saves literally x100 productivity hours across the company.
 

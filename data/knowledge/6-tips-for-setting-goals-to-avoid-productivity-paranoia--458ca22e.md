@@ -2,9 +2,9 @@
 title: "6 Tips For Setting Goals To Avoid \"Productivity Paranoia\""
 notion_id: 458ca22e-82db-4476-be62-572e105e37de
 notion_url: https://app.notion.com/p/6-Tips-For-Setting-Goals-To-Avoid-Productivity-Paranoia-458ca22e82db4476be62572e105e37de
-last_edited: 2023-03-29T23:55:00.000Z
-source_url: https://www.radicalcandor.com/setting-goals-productivity-paranoia/
-tags: ["Radical Candor", "English", "Productivity", "Producer (Individual Contributor)", "Article"]
+last_edited: 2026-09-21T17:01:00.000Z
+source_url: https://www.radicalcandor.com/blog/setting-goals-productivity-paranoia
+tags: ["English", "Productivity", "Producer (Individual Contributor)", "Article", "Radical Candor"]
 ---
 With more people working in remote and hybrid environments than ever before, company, team and individual goals must be explicit and measurable. [Setting goals](https://www.radicalcandor.com/fast-feedback-conversations/) is an ideal way to stave off what [Microsoft calls “productivity paranoia.](https://www.microsoft.com/en-us/worklab/work-trend-index/hybrid-work-is-just-work?wt.mc_id=AID_M365Worklab_Corp_HQ_Charter)”
 

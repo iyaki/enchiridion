@@ -4,7 +4,7 @@ notion_id: 34954f1c-7d23-8160-b35d-db51f8ad2fb9
 notion_url: https://app.notion.com/p/AddyOsmani-com-Agentic-Engine-Optimization-AEO-34954f1c7d238160b35ddb51f8ad2fb9
 last_edited: 2026-09-18T00:53:00.000Z
 source_url: https://addyosmani.com/blog/agentic-engine-optimization/
-tags: ["Web Development", "Artificial Intelligence (AI)", "Documentation", "SEO", "Article", "AddyOsmani.com", "English"]
+tags: ["English", "Web Development", "Artificial Intelligence (AI)", "Documentation", "SEO", "Article", "AddyOsmani.com"]
 ---
 _How AI coding agents consume documentation is fundamentally different from how humans do - and if you’re still optimizing only for human readers, you’re leaving a growing share of your audience invisible to your tooling. Docs, CLIs, MCPs, Skills…there’s a whole ecosystem of interfaces that AI agents interact with._
 

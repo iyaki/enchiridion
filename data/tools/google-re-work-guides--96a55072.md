@@ -4,7 +4,7 @@ notion_id: 96a55072-96d8-47a8-bd55-329569693c6b
 notion_url: https://app.notion.com/p/Google-re-Work-Guides-96a5507296d847a8bd55329569693c6b
 last_edited: 2023-03-02T16:43:00.000Z
 source_url: https://rework.withgoogle.com/guides/
-tags: ["English", "Line/People/Team Management", "Communication", "Leadersheep", "Entrepreneurship", "Human Resources (HH.RR.)", "Guide", "Website"]
+tags: ["Guide", "Website", "English", "Line/People/Team Management", "Communication", "Leadersheep", "Entrepreneurship", "Human Resources (HH.RR.)"]
 ---
 Remarkable (IMHO) guides:
 

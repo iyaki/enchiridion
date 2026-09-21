@@ -4,7 +4,7 @@ notion_id: 00c9ebc2-6d43-4b80-b297-a1404ab9ec39
 notion_url: https://app.notion.com/p/Me-he-comprado-un-NAS-para-dejar-de-depender-de-Google-Photos-y-Dropbox-configuraci-n-paso-a-paso-00c9ebc26d434b80b297a1404ab9ec39
 last_edited: 2023-02-09T01:26:00.000Z
 source_url: https://www.xataka.com/otros-dispositivos/me-he-comprado-nas-para-dejar-depender-google-photos-dropbox-configuracion-paso-a-paso-1
-tags: ["Español", "Hosting", "Article", "Xataka | Genbeta"]
+tags: ["Article", "Xataka | Genbeta", "Español", "Hosting"]
 ---
 2020 fue un año muy movido en lo tecnológico. La pandemia hizo que **empresas tecnológicas como Zoom triunfaran** de un día para otro con fortísimas subidas en bolsa mientras que el resto del mercado se hundía. Sin embargo, si hubo una noticia relevante a nivel tecnológico que define el 2020, curiosamente no tiene mucho que ver con la pandemia: [Google Fotos anunción que dejaría de ser gratis en junio de 2021](https://www.xataka.com/aplicaciones/google-fotos-golpe-para-quienes-llevaban-anos-subiendo-su-vida-fotos-a-nube).
 

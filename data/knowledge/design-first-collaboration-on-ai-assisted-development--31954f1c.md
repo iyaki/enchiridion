@@ -4,7 +4,7 @@ notion_id: 31954f1c-7d23-818a-818e-fd5a7fab9728
 notion_url: https://app.notion.com/p/Design-First-Collaboration-on-AI-assisted-development-31954f1c7d23818a818efd5a7fab9728
 last_edited: 2026-03-04T01:53:00.000Z
 source_url: https://martinfowler.com/articles/reduce-friction-ai/design-first-collaboration.html
-tags: ["martinfowler", "English", "Programming", "AI", "System Design / Software Architecture", "Collaboration", "Productivity", "Article", "Tutorial"]
+tags: ["English", "Programming", "AI", "System Design / Software Architecture", "Collaboration", "Productivity", "Article", "Tutorial", "martinfowler"]
 ---
 When I pair program with a colleague on something complex, we don't start at the keyboard. We go to the whiteboard. We sketch components, debate data flow, argue about boundaries. We align on what the system needs to do before discussing how to build it. Only after this alignment — sometimes quick, sometimes extended — do we sit down and write code. The whiteboarding is not overhead. It is where the real thinking happens, and it is what makes the subsequent code right. The principle is simple: _whiteboard before keyboard_.
 

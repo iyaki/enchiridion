@@ -4,7 +4,7 @@ notion_id: 14d4753f-8c12-4faa-80b2-c72333b0a4d9
 notion_url: https://app.notion.com/p/Resend-Email-for-developers-14d4753f8c124faa80b2c72333b0a4d9
 last_edited: 2026-09-18T00:53:00.000Z
 source_url: https://resend.com/
-tags: ["Email", "Untried", "Service", "English"]
+tags: ["English", "Email", "Untried", "Service"]
 ---
 Companies of all sizes trust Resend to deliver their most important emails.
 

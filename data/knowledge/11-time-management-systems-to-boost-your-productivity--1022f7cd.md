@@ -2,9 +2,9 @@
 title: "11 Time Management Systems to Boost Your Productivity"
 notion_id: 1022f7cd-dd8f-40fd-b464-872afa4da8ff
 notion_url: https://app.notion.com/p/11-Time-Management-Systems-to-Boost-Your-Productivity-1022f7cddd8f40fdb464872afa4da8ff
-last_edited: 2023-08-28T12:59:00.000Z
-source_url: https://hubstaff.com/blog/time-management-tools/
-tags: ["English", "Productivity", "Producer (Individual Contributor)", "Article", "Hubstaff Blog"]
+last_edited: 2026-09-21T16:59:00.000Z
+source_url: https://hubstaff.com/blog/time-management-systems/
+tags: ["Productivity", "Producer (Individual Contributor)", "Article", "Hubstaff Blog", "English"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

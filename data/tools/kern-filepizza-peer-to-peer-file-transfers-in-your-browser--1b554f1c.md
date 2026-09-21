@@ -4,7 +4,7 @@ notion_id: 1b554f1c-7d23-8128-bec8-cb4cd4a5f234
 notion_url: https://app.notion.com/p/kern-filepizza-Peer-to-peer-file-transfers-in-your-browser-1b554f1c7d238128bec8cb4cd4a5f234
 last_edited: 2025-04-19T23:51:00.000Z
 source_url: https://github.com/kern/filepizza
-tags: ["Tool", "Service", "English", "Office"]
+tags: ["English", "Office", "Tool", "Service"]
 ---
 A hosted instance of FilePizza is available at [file.pizza](https://file.pizza/).
 

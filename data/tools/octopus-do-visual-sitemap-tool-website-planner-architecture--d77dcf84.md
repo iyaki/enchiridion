@@ -4,7 +4,7 @@ notion_id: d77dcf84-7c98-4621-b984-af5f1a59334f
 notion_url: https://app.notion.com/p/Octopus-do-Visual-Sitemap-Tool-Website-Planner-Architecture-d77dcf847c984621b984af5f1a59334f
 last_edited: 2023-06-02T01:06:00.000Z
 source_url: https://octopus.do/
-tags: ["English", "Blogging/Content Creation", "Web Development", "Service"]
+tags: ["Blogging/Content Creation", "Web Development", "Service", "English"]
 ---
 Zero stage to create a website starts here. Build, plan, visualize your website structure and create content in real-time. Improve your site architecture, UX design and SEO. Start website planning instantly.
 

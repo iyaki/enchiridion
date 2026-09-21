@@ -2,9 +2,9 @@
 title: "The Capability-Tractability Tradeoff"
 notion_id: 08863071-2194-4f64-ab5c-ea61f7809452
 notion_url: https://app.notion.com/p/The-Capability-Tractability-Tradeoff-0886307121944f64ab5cea61f7809452
-last_edited: 2023-04-22T01:04:00.000Z
-source_url: https://buttondown.email/hillelwayne/archive/the-capability-tractability-tradeoff/
-tags: ["System Design / Software Architecture", "Article", "Hillel Wayne", "English"]
+last_edited: 2026-09-21T17:01:00.000Z
+source_url: https://buttondown.com/hillelwayne/archive/the-capability-tractability-tradeoff/
+tags: ["English", "System Design / Software Architecture", "Article", "Hillel Wayne"]
 ---
 ## The more you can say, the less you can say about what you can say.
 

@@ -2,8 +2,8 @@
 title: "Tips for a Great Exit Interview & The Best 20 Questions to Ask"
 notion_id: 569ef94c-54ff-40f5-b9ea-2b6fe507b0b8
 notion_url: https://app.notion.com/p/Tips-for-a-Great-Exit-Interview-The-Best-20-Questions-to-Ask-569ef94c54ff40f5b9ea2b6fe507b0b8
-last_edited: 2024-08-16T19:27:00.000Z
-source_url: https://toggl.com/blog/exit-interview
+last_edited: 2026-09-21T16:58:00.000Z
+source_url: https://www.notion.so/569ef94c54ff40f5b9ea2b6fe507b0b8
 tags: ["Article", "Toggl Blog", "English", "Human Resources (HH.RR.)", "Line/People/Team Management"]
 ---
 Understanding **why employees leave** is an important aspect of learning how to make your company a better place to work.

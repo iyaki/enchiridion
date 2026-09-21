@@ -4,7 +4,7 @@ notion_id: a24ebac7-ace9-4fd4-92fc-e21b962fddf3
 notion_url: https://app.notion.com/p/Writing-an-engineering-strategy-a24ebac7ace94fd492fce21b962fddf3
 last_edited: 2023-07-12T19:56:00.000Z
 source_url: https://lethain.com/eng-strategies/
-tags: ["Irrational Exuberance (Will Larson)", "English", "Entrepreneurship", "Line/People/Team Management", "Career Growth", "Decision Making", "Leadersheep", "Communication", "Article"]
+tags: ["Entrepreneurship", "Line/People/Team Management", "Career Growth", "Decision Making", "Leadersheep", "Communication", "Article", "Irrational Exuberance (Will Larson)", "English"]
 ---
 Once you become an engineering executive, an invisible timer starts ticking in the background. Tick tick tick. At some point that timer will go off, at which point someone will rush up to you demanding an engineering strategy. It won’t be clear what they mean, but they will want it, really, really badly. If we just had an engineering strategy, their eyes will implore you, things would be okay. For a long time, those imploring eyes haunted me, because I simply didn’t know what to give them: what _is_ an engineering strategy?
 

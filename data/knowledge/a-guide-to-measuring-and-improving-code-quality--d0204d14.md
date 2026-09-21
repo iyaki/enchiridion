@@ -2,8 +2,8 @@
 title: "A guide to measuring and improving code quality"
 notion_id: d0204d14-ace8-4e88-80ae-0017f2c30c31
 notion_url: https://app.notion.com/p/A-guide-to-measuring-and-improving-code-quality-d0204d14ace84e8880ae0017f2c30c31
-last_edited: 2023-02-13T19:24:00.000Z
-source_url: https://leaddev.com/building-better-software/guide-measuring-and-improving-code-quality
+last_edited: 2026-09-21T17:03:00.000Z
+source_url: https://leaddev.com/software-quality/guide-measuring-and-improving-code-quality
 tags: ["English", "Testing", "System Design / Software Architecture", "Programming", "Project Management", "Product Management", "Productivity", "Article", "LeadDev"]
 ---
 As a technical leader in any organization, code quality is one of your key focuses, day in and day out. How do you improve the quality of your code? How do you ensure there’s time for it? How do you align everyone in the notion that code quality is something valuable, and not just an engineering nice-to-have?

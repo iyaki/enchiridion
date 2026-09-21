@@ -4,7 +4,7 @@ notion_id: 1f454f1c-7d23-81a3-bdb6-fd0bd5558791
 notion_url: https://app.notion.com/p/The-Height-Enigma-1f454f1c7d2381a3bdb6fd0bd5558791
 last_edited: 2025-07-26T22:41:00.000Z
 source_url: https://www.joshwcomeau.com/css/height-enigma/
-tags: ["English", "CSS", "Frontend", "Article", "Josh Comeau"]
+tags: ["Josh Comeau", "English", "CSS", "Frontend", "Article"]
 ---
 Back when I was first trying to understand CSS, one of the biggest mysteries to me was why `height` sometimes wouldn’t work.
 

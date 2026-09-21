@@ -2,9 +2,9 @@
 title: "Vegeta - HTTP Load Testing"
 notion_id: 83401b40-da61-49d5-8b6a-0550a23f037b
 notion_url: https://app.notion.com/p/Vegeta-HTTP-Load-Testing-83401b40da6149d58b6a0550a23f037b
-last_edited: 2022-12-21T14:29:00.000Z
+last_edited: 2026-09-21T17:09:00.000Z
 source_url: https://github.com/tsenart/vegeta#vegeta-----
-tags: ["Tool", "English", "Web Development", "Testing", "DevOps", "Untried"]
+tags: ["English", "Web Development", "Testing", "DevOps", "Untried", "Tool"]
 ---
 Vegeta is a versatile HTTP load testing tool built out of a need to drill HTTP services with a constant request rate. It's over 9000!
 

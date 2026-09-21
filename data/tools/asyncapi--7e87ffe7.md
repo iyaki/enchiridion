@@ -2,9 +2,9 @@
 title: "AsyncAPI"
 notion_id: 7e87ffe7-80d3-4557-9cff-435800fbe290
 notion_url: https://app.notion.com/p/AsyncAPI-7e87ffe780d345579cff435800fbe290
-last_edited: 2022-12-21T12:42:00.000Z
+last_edited: 2026-09-21T17:11:00.000Z
 source_url: https://www.asyncapi.com/
-tags: ["English", "Web Development", "System Design / Software Architecture", "Website", "Tool", "Framework/Library"]
+tags: ["Website", "Tool", "Framework/Library", "English", "Web Development", "System Design / Software Architecture"]
 ---
 Made with :love: by the AsyncAPI Initiative.
 

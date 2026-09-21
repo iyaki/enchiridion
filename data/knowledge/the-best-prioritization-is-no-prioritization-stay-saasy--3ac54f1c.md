@@ -4,7 +4,7 @@ notion_id: 3ac54f1c-7d23-8158-81b4-eea52bd31a31
 notion_url: https://app.notion.com/p/The-Best-Prioritization-Is-No-Prioritization-Stay-SaaSy-3ac54f1c7d23815881b4eea52bd31a31
 last_edited: 2026-09-21T16:57:00.000Z
 source_url: https://www.notion.so/3ac54f1c7d23815881b4eea52bd31a31
-tags: ["Stay SaaSy", "English", "Product Management", "Decision Making", "Agile", "Article"]
+tags: ["English", "Product Management", "Decision Making", "Agile", "Article", "Stay SaaSy"]
 ---
 In the course of conversations with startups that I’ve invested in, that I advise, or that I simply encounter, it’s very common to get into discussions about prioritization.
 

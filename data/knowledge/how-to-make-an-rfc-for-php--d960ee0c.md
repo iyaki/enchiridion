@@ -4,7 +4,7 @@ notion_id: d960ee0c-7832-4bd8-8e67-3a82db97dead
 notion_url: https://app.notion.com/p/How-To-Make-An-RFC-For-PHP-d960ee0c78324bd88e673a82db97dead
 last_edited: 2023-01-13T00:56:00.000Z
 source_url: https://www.reddit.com/r/PHP/comments/s0pv1e/how_to_make_an_rfc_for_php/
-tags: ["English", "PHP", "Writting", "Article"]
+tags: ["PHP", "Writting", "Article", "English"]
 ---
 Well, the journey of my first RFC for the PHP language is nearly over. My first RFC is currently in voting and is likely to be rejected. I was a frequent reader of this subreddit, had worked in PHP for very nearly 20 years, and simply decided one evening "I'm tired of complaining about the language, I want to actually try to improve it". So, I did. Or, well, I tried.
 

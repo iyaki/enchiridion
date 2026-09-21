@@ -2,8 +2,8 @@
 title: "Mapa de Empatía: qué es y cómo hacerlo en 6 pasos"
 notion_id: 17ae16fe-7551-42ef-bc2c-16053d3b0a15
 notion_url: https://app.notion.com/p/Mapa-de-Empat-a-qu-es-y-c-mo-hacerlo-en-6-pasos-17ae16fe755142efbc2c16053d3b0a15
-last_edited: 2023-07-12T19:59:00.000Z
-source_url: https://www.rdstation.com/blog/es/mapa-de-empatia/
+last_edited: 2026-09-21T16:59:00.000Z
+source_url: https://www.notion.so/17ae16fe755142efbc2c16053d3b0a15
 tags: ["Article", "Español", "Product Management", "Agile"]
 ---
 **El mapa de empatía es un formato que busca describir el cliente ideal de una empresa por medio del análisis de 6 aspectos, relacionados a los sentimientos del ser humano. Puede ser realizado a partir de preguntas que ayudan a entender a conocer el cliente y cómo relacionarse con él.**

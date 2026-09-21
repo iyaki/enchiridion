@@ -4,7 +4,7 @@ notion_id: 6ae379ed-25b4-48ff-9c8e-6aff75ced660
 notion_url: https://app.notion.com/p/The-Transformation-Priority-Premise-6ae379ed25b448ff9c8e6aff75ced660
 last_edited: 2022-12-21T15:24:00.000Z
 source_url: https://blog.cleancoder.com/uncle-bob/2013/05/27/TheTransformationPriorityPremise.html
-tags: ["Programming", "Testing", "Article", "The Clean Code Blog (Robert C. Martin)", "English"]
+tags: ["Article", "The Clean Code Blog (Robert C. Martin)", "English", "Programming", "Testing"]
 ---
 This blog poses a rather radical premise. It suggests that Refactorings have counterparts called _Transformations_. Refactorings are simple operations that change the structure of code without changing it’s behavior. _Transformations_ are simple operations that change the behavior of code. Transformations can be used as the sole means for passing the currently failing test in the `red/green/refactor` cycle. _Transformations_ have a priority, or a preferred ordering, which if maintained, by the ordering of the tests, will prevent impasses, or long outages in the `red/green/refactor` cycle.
 

@@ -2,9 +2,9 @@
 title: "Recruiting with LinkedIn: 10 smart tips for your recruiter toolbox"
 notion_id: 42098f8e-e9a3-494e-b1f1-d6318e12c51e
 notion_url: https://app.notion.com/p/Recruiting-with-LinkedIn-10-smart-tips-for-your-recruiter-toolbox-42098f8ee9a3494eb1f1d6318e12c51e
-last_edited: 2022-12-23T22:00:00.000Z
-source_url: https://toggl.com/blog/recruiting-with-linkedin
-tags: ["Toggl Blog", "English", "Line/People/Team Management", "Entrepreneurship", "Article"]
+last_edited: 2026-09-21T17:07:00.000Z
+source_url: https://toggl.com/blog/wp-content/uploads/2022/12/Recruiting-with-Linkedin.png
+tags: ["Article", "Toggl Blog", "English", "Line/People/Team Management", "Entrepreneurship"]
 ---
 **New to recruiting with Linkedin? Then you came to the right place!**
 

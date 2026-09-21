@@ -2,8 +2,8 @@
 title: "Houdini.how - CSS Worklet Library"
 notion_id: 49dd54ad-b32d-44a2-b345-22de07ffcfac
 notion_url: https://app.notion.com/p/Houdini-how-CSS-Worklet-Library-49dd54adb32d44a2b34522de07ffcfac
-last_edited: 2023-06-21T14:49:00.000Z
-source_url: https://houdini.how/
+last_edited: 2026-09-21T17:00:00.000Z
+source_url: https://techgory.com/css-houdini-guide/
 tags: ["English", "CSS", "Untried", "Website", "Framework/Library", "web.dev"]
 ---
 CSS has quietly grown a second layer over the last few years one that most developers have never touched. It’s called CSS Houdini, and instead of waiting for the CSS Working Group to ship a new property, it lets you write the property yourself.

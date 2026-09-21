@@ -4,7 +4,7 @@ notion_id: 2f554f1c-7d23-8153-96d5-f02a670d4e94
 notion_url: https://app.notion.com/p/steffest-DPaint-js-Webbased-image-editor-modeled-after-the-legendary-Deluxe-Paint-with-a-focus-on--2f554f1c7d23815396d5f02a670d4e94
 last_edited: 2026-09-18T00:53:00.000Z
 source_url: https://github.com/steffest/DPaint-js
-tags: ["Tool", "Article", "GitHub", "English", "Web Development", "Javascript", "Image Editing", "Open Source"]
+tags: ["GitHub", "English", "Web Development", "Javascript", "Image Editing", "Open Source", "Tool", "Article"]
 ---
 # DPaint.js
 

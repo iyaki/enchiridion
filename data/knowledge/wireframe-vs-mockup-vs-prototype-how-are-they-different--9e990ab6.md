@@ -4,7 +4,7 @@ notion_id: 9e990ab6-1675-4aa6-bfd0-3c7adb22d9c5
 notion_url: https://app.notion.com/p/Wireframe-vs-mockup-vs-prototype-How-are-they-different-9e990ab616754aa6bfd03c7adb22d9c5
 last_edited: 2022-12-19T14:27:00.000Z
 source_url: https://blog.logrocket.com/product-management/wireframe-vs-mockup-vs-prototype/
-tags: ["Product Management", "UI/UX", "Article", "LogRocket Blog", "English"]
+tags: ["Article", "LogRocket Blog", "English", "Product Management", "UI/UX"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

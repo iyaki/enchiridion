@@ -2,9 +2,9 @@
 title: "microfeed - self-hosted CMS"
 notion_id: 80b3d151-8b7c-4fa4-bad8-c5940f691423
 notion_url: https://app.notion.com/p/microfeed-self-hosted-CMS-80b3d1518b7c4fa4bad8c5940f691423
-last_edited: 2023-04-20T19:39:00.000Z
+last_edited: 2026-09-21T17:06:00.000Z
 source_url: https://www.microfeed.org/
-tags: ["Framework/Library", "Tool", "English", "Blogging/Content Creation"]
+tags: ["English", "Blogging/Content Creation", "Framework/Library", "Tool"]
 ---
 New release v1.0.10: GitHub Actions deployment and reliable recovery
 

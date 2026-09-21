@@ -4,7 +4,7 @@ notion_id: 25c027ff-2d2f-489c-9f78-47ad9645fb78
 notion_url: https://app.notion.com/p/La-seguridad-con-la-que-tomamos-malas-decisiones-25c027ff2d2f489c9f7847ad9645fb78
 last_edited: 2023-02-16T14:22:00.000Z
 source_url: https://medium.com/redbee/la-seguridad-con-la-que-tomamos-malas-decisiones-6a08c37b5a0b
-tags: ["Article", "redbee - Medium", "Español", "Decision Making", "Entrepreneurship", "Product Management"]
+tags: ["Español", "Decision Making", "Entrepreneurship", "Product Management", "Article", "redbee - Medium"]
 ---
 [_Alexis Francisco_](https://www.linkedin.com/in/alexis-francisco-4347a1113/)_, UX DesignOps de _[_redbee studios_](https://www.linkedin.com/company/redbeestudios/)_, explica cómo el exceso de confianza puede llevarnos a tomar malas decisiones estratégicas. Su texto nos lleva a reflexionar sobre la siguiente pregunta ¿conocemos realmente a nuestros clientes/usuarios?_
 

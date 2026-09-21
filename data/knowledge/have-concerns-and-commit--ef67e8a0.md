@@ -4,7 +4,7 @@ notion_id: ef67e8a0-9252-4312-8ac4-0133efd944af
 notion_url: https://app.notion.com/p/Have-Concerns-And-Commit-ef67e8a0925243128ac40133efd944af
 last_edited: 2024-04-09T18:56:00.000Z
 source_url: https://staysaasy.com/leadership/2024/04/04/have-concerns-and-commit.html
-tags: ["English", "Change Management", "Line/People/Team Management", "Communication", "Career Growth", "Article", "Stay SaaSy"]
+tags: ["Change Management", "Line/People/Team Management", "Communication", "Career Growth", "Article", "Stay SaaSy", "English"]
 ---
 _I lead a couple of teams. I could use a gut check on decision making. how do you convey a top down decision (a decision that you don’t buy in entirely) to your team? something other than “hey, leadership wants x, I see a, b, and c as potential pitfalls in x. I have conveyed my reservations. now it’s time to disagree and commit”_
 

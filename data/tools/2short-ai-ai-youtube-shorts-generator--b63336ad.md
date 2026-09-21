@@ -2,9 +2,9 @@
 title: "2short.ai - AI YouTube Shorts generator"
 notion_id: b63336ad-80b6-4a44-858f-06d217a95535
 notion_url: https://app.notion.com/p/2short-ai-AI-YouTube-Shorts-generator-b63336ad80b64a44858f06d217a95535
-last_edited: 2026-09-18T00:54:00.000Z
+last_edited: 2026-09-21T17:01:00.000Z
 source_url: https://2short.ai/
-tags: ["English", "Multimedia", "Untried", "Service"]
+tags: ["Service", "English", "Multimedia", "Untried"]
 ---
 How do I get started with 2short.ai?Getting started with 2short.ai couldn't be easier! Simply copy your video link from YouTube and paste it into the 2short app. Our AI quickly gets to work, transforming your video into compelling short clips that capture the essence of your content, all with minimal effort on your part.
 

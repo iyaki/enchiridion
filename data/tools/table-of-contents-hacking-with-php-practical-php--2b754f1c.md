@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-81cb-9e18-dbdf33a8c785
 notion_url: https://app.notion.com/p/Table-of-Contents-Hacking-with-PHP-Practical-PHP-2b754f1c7d2381cb9e18dbdf33a8c785
 last_edited: 2025-11-26T14:48:00.000Z
 source_url: http://www.hackingwithphp.com/
-tags: ["English", "PHP", "Website"]
+tags: ["PHP", "Website", "English"]
 ---
 Welcome to the new home of Practical PHP Programming - now updated for PHP 5.6 and renamed to Hacking with PHP. I've taken this opportunity to brighten up the design, update the content, and make the site much more useful on mobile devices.
 

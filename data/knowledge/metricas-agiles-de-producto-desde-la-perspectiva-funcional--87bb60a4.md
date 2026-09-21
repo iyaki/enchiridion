@@ -2,9 +2,9 @@
 title: "Métricas ágiles de producto desde la perspectiva funcional"
 notion_id: 87bb60a4-8571-46e0-9a0f-1387e9bd7c6a
 notion_url: https://app.notion.com/p/M-tricas-giles-de-producto-desde-la-perspectiva-funcional-87bb60a4857146e09a0f1387e9bd7c6a
-last_edited: 2023-05-05T18:07:00.000Z
-source_url: https://kill-the-newsletter.com/alternates/mytk0u20tubgardx.html
-tags: ["Project Management", "Product Management", "Productivity", "Article", "This is the Agile Way (Javier Garzas)", "English"]
+last_edited: 2026-09-21T17:00:00.000Z
+source_url: https://www.notion.so/87bb60a4857146e09a0f1387e9bd7c6a
+tags: ["English", "Project Management", "Product Management", "Productivity", "Article", "This is the Agile Way (Javier Garzas)"]
 ---
 > _Cuando una medida se convierte en un objetivo, deja de ser una buena medida_
 

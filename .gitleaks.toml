@@ -15,4 +15,11 @@ paths = [
   '''jgthms-picknplace-js-.*--2d154f1c\.md$''',
   '''steffest-dpaint-js-.*--2f554f1c\.md$''',
   '''vert-sh-vert-.*--2cc54f1c\.md$''',
+  '''a-technical-deep-dive-on-event-driven-architectures--65a181ca\.md$''',
+  '''rules-for-writing-software-tutorials-refactoring-english--17454f1c\.md$''',
+  '''you-can-spot-base64-encoded-json-certificates-and-private-keys--2b754f1c\.md$''',
+  '''your-api-shouldn-t-redirect-http-to-https--9ee9dc6a\.md$''',
+  '''fatedier-frp-.*--20054f1c\.md$''',
+  '''gitleaks-protect-and-discover-secrets--6a4c0769\.md$''',
+  '''keygraphhq-shannon-.*--31c54f1c\.md$''',
 ]

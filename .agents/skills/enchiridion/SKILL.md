@@ -1,6 +1,6 @@
 ---
 name: enchiridion
-description: Consult iyaki's enchiridion knowledge base (mirrored Notion KB at ~/.local/share/enchiridion/knowledge/) as the primary source of truth before making or justifying technical decisions — choosing libraries, frameworks or tools; designing module or service structure; recommending design or architecture patterns; resolving disputes between alternatives; or citing how something was solved before. Grep the mirror, cite the entries used, and state explicitly when no precedent exists. Use whenever a decision could benefit from prior recorded knowledge.
+description: Consult iyaki's enchiridion knowledge base (mirrored Notion KB at ~/.local/share/enchiridion/knowledge/ for curated knowledge and ~/.local/share/enchiridion/tools/ for tools, services, and websites) as the primary source of truth before making or justifying technical decisions — choosing libraries, frameworks or tools; designing module or service structure; recommending design or architecture patterns; resolving disputes between alternatives; or citing how something was solved before. Grep the mirror, cite the entries used, and state explicitly when no precedent exists. Use whenever a decision could benefit from prior recorded knowledge.
 ---
 
 # Enchiridion
@@ -8,8 +8,10 @@ description: Consult iyaki's enchiridion knowledge base (mirrored Notion KB at ~
 You are consulting [enchiridion](https://github.com/iyaki/enchiridion): a
 mirrored knowledge base (curated articles + recorded decisions from iyaki's
 Notion), stored as greppable markdown at `~/.local/share/enchiridion/knowledge/`
-(override with `$ENCHIRIDION_HOME`). One `.md` file per entry, with frontmatter
-(`title`, `tags`, `source_url`, `notion_id`, `notion_url`, `last_edited`).
+(curated knowledge) and `~/.local/share/enchiridion/tools/` (tools, services,
+websites) — override both with `$ENCHIRIDION_HOME`. One `.md` file per entry,
+with frontmatter (`title`, `tags`, `source_url`, `notion_id`, `notion_url`,
+`last_edited`).
 
 ## When to consult (MANDATORY before answering)
 
@@ -31,10 +33,22 @@ rg -il "event sourcing" ~/.local/share/enchiridion/knowledge/
 # By tag (frontmatter)
 rg -l 'tags: .*ddd' ~/.local/share/enchiridion/knowledge/
 # Inventory
-ls ~/.local/share/enchiridion/knowledge/
+ls ~/.local/share/enchiridion/knowledge/ ~/.local/share/enchiridion/tools/
 ```
 
 Read the matching files before concluding. Refine with `tags` from frontmatter.
+
+## Two-phase search
+
+1. Search `knowledge/` first — the recorded precedent defines the problem,
+   constraints, and prior decisions.
+2. From the matching entries, extract their topic tags (frontmatter
+   `tags`: e.g. `Databases`, `PostgreSQL`, `CSS`).
+3. Search `tools/` with those topics for supporting options (libraries,
+   services, websites) and cite them the same way.
+
+A tools-only hit without a knowledge precedent is still valid to cite —
+the phases order the search, they do not gate it.
 
 ## Rules
 

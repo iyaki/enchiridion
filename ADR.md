@@ -230,6 +230,33 @@ without benefit.
 
 ---
 
+## ADR-15 — Mirror split: knowledge vs tools
+
+**Context**: the Notion knowledge base mixes two kinds of entries in one flat
+mirror: curated knowledge (articles, notes) and usable things liked along the
+way (tools, services, websites, libraries, games). Searching one class
+returns noise from the other — a `Tool` entry drowns in `Article` hits.
+
+**Decision**: the mirror is physically split into sibling directories under
+the cache root: `knowledge/` and `tools/`. Classification ("knowledge wins")
+derives from the `Category` values already flattened into frontmatter `tags`:
+
+- Any knowledge category (`Article`, `Note`) → `knowledge/`, even when the
+  page also carries tool categories.
+- Tool categories (`Tool`, `Service`, `Website`, `Framework/Library`,
+  `Game`) without any knowledge category → `tools/`.
+- Unknown or absent categories → `knowledge/`.
+
+**Consequences**: the engine keeps a per-directory set of page IDs, so the
+full-mode sweep removes a reclassified page's stale copy (e.g. `Tool` →
+`Article` leaves nothing behind in `tools/`). An incremental run only
+rewrites the edited page into its new directory — the stale copy survives
+until the next full sync, the same propagation cadence as deletions
+(ADR-04). The category lists are the confirmed production values; a new
+tool-like category is a one-line map edit and reclassifies on the next full.
+
+---
+
 ## Verification of the real sync (pending implementation)
 
 The only piece not verifiable offline: live API calls. Manual smoke with an

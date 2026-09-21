@@ -84,7 +84,11 @@ The consumption trigger has two complementary mechanisms (ADR-13):
 ## enchiridion
 
 Primary source of truth: mirror of the knowledge base in
-`~/.local/share/enchiridion/knowledge/` (override: `$ENCHIRIDION_HOME`).
+`~/.local/share/enchiridion/knowledge/` (curated knowledge) and
+`~/.local/share/enchiridion/tools/` (tools, services, websites) — override
+with `$ENCHIRIDION_HOME`. Consumption is two-phase (ADR-15): search
+`knowledge/` first for the recorded precedent, then use the topic tags found
+there to search `tools/` for supporting options.
 
 Consult the mirror (rg/grep) BEFORE answering when the task involves:
 - choosing or recommending a library, framework or tool

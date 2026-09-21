@@ -15,7 +15,8 @@ graph LR
 ```
 
 - **Sync command**: single entry point; updates the mirror and the state.
-- **Mirror**: greppable markdown files, one file per KB page.
+- **Mirror**: greppable markdown files, one file per KB page, under
+  `knowledge/` or `tools/` (ADR-15).
 - **Sync state**: watermark of the last synchronized edit and the date of the
   last full sync. It travels **committed alongside the mirror** — a freshly
   cloned cache increments correctly without re-syncing everything.
@@ -65,8 +66,9 @@ last_edited: 2026-09-20T10:00:00.000Z
 <page body, rendered to markdown>
 ```
 
-- One `.md` per page; the whole mirror is greppable with no tool beyond the
-  system's standard ones.
+- One `.md` per page, under `knowledge/` or `tools/` (ADR-15: knowledge-wins
+  classification by category); the whole mirror is greppable with no tool
+  beyond the system's standard ones.
 - `tags` includes the category and all topics of the page (including dynamic
   classifications from the automatic curator). Filtering by topic is the
   reader's responsibility.

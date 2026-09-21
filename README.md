@@ -69,10 +69,11 @@ watermark — the next run retries every edit since the old mark. A sync run
 takes an exclusive lock on the cache: a second simultaneous invocation fails
 fast.
 
-The mirror lands in `$ENCHIRIDION_HOME/knowledge/`: one `.md` per page with
-frontmatter (`title`, `tags`, `source_url`, `notion_id`, `notion_url`,
-`last_edited`) — grep-friendly with no tooling beyond the system's standard
-ones. Format and rendering contract:
+The mirror lands in `$ENCHIRIDION_HOME/knowledge/` (curated knowledge) and
+`$ENCHIRIDION_HOME/tools/` (tools, services, websites) per ADR-15: one
+`.md` per page with frontmatter (`title`, `tags`, `source_url`, `notion_id`,
+`notion_url`, `last_edited`) — grep-friendly with no tooling beyond the
+system's standard ones. Format and rendering contract:
 [`specs/architecture.md`](specs/architecture.md).
 
 ## Consumption (agents)

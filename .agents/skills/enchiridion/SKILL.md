@@ -53,7 +53,9 @@ the phases order the search, they do not gate it.
 ## Rules
 
 1. **Cite what you used**: for every claim grounded in the mirror, name the
-   entry file and its `notion_url` or `source_url`.
+   entry file and its original source: `source_url` (the web page the entry
+   came from) when present. Fall back to `notion_url` only when the entry has
+   no `source_url` — its origin is the Notion page itself.
 2. **No precedents → say so explicitly** ("sin precedentes en enchiridion").
    Never present a generic best practice as if it were recorded knowledge.
 3. **Missing cache is a finding, not a failure**: if the directory does not

@@ -95,7 +95,8 @@ Consult the mirror (rg/grep) BEFORE answering when the task involves:
 - resolving a technical dispute between alternatives
 - citing how something was solved before
 
-Cite the entries used (file + `notion_url`). With no precedent, say so
+Cite the entries used (file + `source_url`; `notion_url` only when the
+entry has no web source). With no precedent, say so
 explicitly. Missing cache: report it — never invent precedents.
 To update: `enchiridion sync`.
 ```

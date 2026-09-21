@@ -257,6 +257,24 @@ tool-like category is a one-line map edit and reclassifies on the next full.
 
 ---
 
+## ADR-16 — Citations point at the original web source
+
+**Context**: the consumption policy told agents to cite an entry by its
+`notion_url` or `source_url`, indistinctly. Notion links are private: they
+require the user's login and are useless to any other reader, while most
+entries were collected from the web and carry their origin in `source_url`.
+
+**Decision**: whenever enchiridion grounds a claim, cite the entry file and
+its **original web source** (`source_url`). `notion_url` is the fallback only
+for entries with no `source_url` — pages whose origin is the Notion KB
+itself (no external web source).
+
+**Consequences**: no sync or format change (frontmatter already carries both
+fields); SKILL.md, README, and the integration-spec snippet state the same
+rule. Agents citing only Notion links are now off-policy.
+
+---
+
 ## Verification of the real sync (pending implementation)
 
 The only piece not verifiable offline: live API calls. Manual smoke with an

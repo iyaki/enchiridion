@@ -7,3 +7,5 @@ source_url: https://keepachangelog.com/
 tags: ["English", "Español", "Others", "Programming", "Website"]
 ---
 [https://keepachangelog.com/](https://keepachangelog.com/)
+
+Continue to Keep a Changelog

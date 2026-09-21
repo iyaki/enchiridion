@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-814f-b0e0-d1ac02ab33d8
 notion_url: https://app.notion.com/p/Printing-the-web-making-webpages-look-good-on-paper-Piccalilli-2b754f1c7d23814fb0e0d1ac02ab33d8
 last_edited: 2025-11-26T18:57:00.000Z
 source_url: https://piccalil.li/blog/printing-the-web-making-webpages-look-good-on-paper/
-tags: ["English", "Web Development", "CSS", "Productivity", "Accessibility", "Frontend", "Article", "Piccalilli"]
+tags: ["Article", "Piccalilli", "English", "Web Development", "CSS", "Productivity", "Accessibility", "Frontend"]
 ---
 A huge part of building for the web is making experiences responsive. Usually, we think of responsive design in terms of making sites adapt to different viewport sizes, but what about being responsive to different mediums too?
 

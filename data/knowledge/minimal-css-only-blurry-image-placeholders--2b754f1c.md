@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-81a0-ac59-effd19ac7747
 notion_url: https://app.notion.com/p/Minimal-CSS-only-blurry-image-placeholders-2b754f1c7d2381a0ac59effd19ac7747
 last_edited: 2025-11-26T14:48:00.000Z
 source_url: https://leanrada.com/notes/css-only-lqip/
-tags: ["leanrada.com", "English", "CSS", "Web Development", "Article"]
+tags: ["English", "CSS", "Web Development", "Article", "leanrada.com"]
 ---
 Here’s a CSS technique that produces blurry image placeholders (LQIPs) without cluttering up your markup — _Only a single custom property needed!_
 

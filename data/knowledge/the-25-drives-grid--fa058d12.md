@@ -4,7 +4,7 @@ notion_id: fa058d12-519b-46db-bc94-b45758671108
 notion_url: https://app.notion.com/p/The-25-Drives-Grid-fa058d12519b46dbbc94b45758671108
 last_edited: 2022-12-30T14:41:00.000Z
 source_url: https://unfix.com/blog/the-25-drives-grid
-tags: ["unFIX Blog", "English", "Line/People/Team Management", "Leadersheep", "Article"]
+tags: ["Line/People/Team Management", "Leadersheep", "Article", "unFIX Blog", "English"]
 ---
 **Author**: Jurgen Appelo _(This article is an updated repost from _[_this original blog post_](https://shiftup.work/25-drives-grid/)_.)_
 

@@ -7,3 +7,15 @@ source_url: https://www.javiergarzas.com/2022/04/%F0%9F%94%B4-como-integrar-okrs
 tags: ["Español", "Agile", "Project Management", "Article", "Javier Garzas Blog"]
 ---
 [https://www.javiergarzas.com/2022/04/%F0%9F%94%B4-como-integrar-okrs-y-scrum-en-video-fast-furious.html](https://www.javiergarzas.com/2022/04/%F0%9F%94%B4-como-integrar-okrs-y-scrum-en-video-fast-furious.html)
+
+Este vídeo era obligado hacerlo, os lo debía… ¿Cómo unir OKRs y Scrum?
+
+Antes de empezar, cosas IMPORTANTES:
+
+- En BREVE comienza el PROGRAMA de FORMACION ONLINE en OKRS: ? OKR TRANSFORMATION PROGRAM (OTP). Siguiendo el formato, que tanto ha gustado en otras formaciones, de ONLINE + vídeos grabados + Seguimiento + Directos puntuales + Guías + Posibilidad de enviar tus dudas.
+
+Y, como siempre te digo, RECUERDA que, si quieres AYUDARME a hacer más vídeos (y ayudar a la comunidad) y a difundir el conocimiento, puedes hacer algo tan fácil, rápido y gratuito como SUSCRIBETE AL CANAL DE YOUTUBE (que con más suscriptores YouTube nos desbloquea opciones que nos ayudan a difundir conocimiento).
+
+O, también, tienes la opción «UNIRTE» al CANAL DE YOUTUBE y así ser miembro, y, aparte de ayudarme a que sea mínimamente viable el canal, y de ver los vídeos antes que nadie y acceder a contenido exclusivo solo para los miembros.
+
+Y ahora, vamos al vídeo…

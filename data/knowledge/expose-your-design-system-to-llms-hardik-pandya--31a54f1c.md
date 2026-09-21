@@ -4,7 +4,7 @@ notion_id: 31a54f1c-7d23-81c7-b147-d752dd1b9e6f
 notion_url: https://app.notion.com/p/Expose-Your-Design-System-to-LLMs-Hardik-Pandya-31a54f1c7d2381c7b147d752dd1b9e6f
 last_edited: 2026-03-05T01:56:00.000Z
 source_url: https://hvpandya.com/llm-design-systems
-tags: ["English", "UI/UX", "Design", "Artificial Intelligence (AI)", "Productivity", "Article", "hvpandya.com"]
+tags: ["UI/UX", "Design", "Artificial Intelligence (AI)", "Productivity", "Article", "hvpandya.com", "English"]
 ---
 LLMs drift, fabricate tokens, and start every session from scratch. Here's how to feed your design system to AI coding agents so they stop guessing.
 

@@ -4,7 +4,7 @@ notion_id: 10e54f1c-7d23-81c8-9fea-f82dbcf7681f
 notion_url: https://app.notion.com/p/csvbase-a-simple-website-for-sharing-table-data-10e54f1c7d2381c89feaf82dbcf7681f
 last_edited: 2024-10-23T19:06:00.000Z
 source_url: https://csvbase.com/
-tags: ["English", "?", "Untried", "Databases", "Service"]
+tags: ["Service", "English", "?", "Untried", "Databases"]
 ---
 csvbase is a simple [website for sharing table data](https://csvbase.com/about). Join [the discord](https://discord.gg/uqu4BkNP5G).
 

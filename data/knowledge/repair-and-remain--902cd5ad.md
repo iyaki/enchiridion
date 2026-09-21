@@ -4,7 +4,7 @@ notion_id: 902cd5ad-d698-46f6-ad3e-362755b764ec
 notion_url: https://app.notion.com/p/Repair-and-Remain-902cd5add69846f6ad3e362755b764ec
 last_edited: 2024-09-08T01:50:00.000Z
 source_url: https://comment.org/repair-and-remain/
-tags: ["Comment", "English", "Reflection", "?", "Article"]
+tags: ["English", "Reflection", "?", "Article", "Comment"]
 ---
 ## How to do the slow, hard, good work of staying put.
 

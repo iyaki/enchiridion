@@ -4,7 +4,7 @@ notion_id: 46e66aba-ce4d-487e-86d7-f63d4056265f
 notion_url: https://app.notion.com/p/Disentangling-the-three-languages-customers-product-and-the-business-46e66abace4d487e86d7f63d4056265f
 last_edited: 2024-06-05T18:41:00.000Z
 source_url: https://longform.asmartbear.com/three-languages/
-tags: ["A Smart Bear: Longform", "English", "Communication", "Product Management", "Project Management", "Producer (Individual Contributor)", "System Design / Software Architecture", "DevOps", "Decision Making", "Article"]
+tags: ["English", "Communication", "Product Management", "Project Management", "Producer (Individual Contributor)", "System Design / Software Architecture", "DevOps", "Decision Making", "Article", "A Smart Bear: Longform"]
 ---
 Stop talking past each other. Translate between the three “languages” of customer desires, product features, and business goals.
 

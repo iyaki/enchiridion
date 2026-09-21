@@ -4,7 +4,7 @@ notion_id: e7d52f25-6c9d-40d4-bdbd-eabaf0c24c14
 notion_url: https://app.notion.com/p/CommentBox-io-No-ads-No-Tracking-Just-Comments-e7d52f256c9d40d4bdbdeabaf0c24c14
 last_edited: 2023-06-15T23:50:00.000Z
 source_url: https://commentbox.io/
-tags: ["Service", "English", "Blogging/Content Creation", "Communication", "Untried"]
+tags: ["English", "Blogging/Content Creation", "Communication", "Untried", "Service"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

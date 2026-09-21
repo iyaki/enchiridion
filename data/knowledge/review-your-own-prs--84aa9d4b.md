@@ -4,7 +4,7 @@ notion_id: 84aa9d4b-855c-46da-b9e1-d63d04027fb3
 notion_url: https://app.notion.com/p/Review-your-own-PRs-84aa9d4b855c46dab9e1d63d04027fb3
 last_edited: 2024-08-16T19:41:00.000Z
 source_url: https://sophiabits.com/blog/review-your-own-prs
-tags: ["Sophia Willows", "English", "Productivity", "Programming", "Article"]
+tags: ["English", "Productivity", "Programming", "Article", "Sophia Willows"]
 ---
 We all know that maintaining clean and efficient code is paramount to system quality, but even very good software engineers can’t write perfect code every time. Mistakes slipping through is just part of the job—and I am no exception to this.
 

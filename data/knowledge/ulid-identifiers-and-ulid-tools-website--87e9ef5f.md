@@ -4,7 +4,7 @@ notion_id: 87e9ef5f-2553-4cb3-9825-7b4642d8ae41
 notion_url: https://app.notion.com/p/ULID-Identifiers-and-ULID-Tools-Website-87e9ef5f25534cb398257b4642d8ae41
 last_edited: 2023-01-13T19:18:00.000Z
 source_url: https://pgrs.net/2023/01/10/ulid-identifiers-and-ulid-tools-website/
-tags: ["Paul Gross's Blog", "English", "System Design / Software Architecture", "Programming", "Databases", "Article"]
+tags: ["Article", "Paul Gross's Blog", "English", "System Design / Software Architecture", "Programming", "Databases"]
 ---
 Historically, when I wanted to store data in a database, I (or the project/team I was on) used an incrementing integer to uniquely identify each row (e.g. the [SERIAL](https://www.postgresql.org/docs/current/datatype-numeric.html#DATATYPE-SERIAL) type in PostgreSQL).
 

@@ -4,7 +4,7 @@ notion_id: c962549a-966c-4a78-8732-9e4bb997c361
 notion_url: https://app.notion.com/p/The-Open-Graph-protocol-c962549a966c4a7887329e4bb997c361
 last_edited: 2023-01-18T17:57:00.000Z
 source_url: https://ogp.me/
-tags: ["Web Development", "Website", "English"]
+tags: ["Website", "English", "Web Development"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

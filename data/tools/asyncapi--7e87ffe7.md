@@ -6,4 +6,6 @@ last_edited: 2022-12-21T12:42:00.000Z
 source_url: https://www.asyncapi.com/
 tags: ["English", "Web Development", "System Design / Software Architecture", "Website", "Tool", "Framework/Library"]
 ---
+Made with :love: by the AsyncAPI Initiative.
 
+Copyright © AsyncAPI Project a Series of LF Projects, LLC. For web site terms of use, trademark policy and general project policies please see https://lfprojects.org

@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-81d1-bece-f21f430d2de5
 notion_url: https://app.notion.com/p/A-guide-to-Scroll-driven-Animations-with-just-CSS-WebKit-2b754f1c7d2381d1becef21f430d2de5
 last_edited: 2025-11-26T17:44:00.000Z
 source_url: https://webkit.org/blog/17101/a-guide-to-scroll-driven-animations-with-just-css/
-tags: ["webkit.org", "English", "CSS", "Web Development", "Frontend", "Animation", "Article"]
+tags: ["CSS", "Web Development", "Frontend", "Animation", "Article", "webkit.org", "English"]
 ---
 CSS animations have come a long way since [Apple first introduced them to the web in 2007](https://webkit.org/blog/138/css-animation/). What [started as simple effects](https://webkit.org/blog/324/css-animation-2/) like animating from one color to another has turned into beautiful, complex images twisting and flying across the page.
 

@@ -4,7 +4,7 @@ notion_id: 2f954f1c-7d23-8199-aa24-f7619b987d5c
 notion_url: https://app.notion.com/p/Backseat-Software-Mike-Swanson-s-Blog-2f954f1c7d238199aa24f7619b987d5c
 last_edited: 2026-09-18T00:53:00.000Z
 source_url: https://blog.mikeswanson.com/backseat-software/
-tags: ["Mike Swanson's Blog", "English", "Software Development", "User Experience", "Productivity", "Communication", "Article"]
+tags: ["English", "Software Development", "User Experience", "Productivity", "Communication", "Article", "Mike Swanson's Blog"]
 ---
 What if your car worked like so many apps? You’re driving somewhere important…maybe running a little bit late. A few minutes into the drive, your car pulls over to the side of the road and asks:
 

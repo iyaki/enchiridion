@@ -4,7 +4,7 @@ notion_id: 6f8e4439-b9a9-4f99-88ea-eec34e7799ed
 notion_url: https://app.notion.com/p/What-we-talk-about-when-we-talk-about-System-Design-6f8e4439b9a94f9988eaeec34e7799ed
 last_edited: 2023-07-14T17:22:00.000Z
 source_url: https://maheshba.bitbucket.io/blog/2023/07/12/Design.html
-tags: ["mahesh's blog", "English", "System Design / Software Architecture", "Article"]
+tags: ["Article", "mahesh's blog", "English", "System Design / Software Architecture"]
 ---
 Early in my research career, I had a chance to work with some of the best system researchers[1](https://maheshba.bitbucket.io/blog/2023/07/12/Design.html#fn:0) in the world on a number of really interesting system designs. One of the enjoyable aspects of research was the particular process used by researchers (particularly in the SOSP/OSDI community) to come up with novel yet practical designs. This design process can be characterized as “fighting complexity with abstraction”: in any complex environment, how do you corral that complexity into cleanly defined boxes (or more technically, abstractions) and then divide functionality across these boxes?
 

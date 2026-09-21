@@ -4,7 +4,7 @@ notion_id: 35154f1c-7d23-81bb-87c9-e5d46b20d50a
 notion_url: https://app.notion.com/p/Structured-Prompt-Driven-Development-SPDD-35154f1c7d2381bb87c9e5d46b20d50a
 last_edited: 2026-04-29T02:42:00.000Z
 source_url: https://martinfowler.com/articles/structured-prompt-driven/
-tags: ["English", "Programming", "Artificial Intelligence (AI)", "Software Development", "DevOps", "Systems Design / Software Architecture", "Article", "Tutorial", "martinfowler"]
+tags: ["martinfowler", "English", "Programming", "Artificial Intelligence (AI)", "Software Development", "DevOps", "Systems Design / Software Architecture", "Article", "Tutorial"]
 ---
 Once a team adopts AI coding assistants, the first gains show up at the individual level: one developer can draft, modify, and refactor code much faster than before. But delivery speed is rarely limited by typing. When you look at the full delivery lifecycle, from requirements through release, new friction appears:
 

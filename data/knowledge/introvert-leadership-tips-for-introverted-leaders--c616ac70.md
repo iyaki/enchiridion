@@ -4,7 +4,7 @@ notion_id: c616ac70-c23f-4b3c-9e32-27e796e9ccae
 notion_url: https://app.notion.com/p/Introvert-Leadership-Tips-for-Introverted-Leaders-c616ac70c23f4b3c9e3227e796e9ccae
 last_edited: 2023-03-30T13:39:00.000Z
 source_url: https://management30.com/blog/introvert-leadership/
-tags: ["Management 3.0 Blog", "English", "Leadersheep", "Article"]
+tags: ["Article", "Management 3.0 Blog", "English", "Leadersheep"]
 ---
 Do you consider yourself an introvert, or do you recognize introverts in your work team? According to research carried out by various academics, introverts represent a large proportion of employees. So whether you are an introverted person or not, the following content should enhance your leadership journey. An article by Management 3.0 Facilitator [Fabiana Mello](https://management30.com/facilitators/about/?trainer=3134).
 

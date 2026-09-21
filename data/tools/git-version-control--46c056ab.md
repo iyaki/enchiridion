@@ -7,3 +7,10 @@ source_url: https://git-scm.com/
 tags: ["English", "Programming", "Tool"]
 ---
 [https://git-scm.com/](https://git-scm.com/)
+
+- About Git's performance and ecosystem
+- Learn Pro Git book, videos, tutorials, and cheat sheet
+- Tools Command line tools, GUIs, and hosting services
+- Reference Git's reference documentation
+- Install Binary releases for all major platforms.
+- Community Get involved! Bug reporting, mailing list, chat, development and more.

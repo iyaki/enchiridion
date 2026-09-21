@@ -4,7 +4,7 @@ notion_id: 4a11ab43-8c6d-4bdc-b662-02eedac77ca4
 notion_url: https://app.notion.com/p/37-Easy-Ways-to-Spice-Up-Your-UI-Designs-Learn-UI-Design-4a11ab438c6d4bdcb66202eedac77ca4
 last_edited: 2024-09-10T19:53:00.000Z
 source_url: https://www.learnui.design/blog/spice-up-designs.html
-tags: ["Graphic Design", "UI/UX", "Article", "LEARN UI DESIGN", "English"]
+tags: ["English", "Graphic Design", "UI/UX", "Article", "LEARN UI DESIGN"]
 ---
 Ever been working on a design that feels too plain? Let’s look at a few dozen simple ways to spice things up. Get ready to bookmark this page, because you’ll want to reference this list in the future. It’s unbelievable how many incredible pro-level designs feature solid foundations plus a few techniques listed below.
 

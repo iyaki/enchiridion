@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-815b-be6c-ea1c6ad55b24
 notion_url: https://app.notion.com/p/You-re-all-CTO-now-Jamie-s-blog-2b754f1c7d23815bbe6cea1c6ad55b24
 last_edited: 2025-11-26T17:54:00.000Z
 source_url: https://jamie.ideasasylum.com/2025/07/01/you%27re-all-cto-now
-tags: ["English", "Leadership", "Career Growth", "Product Management", "Article", "Jamie’s blog"]
+tags: ["Leadership", "Career Growth", "Product Management", "Article", "Jamie’s blog", "English"]
 ---
 Years ago I moved from being one of the developers of Podia to being the CTO. I went from spending ~100% of my time writing code to maybe 70% as more time was taken up managing people and projects. Over the years, that percentage has continued to drop and drop. and now I’m doing very little consistent coding—I ship small changes, occasional bug fixes, upgrades etc but I’m no longer on the critical feature path.
 

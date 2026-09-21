@@ -4,7 +4,7 @@ notion_id: 1db54f1c-7d23-814a-b3de-e125c7b3c388
 notion_url: https://app.notion.com/p/CUBE-CSS-1db54f1c7d23814ab3dee125c7b3c388
 last_edited: 2025-07-26T23:36:00.000Z
 source_url: https://piccalil.li/blog/cube-css/
-tags: ["CSS", "Article", "Piccalilli", "English"]
+tags: ["Piccalilli", "English", "CSS", "Article"]
 ---
 If there’s one thing you can guarantee in tech, it’s that someone, somewhere, will declare that CSS isn’t up to the job of “big projects” and what will undoubtedly be recommended by those same people will be either a JavaScript-heavy approach or some sort of all-in utility class approach like Tailwind.
 

@@ -4,7 +4,7 @@ notion_id: b2d653c3-db65-4c8f-81de-f551538ef1e2
 notion_url: https://app.notion.com/p/karanpratapsingh-system-design-Learn-how-to-design-systems-at-scale-and-prepare-for-system-design-i-b2d653c3db654c8f81def551538ef1e2
 last_edited: 2023-07-10T17:52:00.000Z
 source_url: https://github.com/karanpratapsingh/system-design
-tags: ["System Design / Software Architecture", "Jobs", "Book", "English"]
+tags: ["Book", "English", "System Design / Software Architecture", "Jobs"]
 ---
 # System Design Course
 

@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-818e-832c-d4643f9e8eec
 notion_url: https://app.notion.com/p/A-Few-Things-About-the-Anchor-Element-s-href-You-Might-Not-Have-Known-Jim-Nielsen-s-Blog-2b754f1c7d23818e832cd4643f9e8eec
 last_edited: 2025-11-26T19:15:00.000Z
 source_url: https://blog.jim-nielsen.com/2025/href-value-possibilities/
-tags: ["Article", "Jim Nielsen’s Blog", "English", "HTML", "Web Development", "Frontend", "Learning"]
+tags: ["Jim Nielsen’s Blog", "English", "HTML", "Web Development", "Frontend", "Learning", "Article"]
 ---
 I’ve written previously about [reloading a document using only HTML](https://blog.jim-nielsen.com/2023/reloading-document-in-html-and-preserve-query-params/) but that got me thinking: What are all the values you can put in an anchor tag’s `href` attribute?
 

@@ -4,7 +4,7 @@ notion_id: 321c5ad9-c3bb-443d-9681-04f3887706a1
 notion_url: https://app.notion.com/p/3-Critical-Skills-You-Need-to-Grow-Beyond-Senior-Levels-in-Engineering-321c5ad9c3bb443d968104f3887706a1
 last_edited: 2024-05-15T20:21:00.000Z
 source_url: https://www.thecaringtechie.com/p/3-critical-skills-you-need-to-grow
-tags: ["The Caring Techie Newsletter (Irina Stanescu)", "English", "Career Growth", "Producer (Individual Contributor)", "Article"]
+tags: ["English", "Career Growth", "Producer (Individual Contributor)", "Article", "The Caring Techie Newsletter (Irina Stanescu)"]
 ---
 Throughout my career as a Software Engineer, I was fortunate to get promoted multiple times from Junior, to Mid-level, Senior, and Staff. The most difficult jump was from Senior to Staff.
 

@@ -6,4 +6,8 @@ last_edited: 2022-12-19T19:15:00.000Z
 source_url: https://sinatrarb.com/
 tags: ["Framework/Library", "English", "Web Development", "Ruby", "Untried"]
 ---
+Sinatra is a DSL for quickly creating web applications in Ruby with minimal effort:
 
+```plain text
+require 'sinatra' get '/frank-says' do 'Put this in your pipe & smoke it!' end
+```

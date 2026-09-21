@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-81ae-ab47-e219497c8f43
 notion_url: https://app.notion.com/p/Vertical-Slice-Architecture-2b754f1c7d2381aeab47e219497c8f43
 last_edited: 2025-11-26T14:57:00.000Z
 source_url: https://www.jimmybogard.com/vertical-slice-architecture/
-tags: ["Article", "Jimmy Bogard's Blog", "English", "System Design / Software Architecture", "Programming", "Agile"]
+tags: ["Jimmy Bogard's Blog", "English", "System Design / Software Architecture", "Programming", "Agile", "Article"]
 ---
 Many years back, we started on a new, long term project, and to start off with, we built the architecture around an onion architecture. Within a couple of months, the cracks started to show around this style and we moved away from that architecture and towards CQRS (before it had that name). Along with moving to CQRS, we started building our architectures around vertical slices instead of layers (whether flat or concentric, it's still layers). Since then, for the last 7-8 years or so, building around vertical slice architectures for all manners of applications and systems has been our exclusive approach and I can't imagine going back to the constraints of layered architecture approaches.
 

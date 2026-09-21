@@ -4,7 +4,7 @@ notion_id: 7c5a0de5-6e62-48b2-b9f1-ff26f24c08f3
 notion_url: https://app.notion.com/p/Working-with-stacked-branches-in-Git-is-easier-with-update-refs-7c5a0de56e6248b2b9f1ff26f24c08f3
 last_edited: 2024-08-16T19:37:00.000Z
 source_url: https://andrewlock.net/working-with-stacked-branches-in-git-is-easier-with-update-refs
-tags: ["English", "Programming", "Article", "Andrew Lock"]
+tags: ["Article", "Andrew Lock", "English", "Programming"]
 ---
 In this post I discuss how to use a new Git rebasing feature, `--update-refs`, which was included in Git 2.38, in October 2022. This makes working with "stacked" branches a lot easier.
 

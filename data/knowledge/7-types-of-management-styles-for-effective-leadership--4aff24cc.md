@@ -4,7 +4,7 @@ notion_id: 4aff24cc-7fba-4cfb-8f40-710470ba08e7
 notion_url: https://app.notion.com/p/7-Types-Of-Management-Styles-For-Effective-Leadership-4aff24cc7fba4cfb8f40710470ba08e7
 last_edited: 2023-11-06T11:29:00.000Z
 source_url: https://www.radicalcandor.com/blog/types-of-management-styles/
-tags: ["Article", "Radical Candor", "English", "Leadersheep", "Web Development", "Line/People/Team Management", "Communication", "Decision Making"]
+tags: ["Radical Candor", "English", "Leadersheep", "Web Development", "Line/People/Team Management", "Communication", "Decision Making", "Article"]
 ---
 There are many different types of management styles. However, in the U.S., telling people what to do doesn’t work outside of traditionally hierarchical organizations. And as the adage goes — people don’t leave bad jobs, they leave bad managers.
 

@@ -6,4 +6,4 @@ last_edited: 2025-11-26T19:10:00.000Z
 source_url: https://docs.google.com/document/d/1qFrNa3wmeTn_HDj0C4nhGWy5T1DlF5J8zTrlhA0vEAc/edit?tab=t.0#heading=h.k11xahmqzzyx
 tags: ["UI/UX", "Frontend", "Web Development", "Article", "Google Docs", "English"]
 ---
-
+Ya no se admite esta versión. Actualiza a un navegador admitido.

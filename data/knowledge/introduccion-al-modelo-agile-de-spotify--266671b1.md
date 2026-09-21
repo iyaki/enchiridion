@@ -4,7 +4,7 @@ notion_id: 266671b1-6c7a-4fff-ac62-b76685275828
 notion_url: https://app.notion.com/p/Introducci-n-al-modelo-agile-de-Spotify-266671b16c7a4fffac62b76685275828
 last_edited: 2022-12-21T18:09:00.000Z
 source_url: https://www2.deloitte.com/es/es/pages/technology/articles/introduccion-modelo-agile-spotify.html
-tags: ["Article", "Español", "Agile", "Line/People/Team Management", "Project Management"]
+tags: ["Español", "Agile", "Line/People/Team Management", "Project Management", "Article"]
 ---
 Creo que es de sobra conocido por todos, el impacto que el modelo ágil de Spotify está causando desde hace tiempo en el terreno de las metodologías ágiles.
 

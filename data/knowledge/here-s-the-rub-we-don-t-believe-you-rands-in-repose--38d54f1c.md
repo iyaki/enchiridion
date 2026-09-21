@@ -4,7 +4,7 @@ notion_id: 38d54f1c-7d23-819e-a494-c4070399576d
 notion_url: https://app.notion.com/p/Here-s-The-Rub-We-Don-t-Believe-You-Rands-in-Repose-38d54f1c7d23819ea494c4070399576d
 last_edited: 2026-09-18T00:52:00.000Z
 source_url: https://randsinrepose.com/archives/heres-the-rub-we-dont-believe-you/
-tags: ["Leadership", "Team Management", "Communication", "Remote Access", "Article", "Rands in Repose", "English"]
+tags: ["Article", "Rands in Repose", "English", "Leadership", "Team Management", "Communication", "Remote Access"]
 ---
 Welcome, new leader. We’re glad that you are here. Your arrival fills a critical vacancy in our team, and we can’t wait to see what you can do at this company. We’re going to say that we’re not in a hurry and you should take your time, but we’re in a hurry.
 

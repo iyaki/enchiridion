@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-81bc-8992-db24ec2532dc
 notion_url: https://app.notion.com/p/cdown-sshrc-Bring-your-bashrc-vimrc-etc-with-you-when-you-ssh-2b754f1c7d2381bc8992db24ec2532dc
 last_edited: 2025-11-26T19:02:00.000Z
 source_url: https://github.com/cdown/sshrc
-tags: ["English", "DevOps", "Linux", "Shell/Bash", "Productivity", "Tool", "GitHub"]
+tags: ["Tool", "GitHub", "English", "DevOps", "Linux", "Shell/Bash", "Productivity"]
 ---
 **sshrc was originally written by Russell Stewart (Russell91), who left GitHub, and hasn't responded to requests to appoint a new maintainer. This is a maintained continuation of his work.**
 

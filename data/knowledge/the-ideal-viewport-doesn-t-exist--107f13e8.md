@@ -4,7 +4,7 @@ notion_id: 107f13e8-a63c-4f7b-b90b-4ba6eed3d50b
 notion_url: https://app.notion.com/p/The-ideal-viewport-doesn-t-exist-107f13e8a63c4f7bb90b4ba6eed3d50b
 last_edited: 2023-08-29T12:16:00.000Z
 source_url: https://viewports.fyi/
-tags: ["English", "Web Development", "UI/UX", "Website", "Article"]
+tags: ["Website", "Article", "English", "Web Development", "UI/UX"]
 ---
 Before you settle on basing design decisions on a handful of strict breakpoints, make sure you consider the vast fragmentation of screen sizes and browser viewports.
 

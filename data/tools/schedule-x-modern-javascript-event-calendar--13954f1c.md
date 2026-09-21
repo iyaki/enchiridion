@@ -4,7 +4,7 @@ notion_id: 13954f1c-7d23-8169-b3f5-f2e222ba59b2
 notion_url: https://app.notion.com/p/Schedule-X-Modern-JavaScript-Event-Calendar-13954f1c7d238169b3f5f2e222ba59b2
 last_edited: 2024-11-15T20:41:00.000Z
 source_url: https://schedule-x.dev/
-tags: ["Web Development", "Frontend", "Untried", "Framework/Library", "English"]
+tags: ["English", "Web Development", "Frontend", "Untried", "Framework/Library"]
 ---
 ## Ship an event calendar with ease, regardless of tech-stack. Modern alternative to FullCalendar.
 

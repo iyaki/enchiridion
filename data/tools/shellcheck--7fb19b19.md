@@ -7,3 +7,33 @@ source_url: https://www.shellcheck.net/
 tags: ["English", "Programming", "Shell/Bash", "Continuous Integration/Continuous Delivery", "Tool"]
 ---
 [https://www.shellcheck.net/](https://www.shellcheck.net/)
+
+finds bugs in your shell scripts.
+
+You can cabal, apt, dnf, pkg or brew install it locally right now.
+
+Paste a script to try it out:
+
+📄
+
+Your Editor (Ace – loading 800kb of JS)
+
+▼
+
+▲
+
+📄
+
+ShellCheck Output
+
+If you paste a script in the editor above, this window will show shellcheck output.
+
+## ShellCheck is...
+
+- GPLv3: free as in freedom
+- documented on the ShellCheck Wiki
+- available on GitHub (as is this website)
+- already packaged for your distro or package manager
+- supported as an integrated linter in major editors
+- available in CodeClimate, Codacy and CodeFactor to auto-check your GitHub repo
+- written in Haskell, if you're into that sort of thing.

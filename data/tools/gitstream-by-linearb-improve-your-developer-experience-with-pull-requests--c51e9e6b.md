@@ -4,7 +4,7 @@ notion_id: c51e9e6b-df5a-4f5b-9336-2ca8f7284e20
 notion_url: https://app.notion.com/p/gitStream-by-LinearB-improve-your-developer-experience-with-Pull-Requests-c51e9e6bdf5a4f5b93362ca8f7284e20
 last_edited: 2023-02-17T19:39:00.000Z
 source_url: https://linearb.io/dev/gitstream/
-tags: ["English", "Programming", "Untried", "System Design / Software Architecture", "Tool", "Service"]
+tags: ["Tool", "Service", "English", "Programming", "Untried", "System Design / Software Architecture"]
 ---
 gitStream let’s you configure rules that decide how each pull request is treated based on the content of the code. These rules automatically find the right reviewer, check for deprecation, add context tags and much more.
 

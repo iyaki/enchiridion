@@ -6,4 +6,32 @@ last_edited: 2022-12-20T02:11:00.000Z
 source_url: https://vercel.com/
 tags: ["English", "Hosting", "Frontend", "Untried", "Service"]
 ---
+## Build agents on infrastructure that thinks like them
 
+Notion powers millions of agent conversations daily on Vercel.
+
+- Features
+- Durable Orchestration
+- Sandboxed Environments
+- AI Model Gateway
+- Fluid Compute
+
+## Ship apps that scale from zero to millions instantly
+
+Zapier serves over 100 million monthly website visits on Vercel.
+
+- Features
+- Global Delivery
+- Deployment Environments
+- Serverless Functions
+- Web Application Firewall
+
+## Host platforms that serve every customer
+
+Mintlify powers documentation for over 20,000 companies on Vercel.
+
+- Features
+- Tenant Isolation
+- Domain Management
+- Custom SSL Certificates
+- Preview URLs

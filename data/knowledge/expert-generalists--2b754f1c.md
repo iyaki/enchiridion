@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-81f6-877a-cb470cbaa91a
 notion_url: https://app.notion.com/p/Expert-Generalists-2b754f1c7d2381f6877acb470cbaa91a
 last_edited: 2025-11-26T14:58:00.000Z
 source_url: https://martinfowler.com/articles/expert-generalist.html
-tags: ["English", "Programming", "Career Growth", "Learning", "Principles", "Article", "Martin Fowler"]
+tags: ["Article", "Martin Fowler", "English", "Programming", "Career Growth", "Learning", "Principles"]
 ---
 Writing a sophisticated computer program often requires a lot of detailed knowledge. If we do this in Java, we need to know the syntax of the language, the wide range of libraries available to assist us in the work, the various tools required to verify and build our programs. If we do this in Python instead, we are faced with a different syntax, libraries that are named and work differently, a whole other ecosystem to build and run our work.
 

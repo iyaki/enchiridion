@@ -4,7 +4,7 @@ notion_id: 69e02cd0-e975-4f86-b582-6ebb93bed007
 notion_url: https://app.notion.com/p/Being-friendly-Strategies-for-friendly-fork-management-69e02cd0e9754f86b5826ebb93bed007
 last_edited: 2023-01-25T18:26:00.000Z
 source_url: https://github.blog/2022-05-02-friend-zone-strategies-friendly-fork-management/
-tags: ["English", "Project Management", "Product Management", "Article", "Github Blog"]
+tags: ["Article", "Github Blog", "English", "Project Management", "Product Management"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

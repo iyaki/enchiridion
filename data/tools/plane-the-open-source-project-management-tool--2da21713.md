@@ -4,7 +4,7 @@ notion_id: 2da21713-ecc7-4c27-b10f-d24020e8e8a6
 notion_url: https://app.notion.com/p/Plane-The-open-source-project-management-tool-2da21713ecc74c27b10fd24020e8e8a6
 last_edited: 2023-06-02T01:01:00.000Z
 source_url: https://plane.so/
-tags: ["Tool", "English", "Project Management", "Untried"]
+tags: ["English", "Project Management", "Untried", "Tool"]
 ---
 Meet Plane. An Open-source software development tool to manage issues, sprints, and product roadmaps with peace of mind.
 

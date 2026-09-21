@@ -4,7 +4,7 @@ notion_id: 38d54f1c-7d23-81b7-9715-ecf69d59f146
 notion_url: https://app.notion.com/p/Don-t-trust-large-context-windows-Garrit-s-Notes-38d54f1c7d2381b79715ecf69d59f146
 last_edited: 2026-09-18T00:52:00.000Z
 source_url: https://garrit.xyz/posts/2026-05-06-dont-trust-large-context-windows
-tags: ["Article", "Garrit's Notes", "English", "Programming", "Artificial Intelligence (AI)", "Technical Debt", "Tools", "Productivity"]
+tags: ["Programming", "Artificial Intelligence (AI)", "Technical Debt", "Tools", "Productivity", "Article", "Garrit's Notes", "English"]
 ---
 I recently watched [a video](https://youtu.be/-QFHIoCo-Ko) that put a name on something I'd been feeling. The author splits an LLM's context window into two zones. There's the **smart zone**, where the model is sharp, and the **dumb zone**, where attention drops off and the model starts forgetting what you told it five minutes ago. The cutoff sits somewhere around 100k tokens. It doesn't matter how big the advertised context window is.
 

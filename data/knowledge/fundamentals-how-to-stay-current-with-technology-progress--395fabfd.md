@@ -4,7 +4,7 @@ notion_id: 395fabfd-36ee-4208-84cf-0d44b7e51483
 notion_url: https://app.notion.com/p/Fundamentals-How-to-stay-current-with-technology-progress-395fabfd36ee420884cf0d44b7e51483
 last_edited: 2024-06-05T18:33:00.000Z
 source_url: https://blog.ploeh.dk/2024/05/20/fundamentals/
-tags: ["Article", "ploeh blog", "English", "Programming", "Career Growth", "Learning"]
+tags: ["English", "Programming", "Career Growth", "Learning", "Article", "ploeh blog"]
 ---
 A long time ago, I landed my dream job. My new employer was a consulting company, and my role was to be the resident [Azure](https://en.wikipedia.org/wiki/Microsoft_Azure) expert. Cloud computing was still in its infancy, and there was a good chance that I might be able to establish myself as a leading regional authority on the topic.
 

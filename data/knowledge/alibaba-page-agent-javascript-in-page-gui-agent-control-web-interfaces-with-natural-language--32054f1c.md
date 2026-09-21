@@ -4,7 +4,7 @@ notion_id: 32054f1c-7d23-81ef-aed0-f90fe6d3d629
 notion_url: https://app.notion.com/p/alibaba-page-agent-JavaScript-in-page-GUI-agent-Control-web-interfaces-with-natural-language-32054f1c7d2381efaed0f90fe6d3d629
 last_edited: 2026-09-18T00:53:00.000Z
 source_url: https://github.com/alibaba/page-agent
-tags: ["Tool", "Article", "GitHub", "English", "Web Development", "Javascript", "AI", "SaaS", "Frontend", "Productivity"]
+tags: ["GitHub", "English", "Web Development", "Javascript", "AI", "SaaS", "Frontend", "Productivity", "Tool", "Article"]
 ---
 # Page Agent
 

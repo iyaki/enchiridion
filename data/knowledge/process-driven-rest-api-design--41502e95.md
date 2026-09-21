@@ -4,7 +4,7 @@ notion_id: 41502e95-a0fa-40b9-a77a-529b6aac71ee
 notion_url: https://app.notion.com/p/Process-driven-REST-API-design-41502e95a0fa40b9a77a529b6aac71ee
 last_edited: 2022-12-21T17:16:00.000Z
 source_url: https://hackernoon.com/process-driven-rest-api-design-75ca88917582
-tags: ["REST API", "System Design / Software Architecture", "Article", "Hackernoon", "English"]
+tags: ["English", "REST API", "System Design / Software Architecture", "Article", "Hackernoon"]
 ---
 REST is a heavily oversimplified and massively misunderstood (but very widely used) concept for designing API’s. Just look for any forum thread that features Roy Fielding (the “founder” of REST) and you will probably find him telling the author and other participants how they misunderstood what he intended REST to be. Which is perhaps no surprise, as his original paper is too long to read for many, and the ideas are not completely trivial.
 

@@ -4,7 +4,7 @@ notion_id: eb32b450-9301-4acc-8ba6-7b502ffa2b4d
 notion_url: https://app.notion.com/p/Falsehoods-programmers-believe-about-time-zones-eb32b45093014acc8ba67b502ffa2b4d
 last_edited: 2024-03-27T19:55:00.000Z
 source_url: https://www.zainrizvi.io/blog/falsehoods-programmers-believe-about-time-zones/
-tags: ["Article", "ZAIN RIZVI Blog", "English", "Programming", "System Design / Software Architecture"]
+tags: ["ZAIN RIZVI Blog", "English", "Programming", "System Design / Software Architecture", "Article"]
 ---
 My aunt has a problem
 

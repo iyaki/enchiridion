@@ -4,7 +4,7 @@ notion_id: 902ad46e-d937-4be2-bb22-358a21ddeceb
 notion_url: https://app.notion.com/p/Thoughts-on-Code-Reviews-902ad46ed9374be2bb22358a21ddeceb
 last_edited: 2024-07-15T19:42:00.000Z
 source_url: https://hybridhacker.email/p/thoughts-on-code-reviews
-tags: ["English", "Programming", "Article", "The Hybrid Hacker"]
+tags: ["The Hybrid Hacker", "English", "Programming", "Article"]
 ---
 Hey, Luca here! This is my 2nd article on The Hybrid Hacker 🎉 all while Nicola is crafting a brand new, in-depth piece about _salary reviews_, which will go out next week!
 

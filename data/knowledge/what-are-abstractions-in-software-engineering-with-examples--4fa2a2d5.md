@@ -4,7 +4,7 @@ notion_id: 4fa2a2d5-955c-4b81-852c-cd37d4a1a1a3
 notion_url: https://app.notion.com/p/What-Are-Abstractions-in-Software-Engineering-with-Examples-4fa2a2d5955c4b81852ccd37d4a1a1a3
 last_edited: 2022-12-19T14:14:00.000Z
 source_url: https://thevaluable.dev/abstraction-type-software-example/
-tags: ["English", "Programming", "Object Oriented Programming", "Article", "The Valuable Dev"]
+tags: ["Article", "The Valuable Dev", "English", "Programming", "Object Oriented Programming"]
 ---
 Abstraction. A word, I’m sure, you’ve seen (or heard) many times.
 

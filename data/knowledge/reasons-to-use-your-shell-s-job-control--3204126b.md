@@ -4,7 +4,7 @@ notion_id: 3204126b-d3e6-4968-8a76-578b0b947662
 notion_url: https://app.notion.com/p/Reasons-to-use-your-shell-s-job-control-3204126bd3e649688a76578b0b947662
 last_edited: 2024-08-16T19:15:00.000Z
 source_url: https://jvns.ca/blog/2024/07/03/reasons-to-use-job-control
-tags: ["English", "Shell/Bash", "Article", "Julia Evans"]
+tags: ["Article", "Julia Evans", "English", "Shell/Bash"]
 ---
 Hello! Today someone on Mastodon asked about job control (`fg`, `bg`, `Ctrl+z`, `wait`, etc). It made me think about how I don’t use my shell’s job control interactively very often: usually I prefer to just open a new terminal tab if I want to run multiple terminal programs, or use tmux if it’s over ssh. But I was curious about whether other people used job control more often than me.
 

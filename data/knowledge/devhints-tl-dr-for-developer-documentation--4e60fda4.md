@@ -7,3 +7,7 @@ source_url: https://devhints.io/
 tags: ["English", "Programming", "Linux", "DevOps", "CheatSheet"]
 ---
 
+
+Follow @devhints on X/Twitter for daily "today I learned" snippets.
+
+Also: I've started a new blog with some insights on web development. Have a look! ricostacruz.com/posts

@@ -4,7 +4,7 @@ notion_id: c191a219-6daa-4d32-8e69-8c6ddbc0fd69
 notion_url: https://app.notion.com/p/Las-Leyes-de-los-equipos-giles-c191a2196daa4d328e698c6ddbc0fd69
 last_edited: 2022-12-30T14:46:00.000Z
 source_url: https://gradosdeti.acblnk.com/show/1942092/q5VOC9nhSRyZWi9uaKn3PwGPtr7lN5OR/56a7ce6b68eeb3a514c4b8ea56c97543/
-tags: ["Agile", "Article", "This is the Agile Way (Javier Garzas)", "Español"]
+tags: ["Español", "Agile", "Article", "This is the Agile Way (Javier Garzas)"]
 ---
 Entre los muchos temas que hablamos en el curso, entre experiencias, dinámicas, muchas fotos reales (anónimas siempre) de experiencias reales con equipos Ágiles y transformaciones, compartí con los geniales asistentes esas “Leyes” (entre comillas lo de Leyes, porque esto no es física y son Leyes que “típicamente” se cumplen) que suelen afectar a los equipos Ágiles ([dejo vídeo](http://gradosdeti.acblnk.com/url/ver/355415990/q5VOC9nhSRyZWi9uaKn3PwGPtr7lN5OR/56a7ce6b68eeb3a514c4b8ea56c97543)), extensible a cualquier tipo de equipo cuyos integrantes colaboran en la creación de un producto o servicio fruto de una tarea intelectual (ejemplo, los equipos de productos IT).
 

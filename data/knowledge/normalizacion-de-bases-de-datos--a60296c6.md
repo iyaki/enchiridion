@@ -4,7 +4,7 @@ notion_id: a60296c6-94f1-4c6d-832e-961ab21e3684
 notion_url: https://app.notion.com/p/Normalizaci-n-de-bases-de-datos-a60296c694f14c6d832e961ab21e3684
 last_edited: 2022-12-31T22:08:00.000Z
 source_url: https://franiglesias.github.io/db-normalization/
-tags: ["Español", "System Design / Software Architecture", "Databases", "Article", "The Talking Bit - Fran Iglesias"]
+tags: ["The Talking Bit - Fran Iglesias", "Español", "System Design / Software Architecture", "Databases", "Article"]
 ---
 La normalización de las bases de datos es un proceso que persigue reducir la redundancia de datos y controlar las dependencias entre las entidades representadas en las tablas, de modo que éstas puedan evolucionar fácilmente y se reduzcan los errores que generen inconsistencia de datos.
 

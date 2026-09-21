@@ -4,6 +4,6 @@ notion_id: 2d3516bf-8cf5-414e-9a8d-751083b82b4f
 notion_url: https://app.notion.com/p/EmbedAI-AI-SEO-Site-Score-2d3516bf8cf5414e9a8d751083b82b4f
 last_edited: 2023-10-12T21:22:00.000Z
 source_url: https://www.thesamur.ai/ai-site-seo-score
-tags: ["Web Development", "Blogging/Content Creation", "Service", "English"]
+tags: ["English", "Web Development", "Blogging/Content Creation", "Service"]
 ---
 The landscape of SEO is evolving. Determine whether your website is searchable and rankable by AI-driven search engines and discover ways to enhance its visibility. Begin by entering your website URL and specifying the website type below to initiate the process.

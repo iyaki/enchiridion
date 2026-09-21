@@ -4,7 +4,7 @@ notion_id: a42c5afc-2843-4e82-a1ee-b5a7294c53ac
 notion_url: https://app.notion.com/p/OpenNIC-Project-DNS-servers-a42c5afc28434e82a1eeb5a7294c53ac
 last_edited: 2023-03-12T15:37:00.000Z
 source_url: https://www.opennic.org/
-tags: ["English", "Network", "Website"]
+tags: ["Website", "English", "Network"]
 ---
 No corporation should be able to say what websites are or aren’t available to us. By using our volunteer-provided DNS servers you no longer have to question your ISPs motives, and can rest assured that your connection to the Internet is not being censored by your DNS servers.
 

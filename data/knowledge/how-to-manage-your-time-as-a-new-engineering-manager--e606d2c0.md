@@ -4,7 +4,7 @@ notion_id: e606d2c0-d9d0-4b94-9536-2a5208b36bca
 notion_url: https://app.notion.com/p/How-to-manage-your-time-as-a-new-engineering-manager-e606d2c0d9d04b9495362a5208b36bca
 last_edited: 2023-04-22T20:09:00.000Z
 source_url: https://leaddev.com/personal-development/how-manage-your-time-new-engineering-manager
-tags: ["LeadDev", "English", "Line/People/Team Management", "Productivity", "Article"]
+tags: ["Article", "LeadDev", "English", "Line/People/Team Management", "Productivity"]
 ---
 If you’re a newly appointed engineering manager struggling to keep track of your own time, here are some tips that may help you out.
 

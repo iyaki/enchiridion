@@ -4,7 +4,7 @@ notion_id: ae78fef9-1702-4f04-b060-6ad68271cfd7
 notion_url: https://app.notion.com/p/Understanding-Concurrency-and-Parallelism-in-Golang-ae78fef917024f04b0606ad68271cfd7
 last_edited: 2023-01-13T17:39:00.000Z
 source_url: https://spiralscout.com/blog/understanding-concurrency-and-parallelism-in-golang
-tags: ["Article", "SpiralScout Blog", "English", "Go"]
+tags: ["English", "Go", "Article", "SpiralScout Blog"]
 ---
 When it comes to human cognitive abilities, few concepts come up for as much debate as “multitasking.” Multitasking requires vast amounts of cognitive processing and allows humans to both tap into memory reserves while simultaneously projecting into the future. The idea of multitasking sparks controversy, however, with one school of thought claiming it’s a human feat that separates us from all other animals, and another school of thought claiming the human brain is incapable of performing more than one high-level brain function at the same time. What science has undoubtedly proven, however, is that humans do have the ability to rapidly switch between tasks and successfully shift focus from one thing to the other.
 

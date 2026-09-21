@@ -6,4 +6,4 @@ last_edited: 2022-12-19T19:14:00.000Z
 source_url: https://grails.org/
 tags: ["English", "Web Development", "Groovy", "Untried", "Framework/Library"]
 ---
-
+This page has moved to https://grails.apache.org/

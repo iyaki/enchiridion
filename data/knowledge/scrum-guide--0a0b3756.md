@@ -7,3 +7,11 @@ source_url: https://scrumguides.org/
 tags: ["English", "Español", "Others", "Agile", "Project Management", "Product Management", "Programming", "Book"]
 ---
 [https://scrumguides.org/](https://scrumguides.org/)
+
+Scrum is a framework for developing and sustaining complex products. This Guide contains the definition of Scrum. This definition consists of Scrum’s accountabilities, events, artifacts, and the rules that bind them together. Ken Schwaber and Jeff Sutherland developed Scrum; the Scrum Guide is written and provided by them. Together, they stand behind the Scrum Guide.
+
+## Share Your Ideas!
+
+If you have ideas for improving the website or the Scrum Guide itself, please share them! You may do so by sending a message to our support e-mail.
+
+Share an idea

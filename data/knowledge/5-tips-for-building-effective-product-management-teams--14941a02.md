@@ -4,7 +4,7 @@ notion_id: 14941a02-1434-40d1-829e-04db9f402dff
 notion_url: https://app.notion.com/p/5-Tips-for-Building-Effective-Product-Management-Teams-14941a02143440d1829e04db9f402dff
 last_edited: 2024-07-18T17:41:00.000Z
 source_url: https://itamargilad.com/5-tips-for-building-effective-product-management-teams/
-tags: ["Product Management", "Productivity", "Line/People/Team Management", "Article", "Itamar Gilad", "English"]
+tags: ["English", "Product Management", "Productivity", "Line/People/Team Management", "Article", "Itamar Gilad"]
 ---
 ### Let PMs Be PMs
 

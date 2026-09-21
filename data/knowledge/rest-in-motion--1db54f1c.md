@@ -4,7 +4,7 @@ notion_id: 1db54f1c-7d23-8169-a17f-f605c36e1872
 notion_url: https://app.notion.com/p/Rest-in-motion-1db54f1c7d238169a17ff605c36e1872
 last_edited: 2025-07-27T01:12:00.000Z
 source_url: https://mindingourway.com/rest-in-motion/
-tags: ["English", "Reflection", "Career Growth", "HealthCare", "Article", "Nate Soares - Minding Our Way"]
+tags: ["Article", "Nate Soares - Minding Our Way", "English", "Reflection", "Career Growth", "HealthCare"]
 ---
 Many people seem to think the 'good' state of being, the 'ground' state, is a relaxed state, a state with lots of rest and very little action. Because they think the ground state is the relaxed state, they act like maintaining any other state requires effort, requires suffering.
 

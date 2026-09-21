@@ -4,7 +4,7 @@ notion_id: 060cd0db-b5ef-4580-8cb5-46dce7a97ec4
 notion_url: https://app.notion.com/p/Implementing-Atomic-Habits-in-IT-060cd0dbb5ef45808cb546dce7a97ec4
 last_edited: 2023-01-18T17:58:00.000Z
 source_url: https://vadimkravcenko.com/shorts/atomic-habits-in-it/
-tags: ["Article", "Vadim Kravcenko", "English", "Producer (Individual Contributor)"]
+tags: ["Vadim Kravcenko", "English", "Producer (Individual Contributor)", "Article"]
 ---
 So I read this book called “Atomic Habits” a few weeks ago, where the core concept is about minor 1% improvements every week compound over time to result in significant improvements.
 

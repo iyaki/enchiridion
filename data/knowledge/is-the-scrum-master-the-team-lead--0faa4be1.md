@@ -4,7 +4,7 @@ notion_id: 0faa4be1-8158-4897-aca8-26781f8aa11c
 notion_url: https://app.notion.com/p/Is-the-Scrum-Master-the-Team-Lead-0faa4be181584897aca826781f8aa11c
 last_edited: 2022-12-28T11:48:00.000Z
 source_url: https://management30.com/blog/scrum-master-team-leadership/
-tags: ["Article", "Management 3.0 Blog", "English", "Agile", "Project Management", "Line/People/Team Management", "Leadersheep"]
+tags: ["Agile", "Project Management", "Line/People/Team Management", "Leadersheep", "Article", "Management 3.0 Blog", "English"]
 ---
 [_Juan Mello_](https://management30.com/facilitators/about/?trainer=4772)_, Management 3.0 Facilitator and seasoned Scrum Master tries to find an answer._
 

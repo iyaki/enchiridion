@@ -4,7 +4,7 @@ notion_id: 5e0b2e09-f7be-434c-930e-737b3ad2be96
 notion_url: https://app.notion.com/p/The-four-pillars-of-code-health-5e0b2e09f7be434c930e737b3ad2be96
 last_edited: 2023-02-13T19:26:00.000Z
 source_url: https://leaddev.com/tech/four-pillars-code-health
-tags: ["Programming", "System Design / Software Architecture", "Product Management", "Site Reliability Engineering", "Article", "LeadDev", "English"]
+tags: ["English", "Programming", "System Design / Software Architecture", "Product Management", "Site Reliability Engineering", "Article", "LeadDev"]
 ---
 As an engineering leader, ensuring that your team is shipping products fast without compromising on quality is one of your key responsibilities. Effective leaders understand this deeply, and actively build systems in their teams so that quality and [velocity](https://leaddev.com/productivity-eng-velocity/debugging-engineering-velocity-and-leading-high-performing-teams) can go hand in hand without trade-offs.
 

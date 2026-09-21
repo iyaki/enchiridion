@@ -4,7 +4,7 @@ notion_id: 1b454f1c-7d23-8180-b14d-d44880303a61
 notion_url: https://app.notion.com/p/The-Startup-CTO-s-Handbook-1b454f1c7d238180b14dd44880303a61
 last_edited: 2025-04-19T23:33:00.000Z
 source_url: https://github.com/ZachGoldberg/Startup-CTO-Handbook/blob/main/StartupCTOHandbook.md
-tags: ["Book", "Zach Goldberg", "English", "Entrepreneurship", "Line/People/Team Management", "Career Growth"]
+tags: ["English", "Entrepreneurship", "Line/People/Team Management", "Career Growth", "Book", "Zach Goldberg"]
 ---
 # THE STARTUP CTO'S HANDBOOK
 

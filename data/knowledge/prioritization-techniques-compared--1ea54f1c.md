@@ -4,7 +4,7 @@ notion_id: 1ea54f1c-7d23-8107-b646-fb3f9aaf63e3
 notion_url: https://app.notion.com/p/Prioritization-Techniques-Compared-1ea54f1c7d238107b646fb3f9aaf63e3
 last_edited: 2025-07-26T22:58:00.000Z
 source_url: https://itamargilad.com/prioritization-techniques-2/
-tags: ["Article", "Itamar Gilad", "English", "Product Management", "Project Management", "Decision Making", "Productivity"]
+tags: ["English", "Product Management", "Project Management", "Decision Making", "Productivity", "Article", "Itamar Gilad"]
 ---
 ## [Part 1](https://itamargilad.com/prioritization-techniques-1/)
 

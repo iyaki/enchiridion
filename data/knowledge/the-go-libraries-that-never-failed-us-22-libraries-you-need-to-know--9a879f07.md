@@ -4,7 +4,7 @@ notion_id: 9a879f07-b487-4bd1-8e97-820c3142b176
 notion_url: https://app.notion.com/p/The-Go-libraries-that-never-failed-us-22-libraries-you-need-to-know-9a879f07b4874bd18e97820c3142b176
 last_edited: 2023-07-10T18:28:00.000Z
 source_url: https://threedots.tech/post/list-of-recommended-libraries/
-tags: ["Three Dots Labs", "English", "Go", "Article", "Framework/Library"]
+tags: ["English", "Go", "Article", "Framework/Library", "Three Dots Labs"]
 ---
 Did you have a situation when you lost a ton of time finding a Go library for your need? In theory, you can check lists like [Awesome Go](https://github.com/avelino/awesome-go) or make a choice based on GitHub stars. But Awesome Go contains over 2600 libraries, and popularity is not always the best indicator of library quality. **I often thought that it would be great to have a place where I could find just the best and battle-tested libraries I could use in my project.** Because we didn’t find such a place with Miłosz, we decided to create it.
 

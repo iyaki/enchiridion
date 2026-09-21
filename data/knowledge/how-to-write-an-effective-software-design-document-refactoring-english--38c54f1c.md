@@ -4,7 +4,7 @@ notion_id: 38c54f1c-7d23-8192-ae6e-e388b006d8e9
 notion_url: https://app.notion.com/p/How-to-Write-an-Effective-Software-Design-Document-Refactoring-English-38c54f1c7d238192ae6ee388b006d8e9
 last_edited: 2026-09-18T00:52:00.000Z
 source_url: https://refactoringenglish.com/excerpts/write-an-effective-design-doc/
-tags: ["Article", "Guide", "Refactoring English", "English", "Software Architecture", "Documentation", "Product Management", "Web Development"]
+tags: ["English", "Software Architecture", "Documentation", "Product Management", "Web Development", "Article", "Guide", "Refactoring English"]
 ---
 A good design doc can save you years of development time. Writing a design doc forces you to think through important decisions before you waste time on the wrong implementation or paint yourself into a corner. It’s also the best way to coordinate design decisions among teammates and partner teams.
 

@@ -4,7 +4,7 @@ notion_id: 6046dc21-4753-4d7b-81e2-454d5c53229e
 notion_url: https://app.notion.com/p/How-a-CTO-builds-a-team-6046dc2147534d7b81e2454d5c53229e
 last_edited: 2023-06-02T01:05:00.000Z
 source_url: https://madewithlove.com/blog/how-a-cto-builds-a-team/
-tags: ["Entrepreneurship", "Line/People/Team Management", "Article", "English"]
+tags: ["Article", "English", "Entrepreneurship", "Line/People/Team Management"]
 ---
 “No matter how it looks at first, it’s always a people problem,” says **Gerald Weinberg** in his consulting classic, [_The Secrets of Consulting_](https://www.goodreads.com/book/show/566213.The_Secrets_of_Consulting?ref=madewithlove.com). When I join a startup as [a firefighting CTO](https://madewithlove.com/blog/the-first-days-as-a-firefighting-cto-what-to-focus-on-when-you-are-hired-to-lead-a-team-in-times-of-change/), the team is often focused on technology and processes. They overlook team composition. This is how I think about **building a team** **to build software from a CTO point of view**.
 

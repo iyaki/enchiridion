@@ -4,7 +4,7 @@ notion_id: 38f54f1c-7d23-81df-949a-ef89f3b85949
 notion_url: https://app.notion.com/p/shanraisshan-claude-code-best-practice-from-vibe-coding-to-agentic-engineering-practice-makes-cla-38f54f1c7d2381df949aef89f3b85949
 last_edited: 2026-06-30T03:27:00.000Z
 source_url: https://github.com/shanraisshan/claude-code-best-practice
-tags: ["GitHub", "English", "Programming", "Productivity", "Software Development", "Automation", "Artificial Intelligence (AI)", "Tool", "Article"]
+tags: ["English", "Programming", "Productivity", "Software Development", "Automation", "Artificial Intelligence (AI)", "Tool", "Article", "GitHub"]
 ---
 # claude-code-best-practice
 

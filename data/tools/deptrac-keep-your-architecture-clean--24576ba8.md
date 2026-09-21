@@ -7,3 +7,43 @@ source_url: https://github.com/qossmic/deptrac#deptrac
 tags: ["English", "System Design / Software Architecture", "PHP", "Tool"]
 ---
 [https://github.com/qossmic/deptrac#deptrac](https://github.com/qossmic/deptrac#deptrac)
+
+## About
+
+No description, website, or topics provided.
+
+### Resources
+
+Readme
+
+MIT license
+
+### Code of conduct
+
+Code of conduct
+
+### Contributing
+
+Contributing
+
+### Security policy
+
+Security policy
+
+Activity
+
+Custom properties
+
+### Stars
+
+2 stars
+
+### Watchers
+
+1 watching
+
+### Forks
+
+0 forks
+
+Report repository

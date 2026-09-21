@@ -6,4 +6,6 @@ last_edited: 2022-12-20T23:38:00.000Z
 source_url: https://hexo.io/
 tags: ["English", "Frontend", "Blogging/Content Creation", "Untried", "Tool", "Framework/Library"]
 ---
+### Plugins
 
+Features powerful APIs for limitless extensibility. Various plugins are available to support most template engines (EJS, Pug, Nunjucks, and many others). Easily integrate with existing NPM packages (Babel, PostCSS, Less/Sass, etc).

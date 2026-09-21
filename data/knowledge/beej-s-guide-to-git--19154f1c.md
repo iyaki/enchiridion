@@ -4,7 +4,7 @@ notion_id: 19154f1c-7d23-8122-8e2e-ee727768a71b
 notion_url: https://app.notion.com/p/Beej-s-Guide-to-Git-19154f1c7d2381228e2eee727768a71b
 last_edited: 2025-02-21T19:39:00.000Z
 source_url: https://beej.us/guide/bggit/
-tags: ["Beej", "English", "Programming", "Producer (Individual Contributor)", "Guide"]
+tags: ["English", "Programming", "Producer (Individual Contributor)", "Guide", "Beej"]
 ---
 Please keep in mind that I'm only human and there is a very, very high probability that there are errors in this guide. Additionally, I might simply not know what I'm talking about when it comes to something! So [email corrections](mailto:beej@beej.us) are highly appreciated!
 

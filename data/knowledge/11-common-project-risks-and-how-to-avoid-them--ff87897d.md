@@ -4,7 +4,7 @@ notion_id: ff87897d-f2aa-4380-bf24-594c0fea35b4
 notion_url: https://app.notion.com/p/11-Common-project-risks-and-how-to-avoid-them-ff87897df2aa4380bf24594c0fea35b4
 last_edited: 2023-02-09T01:22:00.000Z
 source_url: https://toggl.com/blog/project-risks
-tags: ["Toggl Blog", "English", "Project Management", "Article"]
+tags: ["English", "Project Management", "Article", "Toggl Blog"]
 ---
 Struggling with keeping your project on track? Are deadlines constantly being pushed back? Are your project profits slowly evaporating?
 

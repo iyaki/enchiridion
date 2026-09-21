@@ -4,7 +4,7 @@ notion_id: 938aff05-db62-482c-8974-50a9e6a06f3e
 notion_url: https://app.notion.com/p/Modern-CSS-in-Real-Life-938aff05db62482c897450a9e6a06f3e
 last_edited: 2023-06-13T19:56:00.000Z
 source_url: https://chriscoyier.net/2023/06/06/modern-css-in-real-life/
-tags: ["CSS", "Article", "Chris Coyier", "English"]
+tags: ["Article", "Chris Coyier", "English", "CSS"]
 ---
 Hey! Chris Coyier here. This is a blog-itized version of a presentation I created. It started life as a Keynote file which I presented in person at [RenderATL](https://www.renderatl.com/schedule) in June of 2023. I put a lot of work into it! I’m so grateful to everyone who came and saw it. But you can’t beat the reach of websites! I decided I should get some more mileage out of it by sharing it here in an adapted form. I suppose you should read through this as if you’re watching a 45 minute presentation.
 

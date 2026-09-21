@@ -4,7 +4,7 @@ notion_id: d9280028-3649-48a0-b8ef-97c7baa11d5d
 notion_url: https://app.notion.com/p/CSS-Grid-Areas-d9280028364948a0b8ef97c7baa11d5d
 last_edited: 2024-09-08T01:08:00.000Z
 source_url: https://ishadeed.com/article/css-grid-area/
-tags: ["English", "CSS", "Guide", "Ahmad Shadeed's Blog"]
+tags: ["CSS", "Guide", "Ahmad Shadeed's Blog", "English"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

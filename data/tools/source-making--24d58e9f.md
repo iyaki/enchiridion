@@ -6,4 +6,18 @@ last_edited: 2022-12-21T13:45:00.000Z
 source_url: https://sourcemaking.com/
 tags: ["English", "System Design / Software Architecture", "Programming", "Website", "Tutorial"]
 ---
+## Design Patterns
 
+Patterns are higher-order designs, which occur repeatedly in object-oriented design. They have been formalized, and are generally considered a good development practice.
+
+## Refactoring
+
+Refactoring is a disciplined technique for restructuring an existing body of code, altering its internal structure without changing its external behavior.
+
+## UML
+
+Unified Modeling Language makes it possible to describe systems with words and pictures. Especially notable use case diagrams with their stick figures or the widely used class diagrams.
+
+## Git
+
+Git is a backbone of modern software development. It is a distributed version control system that allows multiple developers to work on a project simultaneously without conflicts.

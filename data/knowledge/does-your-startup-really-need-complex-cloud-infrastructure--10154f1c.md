@@ -4,7 +4,7 @@ notion_id: 10154f1c-7d23-8182-a607-d32c03e0384c
 notion_url: https://app.notion.com/p/Does-Your-Startup-Really-Need-Complex-Cloud-Infrastructure-10154f1c7d238182a607d32c03e0384c
 last_edited: 2025-02-10T18:07:00.000Z
 source_url: https://www.hadijaveed.me/2024/09/08/does-your-startup-really-need-complex-cloud-infrastructure/
-tags: ["Article", "Hadi Javeed's blog", "English", "SysAdmin", "Entrepreneurship", "System Design / Software Architecture"]
+tags: ["Hadi Javeed's blog", "English", "SysAdmin", "Entrepreneurship", "System Design / Software Architecture", "Article"]
 ---
 I recently listened to [Pieter Levels](https://x.com/levelsio) on the [Lex Friedman Podcast](https://www.youtube.com/watch?v=oFtjKbXKqbg&ab_channel=LexFridman), and it was eye-opening. Pieter has built numerous successful micro-SaaS businesses by running his applications on single server, avoiding cloud infrastructure complexity, and focusing on what truly matters: product-market fit.
 

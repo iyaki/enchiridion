@@ -4,7 +4,7 @@ notion_id: 7a8d44a7-b4f7-4430-bc52-02bb3ad0da74
 notion_url: https://app.notion.com/p/The-UX-of-UUIDs-7a8d44a7b4f74430bc5202bb3ad0da74
 last_edited: 2024-04-17T19:45:00.000Z
 source_url: https://unkey.dev/blog/uuid-ux
-tags: ["English", "Databases", "Programming", "Article", "Unkey  Blog"]
+tags: ["Article", "Unkey  Blog", "English", "Databases", "Programming"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

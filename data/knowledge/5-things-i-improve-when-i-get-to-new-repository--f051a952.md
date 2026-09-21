@@ -4,7 +4,7 @@ notion_id: f051a952-736b-4a86-85b9-b60938f03af9
 notion_url: https://app.notion.com/p/5-Things-I-Improve-when-I-Get-to-new-Repository-f051a952736b4a8685b9b60938f03af9
 last_edited: 2023-04-20T19:41:00.000Z
 source_url: https://tomasvotruba.com/blog/2019/12/23/5-things-i-improve-when-i-get-to-new-repository
-tags: ["Article", "Tomas Votruba Blog", "English", "Programming", "Productivity", "Untried"]
+tags: ["English", "Programming", "Productivity", "Untried", "Article", "Tomas Votruba Blog"]
 ---
 I started to write this post as follow up for [clean and sustainable code](https://tomasvotruba.com/blog/2019/12/16/8-steps-you-can-make-before-huge-upgrade-to-make-it-faster-cheaper-and-more-stable/) post. In the middle of writing, I've realized I have this approach to ever repository I meet.
 

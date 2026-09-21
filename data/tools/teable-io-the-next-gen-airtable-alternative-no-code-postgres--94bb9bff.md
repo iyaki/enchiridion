@@ -4,7 +4,7 @@ notion_id: 94bb9bff-3684-402d-a1f3-ad0f4d21a7ed
 notion_url: https://app.notion.com/p/teable-io-The-Next-Gen-Airtable-Alternative-No-Code-Postgres-94bb9bff3684402da1f3ad0f4d21a7ed
 last_edited: 2024-05-10T20:41:00.000Z
 source_url: https://github.com/teableio/teable
-tags: ["Office", "Project Management", "Tool", "Service", "English"]
+tags: ["Tool", "Service", "English", "Office", "Project Management"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

@@ -4,7 +4,7 @@ notion_id: 2f054f1c-7d23-81ae-9548-eaf162a1efb9
 notion_url: https://app.notion.com/p/LLMs-and-your-career-On-conservative-software-developer-careers-2f054f1c7d2381ae9548eaf162a1efb9
 last_edited: 2026-09-18T00:53:00.000Z
 source_url: https://notes.eatonphil.com/2026-01-19-llms-and-your-career.html
-tags: ["Article", "Personal Blog", "English", "Programming", "Career Growth", "Software Development"]
+tags: ["English", "Programming", "Career Growth", "Software Development", "Article", "Personal Blog"]
 ---
 The most conservative way to build a career as a software developer is 1) to be practical and effective at problem solving but 2) not to treat all existing code as a black box. 1 means that as a conservative developer you should generally use PostgreSQL or MySQL (or whatever existing database), Rails or .NET (or whatever existing framework), and adapt code from Stack Overflow or LLMs. 2 means that you're curious and work over time to better understand how web servers and databases and operating systems and the browser actually work so that you can make better decisions for your own problems as you adapt other people's code and ideas.
 

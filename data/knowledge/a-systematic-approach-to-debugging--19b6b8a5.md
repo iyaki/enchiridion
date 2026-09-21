@@ -4,7 +4,7 @@ notion_id: 19b6b8a5-ba68-488a-8fd5-35bf55dc263e
 notion_url: https://app.notion.com/p/A-systematic-approach-to-debugging-19b6b8a5ba68488a8fd535bf55dc263e
 last_edited: 2023-09-13T15:37:00.000Z
 source_url: https://ntietz.com/blog/how-i-debug-2023/
-tags: ["Article", "technically a blog (ntietz)", "English", "Programming", "Help Desk"]
+tags: ["technically a blog (ntietz)", "English", "Programming", "Help Desk", "Article"]
 ---
 I've got a reputation at work as being a skilled debugger. It's a frequent occurrence that the _weird stuff_ lands on my desk[1](https://ntietz.com/blog/how-i-debug-2023/#1) after it goes through another skilled engineer or two. To say my job is substantially "debug the weird shit" would not be an understatement and I'm here for it.
 

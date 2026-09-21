@@ -7,3 +7,5 @@ source_url: https://losapuntesdemajo.vercel.app/
 tags: ["Website", "CheatSheet", "Guide", "Español", "Programming", "Javascript", "Frontend", "Python", "Databases", "HTML"]
 ---
 [https://losapuntesdemajo.vercel.app/](https://losapuntesdemajo.vercel.app/)
+
+Apuntes hechos a mano sobre lenguajes y temas de programación. ¡Gratis!

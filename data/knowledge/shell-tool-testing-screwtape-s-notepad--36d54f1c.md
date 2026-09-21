@@ -4,7 +4,7 @@ notion_id: 36d54f1c-7d23-81b3-b9e4-c78faf1d7829
 notion_url: https://app.notion.com/p/Shell-Tool-Testing-Screwtape-s-Notepad-36d54f1c7d2381b3b9e4c78faf1d7829
 last_edited: 2026-09-18T00:52:00.000Z
 source_url: https://zork.net/~st/jottings/shell-tool-testing.html
-tags: ["Testing", "Shell/Bash", "Python", "Automation", "Tool", "Article", "Personal Blog", "English"]
+tags: ["English", "Testing", "Shell/Bash", "Python", "Automation", "Tool", "Article", "Personal Blog"]
 ---
 I’m a firm believer in automated testing. Even if I don’t always go for full [test driven development](https://en.wikipedia.org/wiki/Test-driven_development), I like watching “passing tests” tick upward as I implement an interface. I like having corner-cases reproducible, so I don’t have to remember them myself. I like being able to set up some scenario, and then see how the system’s behaviour changes as I tweak the implementation. But like any other task, building automated tests is a lot easier if you have the right-shaped components to build with.
 

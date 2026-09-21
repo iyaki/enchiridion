@@ -4,7 +4,7 @@ notion_id: 0f6693f9-1250-431d-99ac-5411513d4317
 notion_url: https://app.notion.com/p/Is-it-time-to-ditch-MySQL-and-PostgreSQL-for-SQLite-0f6693f91250431d99ac5411513d4317
 last_edited: 2024-02-12T15:22:00.000Z
 source_url: https://onfold.sh/blog/is-it-time-to-ditch-mysql-and-postgresql-for-sqlite
-tags: ["Article", "Onfold blog", "English", "Databases"]
+tags: ["English", "Databases", "Article", "Onfold blog"]
 ---
 _SQLite is getting all the hype lately, but can it really compete with MySQL and PostgreSQL for production web applications?_
 

@@ -4,7 +4,7 @@ notion_id: ed63a67c-7276-44d9-ab6d-58362ac831ba
 notion_url: https://app.notion.com/p/Remote-Pair-Programming-Made-Easy-with-SSH-and-tmux-ed63a67c727644d9ab6d58362ac831ba
 last_edited: 2023-08-04T18:22:00.000Z
 source_url: https://www.hamvocke.com/blog/remote-pair-programming-with-tmux/
-tags: ["English", "Shell/Bash", "Network", "Agile", "Programming", "Article", "Ham Vocke"]
+tags: ["Article", "Ham Vocke", "English", "Shell/Bash", "Network", "Agile", "Programming"]
 ---
 [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) has found wide adoption in software development ever since it became popular with the rise of Extreme Programming and other agile development approaches. This practice where two developers are working on the same machine and the same task has some really neat advantages over working all by yourself. Working in pairs results in higher quality, spreads knowledge between your team members and ultimately leads to higher satisfaction. Sounds cool? Well, it is!
 

@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-8174-bb1e-c8a87750f4fc
 notion_url: https://app.notion.com/p/Listmonk-2b754f1c7d238174bb1ec8a87750f4fc
 last_edited: 2025-11-26T19:06:00.000Z
 source_url: https://www.ssp.sh/brain/listmonk/
-tags: ["Tool", "Article", "FreeCodeCamp", "English", "DevOps", "Automation", "Email", "Open Source", "Self-hosted"]
+tags: ["English", "DevOps", "Automation", "Email", "Open Source", "Self-hosted", "Tool", "Article", "FreeCodeCamp"]
 ---
 Self-hosted newsletter and mailing list manager. Performance and features packed into a single binary. Free and open source.
 

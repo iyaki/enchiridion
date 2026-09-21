@@ -4,7 +4,7 @@ notion_id: 34e5cd4a-fdde-41d1-aca8-d71b8e1a474b
 notion_url: https://app.notion.com/p/Safely-Adding-NOT-NULL-Columns-to-Your-Database-Tables-34e5cd4afdde41d1aca8d71b8e1a474b
 last_edited: 2023-02-13T11:29:00.000Z
 source_url: https://shopify.engineering/add-not-null-colums-to-database
-tags: ["Shopify Engineering", "English", "Databases", "DevOps", "Continuous Integration/Continuous Delivery", "Article", "Guide"]
+tags: ["English", "Databases", "DevOps", "Continuous Integration/Continuous Delivery", "Article", "Guide", "Shopify Engineering"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

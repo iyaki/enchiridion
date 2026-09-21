@@ -4,7 +4,7 @@ notion_id: 2d154f1c-7d23-818d-b71a-cb4c542a8af5
 notion_url: https://app.notion.com/p/One-weird-trick-to-manage-engineering-crises-stakeholders-love-it-Aaron-Brethorst-2d154f1c7d23818db71acb4c542a8af5
 last_edited: 2026-09-18T00:53:00.000Z
 source_url: https://www.brethorsting.com/blog/2025/12/one-weird-trick-to-manage-engineering-crises;-stakeholders-love-it/
-tags: ["Aaron Brethorst", "English", "Agile", "Product Management", "Team Management", "Leadership", "Decision Making", "Article", "Guide"]
+tags: ["English", "Agile", "Product Management", "Team Management", "Leadership", "Decision Making", "Article", "Guide", "Aaron Brethorst"]
 ---
 Once, I was leading engineering on a product caught in multiple overlapping crises. Our biggest customer was breaking the database simply through their size and usage patterns. Other customers threatened to churn unless we could provide new features. Sales was trying to close deals with new prospects who needed capabilities we hadn’t built yet. Every one of these problems was Priority 1: keep the system running, prevent churn, keep growing. But the engineering team was already running past capacity. Something needed to change, and fast, to prevent burnout and loss of trust.
 

@@ -4,7 +4,7 @@ notion_id: b8860370-79e6-467e-aa74-fb06c6d93bf8
 notion_url: https://app.notion.com/p/Koyeb-Push-code-to-production-everywhere-in-minutes-b886037079e6467eaa74fb06c6d93bf8
 last_edited: 2023-11-28T19:11:00.000Z
 source_url: https://www.koyeb.com/
-tags: ["Service", "English", "Hosting", "Untried"]
+tags: ["English", "Hosting", "Untried", "Service"]
 ---
 ## Accelerate backend apps at the edge with high-performance hardware
 

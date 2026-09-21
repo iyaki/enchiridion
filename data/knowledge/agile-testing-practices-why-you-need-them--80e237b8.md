@@ -4,7 +4,7 @@ notion_id: 80e237b8-5767-4ad3-b99c-adf3c8bc74b4
 notion_url: https://app.notion.com/p/Agile-Testing-Practices-Why-You-Need-Them-80e237b857674ad3b99cadf3c8bc74b4
 last_edited: 2022-12-21T15:34:00.000Z
 source_url: https://www.atlassian.com/agile/software-development/testing
-tags: ["English", "Testing", "Agile", "Article", "Atlassian"]
+tags: ["Article", "Atlassian", "English", "Testing", "Agile"]
 ---
 Waterfall project management separates development and testing into two different steps: developers build a feature and then "throw it over the wall" to the quality assurance team (QA) for testing. The QA team writes and executes detailed test plans. They also file defects when painstakingly checking for regressions in existing features that may have been caused by new work.
 

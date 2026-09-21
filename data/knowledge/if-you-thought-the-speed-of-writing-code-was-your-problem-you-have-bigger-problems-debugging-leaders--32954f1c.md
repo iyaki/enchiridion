@@ -4,7 +4,7 @@ notion_id: 32954f1c-7d23-81c6-afc3-d75b297ac3d9
 notion_url: https://app.notion.com/p/If-you-thought-the-speed-of-writing-code-was-your-problem-you-have-bigger-problems-Debugging-Lea-32954f1c7d2381c6afc3d75b297ac3d9
 last_edited: 2026-09-18T00:53:00.000Z
 source_url: https://andrewmurphy.io/blog/if-you-thought-the-speed-of-writing-code-was-your-problem-you-have-bigger-problems
-tags: ["Article", "Andrew Murphy", "English", "Agile", "Leadership", "Team Management", "Productivity"]
+tags: ["English", "Agile", "Leadership", "Team Management", "Productivity", "Article", "Andrew Murphy"]
 ---
 It's Tuesday morning. Your VP of Engineering is standing in front of a slide deck, vibrating with the kind of excitement usually reserved for people who just discovered cryptocurrency in 2017. They've just come back from a conference. Or maybe a vendor dinner. Three glasses of pinot noir and a demo, and now they have _news_.
 

@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-81d1-a54f-eedf4b7f704d
 notion_url: https://app.notion.com/p/Testing-tips-2b754f1c7d2381d1a54feedf4b7f704d
 last_edited: 2025-11-26T19:05:00.000Z
 source_url: https://testing-tips.sarvendev.com/#/
-tags: ["Article", "Guide", "Kamil Ruczyński", "English", "Testing", "Programming", "Unit Testing"]
+tags: ["English", "Testing", "Programming", "Unit Testing", "Article", "Guide", "Kamil Ruczyński"]
 ---
 In these times, the benefits of writing unit tests are huge. I think that most of the recently started projects contain any unit tests. In enterprise applications with a lot of business logic, unit tests are the most important tests, because they are fast and can us instantly assure that our implementation is correct. However, I often see a problem with good tests in projects, though these tests' benefits are only huge when you have good unit tests. So in these examples, I will try to share some tips on what to do to write good unit tests.
 

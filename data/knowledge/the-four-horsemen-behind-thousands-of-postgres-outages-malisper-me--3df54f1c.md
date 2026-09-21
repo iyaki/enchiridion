@@ -4,7 +4,7 @@ notion_id: 3df54f1c-7d23-8126-8e2f-f2cfd6407379
 notion_url: https://app.notion.com/p/The-four-horsemen-behind-thousands-of-Postgres-outages-malisper-me-3df54f1c7d2381268e2ff2cfd6407379
 last_edited: 2026-09-18T03:08:00.000Z
 source_url: https://malisper.me/the-four-horsemen-behind-thousands-of-postgres-outages/
-tags: ["Article", "Tutorial", "malisper.me", "English", "Databases", "PostgreSQL", "Systems Design / Software Architecture", "DevOps", "Monitoring", "Technical Debt"]
+tags: ["English", "Databases", "PostgreSQL", "Systems Design / Software Architecture", "DevOps", "Monitoring", "Technical Debt", "Article", "Tutorial", "malisper.me"]
 ---
 Postgres is great, but there are some very common problems that people have that can pretty easily lead to outages with Postgres. These aren’t just theoretical issues. From talking to a lot of startups, these are the things that actually cause outages in production, especially on teams that don’t have a dedicated database person. These are the four main areas I want to improve upon, in pgrust, my reimplementation of Postgres.
 

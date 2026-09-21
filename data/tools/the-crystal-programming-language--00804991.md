@@ -4,7 +4,7 @@ notion_id: 00804991-db2a-419c-bc96-e6e0d2bb825e
 notion_url: https://app.notion.com/p/The-Crystal-Programming-Language-00804991db2a419cbc96e6e0d2bb825e
 last_edited: 2023-06-02T01:04:00.000Z
 source_url: https://crystal-lang.org/
-tags: ["Tool", "English", "Programming", "Untried"]
+tags: ["English", "Programming", "Untried", "Tool"]
 ---
 ## Latest release [1.8.2](https://crystal-lang.org/2023/05/09/crystal-1.8.2-released/)
 

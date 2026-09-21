@@ -4,7 +4,7 @@ notion_id: 7e6779e2-bddd-4f5c-b723-a35e8cfdd3e8
 notion_url: https://app.notion.com/p/Excuse-me-is-there-a-problem-7e6779e2bddd4f5cb723a35e8cfdd3e8
 last_edited: 2023-04-22T01:12:00.000Z
 source_url: https://longform.asmartbear.com/problem/
-tags: ["English", "Entrepreneurship", "Decision Making", "Article", "Guide", "A Smart Bear: Longform"]
+tags: ["Article", "Guide", "A Smart Bear: Longform", "English", "Entrepreneurship", "Decision Making"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

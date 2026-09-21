@@ -6,4 +6,8 @@ last_edited: 2026-09-18T00:54:00.000Z
 source_url: https://miro.com/
 tags: ["English", "Español", "Others", "Communication", "Untried", "Service"]
 ---
+### Turn research into a shared direction
 
+Pull outputs from Claude, NotebookLM, or any research tool into one canvas. Your team reviews the findings together, surfaces what matters, and commits to a direction — then flow the insights back out to your roadmap, specs, or next AI prompt.
+
+Explore research

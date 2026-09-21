@@ -4,7 +4,7 @@ notion_id: 24cb3de8-08ad-4e7a-b40f-cb57da1fdd2e
 notion_url: https://app.notion.com/p/Retrospectives-Antipatterns-24cb3de808ad4e7ab40fcb57da1fdd2e
 last_edited: 2023-02-20T01:32:00.000Z
 source_url: https://martinfowler.com/articles/retrospective-antipatterns.html
-tags: ["English", "Agile", "Communication", "Article", "Martin Fowler"]
+tags: ["Agile", "Communication", "Article", "Martin Fowler", "English"]
 ---
  A retrospective is an activity done at the end of a sprint or a project in order to reflect and learn from what has happened, for the team to improve together. Retrospectives Antipatterns are descriptions of what can go wrong in that activity and how to remedy it.
 

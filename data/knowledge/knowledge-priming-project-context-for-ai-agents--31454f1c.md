@@ -4,7 +4,7 @@ notion_id: 31454f1c-7d23-8170-9103-e09a2b9f46a9
 notion_url: https://app.notion.com/p/Knowledge-Priming-Project-context-for-AI-Agents-31454f1c7d2381709103e09a2b9f46a9
 last_edited: 2026-02-27T01:53:00.000Z
 source_url: https://martinfowler.com/articles/reduce-friction-ai/knowledge-priming.html
-tags: ["Article", "martinfowler", "English", "Programming", "AI", "Software Development", "Knowledge Management", "Documentation", "Learning"]
+tags: ["English", "Programming", "AI", "Software Development", "Knowledge Management", "Documentation", "Learning", "Article", "martinfowler"]
 ---
 When I onboard a new developer, I don't just point them at the codebase and say “go.” I walk them through our conventions. I show them examples of code we consider good. I explain why we made certain architectural choices—why we use Fastify instead of Express, why services are functional instead of class-based, why validation happens at the route level. Only after this context-setting do I expect them to contribute code that fits.
 

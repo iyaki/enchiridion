@@ -4,7 +4,7 @@ notion_id: 30054f1c-7d23-81ac-89e2-fbab752df982
 notion_url: https://app.notion.com/p/Samman-Technical-Coaching-30054f1c7d2381ac89e2fbab752df982
 last_edited: 2026-02-07T01:51:00.000Z
 source_url: https://sammancoaching.org/
-tags: ["Tool", "Website", "Official Website", "English", "Coaching", "Agile", "Productivity", "Software Development"]
+tags: ["English", "Coaching", "Agile", "Productivity", "Software Development", "Tool", "Website", "Official Website"]
 ---
 [Technical coaches](https://sammancoaching.org/reference/technical_coach_definition.html) work with software development teams to help them adopt better coding practices. The Samman method is a concrete approach that many technical coaches use. This website is designed to help people who do technical coaching and is maintained by the [Samman Technical Coaching Society](https://sammancoaching.org/society/). This site shares materials you can use for [Code Katas](https://sammancoaching.org/kata_descriptions/) and [Learning Hours](https://sammancoaching.org/learning_hours/), as well as many supporting materials. We also have official [Training courses](https://sammancoaching.org/training/).
 

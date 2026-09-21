@@ -6,4 +6,4 @@ last_edited: 2023-01-17T11:25:00.000Z
 source_url: https://www.slideshare.net/stubbornella/object-oriented-css
 tags: ["Slides", "English", "CSS"]
 ---
-
+A required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser.

@@ -4,7 +4,7 @@ notion_id: 5d640211-769e-4d02-a27e-ac01b4c015b7
 notion_url: https://app.notion.com/p/Micro-Frontends-5d640211769e4d02a27eac01b4c015b7
 last_edited: 2022-12-21T15:41:00.000Z
 source_url: https://martinfowler.com/articles/micro-frontends.html
-tags: ["Article", "Martin Fowler", "English", "Frontend", "System Design / Software Architecture"]
+tags: ["English", "Frontend", "System Design / Software Architecture", "Article", "Martin Fowler"]
 ---
 In recent years, [microservices](https://martinfowler.com/articles/microservices.html) have exploded in popularity, with many organisations using this architectural style to avoid the limitations of large, monolithic backends. While much has been written about this style of building server-side software, many companies continue to struggle with monolithic frontend codebases.
 

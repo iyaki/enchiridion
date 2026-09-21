@@ -6,4 +6,40 @@ last_edited: 2022-12-20T23:54:00.000Z
 source_url: https://asdf-vm.com/
 tags: ["English", "Programming", "Tool"]
 ---
+Manage all your runtime versions with one tool!
 
+🎉
+
+## One Tool
+
+Manage each of your project runtimes with a single CLI tool and command interface.
+
+🔌
+
+## Plugins
+
+Large ecosystem of existing runtimes & tools. Simple API to add support for new tools as you need!
+
+⏮
+
+## Backwards Compatible
+
+Support for existing config files .nvmrc, .node-version, .ruby-version for smooth migration!
+
+📄
+
+## One Config File
+
+.tool-versions to manage all your tools, runtimes and their versions in a single, sharable place.
+
+🐚
+
+## Shells
+
+Supports Bash, ZSH, Fish & Elvish with completions available.
+
+🤖
+
+## GitHub Actions
+
+Provides a GitHub Action to install and utilize your .tool-versions in your CI/CD workflows.

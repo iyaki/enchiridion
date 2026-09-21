@@ -4,7 +4,7 @@ notion_id: 1b2e7377-1f52-4d70-aa07-a7a307819957
 notion_url: https://app.notion.com/p/The-Source-of-Readability-1b2e73771f524d70aa07a7a307819957
 last_edited: 2023-09-13T13:37:00.000Z
 source_url: https://loup-vaillant.fr/articles/source-of-readability
-tags: ["Article", "Loup Vaillant Essays", "English", "Programming"]
+tags: ["English", "Programming", "Article", "Loup Vaillant Essays"]
 ---
 Readability is often treated as a subjective thing. When someone says code is more readable, what they really mean is _they_ can more easily read it. The straw-man goes, this is all taste and convention, just follow the team’s rules and use the auto-formatter.
 

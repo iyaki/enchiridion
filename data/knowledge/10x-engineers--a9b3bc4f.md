@@ -4,7 +4,7 @@ notion_id: a9b3bc4f-f93f-45e5-9cee-9bfa0a2db20c
 notion_url: https://app.notion.com/p/10x-Engineers-a9b3bc4ff93f45e59cee9bfa0a2db20c
 last_edited: 2024-05-10T20:36:00.000Z
 source_url: https://vadimkravcenko.com/shorts/10x-engineers/
-tags: ["English", "Line/People/Team Management", "Career Growth", "Human Resources (HH.RR.)", "Article", "Vadim Kravcenko"]
+tags: ["Line/People/Team Management", "Career Growth", "Human Resources (HH.RR.)", "Article", "Vadim Kravcenko", "English"]
 ---
 I've been reflecting on our engineers’ diverse impact on our projects and the true meaning behind labels like "10x engineer". Over the years, many articles have discussed this concept, some labeling it a myth and others saying you need to have at least one on your team. It’s a hot topic; understandably, this term often sparks debate. Still, I think it's essential to understand the real value a developer brings to the team beyond any numerical label and their leetCode score.
 

@@ -4,7 +4,7 @@ notion_id: 944db9df-012d-40dc-82a9-83b6f5448f75
 notion_url: https://app.notion.com/p/The-Infinite-Hows-or-the-Dangers-Of-The-Five-Whys-944db9df012d40dc82a983b6f5448f75
 last_edited: 2023-06-27T22:00:00.000Z
 source_url: https://www.kitchensoap.com/2014/11/14/the-infinite-hows-or-the-dangers-of-the-five-whys/
-tags: ["Kitchen Soap (John Allspaw)", "Help Desk", "Productivity", "Decision Making", "Communication", "Article"]
+tags: ["Article", "Kitchen Soap (John Allspaw)", "Help Desk", "Productivity", "Decision Making", "Communication"]
 ---
 (this is also posted on [O’Reilly’s Radar blog](http://radar.oreilly.com/2014/11/the-infinite-hows.html). Much thanks to [Daniel Schauenberg](https://twitter.com/mrtazz), [Morgan Evans](https://twitter.com/neonmorgan), and
 

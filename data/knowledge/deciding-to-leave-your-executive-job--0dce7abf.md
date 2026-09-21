@@ -4,7 +4,7 @@ notion_id: 0dce7abf-2741-4ab4-9c9f-5aca03b029ab
 notion_url: https://app.notion.com/p/Deciding-to-leave-your-executive-job-0dce7abf27414ab49c9f5aca03b029ab
 last_edited: 2023-07-10T17:50:00.000Z
 source_url: https://lethain.com/leaving-the-executive-job/
-tags: ["Article", "Irrational Exuberance (Will Larson)", "English", "Career Growth", "Jobs"]
+tags: ["English", "Career Growth", "Jobs", "Article", "Irrational Exuberance (Will Larson)"]
 ---
 If two friendly executives meet for dinner, it’s likely they start by exchanging just how messed up things are at work. Initiatives are behind, layoffs are happening everywhere, the team is in disarray. Then they’ll laugh, and switch topics. Sometimes one of the executives can’t navigate the switch, and will keep ranting throughout their meal. Having problems is part of being an executive, but when you’re that second executive who can’t turn off the frustration, it’s time to start thinking about leaving.
 

@@ -4,7 +4,7 @@ notion_id: c8468152-2da2-458b-9320-f3f603f83e29
 notion_url: https://app.notion.com/p/Cuentas-de-email-desechable-qu-son-y-9-webs-para-generar-correos-temporales-c84681522da2458b9320f3f603f83e29
 last_edited: 2023-02-09T01:27:00.000Z
 source_url: https://www.genbeta.com/a-fondo/cuentas-email-desechable-que-9-webs-para-generar-correos-temporales
-tags: ["Information Security", "Email", "Untried", "Article", "Service", "Xataka | Genbeta", "English"]
+tags: ["Article", "Service", "Xataka | Genbeta", "English", "Information Security", "Email", "Untried"]
 ---
 Al igual que ocurre con un pañuelo de papel que se usa y se tira al dejar de tener utilidad, en el caso del correo electrónico también se puede encontrar algo similar: **los correos desechables o de usar y tirar.** En este artículo te vamos a contar exactamente para que te pueda servir y también las principales webs que existen para crear uno.
 

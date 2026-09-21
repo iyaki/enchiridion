@@ -6,4 +6,6 @@ last_edited: 2023-01-18T14:00:00.000Z
 source_url: https://armypubs.army.mil/epubs/DR_pubs/DR_a/ARN20039-ADP_6-22-001-WEB-0.pdf
 tags: ["Book", "English", "Leadersheep", "Line/People/Team Management"]
 ---
+## 404
 
+PAGE NOT FOUND.

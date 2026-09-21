@@ -4,7 +4,7 @@ notion_id: 41d4b9b5-65c7-4965-966a-cdf00d39ce29
 notion_url: https://app.notion.com/p/CSS-Findings-From-The-Threads-App-41d4b9b565c74965966acdf00d39ce29
 last_edited: 2023-07-14T17:26:00.000Z
 source_url: https://ishadeed.com/article/threads-app-css/
-tags: ["CSS", "Article", "Ahmad Shadeed's Blog", "English"]
+tags: ["English", "CSS", "Article", "Ahmad Shadeed's Blog"]
 ---
 When I encounter a new product, one of the first things that comes to mind is how they implemented the CSS. This was no different when I came across Threads by Meta. I quickly explored the mobile app and noticed that I could preview public posts on the web.
 

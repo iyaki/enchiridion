@@ -4,7 +4,7 @@ notion_id: 451f8bee-19ae-45b1-8a1e-ac87775a683d
 notion_url: https://app.notion.com/p/Los-mejores-trucos-y-recursos-para-superar-cualquier-entrevista-de-trabajo-como-programador-451f8bee19ae45b18a1eac87775a683d
 last_edited: 2023-01-13T16:55:00.000Z
 source_url: https://www.genbeta.com/desarrollo/mejores-trucos-recursos-para-superar-cualquier-entrevista-trabajo-como-programador
-tags: ["Jobs", "Career Growth", "Article", "Xataka | Genbeta", "Español"]
+tags: ["Article", "Xataka | Genbeta", "Español", "Jobs", "Career Growth"]
 ---
 Supón que eres desarrollador web o de software. Que acabas de ser liberado, inexperto, en el mercado laboral (o peor, que estás aún finalizando tu formación, en la universidad [o fuera de ella](https://www.genbeta.com/desarrollo/mitad-programadores-tienen-titulos-universitarios-cada-vez-desarrolladores-aprenden-su-cuenta)). Pero tienes claro que **no quieres pasar meses o años dando vueltas de una entrevista de trabajo a otra** oyendo "No nos llame, ya le llamaremos nosotros".
 

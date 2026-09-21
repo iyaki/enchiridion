@@ -4,7 +4,7 @@ notion_id: 19954f1c-7d23-8105-ad00-d3635fbb1f31
 notion_url: https://app.notion.com/p/Choose-Boring-Technology-19954f1c7d238105ad00d3635fbb1f31
 last_edited: 2025-02-26T21:01:00.000Z
 source_url: https://mcfunley.com/choose-boring-technology
-tags: ["Article", "Dan McKinley", "English", "System Design / Software Architecture", "Programming"]
+tags: ["Dan McKinley", "English", "System Design / Software Architecture", "Programming", "Article"]
 ---
 Probably the single best thing to happen to me in my career was having had [Kellan](http://laughingmeme.org/) placed in charge of me. I stuck around long enough to see Kellan’s technical decisionmaking start to bear fruit. I learned a great deal _from_ this, but I also learned a great deal as a _result_ of this. I would not have been free to become the engineer that wrote [Data Driven Products Now!](https://mcfunley.com/data-driven-products-lean-startup-2014) if Kellan had not been there to so thoroughly stick the landing on technology choices.
 

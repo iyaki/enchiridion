@@ -6,4 +6,6 @@ last_edited: 2022-12-19T19:41:00.000Z
 source_url: https://absurd.design/
 tags: ["English", "Graphic Design", "Untried", "Tool", "Service"]
 ---
+Copyright © 2026 absurd.design. All rights reserved.
 
+Copyright © 2026 absurd.design. All rights reserved.

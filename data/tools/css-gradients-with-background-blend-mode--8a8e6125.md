@@ -4,7 +4,7 @@ notion_id: 8a8e6125-6ff8-49c6-826a-09d28714d768
 notion_url: https://app.notion.com/p/CSS-Gradients-with-background-blend-mode-8a8e61256ff849c6826a09d28714d768
 last_edited: 2023-06-21T15:16:00.000Z
 source_url: https://bennettfeely.com/gradients/
-tags: ["English", "CSS", "Tool", "Service"]
+tags: ["Tool", "Service", "English", "CSS"]
 ---
 The CSS `background-blend-mode` property blends the backgrounds of an element: colors, images, and gradients, together with Photoshop-like blend modes (multiply, screen, overlay, etc). It is very new and is curently supported by the latest releases of Chrome, Firefox, and Opera. The property is coming to Safari soon but not available in Internet Explorer.
 

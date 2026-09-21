@@ -4,7 +4,7 @@ notion_id: 32254f1c-7d23-815c-a3c6-e0ed575af33a
 notion_url: https://app.notion.com/p/JS-Lightweight-AJAX-Navigation-Library-32254f1c7d23815ca3c6e0ed575af33a
 last_edited: 2026-03-13T01:54:00.000Z
 source_url: https://mujs.org/
-tags: ["Official Website", "English", "Web Development", "Javascript", "Frontend", "AJAX", "PHP", "Python", "Ruby", "Go", "Tool", "Article"]
+tags: ["English", "Web Development", "Javascript", "Frontend", "AJAX", "PHP", "Python", "Ruby", "Go", "Tool", "Article", "Official Website"]
 ---
 Traditional websites reload the entire page on every click. µJS changes that: it intercepts link clicks and form submissions, fetches the new page in the background, and replaces only the content that changed. The browser never fully reloads — navigation feels instant, like a single-page application.
 

@@ -7,3 +7,17 @@ source_url: https://jekyllrb.com/
 tags: ["English", "Blogging/Content Creation", "Untried", "Frontend", "Tool"]
 ---
 
+
+### Get up and running in seconds.
+
+Quick-start Instructions
+
+~ $ gem install bundler jekyll
+
+~ $ jekyll new my-awesome-site
+
+~ $ cd my-awesome-site
+
+~/my-awesome-site $ bundle exec jekyll serve
+
+# => Now browse to http://localhost:4000

@@ -4,7 +4,7 @@ notion_id: 3a9c7784-248e-4ab8-9b87-31349aac061a
 notion_url: https://app.notion.com/p/Introducing-Structured-Outputs-in-the-OpenAI-API-3a9c7784248e4ab89b8731349aac061a
 last_edited: 2024-09-08T01:33:00.000Z
 source_url: https://openai.com/index/introducing-structured-outputs-in-the-api/
-tags: ["Programming", "Note", "Tutorial", "English"]
+tags: ["English", "Programming", "Note", "Tutorial"]
 ---
 We are introducing Structured Outputs in the API—model outputs now reliably adhere to developer-supplied JSON Schemas.
 

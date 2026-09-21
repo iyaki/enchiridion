@@ -4,7 +4,7 @@ notion_id: 38e54f1c-7d23-8198-8c38-c2586fe53503
 notion_url: https://app.notion.com/p/Doing-nothing-at-work-38e54f1c7d2381988c38c2586fe53503
 last_edited: 2026-09-18T00:52:00.000Z
 source_url: https://www.seangoedecke.com/doing-nothing-at-work/
-tags: ["Sean Goedecke", "English", "Productivity", "Career Growth", "Management", "Article"]
+tags: ["English", "Productivity", "Career Growth", "Management", "Article", "Sean Goedecke"]
 ---
 Many engineers should be doing less work. I don’t necessarily mean producing less code or fewer changes, but literally working fewer hours in the day. When they do work, they should be working at a slower pace. I like to aim to be running at 80% utilization by default: unless I have a high-pressure project going on, I spend 20% of my workday away from the computer.
 

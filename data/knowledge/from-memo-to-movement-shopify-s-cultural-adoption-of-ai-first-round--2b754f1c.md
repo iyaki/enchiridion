@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-8107-bc65-f6106d88512e
 notion_url: https://app.notion.com/p/From-Memo-to-Movement-Shopify-s-Cultural-Adoption-of-AI-First-Round-2b754f1c7d238107bc65f6106d88512e
 last_edited: 2025-11-26T17:52:00.000Z
 source_url: https://www.firstround.com/ai/shopify
-tags: ["First Round", "English", "AI", "Product Management", "Culture", "Workplace", "Shopify", "Article"]
+tags: ["Article", "First Round", "English", "AI", "Product Management", "Culture", "Workplace", "Shopify"]
 ---
 When Shopify co-founder and CEO Tobi Lütke publicly [released an internal memo](https://x.com/tobi/status/1909251946235437514) declaring reflexive AI usage a baseline expectation at Shopify, the format became a genre — [Box](https://www.linkedin.com/posts/boxaaron_heres-what-i-shared-with-box-internally-activity-7323743176576385024-3LLP?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAizmvMBnABhGG9qci0UHoDVcjkpDlc5gOc), [Fiverr](https://x.com/michakaufman/status/1909610844008161380) and even the [Prime Minister of Canada](https://x.com/CanadianPM/status/1925335891146395734) quickly shared their own versions externally, while many more companies did so internally.
 

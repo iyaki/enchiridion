@@ -4,7 +4,7 @@ notion_id: 15a54f1c-7d23-81be-91cd-f29ca717838e
 notion_url: https://app.notion.com/p/Parkinson-s-Law-It-s-Real-So-Use-It-15a54f1c7d2381be91cdf29ca717838e
 last_edited: 2025-01-20T19:54:00.000Z
 source_url: https://theengineeringmanager.substack.com/p/parkinsons-law-its-real-so-use-it
-tags: ["Productivity", "Project Management", "Line/People/Team Management", "Producer (Individual Contributor)", "Article", "The Engineering Manager", "English"]
+tags: ["English", "Productivity", "Project Management", "Line/People/Team Management", "Producer (Individual Contributor)", "Article", "The Engineering Manager"]
 ---
 [Parkinson's Law states that "work expands so as to fill the time available for its completion."](https://en.wikipedia.org/wiki/Parkinson%27s_law) Although it is counter-intuitive, you will find that through practice and experience, there is a _lot_ of truth to this. Projects that don't have deadlines imposed on them, even if they are self-imposed, will take a _lot_ longer than they need to, and may suffer from feature creep and scope bloat.
 

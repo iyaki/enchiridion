@@ -4,7 +4,7 @@ notion_id: 5ea02d4c-a402-4aa6-b7dc-e0409fce4dcd
 notion_url: https://app.notion.com/p/Pesky-little-scripts-5ea02d4ca4024aa6b7dce0409fce4dcd
 last_edited: 2023-12-05T17:32:00.000Z
 source_url: https://rednafi.com/misc/pesky_little_scripts
-tags: ["Article", "Redowan's Reflections", "English", "Shell/Bash"]
+tags: ["English", "Shell/Bash", "Article", "Redowan's Reflections"]
 ---
 I like writing custom scripts to automate stuff or fix repetitive headaches. Most of them are shell scripts, and a few of them are written in Python. Over the years, I’ve accumulated quite a few of them. I use Git and GNU stow[1](https://rednafi.com/misc/pesky_little_scripts/?utm_source=tldrnewsletter#fn:1) to manage them across different machines, and the workflow[2](https://rednafi.com/misc/pesky_little_scripts/?utm_source=tldrnewsletter#fn:2) is quite effective. However, as the list of scripts grows larger, invoking them becomes a pain because the tab completion results get cluttered with other system commands. Plus, often I even forget the initials of a script’s name and stare at my terminal while the blinking cursor facepalms at my stupidity.
 

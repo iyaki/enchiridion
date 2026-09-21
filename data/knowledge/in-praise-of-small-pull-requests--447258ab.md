@@ -4,7 +4,7 @@ notion_id: 447258ab-23eb-43de-8686-bd566fe088d2
 notion_url: https://app.notion.com/p/In-Praise-of-Small-Pull-Requests-447258ab23eb43de8686bd566fe088d2
 last_edited: 2024-08-16T19:39:00.000Z
 source_url: https://testing.googleblog.com/2024/07/in-praise-of-small-pull-requests.html
-tags: ["Article", "Google Testing Blog", "English", "Programming", "Productivity"]
+tags: ["English", "Programming", "Productivity", "Article", "Google Testing Blog"]
 ---
 _This is another post in our _[_Code Health_](https://testing.googleblog.com/2017/04/code-health-googles-internal-code.html)_ series. A version of this post originally appeared in Google bathrooms worldwide as a Google _[_Testing on the Toilet_](https://testing.googleblog.com/2007/01/introducing-testing-on-toilet.html)_ episode. You can download a _[_printer-friendly version_](https://docs.google.com/document/d/1QIe9iOWKcToOL2Er7gH-dzacGnShEuO5CPVmiN7dQtk/edit)_ to display in your office._
 

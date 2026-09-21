@@ -4,7 +4,7 @@ notion_id: f47c9acd-1386-4aed-a392-54ce4e68f1b6
 notion_url: https://app.notion.com/p/Flex-Box-Adventure-CSS-Game-to-Learn-Flexbox-f47c9acd13864aeda39254ce4e68f1b6
 last_edited: 2023-03-09T15:01:00.000Z
 source_url: https://codingfantasy.com/games/flexboxadventure
-tags: ["CSS", "Game", "Tutorial", "English"]
+tags: ["Game", "Tutorial", "English", "CSS"]
 ---
 Once upon a time, there was a King Arthur. He ruled his kingdom fair and square. But Arthur had one problem. He was a very naive person. So one sunny day, three alchemist brothers offered Arthur to exchange all his Gold Coins for coins made of a more valuable new metal that they had invented - Bit Coins.
 

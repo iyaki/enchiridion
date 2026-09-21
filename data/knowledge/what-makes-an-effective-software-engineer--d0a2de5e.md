@@ -4,7 +4,7 @@ notion_id: d0a2de5e-9e43-4557-b83a-2e9eb91cea73
 notion_url: https://app.notion.com/p/What-makes-an-effective-software-engineer-d0a2de5e9e434557b83a2e9eb91cea73
 last_edited: 2023-04-18T12:01:00.000Z
 source_url: https://leaddev.com/personal-development/what-makes-effective-software-engineer
-tags: ["English", "Producer (Individual Contributor)", "Programming", "Career Growth", "Article", "LeadDev"]
+tags: ["LeadDev", "English", "Producer (Individual Contributor)", "Programming", "Career Growth", "Article"]
 ---
 Being a good software engineer is not necessarily the same as being an effective one. Here, Google’s Addy Osmani identifies the ten key traits of effective software engineers.
 

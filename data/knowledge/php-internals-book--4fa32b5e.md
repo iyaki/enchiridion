@@ -7,3 +7,7 @@ source_url: https://www.phpinternalsbook.com/
 tags: ["English", "PHP", "Book"]
 ---
 [https://www.phpinternalsbook.com/](https://www.phpinternalsbook.com/)
+
+The repository for this book is available on GitHub.
+
+The PHP internals book is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.

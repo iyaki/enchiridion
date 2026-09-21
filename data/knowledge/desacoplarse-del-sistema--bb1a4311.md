@@ -4,7 +4,7 @@ notion_id: bb1a4311-bc5a-4b8e-8ce5-b7b3b75a2a75
 notion_url: https://app.notion.com/p/Desacoplarse-del-sistema-bb1a4311bc5a4b8e8ce5b7b3b75a2a75
 last_edited: 2023-04-20T19:29:00.000Z
 source_url: https://franiglesias.github.io/decoupling_from_system/
-tags: ["System Design / Software Architecture", "Article", "The Talking Bit - Fran Iglesias", "Español"]
+tags: ["The Talking Bit - Fran Iglesias", "Español", "System Design / Software Architecture", "Article"]
 ---
 Es muy posible que estés trabajando en algún proyecto que necesite manejar fechas u horas, o incluso algo de aleatoridad. Todos los lenguajes incluyen alguna librería estándar para gestionar estos datos. O bien existen paquetes alternativos para responder a ciertas necesidades. Por ahí estamos bien servidas, pero hay un aspecto que con frecuencia pasamos por alto: trabajar con fechas, horas o números aleatorios nos acopla al sistema.
 

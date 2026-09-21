@@ -4,7 +4,7 @@ notion_id: 10daaf7b-d90f-41eb-8f4d-f4d3dcbd58fe
 notion_url: https://app.notion.com/p/Everything-You-Need-to-Know-About-JavaScript-Import-Maps-10daaf7bd90f41eb8f4df4d3dcbd58fe
 last_edited: 2023-03-04T02:45:00.000Z
 source_url: https://www.honeybadger.io/blog/import-maps/
-tags: ["English", "Javascript", "HTML", "Frontend", "Guide"]
+tags: ["Guide", "English", "Javascript", "HTML", "Frontend"]
 ---
 When [ES modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) was first introduced in [ECMAScript 2015](https://262.ecma-international.org/6.0/) as a way to standardize module systems in JavaScript, it was implemented by mandating the specification of a relative or absolute path in import statements.
 

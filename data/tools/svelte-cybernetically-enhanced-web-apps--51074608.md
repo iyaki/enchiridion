@@ -7,3 +7,11 @@ source_url: https://svelte.dev/
 tags: ["English", "Frontend", "Untried", "Framework/Library"]
 ---
 
+
+attractively thin, graceful and stylish
+
+Svelte is a UI framework that uses a compiler to let you write breathtakingly concise components that do minimal work in the browser, using languages you already know — HTML, CSS and JavaScript. It’s a love letter to web development.
+
+But don’t take our word for it. Developers consistently rank Svelte as the framework they’re most excited about using.
+
+Backed by Vercel and countless donors, developed by full-time and part-time maintainers, Svelte is here to stay.

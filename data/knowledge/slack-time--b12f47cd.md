@@ -4,7 +4,7 @@ notion_id: b12f47cd-5f87-408a-be5a-d9a0f167fec1
 notion_url: https://app.notion.com/p/Slack-time-b12f47cd5f87408abe5ad9a0f167fec1
 last_edited: 2023-04-21T19:35:00.000Z
 source_url: https://martinfowler.com/bliki/Slack.html
-tags: ["Productivity", "Project Management", "Article", "English"]
+tags: ["English", "Productivity", "Project Management", "Article"]
 ---
 A common approach with [Timeboxed Iterations](https://martinfowler.com/bliki/TimeboxedIterations.html) is to allocate as many [UserStories](https://martinfowler.com/bliki/UserStory.html) as possible to each iteration in order to maximize the utilization of the staff involved. Slack is the policy of deliberately leaving time that isn't allocated for stories, using that time for unplanned work. Although this seems inefficient, it usually yields a significant improvement for the productivity of a team.
 

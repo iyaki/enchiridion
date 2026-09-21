@@ -6,4 +6,8 @@ last_edited: 2022-12-19T19:44:00.000Z
 source_url: https://getwaves.io/
 tags: ["English", "Graphic Design", "Untried", "Tool", "Service"]
 ---
+## Newsletter
 
+Get notified when we publish something new! Unsubscribe anytime.
+
+Send me updates about z creative labs products

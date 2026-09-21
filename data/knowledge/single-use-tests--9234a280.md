@@ -4,7 +4,7 @@ notion_id: 9234a280-bd6f-4676-a366-71c66eed0d19
 notion_url: https://app.notion.com/p/Single-use-Tests-9234a280bd6f4676a36671c66eed0d19
 last_edited: 2023-10-17T12:29:00.000Z
 source_url: https://timacdonald.me/single-use-tests/
-tags: ["Article", "Tim MacDonald", "English", "Programming", "Testing"]
+tags: ["English", "Programming", "Testing", "Article", "Tim MacDonald"]
 ---
 The tests I write are usually written in Pest, PHPUnit, or Jest. I also usually commit them to a code repository - but not all automated tests should be committed. I wrote what I consider to be an automated test that was a "single-use test". It served its purpose and it will forever be in my heart, but not in my repository.
 

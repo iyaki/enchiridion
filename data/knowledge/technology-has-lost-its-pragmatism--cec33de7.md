@@ -4,7 +4,7 @@ notion_id: cec33de7-54d4-4218-a1bf-67a54d07c633
 notion_url: https://app.notion.com/p/Technology-Has-Lost-Its-Pragmatism-cec33de754d44218a1bf67a54d07c633
 last_edited: 2023-02-18T01:56:00.000Z
 source_url: https://danielbmarkham.com/technology-has-lost-its-pragmatism/
-tags: ["English", "Reflection", "Programming", "Article"]
+tags: ["Reflection", "Programming", "Article", "English"]
 ---
 So we have two questions here: One, how do we draw boundaries around our computer programs such that we minimize the risk of any one concept failing? Two, how do we define any one term such that it is impossible for there to be a misunderstanding or for the program to crash?
 

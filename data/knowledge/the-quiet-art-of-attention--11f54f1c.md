@@ -4,7 +4,7 @@ notion_id: 11f54f1c-7d23-8184-b109-dde009251648
 notion_url: https://app.notion.com/p/The-quiet-art-of-attention-11f54f1c7d238184b109dde009251648
 last_edited: 2024-11-06T20:25:00.000Z
 source_url: https://billwear.github.io/art-of-attention.html
-tags: ["billwear", "English", "?", "Reflection", "Article"]
+tags: ["English", "?", "Reflection", "Article", "billwear"]
 ---
 There comes a moment in life, often in the quietest of hours, when one realizes that the world will continue on its wayward course, indifferent to our desires or frustrations. And it is then, perhaps, that a subtle truth begins to emerge: the only thing we truly possess, the only thing we might, with enough care, exert some mastery over, is our mind. It is not a realization of resignation, but rather of liberation. For if the mind can be ordered, if it can be made still in the midst of this restless life, then we have already discovered the key to a deeper kind of freedom.
 

@@ -4,7 +4,7 @@ notion_id: 05fc6f5c-71e9-45a3-9c03-a09aaad62ea9
 notion_url: https://app.notion.com/p/Identifying-and-Improving-Non-Verbal-Behaviors-5-Key-Signals-Damaging-Team-Health-05fc6f5c71e945a39c03a09aaad62ea9
 last_edited: 2024-04-09T18:01:00.000Z
 source_url: https://newsletter.techleadmentor.com/p/5-non-verbal-behaviors-killing-team
-tags: ["English", "Line/People/Team Management", "Producer (Individual Contributor)", "Communication", "Article", "Techlead Mentor (Raviraj Achar)"]
+tags: ["Article", "Techlead Mentor (Raviraj Achar)", "English", "Line/People/Team Management", "Producer (Individual Contributor)", "Communication"]
 ---
 Ever been in a meeting where a teammate looked frustrated? Or know someone who keeps a poker face all the time?
 

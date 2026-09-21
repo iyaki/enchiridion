@@ -4,7 +4,7 @@ notion_id: 8f337589-86e9-476c-90ca-6c567866b4e4
 notion_url: https://app.notion.com/p/muted-io-Magical-Music-Theory-Tools-to-Learn-Music-Online-for-Free-8f33758986e9476c90ca6c567866b4e4
 last_edited: 2023-09-08T17:30:00.000Z
 source_url: https://muted.io/
-tags: ["Service", "English", "?", "Untried"]
+tags: ["English", "?", "Untried", "Service"]
 ---
 - **Pitch**: Pitch refers to how high or low a sound is perceived. Pitch is determined by the frequency of the sound wave, with higher frequencies producing higher pitches and lower frequencies producing lower pitches.
 - **Timbre**: The quality of a musical sound that distinguishes different types of sounds, even when they have the same pitch and loudness. Timbre is often described as the "color" or "tone" of a sound and is determined by the mix of frequencies present in a sound.

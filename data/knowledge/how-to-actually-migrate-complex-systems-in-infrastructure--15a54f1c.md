@@ -4,7 +4,7 @@ notion_id: 15a54f1c-7d23-8164-9f4f-f4c95b8e64e7
 notion_url: https://app.notion.com/p/How-to-Actually-Migrate-Complex-Systems-in-Infrastructure-15a54f1c7d2381649f4ff4c95b8e64e7
 last_edited: 2025-02-10T18:07:00.000Z
 source_url: https://kyle.cascade.family/posts/how-to-actually-migrate-complex-systems-in-infrastructure/
-tags: ["Article", "Kyle Cascade", "English", "Infrastructure", "Site Reliability Engineering", "SysAdmin", "System Design / Software Architecture", "Project Management", "Product Management"]
+tags: ["Kyle Cascade", "English", "Infrastructure", "Site Reliability Engineering", "SysAdmin", "System Design / Software Architecture", "Project Management", "Product Management", "Article"]
 ---
 Want to make this blog post more fun to read?
 

@@ -4,7 +4,7 @@ notion_id: 1854f7ab-bfb2-4db1-8634-8ba8065c66cc
 notion_url: https://app.notion.com/p/How-I-run-my-servers-1854f7abbfb24db186348ba8065c66cc
 last_edited: 2023-07-21T11:41:00.000Z
 source_url: https://blog.wesleyac.com/posts/how-i-run-my-servers
-tags: ["English", "SysAdmin", "Article", "Wesley Aptekar-Cassels"]
+tags: ["Wesley Aptekar-Cassels", "English", "SysAdmin", "Article"]
 ---
 I've been writing recently about servers and internet infrastructure[1](https://blog.wesleyac.com/posts/how-i-run-my-servers#fn1). A lot of this writing is predicated on running server software on a VM or physical machine, rather than using a more cloudy solution, which is somewhat unpopular these days. However, I think it's a pretty reasonable way to do things, and it's not as difficult as many people make it out to be. This post is a simple description of how I run most of the servers I operate. It mostly describes running server software that I've written myself, since that allows me to make it much more robust and easy to deploy than the vast majority of off-the-shelf software is.
 

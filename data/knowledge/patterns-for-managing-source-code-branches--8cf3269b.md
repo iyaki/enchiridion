@@ -4,7 +4,7 @@ notion_id: 8cf3269b-ad9e-402c-908b-bd4bbecf3833
 notion_url: https://app.notion.com/p/Patterns-for-Managing-Source-Code-Branches-8cf3269bad9e402c908bbd4bbecf3833
 last_edited: 2024-01-24T11:09:00.000Z
 source_url: https://martinfowler.com/articles/branching-patterns.html
-tags: ["Programming", "Productivity", "Project Management", "Article", "Guide", "Martin Fowler", "English"]
+tags: ["English", "Programming", "Productivity", "Project Management", "Article", "Guide", "Martin Fowler"]
 ---
 Source code is a vital asset to any software development team, and over the decades a set of source code management tools have been developed to keep code in shape. These tools allow changes to be tracked, so we recreate previous versions of the software and see how it develops over time. These tools are also central to the coordination of a team of multiple programmers, all working on a common codebase. By recording the changes each developer makes, these systems can keep track of many lines of work at once, and help developers work out how to merge these lines of work together.
 

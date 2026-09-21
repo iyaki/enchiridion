@@ -4,7 +4,7 @@ notion_id: 3c254f1c-7d23-81e1-9d8c-cafc16018f90
 notion_url: https://app.notion.com/p/PWAs-Personal-Web-Apps-ma-ttias-be-3c254f1c7d2381e19d8ccafc16018f90
 last_edited: 2026-08-20T01:03:00.000Z
 source_url: https://ma.ttias.be/pwas-personal-web-apps/
-tags: ["English", "Web Development", "Javascript", "Frontend", "Progressive Enhancement", "PWA", "Productivity", "Tool", "Article", "ma.ttias.be"]
+tags: ["ma.ttias.be", "English", "Web Development", "Javascript", "Frontend", "Progressive Enhancement", "PWA", "Productivity", "Tool", "Article"]
 ---
 I’ve found my ideal format for shipping apps for personal & family use: PWAs, with an offline-first focus, rendering (mostly) entirely client-side. JavaScript is powerful enough to do pretty much anything these days - especially if you don’t have to write the code yourself.
 

@@ -104,7 +104,7 @@ tags: ["Article", "Radical Candor", "English", "Leadership", "Management", "Care
 
 
 
-<!-- unsupported block: video -->
+[https://www.youtube.com/embed/v4Zwiidj13w?feature=oembed](https://www.youtube.com/embed/v4Zwiidj13w?feature=oembed)
 
 
 

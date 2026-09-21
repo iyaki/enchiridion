@@ -4,7 +4,7 @@ notion_id: 818e7836-a374-41ac-adc0-4e0e7c10bf5a
 notion_url: https://app.notion.com/p/MinIO-High-Performance-Kubernetes-Native-Object-Storage-818e7836a37441acadc04e0e7c10bf5a
 last_edited: 2023-08-16T14:12:00.000Z
 source_url: https://min.io/
-tags: ["File/Object Storage", "Untried", "Tool", "Service", "English"]
+tags: ["Tool", "Service", "English", "File/Object Storage", "Untried"]
 ---
 
 
@@ -16,7 +16,7 @@ tags: ["File/Object Storage", "Untried", "Tool", "Service", "English"]
 
 
 
-<!-- unsupported block: video -->
+[https://min.io/resources/media/hero.mp4](https://min.io/resources/media/hero.mp4)
 
 
 
@@ -86,7 +86,7 @@ tags: ["File/Object Storage", "Untried", "Tool", "Service", "English"]
 
 
 
-<!-- unsupported block: video -->
+[https://min.io/resources/media/ilm.webm](https://min.io/resources/media/ilm.webm)
 
 ### 
 
@@ -242,4 +242,4 @@ tags: ["File/Object Storage", "Untried", "Tool", "Service", "English"]
 
 
 
-<!-- unsupported block: video -->
+[https://min.io/resources/media/get-started.mp4](https://min.io/resources/media/get-started.mp4)

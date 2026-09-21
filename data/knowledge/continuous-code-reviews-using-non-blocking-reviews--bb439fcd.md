@@ -30,6 +30,8 @@ tags: ["English", "Productivity", "Project Management", "Article", "ThinkingLabs
 
 
 
+
+
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
 
@@ -55,7 +57,12 @@ tags: ["English", "Productivity", "Project Management", "Article", "ThinkingLabs
 
 
 - 
+
+
+
 - 
+
+
 
 ## 
 

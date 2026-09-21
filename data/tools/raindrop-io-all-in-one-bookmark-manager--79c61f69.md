@@ -14,6 +14,8 @@ tags: ["English", "Producer (Individual Contributor)", "Productivity", "Office",
 
 > 
 
+
+
 ## 
 
 > 
@@ -44,27 +46,15 @@ tags: ["English", "Producer (Individual Contributor)", "Productivity", "Office",
 
 > 
 
+
+
+
+
 ## 
 
 > 
 
-## 
 
-> 
-
-
-
-
-
-<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
-
-
-
-
-
-<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
-
-<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
 ## 
 
@@ -76,17 +66,67 @@ tags: ["English", "Producer (Individual Contributor)", "Productivity", "Office",
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
+
+
+
+
+<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
+
+<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
+
 ## 
 
 > 
 
+
+
+
+
+<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
+
 ## 
 
 > 
 
+
+
+
+
+
+
 ## 
 
 > 
+
+
+
+## 
+
+> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

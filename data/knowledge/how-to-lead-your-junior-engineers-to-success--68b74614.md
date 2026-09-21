@@ -10,6 +10,4 @@ tags: ["English", "Line/People/Team Management", "Article", "LeadDev"]
 
 
 
-<!-- unsupported block: synced_block -->
-
 

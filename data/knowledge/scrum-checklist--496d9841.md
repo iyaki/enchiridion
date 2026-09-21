@@ -6,4 +6,4 @@ last_edited: 2023-04-25T14:59:00.000Z
 source_url: https://www.dropbox.com/s/qsitv2v30olqhms/Scrum-checklist.pdf
 tags: ["Agile", "Project Management", "CheatSheet", "English"]
 ---
-<!-- unsupported block: file -->
+<!-- internal file: its URL expires and is not preserved (ADR-05) -->

@@ -4,7 +4,7 @@ notion_id: 65e174da-00d1-4083-b1d0-66dd0e378106
 notion_url: https://app.notion.com/p/El-Value-Proposition-Canvas-65e174da00d14083b1d066dd0e378106
 last_edited: 2023-04-25T15:06:00.000Z
 source_url: https://www.notion.so/El-Value-Proposition-Canvas-65e174da00d14083b1d066dd0e378106
-tags: ["Español", "Product Management", "Article", "This is the Agile Way (Javier Garzas)"]
+tags: ["Article", "This is the Agile Way (Javier Garzas)", "Español", "Product Management"]
 ---
 # 
 

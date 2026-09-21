@@ -9,5 +9,3 @@ tags: ["English", "DevOps", "Article", "LeadDev"]
 [https://leaddev.com/security/supporting-influencing-and-leading-security-practitioner](https://leaddev.com/security/supporting-influencing-and-leading-security-practitioner)
 
 
-
-<!-- unsupported block: synced_block -->

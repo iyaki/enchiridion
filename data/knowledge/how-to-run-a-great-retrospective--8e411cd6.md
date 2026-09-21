@@ -9,5 +9,3 @@ tags: ["English", "Agile", "Line/People/Team Management", "Project Management", 
 [https://leaddev.com/communication-relationships/how-run-great-retrospective](https://leaddev.com/communication-relationships/how-run-great-retrospective)
 
 
-
-<!-- unsupported block: synced_block -->

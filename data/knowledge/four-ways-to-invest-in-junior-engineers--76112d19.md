@@ -9,5 +9,3 @@ tags: ["Article", "LeadDev", "English", "Line/People/Team Management"]
 [https://leaddev.com/hiring-onboarding-retention/four-ways-invest-junior-engineers](https://leaddev.com/hiring-onboarding-retention/four-ways-invest-junior-engineers)
 
 
-
-<!-- unsupported block: synced_block -->

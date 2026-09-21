@@ -4,7 +4,7 @@ notion_id: 36d54f1c-7d23-81b3-b9e4-c78faf1d7829
 notion_url: https://app.notion.com/p/Shell-Tool-Testing-Screwtape-s-Notepad-36d54f1c7d2381b3b9e4c78faf1d7829
 last_edited: 2026-09-18T00:52:00.000Z
 source_url: https://zork.net/~st/jottings/shell-tool-testing.html
-tags: ["English", "Testing", "Shell/Bash", "Python", "Automation", "Tool", "Article", "Personal Blog"]
+tags: ["Testing", "Shell/Bash", "Python", "Automation", "Tool", "Article", "Personal Blog", "English"]
 ---
 
 

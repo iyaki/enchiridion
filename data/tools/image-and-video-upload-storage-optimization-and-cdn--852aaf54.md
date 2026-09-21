@@ -6,7 +6,7 @@ last_edited: 2023-08-01T00:16:00.000Z
 source_url: https://cloudinary.com/
 tags: ["Service", "English", "Web Development", "Hosting", "Untried"]
 ---
-<!-- unsupported block: video -->
+[https://cloudinary-marketing-res.cloudinary.com/video/upload/q_auto,w_1200/v1665692778/hero_animation_2022.webm](https://cloudinary-marketing-res.cloudinary.com/video/upload/q_auto,w_1200/v1665692778/hero_animation_2022.webm)
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

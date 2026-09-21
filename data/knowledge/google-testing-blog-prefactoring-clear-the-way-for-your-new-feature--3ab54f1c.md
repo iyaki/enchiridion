@@ -4,7 +4,7 @@ notion_id: 3ab54f1c-7d23-8124-bbef-e98de4af3edf
 notion_url: https://app.notion.com/p/Google-Testing-Blog-Prefactoring-Clear-the-Way-for-Your-New-Feature-3ab54f1c7d238124bbefe98de4af3edf
 last_edited: 2026-09-18T00:52:00.000Z
 source_url: https://testing.googleblog.com/2026/07/prefactoring-clear-way-for-your-new.html
-tags: ["Article", "Google Testing Blog", "English", "Software Development", "Refactoring", "Programming", "Productivity"]
+tags: ["Google Testing Blog", "English", "Software Development", "Refactoring", "Programming", "Productivity", "Article"]
 ---
 
 

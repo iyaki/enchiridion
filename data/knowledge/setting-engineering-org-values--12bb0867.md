@@ -61,8 +61,28 @@ tags: ["Article", "Irrational Exuberance (Will Larson)", "English", "Principles"
 
 
 1. 
-2. 
-3. 
+
+
+
+
+
+
+
+1. 
+
+
+
+
+
+
+
+1. 
+
+
+
+
+
+
 
 
 
@@ -110,10 +130,34 @@ tags: ["Article", "Irrational Exuberance (Will Larson)", "English", "Principles"
 
 
 - 
+
+
+
+
+
 - 
+
+
+
+
+
 - 
+
+
+
+
+
 - 
+
+
+
+
+
 - 
+
+
+
+
 
 
 

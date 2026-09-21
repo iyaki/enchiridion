@@ -4,7 +4,7 @@ notion_id: ec3d9b92-7c6c-4d9e-a011-9f37c6537366
 notion_url: https://app.notion.com/p/Explaining-The-Postgres-Meme-ec3d9b927c6c4d9ea0119f37c6537366
 last_edited: 2023-09-11T18:28:00.000Z
 source_url: https://www.avestura.dev/blog/explaining-the-postgres-meme
-tags: ["Article", "English", "Databases"]
+tags: ["Databases", "Article", "English"]
 ---
 
 
@@ -602,6 +602,8 @@ tags: ["Article", "English", "Databases"]
 
 
 
+
+
 ### 
 
 
@@ -1184,6 +1186,10 @@ tags: ["Article", "English", "Databases"]
 
 > 
 
+
+
+- 
+
 ### 
 
 
@@ -1288,6 +1294,14 @@ tags: ["Article", "English", "Databases"]
 
 
 > 
+
+
+
+
+
+
+
+
 
 - 
 

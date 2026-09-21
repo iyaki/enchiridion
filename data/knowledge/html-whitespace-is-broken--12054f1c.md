@@ -4,7 +4,7 @@ notion_id: 12054f1c-7d23-81ff-ba05-fc9429107d39
 notion_url: https://app.notion.com/p/HTML-Whitespace-is-Broken-12054f1c7d2381ffba05fc9429107d39
 last_edited: 2024-11-06T20:26:00.000Z
 source_url: https://blog.dwac.dev/posts/html-whitespace
-tags: ["HTML", "Article", "Devel without a Cause (Douglas Parker)", "English"]
+tags: ["English", "HTML", "Article", "Devel without a Cause (Douglas Parker)"]
 ---
 
 
@@ -198,7 +198,7 @@ tags: ["HTML", "Article", "Devel without a Cause (Douglas Parker)", "English"]
 
 
 
-<!-- unsupported block: video -->
+[https://blog.dwac.dev/posts/demos/1-refrigerator.mp4](https://blog.dwac.dev/posts/demos/1-refrigerator.mp4)
 
 
 
@@ -341,7 +341,7 @@ tags: ["HTML", "Article", "Devel without a Cause (Douglas Parker)", "English"]
 
 
 
-<!-- unsupported block: video -->
+[https://blog.dwac.dev/posts/demos/3-nbsp-overflow.mp4](https://blog.dwac.dev/posts/demos/3-nbsp-overflow.mp4)
 
 
 
@@ -508,8 +508,20 @@ tags: ["HTML", "Article", "Devel without a Cause (Douglas Parker)", "English"]
 
 
 1. 
-2. 
-3. 
+
+- 
+- 
+
+1. 
+
+- 
+- 
+
+1. 
+
+- 
+- 
+- 
 
 
 
@@ -558,9 +570,22 @@ tags: ["HTML", "Article", "Devel without a Cause (Douglas Parker)", "English"]
 
 
 1. 
-2. 
-3. 
-4. 
+
+- 
+
+1. 
+
+- 
+- 
+
+1. 
+
+- 
+
+1. 
+
+- 
+- 
 
 
 
@@ -605,7 +630,16 @@ tags: ["HTML", "Article", "Devel without a Cause (Douglas Parker)", "English"]
 
 
 1. 
-2. 
+
+```
+
+```
+
+1. 
+
+```
+
+```
 
 
 
@@ -635,7 +669,7 @@ tags: ["HTML", "Article", "Devel without a Cause (Douglas Parker)", "English"]
 
 
 
-<!-- unsupported block: video -->
+[https://blog.dwac.dev/posts/im-gonna-complain.webm](https://blog.dwac.dev/posts/im-gonna-complain.webm)
 
 
 
@@ -672,6 +706,9 @@ tags: ["HTML", "Article", "Devel without a Cause (Douglas Parker)", "English"]
 
 
 > 
+
+- 
+- 
 
 
 

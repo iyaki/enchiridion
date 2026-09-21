@@ -66,6 +66,10 @@ tags: ["Article", "Guide", "Martin Fowler", "English", "Programming", "Productiv
 
 
 
+- 
+
+
+
 ### 
 
 
@@ -328,6 +332,10 @@ tags: ["Article", "Guide", "Martin Fowler", "English", "Programming", "Productiv
 
 
 
+- 
+
+
+
 
 
 
@@ -373,6 +381,8 @@ tags: ["Article", "Guide", "Martin Fowler", "English", "Programming", "Productiv
 
 > 
 
+- 
+
 
 
 
@@ -387,6 +397,8 @@ tags: ["Article", "Guide", "Martin Fowler", "English", "Programming", "Productiv
 
 > 
 
+- 
+
 
 
 
@@ -404,6 +416,10 @@ tags: ["Article", "Guide", "Martin Fowler", "English", "Programming", "Productiv
 
 
 > 
+
+
+
+- 
 
 
 

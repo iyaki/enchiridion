@@ -54,6 +54,8 @@ tags: ["English", "System Design / Software Architecture", "Article", "Neward & 
 8. 
 9. 
 10. 
+11. 
+12. 
 
 
 

@@ -4,7 +4,7 @@ notion_id: 01581a8a-f5e8-4861-a336-f30888d53bf5
 notion_url: https://app.notion.com/p/Common-Anti-Patterns-in-Go-Web-Applications-01581a8af5e84861a336f30888d53bf5
 last_edited: 2023-01-25T18:21:00.000Z
 source_url: https://threedots.tech/post/common-anti-patterns-in-go-web-applications/
-tags: ["Article", "Three Dots Labs", "English", "Go", "System Design / Software Architecture"]
+tags: ["English", "Go", "System Design / Software Architecture", "Article", "Three Dots Labs"]
 ---
 
 
@@ -49,6 +49,8 @@ tags: ["Article", "Three Dots Labs", "English", "Go", "System Design / Software 
 
 
 > 
+
+
 
 
 

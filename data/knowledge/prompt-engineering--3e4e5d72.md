@@ -46,10 +46,24 @@ tags: ["English", "Artificial Intelligence (AI)", "Article"]
 ### 
 
 - 
+
+
+
 - 
+
+
+
 - 
+
+
+
 - 
+
+
+
 - 
+
+
 
 ### 
 
@@ -117,14 +131,40 @@ tags: ["English", "Artificial Intelligence (AI)", "Article"]
 ## 
 
 - 
+
+
+
 - 
+
+
+
 - 
+
+
+
 - 
+
+
+
 - 
+
+
+
 - 
+
+
+
 - 
+
+
+
 - 
+
+
+
 - 
+
+
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
@@ -135,8 +175,16 @@ tags: ["English", "Artificial Intelligence (AI)", "Article"]
 
 
 1. 
-2. 
-3. 
+
+
+
+1. 
+
+
+
+1. 
+
+
 
 
 
@@ -221,8 +269,42 @@ tags: ["English", "Artificial Intelligence (AI)", "Article"]
 
 
 1. 
-2. 
-3. 
+
+
+
+<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
+
+
+
+- 
+
+
+
+- 
+
+
+
+- 
+
+
+
+1. 
+
+
+
+- 
+
+
+
+- 
+
+
+
+
+
+1. 
+
+
 
 
 
@@ -233,6 +315,8 @@ tags: ["English", "Artificial Intelligence (AI)", "Article"]
 
 
 > 
+
+
 
 
 

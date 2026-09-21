@@ -108,6 +108,14 @@ tags: ["English", "Programming", "System Design / Software Architecture", "Book"
 
 
 
+1. 
+2. 
+3. 
+4. 
+5. 
+
+
+
 ### 
 
 
@@ -129,6 +137,18 @@ tags: ["English", "Programming", "System Design / Software Architecture", "Book"
 
 
 > 
+
+1. 
+
+- 
+- 
+
+1. 
+2. 
+3. 
+4. 
+5. 
+6. 
 
 
 
@@ -403,6 +423,9 @@ tags: ["English", "Programming", "System Design / Software Architecture", "Book"
 - 
 - 
 - 
+
+
+
 - 
 - 
 - 
@@ -580,6 +603,12 @@ tags: ["English", "Programming", "System Design / Software Architecture", "Book"
 ## 
 
 > 
+
+|  | [How to cite this entry](https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=computer-science). |
+| --- | --- |
+|  | [Preview the PDF version of this entry](https://leibniz.stanford.edu/friends/preview/computer-science/) at the [Friends of the SEP Society](https://leibniz.stanford.edu/friends/). |
+|  | [Look up topics and thinkers related to this entry](https://www.inphoproject.org/entity?sep=computer-science&redirect=True) at the Internet Philosophy Ontology Project (InPhO). |
+|  | [Enhanced bibliography for this entry](https://philpapers.org/sep/computer-science/) at [PhilPapers](https://philpapers.org/), with links to its database. |
 
 ## 
 

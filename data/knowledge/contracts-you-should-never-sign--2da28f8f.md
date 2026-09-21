@@ -18,6 +18,8 @@ tags: ["Article", "English", "Jobs", "Career Growth"]
 
 
 
+
+
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
 
@@ -34,6 +36,8 @@ tags: ["Article", "English", "Jobs", "Career Growth"]
 
 
 
+
+
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
 
@@ -45,6 +49,8 @@ tags: ["Article", "English", "Jobs", "Career Growth"]
 
 
 > 
+
+
 
 
 

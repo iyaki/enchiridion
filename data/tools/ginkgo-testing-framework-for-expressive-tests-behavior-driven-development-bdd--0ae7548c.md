@@ -4,7 +4,7 @@ notion_id: 0ae7548c-5750-4d7c-b1de-10af405244d1
 notion_url: https://app.notion.com/p/Ginkgo-Testing-framework-for-expressive-tests-Behavior-Driven-Development-BDD-0ae7548c57504d7cb1de10af405244d1
 last_edited: 2023-02-01T16:41:00.000Z
 source_url: https://onsi.github.io/ginkgo/
-tags: ["Framework/Library", "English", "Go", "Testing", "Untried"]
+tags: ["English", "Go", "Testing", "Untried", "Framework/Library"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
@@ -140,6 +140,8 @@ tags: ["Framework/Library", "English", "Go", "Testing", "Untried"]
 
 
 
+
+
 ## 
 
 
@@ -286,6 +288,8 @@ tags: ["Framework/Library", "English", "Go", "Testing", "Untried"]
 
 
 
+
+
 ### 
 
 
@@ -319,6 +323,8 @@ tags: ["Framework/Library", "English", "Go", "Testing", "Untried"]
 
 
 > 
+
+
 
 ### 
 
@@ -658,6 +664,8 @@ tags: ["Framework/Library", "English", "Go", "Testing", "Untried"]
 
 
 > 
+
+
 
 ### 
 
@@ -1413,6 +1421,8 @@ tags: ["Framework/Library", "English", "Go", "Testing", "Untried"]
 
 
 > 
+
+
 
 
 

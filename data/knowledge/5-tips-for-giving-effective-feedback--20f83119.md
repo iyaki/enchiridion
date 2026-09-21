@@ -6,4 +6,4 @@ last_edited: 2023-02-23T00:41:00.000Z
 source_url: https://www.radicalcandor.com/wp-content/uploads/2021/06/5-Tips_Radical-Candor_Direct_Reports.pdf
 tags: ["English", "Line/People/Team Management", "Communication", "Article", "Book"]
 ---
-<!-- unsupported block: file -->
+<!-- internal file: its URL expires and is not preserved (ADR-05) -->

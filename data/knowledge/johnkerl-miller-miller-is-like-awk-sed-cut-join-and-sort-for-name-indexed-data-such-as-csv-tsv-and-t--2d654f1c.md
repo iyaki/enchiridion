@@ -4,7 +4,7 @@ notion_id: 2d654f1c-7d23-8164-9c84-d52ab4807273
 notion_url: https://app.notion.com/p/johnkerl-miller-Miller-is-like-awk-sed-cut-join-and-sort-for-name-indexed-data-such-as-CSV-TSV-2d654f1c7d2381649c84d52ab4807273
 last_edited: 2026-09-18T00:53:00.000Z
 source_url: https://github.com/johnkerl/miller
-tags: ["English", "Command Line", "Data Manipulation", "CSV", "Tools", "Tool", "Article", "GitHub"]
+tags: ["Tool", "Article", "GitHub", "English", "Command Line", "Data Manipulation", "CSV", "Tools"]
 ---
 # 
 

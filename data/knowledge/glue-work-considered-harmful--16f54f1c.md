@@ -21,4 +21,9 @@ tags: ["Article", "Sean Goedecke", "English", "Career Growth", "Line/People/Team
 
 
 1. 
-2. 
+
+
+
+1. 
+
+

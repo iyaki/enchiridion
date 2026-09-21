@@ -4,7 +4,7 @@ notion_id: 1080cf0b-70c8-4996-934b-ecbb20117981
 notion_url: https://app.notion.com/p/Things-I-learned-about-visual-design-1080cf0b70c84996934becbb20117981
 last_edited: 2023-02-16T20:01:00.000Z
 source_url: https://anthonyhobday.com/blog/20220902.html
-tags: ["Article", "anthonyhobday", "English", "UI/UX"]
+tags: ["English", "UI/UX", "Article", "anthonyhobday"]
 ---
 1. 
 2. 

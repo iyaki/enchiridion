@@ -4,7 +4,7 @@ notion_id: 1812ab13-75c3-47de-83d5-b9db0f40d739
 notion_url: https://app.notion.com/p/Employee-Offboarding-Checklist-9-Step-Process-1812ab1375c347de83d5b9db0f40d739
 last_edited: 2024-06-05T18:40:00.000Z
 source_url: https://toggl.com/blog/offboarding-checklist
-tags: ["Toggl Blog", "English", "Human Resources (HH.RR.)", "Article"]
+tags: ["Article", "Toggl Blog", "English", "Human Resources (HH.RR.)"]
 ---
 
 

@@ -4,7 +4,7 @@ notion_id: 5f4c060e-fbed-4ad8-9c9d-932d58f5a668
 notion_url: https://app.notion.com/p/The-Design-Patterns-for-Distributed-Systems-Handbook-Key-Concepts-Every-Developer-Should-Know-5f4c060efbed4ad89c9d932d58f5a668
 last_edited: 2023-06-09T20:00:00.000Z
 source_url: https://www.freecodecamp.org/news/design-patterns-for-distributed-systems/
-tags: ["Book", "FreeCodeCamp", "English", "System Design / Software Architecture"]
+tags: ["English", "System Design / Software Architecture", "Book", "FreeCodeCamp"]
 ---
 
 

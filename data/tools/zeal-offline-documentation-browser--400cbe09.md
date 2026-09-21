@@ -4,7 +4,7 @@ notion_id: 400cbe09-e6d8-469f-a60b-34652a247cf4
 notion_url: https://app.notion.com/p/Zeal-Offline-Documentation-Browser-400cbe09e6d8469fa60b34652a247cf4
 last_edited: 2023-06-21T14:44:00.000Z
 source_url: https://zealdocs.org/
-tags: ["Programming", "Untried", "Tool", "English"]
+tags: ["English", "Programming", "Untried", "Tool"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

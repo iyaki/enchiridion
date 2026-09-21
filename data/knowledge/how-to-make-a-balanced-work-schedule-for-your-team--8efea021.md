@@ -151,12 +151,32 @@ tags: ["Article", "Toggl Blog", "English", "Line/People/Team Management", "Proje
 
 
 1. 
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
+
+
+
+1. 
+
+
+
+1. 
+
+
+
+1. 
+
+
+
+1. 
+
+
+
+1. 
+
+
+
+1. 
+
+
 
 
 
@@ -181,6 +201,13 @@ tags: ["Article", "Toggl Blog", "English", "Line/People/Team Management", "Proje
 
 
 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
 - 
 - 
 

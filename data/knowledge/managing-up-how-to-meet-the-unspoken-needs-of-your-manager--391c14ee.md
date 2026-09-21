@@ -16,6 +16,10 @@ tags: ["Producer (Individual Contributor)", "Line/People/Team Management", "Comm
 
 > 
 
+- 
+- 
+- 
+
 
 
 
@@ -42,6 +46,8 @@ tags: ["Producer (Individual Contributor)", "Line/People/Team Management", "Comm
 
 > 
 
+
+
 ## 
 
 
@@ -61,6 +67,8 @@ tags: ["Producer (Individual Contributor)", "Line/People/Team Management", "Comm
 
 
 
+
+
 - 
 - 
 
@@ -71,6 +79,8 @@ tags: ["Producer (Individual Contributor)", "Line/People/Team Management", "Comm
 
 
 > 
+
+
 
 ## 
 
@@ -92,6 +102,10 @@ tags: ["Producer (Individual Contributor)", "Line/People/Team Management", "Comm
 
 > 
 
+
+
+
+
 ### 
 
 
@@ -116,6 +130,10 @@ tags: ["Producer (Individual Contributor)", "Line/People/Team Management", "Comm
 
 > 
 
+
+
+
+
 ### 
 
 
@@ -130,6 +148,8 @@ tags: ["Producer (Individual Contributor)", "Line/People/Team Management", "Comm
 
 > 
 
+
+
 ### 
 
 
@@ -140,6 +160,10 @@ tags: ["Producer (Individual Contributor)", "Line/People/Team Management", "Comm
 
 > 
 
+
+
+
+
 ### 
 
 
@@ -152,6 +176,10 @@ tags: ["Producer (Individual Contributor)", "Line/People/Team Management", "Comm
 
 
 
+
+
+
+
 - 
 - 
 - 
@@ -160,7 +188,11 @@ tags: ["Producer (Individual Contributor)", "Line/People/Team Management", "Comm
 
 
 
+
+
 > 
+
+
 
 ### 
 
@@ -176,6 +208,10 @@ tags: ["Producer (Individual Contributor)", "Line/People/Team Management", "Comm
 
 
 > 
+
+
+
+
 
 
 

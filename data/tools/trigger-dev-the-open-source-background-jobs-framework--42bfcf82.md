@@ -4,7 +4,7 @@ notion_id: 42bfcf82-e0ca-4d32-9d1c-6ccd03047b45
 notion_url: https://app.notion.com/p/Trigger-dev-The-open-source-background-jobs-framework-42bfcf82e0ca4d329d1c6ccd03047b45
 last_edited: 2023-10-12T19:15:00.000Z
 source_url: https://trigger.dev/
-tags: ["Infrastructure", "DevOps", "SysAdmin", "Programming", "Tool", "Service", "English"]
+tags: ["English", "Infrastructure", "DevOps", "SysAdmin", "Programming", "Tool", "Service"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
@@ -13,8 +13,30 @@ tags: ["Infrastructure", "DevOps", "SysAdmin", "Programming", "Tool", "Service",
 
 
 - 
+
+```
+
+```
+
+
+
+
+
 - 
+
+```
+
+```
+
+
+
+
+
 - 
+
+
+
+
 
 ## 
 

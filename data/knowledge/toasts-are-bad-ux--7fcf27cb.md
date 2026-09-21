@@ -10,7 +10,7 @@ tags: ["English", "UI/UX", "Article", "Max Schmitt"]
 
 
 
-<!-- unsupported block: video -->
+[https://s3.eu-central-1.amazonaws.com/maximilianschmitt.me/v2/post-media/toasts-bad-ux/youtube-toast.webm](https://s3.eu-central-1.amazonaws.com/maximilianschmitt.me/v2/post-media/toasts-bad-ux/youtube-toast.webm)
 
 ## 
 

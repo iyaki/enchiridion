@@ -8,7 +8,7 @@ tags: ["English", "Graphic Design", "Multimedia", "Tool", "Service"]
 ---
 ### 
 
-<!-- unsupported block: video -->
+[https://static.clipdrop.co/web/homepage/hero-video.webm#t=0.1](https://static.clipdrop.co/web/homepage/hero-video.webm#t=0.1)
 
 ## 
 
@@ -20,7 +20,7 @@ tags: ["English", "Graphic Design", "Multimedia", "Tool", "Service"]
 
 ### 
 
-<!-- unsupported block: video -->
+[https://static.clipdrop.co/web/homepage/clipdrop-demo400.webm#t=0.1](https://static.clipdrop.co/web/homepage/clipdrop-demo400.webm#t=0.1)
 
 
 

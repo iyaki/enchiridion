@@ -4,7 +4,7 @@ notion_id: 16554f1c-7d23-8193-a51a-ffa4b8d44632
 notion_url: https://app.notion.com/p/When-you-have-nothing-How-to-find-potential-customers-to-interview-16554f1c7d238193a51affa4b8d44632
 last_edited: 2025-02-10T18:04:00.000Z
 source_url: https://longform.asmartbear.com/find-customers-to-interview/
-tags: ["A Smart Bear: Longform", "English", "Product Management", "Entrepreneurship", "Article"]
+tags: ["Article", "A Smart Bear: Longform", "English", "Product Management", "Entrepreneurship"]
 ---
 
 
@@ -102,6 +102,10 @@ tags: ["A Smart Bear: Longform", "English", "Product Management", "Entrepreneurs
 
 
 
+
+
+
+
 ![image](https://longform.asmartbear.com/find-customers-to-interview/just-run-ads-1576w.png)
 
 ### 
@@ -164,6 +168,12 @@ tags: ["A Smart Bear: Longform", "English", "Product Management", "Entrepreneurs
 
 > 
 
+
+
+
+
+
+
 ### 
 
 
@@ -185,6 +195,8 @@ tags: ["A Smart Bear: Longform", "English", "Product Management", "Entrepreneurs
 
 
 > 
+
+
 
 
 

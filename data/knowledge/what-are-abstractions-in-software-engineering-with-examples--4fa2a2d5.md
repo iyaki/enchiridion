@@ -18,6 +18,8 @@ tags: ["The Valuable Dev", "English", "Programming", "Object Oriented Programmin
 
 
 
+
+
 1. 
 2. 
 3. 
@@ -367,9 +369,15 @@ tags: ["The Valuable Dev", "English", "Programming", "Object Oriented Programmin
 1. 
 2. 
 3. 
-4. 
-5. 
-6. 
+
+- 
+- 
+- 
+- 
+
+1. 
+2. 
+3. 
 
 
 

@@ -4,7 +4,7 @@ notion_id: 6c41a81a-a724-4589-ad35-e3404fe35ea6
 notion_url: https://app.notion.com/p/To-test-or-not-to-test-a-technical-perspective-6c41a81aa7244589ad35e3404fe35ea6
 last_edited: 2023-09-04T14:07:00.000Z
 source_url: https://web.dev/ta-what-to-test
-tags: ["Testing", "Article", "web.dev", "English"]
+tags: ["English", "Testing", "Article", "web.dev"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

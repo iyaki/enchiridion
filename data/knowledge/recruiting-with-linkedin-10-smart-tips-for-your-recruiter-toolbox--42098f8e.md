@@ -37,6 +37,10 @@ tags: ["English", "Line/People/Team Management", "Entrepreneurship", "Article", 
 
 > 
 
+
+
+
+
 ### 
 
 
@@ -73,6 +77,8 @@ tags: ["English", "Line/People/Team Management", "Entrepreneurship", "Article", 
 
 > 
 
+
+
 1. 
 2. 
 3. 
@@ -196,6 +202,8 @@ tags: ["English", "Line/People/Team Management", "Entrepreneurship", "Article", 
 
 - 
 - 
+- 
+- 
 
 
 
@@ -210,6 +218,10 @@ tags: ["English", "Line/People/Team Management", "Entrepreneurship", "Article", 
 - 
 
 > 
+
+
+
+
 
 ### 
 

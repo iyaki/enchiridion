@@ -9,5 +9,3 @@ tags: ["LeadDev", "English", "Career Growth", "Producer (Individual Contributor)
 [https://leaddev.com/career-paths-progression-promotion/engineering-manager-or-individual-contributor-which-path-right](https://leaddev.com/career-paths-progression-promotion/engineering-manager-or-individual-contributor-which-path-right)
 
 
-
-<!-- unsupported block: synced_block -->

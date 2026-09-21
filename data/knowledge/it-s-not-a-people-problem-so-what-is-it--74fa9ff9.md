@@ -9,5 +9,3 @@ tags: ["English", "Line/People/Team Management", "Leadersheep", "Article", "Lead
 [https://leaddev.com/communication-relationships/its-not-people-problem-so-what-it](https://leaddev.com/communication-relationships/its-not-people-problem-so-what-it)
 
 
-
-<!-- unsupported block: synced_block -->

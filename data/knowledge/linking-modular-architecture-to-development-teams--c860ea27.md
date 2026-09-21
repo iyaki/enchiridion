@@ -93,9 +93,21 @@ tags: ["Article", "Martin Fowler", "English", "Line/People/Team Management", "Sy
 
 
 
+- 
+- 
+
+
+
 
 
 > 
+
+
+
+- 
+- 
+- 
+- 
 
 
 

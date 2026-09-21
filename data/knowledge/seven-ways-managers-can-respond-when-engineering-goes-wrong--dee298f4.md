@@ -9,5 +9,3 @@ tags: ["English", "Line/People/Team Management", "Article", "LeadDev"]
 [https://leaddev.com/team/seven-ways-managers-can-respond-when-engineering-goes-wrong](https://leaddev.com/team/seven-ways-managers-can-respond-when-engineering-goes-wrong)
 
 
-
-<!-- unsupported block: synced_block -->

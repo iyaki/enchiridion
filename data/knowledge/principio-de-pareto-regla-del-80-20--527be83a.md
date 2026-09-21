@@ -11,6 +11,10 @@ source_url: https://es.wikipedia.org/wiki/Principio_de_Pareto
 
 
 
+> 
+
+> 
+
 
 
 [https://es.wikipedia.org/wiki/Principio_de_Pareto](https://es.wikipedia.org/wiki/Principio_de_Pareto)

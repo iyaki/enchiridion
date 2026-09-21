@@ -9,5 +9,3 @@ tags: ["English", "System Design / Software Architecture", "Project Management",
 [https://leaddev.com/building-better-software/introducing-quality-ratchets-tool-managing-complex-systems](https://leaddev.com/building-better-software/introducing-quality-ratchets-tool-managing-complex-systems)
 
 
-
-<!-- unsupported block: synced_block -->

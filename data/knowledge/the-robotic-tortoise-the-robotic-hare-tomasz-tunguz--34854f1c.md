@@ -4,7 +4,7 @@ notion_id: 34854f1c-7d23-8167-9bd4-ec7c2dec3d63
 notion_url: https://app.notion.com/p/The-Robotic-Tortoise-the-Robotic-Hare-Tomasz-Tunguz-34854f1c7d2381679bd4ec7c2dec3d63
 last_edited: 2026-09-18T00:53:00.000Z
 source_url: https://tomtunguz.com/local-vs-cloud-speed/
-tags: ["English", "Artificial Intelligence (AI)", "Productivity", "Programming", "Article", "Tomasz Tunguz"]
+tags: ["Article", "Tomasz Tunguz", "English", "Artificial Intelligence (AI)", "Productivity", "Programming"]
 ---
 
 
@@ -14,7 +14,7 @@ tags: ["English", "Artificial Intelligence (AI)", "Productivity", "Programming",
 
 
 
-<!-- unsupported block: video -->
+[https://res.cloudinary.com/dzawgnnlr/video/upload/v1773877609/sxrqmdd4gs444t3mwk53.mp4](https://res.cloudinary.com/dzawgnnlr/video/upload/v1773877609/sxrqmdd4gs444t3mwk53.mp4)
 
 
 

@@ -4,7 +4,7 @@ notion_id: 4ccedb2a-6c97-40e8-aac5-db8538796077
 notion_url: https://app.notion.com/p/How-To-Center-a-Div-The-Ultimate-Guide-to-Centering-in-CSS-4ccedb2a6c9740e8aac5db8538796077
 last_edited: 2024-02-16T11:33:00.000Z
 source_url: https://www.joshwcomeau.com/css/center-a-div/
-tags: ["Frontend", "CSS", "Article", "Guide", "Josh Comeau", "English"]
+tags: ["Josh Comeau", "English", "Frontend", "CSS", "Article", "Guide"]
 ---
 
 

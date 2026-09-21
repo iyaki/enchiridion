@@ -6,6 +6,6 @@ last_edited: 2024-10-23T20:56:00.000Z
 source_url: https://adoption.microsoft.com/files/viva/goals/Writing-OKRs-Cheat-Sheet.pdf
 tags: ["Microsoft", "English", "Line/People/Team Management", "Entrepreneurship", "Agile", "Productivity", "CheatSheet"]
 ---
-<!-- unsupported block: pdf -->
+[https://adoption.microsoft.com/files/viva/goals/Writing-OKRs-Cheat-Sheet.pdf?utm_source=tldrproduct](https://adoption.microsoft.com/files/viva/goals/Writing-OKRs-Cheat-Sheet.pdf?utm_source=tldrproduct)
 
 

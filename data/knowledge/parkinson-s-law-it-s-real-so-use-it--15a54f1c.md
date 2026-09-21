@@ -4,7 +4,7 @@ notion_id: 15a54f1c-7d23-81be-91cd-f29ca717838e
 notion_url: https://app.notion.com/p/Parkinson-s-Law-It-s-Real-So-Use-It-15a54f1c7d2381be91cdf29ca717838e
 last_edited: 2025-01-20T19:54:00.000Z
 source_url: https://theengineeringmanager.substack.com/p/parkinsons-law-its-real-so-use-it
-tags: ["English", "Productivity", "Project Management", "Line/People/Team Management", "Producer (Individual Contributor)", "Article", "The Engineering Manager"]
+tags: ["The Engineering Manager", "English", "Productivity", "Project Management", "Line/People/Team Management", "Producer (Individual Contributor)", "Article"]
 ---
 
 

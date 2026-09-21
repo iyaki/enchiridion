@@ -4,7 +4,7 @@ notion_id: c214abe7-cf3b-4106-9d00-c20762e13dee
 notion_url: https://app.notion.com/p/Budibase-Build-internal-tools-in-minutes-the-easy-way-c214abe7cf3b41069d00c20762e13dee
 last_edited: 2023-08-04T18:11:00.000Z
 source_url: https://budibase.com/
-tags: ["Tool", "Service", "English", "Databases", "Untried", "Low code / No code"]
+tags: ["Databases", "Untried", "Low code / No code", "Tool", "Service", "English"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

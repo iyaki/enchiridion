@@ -4,7 +4,7 @@ notion_id: 6cbdd043-5f5f-4570-a229-806a6e782862
 notion_url: https://app.notion.com/p/What-is-Reverse-Recruiting-Tips-Strategies-6cbdd0435f5f4570a229806a6e782862
 last_edited: 2024-06-05T18:04:00.000Z
 source_url: https://toggl.com/blog/reverse-recruiting
-tags: ["English", "Human Resources (HH.RR.)", "Article", "Toggl Blog"]
+tags: ["Human Resources (HH.RR.)", "Article", "Toggl Blog", "English"]
 ---
 
 

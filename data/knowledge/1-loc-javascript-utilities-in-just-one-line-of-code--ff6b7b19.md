@@ -4,7 +4,7 @@ notion_id: ff6b7b19-0ea2-4c11-90a3-0d3c965eb7db
 notion_url: https://app.notion.com/p/1-LOC-JavaScript-utilities-in-just-One-Line-of-Code-ff6b7b190ea24c1190a30d3c965eb7db
 last_edited: 2024-03-25T14:13:00.000Z
 source_url: https://phuoc.ng/collection/1-loc/
-tags: ["CheatSheet", "Phuoc Nguyen", "English", "Javascript"]
+tags: ["English", "Javascript", "CheatSheet", "Phuoc Nguyen"]
 ---
 
 

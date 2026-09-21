@@ -36,6 +36,11 @@ tags: ["English", "Español", "Others", "Programming", "Javascript", "Book"]
 - 
 - 
 - 
+- 
+- 
+- 
+- 
+- 
 
 ## 
 
@@ -59,11 +64,152 @@ tags: ["English", "Español", "Others", "Programming", "Javascript", "Book"]
 - 
 - 
 - 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
 
 ### 
 
 
 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
 - 
 - 
 - 
@@ -124,6 +270,9 @@ tags: ["English", "Español", "Others", "Programming", "Javascript", "Book"]
 ### 
 
 - 
+
+<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
+
 - 
 
 ### 
@@ -181,7 +330,23 @@ tags: ["English", "Español", "Others", "Programming", "Javascript", "Book"]
 
 
 
+<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
+
+
+
+
+
+
+
 > 
+
+<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
+
+
+
+
+
+
 
 ## 
 

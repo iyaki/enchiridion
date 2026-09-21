@@ -4,7 +4,7 @@ notion_id: d8cedffc-3327-44d6-81c2-2b16ef78e700
 notion_url: https://app.notion.com/p/Conway-s-Game-of-Life-d8cedffc332744d681c22b16ef78e700
 last_edited: 2023-04-25T14:28:00.000Z
 source_url: https://playgameoflife.com/
-tags: ["Game", "English", "?"]
+tags: ["English", "?", "Game"]
 ---
 [https://playgameoflife.com/](https://playgameoflife.com/)
 

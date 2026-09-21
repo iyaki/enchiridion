@@ -4,7 +4,7 @@ notion_id: 462d3928-13c9-4734-a7dd-e778ee5a8421
 notion_url: https://app.notion.com/p/The-OARB-framework-Why-you-should-appeal-to-self-interest-when-giving-feedback-462d392813c94734a7dde778ee5a8421
 last_edited: 2026-09-18T00:53:00.000Z
 source_url: https://newsletter.weskao.com/p/oarb-framework-appeal-to-self-interest
-tags: ["Article", "Wes Kao's Newsletter", "English", "Human Resources (HH.RR.)", "Communication"]
+tags: ["Human Resources (HH.RR.)", "Communication", "Article", "Wes Kao's Newsletter", "English"]
 ---
 
 
@@ -63,6 +63,12 @@ tags: ["Article", "Wes Kao's Newsletter", "English", "Human Resources (HH.RR.)",
 
 
 
+
+
+
+
+
+
 - 
 - 
 - 
@@ -73,6 +79,12 @@ tags: ["Article", "Wes Kao's Newsletter", "English", "Human Resources (HH.RR.)",
 ![image](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F55ac5e76-ade6-40a2-b96f-a1e165aba0ae_1434x754.png)
 
 > 
+
+
+
+
+
+
 
 
 
@@ -88,6 +100,12 @@ tags: ["Article", "Wes Kao's Newsletter", "English", "Human Resources (HH.RR.)",
 
 
 
+
+
+
+
+
+
 - 
 - 
 - 
@@ -124,6 +142,8 @@ tags: ["Article", "Wes Kao's Newsletter", "English", "Human Resources (HH.RR.)",
 
 
 
+
+
 ### 
 
 
@@ -151,6 +171,10 @@ tags: ["Article", "Wes Kao's Newsletter", "English", "Human Resources (HH.RR.)",
 
 
 > 
+
+
+
+
 
 
 

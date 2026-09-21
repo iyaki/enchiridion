@@ -4,7 +4,7 @@ notion_id: 31454f1c-7d23-8170-9103-e09a2b9f46a9
 notion_url: https://app.notion.com/p/Knowledge-Priming-Project-context-for-AI-Agents-31454f1c7d2381709103e09a2b9f46a9
 last_edited: 2026-02-27T01:53:00.000Z
 source_url: https://martinfowler.com/articles/reduce-friction-ai/knowledge-priming.html
-tags: ["English", "Programming", "AI", "Software Development", "Knowledge Management", "Documentation", "Learning", "Article", "martinfowler"]
+tags: ["Programming", "AI", "Software Development", "Knowledge Management", "Documentation", "Learning", "Article", "martinfowler", "English"]
 ---
 
 

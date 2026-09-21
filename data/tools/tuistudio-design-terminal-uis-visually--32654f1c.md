@@ -12,7 +12,7 @@ tags: ["Tool", "unknown", "English", "Web Development", "UI/UX", "Tools", "Front
 
 
 
-<!-- unsupported block: video -->
+[https://tui.studio/screenshots/video.mp4](https://tui.studio/screenshots/video.mp4)
 
 ![image](https://tui.studio/screenshots/command-palette.png)
 

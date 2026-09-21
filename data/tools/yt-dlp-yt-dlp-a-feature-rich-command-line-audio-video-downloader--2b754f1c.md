@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-81cd-8227-d3906b3672d0
 notion_url: https://app.notion.com/p/yt-dlp-yt-dlp-A-feature-rich-command-line-audio-video-downloader-2b754f1c7d2381cd8227d3906b3672d0
 last_edited: 2025-11-26T18:56:00.000Z
 source_url: https://github.com/yt-dlp/yt-dlp
-tags: ["Tool", "GitHub", "English", "DevOps", "Automation", "Command Line", "Downloaders"]
+tags: ["English", "DevOps", "Automation", "Command Line", "Downloaders", "Tool", "GitHub"]
 ---
 ![image](https://raw.githubusercontent.com/yt-dlp/yt-dlp/master/.github/banner.svg)
 

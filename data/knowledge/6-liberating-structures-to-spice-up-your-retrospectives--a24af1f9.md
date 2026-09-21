@@ -19,6 +19,14 @@ tags: ["Article", "LogRocket Blog", "English", "Agile", "Line/People/Team Manage
 - 
 - 
 - 
+
+1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+
 - 
 
 ## 

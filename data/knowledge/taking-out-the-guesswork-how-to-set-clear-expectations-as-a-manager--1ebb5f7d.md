@@ -9,5 +9,3 @@ tags: ["English", "Line/People/Team Management", "Communication", "Article", "Le
 [https://leaddev.com/communication-relationships/taking-out-guesswork-how-set-clear-expectations-manager](https://leaddev.com/communication-relationships/taking-out-guesswork-how-set-clear-expectations-manager)
 
 
-
-<!-- unsupported block: synced_block -->

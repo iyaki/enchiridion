@@ -4,7 +4,7 @@ notion_id: f7b44fb5-5a80-4884-9d15-b7bbcc530d00
 notion_url: https://app.notion.com/p/basaran-Basaran-is-an-open-source-alternative-to-the-OpenAI-text-completion-API-It-provides-a-comp-f7b44fb55a8048849d15b7bbcc530d00
 last_edited: 2023-04-22T01:16:00.000Z
 source_url: https://github.com/hyperonym/basaran
-tags: ["English", "Artificial Intelligence (AI)", "Untried", "Tool"]
+tags: ["Tool", "English", "Artificial Intelligence (AI)", "Untried"]
 ---
 # 
 
@@ -206,6 +206,21 @@ tags: ["English", "Artificial Intelligence (AI)", "Untried", "Tool"]
 
 ## 
 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
 - 
 - 
 

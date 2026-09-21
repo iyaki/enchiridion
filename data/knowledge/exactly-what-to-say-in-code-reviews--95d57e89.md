@@ -4,7 +4,7 @@ notion_id: 95d57e89-509f-4fc5-85b5-ec21bde321ef
 notion_url: https://app.notion.com/p/Exactly-what-to-say-in-code-reviews-95d57e89509f4fc585b5ec21bde321ef
 last_edited: 2024-04-09T18:58:00.000Z
 source_url: https://read.highgrowthengineer.com/p/exactly-what-to-say-in-code-reviews
-tags: ["High Growth Engineer (Jordan Cutler)", "English", "Programming", "Communication", "Article"]
+tags: ["English", "Programming", "Communication", "Article", "High Growth Engineer (Jordan Cutler)"]
 ---
 
 
@@ -156,6 +156,8 @@ tags: ["High Growth Engineer (Jordan Cutler)", "English", "Programming", "Commun
 
 
 
+
+
 ![image](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F278e3df5-5529-407f-bdf9-2050653b12f2_1178x404.png)
 
 
@@ -193,6 +195,14 @@ tags: ["High Growth Engineer (Jordan Cutler)", "English", "Programming", "Commun
 
 ## 
 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
 - 
 - 
 - 

@@ -12,7 +12,7 @@ tags: ["English", "Graphic Design", "Service", "Tool"]
 
 
 
-<!-- unsupported block: video -->
+[https://haikei.app/intro-video.mp4](https://haikei.app/intro-video.mp4)
 
 ## 
 

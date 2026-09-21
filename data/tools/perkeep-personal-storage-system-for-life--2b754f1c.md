@@ -26,4 +26,4 @@ tags: ["English", "Cloud", "File/Object Storage", "Open Source", "Privacy", "Too
 
 
 
-<!-- unsupported block: video -->
+[https://www.youtube.com/embed/PlAU_da_U4s](https://www.youtube.com/embed/PlAU_da_U4s)

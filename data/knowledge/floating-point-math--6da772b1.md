@@ -4,7 +4,7 @@ notion_id: 6da772b1-b786-441d-a5bc-4e38562d6b8f
 notion_url: https://app.notion.com/p/Floating-Point-Math-6da772b1b786441da5bc4e38562d6b8f
 last_edited: 2023-01-25T18:31:00.000Z
 source_url: https://0.30000000000000004.com/
-tags: ["English", "Programming", "Website", "Article"]
+tags: ["Website", "Article", "English", "Programming"]
 ---
 
 

@@ -18,6 +18,8 @@ tags: ["Article", "This is the Agile Way (Javier Garzas)", "English", "Project M
 
 
 
+
+
 ![image](https://embed.filekitcdn.com/e/kwbvsHgjrihdSB2SVJ6CJm/stv62dvNumFJkNdb6h4Ecx)
 
 ---

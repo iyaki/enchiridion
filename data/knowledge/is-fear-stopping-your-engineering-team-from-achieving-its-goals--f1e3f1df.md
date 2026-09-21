@@ -9,5 +9,3 @@ tags: ["English", "Line/People/Team Management", "Article", "LeadDev"]
 [https://leaddev.com/culture-engagement-motivation/fear-stopping-your-engineering-team-achieving-its-goals](https://leaddev.com/culture-engagement-motivation/fear-stopping-your-engineering-team-achieving-its-goals)
 
 
-
-<!-- unsupported block: synced_block -->

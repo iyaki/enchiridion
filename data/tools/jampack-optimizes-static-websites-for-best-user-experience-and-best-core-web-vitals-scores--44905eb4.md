@@ -4,7 +4,7 @@ notion_id: 44905eb4-93b1-458e-a376-1ce03ec96aa8
 notion_url: https://app.notion.com/p/jampack-Optimizes-static-websites-for-best-user-experience-and-best-Core-Web-Vitals-scores-44905eb493b1458ea3761ce03ec96aa8
 last_edited: 2024-03-27T19:39:00.000Z
 source_url: https://github.com/divriots/jampack
-tags: ["Tool", "English", "Web Development", "HTML", "CSS", "Untried"]
+tags: ["English", "Web Development", "HTML", "CSS", "Untried", "Tool"]
 ---
 ```
 

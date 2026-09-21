@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-81d8-8ad5-e0f99365e63b
 notion_url: https://app.notion.com/p/What-Good-Execution-Looks-Like-Yusuf-Aytas-2b754f1c7d2381d88ad5e0f99365e63b
 last_edited: 2025-11-26T19:11:00.000Z
 source_url: https://yusufaytas.com/what-good-execution-looks-like/
-tags: ["English", "Product Management", "Team Management", "Leadership", "Decision Making", "Article", "yusufaytas.com"]
+tags: ["Product Management", "Team Management", "Leadership", "Decision Making", "Article", "yusufaytas.com", "English"]
 ---
 
 

@@ -6,4 +6,4 @@ last_edited: 2023-02-23T00:39:00.000Z
 source_url: https://www.radicalcandor.com/wp-content/uploads/2022/02/6_Steps_Radical-Candor_v2.pdf
 tags: ["Article", "Book", "Radical Candor", "English", "Line/People/Team Management", "Communication"]
 ---
-<!-- unsupported block: file -->
+<!-- internal file: its URL expires and is not preserved (ADR-05) -->

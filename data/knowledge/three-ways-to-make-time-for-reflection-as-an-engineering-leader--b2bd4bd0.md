@@ -9,5 +9,3 @@ tags: ["Article", "LeadDev", "English", "Line/People/Team Management", "Leadersh
 [https://leaddev.com/leadership-skills/three-ways-make-time-reflection-engineering-leader](https://leaddev.com/leadership-skills/three-ways-make-time-reflection-engineering-leader)
 
 
-
-<!-- unsupported block: synced_block -->

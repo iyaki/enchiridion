@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-818b-953c-fe6811e46007
 notion_url: https://app.notion.com/p/A-gentle-introduction-to-anchor-positioning-WebKit-2b754f1c7d23818b953cfe6811e46007
 last_edited: 2025-11-26T19:02:00.000Z
 source_url: https://webkit.org/blog/17240/a-gentle-introduction-to-anchor-positioning/
-tags: ["CSS", "Web Development", "Frontend", "Article", "Tutorial", "web.dev", "English"]
+tags: ["English", "CSS", "Web Development", "Frontend", "Article", "Tutorial", "web.dev"]
 ---
 
 

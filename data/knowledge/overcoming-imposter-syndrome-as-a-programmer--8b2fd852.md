@@ -17,11 +17,28 @@ tags: ["English", "Health", "Programming", "Producer (Individual Contributor)", 
 
 
 1. 
-2. 
-3. 
-4. 
-5. 
-6. 
+
+
+
+1. 
+
+
+
+1. 
+
+
+
+1. 
+
+
+
+1. 
+
+
+
+1. 
+
+
 
 
 
@@ -42,11 +59,28 @@ tags: ["English", "Health", "Programming", "Producer (Individual Contributor)", 
 
 
 1. 
-2. 
-3. 
-4. 
-5. 
-6. 
+
+
+
+1. 
+
+
+
+1. 
+
+
+
+1. 
+
+
+
+1. 
+
+
+
+1. 
+
+
 
 
 

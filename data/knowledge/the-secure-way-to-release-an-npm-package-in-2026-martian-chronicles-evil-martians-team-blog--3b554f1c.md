@@ -4,7 +4,7 @@ notion_id: 3b554f1c-7d23-818a-9ead-d17a5cafedc7
 notion_url: https://app.notion.com/p/The-secure-way-to-release-an-npm-package-in-2026-Martian-Chronicles-Evil-Martians-team-blog-3b554f1c7d23818a9eadd17a5cafedc7
 last_edited: 2026-09-18T00:52:00.000Z
 source_url: https://evilmartians.com/chronicles/the-secure-way-to-release-an-npm-package
-tags: ["Web Development", "Security", "DevOps", "Node.js", "Javascript", "Software Development", "Article", "Tutorial", "Evil Martians’ team blog", "English"]
+tags: ["English", "Web Development", "Security", "DevOps", "Node.js", "Javascript", "Software Development", "Article", "Tutorial", "Evil Martians’ team blog"]
 ---
 
 

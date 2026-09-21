@@ -4,7 +4,7 @@ notion_id: 30d54f1c-7d23-8150-88c0-c944f9ddc942
 notion_url: https://app.notion.com/p/Virtual-Scrolling-for-Billions-of-Rows-Techniques-from-HighTable-30d54f1c7d23815088c0c944f9ddc942
 last_edited: 2026-02-20T01:55:00.000Z
 source_url: https://rednegra.net/blog/20260212-virtual-scroll/
-tags: ["Web Development", "Frontend", "React", "Performance", "User Experience", "Article", "Tutorial", "redbee - Medium", "English"]
+tags: ["English", "Web Development", "Frontend", "React", "Performance", "User Experience", "Article", "Tutorial", "redbee - Medium"]
 ---
 
 

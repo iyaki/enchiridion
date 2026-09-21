@@ -34,6 +34,8 @@ tags: ["Website", "Article", "English", "System Design / Software Architecture",
 
 
 
+
+
 | Standard Setup | Radical simple setup |
 | --- | --- |
 | Many Microservices | Monolith |

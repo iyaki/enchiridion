@@ -4,7 +4,7 @@ notion_id: b36af3f4-cea2-460d-a1b0-95525b7811eb
 notion_url: https://app.notion.com/p/The-C4-model-for-visualising-software-architecture-b36af3f4cea2460da1b095525b7811eb
 last_edited: 2023-01-13T19:20:00.000Z
 source_url: https://c4model.com/
-tags: ["Tool", "Website", "Guide", "English", "Documentation"]
+tags: ["Documentation", "Tool", "Website", "Guide", "English"]
 ---
 
 
@@ -402,6 +402,7 @@ tags: ["Tool", "Website", "Guide", "English", "Documentation"]
 | **Code Element** | A component |  <br>• Name* <br>• Description <br>• Fully qualified type  |
 | **Relationship**** |  |  <br>• Description <br>• Technology  |
 
+- 
 - 
 
 ### 

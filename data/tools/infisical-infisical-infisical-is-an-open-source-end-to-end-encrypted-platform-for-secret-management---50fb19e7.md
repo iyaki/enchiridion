@@ -4,7 +4,7 @@ notion_id: 50fb19e7-3008-4a90-b51d-80059edd637a
 notion_url: https://app.notion.com/p/Infisical-infisical-Infisical-is-an-open-source-end-to-end-encrypted-platform-for-secret-managemen-50fb19e730084a90b51d80059edd637a
 last_edited: 2023-08-01T00:10:00.000Z
 source_url: https://github.com/Infisical/infisical
-tags: ["Tool", "Service", "English", "SysAdmin", "DevOps", "Continuous Integration/Continuous Delivery", "Site Reliability Engineering", "Untried"]
+tags: ["English", "SysAdmin", "DevOps", "Continuous Integration/Continuous Delivery", "Site Reliability Engineering", "Untried", "Tool", "Service"]
 ---
 # 
 

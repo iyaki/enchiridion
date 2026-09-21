@@ -4,7 +4,7 @@ notion_id: 5f5d481e-747a-49d5-b0ff-5f58a09908a4
 notion_url: https://app.notion.com/p/Blot-A-blogging-platform-with-no-interface-paid-service-5f5d481e747a49d5b0ff5f58a09908a4
 last_edited: 2023-07-21T11:56:00.000Z
 source_url: https://blot.im/
-tags: ["Service", "English", "Hosting", "Blogging/Content Creation", "Untried"]
+tags: ["English", "Hosting", "Blogging/Content Creation", "Untried", "Service"]
 ---
 
 

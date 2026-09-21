@@ -4,7 +4,7 @@ notion_id: 03c5bbe2-9465-40d6-8e88-6a0f2cb60473
 notion_url: https://app.notion.com/p/Teach-Yourself-Computer-Science-03c5bbe2946540d68e886a0f2cb60473
 last_edited: 2023-02-16T19:49:00.000Z
 source_url: https://teachyourselfcs.com/
-tags: ["Programming", "System Design / Software Architecture", "Databases", "Testing", "Information Security", "Learning", "Untried", "Website", "Course", "English"]
+tags: ["English", "Programming", "System Design / Software Architecture", "Databases", "Testing", "Information Security", "Learning", "Untried", "Website", "Course"]
 ---
 
 
@@ -53,6 +53,8 @@ tags: ["Programming", "System Design / Software Architecture", "Databases", "Tes
 
 
 
+
+
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
 ## 
@@ -117,6 +119,8 @@ tags: ["Programming", "System Design / Software Architecture", "Databases", "Tes
 
 
 
+
+
 ### 
 
 
@@ -133,6 +137,8 @@ tags: ["Programming", "System Design / Software Architecture", "Databases", "Tes
 
 
 
+
+
 ### 
 
 
@@ -157,6 +163,8 @@ tags: ["Programming", "System Design / Software Architecture", "Databases", "Tes
 
 
 
+
+
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
 
@@ -188,6 +196,8 @@ tags: ["Programming", "System Design / Software Architecture", "Databases", "Tes
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
 > 
+
+
 
 ### 
 

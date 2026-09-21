@@ -4,7 +4,7 @@ notion_id: 13d54f1c-7d23-8191-a8a7-c17410bf31f1
 notion_url: https://app.notion.com/p/What-I-Wish-Someone-Told-Me-About-Postgres-13d54f1c7d238191a8a7c17410bf31f1
 last_edited: 2024-11-15T20:41:00.000Z
 source_url: https://challahscript.com/what_i_wish_someone_told_me_about_postgres
-tags: ["English", "Databases", "Article", "ChallahScript (hibachrach - Hazel Bachrach)"]
+tags: ["Databases", "Article", "ChallahScript (hibachrach - Hazel Bachrach)", "English"]
 ---
 
 
@@ -260,6 +260,10 @@ tags: ["English", "Databases", "Article", "ChallahScript (hibachrach - Hazel Bac
 
 
 - 
+
+
+
+- 
 - 
 - 
 
@@ -336,10 +340,33 @@ tags: ["English", "Databases", "Article", "ChallahScript (hibachrach - Hazel Bac
 
 
 1. 
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
-8. 
+
+
+
+1. 
+
+
+
+1. 
+
+
+
+1. 
+
+
+
+1. 
+
+
+
+1. 
+
+
+
+1. 
+
+
+
+1. 
+
+

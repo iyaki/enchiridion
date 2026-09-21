@@ -4,7 +4,7 @@ notion_id: 36d54f1c-7d23-811d-9e5b-ec617f8ae90c
 notion_url: https://app.notion.com/p/Migrating-from-Go-to-Rust-corrode-Rust-Consulting-36d54f1c7d23811d9e5bec617f8ae90c
 last_edited: 2026-09-18T00:52:00.000Z
 source_url: https://corrode.dev/learn/migration-guides/go-to-rust/
-tags: ["English", "Programming", "Rust", "Go", "Software Development", "Systems Design / Software Architecture", "Article", "Tutorial", "corrode Rust Consulting"]
+tags: ["Article", "Tutorial", "corrode Rust Consulting", "English", "Programming", "Rust", "Go", "Software Development", "Systems Design / Software Architecture"]
 ---
 - 
 - 

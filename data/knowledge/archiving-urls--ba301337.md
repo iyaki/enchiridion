@@ -4,7 +4,7 @@ notion_id: ba301337-3a10-43eb-95de-e26dd5c28ef5
 notion_url: https://app.notion.com/p/Archiving-URLs-ba3013373a1043eb95dee26dd5c28ef5
 last_edited: 2024-06-07T17:43:00.000Z
 source_url: https://gwern.net/archiving
-tags: ["English", "?", "Blogging/Content Creation", "Article", "Gwern.net"]
+tags: ["Article", "Gwern.net", "English", "?", "Blogging/Content Creation"]
 ---
 
 
@@ -22,8 +22,37 @@ tags: ["English", "?", "Blogging/Content Creation", "Article", "Gwern.net"]
 - 
 - 
 - 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
 
 > 
+
+
+
+
+
+
 
 
 
@@ -33,7 +62,13 @@ tags: ["English", "?", "Blogging/Content Creation", "Article", "Gwern.net"]
 
 
 
+
+
+
+
 > 
+
+
 
 
 
@@ -46,6 +81,18 @@ tags: ["English", "?", "Blogging/Content Creation", "Article", "Gwern.net"]
 # 
 
 > 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -62,6 +109,10 @@ tags: ["English", "?", "Blogging/Content Creation", "Article", "Gwern.net"]
 ## 
 
 > 
+
+
+
+
 
 
 
@@ -122,9 +173,17 @@ tags: ["English", "?", "Blogging/Content Creation", "Article", "Gwern.net"]
 
 
 1. 
+
+
+
+1. 
 2. 
-3. 
-4. 
+
+```
+
+```
+
+1. 
 
 
 
@@ -207,9 +266,26 @@ tags: ["English", "?", "Blogging/Content Creation", "Article", "Gwern.net"]
 
 
 1. 
-2. 
-3. 
-4. 
+
+
+
+1. 
+
+
+
+1. 
+
+
+
+
+
+
+
+
+
+1. 
+
+
 
 
 
@@ -241,6 +317,10 @@ tags: ["English", "?", "Blogging/Content Creation", "Article", "Gwern.net"]
 
 
 
+
+
+
+
 ### 
 
 
@@ -248,6 +328,79 @@ tags: ["English", "?", "Blogging/Content Creation", "Article", "Gwern.net"]
 
 
 ### 
+
+1. 
+
+
+
+1. 
+
+
+
+
+
+1. 
+
+
+
+
+
+1. 
+
+
+
+```
+
+```
+
+
+
+```
+
+```
+
+1. 
+
+### 
+
+
+
+
+
+
+
+### 
+
+
+
+
+
+
+
+1. 
+2. 
+
+
+
+1. 
+
+
+
+1. 
+
+
+
+
+
+# 
+
+> 
+
+
+
+
+
+
 
 1. 
 2. 
@@ -255,40 +408,9 @@ tags: ["English", "?", "Blogging/Content Creation", "Article", "Gwern.net"]
 4. 
 5. 
 
-### 
 
 
 
-
-
-
-
-### 
-
-
-
-
-
-
-
-1. 
-2. 
-3. 
-4. 
-
-
-
-# 
-
-> 
-
-
-
-1. 
-2. 
-3. 
-4. 
-5. 
 
 ## 
 
@@ -322,49 +444,115 @@ tags: ["English", "?", "Blogging/Content Creation", "Article", "Gwern.net"]
 
 
 
+
+
+1. 
+2. 
+
+
+
+
+
+1. 
+
+
+
+- 
+- 
+
+
+
+- 
+- 
+- 
+
+
+
+
+
+
+
+# 
+
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+
+# 
+
+## 
+
+
+
+
+
+```
+
+```
+
+
+
+```
+
+```
+
+## 
+
+
+
+## 
+
+
+
+1. 
+
+
+
+1. 
+
+> 
+
+
+
+1. 
+
+> 
+
+
+
 1. 
 2. 
 3. 
 
-# 
-
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-
-# 
-
-## 
-
-
-
-
-
 ```
 
 ```
 
-
-
-```
-
-```
-
-## 
-
-
-
-## 
+1. 
+2. 
+3. 
+4. 
 
 
 
@@ -385,16 +573,6 @@ tags: ["English", "?", "Blogging/Content Creation", "Article", "Gwern.net"]
 15. 
 16. 
 17. 
-18. 
-19. 
-20. 
-21. 
-22. 
-23. 
-24. 
-25. 
-26. 
-27. 
 
 # 
 

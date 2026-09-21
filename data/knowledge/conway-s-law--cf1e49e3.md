@@ -14,6 +14,8 @@ tags: ["English", "Line/People/Team Management", "System Design / Software Archi
 
 
 
+
+
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
 

@@ -4,7 +4,7 @@ notion_id: 36fc2c5c-08dd-46e4-b899-88ea3dc73647
 notion_url: https://app.notion.com/p/Skiff-Private-encrypted-secure-email-10-GB-free-36fc2c5c08dd46e4b89988ea3dc73647
 last_edited: 2023-10-12T15:59:00.000Z
 source_url: https://skiff.com/
-tags: ["Service", "English", "Email", "Information Security", "Untried"]
+tags: ["Email", "Information Security", "Untried", "Service", "English"]
 ---
 
 

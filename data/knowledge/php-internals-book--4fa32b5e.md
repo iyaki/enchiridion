@@ -4,6 +4,6 @@ notion_id: 4fa32b5e-7ed9-4475-8631-0b851450c434
 notion_url: https://app.notion.com/p/PHP-Internals-Book-4fa32b5e7ed9447586310b851450c434
 last_edited: 2023-04-25T14:14:00.000Z
 source_url: https://www.phpinternalsbook.com/
-tags: ["PHP", "Book", "English"]
+tags: ["English", "PHP", "Book"]
 ---
 [https://www.phpinternalsbook.com/](https://www.phpinternalsbook.com/)

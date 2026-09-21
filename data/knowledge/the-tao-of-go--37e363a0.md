@@ -20,48 +20,12 @@ tags: ["English", "Principles", "Programming", "Go", "Article", "BITFIELD CONSUL
 
 
 
-## 
-
-<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
-
-> 
-
-
-
-
-
-
-
-> 
-
-
-
-
-
-
-
-
-
-
-
-> 
-
-
-
 
 
 ## 
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
-
-
-> 
-
-
-
-
-
 > 
 
 
@@ -73,6 +37,56 @@ tags: ["English", "Principles", "Programming", "Go", "Article", "BITFIELD CONSUL
 
 
 > 
+
+
+
+
+
+
+
+
+
+
+
+
+
+> 
+
+
+
+
+
+
+
+## 
+
+<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
+
+
+
+> 
+
+
+
+
+
+
+
+> 
+
+
+
+
+
+
+
+
+
+
+
+> 
+
+
 
 
 
@@ -91,6 +105,8 @@ tags: ["English", "Principles", "Programming", "Go", "Article", "BITFIELD CONSUL
 
 
 > 
+
+
 
 
 

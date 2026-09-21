@@ -604,6 +604,9 @@ tags: ["English", "Writting", "Documentation", "Communication", "Article", "Mich
 - 
 - 
 - 
+- 
+- 
+- 
 
 ### 
 
@@ -621,6 +624,9 @@ tags: ["English", "Writting", "Documentation", "Communication", "Article", "Mich
 4. 
 5. 
 6. 
+7. 
+8. 
+9. 
 
 
 

@@ -4,7 +4,7 @@ notion_id: 14a54f1c-7d23-81af-b50b-efe336f59ae0
 notion_url: https://app.notion.com/p/A-blueprint-for-async-work-environments-14a54f1c7d2381afb50befe336f59ae0
 last_edited: 2025-01-20T18:21:00.000Z
 source_url: https://leaddev.com/culture/blueprint-async-work-environments
-tags: ["Article", "LeadDev", "English", "Line/People/Team Management", "Communication", "Project Management", "Productivity"]
+tags: ["LeadDev", "English", "Line/People/Team Management", "Communication", "Project Management", "Productivity", "Article"]
 ---
 
 

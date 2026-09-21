@@ -26,6 +26,27 @@ tags: ["Domain Driven Design", "Guide", "English"]
 - 
 - 
 - 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
 
 ## 
 
@@ -139,6 +160,14 @@ tags: ["Domain Driven Design", "Guide", "English"]
 
 > 
 
+### 
+
+
+
+
+
+
+
 
 
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
@@ -242,6 +271,12 @@ tags: ["Domain Driven Design", "Guide", "English"]
 
 
 > 
+
+### 
+
+
+
+
 
 
 

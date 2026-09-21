@@ -9,5 +9,3 @@ tags: ["English", "Line/People/Team Management", "Productivity", "Article", "Lea
 [https://leaddev.com/managing-managers/how-streamline-your-processes-engineering-manager](https://leaddev.com/managing-managers/how-streamline-your-processes-engineering-manager)
 
 
-
-<!-- unsupported block: synced_block -->

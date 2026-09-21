@@ -4,7 +4,7 @@ notion_id: b0c52c86-7992-4779-94c0-c4c70981dddf
 notion_url: https://app.notion.com/p/HASURA-Build-modern-apps-APIs-10x-faster-Instant-GraphQL-APIs-b0c52c867992477994c0c4c70981dddf
 last_edited: 2023-02-01T17:02:00.000Z
 source_url: https://hasura.io/
-tags: ["Tool", "Service", "English", "System Design / Software Architecture", "Programming", "Productivity", "Product Management", "Project Management", "Untried"]
+tags: ["English", "System Design / Software Architecture", "Programming", "Productivity", "Product Management", "Project Management", "Untried", "Tool", "Service"]
 ---
 - 
 - 

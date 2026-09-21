@@ -43,6 +43,8 @@ tags: ["Article", "English", "Reflection", "Programming"]
 
 
 
+
+
 ## 
 
 
@@ -91,6 +93,8 @@ tags: ["Article", "English", "Reflection", "Programming"]
 
 
 
+
+
 ## 
 
 
@@ -98,10 +102,24 @@ tags: ["Article", "English", "Reflection", "Programming"]
 
 
 1. 
-2. 
-3. 
-4. 
-5. 
+
+
+
+1. 
+
+
+
+1. 
+
+
+
+1. 
+
+
+
+1. 
+
+
 
 
 
@@ -114,22 +132,65 @@ tags: ["Article", "English", "Reflection", "Programming"]
 
 
 - 
+
+
+
 - 
+
+
+
 - 
+
+
+
 - 
+
+
+
 - 
+
+
 
 
 
 
 
 1. 
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
-8. 
-9. 
-10. 
+
+
+
+1. 
+
+
+
+1. 
+
+
+
+1. 
+
+
+
+1. 
+
+
+
+1. 
+
+
+
+1. 
+
+
+
+1. 
+
+
+
+1. 
+
+
+
+1. 
+
+

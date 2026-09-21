@@ -4,9 +4,11 @@ notion_id: e66f0311-8587-4c6e-9409-e8fcf8d5762d
 notion_url: https://app.notion.com/p/Animate-css-A-cross-browser-library-of-CSS-animations-e66f031185874c6e9409e8fcf8d5762d
 last_edited: 2023-11-09T19:05:00.000Z
 source_url: https://animate.style/
-tags: ["CSS", "Frontend", "Untried", "Framework/Library", "English"]
+tags: ["English", "CSS", "Frontend", "Untried", "Framework/Library"]
 ---
 > 
+
+
 
 
 
@@ -51,6 +53,8 @@ tags: ["CSS", "Frontend", "Untried", "Framework/Library", "English"]
 
 
 > 
+
+
 
 ### 
 

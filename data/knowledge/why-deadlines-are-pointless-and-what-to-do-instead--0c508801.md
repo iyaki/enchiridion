@@ -86,6 +86,8 @@ tags: ["English", "Project Management", "Product Management", "Article", "Lucas 
 
 
 
+
+
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
 
@@ -95,6 +97,8 @@ tags: ["English", "Project Management", "Product Management", "Article", "Lucas 
 
 
 > 
+
+
 
 ### 
 
@@ -131,6 +135,8 @@ tags: ["English", "Project Management", "Product Management", "Article", "Lucas 
 
 
 > 
+
+
 
 
 

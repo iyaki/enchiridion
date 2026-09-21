@@ -6,4 +6,4 @@ last_edited: 2023-06-05T00:24:00.000Z
 source_url: https://youtu.be/sUsn15lz03k
 tags: ["Video", "This is the Agile Way (Javier Garzas)", "Español", "Agile", "Line/People/Team Management"]
 ---
-<!-- unsupported block: video -->
+[https://www.youtube.com/watch?v=sUsn15lz03k](https://www.youtube.com/watch?v=sUsn15lz03k)

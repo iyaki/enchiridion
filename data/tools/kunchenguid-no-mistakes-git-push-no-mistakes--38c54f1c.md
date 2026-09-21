@@ -4,7 +4,7 @@ notion_id: 38c54f1c-7d23-813b-8cf0-cb074fb5f591
 notion_url: https://app.notion.com/p/kunchenguid-no-mistakes-git-push-no-mistakes-38c54f1c7d23813b8cf0cb074fb5f591
 last_edited: 2026-06-27T02:52:00.000Z
 source_url: https://github.com/kunchenguid/no-mistakes
-tags: ["GitHub", "English", "Git", "DevOps", "Continuous Integration/Continuous Delivery", "Automation", "Programming", "Tool", "Guide"]
+tags: ["Tool", "Guide", "GitHub", "English", "Git", "DevOps", "Continuous Integration/Continuous Delivery", "Automation", "Programming"]
 ---
 # 
 

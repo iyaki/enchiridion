@@ -4,7 +4,7 @@ notion_id: 4635fead-485e-4b95-b790-68847abb0c12
 notion_url: https://app.notion.com/p/Learn-Performance-4635fead485e4b95b79068847abb0c12
 last_edited: 2023-11-28T18:18:00.000Z
 source_url: https://web.dev/learn/performance
-tags: ["English", "Español", "Others", "Web Development", "HTML", "CSS", "Javascript", "Guide", "web.dev"]
+tags: ["Web Development", "HTML", "CSS", "Javascript", "Guide", "web.dev", "English", "Español", "Others"]
 ---
 
 

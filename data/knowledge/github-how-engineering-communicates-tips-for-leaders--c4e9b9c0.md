@@ -22,6 +22,8 @@ tags: ["English", "Communication", "Line/People/Team Management", "Leadersheep",
 - 
 - 
 - 
+- 
+- 
 
 
 

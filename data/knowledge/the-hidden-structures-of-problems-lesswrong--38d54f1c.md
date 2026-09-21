@@ -4,7 +4,7 @@ notion_id: 38d54f1c-7d23-8139-83c7-dcda04709628
 notion_url: https://app.notion.com/p/The-Hidden-Structures-of-Problems-LessWrong-38d54f1c7d23813983c7dcda04709628
 last_edited: 2026-09-18T00:52:00.000Z
 source_url: https://www.lesswrong.com/posts/Cisy9STMoFYwboTsy/the-hidden-structures-of-problems
-tags: ["Decision Making", "Problem Solving", "System Design / Software Architecture", "Communication", "Article", "Note", "LessWrong", "English"]
+tags: ["English", "Decision Making", "Problem Solving", "System Design / Software Architecture", "Communication", "Article", "Note", "LessWrong"]
 ---
 
 

@@ -24,6 +24,8 @@ tags: ["English", "Programming", "System Design / Software Architecture", "Learn
 
 
 
+
+
 ### 
 
 
@@ -34,6 +36,9 @@ tags: ["English", "Programming", "System Design / Software Architecture", "Learn
 
 
 
+- 
+- 
+- 
 - 
 
 
@@ -52,12 +57,15 @@ tags: ["English", "Programming", "System Design / Software Architecture", "Learn
 
 
 
+
+
 ## 
 
 ### 
 
 
 
+- 
 - 
 
 ```
@@ -77,6 +85,9 @@ tags: ["English", "Programming", "System Design / Software Architecture", "Learn
 
 
 - 
+- 
+- 
+- 
 
 ### 
 
@@ -92,6 +103,7 @@ tags: ["English", "Programming", "System Design / Software Architecture", "Learn
 
 
 
+- 
 - 
 
 ### 
@@ -104,12 +116,6 @@ tags: ["English", "Programming", "System Design / Software Architecture", "Learn
 
 > 
 
-### 
-
-
-
-- 
-
 
 
 ### 
@@ -117,6 +123,22 @@ tags: ["English", "Programming", "System Design / Software Architecture", "Learn
 
 
 - 
+- 
+- 
+- 
+- 
+- 
+- 
+
+
+
+### 
+
+
+
+- 
+- 
+- 
 
 ### 
 
@@ -126,11 +148,6 @@ tags: ["English", "Programming", "System Design / Software Architecture", "Learn
 
 - 
 - 
-
-## 
-
-
-
 - 
 
 ## 
@@ -138,11 +155,8 @@ tags: ["English", "Programming", "System Design / Software Architecture", "Learn
 
 
 - 
-
-### 
-
-
-
+- 
+- 
 - 
 
 ## 
@@ -150,13 +164,7 @@ tags: ["English", "Programming", "System Design / Software Architecture", "Learn
 
 
 - 
-
-## 
-
-### 
-
-
-
+- 
 - 
 
 ### 
@@ -164,12 +172,41 @@ tags: ["English", "Programming", "System Design / Software Architecture", "Learn
 
 
 - 
+- 
+- 
+- 
+
+## 
+
+
+
+- 
+
+## 
 
 ### 
 
 
 
 - 
+- 
+- 
+- 
+
+### 
+
+
+
+- 
+- 
+
+### 
+
+
+
+- 
+- 
+- 
 
 ## 
 
@@ -177,6 +214,8 @@ tags: ["English", "Programming", "System Design / Software Architecture", "Learn
 
 ## 
 
+- 
+- 
 - 
 
 ## 
@@ -187,6 +226,9 @@ tags: ["English", "Programming", "System Design / Software Architecture", "Learn
 
 
 
+- 
+- 
+- 
 - 
 
 
@@ -198,6 +240,8 @@ tags: ["English", "Programming", "System Design / Software Architecture", "Learn
 ### 
 
 - 
+- 
+- 
 
 ## 
 
@@ -220,19 +264,7 @@ tags: ["English", "Programming", "System Design / Software Architecture", "Learn
 
 
 - 
-
-### 
-
-
-
 - 
-
-## 
-
-### 
-
-
-
 - 
 
 ### 
@@ -241,6 +273,25 @@ tags: ["English", "Programming", "System Design / Software Architecture", "Learn
 
 - 
 
+## 
+
+### 
+
+
+
+- 
+- 
+- 
+- 
+
+### 
+
+
+
+- 
+- 
+- 
+
 ### 
 
 
@@ -252,11 +303,18 @@ tags: ["English", "Programming", "System Design / Software Architecture", "Learn
 
 
 - 
+- 
+- 
+- 
+- 
 
 ## 
 
 
 
+- 
+- 
+- 
 - 
 
 ## 
@@ -287,6 +345,10 @@ tags: ["English", "Programming", "System Design / Software Architecture", "Learn
 
 ### 
 
+- 
+- 
+- 
+- 
 - 
 
 ### 
@@ -302,11 +364,7 @@ tags: ["English", "Programming", "System Design / Software Architecture", "Learn
 ```
 
 - 
-
-### 
-
-
-
+- 
 - 
 
 ### 
@@ -314,9 +372,8 @@ tags: ["English", "Programming", "System Design / Software Architecture", "Learn
 
 
 - 
-
-### 
-
+- 
+- 
 - 
 
 ### 
@@ -324,9 +381,34 @@ tags: ["English", "Programming", "System Design / Software Architecture", "Learn
 
 
 - 
+- 
+- 
+- 
+- 
 
 ### 
 
+- 
+- 
+- 
+- 
+- 
+
+### 
+
+
+
+- 
+- 
+- 
+- 
+
+### 
+
+- 
+- 
+- 
+- 
 - 
 
 ### 

@@ -24,6 +24,8 @@ tags: ["Article", "This is the Agile Way (Javier Garzas)", "English", "Agile", "
 
 
 
+
+
 ## 
 
 

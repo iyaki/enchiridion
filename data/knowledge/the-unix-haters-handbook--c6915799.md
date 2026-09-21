@@ -6,4 +6,4 @@ last_edited: 2023-08-16T14:40:00.000Z
 source_url: https://web.mit.edu/~simsong/www/ugh.pdf
 tags: ["Book", "English", "Linux"]
 ---
-<!-- unsupported block: pdf -->
+[https://web.mit.edu/~simsong/www/ugh.pdf](https://web.mit.edu/~simsong/www/ugh.pdf)

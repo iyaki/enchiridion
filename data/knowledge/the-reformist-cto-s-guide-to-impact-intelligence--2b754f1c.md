@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-81c2-b72b-cc5967b91336
 notion_url: https://app.notion.com/p/The-Reformist-CTO-s-Guide-to-Impact-Intelligence-2b754f1c7d2381c2b72bcc5967b91336
 last_edited: 2025-11-26T19:04:00.000Z
 source_url: https://martinfowler.com/articles/impact-intel.html
-tags: ["English", "Leadership", "Product Management", "Agile", "Change Management", "Article", "Guide", "martinfowler"]
+tags: ["martinfowler", "English", "Leadership", "Product Management", "Agile", "Change Management", "Article", "Guide"]
 ---
 
 

@@ -35,7 +35,7 @@ tags: ["English", "Line/People/Team Management", "Leadersheep", "Communication",
 
 ### 
 
-<!-- unsupported block: video -->
+[https://www.youtube.com/embed/jDypK1IJlAQ](https://www.youtube.com/embed/jDypK1IJlAQ)
 
 
 
@@ -59,7 +59,7 @@ tags: ["English", "Line/People/Team Management", "Leadersheep", "Communication",
 
 ### 
 
-<!-- unsupported block: video -->
+[https://www.youtube.com/embed/v4BrjfsidWI](https://www.youtube.com/embed/v4BrjfsidWI)
 
 
 
@@ -79,7 +79,7 @@ tags: ["English", "Line/People/Team Management", "Leadersheep", "Communication",
 
 ### 
 
-<!-- unsupported block: video -->
+[https://www.youtube.com/embed/OZO1akLMUKU?si=rSwN60B_I7R3kpjP](https://www.youtube.com/embed/OZO1akLMUKU?si=rSwN60B_I7R3kpjP)
 
 
 

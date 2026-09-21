@@ -18,6 +18,22 @@ tags: ["English", "Event Driven Architecture", "Article", "Quastor"]
 - 
 - 
 - 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
 
 
 
@@ -214,6 +230,12 @@ tags: ["English", "Event Driven Architecture", "Article", "Quastor"]
 
 
 
+- 
+- 
+- 
+- 
+- 
+- 
 - 
 - 
 

@@ -31,6 +31,12 @@ tags: ["MDN Curriculum", "English", "UI/UX", "Programming", "Graphic Design", "A
 - 
 - 
 - 
+- 
+- 
+- 
+- 
+- 
+- 
 
 
 
@@ -40,6 +46,15 @@ tags: ["MDN Curriculum", "English", "UI/UX", "Programming", "Graphic Design", "A
 
 
 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
 - 
 - 
 - 

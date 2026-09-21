@@ -53,4 +53,9 @@ tags: ["English", "Line/People/Team Management", "Article", "Jamie’s blog"]
 
 
 1. 
-2. 
+
+
+
+1. 
+
+

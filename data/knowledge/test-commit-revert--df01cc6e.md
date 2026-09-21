@@ -4,7 +4,7 @@ notion_id: df01cc6e-5949-49d3-a844-fed0123b8952
 notion_url: https://app.notion.com/p/Test-Commit-Revert-df01cc6e594949d3a844fed0123b8952
 last_edited: 2022-12-31T22:11:00.000Z
 source_url: https://franiglesias.github.io/tcr/
-tags: ["Article", "The Talking Bit - Fran Iglesias", "Español", "Programming", "Testing"]
+tags: ["Español", "Programming", "Testing", "Article", "The Talking Bit - Fran Iglesias"]
 ---
 
 

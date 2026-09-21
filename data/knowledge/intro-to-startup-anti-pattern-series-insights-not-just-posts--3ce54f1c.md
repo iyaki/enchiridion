@@ -4,7 +4,7 @@ notion_id: 3ce54f1c-7d23-81c0-b15a-e14210f63104
 notion_url: https://app.notion.com/p/Intro-to-Startup-anti-pattern-Series-Insights-not-just-posts-3ce54f1c7d2381c0b15ae14210f63104
 last_edited: 2026-09-18T00:52:00.000Z
 source_url: https://www.itamarnovick.com/intro-to-startup-anti-pattern-series/
-tags: ["Personal Blog", "English", "Startup Management", "Entrepreneurship", "Product Management", "Article", "Guide"]
+tags: ["English", "Startup Management", "Entrepreneurship", "Product Management", "Article", "Guide", "Personal Blog"]
 ---
 
 

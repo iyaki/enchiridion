@@ -20,7 +20,11 @@ tags: ["Tool", "English", "Programming", "Communication"]
 
 
 
-<!-- unsupported block: column_list -->
+<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
+
+
+
+<!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 
 
 

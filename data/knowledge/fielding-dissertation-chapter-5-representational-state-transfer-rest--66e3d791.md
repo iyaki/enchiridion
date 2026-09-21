@@ -4,7 +4,7 @@ notion_id: 66e3d791-19a5-4cd6-b473-65654f59990b
 notion_url: https://app.notion.com/p/Fielding-Dissertation-CHAPTER-5-Representational-State-Transfer-REST-66e3d79119a54cd6b47365654f59990b
 last_edited: 2023-11-09T18:59:00.000Z
 source_url: https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
-tags: ["Article", "English", "Web Development", "REST API"]
+tags: ["English", "Web Development", "REST API", "Article"]
 ---
 
 

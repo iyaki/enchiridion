@@ -9,5 +9,3 @@ tags: ["English", "Line/People/Team Management", "Communication", "Article", "Le
 [https://leaddev.com/managing-distributed-teams/run-better-meetings-build-community-your-remote-team](https://leaddev.com/managing-distributed-teams/run-better-meetings-build-community-your-remote-team)
 
 
-
-<!-- unsupported block: synced_block -->

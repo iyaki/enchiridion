@@ -9,5 +9,3 @@ tags: ["Article", "LeadDev", "English", "Line/People/Team Management"]
 [https://toggl.com/blog/remote-first-vs-remote-friendly](https://toggl.com/blog/remote-first-vs-remote-friendly)
 
 
-
-<!-- unsupported block: synced_block -->

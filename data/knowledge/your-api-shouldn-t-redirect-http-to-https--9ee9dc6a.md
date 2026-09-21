@@ -4,7 +4,7 @@ notion_id: 9ee9dc6a-5ecc-4d43-b2bc-e1949f049ef0
 notion_url: https://app.notion.com/p/Your-API-Shouldn-t-Redirect-HTTP-to-HTTPS-9ee9dc6a5ecc4d43b2bce1949f049ef0
 last_edited: 2024-06-07T15:25:00.000Z
 source_url: https://jviide.iki.fi/http-redirects
-tags: ["Article", "@jviide", "English", "REST API", "System Design / Software Architecture", "SysAdmin"]
+tags: ["REST API", "System Design / Software Architecture", "SysAdmin", "Article", "@jviide", "English"]
 ---
 ## 
 
@@ -117,6 +117,12 @@ tags: ["Article", "@jviide", "English", "REST API", "System Design / Software Ar
 - 
 - 
 - 
+
+
+
+
+
+
 
 ## 
 

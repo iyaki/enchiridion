@@ -9,5 +9,3 @@ tags: ["Article", "LeadDev", "English", "DevOps", "Information Security", "Site 
 [https://leaddev.com/security/six-ways-security-teams-can-build-better-relationships-engineering](https://leaddev.com/security/six-ways-security-teams-can-build-better-relationships-engineering)
 
 
-
-<!-- unsupported block: synced_block -->

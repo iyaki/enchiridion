@@ -4,7 +4,7 @@ notion_id: bf59be64-1be1-4512-b03f-3a0609e554d8
 notion_url: https://app.notion.com/p/Flagsmith-Open-Source-Feature-Flag-Remote-Config-Service-bf59be641be14512b03f3a0609e554d8
 last_edited: 2023-01-13T23:56:00.000Z
 source_url: https://flagsmith.com/
-tags: ["Programming", "System Design / Software Architecture", "DevOps", "Product Management", "Continuous Integration/Continuous Delivery", "Tool", "Service", "English"]
+tags: ["English", "Programming", "System Design / Software Architecture", "DevOps", "Product Management", "Continuous Integration/Continuous Delivery", "Tool", "Service"]
 ---
 
 

@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-8107-bc65-f6106d88512e
 notion_url: https://app.notion.com/p/From-Memo-to-Movement-Shopify-s-Cultural-Adoption-of-AI-First-Round-2b754f1c7d238107bc65f6106d88512e
 last_edited: 2025-11-26T17:52:00.000Z
 source_url: https://www.firstround.com/ai/shopify
-tags: ["English", "AI", "Product Management", "Culture", "Workplace", "Shopify", "Article", "First Round"]
+tags: ["AI", "Product Management", "Culture", "Workplace", "Shopify", "Article", "First Round", "English"]
 ---
 
 

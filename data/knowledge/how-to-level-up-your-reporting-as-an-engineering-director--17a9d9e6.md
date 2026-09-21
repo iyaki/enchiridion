@@ -9,5 +9,3 @@ tags: ["English", "Line/People/Team Management", "Article", "LeadDev"]
 [https://leaddev.com/reporting-metrics/how-level-your-reporting-engineering-director](https://leaddev.com/reporting-metrics/how-level-your-reporting-engineering-director)
 
 
-
-<!-- unsupported block: synced_block -->

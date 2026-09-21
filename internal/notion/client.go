@@ -105,11 +105,16 @@ func (c *Client) distillAll(raws []apiBlock) ([]model.Block, error) {
 	var blocks []model.Block
 	for _, raw := range raws {
 		switch {
-		case raw.Type == "synced_block" && !raw.HasChildren:
-			// Synced instance: its content lives in the original block,
-			// not in this page's tree — surface it, never silence (ADR-17).
-			blocks = append(blocks, model.Block{Type: raw.Type})
-		case raw.Type == "synced_block", raw.Type == "column_list", raw.Type == "column":
+		case raw.Type == "synced_block":
+			// Own children or the original's: fully handled here.
+			var err error
+			blocks, err = c.distillSyncedBlock(blocks, raw)
+			if err != nil {
+				return nil, err
+			}
+
+			continue
+		case raw.Type == "column_list", raw.Type == "column":
 			// Container: emit children only.
 		default:
 			blk, err := c.distill(raw)
@@ -126,6 +131,27 @@ func (c *Client) distillAll(raws []apiBlock) ([]model.Block, error) {
 	}
 
 	return blocks, nil
+}
+
+// distillSyncedBlock splices synced content in document order: an instance
+// (synced_from set) inherits the original block's children; an original
+// contributes its own. When the source is unreachable the block surfaces as
+// a visible comment — never silence, never a failed page (ADR-17).
+func (c *Client) distillSyncedBlock(blocks []model.Block, raw apiBlock) ([]model.Block, error) {
+	source := raw.ID
+	if raw.SyncedBlock != nil && raw.SyncedBlock.SyncedFrom != nil && raw.SyncedBlock.SyncedFrom.BlockID != "" {
+		source = raw.SyncedBlock.SyncedFrom.BlockID
+	}
+	kids, err := c.children(source)
+	if err != nil {
+		return append(blocks, model.Block{Type: raw.Type}), nil
+	}
+	flat, err := c.distillAll(kids)
+	if err != nil {
+		return nil, err
+	}
+
+	return append(blocks, flat...), nil
 }
 
 // appendChildren fetches raw's children, flattens them, and appends the

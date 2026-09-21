@@ -454,6 +454,9 @@ func flattenChildrenHandler(t *testing.T, w http.ResponseWriter, r *http.Request
 		writeJSON(t, w, blocksResponse{Results: []apiBlock{
 			{Type: model.TypeHeading2, Heading2: &textPayload{RichText: []richRun{{PlainText: "synced content"}}}},
 		}})
+	case strings.Contains(path, "sb-2"):
+		// Childless synced block: nothing to splice, nothing to hide.
+		writeJSON(t, w, blocksResponse{})
 	case strings.Contains(path, "cl-1"):
 		writeJSON(t, w, blocksResponse{Results: []apiBlock{
 			{Type: "column", ID: "col-1", HasChildren: true},
@@ -505,7 +508,6 @@ func TestPageBlocksFlattensAllChildren(t *testing.T) {
 		{model.TypeToDo, "ship", true},
 		{model.TypeBulletedItem, "nested", false},
 		{model.TypeHeading2, "synced content", false},
-		{"synced_block", "", false},
 		{model.TypeBulletedItem, "in column", false},
 		{model.TypeTable, "", false},
 	}
@@ -559,6 +561,66 @@ func TestPageBlocksMediaURLs(t *testing.T) {
 	if blocks[2].URL != "https://example.com/clip.mp4" || blocks[2].Internal {
 		t.Errorf("video = %+v", blocks[2])
 	}
+}
+
+func TestPageBlocksSyncedInstanceSplicesOriginalChildren(t *testing.T) {
+	rec := &recorder{}
+	c := newTestClient(t, rec)
+	rec.handler = func(w http.ResponseWriter, r *http.Request) {
+		switch {
+		case strings.Contains(r.URL.Path, "orig-9"):
+			writeJSON(t, w, blocksResponse{Results: []apiBlock{
+				{Type: model.TypeParagraph, Paragraph: &textPayload{RichText: []richRun{{PlainText: "inherited content"}}}},
+			}})
+		default:
+			// An instance mirrors the original's has_children flag.
+			writeJSON(t, w, blocksResponse{Results: []apiBlock{
+				{Type: "synced_block", ID: "inst-1", HasChildren: true,
+					SyncedBlock: &syncedBlockPayload{SyncedFrom: &syncedFromPayload{BlockID: "orig-9"}}},
+			}})
+		}
+	}
+
+	blocks, err := c.PageBlocks("page1")
+	if err != nil {
+		t.Fatalf("PageBlocks: %v", err)
+	}
+	if len(blocks) != 1 || blocks[0].Type != model.TypeParagraph || plainText(blocks[0]) != "inherited content" {
+		t.Fatalf("blocks = %+v, want single paragraph with original content", blockTypes(blocks))
+	}
+}
+
+func TestPageBlocksSyncedUnreachableOriginalSurfacesMarker(t *testing.T) {
+	rec := &recorder{}
+	c := newTestClient(t, rec)
+	rec.handler = func(w http.ResponseWriter, r *http.Request) {
+		if strings.Contains(r.URL.Path, "gone-9") {
+			w.WriteHeader(http.StatusBadRequest)
+
+			return
+		}
+		writeJSON(t, w, blocksResponse{Results: []apiBlock{
+			{Type: "synced_block", ID: "inst-2",
+				SyncedBlock: &syncedBlockPayload{SyncedFrom: &syncedFromPayload{BlockID: "gone-9"}}},
+		}})
+	}
+
+	blocks, err := c.PageBlocks("page1")
+	if err != nil {
+		t.Fatalf("PageBlocks: %v", err)
+	}
+	if len(blocks) != 1 || blocks[0].Type != "synced_block" {
+		t.Fatalf("blocks = %v, want single synced_block marker", blockTypes(blocks))
+	}
+}
+
+func blockTypes(blocks []model.Block) []string {
+	out := make([]string, len(blocks))
+	for i, blk := range blocks {
+		out[i] = blk.Type
+	}
+
+	return out
 }
 
 func plainText(blk model.Block) string {

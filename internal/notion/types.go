@@ -39,6 +39,14 @@ type toDoPayload struct {
 	Checked bool `json:"checked"`
 }
 
+type syncedFromPayload struct {
+	BlockID string `json:"block_id"`
+}
+
+type syncedBlockPayload struct {
+	SyncedFrom *syncedFromPayload `json:"synced_from"`
+}
+
 type childPagePayload struct {
 	Title string `json:"title"`
 }
@@ -59,17 +67,18 @@ type apiBlock struct {
 	ID          string `json:"id"`
 	HasChildren bool   `json:"has_children"`
 
-	Paragraph    *textPayload `json:"paragraph"`
-	Heading1     *textPayload `json:"heading_1"`
-	Heading2     *textPayload `json:"heading_2"`
-	Heading3     *textPayload `json:"heading_3"`
-	BulletedItem *textPayload `json:"bulleted_list_item"`
-	NumberedItem *textPayload `json:"numbered_list_item"`
-	Quote        *textPayload `json:"quote"`
-	Callout      *textPayload `json:"callout"`
-	Code         *textPayload `json:"code"`
-	Toggle       *textPayload `json:"toggle"`
-	ToDo         *toDoPayload `json:"to_do"`
+	Paragraph    *textPayload        `json:"paragraph"`
+	Heading1     *textPayload        `json:"heading_1"`
+	Heading2     *textPayload        `json:"heading_2"`
+	Heading3     *textPayload        `json:"heading_3"`
+	BulletedItem *textPayload        `json:"bulleted_list_item"`
+	NumberedItem *textPayload        `json:"numbered_list_item"`
+	Quote        *textPayload        `json:"quote"`
+	Callout      *textPayload        `json:"callout"`
+	Code         *textPayload        `json:"code"`
+	Toggle       *textPayload        `json:"toggle"`
+	ToDo         *toDoPayload        `json:"to_do"`
+	SyncedBlock  *syncedBlockPayload `json:"synced_block"`
 
 	Bookmark    *urlPayload       `json:"bookmark"`
 	Embed       *urlPayload       `json:"embed"`

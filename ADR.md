@@ -297,8 +297,9 @@ KB pages carry none.
 handling already retries); nested-list indentation flattens and numbering
 restarts at splice boundaries — accepted for grep-ability; supersedes the
 ADR-05 rendering-contract line that toggle content is not downloaded; a
-`synced_block` instance (content lives in the original block, outside this
-page's tree) surfaces as a visible comment instead of silence.
+`synced_block` instance inherits the original block's children (synced from
+its `block_id`), and when that source is unreachable the block surfaces as a
+visible comment instead of failing the page.
 
 ---
 

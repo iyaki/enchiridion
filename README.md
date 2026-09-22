@@ -10,7 +10,7 @@ patterns, or assisting decisions.
 
 ## Status
 
-`v0.3.0` — shipped and validated against the live API: sync engine, CLI,
+`v0.4.0` — shipped and validated against the live API: sync engine, CLI,
 nightly/monthly sync workflows (this repository keeps a committed mirror
 under [`data/`](data/)), multi-platform releases, the published devcontainer
 feature
@@ -20,8 +20,10 @@ children fetched and flattened, to-do checkboxes, media links, synced-block
 resolution (ADR-17). Consumer projects vendor the mirror with
 `enchiridion pull` (ADR-18). The CLI follows standard help conventions
 (`--help`/`-h` to stdout, exit 0), reports sync progress on stderr
-(`--quiet` silences it), and ships a read-only `enchiridion doctor` that
-checks configuration and connectivity without syncing.
+(`--quiet` silences it), and ships two read-only commands: `enchiridion
+doctor` (configuration and connectivity without syncing) and `enchiridion
+search` (ranks mirror files by term matches over title, tags, filename and
+body; exit 1 when nothing matches).
 
 ## Install
 
@@ -82,6 +84,7 @@ Each user provides their own values — the binary knows no one's token
 enchiridion sync          # automatic mode (see below)
 enchiridion sync --full   # forced full: the only mode that propagates deletions
 enchiridion doctor        # read-only config and connectivity check; never syncs
+enchiridion search --dir data accessibility   # query the mirror, best-ranked first
 ```
 
 `enchiridion <command> --help` explains each command. Sync progress goes to

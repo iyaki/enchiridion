@@ -22,6 +22,9 @@ components:
   render:
     in:
       - internal/render/**
+  search:
+    in:
+      - internal/search/**
   sync:
     in:
       - internal/sync/**
@@ -45,5 +48,7 @@ deps:
     mayDependOn:
       - model
     anyVendorDeps: false
+  # search has no deps rule: with none, it cannot depend on any component
+  # (stdlib only, like ADR-08 requires).
   # notion and render are intentionally absent from deps: with no rule and no
   # commonComponents, they cannot depend on any other component (ADR-08).

@@ -6,6 +6,7 @@ import (
 	"os"
 	"os/exec"
 	"path/filepath"
+	"slices"
 	"strings"
 	"testing"
 	"time"
@@ -56,6 +57,8 @@ func TestCommandHelpExitsZero(t *testing.T) {
 		{"pull -h", runPull([]string{"-h"})},
 		{"doctor --help", runDoctor([]string{"--help"})},
 		{"doctor -h", runDoctor([]string{"-h"})},
+		{"search --help", runSearch([]string{"--help"})},
+		{"search -h", runSearch([]string{"-h"})},
 	} {
 		if tc.code != exitOK {
 			t.Fatalf("%s: got exit %d, want %d", tc.name, tc.code, exitOK)
@@ -120,6 +123,64 @@ func TestRunPullMissingTokenExitsOne(t *testing.T) {
 
 	if code := runPull(nil); code != exitError {
 		t.Fatalf("pull without token: got exit %d, want %d", code, exitError)
+	}
+}
+
+func TestParseSearchArgs(t *testing.T) {
+	dir, terms, err := parseSearchArgs([]string{"--dir", "data", "a11y", "audit"})
+	if err != nil || dir != "data" || !slices.Equal(terms, []string{"a11y", "audit"}) {
+		t.Fatalf("--dir + terms: got (%q, %v, %v)", dir, terms, err)
+	}
+
+	dir, terms, err = parseSearchArgs([]string{"go", "testing"})
+	if err != nil || dir != "" || !slices.Equal(terms, []string{"go", "testing"}) {
+		t.Fatalf("bare terms: got (%q, %v, %v)", dir, terms, err)
+	}
+
+	if _, _, err := parseSearchArgs([]string{"--bogus"}); err == nil {
+		t.Fatal("--bogus: got nil error, want error")
+	}
+	if _, _, err := parseSearchArgs(nil); err == nil {
+		t.Fatal("no terms: got nil error, want error")
+	}
+}
+
+func TestRunSearchFindsAndMisses(t *testing.T) {
+	root := t.TempDir()
+	dir := filepath.Join(root, "knowledge")
+	if err := os.MkdirAll(dir, dirPerm); err != nil {
+		t.Fatalf("mkdir: %v", err)
+	}
+	page := "---\ntitle: \"Accessibility Auditing\"\nnotion_id: id\nnotion_url: u\nlast_edited: t\n---\nbody\n"
+	if err := os.WriteFile(filepath.Join(dir, "a11y.md"), []byte(page), 0o644); err != nil {
+		t.Fatalf("write: %v", err)
+	}
+
+	var code int
+	out := captureStdout(t, func() {
+		code = runSearch([]string{"--dir", root, "accessibility"})
+	})
+	if code != exitOK {
+		t.Fatalf("matching term: got exit %d, want %d", code, exitOK)
+	}
+	if !strings.Contains(out, "knowledge/a11y.md") || !strings.Contains(out, "Accessibility Auditing") {
+		t.Fatalf("matching term: stdout %q, want path and title", out)
+	}
+
+	out = captureStdout(t, func() {
+		code = runSearch([]string{"--dir", root, "zzzznoterm"})
+	})
+	if code != exitError {
+		t.Fatalf("no match: got exit %d, want %d", code, exitError)
+	}
+	if out != "" {
+		t.Fatalf("no match: stdout %q, want empty", out)
+	}
+}
+
+func TestRunSearchNoTermsExitsTwo(t *testing.T) {
+	if code := runSearch(nil); code != exitUsage {
+		t.Fatalf("no terms: got exit %d, want %d", code, exitUsage)
 	}
 }
 

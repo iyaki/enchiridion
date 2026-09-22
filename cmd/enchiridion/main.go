@@ -13,6 +13,7 @@ import (
 
 	"github.com/iyaki/enchiridion/internal/notion"
 	"github.com/iyaki/enchiridion/internal/pull"
+	"github.com/iyaki/enchiridion/internal/search"
 	"github.com/iyaki/enchiridion/internal/sync"
 )
 
@@ -75,6 +76,8 @@ func run(args []string) int {
 			return runPull(args[1:])
 		case "doctor":
 			return runDoctor(args[1:])
+		case "search":
+			return runSearch(args[1:])
 		}
 	}
 
@@ -95,6 +98,7 @@ usage:
   enchiridion sync [--full] [--quiet]
   enchiridion pull [--out DIR]
   enchiridion doctor
+  enchiridion search [--dir DIR] TERM [TERM...]
 
 configuration (environment):
   NOTION_TOKEN                   Notion integration token (sync)
@@ -160,6 +164,23 @@ configuration (environment):
 The download completes before anything on disk is touched, so a failed pull
 never damages an existing mirror; commit the result so every checkout of the
 project carries it (ADR-18).
+`)
+}
+
+// searchUsage prints the search command contract to w.
+func searchUsage(w io.Writer) {
+	_, _ = fmt.Fprint(w, `enchiridion search searches the mirror for files matching every term.
+
+usage:
+  enchiridion search [--dir DIR] TERM [TERM...]
+
+flags:
+  --dir DIR    mirror root to search (default: the sync cache home;
+               pass a vendored data/ directory in consumer projects)
+
+Matching is case-insensitive substring over title, tags, filename and body
+(the title ranks highest). Output: one "path — title" line per hit, best
+first; exit 1 when nothing matches.
 `)
 }
 
@@ -252,6 +273,45 @@ func runPull(args []string) int {
 	}
 
 	fmt.Printf("pull complete: knowledge=%d tools=%d out=%s\n", stats.Knowledge, stats.Tools, out)
+
+	return exitOK
+}
+
+// runSearch ranks mirror files by term matches and prints them; the caller
+// judges relevance. Read-only: it never contacts the API nor takes the lock.
+func runSearch(args []string) int {
+	if wantsHelp(args) {
+		searchUsage(os.Stdout)
+
+		return exitOK
+	}
+
+	dir, terms, err := parseSearchArgs(args)
+	if err != nil {
+		searchUsage(os.Stderr)
+
+		return exitUsage
+	}
+	root := dir
+	if root == "" {
+		if root, err = resolveHome(); err != nil {
+			fmt.Fprintf(os.Stderr, "enchiridion: %v\n", err)
+
+			return exitError
+		}
+	}
+	hits, err := search.Run(root, terms)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "enchiridion: %v\n", err)
+
+		return exitError
+	}
+	for _, hit := range hits {
+		fmt.Printf("%s — %s\n", hit.Path, hit.Title)
+	}
+	if len(hits) == 0 {
+		return exitError
+	}
 
 	return exitOK
 }
@@ -401,6 +461,22 @@ func parsePullArgs(args []string) (out string, err error) {
 	}
 
 	return out, nil
+}
+
+// parseSearchArgs parses search flags; only --dir is allowed, and at least
+// one term is required.
+func parseSearchArgs(args []string) (dir string, terms []string, err error) {
+	fs := flag.NewFlagSet("search", flag.ContinueOnError)
+	fs.SetOutput(io.Discard) // searchUsage explains the contract on any error
+	fs.StringVar(&dir, "dir", "", "mirror root to search (default: the sync cache home)")
+	if err := fs.Parse(args); err != nil {
+		return "", nil, err
+	}
+	if fs.NArg() == 0 {
+		return "", nil, fmt.Errorf("no search terms")
+	}
+
+	return dir, fs.Args(), nil
 }
 
 // parseSyncArgs parses sync flags; --full and --quiet are allowed.

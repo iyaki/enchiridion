@@ -10,7 +10,7 @@ patterns, or assisting decisions.
 
 ## Status
 
-`v0.2.3` — shipped and validated against the live API: sync engine, CLI,
+`v0.3.0` — shipped and validated against the live API: sync engine, CLI,
 nightly/monthly sync workflows (this repository keeps a committed mirror
 under [`data/`](data/)), multi-platform releases, the published devcontainer
 feature
@@ -18,7 +18,10 @@ feature
 and the consumption triggers below. Content completeness: every block's
 children fetched and flattened, to-do checkboxes, media links, synced-block
 resolution (ADR-17). Consumer projects vendor the mirror with
-`enchiridion pull` (ADR-18).
+`enchiridion pull` (ADR-18). The CLI follows standard help conventions
+(`--help`/`-h` to stdout, exit 0), reports sync progress on stderr
+(`--quiet` silences it), and ships a read-only `enchiridion doctor` that
+checks configuration and connectivity without syncing.
 
 ## Install
 
@@ -78,7 +81,12 @@ Each user provides their own values — the binary knows no one's token
 ```sh
 enchiridion sync          # automatic mode (see below)
 enchiridion sync --full   # forced full: the only mode that propagates deletions
+enchiridion doctor        # read-only config and connectivity check; never syncs
 ```
+
+`enchiridion <command> --help` explains each command. Sync progress goes to
+stderr — one updating line on a terminal, a heartbeat every 100 pages in CI —
+and `--quiet` silences it; stdout carries only the final summary line.
 
 The mode is selected automatically (ADR-07): no prior state or empty mirror →
 full (auto-backfill); last full sync older than 30 days → full; otherwise →

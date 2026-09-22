@@ -23,10 +23,13 @@
 
 - Build the CLI binary: `make build`.
 - Run from source (no build): `make run ARGS='<command> [flags]'`.
-- Current state: `v0.2.3` — `sync` (full/incremental, mirror split into
-  `knowledge/` + `tools/` per ADR-15), full content completeness (ADR-17)
-  and `enchiridion pull` for consumer projects (ADR-18). Pending work and
-  remaining block types: `specs/implementation-plan.md` (Pending work).
+- Current state: `v0.3.0` — `sync` (full/incremental, mirror split into
+  `knowledge/` + `tools/` per ADR-15), full content completeness (ADR-17),
+  `enchiridion pull` for consumer projects (ADR-18), conventional
+  `--help`/`-h` (stdout, exit 0), sync progress on stderr (`--quiet` to
+  silence), and the read-only `enchiridion doctor` diagnostics command.
+  Pending work and remaining block types: `specs/implementation-plan.md`
+  (Pending work).
 
 ## Tooling Expectations
 

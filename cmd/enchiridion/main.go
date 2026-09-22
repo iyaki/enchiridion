@@ -23,6 +23,20 @@ var version = "dev"
 // testable without network (specs/architecture.md — testability).
 var runEngine = sync.Run
 
+// doctor seams: variables so doctor's connectivity checks run against fakes
+// in tests (same pattern as runEngine).
+type pinger interface {
+	Ping(dataSourceID string) error
+}
+
+type repoChecker interface {
+	Check(repo string) error
+}
+
+var newPinger = func(token string) pinger { return notion.NewClient(token) }
+
+var newRepoChecker = func(token string) repoChecker { return pull.NewClient(token) }
+
 const (
 	envToken   = "NOTION_TOKEN"
 	envSource  = "KNOWLEDGE_BASE_DATASOURCE_ID"
@@ -59,6 +73,8 @@ func run(args []string) int {
 			return runSync(args[1:])
 		case "pull":
 			return runPull(args[1:])
+		case "doctor":
+			return runDoctor(args[1:])
 		}
 	}
 
@@ -238,6 +254,138 @@ func runPull(args []string) int {
 	fmt.Printf("pull complete: knowledge=%d tools=%d out=%s\n", stats.Knowledge, stats.Tools, out)
 
 	return exitOK
+}
+
+// runDoctor checks the local configuration and connectivity without syncing:
+// never Notion content, never the cache lock. Exit 0 means the sync surface
+// is ready; warnings (optional surfaces) never fail the run.
+func runDoctor(args []string) int {
+	if wantsHelp(args) {
+		doctorUsage(os.Stdout)
+
+		return exitOK
+	}
+
+	token, dataSourceID := os.Getenv(envToken), os.Getenv(envSource)
+	tokenSet := checkEnv(envToken, "NOTION_TOKEN set", "FAIL")
+	idSet := checkEnv(envSource, "KNOWLEDGE_BASE_DATASOURCE_ID set", "FAIL")
+
+	failed := !(tokenSet && idSet)
+	failed = doctorHome() || failed
+	failed = doctorNotion(token, dataSourceID, tokenSet && idSet) || failed
+	failed = doctorState() || failed
+	doctorPull()
+
+	if failed {
+		return exitError
+	}
+
+	return exitOK
+}
+
+// printCheck prints one doctor check line to stdout.
+func printCheck(tag, label string) {
+	fmt.Printf("%-4s %s\n", tag, label)
+}
+
+// checkEnv reports whether the variable is set, tagging its line FAIL
+// (required) or warn (optional) when it is not.
+func checkEnv(name, label, missingTag string) bool {
+	if value := os.Getenv(name); value != "" {
+		printCheck("ok", label)
+
+		return true
+	}
+	printCheck(missingTag, label)
+
+	return false
+}
+
+// doctorHome verifies the cache root resolves and reports whether it exists.
+func doctorHome() bool {
+	home, err := resolveHome()
+	if err != nil {
+		printCheck("FAIL", "cache home: "+err.Error())
+
+		return true
+	}
+	if _, err := os.Stat(home); err != nil {
+		printCheck("warn", "cache home: "+home+" (created on first sync)")
+
+		return false
+	}
+	printCheck("ok", "cache home: "+home)
+
+	return false
+}
+
+// doctorNotion verifies credentials and data source reachability; only a
+// reachable Notion counts as pass, and failure fails the run.
+func doctorNotion(token, dataSourceID string, configured bool) bool {
+	if !configured {
+		return false
+	}
+	if err := newPinger(token).Ping(dataSourceID); err != nil {
+		printCheck("FAIL", "notion: credentials and data source reachable: "+err.Error())
+
+		return true
+	}
+	printCheck("ok", "notion: credentials and data source reachable")
+
+	return false
+}
+
+// doctorState reports the last full sync watermark.
+func doctorState() bool {
+	home, err := resolveHome()
+	if err != nil {
+		return false // already reported by doctorHome
+	}
+	state, err := sync.LoadState(home)
+	switch {
+	case err != nil:
+		printCheck("FAIL", "last full sync: "+err.Error())
+
+		return true
+	case state == nil:
+		printCheck("warn", "last full sync: no watermark yet (first sync pending)")
+	default:
+		printCheck("ok", "last full sync: "+state.LastFullAt.Format(time.RFC3339))
+	}
+
+	return false
+}
+
+// doctorPull verifies the optional pull surface against the distribution
+// repo; every outcome here is at most a warning.
+func doctorPull() {
+	if !checkEnv(envGithubToken, "GITHUB_TOKEN set (pull)", "warn") {
+		return
+	}
+	repo := os.Getenv(envRepo)
+	if repo == "" {
+		repo = pull.DefaultRepo
+	}
+	if err := newRepoChecker(os.Getenv(envGithubToken)).Check(repo); err != nil {
+		printCheck("warn", "pull: GITHUB_TOKEN can read "+repo+": "+err.Error())
+
+		return
+	}
+	printCheck("ok", "pull: GITHUB_TOKEN can read "+repo)
+}
+
+// doctorUsage prints the doctor command contract to w.
+func doctorUsage(w io.Writer) {
+	_, _ = fmt.Fprint(w, `enchiridion doctor checks the local configuration and connectivity.
+
+usage:
+  enchiridion doctor
+
+Read-only: it never syncs and never takes the cache lock. It verifies the
+Notion credentials and data source (the sync surface), the cache home and
+watermark, and — when GITHUB_TOKEN is set — access to the distribution repo
+for pull. Exit 0 means sync is ready to run; warnings never fail.
+`)
 }
 
 // parsePullArgs parses pull flags; only --out is allowed.

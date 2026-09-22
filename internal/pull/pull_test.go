@@ -189,6 +189,52 @@ func TestPullRejectsEscapingTarEntries(t *testing.T) {
 	}
 }
 
+func TestCheckReportsRepoAccess(t *testing.T) {
+	var gotPath, gotAuth string
+	c := newTestClient(t, func(w http.ResponseWriter, r *http.Request) {
+		gotPath, gotAuth = r.URL.Path, r.Header.Get("Authorization")
+		_, _ = w.Write([]byte(`{"full_name":"iyaki/enchiridion"}`))
+	})
+
+	if err := c.Check("iyaki/enchiridion"); err != nil {
+		t.Fatalf("Check: %v", err)
+	}
+	if gotPath != "/repos/iyaki/enchiridion" {
+		t.Fatalf("path = %q, want /repos/iyaki/enchiridion", gotPath)
+	}
+	if gotAuth != "Bearer tok" {
+		t.Fatalf("auth = %q, want Bearer tok", gotAuth)
+	}
+}
+
+func TestCheckSurfacesCredentialErrors(t *testing.T) {
+	c := newTestClient(t, func(w http.ResponseWriter, _ *http.Request) {
+		w.WriteHeader(http.StatusForbidden)
+	})
+
+	err := c.Check("iyaki/enchiridion")
+	if err == nil {
+		t.Fatal("Check succeeded despite 403")
+	}
+	if !strings.Contains(err.Error(), "GITHUB_TOKEN") {
+		t.Fatalf("error = %q, want credentials hint", err)
+	}
+}
+
+func TestCheckSurfacesNotFoundAsAccessProblem(t *testing.T) {
+	c := newTestClient(t, func(w http.ResponseWriter, _ *http.Request) {
+		w.WriteHeader(http.StatusNotFound)
+	})
+
+	err := c.Check("iyaki/enchiridion")
+	if err == nil {
+		t.Fatal("Check succeeded despite 404")
+	}
+	if !strings.Contains(err.Error(), "access") {
+		t.Fatalf("error = %q, want access hint", err)
+	}
+}
+
 func TestPullSurfacesCredentialErrors(t *testing.T) {
 	c := newTestClient(t, func(w http.ResponseWriter, _ *http.Request) {
 		w.WriteHeader(http.StatusUnauthorized)

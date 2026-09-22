@@ -98,6 +98,14 @@ func (c *Client) PageBlocks(pageID string) ([]model.Block, error) {
 	return c.distillAll(raws)
 }
 
+// Ping verifies that the token is accepted and the data source is reachable:
+// the check doctor performs before a sync, without reading any content.
+func (c *Client) Ping(dataSourceID string) error {
+	return c.do("GET", "/data_sources/"+dataSourceID, nil, &struct {
+		Object string `json:"object"`
+	}{})
+}
+
 // distillAll flattens raw blocks (and, recursively, their children) into a
 // single document-ordered slice (ADR-17). Pure containers (synced_block,
 // column_list, column) contribute no block of their own — only their children.

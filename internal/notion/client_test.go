@@ -403,6 +403,39 @@ func TestGivesUpAfterThreeAttemptsOnServerError(t *testing.T) {
 	}
 }
 
+func TestPingVerifiesDataSourceReachable(t *testing.T) {
+	rec := &recorder{}
+	c := newTestClient(t, rec)
+	var gotPath string
+	rec.handler = func(w http.ResponseWriter, r *http.Request) {
+		gotPath = r.URL.Path
+		_, _ = w.Write([]byte(`{"object":"data_source"}`))
+	}
+
+	if err := c.Ping("ds-1"); err != nil {
+		t.Fatalf("Ping: %v", err)
+	}
+	if gotPath != "/data_sources/ds-1" {
+		t.Fatalf("path = %q, want /data_sources/ds-1", gotPath)
+	}
+}
+
+func TestPingSurfacesCredentialErrors(t *testing.T) {
+	rec := &recorder{}
+	c := newTestClient(t, rec)
+	rec.handler = func(w http.ResponseWriter, _ *http.Request) {
+		w.WriteHeader(http.StatusUnauthorized)
+	}
+
+	err := c.Ping("ds-1")
+	if err == nil {
+		t.Fatal("Ping succeeded despite 401")
+	}
+	if !strings.Contains(err.Error(), "NOTION_TOKEN") {
+		t.Fatalf("error = %q, want credentials hint", err)
+	}
+}
+
 func TestUnauthorizedFailsFastWithoutRetries(t *testing.T) {
 	rec := &recorder{}
 	c := newTestClient(t, rec)

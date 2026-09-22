@@ -58,9 +58,7 @@ func (c *Client) Pull(repo, out string) (Stats, error) {
 	if err != nil {
 		return Stats{}, err
 	}
-	req.Header.Set("Authorization", "Bearer "+c.token)
-	req.Header.Set("Accept", "application/vnd.github+json")
-	req.Header.Set("X-GitHub-Api-Version", "2022-11-28")
+	c.authorize(req)
 
 	resp, err := c.http.Do(req)
 	if err != nil {
@@ -68,18 +66,8 @@ func (c *Client) Pull(repo, out string) (Stats, error) {
 	}
 	defer func() { _, _ = io.Copy(io.Discard, resp.Body); _ = resp.Body.Close() }()
 
-	switch {
-	case resp.StatusCode == http.StatusUnauthorized || resp.StatusCode == http.StatusForbidden:
-		return Stats{}, fmt.Errorf("github rejected the credentials (HTTP %d): "+
-			"check GITHUB_TOKEN and that it can read the %s repository",
-			resp.StatusCode, repo)
-	case resp.StatusCode == http.StatusNotFound:
-		return Stats{}, fmt.Errorf("repository or mirror not accessible (HTTP 404): "+
-			"check GITHUB_TOKEN access and ENCHIRIDION_REPO (%s)", repo)
-	case resp.StatusCode != http.StatusOK:
-		msg, _ := io.ReadAll(io.LimitReader(resp.Body, maxErrorBody))
-
-		return Stats{}, fmt.Errorf("github error (HTTP %d): %s", resp.StatusCode, strings.TrimSpace(string(msg)))
+	if err := c.checkStatus(resp, repo); err != nil {
+		return Stats{}, err
 	}
 
 	blob, err := io.ReadAll(resp.Body)
@@ -95,6 +83,52 @@ func (c *Client) Pull(repo, out string) (Stats, error) {
 	}
 
 	return extract(bytes.NewReader(blob), out)
+}
+
+// Check reports whether the token can see repo on the GitHub API: the
+// reachability surface doctor verifies before suggesting a pull, without
+// downloading anything.
+func (c *Client) Check(repo string) error {
+	req, err := http.NewRequest(http.MethodGet, c.baseURL+"/repos/"+repo, nil)
+	if err != nil {
+		return err
+	}
+	c.authorize(req)
+
+	resp, err := c.http.Do(req)
+	if err != nil {
+		return fmt.Errorf("github request failed: %w", err)
+	}
+	defer func() { _, _ = io.Copy(io.Discard, resp.Body); _ = resp.Body.Close() }()
+
+	return c.checkStatus(resp, repo)
+}
+
+// authorize sets the standard GitHub API headers shared by every request.
+func (c *Client) authorize(req *http.Request) {
+	req.Header.Set("Authorization", "Bearer "+c.token)
+	req.Header.Set("Accept", "application/vnd.github+json")
+	req.Header.Set("X-GitHub-Api-Version", "2022-11-28")
+}
+
+// checkStatus maps GitHub error statuses to actionable messages; nil means
+// the response body is good to consume.
+func (c *Client) checkStatus(resp *http.Response, repo string) error {
+	switch {
+	case resp.StatusCode == http.StatusUnauthorized || resp.StatusCode == http.StatusForbidden:
+		return fmt.Errorf("github rejected the credentials (HTTP %d): "+
+			"check GITHUB_TOKEN and that it can read the %s repository",
+			resp.StatusCode, repo)
+	case resp.StatusCode == http.StatusNotFound:
+		return fmt.Errorf("repository or mirror not accessible (HTTP 404): "+
+			"check GITHUB_TOKEN access and ENCHIRIDION_REPO (%s)", repo)
+	case resp.StatusCode != http.StatusOK:
+		msg, _ := io.ReadAll(io.LimitReader(resp.Body, maxErrorBody))
+
+		return fmt.Errorf("github error (HTTP %d): %s", resp.StatusCode, strings.TrimSpace(string(msg)))
+	}
+
+	return nil
 }
 
 // extract unpacks the mirror files of a repository tarball into out.

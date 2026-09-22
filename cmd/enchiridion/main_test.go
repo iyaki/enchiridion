@@ -8,6 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 	"testing"
+	"time"
 
 	"github.com/iyaki/enchiridion/internal/sync"
 )
@@ -53,6 +54,8 @@ func TestCommandHelpExitsZero(t *testing.T) {
 		{"sync -h", runSync([]string{"-h"})},
 		{"pull --help", runPull([]string{"--help"})},
 		{"pull -h", runPull([]string{"-h"})},
+		{"doctor --help", runDoctor([]string{"--help"})},
+		{"doctor -h", runDoctor([]string{"-h"})},
 	} {
 		if tc.code != exitOK {
 			t.Fatalf("%s: got exit %d, want %d", tc.name, tc.code, exitOK)
@@ -217,6 +220,112 @@ func TestRunSyncProgressOnStderr(t *testing.T) {
 	})
 	if strings.Contains(stderr, "sync:") {
 		t.Fatalf("--quiet must suppress progress, got: %q", stderr)
+	}
+}
+
+// captureStdout swaps os.Stdout for a temp file while fn runs and returns
+// what was written. Not parallel-safe; no test in this file uses t.Parallel.
+func captureStdout(t *testing.T, fn func()) string {
+	t.Helper()
+	f, err := os.CreateTemp(t.TempDir(), "stdout")
+	if err != nil {
+		t.Fatalf("temp file: %v", err)
+	}
+
+	orig := os.Stdout
+	os.Stdout = f
+	defer func() { os.Stdout = orig }()
+	fn()
+	if err := f.Close(); err != nil {
+		t.Fatalf("close: %v", err)
+	}
+
+	data, err := os.ReadFile(f.Name())
+	if err != nil {
+		t.Fatalf("read: %v", err)
+	}
+
+	return string(data)
+}
+
+// fakePinger and fakeChecker stand in for doctor's clients.
+type fakePinger struct{ err error }
+
+func (f fakePinger) Ping(string) error { return f.err }
+
+type fakeChecker struct{ err error }
+
+func (f fakeChecker) Check(string) error { return f.err }
+
+// restoreDoctor injects doctor fakes for the duration of the test.
+func restoreDoctor(t *testing.T, p pinger, c repoChecker) {
+	t.Helper()
+	origP, origC := newPinger, newRepoChecker
+	newPinger = func(string) pinger { return p }
+	newRepoChecker = func(string) repoChecker { return c }
+	t.Cleanup(func() { newPinger, newRepoChecker = origP, origC })
+}
+
+func TestRunDoctorAllGreenExitsZero(t *testing.T) {
+	t.Setenv(envToken, "secret")
+	t.Setenv(envSource, "ds-1")
+	t.Setenv(envGithubToken, "ght")
+	home := t.TempDir()
+	t.Setenv(envHome, home)
+	if err := sync.SaveState(home, sync.State{LastFullAt: time.Now(), Watermark: time.Now()}); err != nil {
+		t.Fatalf("seed state: %v", err)
+	}
+	restoreDoctor(t, fakePinger{}, fakeChecker{})
+
+	stdout := captureStdout(t, func() {
+		if code := runDoctor(nil); code != exitOK {
+			t.Errorf("doctor: got exit %d, want %d", code, exitOK)
+		}
+	})
+	for _, want := range []string{"ok", "cache home:", "notion: credentials", "last full sync", "pull: GITHUB_TOKEN"} {
+		if !strings.Contains(stdout, want) {
+			t.Fatalf("doctor output lacks %q:\n%s", want, stdout)
+		}
+	}
+}
+
+func TestRunDoctorMissingConfigExitsOne(t *testing.T) {
+	t.Setenv(envToken, "")
+	t.Setenv(envSource, "")
+	t.Setenv(envGithubToken, "")
+	t.Setenv(envHome, t.TempDir())
+
+	if code := run([]string{"doctor"}); code != exitError {
+		t.Fatalf("doctor without config: got exit %d, want %d", code, exitError)
+	}
+}
+
+func TestRunDoctorWarnOnlyStillExitsZero(t *testing.T) {
+	t.Setenv(envToken, "secret")
+	t.Setenv(envSource, "ds-1")
+	t.Setenv(envGithubToken, "")
+	t.Setenv(envHome, t.TempDir()) // no state file: watermark warn
+	restoreDoctor(t, fakePinger{}, fakeChecker{})
+
+	stdout := captureStdout(t, func() {
+		if code := runDoctor(nil); code != exitOK {
+			t.Errorf("doctor: got exit %d, want %d", code, exitOK)
+		}
+	})
+	if !strings.Contains(stdout, "no watermark yet") || !strings.Contains(stdout, "warn") {
+		t.Fatalf("doctor output lacks warnings:\n%s", stdout)
+	}
+}
+
+func TestRunDoctorNotionFailureExitsOne(t *testing.T) {
+	t.Setenv(envToken, "secret")
+	t.Setenv(envSource, "ds-1")
+	t.Setenv(envGithubToken, "")
+	t.Setenv(envHome, t.TempDir())
+	restoreDoctor(t, fakePinger{err: errors.New("notion rejected the credentials")}, fakeChecker{})
+
+	if code := runDoctor(nil); code != exitError {
+		t.Fatalf("doctor with notion failure: got exit %d, want %d", code, exitError)
 	}
 }
 

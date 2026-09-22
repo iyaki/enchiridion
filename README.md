@@ -12,7 +12,8 @@ patterns, or assisting decisions.
 
 `v0.4.0` — shipped and validated against the live API: sync engine, CLI,
 nightly/monthly sync workflows (this repository keeps a committed mirror
-under [`data/`](data/)), multi-platform releases, the published devcontainer
+under [`data/`](data/)), multi-platform releases, the public repository
+(ADR-19; releases download without authentication), the published devcontainer
 feature
 ([`ghcr.io/iyaki/devcontainer-features/enchiridion`](https://github.com/iyaki/devcontainer-features/tree/main/src/enchiridion))
 and the consumption triggers below. Content completeness: every block's
@@ -27,13 +28,13 @@ body; exit 1 when nothing matches).
 
 ## Install
 
-Releases are private (the repository is private): download with an
-authenticated `gh` CLI or from the release page in the browser.
+The repository is public: download a release from the release page or with
+plain `gh` — no token needed.
 
 ```sh
-gh release download v0.2.0 --repo iyaki/enchiridion \
+gh release download v0.4.0 --repo iyaki/enchiridion \
     --pattern '*linux_amd64.tar.gz'
-tar xzf enchiridion_0.2.0_linux_amd64.tar.gz
+tar xzf enchiridion_0.4.0_linux_amd64.tar.gz
 install -m 0755 enchiridion /usr/local/bin/enchiridion
 enchiridion version
 ```

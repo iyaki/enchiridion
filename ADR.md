@@ -333,6 +333,36 @@ vendored mirror when the project carries one.
 
 ---
 
+## ADR-19 — Public repository for frictionless distribution
+
+**Context**: ADR-09 kept the repository private on the assumption the owner
+did not seek to publish it. Distribution then demanded authentication at
+every step: release tarballs need a `GITHUB_TOKEN` to download, `pull`
+authenticates every request, and the devcontainer feature ships a token just
+to install the binary. Going public removes that friction for every
+consumer. The exposure audit found nothing else at risk: commits carry the
+owner's public identity (iyaki.ar), gitleaks is green across the whole
+history, workflows reference secret names only, and the mirror's
+`notion_id`/`notion_url` fields are dead links without the owner's Notion
+login.
+
+**Decision**: the repository `iyaki/enchiridion` becomes **public**,
+superseding the privacy clause of ADR-09; binaries via goreleaser and the
+devcontainer feature stand as decided there. The committed mirror (`data/`)
+is published with the repo — it is the distribution payload ADR-18 consumers
+download, so excluding it would break `pull`. That makes the owner's
+curation of public sources readable by anyone: accepted as the cost of open
+distribution. Per-user configuration is untouched (ADR-11): the binary still
+knows no one's token.
+
+**Consequences**: release downloads work without authentication; a follow-up
+may make `pull` and the devcontainer feature tokenless
+(`/repos/{repo}/tarball` serves public repositories anonymously, but the CLI
+still requires `GITHUB_TOKEN` today). Publishing is a one-way door: once
+cloned or archived, deleting the repository does not retract the content.
+
+---
+
 ## Verification of the real sync (pending implementation)
 
 The only piece not verifiable offline: live API calls. Manual smoke with an

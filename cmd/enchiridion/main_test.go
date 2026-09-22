@@ -61,21 +61,26 @@ func TestCommandHelpExitsZero(t *testing.T) {
 }
 
 func TestParseSyncArgs(t *testing.T) {
-	forced, err := parseSyncArgs([]string{"--full"})
-	if err != nil || !forced {
-		t.Fatalf("--full: got (%t, %v), want (true, nil)", forced, err)
+	cases := []struct {
+		name      string
+		args      []string
+		forceFull bool
+		quiet     bool
+		wantErr   bool
+	}{
+		{"no flags", nil, false, false, false},
+		{"--full", []string{"--full"}, true, false, false},
+		{"--quiet", []string{"--quiet"}, false, true, false},
+		{"--full --quiet", []string{"--full", "--quiet"}, true, true, false},
+		{"--bogus", []string{"--bogus"}, false, false, true},
+		{"stray argument", []string{"stray"}, false, false, true},
 	}
-
-	plain, err := parseSyncArgs(nil)
-	if err != nil || plain {
-		t.Fatalf("no flags: got (%t, %v), want (false, nil)", plain, err)
-	}
-
-	if _, err := parseSyncArgs([]string{"--bogus"}); err == nil {
-		t.Fatal("--bogus: got nil error, want error")
-	}
-	if _, err := parseSyncArgs([]string{"stray"}); err == nil {
-		t.Fatal("stray argument: got nil error, want error")
+	for _, tc := range cases {
+		forceFull, quiet, err := parseSyncArgs(tc.args)
+		if (err != nil) != tc.wantErr || forceFull != tc.forceFull || quiet != tc.quiet {
+			t.Errorf("%s: got (%t, %t, %v), want (%t, %t, err=%t)",
+				tc.name, forceFull, quiet, err, tc.forceFull, tc.quiet, tc.wantErr)
+		}
 	}
 }
 
@@ -151,6 +156,67 @@ func TestRunSyncEngineErrorExitsOne(t *testing.T) {
 
 	if code := runSync(nil); code != exitError {
 		t.Fatalf("sync: got exit %d, want %d", code, exitError)
+	}
+}
+
+// captureStderr swaps os.Stderr for a temp file while fn runs and returns
+// what was written. Not parallel-safe; no test in this file uses t.Parallel.
+func captureStderr(t *testing.T, fn func()) string {
+	t.Helper()
+	f, err := os.CreateTemp(t.TempDir(), "stderr")
+	if err != nil {
+		t.Fatalf("temp file: %v", err)
+	}
+
+	orig := os.Stderr
+	os.Stderr = f
+	defer func() { os.Stderr = orig }()
+	fn()
+	if err := f.Close(); err != nil {
+		t.Fatalf("close: %v", err)
+	}
+
+	data, err := os.ReadFile(f.Name())
+	if err != nil {
+		t.Fatalf("read: %v", err)
+	}
+
+	return string(data)
+}
+
+func TestRunSyncProgressOnStderr(t *testing.T) {
+	t.Setenv(envToken, "secret")
+	t.Setenv(envSource, "ds-1")
+	t.Setenv(envHome, t.TempDir())
+
+	orig := runEngine
+	runEngine = func(_ sync.NotionAPI, opts sync.Options) (sync.Stats, error) {
+		if opts.Progress == nil {
+			t.Error("progress callback not wired")
+		} else {
+			opts.Progress(200, 300) // 200 % 100 == 0: must print on non-TTY
+		}
+
+		return sync.Stats{Mode: "full", Kept: 2}, nil
+	}
+	defer func() { runEngine = orig }()
+
+	stderr := captureStderr(t, func() {
+		if code := runSync(nil); code != exitOK {
+			t.Errorf("sync: got exit %d, want %d", code, exitOK)
+		}
+	})
+	if !strings.Contains(stderr, "sync: 200/300 pages") {
+		t.Fatalf("stderr lacks progress line: %q", stderr)
+	}
+
+	stderr = captureStderr(t, func() {
+		if code := runSync([]string{"--quiet"}); code != exitOK {
+			t.Errorf("sync --quiet: got exit %d, want %d", code, exitOK)
+		}
+	})
+	if strings.Contains(stderr, "sync:") {
+		t.Fatalf("--quiet must suppress progress, got: %q", stderr)
 	}
 }
 

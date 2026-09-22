@@ -36,6 +36,9 @@ type Options struct {
 	Home         string    // resolved cache root
 	ForceFull    bool      // --full
 	Now          time.Time // single consistent instant for the run
+	// Progress, when set, reports pages processed (done, total); done
+	// counts failures too. Nil means silent.
+	Progress func(done, total int)
 }
 
 // Stats summarizes one run.
@@ -85,7 +88,7 @@ func Run(api NotionAPI, opts Options) (Stats, error) {
 		return Stats{}, err
 	}
 
-	stats, keptByDir := syncAll(api, dirs, mode, metas)
+	stats, keptByDir := syncAll(api, dirs, mode, metas, opts.Progress)
 	if mode == modeFull {
 		for _, name := range []string{dirKnowledge, dirTools} {
 			removed, sweepErr := Sweep(dirs[name], keptByDir[name])
@@ -138,20 +141,29 @@ func query(api NotionAPI, opts Options, state *State, mode string) ([]model.Page
 // (specs/architecture.md — error behavior). Returns the stats and, per class
 // directory, the set of page IDs that must remain there (a page reclassified
 // in Notion must be swept from its old directory on the next full run).
-func syncAll(api NotionAPI, dirs map[string]string, mode string, metas []model.PageMeta) (
+// progress (nullable) is called once before the loop and after every page;
+// done counts processed pages, failures included.
+func syncAll(api NotionAPI, dirs map[string]string, mode string, metas []model.PageMeta,
+	progress func(done, total int),
+) (
 	Stats, map[string]map[string]bool,
 ) {
 	stats := Stats{Mode: mode, Kept: len(metas)}
 	keptByDir := map[string]map[string]bool{dirKnowledge: {}, dirTools: {}}
-	for _, meta := range metas {
+	if progress != nil {
+		progress(0, len(metas))
+	}
+	for i, meta := range metas {
 		keptByDir[Class(meta)][meta.ID] = true
 		if err := writeOne(api, dirs[Class(meta)], meta); err != nil {
 			fmt.Fprintf(os.Stderr, "sync: page %s: %v\n", meta.ID, err)
 			stats.Failed++
-
-			continue
+		} else {
+			stats.Written++
 		}
-		stats.Written++
+		if progress != nil {
+			progress(i+1, len(metas))
+		}
 	}
 
 	return stats, keptByDir
@@ -168,21 +180,16 @@ func persistState(opts Options, state *State, mode string) error {
 	return SaveState(opts.Home, newState)
 }
 
-// writeOne fetches a page's blocks and writes it into the mirror, printing
-// the mirrored file name.
+// writeOne fetches a page's blocks and writes it into the mirror.
 func writeOne(api NotionAPI, dir string, meta model.PageMeta) error {
 	blocks, err := api.PageBlocks(meta.ID)
 	if err != nil {
 		return err
 	}
 
-	path, err := WritePage(dir, meta, blocks)
-	if err != nil {
-		return err
-	}
-	fmt.Printf("synced: %s/%s\n", filepath.Base(dir), filepath.Base(path))
+	_, err = WritePage(dir, meta, blocks)
 
-	return nil
+	return err
 }
 
 // lock acquires exclusive access to the cache so concurrent runs (local +

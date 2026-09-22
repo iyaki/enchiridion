@@ -104,6 +104,39 @@ func wantState(t *testing.T, home string, lastFullAt, watermark time.Time) {
 	}
 }
 
+func TestRunReportsProgress(t *testing.T) {
+	home := t.TempDir()
+	api := &fakeAPI{
+		pages: map[string]model.PageMeta{
+			"p1": {ID: "p1", Title: "Alpha", LastEdited: editedOld},
+			"p2": {ID: "p2", Title: "Beta", LastEdited: editedOld},
+		},
+		errPage: "p2", // failures still count as processed
+	}
+
+	var calls [][2]int
+	opts := Options{DataSourceID: "ds", Home: home, Now: now}
+	opts.Progress = func(done, total int) { calls = append(calls, [2]int{done, total}) }
+	if _, err := Run(api, opts); err == nil {
+		t.Fatal("Run succeeded despite page failure")
+	}
+
+	if len(calls) == 0 || calls[0] != [2]int{0, 2} {
+		t.Fatalf("first progress call = %v, want [0 2]", calls)
+	}
+	if last := calls[len(calls)-1]; last != [2]int{2, 2} {
+		t.Fatalf("last progress call = %v, want [2 2]", last)
+	}
+	for i, c := range calls {
+		if c[0] < 0 || c[0] > c[1] {
+			t.Fatalf("call %d = %v: done out of range", i, c)
+		}
+		if i > 0 && c[0] < calls[i-1][0] {
+			t.Fatalf("call %d = %v: progress went backwards", i, c)
+		}
+	}
+}
+
 func TestFullRun(t *testing.T) {
 	home := t.TempDir()
 	api := &fakeAPI{

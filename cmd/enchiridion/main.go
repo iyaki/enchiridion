@@ -158,7 +158,7 @@ func runSync(args []string) int {
 		return exitOK
 	}
 
-	forceFull, err := parseSyncArgs(args)
+	forceFull, quiet, err := parseSyncArgs(args)
 	if err != nil {
 		syncUsage(os.Stderr)
 
@@ -177,12 +177,17 @@ func runSync(args []string) int {
 		return exitError
 	}
 
+	// Progress goes to stderr; stdout carries only the final summary.
+	// A TTY gets one updating line, CI gets a heartbeat every 100 pages.
+	progress := newProgress(quiet)
 	stats, err := runEngine(notion.NewClient(token), sync.Options{
 		DataSourceID: dataSourceID,
 		Home:         home,
 		ForceFull:    forceFull,
 		Now:          time.Now(),
+		Progress:     progress.report,
 	})
+	progress.close()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "enchiridion: %v\n", err)
 
@@ -250,19 +255,65 @@ func parsePullArgs(args []string) (out string, err error) {
 	return out, nil
 }
 
-// parseSyncArgs parses sync flags; only --full is allowed.
-func parseSyncArgs(args []string) (forceFull bool, err error) {
+// parseSyncArgs parses sync flags; --full and --quiet are allowed.
+func parseSyncArgs(args []string) (forceFull, quiet bool, err error) {
 	fs := flag.NewFlagSet("sync", flag.ContinueOnError)
-	fs.SetOutput(io.Discard) // usage() explains the contract on any error
+	fs.SetOutput(io.Discard) // syncUsage explains the contract on any error
 	fs.BoolVar(&forceFull, "full", false, "force a full sync")
+	fs.BoolVar(&quiet, "quiet", false, "suppress progress output on stderr")
 	if err := fs.Parse(args); err != nil {
-		return false, err
+		return false, false, err
 	}
 	if fs.NArg() > 0 {
-		return false, fmt.Errorf("unexpected argument: %s", fs.Arg(0))
+		return false, false, fmt.Errorf("unexpected argument: %s", fs.Arg(0))
 	}
 
-	return forceFull, nil
+	return forceFull, quiet, nil
+}
+
+// progress renders sync progress on stderr; nil is valid and silent.
+type progress struct {
+	tty   bool
+	shown bool
+}
+
+// newProgress returns the reporter for a run, or nil under --quiet.
+func newProgress(quiet bool) *progress {
+	if quiet {
+		return nil
+	}
+
+	return &progress{tty: stderrIsTTY()}
+}
+
+// report records one progress tick: an updating line on a TTY, a heartbeat
+// every 100 pages (and at the end) otherwise.
+func (p *progress) report(done, total int) {
+	if p == nil {
+		return
+	}
+	p.shown = true
+	switch {
+	case p.tty:
+		fmt.Fprintf(os.Stderr, "\rsync: %d/%d pages", done, total)
+	case done%100 == 0 || done == total:
+		fmt.Fprintf(os.Stderr, "sync: %d/%d pages\n", done, total)
+	}
+}
+
+// close ends the updating TTY line, if one was started.
+func (p *progress) close() {
+	if p != nil && p.shown && p.tty {
+		fmt.Fprintln(os.Stderr)
+	}
+}
+
+// stderrIsTTY reports whether stderr is an interactive terminal: progress
+// then renders as a single updating line instead of newline heartbeats.
+func stderrIsTTY() bool {
+	info, err := os.Stderr.Stat()
+
+	return err == nil && info.Mode()&os.ModeCharDevice != 0
 }
 
 // resolveConfig gathers credentials and the cache root without contacting the

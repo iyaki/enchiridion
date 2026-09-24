@@ -363,6 +363,36 @@ cloned or archived, deleting the repository does not retract the content.
 
 ---
 
+## ADR-20 — `pull` defaults to the machine cache; `--project` opts into vendoring
+
+**Context**: ADR-18 made `enchiridion pull` vendor into the current project
+with a hard-coded default of `data/`, on the grounds that consumer machines
+share nothing with an installation. In practice this split the CLI into two
+mental models: `sync` writes the machine cache, `pull` writes `./data` — the
+same "refresh my local mirror" intent, two different destinations, and a
+silent surprise for anyone who ran `pull` expecting the shared install
+(data landing in the working tree). With the repository public (ADR-19),
+`pull` is also the natural way to refresh the machine cache on machines
+that have a `GITHUB_TOKEN` but no Notion credentials.
+
+**Decision**: `enchiridion pull` now defaults to the machine cache
+(`resolveHome()`: `$ENCHIRIDION_HOME`, else `$XDG_DATA_HOME/enchiridion`,
+else `~/.local/share/enchiridion`) — the same target as `sync`, replacing
+`knowledge/` and `tools/` as before. Vendoring into the current project
+becomes opt-in via `enchiridion pull --project` (default `data/`). An
+explicit `--out DIR` overrides both. The ADR-18 mechanism is unchanged:
+replacement of the two directories, download-before-touch, consumer commits
+the vendored result.
+
+**Consequences**: consumer-facing docs and `AGENTS.md` snippets must say
+`pull --project`; running bare `pull` inside a consumer project no longer
+touches the project tree (a typo can no longer litter a repository).
+`sync` remains the only writer of Notion-sourced content and `pull` of
+published content; either can now target the machine cache, so the cache's
+freshness no longer requires Notion credentials.
+
+---
+
 ## Verification of the real sync (pending implementation)
 
 The only piece not verifiable offline: live API calls. Manual smoke with an

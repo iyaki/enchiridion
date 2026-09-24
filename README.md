@@ -39,13 +39,11 @@ install -m 0755 enchiridion /usr/local/bin/enchiridion
 enchiridion version
 ```
 
-In devcontainers, use the feature:
+In devcontainers, use the feature — no token needed:
 
 ```json
 "features": {
-    "ghcr.io/iyaki/devcontainer-features/enchiridion:1": {
-        "github_token": "${localEnv:GITHUB_TOKEN}"
-    }
+    "ghcr.io/iyaki/devcontainer-features/enchiridion:2": {}
 }
 ```
 
@@ -57,7 +55,7 @@ CI runners, and agent sandboxes that share nothing. Instead, vendor the
 published mirror into the project's own repository — no Notion token needed:
 
 ```sh
-GITHUB_TOKEN=... enchiridion pull          # writes data/knowledge/ + data/tools/
+GITHUB_TOKEN=... enchiridion pull --project   # writes data/knowledge/ + data/tools/
 git add data && git commit -m "vendor: enchiridion mirror"
 ```
 
@@ -66,7 +64,10 @@ only touches them — the download completes before the replacement starts, so
 a failed pull never damages an existing mirror. The source is the
 distribution repository's default branch (`ENCHIRIDION_REPO` to override);
 freshness is bounded by its sync cadence (nightly incremental, monthly
-full). To refresh: run `enchiridion pull` again and commit the diff.
+full). To refresh: run `enchiridion pull --project` again and commit the
+diff. Without `--project`, `pull` refreshes the machine cache
+(`~/.local/share/enchiridion/`) — the same target as `sync`, useful where a
+GitHub token exists but Notion credentials do not.
 
 ## Configure
 
@@ -137,8 +138,8 @@ Consult the mirror (rg/grep) BEFORE answering when the task involves:
 
 Cite the entries used (file + `source_url`; `notion_url` only when the
 entry has no web source). With no precedent, say so explicitly. Missing or
-stale mirror: run `enchiridion pull` (needs `GITHUB_TOKEN`) and commit the
-result — never invent precedents.
+stale mirror: run `enchiridion pull --project` (needs `GITHUB_TOKEN`) and
+commit the result — never invent precedents.
 ```
 
 ## Development

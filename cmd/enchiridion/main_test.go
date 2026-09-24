@@ -100,9 +100,17 @@ func TestRunSyncMissingConfigExitsOne(t *testing.T) {
 }
 
 func TestParsePullArgs(t *testing.T) {
+	const home = "/tmp/ench-home"
+	t.Setenv(envHome, home)
+
 	out, err := parsePullArgs(nil)
-	if err != nil || out != "data" {
-		t.Fatalf("no flags: got (%q, %v), want (\"data\", nil)", out, err)
+	if err != nil || out != home {
+		t.Fatalf("no flags: got (%q, %v), want (%q, nil)", out, err, home)
+	}
+
+	project, err := parsePullArgs([]string{"--project"})
+	if err != nil || project != "data" {
+		t.Fatalf("--project: got (%q, %v), want (\"data\", nil)", project, err)
 	}
 
 	custom, err := parsePullArgs([]string{"--out", "vendor/kb"})
@@ -110,6 +118,13 @@ func TestParsePullArgs(t *testing.T) {
 		t.Fatalf("--out: got (%q, %v), want (\"vendor/kb\", nil)", custom, err)
 	}
 
+	overrides, err := parsePullArgs([]string{"--project", "--out", "vendor/kb"})
+	if err != nil || overrides != "vendor/kb" {
+		t.Fatalf("--project --out: got (%q, %v), want (\"vendor/kb\", nil)", overrides, err)
+	}
+}
+
+func TestParsePullArgsErrors(t *testing.T) {
 	if _, err := parsePullArgs([]string{"--bogus"}); err == nil {
 		t.Fatal("--bogus: got nil error, want error")
 	}

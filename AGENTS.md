@@ -25,7 +25,8 @@
 - Run from source (no build): `make run ARGS='<command> [flags]'`.
 - Current state: `v0.4.0` — `sync` (full/incremental, mirror split into
   `knowledge/` + `tools/` per ADR-15), full content completeness (ADR-17),
-  `enchiridion pull` for consumer projects (ADR-18), conventional
+  `enchiridion pull` (machine cache by default; `--project` vendors into a
+  consumer project, ADR-18/20), conventional
   `--help`/`-h` (stdout, exit 0), sync progress on stderr (`--quiet` to
   silence), the read-only `enchiridion doctor` diagnostics command, and the
   read-only `enchiridion search` command (ranks mirror files by term

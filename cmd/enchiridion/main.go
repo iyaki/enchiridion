@@ -96,7 +96,7 @@ usage:
   enchiridion help
   enchiridion version
   enchiridion sync [--full] [--quiet]
-  enchiridion pull [--out DIR]
+  enchiridion pull [--project] [--out DIR]
   enchiridion doctor
   enchiridion search [--dir DIR] TERM [TERM...]
 
@@ -111,9 +111,10 @@ sync chooses its mode automatically (full or incremental); --full forces a
 full sync, the only mode that propagates page deletions; --quiet suppresses
 progress output. "enchiridion <command> --help" explains each command.
 
-pull vendors the published mirror into the current project (--out, default
-"data"): no Notion credentials and no shared machine are required (ADR-18);
-commit the result so every checkout of the project carries the mirror.
+pull refreshes the machine cache with the published mirror by default (same
+target as sync, no Notion credentials needed); --project vendors it into the
+current project ("data") instead (ADR-18) — commit the result so every
+checkout of the project carries the mirror.
 
 doctor checks the local configuration and connectivity without syncing.
 `)
@@ -149,21 +150,23 @@ to stderr; stdout carries a single summary line.
 
 // pullUsage prints the pull command contract to w.
 func pullUsage(w io.Writer) {
-	_, _ = fmt.Fprint(w, `enchiridion pull vendors the published mirror into the current project.
+	_, _ = fmt.Fprint(w, `enchiridion pull refreshes the local mirror from the published distribution.
 
 usage:
-  enchiridion pull [--out DIR]
+  enchiridion pull [--project] [--out DIR]
 
 flags:
-  --out DIR    target directory for knowledge/ and tools/ (default "data")
+  --project    vendor into the current project (./data) instead of the machine cache
+  --out DIR    target directory for knowledge/ and tools/ (default: machine cache
+               via ENCHIRIDION_HOME; "data" with --project)
 
 configuration (environment):
   GITHUB_TOKEN      token that can read the distribution repo
   ENCHIRIDION_REPO  distribution repo (default: `+pull.DefaultRepo+`)
 
 The download completes before anything on disk is touched, so a failed pull
-never damages an existing mirror; commit the result so every checkout of the
-project carries it (ADR-18).
+never damages an existing mirror. With --project, commit the result so every
+checkout of the project carries it (ADR-18).
 `)
 }
 
@@ -237,9 +240,10 @@ func runSync(args []string) int {
 	return exitOK
 }
 
-// runPull vendors the published mirror into the current project: it needs a
-// GitHub token that can read the distribution repo, never Notion credentials
-// (ADR-18). The result is meant to be committed by the consumer project.
+// runPull refreshes the local mirror from the distribution repo: the machine
+// cache by default, or the current project with --project (ADR-18). It needs
+// a GitHub token that can read the distribution repo, never Notion
+// credentials. A project-vendored result is meant to be committed.
 func runPull(args []string) int {
 	if wantsHelp(args) {
 		pullUsage(os.Stdout)
@@ -448,19 +452,29 @@ for pull. Exit 0 means sync is ready to run; warnings never fail.
 `)
 }
 
-// parsePullArgs parses pull flags; only --out is allowed.
+// parsePullArgs parses pull flags: --out and --project. Default target is the
+// machine cache (resolveHome); --project vendors into the current project
+// ("data"); explicit --out wins over both.
 func parsePullArgs(args []string) (out string, err error) {
+	project := false
 	fs := flag.NewFlagSet("pull", flag.ContinueOnError)
 	fs.SetOutput(io.Discard) // usage() explains the contract on any error
-	fs.StringVar(&out, "out", "data", "target directory for knowledge/ and tools/")
+	fs.StringVar(&out, "out", "", "target directory for knowledge/ and tools/")
+	fs.BoolVar(&project, "project", false, "vendor into the current project (./data) instead of the machine cache")
 	if err := fs.Parse(args); err != nil {
 		return "", err
 	}
 	if fs.NArg() > 0 {
 		return "", fmt.Errorf("unexpected argument: %s", fs.Arg(0))
 	}
+	if out != "" {
+		return out, nil
+	}
+	if project {
+		return "data", nil
+	}
 
-	return out, nil
+	return resolveHome()
 }
 
 // parseSearchArgs parses search flags; only --dir is allowed, and at least

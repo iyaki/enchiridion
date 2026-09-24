@@ -60,6 +60,34 @@ func TestRunRanksTitleAboveBody(t *testing.T) {
 	}
 }
 
+func TestRunCarriesCitationURL(t *testing.T) {
+	root := writeMirror(t, map[string]string{
+		"knowledge/web.md": "---\ntitle: \"Web source\"\nsource_url: https://example.com/post\n" +
+			"notion_url: https://notion.so/web\n---\nneedle body\n",
+		"knowledge/native.md": "---\ntitle: \"Native page\"\nnotion_url: https://notion.so/native\n---\nneedle body\n",
+		"knowledge/bare.md":   "---\ntitle: \"Bare\"\n---\nneedle body\n",
+	})
+
+	hits, err := Run(root, []string{"needle"})
+	if err != nil {
+		t.Fatalf("Run: %v", err)
+	}
+	got := make(map[string]string, len(hits))
+	for _, hit := range hits {
+		got[hit.Path] = hit.URL
+	}
+	want := map[string]string{
+		"knowledge/web.md":    "https://example.com/post", // web source wins over notion_url
+		"knowledge/native.md": "https://notion.so/native", // notion_url fallback (ADR-16)
+		"knowledge/bare.md":   "",                         // nothing citable
+	}
+	for path, wantURL := range want {
+		if got[path] != wantURL {
+			t.Errorf("%s: URL %q, want %q", path, got[path], wantURL)
+		}
+	}
+}
+
 func TestRunANDSemanticsCaseInsensitive(t *testing.T) {
 	root := writeMirror(t, map[string]string{
 		"knowledge/both.md": fm("Go Testing") + "this one covers RACE conditions\n",

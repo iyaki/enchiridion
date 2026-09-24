@@ -28,6 +28,7 @@ const (
 type Hit struct {
 	Path  string // path relative to the search root, slash-joined
 	Title string // frontmatter title, or filename base when absent
+	URL   string // citation URL per ADR-16: source_url, else notion_url; empty when neither
 	Score int
 }
 
@@ -66,12 +67,12 @@ func Run(root string, terms []string) ([]Hit, error) {
 		if err != nil {
 			return err
 		}
-		title, f := split(string(content), d.Name())
+		title, cite, f := split(string(content), d.Name())
 		score, ok := score(f, terms)
 		if !ok {
 			return nil
 		}
-		hits = append(hits, Hit{Path: path, Title: title, Score: score})
+		hits = append(hits, Hit{Path: path, Title: title, URL: cite, Score: score})
 
 		return nil
 	})
@@ -87,15 +88,17 @@ func Run(root string, terms []string) ([]Hit, error) {
 
 // split separates frontmatter from body and lowers the searchable fields.
 // The title is the frontmatter title, falling back to the filename base
-// (without extension); malformed frontmatter is body.
-func split(content, filename string) (title string, f fields) {
+// (without extension); malformed frontmatter is body. cite is the ADR-16
+// citation URL.
+func split(content, filename string) (title, cite string, f fields) {
 	base := strings.TrimSuffix(filename, ".md")
 	f = fields{filename: strings.ToLower(base), body: strings.ToLower(content)}
 	block, body, ok := frontmatter(content)
 	if !ok {
-		return base, f
+		return base, "", f
 	}
 	title = titleField(block)
+	cite = citeURL(block)
 	f.title = strings.ToLower(title)
 	f.tags = strings.ToLower(tagsLine(block))
 	f.body = strings.ToLower(body)
@@ -103,7 +106,25 @@ func split(content, filename string) (title string, f fields) {
 		title = base
 	}
 
-	return title, f
+	return title, cite, f
+}
+
+// citeURL returns the entry's original web source from a frontmatter block,
+// falling back to the Notion page URL (ADR-16); empty when neither exists.
+func citeURL(block string) string {
+	notion := ""
+	for _, line := range strings.Split(block, "\n") {
+		if value, found := strings.CutPrefix(line, "source_url: "); found {
+			return value
+		}
+		if notion == "" {
+			if value, found := strings.CutPrefix(line, "notion_url: "); found {
+				notion = value
+			}
+		}
+	}
+
+	return notion
 }
 
 // frontmatter splits a document into its frontmatter block and body. The

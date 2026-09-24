@@ -193,8 +193,9 @@ flags:
                pass a vendored data/ directory in consumer projects)
 
 Matching is case-insensitive substring over title, tags, filename and body
-(the title ranks highest). Output: one "path — title" line per hit, best
-first; exit 1 when nothing matches.
+(the title ranks highest). Output: one "path — title — source" line per hit,
+best first (source: the original web URL, falling back to the Notion page;
+omitted when the entry has neither); exit 1 when nothing matches.
 `)
 }
 
@@ -318,7 +319,11 @@ func runSearch(args []string) int {
 		return exitError
 	}
 	for _, hit := range hits {
-		fmt.Printf("%s — %s\n", hit.Path, hit.Title)
+		line := hit.Path + " — " + hit.Title
+		if hit.URL != "" {
+			line += " — " + hit.URL
+		}
+		fmt.Println(line)
 	}
 	if len(hits) == 0 {
 		return exitError

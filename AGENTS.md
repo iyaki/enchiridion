@@ -23,15 +23,15 @@
 
 - Build the CLI binary: `make build`.
 - Run from source (no build): `make run ARGS='<command> [flags]'`.
-- Current state: `v0.4.0` — `sync` (full/incremental, mirror split into
+- Current state: `v0.4.1` — `sync` (full/incremental, mirror split into
   `knowledge/` + `tools/` per ADR-15), full content completeness (ADR-17),
   `enchiridion pull` (machine cache by default; `--project` vendors into a
   consumer project, ADR-18/20), conventional
   `--help`/`-h` (stdout, exit 0), sync progress on stderr (`--quiet` to
   silence), the read-only `enchiridion doctor` diagnostics command, and the
   read-only `enchiridion search` command (ranks mirror files by term
-  matches over title, tags, filename and body; exit 1 when nothing
-  matches).
+  matches over title, tags, filename and body, printing each hit's
+  citation URL per ADR-16; exit 1 when nothing matches).
   Pending work and remaining block types: `specs/implementation-plan.md`
   (Pending work).
 

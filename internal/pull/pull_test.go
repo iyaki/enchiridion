@@ -92,6 +92,28 @@ func TestPullExtractsOnlyMirrorDirs(t *testing.T) {
 	}
 }
 
+// TestPullWithoutTokenSendsNoAuthHeader verifies anonymous access: an empty
+// token must omit the Authorization header entirely — GitHub rejects
+// "Bearer " as invalid credentials (ADR-19 tokenless follow-up).
+func TestPullWithoutTokenSendsNoAuthHeader(t *testing.T) {
+	c := newTestClient(t, func(w http.ResponseWriter, r *http.Request) {
+		if auth := r.Header.Get("Authorization"); auth != "" {
+			t.Errorf("Authorization header: got %q, want none", auth)
+		}
+		w.Header().Set("Content-Type", "application/x-gtar")
+		_, _ = w.Write(buildTarball(t, "ench-main-abc", map[string]string{
+			"data/knowledge/a.md": "A",
+		}))
+	})
+	c.token = ""
+
+	out := t.TempDir()
+	if _, err := c.Pull("iyaki/enchiridion", out); err != nil {
+		t.Fatalf("anonymous Pull: %v", err)
+	}
+	assertFiles(t, out, map[string]string{"knowledge/a.md": "A"})
+}
+
 // assertFiles fails unless every relative path under root holds want.
 func assertFiles(t *testing.T, root string, want map[string]string) {
 	t.Helper()

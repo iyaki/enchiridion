@@ -41,7 +41,9 @@ type Client struct {
 	token   string
 }
 
-// NewClient returns a client authenticating with the given GitHub token.
+// NewClient returns a client for the GitHub API. The token is optional: with
+// it, requests are authenticated; without it, requests stay anonymous, which
+// works for public repositories (ADR-19).
 func NewClient(token string) *Client {
 	return &Client{
 		baseURL: apiBase,
@@ -105,8 +107,13 @@ func (c *Client) Check(repo string) error {
 }
 
 // authorize sets the standard GitHub API headers shared by every request.
+// Without a token the Authorization header is omitted: GitHub rejects a bare
+// "Bearer " as invalid credentials, while anonymous requests work for public
+// repositories.
 func (c *Client) authorize(req *http.Request) {
-	req.Header.Set("Authorization", "Bearer "+c.token)
+	if c.token != "" {
+		req.Header.Set("Authorization", "Bearer "+c.token)
+	}
 	req.Header.Set("Accept", "application/vnd.github+json")
 	req.Header.Set("X-GitHub-Api-Version", "2022-11-28")
 }

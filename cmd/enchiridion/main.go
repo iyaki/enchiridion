@@ -34,9 +34,17 @@ type repoChecker interface {
 	Check(repo string) error
 }
 
+// puller is the surface runPull needs, var-bound for tests (same pattern as
+// runEngine).
+type puller interface {
+	Pull(repo, out string) (pull.Stats, error)
+}
+
 var newPinger = func(token string) pinger { return notion.NewClient(token) }
 
 var newRepoChecker = func(token string) repoChecker { return pull.NewClient(token) }
+
+var newPuller = func(token string) puller { return pull.NewClient(token) }
 
 const (
 	envToken   = "NOTION_TOKEN"
@@ -104,7 +112,8 @@ configuration (environment):
   NOTION_TOKEN                   Notion integration token (sync)
   KNOWLEDGE_BASE_DATASOURCE_ID   data source to mirror (sync)
   ENCHIRIDION_HOME               cache root (default: ~/.local/share/enchiridion)
-  GITHUB_TOKEN                   token that can read the distribution repo (pull)
+  GITHUB_TOKEN                   optional: only for private ENCHIRIDION_REPO
+                                 overrides or higher rate limits (pull)
   ENCHIRIDION_REPO               distribution repo (default: `+pull.DefaultRepo+`)
 
 sync chooses its mode automatically (full or incremental); --full forces a
@@ -161,10 +170,12 @@ flags:
                via ENCHIRIDION_HOME; "data" with --project)
 
 configuration (environment):
-  GITHUB_TOKEN      token that can read the distribution repo
+  GITHUB_TOKEN      optional; only needed for private ENCHIRIDION_REPO
+                    overrides or higher rate limits
   ENCHIRIDION_REPO  distribution repo (default: `+pull.DefaultRepo+`)
 
-The download completes before anything on disk is touched, so a failed pull
+The repository is public, so an anonymous pull works out of the box. The
+download completes before anything on disk is touched, so a failed pull
 never damages an existing mirror. With --project, commit the result so every
 checkout of the project carries it (ADR-18).
 `)
@@ -241,9 +252,11 @@ func runSync(args []string) int {
 }
 
 // runPull refreshes the local mirror from the distribution repo: the machine
-// cache by default, or the current project with --project (ADR-18). It needs
-// a GitHub token that can read the distribution repo, never Notion
-// credentials. A project-vendored result is meant to be committed.
+// cache by default, or the current project with --project (ADR-18). The repo
+// is public (ADR-19), so GITHUB_TOKEN is optional — anonymous pulls work;
+// a token only helps with private ENCHIRIDION_REPO overrides and rate
+// limits. Notion credentials are never used. A project-vendored result is
+// meant to be committed.
 func runPull(args []string) int {
 	if wantsHelp(args) {
 		pullUsage(os.Stdout)
@@ -258,18 +271,12 @@ func runPull(args []string) int {
 		return exitUsage
 	}
 
-	token := os.Getenv(envGithubToken)
-	if token == "" {
-		fmt.Fprintf(os.Stderr, "enchiridion: missing required environment variable: %s\n", envGithubToken)
-
-		return exitError
-	}
 	repo := os.Getenv(envRepo)
 	if repo == "" {
 		repo = pull.DefaultRepo
 	}
 
-	stats, err := pull.NewClient(token).Pull(repo, out)
+	stats, err := newPuller(os.Getenv(envGithubToken)).Pull(repo, out)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "enchiridion: %v\n", err)
 
@@ -420,18 +427,22 @@ func doctorState() bool {
 	return false
 }
 
-// doctorPull verifies the optional pull surface against the distribution
-// repo; every outcome here is at most a warning.
+// doctorPull verifies the pull surface against the distribution repo; every
+// outcome here is at most a warning. The repo is public, so the check works
+// anonymously.
 func doctorPull() {
-	if !checkEnv(envGithubToken, "GITHUB_TOKEN set (pull)", "warn") {
-		return
-	}
+	token := os.Getenv(envGithubToken)
 	repo := os.Getenv(envRepo)
 	if repo == "" {
 		repo = pull.DefaultRepo
 	}
-	if err := newRepoChecker(os.Getenv(envGithubToken)).Check(repo); err != nil {
-		printCheck("warn", "pull: GITHUB_TOKEN can read "+repo+": "+err.Error())
+	if err := newRepoChecker(token).Check(repo); err != nil {
+		printCheck("warn", "pull: cannot reach "+repo+": "+err.Error())
+
+		return
+	}
+	if token == "" {
+		printCheck("ok", "pull: anonymous access to "+repo+" (GITHUB_TOKEN optional)")
 
 		return
 	}

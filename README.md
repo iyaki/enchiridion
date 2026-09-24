@@ -52,10 +52,11 @@ In devcontainers, use the feature — no token needed:
 A project that consumes the knowledge base must **not** depend on a machine
 where enchiridion was installed and synced: checkouts live on other laptops,
 CI runners, and agent sandboxes that share nothing. Instead, vendor the
-published mirror into the project's own repository — no Notion token needed:
+published mirror into the project's own repository — no Notion token and no
+GitHub token needed (the repository is public):
 
 ```sh
-GITHUB_TOKEN=... enchiridion pull --project   # writes data/knowledge/ + data/tools/
+enchiridion pull --project                # writes data/knowledge/ + data/tools/
 git add data && git commit -m "vendor: enchiridion mirror"
 ```
 
@@ -66,8 +67,9 @@ distribution repository's default branch (`ENCHIRIDION_REPO` to override);
 freshness is bounded by its sync cadence (nightly incremental, monthly
 full). To refresh: run `enchiridion pull --project` again and commit the
 diff. Without `--project`, `pull` refreshes the machine cache
-(`~/.local/share/enchiridion/`) — the same target as `sync`, useful where a
-GitHub token exists but Notion credentials do not.
+(`~/.local/share/enchiridion/`) — the same target as `sync`, useful where
+Notion credentials are not configured. `GITHUB_TOKEN` is optional everywhere:
+only private `ENCHIRIDION_REPO` overrides and rate limits need it.
 
 ## Configure
 
@@ -138,8 +140,8 @@ Consult the mirror (rg/grep) BEFORE answering when the task involves:
 
 Cite the entries used (file + `source_url`; `notion_url` only when the
 entry has no web source). With no precedent, say so explicitly. Missing or
-stale mirror: run `enchiridion pull --project` (needs `GITHUB_TOKEN`) and
-commit the result — never invent precedents.
+stale mirror: run `enchiridion pull --project` and commit the result —
+never invent precedents.
 ```
 
 ## Development

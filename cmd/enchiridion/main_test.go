@@ -11,6 +11,7 @@ import (
 	"testing"
 	"time"
 
+	"github.com/iyaki/enchiridion/internal/pull"
 	"github.com/iyaki/enchiridion/internal/sync"
 )
 
@@ -133,12 +134,31 @@ func TestParsePullArgsErrors(t *testing.T) {
 	}
 }
 
-func TestRunPullMissingTokenExitsOne(t *testing.T) {
+func TestRunPullWithoutTokenSucceedsAnonymously(t *testing.T) {
 	t.Setenv(envGithubToken, "")
+	t.Setenv(envHome, t.TempDir())
 
-	if code := runPull(nil); code != exitError {
-		t.Fatalf("pull without token: got exit %d, want %d", code, exitError)
+	var gotToken string
+	orig := newPuller
+	newPuller = func(token string) puller {
+		gotToken = token
+
+		return fakePuller{}
 	}
+	t.Cleanup(func() { newPuller = orig })
+
+	if code := runPull([]string{"--project"}); code != exitOK {
+		t.Fatalf("pull without token: got exit %d, want %d", code, exitOK)
+	}
+	if gotToken != "" {
+		t.Fatalf("puller token: got %q, want empty", gotToken)
+	}
+}
+
+type fakePuller struct{}
+
+func (fakePuller) Pull(_ string, _ string) (pull.Stats, error) {
+	return pull.Stats{Knowledge: 1, Tools: 1}, nil
 }
 
 func TestParseSearchArgs(t *testing.T) {

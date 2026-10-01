@@ -4,7 +4,7 @@ notion_id: 24d58e9f-b76c-4b07-a0e0-5beea4bd62d8
 notion_url: https://app.notion.com/p/Source-Making-24d58e9fb76c4b07a0e05beea4bd62d8
 last_edited: 2026-09-21T17:10:00.000Z
 source_url: https://sourcemaking.com/
-tags: ["English", "System Design / Software Architecture", "Programming", "Website", "Tutorial"]
+tags: ["Website", "Tutorial", "English", "System Design / Software Architecture", "Programming"]
 ---
 ## Design Patterns
 

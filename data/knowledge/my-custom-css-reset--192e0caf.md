@@ -4,7 +4,7 @@ notion_id: 192e0caf-9e7e-4456-b94b-aedc668eb803
 notion_url: https://app.notion.com/p/My-Custom-CSS-Reset-192e0caf9e7e4456b94baedc668eb803
 last_edited: 2023-09-20T18:55:00.000Z
 source_url: https://www.joshwcomeau.com/css/custom-css-reset/
-tags: ["English", "CSS", "Article", "Guide", "Josh Comeau"]
+tags: ["Article", "Guide", "Josh Comeau", "English", "CSS"]
 ---
 Whenever I start a new project, the first order of business is to sand down some of the rough edges in the CSS language. I do this with a functional set of custom baseline styles.
 

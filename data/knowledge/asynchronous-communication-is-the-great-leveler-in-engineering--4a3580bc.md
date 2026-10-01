@@ -4,7 +4,7 @@ notion_id: 4a3580bc-6ded-4b51-bcad-5048a16c25d4
 notion_url: https://app.notion.com/p/Asynchronous-Communication-is-the-Great-Leveler-in-Engineering-4a3580bc6ded4b51bcad5048a16c25d4
 last_edited: 2026-09-21T17:36:00.000Z
 source_url: https://shopify.engineering/asynchronous-communication-shopify-engineering
-tags: ["Article", "Shopify Engineering", "English", "Help Desk", "On Call", "Productivity", "Communication"]
+tags: ["English", "Help Desk", "On Call", "Productivity", "Communication", "Article", "Shopify Engineering"]
 ---
 [https://shopify.engineering/asynchronous-communication-shopify-engineering](https://shopify.engineering/asynchronous-communication-shopify-engineering)
 

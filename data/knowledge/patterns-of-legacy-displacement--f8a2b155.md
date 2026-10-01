@@ -4,7 +4,7 @@ notion_id: f8a2b155-77c2-4f5d-94cc-4cc1eb7c1d00
 notion_url: https://app.notion.com/p/Patterns-of-Legacy-Displacement-f8a2b15577c24f5d94cc4cc1eb7c1d00
 last_edited: 2026-09-21T17:41:00.000Z
 source_url: https://martinfowler.com/articles/patterns-legacy-displacement/
-tags: ["English", "System Design / Software Architecture", "Project Management", "Article", "Martin Fowler"]
+tags: ["System Design / Software Architecture", "Project Management", "Article", "Martin Fowler", "English"]
 ---
 [https://martinfowler.com/articles/patterns-legacy-displacement/](https://martinfowler.com/articles/patterns-legacy-displacement/)
 

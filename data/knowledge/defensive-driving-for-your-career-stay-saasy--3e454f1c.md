@@ -4,7 +4,7 @@ notion_id: 3e454f1c-7d23-81d1-b863-d05ded7a6301
 notion_url: https://app.notion.com/p/Defensive-Driving-For-Your-Career-Stay-SaaSy-3e454f1c7d2381d1b863d05ded7a6301
 last_edited: 2026-09-23T03:16:00.000Z
 source_url: https://staysaasy.com/defensive-career-driving/
-tags: ["English", "Career Growth", "Communication", "Product Management", "Leadership", "Team Management", "Article", "Stay SaaSy"]
+tags: ["Career Growth", "Communication", "Product Management", "Leadership", "Team Management", "Article", "Stay SaaSy", "English"]
 ---
 To have a positive career you need to be appropriately recognized and rewarded for your work.
 

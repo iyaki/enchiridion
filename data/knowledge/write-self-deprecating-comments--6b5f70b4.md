@@ -4,7 +4,7 @@ notion_id: 6b5f70b4-a954-46ec-b9ff-a56e6ef50a71
 notion_url: https://app.notion.com/p/Write-self-deprecating-comments-6b5f70b4a95446ecb9ffa56e6ef50a71
 last_edited: 2026-09-21T17:34:00.000Z
 source_url: https://thepugautomatic.com/2021/02/write-self-deprecating-comments/
-tags: ["Article", "The Pug Automatic", "English", "Programming"]
+tags: ["The Pug Automatic", "English", "Programming", "Article"]
 ---
 [https://thepugautomatic.com/2021/02/write-self-deprecating-comments/](https://thepugautomatic.com/2021/02/write-self-deprecating-comments/)
 

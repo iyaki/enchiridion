@@ -4,7 +4,7 @@ notion_id: acb41bf4-987b-4e98-8f39-361f2e6cb4cb
 notion_url: https://app.notion.com/p/UptimeRobot-Website-Monitoring-acb41bf4987b4e988f39361f2e6cb4cb
 last_edited: 2026-09-21T17:12:00.000Z
 source_url: https://uptimerobot.com/
-tags: ["DevOps", "Site Reliability Engineering", "Untried", "Service", "English"]
+tags: ["Service", "English", "DevOps", "Site Reliability Engineering", "Untried"]
 ---
 ## Meet the #1 uptime monitoring service.
 

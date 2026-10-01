@@ -4,7 +4,7 @@ notion_id: f26d2408-3131-48eb-8710-0e2578def1b2
 notion_url: https://app.notion.com/p/Expose-Share-local-sites-f26d2408313148eb87100e2578def1b2
 last_edited: 2026-09-21T17:12:00.000Z
 source_url: https://expose.dev/
-tags: ["English", "Web Development", "Untried", "Tool", "Service"]
+tags: ["Web Development", "Untried", "Tool", "Service", "English"]
 ---
 Do I need to fiddle with my router?
 

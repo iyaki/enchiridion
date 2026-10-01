@@ -4,7 +4,7 @@ notion_id: c43733fb-8dd1-4759-a9cd-7553741c0f8e
 notion_url: https://app.notion.com/p/FullCalendar-JavaScript-Event-Calendar-c43733fb8dd14759a9cd7553741c0f8e
 last_edited: 2023-02-17T19:33:00.000Z
 source_url: https://fullcalendar.io/
-tags: ["Framework/Library", "English", "Frontend", "UI/UX", "Javascript", "Untried"]
+tags: ["English", "Frontend", "UI/UX", "Javascript", "Untried", "Framework/Library"]
 ---
 ```shell
 npm install @fullcalendar/react

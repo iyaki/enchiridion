@@ -4,7 +4,7 @@ notion_id: 49e6b795-b3af-4662-9c4d-d93a8b683799
 notion_url: https://app.notion.com/p/Personas-by-Draftbit-avatar-generator-49e6b795b3af46629c4dd93a8b683799
 last_edited: 2026-09-21T17:16:00.000Z
 source_url: https://personas.draftbit.com/
-tags: ["Graphic Design", "Tool", "Service", "English"]
+tags: ["English", "Graphic Design", "Tool", "Service"]
 ---
 ## Personas by Draftbit — Avatar Generator
 

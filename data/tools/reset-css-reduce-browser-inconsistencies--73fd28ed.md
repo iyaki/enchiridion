@@ -4,7 +4,7 @@ notion_id: 73fd28ed-4c29-4a0a-8841-39d0c3d5c9dc
 notion_url: https://app.notion.com/p/Reset-CSS-Reduce-browser-inconsistencies-73fd28ed4c294a0a884139d0c3d5c9dc
 last_edited: 2023-06-23T11:45:00.000Z
 source_url: https://meyerweb.com/eric/tools/css/reset/
-tags: ["CSS", "Frontend", "Untried", "Framework/Library"]
+tags: ["Framework/Library", "CSS", "Frontend", "Untried"]
 ---
 The goal of a reset stylesheet is to reduce browser inconsistencies in things like default line heights, margins and font sizes of headings, and so on. The general reasoning behind this was [discussed in a May 2007 post](http://meyerweb.com/eric/thoughts/2007/04/18/reset-reasoning/), if you're interested. Reset styles quite often appear in CSS frameworks, and the original "meyerweb reset" found its way into [Blueprint](http://code.google.com/p/blueprintcss/), among others.
 

@@ -4,7 +4,7 @@ notion_id: 0b1f9e52-d37a-4a13-a30c-20d3c4b57fae
 notion_url: https://app.notion.com/p/Frontpage-Terms-of-Service-Didn-t-Read-0b1f9e52d37a4a13a30c20d3c4b57fae
 last_edited: 2026-09-21T17:04:00.000Z
 source_url: https://tosdr.org/en
-tags: ["Tool", "Service", "?", "Untried"]
+tags: ["?", "Untried", "Tool", "Service"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

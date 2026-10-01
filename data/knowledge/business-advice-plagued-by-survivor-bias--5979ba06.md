@@ -4,7 +4,7 @@ notion_id: 5979ba06-4d29-47dc-a48f-618e4e79105a
 notion_url: https://app.notion.com/p/Business-Advice-Plagued-by-Survivor-Bias-5979ba064d2947dca48f618e4e79105a
 last_edited: 2023-07-12T19:53:00.000Z
 source_url: https://longform.asmartbear.com/survivor-bias/
-tags: ["English", "Learning", "Reflection", "Article"]
+tags: ["Article", "English", "Learning", "Reflection"]
 ---
 _☞ Please consider disabling "reader-mode" — this site has no ads nor Google tracking, but does have dark-mode and intentional typesetting and imagery. ☜_
 

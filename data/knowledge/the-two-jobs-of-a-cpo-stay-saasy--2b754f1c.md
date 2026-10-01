@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-8174-ab57-e216d2e2432d
 notion_url: https://app.notion.com/p/The-Two-Jobs-of-a-CPO-Stay-SaaSy-2b754f1c7d238174ab57e216d2e2432d
 last_edited: 2026-09-21T16:57:00.000Z
 source_url: https://www.notion.so/2b754f1c7d238174ab57e216d2e2432d
-tags: ["Article", "Stay SaaSy", "English", "Product Management", "Team Management", "Leadership", "Career Growth"]
+tags: ["English", "Product Management", "Team Management", "Leadership", "Career Growth", "Article", "Stay SaaSy"]
 ---
 One of the hardest things I’ve found about being a Head of Product / Chief Product Officer is that you really have two jobs:
 

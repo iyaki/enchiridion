@@ -4,7 +4,7 @@ notion_id: 528d8e92-1f58-4b6d-aae7-084f8cbdde25
 notion_url: https://app.notion.com/p/Uptrace-Observability-Platform-528d8e921f584b6daae7084f8cbdde25
 last_edited: 2026-09-21T17:07:00.000Z
 source_url: https://uptrace.dev/
-tags: ["English", "DevOps", "Site Reliability Engineering", "Untried", "Tool", "Service"]
+tags: ["Tool", "Service", "English", "DevOps", "Site Reliability Engineering", "Untried"]
 ---
 
 

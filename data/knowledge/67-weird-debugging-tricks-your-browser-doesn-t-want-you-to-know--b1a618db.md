@@ -4,7 +4,7 @@ notion_id: b1a618db-f126-4777-88e7-f5ae5c07c58a
 notion_url: https://app.notion.com/p/67-Weird-Debugging-Tricks-Your-Browser-Doesn-t-Want-You-to-Know-b1a618dbf126477788e7f5ae5c07c58a
 last_edited: 2026-09-21T16:58:00.000Z
 source_url: https://alan.norbauer.com/articles/browser-debugging-tricks/
-tags: ["English", "Programming", "Web Development", "Frontend", "Javascript", "HTML", "CSS", "Article", "Alan Norbauer"]
+tags: ["Alan Norbauer", "English", "Programming", "Web Development", "Frontend", "Javascript", "HTML", "CSS", "Article"]
 ---
 A list of useful, not-obvious hacks to get the most out of your browser’s[1](https://alan.norbauer.com/articles/browser-debugging-tricks#user-content-fn-1) debugger. Assumes an intermediate-level-or-higher understanding of the developer tools.
 

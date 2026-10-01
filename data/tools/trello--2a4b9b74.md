@@ -4,7 +4,7 @@ notion_id: 2a4b9b74-b759-4eab-b421-3ea9bfa9684d
 notion_url: https://app.notion.com/p/Trello-2a4b9b74b7594eabb4213ea9bfa9684d
 last_edited: 2026-09-21T17:13:00.000Z
 source_url: https://trello.com/
-tags: ["Service", "English", "Español", "Others", "Project Management"]
+tags: ["English", "Español", "Others", "Project Management", "Service"]
 ---
 ### Meet Trello
 

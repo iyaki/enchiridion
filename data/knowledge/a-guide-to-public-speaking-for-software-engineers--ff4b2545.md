@@ -4,7 +4,7 @@ notion_id: ff4b2545-c1a0-4427-956a-87f8c170147d
 notion_url: https://app.notion.com/p/A-Guide-to-Public-Speaking-for-Software-Engineers-ff4b2545c1a04427956a87f8c170147d
 last_edited: 2026-09-21T16:58:00.000Z
 source_url: https://read.highgrowthengineer.com/p/a-guide-to-public-speaking-for-software
-tags: ["High Growth Engineer Substack", "English", "Communication", "Article"]
+tags: ["English", "Communication", "Article", "High Growth Engineer Substack"]
 ---
 “Your technical skills are where they need to be, but you need to improve your communication.” - Your manager.
 

@@ -4,7 +4,7 @@ notion_id: 3ea54f1c-7d23-81d6-a297-f80e55180991
 notion_url: https://app.notion.com/p/vercel-labs-scriptc-TypeScript-to-Native-Compiler-3ea54f1c7d2381d6a297f80e55180991
 last_edited: 2026-09-29T04:10:00.000Z
 source_url: https://github.com/vercel-labs/scriptc
-tags: ["Tool", "GitHub", "English", "Programming", "TypeScript", "WebAssembly", "Automation", "Developer Tools"]
+tags: ["English", "Programming", "TypeScript", "WebAssembly", "Automation", "Developer Tools", "Tool", "GitHub"]
 ---
 ![image](https://camo.githubusercontent.com/1292ed5fc232d2004f06ae411b281e2cbc9dabff7a6a222082eee753fb2528b4/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c4142532d4558504552494d454e542d3061306130612e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d56657263656c266c6162656c436f6c6f723d303030303030)
 

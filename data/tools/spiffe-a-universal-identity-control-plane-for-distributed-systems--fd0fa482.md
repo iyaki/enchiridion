@@ -4,7 +4,7 @@ notion_id: fd0fa482-1e35-46a9-89f8-5e4dd0a49069
 notion_url: https://app.notion.com/p/SPIFFE-A-universal-identity-control-plane-for-distributed-systems-fd0fa4821e3546a989f85e4dd0a49069
 last_edited: 2026-09-21T17:12:00.000Z
 source_url: https://spiffe.io/
-tags: ["English", "Information Security", "DevOps", "Untried", "Tool"]
+tags: ["Tool", "English", "Information Security", "DevOps", "Untried"]
 ---
 10 Years of SPIFFE! Register for Community Day 2026 → - 27 October, London & Online
 

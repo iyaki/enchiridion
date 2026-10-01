@@ -4,7 +4,7 @@ notion_id: f5062725-f2bf-4e46-ad3c-4361e0f02a0f
 notion_url: https://app.notion.com/p/Principios-de-cualquier-equipo-efectivo-f5062725f2bf4e46ad3c4361e0f02a0f
 last_edited: 2026-09-21T16:58:00.000Z
 source_url: https://www.notion.so/f5062725f2bf4e46ad3c4361e0f02a0f
-tags: ["Agile", "Line/People/Team Management", "Article", "This is the Agile Way (Javier Garzas)", "English"]
+tags: ["English", "Agile", "Line/People/Team Management", "Article", "This is the Agile Way (Javier Garzas)"]
 ---
 Nos propusimos llegar a 10 y en 10 quedará. Además, también se cumplen 100 newsletters This is the Agile Way, a las que hay que sumar 2.500 posts del blog javiergarzas.com.
 

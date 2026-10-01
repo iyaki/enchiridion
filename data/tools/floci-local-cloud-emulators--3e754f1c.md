@@ -4,7 +4,7 @@ notion_id: 3e754f1c-7d23-8174-9160-deb595b4b471
 notion_url: https://app.notion.com/p/Floci-Local-Cloud-Emulators-3e754f1c7d2381749160deb595b4b471
 last_edited: 2026-09-26T03:28:00.000Z
 source_url: https://floci.io/
-tags: ["Official Website", "English", "Cloud", "DevOps", "Automation", "Serverless", "AWS", "Azure", "GCP", "OCI", "Tool", "Service"]
+tags: ["Cloud", "DevOps", "Automation", "Serverless", "AWS", "Azure", "GCP", "OCI", "Tool", "Service", "Official Website", "English"]
 ---
 [Skip to main content](https://floci.io/#main-content)
 

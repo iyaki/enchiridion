@@ -4,7 +4,7 @@ notion_id: 1776ced7-d0e1-4966-8b09-2121a6e82d6f
 notion_url: https://app.notion.com/p/monotepo-tools-mainly-for-Javascript-1776ced7d0e149668b092121a6e82d6f
 last_edited: 2026-09-21T17:40:00.000Z
 source_url: https://monorepo.tools/
-tags: ["Website", "Tool", "English", "System Design / Software Architecture", "Javascript", "Monorepositories"]
+tags: ["System Design / Software Architecture", "Javascript", "Monorepositories", "Website", "Tool", "English"]
 ---
 [https://monorepo.tools/](https://monorepo.tools/)
 

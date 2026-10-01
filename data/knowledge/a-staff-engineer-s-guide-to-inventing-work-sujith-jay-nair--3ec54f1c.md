@@ -4,7 +4,7 @@ notion_id: 3ec54f1c-7d23-816f-99d9-e568921adebf
 notion_url: https://app.notion.com/p/A-Staff-Engineer-s-Guide-to-Inventing-Work-Sujith-Jay-Nair-3ec54f1c7d23816f99d9e568921adebf
 last_edited: 2026-10-01T04:06:00.000Z
 source_url: https://sujithjay.com/inventing-work
-tags: ["Article", "Guide", "Sujith Jay Nair", "English", "Product Management", "Programming", "Systems Design / Software Architecture"]
+tags: ["English", "Product Management", "Programming", "Systems Design / Software Architecture", "Article", "Guide", "Sujith Jay Nair"]
 ---
 22 Sep 2026  • [platforms](https://sujithjay.com/tag/platforms/)[product](https://sujithjay.com/tag/product/)[management](https://sujithjay.com/tag/management/)
 

@@ -4,7 +4,7 @@ notion_id: 75a5b16d-eedd-41f0-a13e-e6c3c1de0374
 notion_url: https://app.notion.com/p/Qu-es-realmente-la-observabilidad-y-por-qu-es-importante-75a5b16deedd41f0a13ee6c3c1de0374
 last_edited: 2026-09-21T17:24:00.000Z
 source_url: https://sysarmy.com/blog/posts/observabilidad/
-tags: ["Article", "Sysarmy Blog", "Español", "DevOps", "Site Reliability Engineering"]
+tags: ["Sysarmy Blog", "Español", "DevOps", "Site Reliability Engineering", "Article"]
 ---
 [https://sysarmy.com/blog/posts/observabilidad/](https://sysarmy.com/blog/posts/observabilidad/)
 

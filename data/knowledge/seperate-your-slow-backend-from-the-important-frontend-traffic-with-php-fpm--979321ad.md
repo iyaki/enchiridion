@@ -4,7 +4,7 @@ notion_id: 979321ad-70db-4a14-ba06-df912da20857
 notion_url: https://app.notion.com/p/Seperate-your-slow-backend-from-the-important-frontend-traffic-with-PHP-FPM-979321ad70db4a14ba06df912da20857
 last_edited: 2026-09-21T17:21:00.000Z
 source_url: https://tideways.com/profiler/blog/seperate-your-slow-backend-from-the-important-frontend-traffic-with-php-fpm
-tags: ["English", "PHP", "Article", "tideways Blog"]
+tags: ["Article", "tideways Blog", "English", "PHP"]
 ---
 [https://tideways.com/profiler/blog/seperate-your-slow-backend-from-the-important-frontend-traffic-with-php-fpm](https://tideways.com/profiler/blog/seperate-your-slow-backend-from-the-important-frontend-traffic-with-php-fpm)
 

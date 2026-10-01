@@ -4,7 +4,7 @@ notion_id: 1646f7fe-4aca-4467-af50-bad62f9149f4
 notion_url: https://app.notion.com/p/Choosing-a-Primary-Key-Natural-or-Surrogate-1646f7fe4aca4467af50bad62f9149f4
 last_edited: 2026-09-21T17:27:00.000Z
 source_url: https://agiledata.org/essays/keys.html
-tags: ["English", "Databases", "System Design / Software Architecture", "Article", "Agile Data"]
+tags: ["Databases", "System Design / Software Architecture", "Article", "Agile Data", "English"]
 ---
 [http://www.agiledata.org/essays/keys.html](http://www.agiledata.org/essays/keys.html)
 

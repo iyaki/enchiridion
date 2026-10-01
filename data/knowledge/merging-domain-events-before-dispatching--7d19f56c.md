@@ -4,7 +4,7 @@ notion_id: 7d19f56c-2364-4ce0-9e1f-c341fa029612
 notion_url: https://app.notion.com/p/Merging-domain-events-before-dispatching-7d19f56c23644ce09e1fc341fa029612
 last_edited: 2026-09-21T17:39:00.000Z
 source_url: https://enterprisecraftsmanship.com/posts/merging-domain-events-dispatching/
-tags: ["English", "Programming", "System Design / Software Architecture", "Object Oriented Programming", "Event Driven Architecture", "Domain Driven Design", "Article", "Enterprise Craftsmanship"]
+tags: ["Article", "Enterprise Craftsmanship", "English", "Programming", "System Design / Software Architecture", "Object Oriented Programming", "Event Driven Architecture", "Domain Driven Design"]
 ---
 [https://enterprisecraftsmanship.com/posts/merging-domain-events-dispatching/](https://enterprisecraftsmanship.com/posts/merging-domain-events-dispatching/)
 

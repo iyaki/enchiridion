@@ -4,7 +4,7 @@ notion_id: 2b005281-aca7-440d-a948-c683dbaaa057
 notion_url: https://app.notion.com/p/There-Are-Only-5-Meetings-Standup-Demo-Plan-Reflect-and-All-Hands-2b005281aca7440da948c683dbaaa057
 last_edited: 2026-09-21T17:33:00.000Z
 source_url: https://hackernoon.com/there-are-only-5-meetings-standup-demo-plan-reflect-and-all-hands-k05s34ue
-tags: ["English", "Line/People/Team Management", "Project Management", "Article", "Hackernoon"]
+tags: ["Article", "Hackernoon", "English", "Line/People/Team Management", "Project Management"]
 ---
 [https://hackernoon.com/there-are-only-5-meetings-standup-demo-plan-reflect-and-all-hands-k05s34ue](https://hackernoon.com/there-are-only-5-meetings-standup-demo-plan-reflect-and-all-hands-k05s34ue)
 

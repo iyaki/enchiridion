@@ -4,7 +4,7 @@ notion_id: 1b254f1c-7d23-81f1-9ca7-cee076f62fa7
 notion_url: https://app.notion.com/p/Becoming-a-good-engineer-1b254f1c7d2381f19ca7cee076f62fa7
 last_edited: 2026-09-21T16:57:00.000Z
 source_url: https://www.notion.so/1b254f1c7d2381f19ca7cee076f62fa7
-tags: ["Article", "Madmeg's Blog", "Producer (Individual Contributor)", "Career Growth"]
+tags: ["Madmeg's Blog", "Producer (Individual Contributor)", "Career Growth", "Article"]
 ---
 ## Introduction
 

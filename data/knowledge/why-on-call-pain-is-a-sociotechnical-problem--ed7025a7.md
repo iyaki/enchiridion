@@ -4,7 +4,7 @@ notion_id: ed7025a7-7450-4571-9f02-ef8498956bb2
 notion_url: https://app.notion.com/p/Why-on-call-pain-is-a-sociotechnical-problem-ed7025a7745045719f02ef8498956bb2
 last_edited: 2026-09-21T17:36:00.000Z
 source_url: https://leaddev.com/technical-direction/why-call-pain-sociotechnical-problem
-tags: ["LeadDev", "English", "On Call", "Line/People/Team Management", "Article"]
+tags: ["English", "On Call", "Line/People/Team Management", "Article", "LeadDev"]
 ---
 [https://leaddev.com/call/why-call-pain-sociotechnical-problem](https://leaddev.com/call/why-call-pain-sociotechnical-problem)
 

@@ -4,7 +4,7 @@ notion_id: f2f281af-813b-46dc-9c0f-3591c60d4829
 notion_url: https://app.notion.com/p/The-AWARE-Development-Plan-f2f281af813b46dc9c0f3591c60d4829
 last_edited: 2026-09-21T17:43:00.000Z
 source_url: https://shopify.engineering/aware-development-plan
-tags: ["English", "Producer (Individual Contributor)", "Line/People/Team Management", "Career Growth", "Article", "Shopify Engineering"]
+tags: ["Producer (Individual Contributor)", "Line/People/Team Management", "Career Growth", "Article", "Shopify Engineering", "English"]
 ---
 [https://shopify.engineering/aware-development-plan](https://shopify.engineering/aware-development-plan)
 

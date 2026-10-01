@@ -4,7 +4,7 @@ notion_id: dee298f4-0ca0-4682-bd7d-010e9d2c6fc8
 notion_url: https://app.notion.com/p/Seven-ways-managers-can-respond-when-engineering-goes-wrong-dee298f40ca04682bd7d010e9d2c6fc8
 last_edited: 2026-09-21T17:32:00.000Z
 source_url: https://leaddev.com/leadership/seven-ways-managers-can-respond-when-engineering-goes-wrong
-tags: ["Line/People/Team Management", "Article", "LeadDev", "English"]
+tags: ["Article", "LeadDev", "English", "Line/People/Team Management"]
 ---
 [https://leaddev.com/team/seven-ways-managers-can-respond-when-engineering-goes-wrong](https://leaddev.com/team/seven-ways-managers-can-respond-when-engineering-goes-wrong)
 

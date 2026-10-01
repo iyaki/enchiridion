@@ -4,7 +4,7 @@ notion_id: 96f04501-0d4d-4239-824b-c2983df11788
 notion_url: https://app.notion.com/p/Go-slow-to-move-fast-96f045010d4d4239824bc2983df11788
 last_edited: 2023-06-23T11:40:00.000Z
 source_url: https://jordankaye.dev/posts/go-slow-move-fast/
-tags: ["English", "Project Management", "Product Management", "Programming", "Article", "Organizing Chaos - Jordan Kaye"]
+tags: ["Organizing Chaos - Jordan Kaye", "English", "Project Management", "Product Management", "Programming", "Article"]
 ---
 Engineering teams can often improve their long-term development velocity by slowing down in the short term.
 

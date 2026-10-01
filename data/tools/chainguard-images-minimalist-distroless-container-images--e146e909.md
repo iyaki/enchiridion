@@ -4,7 +4,7 @@ notion_id: e146e909-7353-4f00-81f9-2601fa73c17f
 notion_url: https://app.notion.com/p/Chainguard-Images-Minimalist-distroless-container-images-e146e90973534f0081f92601fa73c17f
 last_edited: 2026-09-21T17:02:00.000Z
 source_url: https://edu.chainguard.dev/chainguard/containers/
-tags: ["English", "Virtualization", "DevOps", "Site Reliability Engineering", "SysAdmin", "System Design / Software Architecture", "Tool"]
+tags: ["Tool", "English", "Virtualization", "DevOps", "Site Reliability Engineering", "SysAdmin", "System Design / Software Architecture"]
 ---
 Minimalist, distroless container images powered by Wolfi to secure your software supply chain.
 

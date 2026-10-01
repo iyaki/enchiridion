@@ -4,7 +4,7 @@ notion_id: 11a54f1c-7d23-81d3-9b58-fc2df8d25430
 notion_url: https://app.notion.com/p/Use-1-1s-to-develop-engineering-managers-reporting-to-you-11a54f1c7d2381d39b58fc2df8d25430
 last_edited: 2026-09-21T16:58:00.000Z
 source_url: https://www.notion.so/11a54f1c7d2381d39b58fc2df8d25430
-tags: ["Article", "LeadDev", "English", "Line/People/Team Management", "Career Growth"]
+tags: ["Line/People/Team Management", "Career Growth", "Article", "LeadDev", "English"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

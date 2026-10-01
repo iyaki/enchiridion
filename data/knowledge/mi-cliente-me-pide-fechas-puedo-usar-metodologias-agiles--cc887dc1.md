@@ -4,7 +4,7 @@ notion_id: cc887dc1-f9af-4990-897b-1240a6767361
 notion_url: https://app.notion.com/p/Mi-cliente-me-pide-fechas-puedo-usar-metodolog-as-giles-cc887dc1f9af4990897b1240a6767361
 last_edited: 2026-09-21T17:43:00.000Z
 source_url: https://javiergarzas.com/2021/04/mi-cliente-me-pide-fechas-puedo-usar-metodologias-agiles-en-video.html
-tags: ["Javier Garzas Blog", "Español", "Agile", "Project Management", "Article"]
+tags: ["Español", "Agile", "Project Management", "Article", "Javier Garzas Blog"]
 ---
 [https://www.javiergarzas.com/2021/04/mi-cliente-me-pide-fechas-puedo-usar-metodologias-agiles-en-video.html](https://www.javiergarzas.com/2021/04/mi-cliente-me-pide-fechas-puedo-usar-metodologias-agiles-en-video.html)
 

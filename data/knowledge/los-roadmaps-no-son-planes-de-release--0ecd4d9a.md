@@ -4,7 +4,7 @@ notion_id: 0ecd4d9a-2426-400c-ab3f-6627c882768e
 notion_url: https://app.notion.com/p/Los-Roadmaps-no-son-planes-de-Release-0ecd4d9a2426400cab3f6627c882768e
 last_edited: 2023-04-18T19:32:00.000Z
 source_url: https://iyaki.notion.site/Los-Roadmaps-no-son-planes-de-Release-0ecd4d9a2426400cab3f6627c882768e
-tags: ["Español", "Project Management", "Entrepreneurship", "Product Management", "Agile", "Article", "This is the Agile Way (Javier Garzas)"]
+tags: ["This is the Agile Way (Javier Garzas)", "Español", "Project Management", "Entrepreneurship", "Product Management", "Agile", "Article"]
 ---
 > “Ningún Roadmap sobrevive al contacto con la realidad”
 Janna Bastow

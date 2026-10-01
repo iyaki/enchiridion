@@ -4,7 +4,7 @@ notion_id: 46a9cb83-3338-4955-8728-718bf9d4d524
 notion_url: https://app.notion.com/p/A-step-by-step-breakdown-of-the-UX-design-process-46a9cb83333849558728718bf9d4d524
 last_edited: 2026-09-21T17:00:00.000Z
 source_url: https://blog.logrocket.com/ux-design/ux-design-process-7-steps/
-tags: ["English", "UI/UX", "Product Management", "Article", "LogRocket Blog"]
+tags: ["LogRocket Blog", "English", "UI/UX", "Product Management", "Article"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

@@ -4,7 +4,7 @@ notion_id: 1ee54f1c-7d23-814e-a8ec-e7422b23ba16
 notion_url: https://app.notion.com/p/Are-CSS-Carousels-accessible-1ee54f1c7d23814ea8ece7422b23ba16
 last_edited: 2025-07-26T22:47:00.000Z
 source_url: https://www.sarasoueidan.com/blog/css-carousels-accessibility/
-tags: ["English", "CSS", "Frontend", "Article", "Sara Soueidan"]
+tags: ["Article", "Sara Soueidan", "English", "CSS", "Frontend"]
 ---
 In this post I want to examine the newly announced “CSS Carousels” through the lens of usability and accessibility. I’ll start with a spoiler: CSS Carousels are highly experimental and they are not yet ready for production; not only because of the current lack of browser adoption for the new CSS features they use, but also because they have some major accessibility issues.
 

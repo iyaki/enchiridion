@@ -4,7 +4,7 @@ notion_id: 8dc7ee8d-be40-4339-a996-24ecdb521f64
 notion_url: https://app.notion.com/p/Five-reasons-you-shouldn-t-rewrite-that-code-8dc7ee8dbe404339a99624ecdb521f64
 last_edited: 2026-09-21T17:01:00.000Z
 source_url: https://leaddev.com/software-quality/five-reasons-you-shouldnt-rewrite-code
-tags: ["Article", "LeadDev", "English", "Programming", "Product Management"]
+tags: ["LeadDev", "English", "Programming", "Product Management", "Article"]
 ---
 Before you commit to rewriting an old system, here are some reasons it's (almost always) a bad idea.
 

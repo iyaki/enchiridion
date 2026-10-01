@@ -4,7 +4,7 @@ notion_id: fe9aed15-1b73-4581-87f6-db1f2c431798
 notion_url: https://app.notion.com/p/Layout-fe9aed151b73458187f6db1f2c431798
 last_edited: 2026-09-21T17:02:00.000Z
 source_url: https://anthonyhobday.com/sideprojects/quickstart/layout
-tags: ["UI/UX", "Article", "anthonyhobday", "English"]
+tags: ["English", "UI/UX", "Article", "anthonyhobday"]
 ---
 If you design websites or applications, layout helps you to:
 

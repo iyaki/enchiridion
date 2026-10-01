@@ -4,7 +4,7 @@ notion_id: 87bb60a4-8571-46e0-9a0f-1387e9bd7c6a
 notion_url: https://app.notion.com/p/M-tricas-giles-de-producto-desde-la-perspectiva-funcional-87bb60a4857146e09a0f1387e9bd7c6a
 last_edited: 2026-09-21T17:00:00.000Z
 source_url: https://www.notion.so/87bb60a4857146e09a0f1387e9bd7c6a
-tags: ["English", "Project Management", "Product Management", "Productivity", "Article", "This is the Agile Way (Javier Garzas)"]
+tags: ["Article", "This is the Agile Way (Javier Garzas)", "English", "Project Management", "Product Management", "Productivity"]
 ---
 > _Cuando una medida se convierte en un objetivo, deja de ser una buena medida_
 

@@ -4,7 +4,7 @@ notion_id: a954824f-7275-4b53-854e-990367f94c29
 notion_url: https://app.notion.com/p/Keybase-Secure-messaging-and-file-sharing-a954824f72754b53854e990367f94c29
 last_edited: 2026-09-21T17:20:00.000Z
 source_url: https://keybase.io/
-tags: ["Tool", "Service", "English", "Communication", "File/Object Storage"]
+tags: ["English", "Communication", "File/Object Storage", "Tool", "Service"]
 ---
 [https://keybase.io/](https://keybase.io/)
 

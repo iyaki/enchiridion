@@ -4,7 +4,7 @@ notion_id: 1fe9ebc8-7221-477c-a31d-45424c6a4006
 notion_url: https://app.notion.com/p/Partitioning-GitHub-s-relational-databases-to-handle-scale-1fe9ebc87221477ca31d45424c6a4006
 last_edited: 2026-09-21T17:03:00.000Z
 source_url: https://github.blog/engineering/partitioning-githubs-relational-databases-scale/
-tags: ["Github Blog", "English", "Databases", "System Design / Software Architecture", "Article"]
+tags: ["Article", "Github Blog", "English", "Databases", "System Design / Software Architecture"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

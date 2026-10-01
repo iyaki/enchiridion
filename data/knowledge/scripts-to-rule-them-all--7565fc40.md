@@ -4,7 +4,7 @@ notion_id: 7565fc40-81c8-45c1-8a7c-8e73c118fb35
 notion_url: https://app.notion.com/p/Scripts-to-Rule-Them-All-7565fc4081c845c18a7c8e73c118fb35
 last_edited: 2026-09-21T17:26:00.000Z
 source_url: https://github.blog/engineering/scripts-to-rule-them-all/
-tags: ["English", "Programming", "DevOps", "Article", "Github Blog"]
+tags: ["Github Blog", "English", "Programming", "DevOps", "Article"]
 ---
 [https://github.blog/2015-06-30-scripts-to-rule-them-all/](https://github.blog/2015-06-30-scripts-to-rule-them-all/)
 

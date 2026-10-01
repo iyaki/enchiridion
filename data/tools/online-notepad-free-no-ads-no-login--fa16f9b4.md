@@ -4,7 +4,7 @@ notion_id: fa16f9b4-6f45-4fad-b308-a99297e3808a
 notion_url: https://app.notion.com/p/Online-Notepad-free-no-ads-no-login-fa16f9b46f454fadb308a99297e3808a
 last_edited: 2023-08-07T18:51:00.000Z
 source_url: https://www.protectedtext.com/
-tags: ["English", "Office", "Untried", "Service"]
+tags: ["Service", "English", "Office", "Untried"]
 ---
 - The safest site on the web for storing your text!
 - Enter any URL, e.g. protectedText.com/anything You find it - it's yours!

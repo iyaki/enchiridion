@@ -4,7 +4,7 @@ notion_id: a7c777eb-f20e-4c03-999c-446f60df7dfd
 notion_url: https://app.notion.com/p/Granular-interfaces-a7c777ebf20e4c03999c446f60df7dfd
 last_edited: 2026-09-21T17:34:00.000Z
 source_url: https://sebastiandedeyne.com/granular-interfaces/
-tags: ["English", "Object Oriented Programming", "Article", "Sebastian De Deyne"]
+tags: ["Object Oriented Programming", "Article", "Sebastian De Deyne", "English"]
 ---
 [https://sebastiandedeyne.com/granular-interfaces/](https://sebastiandedeyne.com/granular-interfaces/)
 

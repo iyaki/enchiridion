@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-81c7-89d8-d6ebf9ef3b16
 notion_url: https://app.notion.com/p/You-can-spot-base64-encoded-JSON-certificates-and-private-keys-2b754f1c7d2381c789d8d6ebf9ef3b16
 last_edited: 2025-11-26T19:01:00.000Z
 source_url: https://ergaster.org/til/base64-encoded-json/
-tags: ["English", "Information Security", "Automation", "DevOps", "Article", "ergaster.org"]
+tags: ["ergaster.org", "English", "Information Security", "Automation", "DevOps", "Article"]
 ---
 I was working on my homelab and examined a file that was supposed to contain encrypted content that I could safely commit on a Github repository. The file looked like this
 

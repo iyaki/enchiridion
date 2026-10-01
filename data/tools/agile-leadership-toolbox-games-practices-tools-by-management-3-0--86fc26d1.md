@@ -4,7 +4,7 @@ notion_id: 86fc26d1-1c08-4c46-b083-f8b8f8d5f25a
 notion_url: https://app.notion.com/p/Agile-Leadership-Toolbox-Games-Practices-Tools-by-Management-3-0-86fc26d11c084c46b083f8b8f8d5f25a
 last_edited: 2026-09-21T17:07:00.000Z
 source_url: https://management30.com/practice/
-tags: ["Management 3.0 Blog", "English", "Line/People/Team Management", "Tool", "Website", "Guide"]
+tags: ["English", "Line/People/Team Management", "Tool", "Website", "Guide", "Management 3.0 Blog"]
 ---
 
 

@@ -4,7 +4,7 @@ notion_id: de8de25a-3279-4459-a07d-754220600cce
 notion_url: https://app.notion.com/p/Github-CLI-de8de25a32794459a07d754220600cce
 last_edited: 2026-09-21T17:10:00.000Z
 source_url: https://cli.github.com/
-tags: ["Tool", "English", "Programming"]
+tags: ["English", "Programming", "Tool"]
 ---
 ## $ gh copilot gh issue list gh pr status gh pr checkout gh pr create gh pr checks gh release create gh repo view gh alias set
 

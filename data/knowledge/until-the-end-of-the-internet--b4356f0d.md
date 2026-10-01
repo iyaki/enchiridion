@@ -4,7 +4,7 @@ notion_id: b4356f0d-10f7-4cbf-ad1d-ad21aac1c122
 notion_url: https://app.notion.com/p/Until-the-End-of-the-Internet-b4356f0d10f74cbfad1dad21aac1c122
 last_edited: 2026-09-21T16:59:00.000Z
 source_url: https://37signals.com/policies/until-the-end-of-the-internet
-tags: ["English", "Principles", "Programming", "Product Management", "Website", "Article", "37 Signals"]
+tags: ["37 Signals", "English", "Principles", "Programming", "Product Management", "Website", "Article"]
 ---
 Internet software and services disappear all the time because of whimsy (“changing priorities”), acquisition, financial failure, or worse. It’s become a risky venture to place your trust and data in services that could disappear at any moment, for any reason, and with no guarantee that your data will be safe, preserved, or even portable.
 

@@ -4,7 +4,7 @@ notion_id: 84979a64-8394-4326-8f12-adb89ded3aaf
 notion_url: https://app.notion.com/p/Is-COUNT-slow-in-MySQL-84979a64839443268f12adb89ded3aaf
 last_edited: 2026-09-21T17:34:00.000Z
 source_url: https://aaronfrancis.com/2022/is-count-slow-in-mysql-aabe5c35
-tags: ["English", "Databases", "Programming", "Article", "Aaron Francis"]
+tags: ["Article", "Aaron Francis", "English", "Databases", "Programming"]
 ---
 [https://aaronfrancis.com/2022/mysql-count-star-slow](https://aaronfrancis.com/2022/mysql-count-star-slow)
 

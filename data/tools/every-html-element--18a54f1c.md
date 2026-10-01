@@ -4,7 +4,7 @@ notion_id: 18a54f1c-7d23-81da-89a9-f7dbb834f25c
 notion_url: https://app.notion.com/p/Every-HTML-Element-18a54f1c7d2381da89a9f7dbb834f25c
 last_edited: 2026-09-21T16:58:00.000Z
 source_url: https://iamwillwang.com/every-html-element
-tags: ["English", "Frontend", "Web Development", "HTML", "Website", "Will Wang"]
+tags: ["Website", "Will Wang", "English", "Frontend", "Web Development", "HTML"]
 ---
 There are over a hundred HTML elements. This page uses all of them. You're looking at <p></p> right now.
 

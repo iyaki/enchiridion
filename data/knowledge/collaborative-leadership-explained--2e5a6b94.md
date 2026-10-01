@@ -4,7 +4,7 @@ notion_id: 2e5a6b94-ac29-4ead-ae8c-47d831d552c1
 notion_url: https://app.notion.com/p/Collaborative-Leadership-explained-2e5a6b94ac294eadae8c47d831d552c1
 last_edited: 2026-09-21T17:31:00.000Z
 source_url: https://management30.com/blog/collaborative-leadership/
-tags: ["English", "Line/People/Team Management", "Leadersheep", "Article", "Management 3.0 Blog"]
+tags: ["Article", "Management 3.0 Blog", "English", "Line/People/Team Management", "Leadersheep"]
 ---
 [https://management30.com/blog/collaborative-leadership/](https://management30.com/blog/collaborative-leadership/)
 

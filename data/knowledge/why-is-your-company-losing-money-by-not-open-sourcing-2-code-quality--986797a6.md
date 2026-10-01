@@ -4,7 +4,7 @@ notion_id: 986797a6-6b6e-4ba0-82f0-527324fe4dd6
 notion_url: https://app.notion.com/p/Why-is-Your-Company-Losing-Money-By-Not-Open-Sourcing-2-Code-Quality-986797a66b6e4ba082f0527324fe4dd6
 last_edited: 2026-09-21T17:01:00.000Z
 source_url: https://www.notion.so/986797a66b6e4ba082f0527324fe4dd6
-tags: ["Programming", "Entrepreneurship", "Product Management", "Article", "Tomas Votruba Blog", "English"]
+tags: ["English", "Programming", "Entrepreneurship", "Product Management", "Article", "Tomas Votruba Blog"]
 ---
 There is more high-quality code in open-source than in closed-source. Open-source code is rarely rewritten from the scratch investing loads of time and effort - [apart 1st version because it's designed to be dropped](https://blog.codinghorror.com/version-1-sucks-but-ship-it-anyway). This case is not so rare in the private sector in long-term projects.
 

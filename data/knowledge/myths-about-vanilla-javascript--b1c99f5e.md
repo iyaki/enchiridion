@@ -4,7 +4,7 @@ notion_id: b1c99f5e-0261-4c29-96dd-50ae372c988a
 notion_url: https://app.notion.com/p/Myths-about-vanilla-JavaScript-b1c99f5e02614c2996dd50ae372c988a
 last_edited: 2026-09-21T17:04:00.000Z
 source_url: https://gomakethings.com/articles/myths-about-vanilla-javascript/
-tags: ["English", "Javascript", "Frontend", "Article", "Go Make Things"]
+tags: ["Javascript", "Frontend", "Article", "Go Make Things", "English"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

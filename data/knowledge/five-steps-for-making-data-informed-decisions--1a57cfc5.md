@@ -4,7 +4,7 @@ notion_id: 1a57cfc5-0ade-43a0-8cb0-b2fb9e7a2752
 notion_url: https://app.notion.com/p/Five-steps-for-making-data-informed-decisions-1a57cfc50ade43a08cb0b2fb9e7a2752
 last_edited: 2026-09-21T17:43:00.000Z
 source_url: https://leaddev.com/software-quality/five-steps-making-data-informed-decisions
-tags: ["Article", "LeadDev", "English", "Decision Making", "Leadersheep"]
+tags: ["Decision Making", "Leadersheep", "Article", "LeadDev", "English"]
 ---
 [https://leaddev.com/technical-decision-making/five-steps-making-data-informed-decisions](https://leaddev.com/technical-decision-making/five-steps-making-data-informed-decisions)
 

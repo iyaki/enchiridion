@@ -4,7 +4,7 @@ notion_id: 6e57ec3b-dd13-4d65-ad74-ac5639bfb9f9
 notion_url: https://app.notion.com/p/Devops-periodic-table-6e57ec3bdd134d65ad74ac5639bfb9f9
 last_edited: 2026-09-21T17:08:00.000Z
 source_url: https://digital.ai/learn/devsecops-periodic-table/
-tags: ["DevOps", "Site Reliability Engineering", "SysAdmin", "Tool", "Website", "Service", "English"]
+tags: ["English", "DevOps", "Site Reliability Engineering", "SysAdmin", "Tool", "Website", "Service"]
 ---
 Loading Periodic Table...
 

@@ -4,7 +4,7 @@ notion_id: 1812ab13-75c3-47de-83d5-b9db0f40d739
 notion_url: https://app.notion.com/p/Employee-Offboarding-Checklist-9-Step-Process-1812ab1375c347de83d5b9db0f40d739
 last_edited: 2026-09-21T16:58:00.000Z
 source_url: https://www.notion.so/1812ab1375c347de83d5b9db0f40d739
-tags: ["English", "Human Resources (HH.RR.)", "Article", "Toggl Blog"]
+tags: ["Article", "Toggl Blog", "English", "Human Resources (HH.RR.)"]
 ---
 [71% of companies](https://www.zippia.com/employer/offboarding-statistics/) lack a formal employee offboarding process, which honestly makes a lot of sense given that, in today’s war for talent, most companies are too focused on attracting new employees to properly consider what happens when their existing employees leave.
 

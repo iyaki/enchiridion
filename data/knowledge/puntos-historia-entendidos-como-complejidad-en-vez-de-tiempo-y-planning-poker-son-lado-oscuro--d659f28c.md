@@ -4,7 +4,7 @@ notion_id: d659f28c-3f6d-431e-9336-1590ac18df7f
 notion_url: https://app.notion.com/p/Puntos-Historia-entendidos-como-COMPLEJIDAD-en-vez-de-tiempo-y-Planning-Poker-son-Lado-Oscuro-d659f28c3f6d431e93361590ac18df7f
 last_edited: 2026-09-21T17:42:00.000Z
 source_url: https://javiergarzas.com/2022/05/puntos-historia-y-planning-poker-son-lado-oscuro-video-fast-furious.html
-tags: ["Article", "Javier Garzas Blog", "Español", "Agile", "Project Management"]
+tags: ["Javier Garzas Blog", "Español", "Agile", "Project Management", "Article"]
 ---
 [https://www.javiergarzas.com/2022/05/puntos-historia-y-planning-poker-son-lado-oscuro-video-fast-furious.html](https://www.javiergarzas.com/2022/05/puntos-historia-y-planning-poker-son-lado-oscuro-video-fast-furious.html)
 

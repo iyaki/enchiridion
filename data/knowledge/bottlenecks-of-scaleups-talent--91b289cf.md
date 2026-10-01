@@ -4,7 +4,7 @@ notion_id: 91b289cf-e84d-4b3f-9ae1-0b18a09fef89
 notion_url: https://app.notion.com/p/Bottlenecks-of-Scaleups-Talent-91b289cfe84d4b3f9ae10b18a09fef89
 last_edited: 2026-09-21T17:36:00.000Z
 source_url: https://martinfowler.com/articles/bottlenecks-of-scaleups/02-talent.html
-tags: ["English", "Line/People/Team Management", "Project Management", "Article", "Martin Fowler"]
+tags: ["Line/People/Team Management", "Project Management", "Article", "Martin Fowler", "English"]
 ---
 [https://martinfowler.com/articles/bottlenecks-of-scaleups/02-talent.html](https://martinfowler.com/articles/bottlenecks-of-scaleups/02-talent.html)
 

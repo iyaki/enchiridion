@@ -4,7 +4,7 @@ notion_id: 2a007d6b-6dcf-47fa-85a9-ad7bc351bfdb
 notion_url: https://app.notion.com/p/The-Ultimate-Guide-To-Project-Management-For-Marketing-Ad-Agencies-2a007d6b6dcf47fa85a9ad7bc351bfdb
 last_edited: 2026-09-21T17:03:00.000Z
 source_url: https://toggl.com/blog/project-management
-tags: ["English", "Project Management", "Entrepreneurship", "Article", "Guide", "Toggl Blog"]
+tags: ["Article", "Guide", "Toggl Blog", "English", "Project Management", "Entrepreneurship"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

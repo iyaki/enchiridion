@@ -4,7 +4,7 @@ notion_id: 084b904c-b69f-4d0d-b657-f8ed5ec46cb3
 notion_url: https://app.notion.com/p/Testcafe-e2e-testing-084b904cb69f4d0db657f8ed5ec46cb3
 last_edited: 2026-09-21T17:08:00.000Z
 source_url: https://testcafe.io/
-tags: ["Web Development", "Testing", "Tool", "English"]
+tags: ["English", "Web Development", "Testing", "Tool"]
 ---
 ## From zero to testing in minutes
 

@@ -4,7 +4,7 @@ notion_id: 3e654f1c-7d23-81cb-963b-c814d9301167
 notion_url: https://app.notion.com/p/dream-num-univer-The-Office-Harness-for-AI-Agents-Spreadsheets-Docs-Slides-Canvas-Relational--3e654f1c7d2381cb963bc814d9301167
 last_edited: 2026-09-25T03:22:00.000Z
 source_url: https://github.com/dream-num/univer
-tags: ["Web Development", "Productivity", "Software Development", "Developer Tools", "Tool", "GitHub", "English"]
+tags: ["English", "Web Development", "Productivity", "Software Development", "Developer Tools", "Tool", "GitHub"]
 ---
 ![image](https://github.com/dream-num/univer/raw/dev/docs/img/banner.png)
 

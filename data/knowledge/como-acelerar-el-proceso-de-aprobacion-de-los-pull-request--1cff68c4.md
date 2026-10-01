@@ -4,7 +4,7 @@ notion_id: 1cff68c4-2329-477b-ac06-6b8793952e0d
 notion_url: https://app.notion.com/p/Como-Acelerar-El-Proceso-De-Aprobaci-n-de-los-Pull-Request-1cff68c42329477bac066b8793952e0d
 last_edited: 2026-09-21T17:35:00.000Z
 source_url: https://sysarmy.com/blog/posts/como-acelerar-el-proceso-de-pull-request/
-tags: ["Español", "Programming", "Project Management", "Article", "Sysarmy Blog"]
+tags: ["Article", "Sysarmy Blog", "Español", "Programming", "Project Management"]
 ---
 [https://sysarmy.com/blog/posts/como-acelerar-el-proceso-de-pull-request/](https://sysarmy.com/blog/posts/como-acelerar-el-proceso-de-pull-request/)
 

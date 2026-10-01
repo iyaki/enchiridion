@@ -4,7 +4,7 @@ notion_id: eb0cfcc5-e69e-438f-90c5-e4197776be9b
 notion_url: https://app.notion.com/p/gostatic-Fast-static-site-generator-go-eb0cfcc5e69e438f90c5e4197776be9b
 last_edited: 2026-09-21T17:14:00.000Z
 source_url: https://github.com/sansolovyov/gostatic
-tags: ["English", "Frontend", "Blogging/Content Creation", "Untried", "Tool"]
+tags: ["Tool", "English", "Frontend", "Blogging/Content Creation", "Untried"]
 ---
 Gostatic is a static site generator. It tracks file changes during compilation, which is why it works reasonably fast. Also it provides framework for configuration akin to Make, which makes it easy to understand and to write custom configurations.
 

@@ -4,7 +4,7 @@ notion_id: 1f154f1c-7d23-8181-80ac-d0872a19cf4a
 notion_url: https://app.notion.com/p/What-nobody-tells-developers-about-documentation-1f154f1c7d23818180acd0872a19cf4a
 last_edited: 2025-07-26T22:43:00.000Z
 source_url: https://newsletter.posthog.com/p/what-nobody-tells-developers-about
-tags: ["English", "Documentation", "Article", "PostHog"]
+tags: ["Article", "PostHog", "English", "Documentation"]
 ---
 Developers have a lot of misconceptions about docs:
 

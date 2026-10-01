@@ -4,7 +4,7 @@ notion_id: 186b0286-b6d3-4424-a856-cb918b10c690
 notion_url: https://app.notion.com/p/Proactively-prevent-secret-leaks-with-GitHub-Advanced-Security-secret-scanning-186b0286b6d34424a856cb918b10c690
 last_edited: 2026-09-21T17:38:00.000Z
 source_url: https://github.blog/news-insights/product-news/push-protection-github-advanced-security/
-tags: ["Github Blog", "English", "Programming", "DevOps", "Information Security", "Site Reliability Engineering", "Article"]
+tags: ["English", "Programming", "DevOps", "Information Security", "Site Reliability Engineering", "Article", "Github Blog"]
 ---
 [https://github.blog/2022-04-04-push-protection-github-advanced-security/](https://github.blog/2022-04-04-push-protection-github-advanced-security/)
 

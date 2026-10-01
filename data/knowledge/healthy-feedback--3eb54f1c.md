@@ -4,7 +4,7 @@ notion_id: 3eb54f1c-7d23-81be-aaf2-c4e142509549
 notion_url: https://app.notion.com/p/Healthy-Feedback-3eb54f1c7d2381beaaf2c4e142509549
 last_edited: 2026-09-30T03:56:00.000Z
 source_url: https://martinfowler.com/articles/healthy-peer-feedback.html
-tags: ["Martin Fowler", "English", "Communication", "Team Management", "Productivity", "Culture", "Leadersheep", "Article"]
+tags: ["Article", "Martin Fowler", "English", "Communication", "Team Management", "Productivity", "Culture", "Leadersheep"]
 ---
 At Thoughtworks, “cultivation”—helping each other grow—has been a big
     part of how we work. Our collaboration practices make software development a

@@ -4,7 +4,7 @@ notion_id: b5ced514-459f-4bea-836a-6ec568b95d1b
 notion_url: https://app.notion.com/p/Detect-Caps-Lock-with-JavaScript-b5ced514459f4bea836a6ec568b95d1b
 last_edited: 2024-03-25T14:20:00.000Z
 source_url: https://davidwalsh.name/detect-caps-lock
-tags: ["English", "Javascript", "Article", "Tutorial", "David Walsh Blog"]
+tags: ["Article", "Tutorial", "David Walsh Blog", "English", "Javascript"]
 ---
 Anyone is capable of having their caps lock key on at any given time without realizing so. Users can easily spot unwanted caps lock when typing in most inputs, but when using a `password` `input`, the problem isn't so obvious. That leads to the user's password being incorrect, which is an annoyance. Ideally developers could let the user know their caps lock key is activated.
 

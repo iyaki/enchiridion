@@ -4,7 +4,7 @@ notion_id: 8d326aee-e3ff-4b01-9c69-5ab7c8fa5cf0
 notion_url: https://app.notion.com/p/Sin-Working-Software-o-soluciones-o-servicios-no-hay-Agile-V-deo-Agile-Fast-Furious-8d326aeee3ff4b019c695ab7c8fa5cf0
 last_edited: 2026-09-21T17:03:00.000Z
 source_url: https://javiergarzas.com/2022/09/sin-working-software-o-soluciones-o-servicios-no-hay-agile-video-agile-fastfurious.html
-tags: ["Video", "Javier Garzas Blog", "English", "Agile", "Project Management"]
+tags: ["English", "Agile", "Project Management", "Video", "Javier Garzas Blog"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

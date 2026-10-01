@@ -4,7 +4,7 @@ notion_id: 0d00f3e9-bd9b-49a0-9cf3-15a07066a8f3
 notion_url: https://app.notion.com/p/Domain-model-purity-vs-domain-model-completeness-DDD-Trilemma-0d00f3e9bd9b49a09cf315a07066a8f3
 last_edited: 2026-09-21T17:39:00.000Z
 source_url: https://enterprisecraftsmanship.com/posts/domain-model-purity-completeness/
-tags: ["English", "Programming", "Domain Driven Design", "System Design / Software Architecture", "Object Oriented Programming", "Article", "Enterprise Craftsmanship"]
+tags: ["Enterprise Craftsmanship", "English", "Programming", "Domain Driven Design", "System Design / Software Architecture", "Object Oriented Programming", "Article"]
 ---
 [https://enterprisecraftsmanship.com/posts/domain-model-purity-completeness/](https://enterprisecraftsmanship.com/posts/domain-model-purity-completeness/)
 

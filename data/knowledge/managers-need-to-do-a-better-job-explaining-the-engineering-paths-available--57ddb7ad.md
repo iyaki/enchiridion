@@ -4,7 +4,7 @@ notion_id: 57ddb7ad-96b4-4af3-86ad-f22fe69f7e94
 notion_url: https://app.notion.com/p/Managers-need-to-do-a-better-job-explaining-the-engineering-paths-available-57ddb7ad96b44af386adf22fe69f7e94
 last_edited: 2023-01-18T13:54:00.000Z
 source_url: https://des.wtf/post/1-12-23-engineering-paths.html
-tags: ["English", "Line/People/Team Management", "Career Growth", "Article"]
+tags: ["Article", "English", "Line/People/Team Management", "Career Growth"]
 ---
 I recently started to hit a mental ceiling in my career that has made me wonder what comes next. I’ve grown my skills in a pillar of software engineering that's enough to land a coding job fairly easily, especially in this market (there's still plenty of jobs!). I know enough about the languages I use and the problems I’m tasked with that it feels like 95% of my time coding has become mundane. This might sound benign and probably a little egotistical but it's had a effect on my motivation. I've also noticed others in the same conundrum time and time again in our communities: solicitation for advice about getting out of a funk at work, or a senior dev's worriment about having to eventually manage people. Work is at its worst when it’s boring and when there’s no foreseeable path forward it feels like a drag. And so, I finally had time to think about why I’ve been so burned out the last few years over the span of two jobs — I had no idea what paths were available.
 

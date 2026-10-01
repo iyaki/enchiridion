@@ -4,7 +4,7 @@ notion_id: 63c56d94-e4d4-448c-b5b7-00e027f0714e
 notion_url: https://app.notion.com/p/Una-introducci-n-a-la-agilidad-para-todos-los-p-blicos-y-edades-63c56d94e4d4448cb5b700e027f0714e
 last_edited: 2026-09-21T17:03:00.000Z
 source_url: https://www.notion.so/63c56d94e4d4448cb5b700e027f0714e
-tags: ["Español", "Agile", "Project Management", "Course", "233 Academy"]
+tags: ["Agile", "Project Management", "Course", "233 Academy", "Español"]
 ---
 ## GRATIS y ASÍNCRONO, tú pones el horario.
 

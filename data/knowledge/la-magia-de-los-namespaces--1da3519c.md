@@ -4,7 +4,7 @@ notion_id: 1da3519c-51e8-4904-bb1b-6659a53cbc8a
 notion_url: https://app.notion.com/p/La-magia-de-los-namespaces-1da3519c51e84904bb1b6659a53cbc8a
 last_edited: 2026-09-21T17:33:00.000Z
 source_url: https://olano.dev/blog/la-magia-de-los-namespaces/
-tags: ["Programming", "Article", "Apuntes inchequeables (Facundo Olano)", "Español"]
+tags: ["Español", "Programming", "Article", "Apuntes inchequeables (Facundo Olano)"]
 ---
 [https://facundoolano.github.io/2020-08-31-la-magia-de-los-namespaces/](https://facundoolano.github.io/2020-08-31-la-magia-de-los-namespaces/)
 

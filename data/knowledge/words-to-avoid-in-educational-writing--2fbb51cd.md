@@ -4,7 +4,7 @@ notion_id: 2fbb51cd-16c1-4780-a146-d12f56301667
 notion_url: https://app.notion.com/p/Words-To-Avoid-in-Educational-Writing-2fbb51cd16c14780a146d12f56301667
 last_edited: 2023-06-15T23:52:00.000Z
 source_url: https://css-tricks.com/words-avoid-educational-writing/
-tags: ["English", "Communication", "Blogging/Content Creation", "Article"]
+tags: ["Article", "English", "Communication", "Blogging/Content Creation"]
 ---
 DigitalOcean provides cloud products for every stage of your journey. Get started with [$200 in free credit!](https://try.digitalocean.com/css-tricks/?utm_medium=content_acq&utm_source=css-tricks&utm_campaign=global_brand_ad_en&utm_content=conversion_prearticle_everystage)
 

@@ -4,7 +4,7 @@ notion_id: e99bf1c2-ac44-430b-9c57-0c099f35c901
 notion_url: https://app.notion.com/p/Graphite-Fast-simple-code-review-e99bf1c2ac44430b9c570c099f35c901
 last_edited: 2026-09-21T17:03:00.000Z
 source_url: https://graphite.com/
-tags: ["English", "Programming", "Untried", "Tool", "Service"]
+tags: ["Programming", "Untried", "Tool", "Service", "English"]
 ---
 Graphite is modern code review for fast-moving teams - we help engineers write and review smaller pull requests, stay unblocked, and ship faster.
 

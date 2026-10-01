@@ -4,7 +4,7 @@ notion_id: 8f57e03e-70eb-4ff4-812a-aab562919b73
 notion_url: https://app.notion.com/p/Bottlenecks-of-Scaleups-Tech-Debt-8f57e03e70eb4ff4812aaab562919b73
 last_edited: 2026-09-21T17:36:00.000Z
 source_url: https://martinfowler.com/articles/bottlenecks-of-scaleups/01-tech-debt.html
-tags: ["English", "Programming", "Project Management", "Article", "Martin Fowler"]
+tags: ["Article", "Martin Fowler", "English", "Programming", "Project Management"]
 ---
 [https://martinfowler.com/articles/bottlenecks-of-scaleups/01-tech-debt.html](https://martinfowler.com/articles/bottlenecks-of-scaleups/01-tech-debt.html)
 

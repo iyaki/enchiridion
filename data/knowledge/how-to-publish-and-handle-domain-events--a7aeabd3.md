@@ -4,7 +4,7 @@ notion_id: a7aeabd3-7cc6-464a-886c-3cb286085bda
 notion_url: https://app.notion.com/p/How-to-publish-and-handle-Domain-Events-a7aeabd37cc6464a886c3cb286085bda
 last_edited: 2026-09-21T17:11:00.000Z
 source_url: https://www.kamilgrzybek.com/blog/posts/handling-domain-event-missing-part
-tags: ["Article", "Kamil Grzybek", "English", "System Design / Software Architecture"]
+tags: ["English", "System Design / Software Architecture", "Article", "Kamil Grzybek"]
 ---
 _2019-06-19 UPDATE: Please check _[_Handling Domain Events: Missing Part_](http://www.kamilgrzybek.com/design/handling-domain-events-missing-part/)_ post which is a continuation of this article_
 

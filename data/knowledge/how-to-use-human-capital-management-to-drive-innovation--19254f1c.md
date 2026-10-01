@@ -4,7 +4,7 @@ notion_id: 19254f1c-7d23-813e-8f7d-fcb337d884ff
 notion_url: https://app.notion.com/p/How-to-Use-Human-Capital-Management-to-Drive-Innovation-19254f1c7d23813e8f7dfcb337d884ff
 last_edited: 2026-09-21T16:57:00.000Z
 source_url: https://www.notion.so/19254f1c7d23813e8f7dfcb337d884ff
-tags: ["Article", "Toggl Blog", "English", "Line/People/Team Management", "Human Resources (HH.RR.)"]
+tags: ["English", "Line/People/Team Management", "Human Resources (HH.RR.)", "Article", "Toggl Blog"]
 ---
 One of the most important investments you’ll make as a business is in your people, otherwise known as your human capital.
 

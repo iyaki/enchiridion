@@ -4,7 +4,7 @@ notion_id: 3e554f1c-7d23-81fa-96a5-e2db2a362004
 notion_url: https://app.notion.com/p/How-to-fake-Progressive-WebP-Images-Terence-Eden-s-Blog-3e554f1c7d2381fa96a5e2db2a362004
 last_edited: 2026-09-24T03:06:00.000Z
 source_url: https://shkspr.mobi/blog/2020/04/how-to-fake-progressive-webp-images/
-tags: ["Article", "Tutorial", "Terence Eden’s Blog", "English", "Web Development", "Image Editing", "Progressive Enhancement", "HTML", "CSS"]
+tags: ["English", "Web Development", "Image Editing", "Progressive Enhancement", "HTML", "CSS", "Article", "Tutorial", "Terence Eden’s Blog"]
 ---
 WebP is the [hip new image format](https://developers.google.com/speed/webp) on the scene. It offers unrivalled image compression at superior visual quality. But, in my opinion, it is deficient compared to JPG in one significant aspect. It doesn't have a progressive mode.
 

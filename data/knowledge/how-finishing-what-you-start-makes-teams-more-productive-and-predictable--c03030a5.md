@@ -4,7 +4,7 @@ notion_id: c03030a5-d31c-4ef9-a328-03779a067641
 notion_url: https://app.notion.com/p/How-finishing-what-you-start-makes-teams-more-productive-and-predictable-c03030a5d31c4ef9a32803779a067641
 last_edited: 2026-09-21T17:41:00.000Z
 source_url: https://www.lucasfcosta.com/blog/finish-what-you-start
-tags: ["Project Management", "Line/People/Team Management", "Article", "Lucas F. Costa Blog", "English"]
+tags: ["English", "Project Management", "Line/People/Team Management", "Article", "Lucas F. Costa Blog"]
 ---
 [https://lucasfcosta.com/2022/07/19/finish-what-you-start.html](https://lucasfcosta.com/2022/07/19/finish-what-you-start.html)
 

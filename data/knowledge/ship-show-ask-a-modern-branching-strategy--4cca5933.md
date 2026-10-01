@@ -4,7 +4,7 @@ notion_id: 4cca5933-2b05-4c6b-9713-8d1a7d94c6f8
 notion_url: https://app.notion.com/p/Ship-Show-Ask-A-modern-branching-strategy-4cca59332b054c6b97138d1a7d94c6f8
 last_edited: 2026-09-21T17:41:00.000Z
 source_url: https://martinfowler.com/articles/ship-show-ask.html
-tags: ["English", "Programming", "Project Management", "Testing", "Productivity", "Article", "Martin Fowler"]
+tags: ["Article", "Martin Fowler", "English", "Programming", "Project Management", "Testing", "Productivity"]
 ---
 [https://martinfowler.com/articles/ship-show-ask.html](https://martinfowler.com/articles/ship-show-ask.html)
 

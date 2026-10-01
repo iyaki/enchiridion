@@ -4,7 +4,7 @@ notion_id: dddc2eca-3834-41fb-a71e-1f2ede629e96
 notion_url: https://app.notion.com/p/Five-management-anti-patterns-and-why-they-happen-dddc2eca383441fba71e1f2ede629e96
 last_edited: 2026-09-21T17:30:00.000Z
 source_url: https://leaddev.com/communication/five-management-anti-patterns-and-why-they-happen
-tags: ["Line/People/Team Management", "Article", "LeadDev", "English"]
+tags: ["English", "Line/People/Team Management", "Article", "LeadDev"]
 ---
 [https://leaddev.com/leadership-skills/five-management-anti-patterns-and-why-they-happen](https://leaddev.com/leadership-skills/five-management-anti-patterns-and-why-they-happen)
 

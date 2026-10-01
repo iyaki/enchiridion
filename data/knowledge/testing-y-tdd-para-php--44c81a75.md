@@ -4,7 +4,7 @@ notion_id: 44c81a75-82c1-452e-b8a6-d8669d876d44
 notion_url: https://app.notion.com/p/Testing-y-TDD-para-PHP-44c81a7582c1452eb8a6d8669d876d44
 last_edited: 2026-09-21T17:06:00.000Z
 source_url: https://leanpub.com/read/testingytddparaphp
-tags: ["Programming", "Testing", "PHP", "Book", "Español"]
+tags: ["Español", "Programming", "Testing", "PHP", "Book"]
 ---
 
 

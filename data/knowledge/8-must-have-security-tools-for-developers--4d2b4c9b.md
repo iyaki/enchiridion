@@ -4,7 +4,7 @@ notion_id: 4d2b4c9b-cc71-44e1-9377-c2e42bf3f58d
 notion_url: https://app.notion.com/p/8-Must-Have-Security-Tools-for-Developers-4d2b4c9bcc7144e19377c2e42bf3f58d
 last_edited: 2026-09-21T17:38:00.000Z
 source_url: https://hackernoon.com/8-must-have-security-tools-for-developers
-tags: ["Programming", "DevOps", "Information Security", "Article", "Tool", "Hackernoon", "English"]
+tags: ["Hackernoon", "English", "Programming", "DevOps", "Information Security", "Article", "Tool"]
 ---
 [https://hackernoon.com/8-must-have-security-tools-for-developers](https://hackernoon.com/8-must-have-security-tools-for-developers)
 

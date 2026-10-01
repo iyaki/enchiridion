@@ -4,7 +4,7 @@ notion_id: 1c954f1c-7d23-8198-ace5-c8eecb3dc754
 notion_url: https://app.notion.com/p/What-to-Do-1c954f1c7d238198ace5c8eecb3dc754
 last_edited: 2025-06-03T14:32:00.000Z
 source_url: https://paulgraham.com/do.html
-tags: ["English", "Reflection", "Article", "Paul Graham"]
+tags: ["Paul Graham", "English", "Reflection", "Article"]
 ---
 What should one do? That may seem a strange question, but it's not meaningless or unanswerable. It's the sort of question kids ask before they learn not to ask big questions. I only came across it myself in the process of investigating something else. But once I did, I thought I should at least try to answer it.
 

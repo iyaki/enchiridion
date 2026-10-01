@@ -4,7 +4,7 @@ notion_id: b1b12448-6a2d-44c2-84cd-a21c6ce56036
 notion_url: https://app.notion.com/p/Useful-engineering-metrics-and-why-velocity-is-not-one-of-them-b1b124486a2d44c284cda21c6ce56036
 last_edited: 2026-09-21T17:03:00.000Z
 source_url: https://www.lucasfcosta.com/blog/engineering-metrics
-tags: ["Lucas F. Costa Blog", "English", "Project Management", "Line/People/Team Management", "Productivity", "Article"]
+tags: ["Article", "Lucas F. Costa Blog", "English", "Project Management", "Line/People/Team Management", "Productivity"]
 ---
 Here’s my horoscope for today:
 

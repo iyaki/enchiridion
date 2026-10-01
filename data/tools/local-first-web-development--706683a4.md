@@ -4,7 +4,7 @@ notion_id: 706683a4-4120-4d92-812e-e33f2c851d49
 notion_url: https://app.notion.com/p/Local-First-Web-Development-706683a441204d92812ee33f2c851d49
 last_edited: 2026-09-21T17:02:00.000Z
 source_url: https://lofi.so/
-tags: ["Website", "Tool", "English", "Programming", "System Design / Software Architecture", "Databases"]
+tags: ["English", "Programming", "System Design / Software Architecture", "Databases", "Website", "Tool"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

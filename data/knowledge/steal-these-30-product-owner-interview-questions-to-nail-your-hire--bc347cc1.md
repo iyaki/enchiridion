@@ -4,7 +4,7 @@ notion_id: bc347cc1-251d-48cf-a8bb-a277d6a44191
 notion_url: https://app.notion.com/p/Steal-these-30-Product-Owner-Interview-Questions-to-Nail-Your-Hire-bc347cc1251d48cfa8bba277d6a44191
 last_edited: 2026-09-21T17:03:00.000Z
 source_url: https://www.notion.so/bc347cc1251d48cfa8bba277d6a44191
-tags: ["Article", "Toggl Blog", "English", "Line/People/Team Management", "Product Management", "Jobs"]
+tags: ["Toggl Blog", "English", "Line/People/Team Management", "Product Management", "Jobs", "Article"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

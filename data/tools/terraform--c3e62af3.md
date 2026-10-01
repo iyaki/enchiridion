@@ -4,7 +4,7 @@ notion_id: c3e62af3-cf88-4d92-a6d9-f1e1cc6db2c1
 notion_url: https://app.notion.com/p/Terraform-c3e62af3cf884d92a6d9f1e1cc6db2c1
 last_edited: 2026-09-21T17:14:00.000Z
 source_url: https://developer.hashicorp.com/terraform
-tags: ["English", "Infrastructure", "Untried", "Tool"]
+tags: ["Tool", "English", "Infrastructure", "Untried"]
 ---
 ## Automate Infrastructure on Any Cloud
 

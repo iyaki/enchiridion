@@ -4,7 +4,7 @@ notion_id: 577c5511-f844-4039-b1c0-c102faf865c5
 notion_url: https://app.notion.com/p/Tailwind-CSS-utility-first-CSS-framework-577c5511f8444039b1c0c102faf865c5
 last_edited: 2026-09-21T17:17:00.000Z
 source_url: https://tailwindcss.com/
-tags: ["Framework/Library", "English", "Web Development", "CSS", "Untried"]
+tags: ["English", "Web Development", "CSS", "Untried", "Framework/Library"]
 ---
 A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
 

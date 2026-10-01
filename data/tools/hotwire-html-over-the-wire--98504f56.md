@@ -4,7 +4,7 @@ notion_id: 98504f56-3942-40f0-a412-eeb161ca0106
 notion_url: https://app.notion.com/p/Hotwire-HTML-over-the-wire-98504f56394240f0a412eeb161ca0106
 last_edited: 2026-09-21T17:17:00.000Z
 source_url: https://hotwired.dev/
-tags: ["English", "Web Development", "Backend", "Frontend", "Untried", "Website", "Framework/Library"]
+tags: ["Web Development", "Backend", "Frontend", "Untried", "Website", "Framework/Library", "English"]
 ---
 Hotwire is an alternative approach to building modern web applications without using much JavaScript by sending HTML instead of JSON over the wire. This makes for fast first-load pages, keeps template rendering on the server, and allows for a simpler, more productive development experience in any programming language, without sacrificing any of the speed or responsiveness associated with a traditional single-page application.
 

@@ -4,7 +4,7 @@ notion_id: f6a0dee8-0727-4964-8879-e0e3bfaf4ae6
 notion_url: https://app.notion.com/p/Give-it-five-minutes-f6a0dee8072749648879e0e3bfaf4ae6
 last_edited: 2026-09-21T17:34:00.000Z
 source_url: https://signalvnoise.com/posts/3124-give-it-five-minutes
-tags: ["Leadersheep", "Producer (Individual Contributor)", "Article", "Signal v Noise", "English"]
+tags: ["English", "Leadersheep", "Producer (Individual Contributor)", "Article", "Signal v Noise"]
 ---
 [https://signalvnoise.com/posts/3124-give-it-five-minutes](https://signalvnoise.com/posts/3124-give-it-five-minutes)
 

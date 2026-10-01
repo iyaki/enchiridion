@@ -4,7 +4,7 @@ notion_id: 3bb4672b-78d9-433a-bad1-be760d88567f
 notion_url: https://app.notion.com/p/DRY-vs-DAMP-in-Unit-Tests-3bb4672b78d9433abad1be760d88567f
 last_edited: 2026-09-21T17:33:00.000Z
 source_url: https://enterprisecraftsmanship.com/posts/dry-damp-unit-tests/
-tags: ["Article", "Enterprise Craftsmanship", "English", "Testing"]
+tags: ["Testing", "Article", "Enterprise Craftsmanship", "English"]
 ---
 [https://enterprisecraftsmanship.com/posts/dry-damp-unit-tests/](https://enterprisecraftsmanship.com/posts/dry-damp-unit-tests/)
 

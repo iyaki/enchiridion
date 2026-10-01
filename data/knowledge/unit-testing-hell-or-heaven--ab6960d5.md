@@ -4,7 +4,7 @@ notion_id: ab6960d5-8355-40a2-b2d9-2b6be6056a26
 notion_url: https://app.notion.com/p/Unit-Testing-hell-or-heaven-ab6960d5835540a2b2d92b6be6056a26
 last_edited: 2026-09-21T17:35:00.000Z
 source_url: https://wouterdekort.com/2012/03/27/unit-testing-hell-or-heaven/
-tags: ["English", "Testing", "Programming", "Article", "The Art of Coding (Wouter de Kort)"]
+tags: ["Article", "The Art of Coding (Wouter de Kort)", "English", "Testing", "Programming"]
 ---
 [https://wouterdekort.com/2012/03/27/unit-testing-hell-or-heaven/](https://wouterdekort.com/2012/03/27/unit-testing-hell-or-heaven/)
 

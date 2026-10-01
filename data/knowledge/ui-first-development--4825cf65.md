@@ -4,7 +4,7 @@ notion_id: 4825cf65-adae-4e8f-bf58-31ff6b743099
 notion_url: https://app.notion.com/p/UI-First-Development-4825cf65adae4e8fbf5831ff6b743099
 last_edited: 2026-09-21T17:22:00.000Z
 source_url: https://medium.com/newsonthebloc/ui-first-development-94092907ebd6
-tags: ["Article", "Medium", "English", "Programming"]
+tags: ["Medium", "English", "Programming", "Article"]
 ---
 [https://medium.com/newsonthebloc/ui-first-development-94092907ebd6](https://medium.com/newsonthebloc/ui-first-development-94092907ebd6)
 

@@ -4,7 +4,7 @@ notion_id: 627f62dd-9e4a-421a-8141-04e718889fce
 notion_url: https://app.notion.com/p/Codacy-Automated-code-reviews-627f62dd9e4a421a814104e718889fce
 last_edited: 2026-09-21T17:15:00.000Z
 source_url: https://www.codacy.com/
-tags: ["Programming", "Continuous Integration/Continuous Delivery", "Untried", "Service", "English"]
+tags: ["English", "Programming", "Continuous Integration/Continuous Delivery", "Untried", "Service"]
 ---
 Now in beta: Self-healing gates for Claude →
 

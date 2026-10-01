@@ -4,7 +4,7 @@ notion_id: 95057416-1ab9-4e90-bb44-ffbf95ce0463
 notion_url: https://app.notion.com/p/Lighthouse-950574161ab94e90bb44ffbf95ce0463
 last_edited: 2026-09-21T17:13:00.000Z
 source_url: https://developer.chrome.com/docs/lighthouse/overview/
-tags: ["English", "Frontend", "Tool"]
+tags: ["Tool", "English", "Frontend"]
 ---
 Lighthouse הוא כלי אוטומטי ברישיון קוד פתוח שבעזרתו תוכלו לשפר את האיכות של דפי האינטרנט. אפשר להריץ אותו בכל דף אינטרנט, ציבורי או נדרש אימות. הוא כולל בדיקות לגבי ביצועים, נגישות, אופטימיזציה למנועי חיפוש ועוד.
 

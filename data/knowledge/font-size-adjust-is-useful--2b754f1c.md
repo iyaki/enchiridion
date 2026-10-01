@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-8112-b68a-fd60fc7254b0
 notion_url: https://app.notion.com/p/font-size-adjust-Is-Useful-2b754f1c7d238112b68afd60fc7254b0
 last_edited: 2025-11-26T17:55:00.000Z
 source_url: https://matklad.github.io/2025/07/16/font-size-adjust.html
-tags: ["English", "CSS", "Web Development", "Frontend", "Article", "matklad.github.io"]
+tags: ["Article", "matklad.github.io", "English", "CSS", "Web Development", "Frontend"]
 ---
 In this article, I will describe a recent addition to CSS, the `font-size-adjust` property. I am also making a bold claim that everyone in the world misunderstands the usefulness of this property, including [Google](https://web.dev/blog/font-size-adjust), [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size-adjust), and [CSS Specification itself](https://drafts.csswg.org/css-fonts-4/#propdef-font-size-adjust). (Just to clarify, no, I am not a web designer and I have no idea what I am talking about).
 

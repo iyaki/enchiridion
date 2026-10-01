@@ -4,7 +4,7 @@ notion_id: 7778bdc0-3372-45bc-876d-690146701dc9
 notion_url: https://app.notion.com/p/Building-Infrastructure-Platforms-7778bdc0337245bc876d690146701dc9
 last_edited: 2026-09-21T17:38:00.000Z
 source_url: https://martinfowler.com/articles/building-infrastructure-platform.html
-tags: ["Article", "Martin Fowler", "English", "DevOps"]
+tags: ["English", "DevOps", "Article", "Martin Fowler"]
 ---
 [https://martinfowler.com/articles/building-infrastructure-platform.html](https://martinfowler.com/articles/building-infrastructure-platform.html)
 

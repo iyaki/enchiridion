@@ -4,7 +4,7 @@ notion_id: 900593e7-decc-4ab9-b558-c60439b44c9d
 notion_url: https://app.notion.com/p/Your-Code-Doesn-t-Have-to-Be-a-Mess-900593e7decc4ab9b558c60439b44c9d
 last_edited: 2026-09-21T17:40:00.000Z
 source_url: https://danielsieger.com/blog/2022/07/25/your-code-doesnt-have-to-be-a-mess.html
-tags: ["Daniel Sieger Blog", "English", "Programming", "Article"]
+tags: ["Programming", "Article", "Daniel Sieger Blog", "English"]
 ---
 [https://www.danielsieger.com/blog/2022/07/25/your-code-doesnt-have-to-be-a-mess.html](https://www.danielsieger.com/blog/2022/07/25/your-code-doesnt-have-to-be-a-mess.html)
 

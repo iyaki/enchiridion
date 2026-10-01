@@ -4,7 +4,7 @@ notion_id: bc71edf6-715b-439b-9485-d8deab078bde
 notion_url: https://app.notion.com/p/Creating-A-Public-Private-Multi-Monorepo-For-PHP-Projects-bc71edf6715b439b9485d8deab078bde
 last_edited: 2023-01-25T18:22:00.000Z
 source_url: https://www.smashingmagazine.com/2021/08/public-private-multi-monorepo-php-projects/
-tags: ["English", "Monorepositories", "PHP", "Article"]
+tags: ["Article", "English", "Monorepositories", "PHP"]
 ---
 Let’s see how to use a “multi-monorepo” approach for making the development experience faster, yet keeping your PHP packages private. This solution can be especially beneficial for PRO plugin creators.
 

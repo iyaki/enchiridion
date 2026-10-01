@@ -4,7 +4,7 @@ notion_id: 37d53746-dfab-4824-b0fd-8305012b8c2a
 notion_url: https://app.notion.com/p/Encouraging-autonomy-within-engineering-teams-37d53746dfab4824b0fd8305012b8c2a
 last_edited: 2026-09-21T17:01:00.000Z
 source_url: https://leaddev.com/culture/encouraging-autonomy-within-engineering-teams
-tags: ["English", "Line/People/Team Management", "Agile", "Article", "LeadDev"]
+tags: ["Article", "LeadDev", "English", "Line/People/Team Management", "Agile"]
 ---
 Autonomy is a wonderful thing. Here’s how to relinquish control and empower your engineering teams to deliver more impact.
 

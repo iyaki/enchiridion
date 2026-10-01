@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-81c2-b72b-cc5967b91336
 notion_url: https://app.notion.com/p/The-Reformist-CTO-s-Guide-to-Impact-Intelligence-2b754f1c7d2381c2b72bcc5967b91336
 last_edited: 2025-11-26T19:04:00.000Z
 source_url: https://martinfowler.com/articles/impact-intel.html
-tags: ["English", "Leadership", "Product Management", "Agile", "Change Management", "Article", "Guide", "martinfowler"]
+tags: ["Article", "Guide", "martinfowler", "English", "Leadership", "Product Management", "Agile", "Change Management"]
 ---
 The book explains why and how the C-Suite Core should care about this topic. It consists of five parts: (1) Introduction (2) Improving Impact Intelligence (3) Reimagining Initiatives (4) Guidance for low-maturity orgs, and (5) Finale. The article here presents key elements of Part Two although the book gets into greater detail and has more worked examples illustrating simple impact attribution. Besides this, Part Two in the book explores the clash of cultures between businesspeople and data people, and a way to resolve the clash. It also weaves everything together into a framework of eight modules with a suggested adoption sequence. For summary of the other parts, please see the book outline included in this [ free preview](https://www.impactintel.net/Preview_of_Impact_Intelligence_by_Sriram_Narayan.pdf).
 

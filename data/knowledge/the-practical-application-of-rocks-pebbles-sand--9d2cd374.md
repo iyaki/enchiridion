@@ -4,7 +4,7 @@ notion_id: 9d2cd374-f4b5-4697-816b-5e6e00e89554
 notion_url: https://app.notion.com/p/The-practical-application-of-Rocks-Pebbles-Sand-9d2cd374f4b54697816b5e6e00e89554
 last_edited: 2026-09-21T17:28:00.000Z
 source_url: https://longform.asmartbear.com/rocks-pebbles-sand/
-tags: ["English", "Project Management", "Product Management", "Decision Making", "Article", "A Smart Bear: Longform"]
+tags: ["Article", "A Smart Bear: Longform", "English", "Project Management", "Product Management", "Decision Making"]
 ---
 [https://longform.asmartbear.com/docs/rocks-pebbles-sand/](https://longform.asmartbear.com/docs/rocks-pebbles-sand/)
 

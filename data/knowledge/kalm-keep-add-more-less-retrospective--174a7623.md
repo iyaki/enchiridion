@@ -4,7 +4,7 @@ notion_id: 174a7623-fa75-437f-abcd-c319ccb1adae
 notion_url: https://app.notion.com/p/KALM-Keep-Add-More-Less-Retrospective-174a7623fa75437fabcdc319ccb1adae
 last_edited: 2026-09-21T17:22:00.000Z
 source_url: https://www.funretrospectives.com/kalm-keep-add-more-less/
-tags: ["Guide", "English", "Agile", "Line/People/Team Management", "Project Management"]
+tags: ["Agile", "Line/People/Team Management", "Project Management", "Guide", "English"]
 ---
 [https://www.funretrospectives.com/kalm-keep-add-more-less/](https://www.funretrospectives.com/kalm-keep-add-more-less/)
 

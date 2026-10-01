@@ -4,7 +4,7 @@ notion_id: 10d2ac6b-e240-484c-88c9-92905d5fccfc
 notion_url: https://app.notion.com/p/semgrep-Lightweight-static-analysis-for-many-languages-Find-bug-variants-with-patterns-that-look--10d2ac6be240484c88c992905d5fccfc
 last_edited: 2026-09-21T16:59:00.000Z
 source_url: https://github.com/semgrep/semgrep
-tags: ["Information Security", "Programming", "Tool", "English"]
+tags: ["English", "Information Security", "Programming", "Tool"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

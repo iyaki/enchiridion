@@ -4,7 +4,7 @@ notion_id: 86e3b909-b78f-4966-a3f2-090163bc892e
 notion_url: https://app.notion.com/p/Sustainable-architectures-in-a-world-of-Agile-DevOps-and-cloud-86e3b909b78f4966a3f2090163bc892e
 last_edited: 2026-09-21T17:40:00.000Z
 source_url: https://stackoverflow.blog/2022/02/24/sustainable-architectures-in-a-world-of-agile-devops-and-cloud/
-tags: ["Stack Overflow Blog", "English", "System Design / Software Architecture", "Article"]
+tags: ["English", "System Design / Software Architecture", "Article", "Stack Overflow Blog"]
 ---
 [https://stackoverflow.blog/2022/02/24/sustainable-architectures-in-a-world-of-agile-devops-and-cloud/](https://stackoverflow.blog/2022/02/24/sustainable-architectures-in-a-world-of-agile-devops-and-cloud/)
 

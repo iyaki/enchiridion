@@ -4,7 +4,7 @@ notion_id: 7ee144ce-bbd4-4621-8d7c-0e778499d6f9
 notion_url: https://app.notion.com/p/Testing-con-dobles-en-PHP-7ee144cebbd446218d7c0e778499d6f9
 last_edited: 2026-09-21T17:06:00.000Z
 source_url: https://leanpub.com/read/testingcondoblesenphp
-tags: ["Español", "Testing", "PHP", "Book"]
+tags: ["Book", "Español", "Testing", "PHP"]
 ---
 ## Testing con dobles en PHP
 

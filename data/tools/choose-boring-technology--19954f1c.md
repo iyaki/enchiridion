@@ -4,7 +4,7 @@ notion_id: 19954f1c-7d23-8103-a93e-e1b1ba829b63
 notion_url: https://app.notion.com/p/Choose-Boring-Technology-19954f1c7d238103a93ee1b1ba829b63
 last_edited: 2025-02-26T20:59:00.000Z
 source_url: https://boringtechnology.club/
-tags: ["Website", "English", "Programming", "System Design / Software Architecture"]
+tags: ["English", "Programming", "System Design / Software Architecture", "Website"]
 ---
 ![image](https://boringtechnology.club/slides/slides.001.jpeg)
 

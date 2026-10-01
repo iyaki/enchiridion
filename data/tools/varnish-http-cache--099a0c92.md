@@ -4,7 +4,7 @@ notion_id: 099a0c92-5e6d-4add-8cbb-8da51806f6fc
 notion_url: https://app.notion.com/p/Varnish-HTTP-Cache-099a0c925e6d4add8cbb8da51806f6fc
 last_edited: 2026-09-21T17:17:00.000Z
 source_url: https://www.varnish.org/
-tags: ["English", "Web Development", "SysAdmin", "Untried", "Tool"]
+tags: ["Tool", "English", "Web Development", "SysAdmin", "Untried"]
 ---
 ## What is Varnish Cache?
 

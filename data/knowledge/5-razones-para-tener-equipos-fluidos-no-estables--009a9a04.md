@@ -4,7 +4,7 @@ notion_id: 009a9a04-dbe3-4af3-a8c6-019196f5b583
 notion_url: https://app.notion.com/p/5-Razones-para-tener-equipos-fluidos-no-estables-009a9a04dbe34af3a8c6019196f5b583
 last_edited: 2026-09-21T16:58:00.000Z
 source_url: https://javiergarzas.com/2023/11/5-razones-para-tener-equipos-fluidos-no-estables.html
-tags: ["Article", "Javier Garzas Blog", "Español", "Line/People/Team Management"]
+tags: ["Español", "Line/People/Team Management", "Article", "Javier Garzas Blog"]
 ---
 # 5 Razones para tener equipos fluidos (no estables)
 

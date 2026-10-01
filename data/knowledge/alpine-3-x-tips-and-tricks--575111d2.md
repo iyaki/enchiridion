@@ -4,7 +4,7 @@ notion_id: 575111d2-6fbc-4804-b0b1-11fa5b4f30dc
 notion_url: https://app.notion.com/p/Alpine-3-x-Tips-and-Tricks-575111d26fbc4804b0b111fa5b4f30dc
 last_edited: 2023-01-13T16:45:00.000Z
 source_url: https://ryangjchandler.co.uk/posts/alpine-3-tips-and-tricks
-tags: ["Article", "Tutorial", "English", "Frontend", "Javascript", "HTML"]
+tags: ["English", "Frontend", "Javascript", "HTML", "Article", "Tutorial"]
 ---
 At the time of writing this article, Alpine Day has finished and [Alpine 3.x](https://github.com/alpinejs/alpine-next) has only been out a few hours. Some of the cool things that came with the new release are:
 

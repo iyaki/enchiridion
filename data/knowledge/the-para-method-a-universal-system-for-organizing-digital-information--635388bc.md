@@ -4,7 +4,7 @@ notion_id: 635388bc-2ce5-4797-9175-e2309aece6ff
 notion_url: https://app.notion.com/p/The-PARA-Method-A-Universal-System-for-Organizing-Digital-Information-635388bc2ce547979175e2309aece6ff
 last_edited: 2026-09-21T17:42:00.000Z
 source_url: https://fortelabs.com/blog/para/
-tags: ["Productivity", "Learning", "Article", "Forte Labs Blog", "English"]
+tags: ["English", "Productivity", "Learning", "Article", "Forte Labs Blog"]
 ---
 [https://fortelabs.com/blog/para/](https://fortelabs.com/blog/para/)
 

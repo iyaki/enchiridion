@@ -4,7 +4,7 @@ notion_id: bab51cdc-9cfb-429e-ba1d-31fa418fa788
 notion_url: https://app.notion.com/p/Masterclass-sobre-gesti-n-del-cambio-gil-bab51cdc9cfb429eba1d31fa418fa788
 last_edited: 2026-09-21T17:32:00.000Z
 source_url: https://javiergarzas.com/2022/03/masterclass-sobre-gestion-del-cambio-agil-video.html
-tags: ["Line/People/Team Management", "Agile", "Change Management", "Video", "Javier Garzas Blog", "Español"]
+tags: ["Español", "Line/People/Team Management", "Agile", "Change Management", "Video", "Javier Garzas Blog"]
 ---
 [https://www.javiergarzas.com/2022/03/masterclass-sobre-gestion-del-cambio-agil-video.html](https://www.javiergarzas.com/2022/03/masterclass-sobre-gestion-del-cambio-agil-video.html)
 

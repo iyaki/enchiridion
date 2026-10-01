@@ -4,7 +4,7 @@ notion_id: 3cc80eb3-ff8b-414f-b7e1-3ef3067ca797
 notion_url: https://app.notion.com/p/Vim-cheatsheet-3cc80eb3ff8b414fb7e13ef3067ca797
 last_edited: 2026-09-21T17:08:00.000Z
 source_url: https://devhints.io/vim
-tags: ["English", "Linux", "SysAdmin", "CheatSheet"]
+tags: ["CheatSheet", "English", "Linux", "SysAdmin"]
 ---
 ## Getting started
 

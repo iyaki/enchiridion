@@ -22,6 +22,7 @@ paths = [
   '''fatedier-frp-.*--20054f1c\.md$''',
   '''gitleaks-protect-and-discover-secrets--6a4c0769\.md$''',
   '''keygraphhq-shannon-.*--31c54f1c\.md$''',
+  '''tailscale-tailcat-.*--3f454f1c\.md$''',
 ]
 regexes = [
   # Dropbox share-link keys embedded in clipped URLs: published link tokens

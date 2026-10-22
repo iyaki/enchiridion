@@ -4,7 +4,7 @@ notion_id: 1c595494-85ad-4a7b-81ad-db172ac2c8d4
 notion_url: https://app.notion.com/p/Surfacing-request-errors-when-using-HTMX-1c59549485ad4a7b81addb172ac2c8d4
 last_edited: 2026-09-21T16:59:00.000Z
 source_url: https://www.xvello.net/blog/htmx-error-handling/
-tags: ["~/xavier", "English", "Web Development", "HTML", "Javascript", "Guide"]
+tags: ["Guide", "~/xavier", "English", "Web Development", "HTML", "Javascript"]
 ---
 ### Table of Contents
 

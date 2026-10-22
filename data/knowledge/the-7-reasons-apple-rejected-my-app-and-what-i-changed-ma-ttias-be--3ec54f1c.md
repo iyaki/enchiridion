@@ -4,7 +4,7 @@ notion_id: 3ec54f1c-7d23-81da-a41a-fa3a2e875aac
 notion_url: https://app.notion.com/p/The-7-reasons-Apple-rejected-my-app-and-what-I-changed-ma-ttias-be-3ec54f1c7d2381daa41afa3a2e875aac
 last_edited: 2026-10-01T04:06:00.000Z
 source_url: https://ma.ttias.be/app-store-rejection-reasons/
-tags: ["Article", "ma.ttias.be", "English", "Web Development", "Mobile Development", "App Store", "Svelte", "Product Management"]
+tags: ["English", "Web Development", "Mobile Development", "App Store", "Svelte", "Product Management", "Article", "ma.ttias.be"]
 ---
 [Snapkin](https://ma.ttias.be/introducing-snapkin/)
 went live in the App Store on September 24th. It got there on the sixth submission. The first five came back rejected, with seven different reasons between them. 😅

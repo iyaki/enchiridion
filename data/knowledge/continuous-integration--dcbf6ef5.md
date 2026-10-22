@@ -4,7 +4,7 @@ notion_id: dcbf6ef5-4deb-4250-9174-1b6beb73308f
 notion_url: https://app.notion.com/p/Continuous-Integration-dcbf6ef54deb425091741b6beb73308f
 last_edited: 2026-09-21T17:22:00.000Z
 source_url: https://martinfowler.com/articles/continuousIntegration.html
-tags: ["English", "DevOps", "Continuous Integration/Continuous Delivery", "Article", "Martin Fowler"]
+tags: ["Article", "Martin Fowler", "English", "DevOps", "Continuous Integration/Continuous Delivery"]
 ---
 [https://martinfowler.com/articles/continuousIntegration.html](https://martinfowler.com/articles/continuousIntegration.html)
 

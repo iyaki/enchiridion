@@ -4,7 +4,7 @@ notion_id: 3f454f1c-7d23-8123-83a2-d5ce5ecd99e5
 notion_url: https://app.notion.com/p/tailscale-tailcat-like-netcat-but-over-Tailscale-s-data-plane-without-Tailscale-s-control-plane-3f454f1c7d23812383a2d5ce5ecd99e5
 last_edited: 2026-10-09T04:31:00.000Z
 source_url: https://github.com/tailscale/tailcat
-tags: ["Tool", "Article", "Tailscale", "English", "DevOps", "Networking", "Open Source", "CLI", "Tools", "Security", "WebAssembly"]
+tags: ["Tailscale", "English", "DevOps", "Networking", "Open Source", "CLI", "Tools", "Security", "WebAssembly", "Tool", "Article"]
 ---
 ![image](https://github.com/tailscale/tailcat/raw/main/tailcat.png)
 

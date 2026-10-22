@@ -4,7 +4,7 @@ notion_id: 5f4a44d0-1fea-4a57-a1bb-ec6dc5da7223
 notion_url: https://app.notion.com/p/Six-Thinking-Hats-5f4a44d01fea4a57a1bbec6dc5da7223
 last_edited: 2026-09-21T17:43:00.000Z
 source_url: https://www.mindtools.com/ajlpp1e/six-thinking-hats/
-tags: ["Article", "Mindtools", "English", "Decision Making", "Career Growth"]
+tags: ["English", "Decision Making", "Career Growth", "Article", "Mindtools"]
 ---
 [https://www.mindtools.com/ajlpp1e/six-thinking-hats](https://www.mindtools.com/ajlpp1e/six-thinking-hats)
 

@@ -4,7 +4,7 @@ notion_id: aaa51b3d-ecda-445c-a77e-66f996c2c8a3
 notion_url: https://app.notion.com/p/Just-Use-Postgres-for-Everything-aaa51b3decda445ca77e66f996c2c8a3
 last_edited: 2023-02-01T16:59:00.000Z
 source_url: https://www.amazingcto.com/postgres-for-everything/
-tags: ["Article", "Amazing CTO", "English", "Programming", "System Design / Software Architecture", "Databases", "Productivity", "Project Management", "Decision Making"]
+tags: ["English", "Programming", "System Design / Software Architecture", "Databases", "Productivity", "Project Management", "Decision Making", "Article", "Amazing CTO"]
 ---
 _Welcome HN. Technology is about tradeoffs. Using Postgres for everything is a tradeoff. Of course you use the right tool for the job. Often this is Postgres. Helping dozens of startups I have seen many more people overcomplicate setups than companies that use tools that are too simple for the job. If you have 1M+ customers, and 50+ developers, and you need Kafka and Spark amd Kubernetes, go ahead. If you have more systems than developers, just use Postgres. Thanks to Hugo and BunnyCDN for keeping the page fast. PS: Postgres for everything doesn’t mean one server for everything ;-)_
 

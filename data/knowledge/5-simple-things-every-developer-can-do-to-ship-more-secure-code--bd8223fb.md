@@ -4,7 +4,7 @@ notion_id: bd8223fb-2def-49aa-be74-09df8c1eb441
 notion_url: https://app.notion.com/p/5-simple-things-every-developer-can-do-to-ship-more-secure-code-bd8223fb2def49aabe7409df8c1eb441
 last_edited: 2026-09-21T17:35:00.000Z
 source_url: https://github.blog/developer-skills/github/5-simple-things-every-developer-can-do-to-ship-more-secure-code/
-tags: ["English", "Programming", "Article", "Github Blog"]
+tags: ["Programming", "Article", "Github Blog", "English"]
 ---
 [https://github.blog/2022-04-22-5-simple-things-every-developer-can-do-to-ship-more-secure-code/](https://github.blog/2022-04-22-5-simple-things-every-developer-can-do-to-ship-more-secure-code/)
 

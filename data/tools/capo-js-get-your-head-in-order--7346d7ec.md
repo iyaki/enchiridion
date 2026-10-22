@@ -4,7 +4,7 @@ notion_id: 7346d7ec-9205-4a48-9b37-f936c9137c79
 notion_url: https://app.notion.com/p/capo-js-Get-your-head-in-order-7346d7ec92054a489b37f936c9137c79
 last_edited: 2024-03-25T17:32:00.000Z
 source_url: https://github.com/rviscomi/capo.js
-tags: ["Tool", "English", "Web Development", "HTML"]
+tags: ["English", "Web Development", "HTML", "Tool"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

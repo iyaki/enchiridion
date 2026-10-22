@@ -4,7 +4,7 @@ notion_id: 7e9fa933-9dae-4444-9989-17045fa54989
 notion_url: https://app.notion.com/p/Run-better-meetings-to-build-community-in-your-remote-team-7e9fa9339dae4444998917045fa54989
 last_edited: 2026-09-21T17:32:00.000Z
 source_url: https://leaddev.com/velocity/run-better-meetings-build-community-your-remote-team
-tags: ["LeadDev", "English", "Line/People/Team Management", "Communication", "Article"]
+tags: ["Line/People/Team Management", "Communication", "Article", "LeadDev", "English"]
 ---
 [https://leaddev.com/managing-distributed-teams/run-better-meetings-build-community-your-remote-team](https://leaddev.com/managing-distributed-teams/run-better-meetings-build-community-your-remote-team)
 

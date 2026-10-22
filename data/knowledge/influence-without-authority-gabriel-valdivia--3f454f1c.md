@@ -4,7 +4,7 @@ notion_id: 3f454f1c-7d23-81e7-9df0-f79017fb6408
 notion_url: https://app.notion.com/p/Influence-without-authority-Gabriel-Valdivia-3f454f1c7d2381e79df0f79017fb6408
 last_edited: 2026-10-09T04:31:00.000Z
 source_url: https://www.gabrielvaldivia.com/notes/influence-without-authority
-tags: ["Note", "Gabriel Valdivia", "English", "Leadership", "Communication", "Career Growth", "Product Management"]
+tags: ["English", "Leadership", "Communication", "Career Growth", "Product Management", "Note", "Gabriel Valdivia"]
 ---
 Some of the most influential designers I’ve worked with had no direct reports. They didn't spend their days assigning work, running performance reviews, or deciding who got promoted. Yet they could change the direction of a project, raise the quality bar of a team, and sometimes change the strategy for the entire company. Individual contributors can develop influence by giving people reasons to trust their judgment, then finding ways for that judgment to travel beyond the things they personally make.
 

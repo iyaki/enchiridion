@@ -4,7 +4,7 @@ notion_id: 9e7aa4c5-485f-474a-8898-58bd1f9e0712
 notion_url: https://app.notion.com/p/ngrok-ingress-as-a-service-9e7aa4c5485f474a889858bd1f9e0712
 last_edited: 2026-09-21T17:12:00.000Z
 source_url: https://ngrok.com/
-tags: ["Tool", "Service", "English", "Web Development"]
+tags: ["English", "Web Development", "Tool", "Service"]
 ---
 ## Connect anything,anywhere.
 

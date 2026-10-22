@@ -4,7 +4,7 @@ notion_id: 9d741850-1d27-4d6f-8459-dd4e38f89c35
 notion_url: https://app.notion.com/p/Liberating-Structures-9d7418501d274d6f8459dd4e38f89c35
 last_edited: 2026-09-21T17:23:00.000Z
 source_url: https://www.liberatingstructures.com/
-tags: ["Website", "English", "Español", "Line/People/Team Management", "Communication"]
+tags: ["English", "Español", "Line/People/Team Management", "Communication", "Website"]
 ---
 [https://www.liberatingstructures.com/](https://www.liberatingstructures.com/)
 

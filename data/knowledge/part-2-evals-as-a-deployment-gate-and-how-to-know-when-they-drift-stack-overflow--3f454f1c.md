@@ -4,7 +4,7 @@ notion_id: 3f454f1c-7d23-817b-b7ac-df04e3562dc4
 notion_url: https://app.notion.com/p/Part-2-Evals-as-a-deployment-gate-and-how-to-know-when-they-drift-Stack-Overflow-3f454f1c7d23817bb7acdf04e3562dc4
 last_edited: 2026-10-09T04:31:00.000Z
 source_url: https://stackoverflow.blog/2026/10/07/evals-as-a-deployment-gate-and-how-to-know-when-they-drift/
-tags: ["DevOps", "Testing", "Continuous Integration/Continuous Delivery", "Programming", "Quality", "Automation", "Software Development", "Article", "Stack Overflow Blog", "English"]
+tags: ["Stack Overflow Blog", "English", "DevOps", "Testing", "Continuous Integration/Continuous Delivery", "Programming", "Quality", "Automation", "Software Development", "Article"]
 ---
 If you can deploy a prompt change without an eval failing the build, you don’t have evals — you have a notebook. And once the gate is green, the slow leaks are still coming for you. Here’s the gate, the baseline, and the shadow-_eval loop that catch both._
 

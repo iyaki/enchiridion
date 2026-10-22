@@ -4,7 +4,7 @@ notion_id: 4fc19bbc-f88e-4311-a5e3-4aae19283aa5
 notion_url: https://app.notion.com/p/progression-fyi-4fc19bbcf88e4311a5e34aae19283aa5
 last_edited: 2026-09-21T17:11:00.000Z
 source_url: https://progression.fyi/
-tags: ["English", "Line/People/Team Management", "Career Growth", "Website"]
+tags: ["Line/People/Team Management", "Career Growth", "Website", "English"]
 ---
 ### Level up your team (or yourself!)
 

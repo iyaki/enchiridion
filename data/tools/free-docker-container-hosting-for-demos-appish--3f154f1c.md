@@ -4,7 +4,7 @@ notion_id: 3f154f1c-7d23-8163-a049-ef25e707df97
 notion_url: https://app.notion.com/p/Free-Docker-Container-Hosting-for-Demos-APPISH-3f154f1c7d238163a049ef25e707df97
 last_edited: 2026-10-06T04:49:00.000Z
 source_url: https://appi.sh/
-tags: ["English", "DevOps", "Docker", "Backend", "Web Development", "Cloud", "Automation", "Tool", "Service", "APPISH"]
+tags: ["Tool", "Service", "APPISH", "English", "DevOps", "Docker", "Backend", "Web Development", "Cloud", "Automation"]
 ---
 Free 4-hour slots are live — push, share, done. [See pricing →](https://appi.sh/pricing)
 

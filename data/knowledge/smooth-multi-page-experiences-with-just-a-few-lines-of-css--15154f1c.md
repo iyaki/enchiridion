@@ -4,7 +4,7 @@ notion_id: 15154f1c-7d23-81ac-8481-ede6a784644e
 notion_url: https://app.notion.com/p/Smooth-Multi-Page-Experiences-with-Just-a-Few-Lines-of-CSS-15154f1c7d2381ac8481ede6a784644e
 last_edited: 2026-09-21T16:58:00.000Z
 source_url: https://www.htmhell.dev/adventcalendar/2024/3/
-tags: ["English", "HTML", "Article", "HTMHell - Advent Calendar"]
+tags: ["HTMHell - Advent Calendar", "English", "HTML", "Article"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

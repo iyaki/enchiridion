@@ -4,7 +4,7 @@ notion_id: 3fc54f1c-7d23-81a9-b8e8-ef83be688551
 notion_url: https://app.notion.com/p/e2e-The-open-source-AI-testing-framework-3fc54f1c7d2381a9b8e8ef83be688551
 last_edited: 2026-10-17T02:57:00.000Z
 source_url: https://tester.army/e2e
-tags: ["Programming", "Testing", "TypeScript", "Automation", "Tool", "Medium", "Others"]
+tags: ["Others", "Programming", "Testing", "TypeScript", "Automation", "Tool", "Medium"]
 ---
 ## Open Source AItesting framework
 

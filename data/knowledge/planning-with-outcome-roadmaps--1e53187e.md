@@ -4,7 +4,7 @@ notion_id: 1e53187e-3b29-417a-8186-a85392d19c8f
 notion_url: https://app.notion.com/p/Planning-With-Outcome-Roadmaps-1e53187e3b29417a8186a85392d19c8f
 last_edited: 2024-07-18T17:30:00.000Z
 source_url: https://itamargilad.com/outcome-roadmaps/
-tags: ["Article", "Itamar Gilad", "English", "Product Management"]
+tags: ["Itamar Gilad", "English", "Product Management", "Article"]
 ---
 ![image](https://itamargilad.com/wp-content/uploads/2023/11/Full-outcome-roadmap-Miro-1.jpg)
 

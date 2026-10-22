@@ -4,7 +4,7 @@ notion_id: 04f8d54c-f414-452b-b80f-60964bfe2974
 notion_url: https://app.notion.com/p/Sometimes-I-regret-using-CalVer-04f8d54cf414452bb80f60964bfe2974
 last_edited: 2023-01-18T13:56:00.000Z
 source_url: https://jacobtomlinson.dev/posts/2023/sometimes-i-regret-using-calver/
-tags: ["English", "Project Management", "System Design / Software Architecture", "Programming", "Article"]
+tags: ["Article", "English", "Project Management", "System Design / Software Architecture", "Programming"]
 ---
 Over the last few years, many open-source Python projects that I work on have switched to [CalVer](https://calver.org/). I’ve felt some pain around this, particularly in [Dask](https://dask.org/) and its subprojects. I want to unpack some of my thoughts and feelings around this trend.
 

@@ -4,7 +4,7 @@ notion_id: 13f54f1c-7d23-8196-b472-e7b1e6db62f3
 notion_url: https://app.notion.com/p/SQL-style-guide-13f54f1c7d238196b472e7b1e6db62f3
 last_edited: 2025-01-05T21:51:00.000Z
 source_url: https://www.sqlstyle.guide/
-tags: ["Guide", "Simon Holywell", "English", "Programming", "Databases"]
+tags: ["English", "Programming", "Databases", "Guide", "Simon Holywell"]
 ---
 - [Overview](https://www.sqlstyle.guide/#overview)
 - [General](https://www.sqlstyle.guide/#general) 

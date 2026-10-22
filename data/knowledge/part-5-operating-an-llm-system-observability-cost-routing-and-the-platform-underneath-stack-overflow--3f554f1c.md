@@ -4,7 +4,7 @@ notion_id: 3f554f1c-7d23-819c-99a2-cb108efefe89
 notion_url: https://app.notion.com/p/Part-5-Operating-an-LLM-system-observability-cost-routing-and-the-platform-underneath-Stack-O-3f554f1c7d23819c99a2cb108efefe89
 last_edited: 2026-10-10T04:17:00.000Z
 source_url: https://stackoverflow.blog/2026/10/08/part-5-operating-an-llm-system-observability-cost-routing-and-the-platform-underneath/
-tags: ["Stack Overflow Blog", "English", "Machine Learning", "Software Development", "Infrastructure", "Observability", "Cost Management", "AI", "Article", "Tutorial"]
+tags: ["Machine Learning", "Software Development", "Infrastructure", "Observability", "Cost Management", "AI", "Article", "Tutorial", "Stack Overflow Blog", "English"]
 ---
 This is Level 5 of a six-level maturity model for running LLM systems in production. The earlier levels got the system _working_ and _correct_. Level 5 is about **operability**: can you actually run this thing day to day, see what it’s deciding, control what it costs, survive a provider outage, stop it in seconds when it misbehaves — and is the platform underneath shaped to support all of that?
 

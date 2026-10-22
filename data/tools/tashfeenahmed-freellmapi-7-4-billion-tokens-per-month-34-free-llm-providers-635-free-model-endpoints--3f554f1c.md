@@ -4,7 +4,7 @@ notion_id: 3f554f1c-7d23-81db-864d-d470ea48e7c0
 notion_url: https://app.notion.com/p/tashfeenahmed-freellmapi-7-4-billion-tokens-per-month-34-free-LLM-providers-635-free-model-endpoi-3f554f1c7d2381db864dd470ea48e7c0
 last_edited: 2026-10-10T04:17:00.000Z
 source_url: https://github.com/tashfeenahmed/freellmapi
-tags: ["Tool", "Service", "GitHub", "English", "Artificial Intelligence (AI)", "APIs", "Automation", "Cloud"]
+tags: ["English", "Artificial Intelligence (AI)", "APIs", "Automation", "Cloud", "Tool", "Service", "GitHub"]
 ---
 **7.4 billion tokens per month.  34 free LLM providers. 635 free model endpoints. One OpenAI-compatible endpoint.**
 

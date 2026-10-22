@@ -4,7 +4,7 @@ notion_id: 77ae097f-b05d-4bb1-898d-3bece47736f0
 notion_url: https://app.notion.com/p/How-to-Get-Better-at-Customer-Interviews-77ae097fb05d4bb1898d3bece47736f0
 last_edited: 2023-01-27T02:16:00.000Z
 source_url: https://userlist.com/blog/customer-interviews-michele-hansen/
-tags: ["English", "Product Management", "Project Management", "Article"]
+tags: ["Article", "English", "Product Management", "Project Management"]
 ---
 Customer interviews are essential whether you're a SaaS founder, a part of the product team, in customer support, or in another role. This skill can help you at and beyond work.
 

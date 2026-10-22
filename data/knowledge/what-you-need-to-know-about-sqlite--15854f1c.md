@@ -4,7 +4,7 @@ notion_id: 15854f1c-7d23-812a-9022-f126fb29af71
 notion_url: https://app.notion.com/p/What-you-need-to-know-about-SQLite-15854f1c7d23812a9022f126fb29af71
 last_edited: 2025-01-20T19:51:00.000Z
 source_url: https://joyofrails.com/articles/what-you-need-to-know-about-sqlite
-tags: ["Joy of Rails", "English", "Databases", "Programming", "Article"]
+tags: ["English", "Databases", "Programming", "Article", "Joy of Rails"]
 ---
 Have you heard? SQLite is taking the web by storm. The widespread belief has been that SQLite isn’t a production grade database for web apps. But lately this sentiment is starting to change.
 

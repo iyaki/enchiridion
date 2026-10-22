@@ -4,7 +4,7 @@ notion_id: 7025ec60-d2f6-48db-8121-91be40c54cda
 notion_url: https://app.notion.com/p/awless-A-Mighty-CLI-for-AWS-7025ec60d2f648db812191be40c54cda
 last_edited: 2024-04-17T19:46:00.000Z
 source_url: https://github.com/wallix/awless
-tags: ["English", "SysAdmin", "AWS", "Untried", "Tool"]
+tags: ["Tool", "English", "SysAdmin", "AWS", "Untried"]
 ---
 ![image](https://camo.githubusercontent.com/85bca84ffeff94162fc4ca6fb10737b2323b99960a8e5d156a724e0a568b71e9/68747470733a2f2f6170692e7472617669732d63692e6f72672f77616c6c69782f61776c6573732e7376673f6272616e63683d6d6173746572)
 

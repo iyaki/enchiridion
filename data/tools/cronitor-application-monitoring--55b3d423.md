@@ -4,7 +4,7 @@ notion_id: 55b3d423-4388-4804-b9fa-654604ab1315
 notion_url: https://app.notion.com/p/Cronitor-Application-monitoring-55b3d42343884804b9fa654604ab1315
 last_edited: 2026-09-21T17:13:00.000Z
 source_url: https://cronitor.io/
-tags: ["English", "DevOps", "Site Reliability Engineering", "Untried", "Service"]
+tags: ["DevOps", "Site Reliability Engineering", "Untried", "Service", "English"]
 ---
 MONITOR · ALERT · RESPOND
 

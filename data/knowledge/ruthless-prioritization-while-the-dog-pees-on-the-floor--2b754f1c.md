@@ -4,7 +4,7 @@ notion_id: 2b754f1c-7d23-81c8-b350-e27de478db20
 notion_url: https://app.notion.com/p/Ruthless-prioritization-while-the-dog-pees-on-the-floor-2b754f1c7d2381c8b350e27de478db20
 last_edited: 2025-11-26T14:58:00.000Z
 source_url: https://longform.asmartbear.com/prioritization/
-tags: ["English", "Product Management", "Decision Making", "Agile", "Team Management", "Article", "A Smart Bear: Longform"]
+tags: ["Product Management", "Decision Making", "Agile", "Team Management", "Article", "A Smart Bear: Longform", "English"]
 ---
 Because time is zero-sum, prioritization is mandatory. This is an index of purpose-built prioritization frameworks, and an overarching one to optimize your life.
 

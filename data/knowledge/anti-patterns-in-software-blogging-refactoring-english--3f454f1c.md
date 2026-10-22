@@ -4,7 +4,7 @@ notion_id: 3f454f1c-7d23-81a6-8757-e6b9726a4657
 notion_url: https://app.notion.com/p/Anti-Patterns-in-Software-Blogging-Refactoring-English-3f454f1c7d2381a68757e6b9726a4657
 last_edited: 2026-10-09T04:31:00.000Z
 source_url: https://refactoringenglish.com/blog/anti-patterns-software-blogging/
-tags: ["Article", "Note", "Refactoring English", "English", "Blogging/Content Creation", "Productivity", "Writing", "Communication"]
+tags: ["English", "Blogging/Content Creation", "Productivity", "Writing", "Communication", "Article", "Note", "Refactoring English"]
 ---
 In software development, we collect anti-patterns to recognize common traits that lead to poor outcomes in our software. I thought it would be helpful to do the same for software blogging, so I’ve catalogued the most frequent mistakes I see from beginner bloggers.
 

@@ -4,7 +4,7 @@ notion_id: de4df11a-b501-4f13-82a1-b9dd33a1f33f
 notion_url: https://app.notion.com/p/Ikigai-Meaning-and-Purpose-de4df11ab5014f1382a1b9dd33a1f33f
 last_edited: 2026-09-21T17:00:00.000Z
 source_url: https://unfix.com/blog/ikigai
-tags: ["English", "Line/People/Team Management", "HealthCare", "Change Management", "Principles", "Article", "unFIX Blog"]
+tags: ["Line/People/Team Management", "HealthCare", "Change Management", "Principles", "Article", "unFIX Blog", "English"]
 ---
 For the unFIX Model, we converted the four perspectives of Ikigai to four distinct patterns and cards. To compensate for the bias towards the individual, we strongly recommend using the same patterns at the organizational level, Base-level, and Crew / Forum-level. You can initiate a healthy discussion around purpose alignment by evaluating upward and downward relationships.
 

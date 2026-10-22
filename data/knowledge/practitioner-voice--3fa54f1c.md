@@ -4,7 +4,7 @@ notion_id: 3fa54f1c-7d23-814d-a6b7-ef929356f64e
 notion_url: https://app.notion.com/p/Practitioner-Voice-3fa54f1c7d23814da6b7ef929356f64e
 last_edited: 2026-10-15T03:08:00.000Z
 source_url: https://martinfowler.com/articles/practitioner-voice.html#TheCraftOfPractitionerVoice
-tags: ["English", "Agile", "Career Growth", "Communication", "Article", "martinfowler"]
+tags: ["martinfowler", "English", "Agile", "Career Growth", "Communication", "Article"]
 ---
 I've been called a Thought Leader.
 

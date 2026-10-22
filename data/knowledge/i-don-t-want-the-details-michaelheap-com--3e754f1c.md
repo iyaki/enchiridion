@@ -4,7 +4,7 @@ notion_id: 3e754f1c-7d23-812c-9ade-e9d4cbbe7e48
 notion_url: https://app.notion.com/p/I-don-t-want-the-details-michaelheap-com-3e754f1c7d23812c9adee9d4cbbe7e48
 last_edited: 2026-09-26T03:28:00.000Z
 source_url: https://michaelheap.com/i-dont-want-the-details/
-tags: ["English", "Leadership", "Communication", "Decision Making", "Culture", "Agile", "Note", "Article", "michaelheap.com"]
+tags: ["Note", "Article", "michaelheap.com", "English", "Leadership", "Communication", "Decision Making", "Culture", "Agile"]
 ---
 A few months ago I was dragged into a call with my engineering counterpart and their boss (who happens to be our SVP of engineering). Something had gone wrong that shouldn't have. Nothing catastrophic, but important enough that I was now on a call with an SVP.
 

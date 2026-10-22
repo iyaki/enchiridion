@@ -4,7 +4,7 @@ notion_id: f9dbb290-1871-43de-95fe-297778c5af7d
 notion_url: https://app.notion.com/p/Svix-Webhooks-as-a-Service-f9dbb290187143de95fe297778c5af7d
 last_edited: 2026-09-21T17:06:00.000Z
 source_url: https://www.svix.com/
-tags: ["English", "Web Development", "REST API", "Tool", "Service"]
+tags: ["Tool", "Service", "English", "Web Development", "REST API"]
 ---
 Open Source and Enterprise-Ready
 

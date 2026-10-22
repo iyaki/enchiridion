@@ -4,7 +4,7 @@ notion_id: 217a4794-b6da-489b-9740-5f46d786b73c
 notion_url: https://app.notion.com/p/3-common-DevOps-antipatterns-and-cloud-native-strategies-that-can-help-217a4794b6da489b97405f46d786b73c
 last_edited: 2026-09-21T17:04:00.000Z
 source_url: https://github.blog/enterprise-software/devops/3-common-devops-antipatterns-and-cloud-native-strategies-that-can-help/
-tags: ["English", "DevOps", "Article", "Github Blog"]
+tags: ["DevOps", "Article", "Github Blog", "English"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

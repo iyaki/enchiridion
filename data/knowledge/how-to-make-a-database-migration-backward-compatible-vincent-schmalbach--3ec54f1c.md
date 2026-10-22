@@ -4,7 +4,7 @@ notion_id: 3ec54f1c-7d23-8147-9403-ef800aedc0ed
 notion_url: https://app.notion.com/p/How-to-Make-a-Database-Migration-Backward-Compatible-Vincent-Schmalbach-3ec54f1c7d2381479403ef800aedc0ed
 last_edited: 2026-10-01T04:06:00.000Z
 source_url: https://www.vincentschmalbach.com/how-to-make-a-database-migration-backward-compatible/
-tags: ["English", "Databases", "System Design / Software Architecture", "DevOps", "Software Development", "Migration", "SQL", "Article", "Vincent Schmalbach"]
+tags: ["Databases", "System Design / Software Architecture", "DevOps", "Software Development", "Migration", "SQL", "Article", "Vincent Schmalbach", "English"]
 ---
 During a deployment, old and new versions of an application run at the same time. Some web servers already run the new code while others still run the old code, and queue workers, scheduled jobs and external clients often lag behind both. If a migration removes or renames something the old code still uses, the old code breaks in the middle of the rollout.
 

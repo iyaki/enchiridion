@@ -4,7 +4,7 @@ notion_id: 6c1498d1-cfb8-475e-a17b-038dbc44eaf5
 notion_url: https://app.notion.com/p/How-much-specification-does-a-developer-need-6c1498d1cfb8475ea17b038dbc44eaf5
 last_edited: 2026-09-21T17:02:00.000Z
 source_url: https://www.lucasfcosta.com/blog/specification-and-rest-apis
-tags: ["English", "Programming", "Product Management", "Documentation", "Article", "Lucas F. Costa Blog"]
+tags: ["Lucas F. Costa Blog", "English", "Programming", "Product Management", "Documentation", "Article"]
 ---
 Specifications work in two ways: they inform developers what needs to be built, and they constrain the problem space so that tasks become approachable.
 

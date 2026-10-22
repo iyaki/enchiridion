@@ -4,7 +4,7 @@ notion_id: f19dd237-4922-49fb-abaa-5c6e470ba438
 notion_url: https://app.notion.com/p/Seven-Shipping-Principles-f19dd237492249fbabaa5c6e470ba438
 last_edited: 2026-09-21T17:41:00.000Z
 source_url: https://37signals.com/seven-shipping-principles
-tags: ["37 Signals", "English", "Programming", "Producer (Individual Contributor)", "Product Management", "Project Management", "Principles", "Article"]
+tags: ["Programming", "Producer (Individual Contributor)", "Product Management", "Project Management", "Principles", "Article", "37 Signals", "English"]
 ---
 [https://37signals.com/seven-shipping-principles](https://37signals.com/seven-shipping-principles)
 

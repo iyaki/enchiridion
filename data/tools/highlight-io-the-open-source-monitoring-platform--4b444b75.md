@@ -4,7 +4,7 @@ notion_id: 4b444b75-2ed3-4cff-ba58-77d7039ca7c8
 notion_url: https://app.notion.com/p/highlight-io-The-open-source-monitoring-platform-4b444b752ed34cffba5877d7039ca7c8
 last_edited: 2026-09-21T17:00:00.000Z
 source_url: https://launchdarkly.com/
-tags: ["English", "Product Management", "Site Reliability Engineering", "Help Desk", "Decision Making", "Untried", "Service", "Tool"]
+tags: ["Product Management", "Site Reliability Engineering", "Help Desk", "Decision Making", "Untried", "Service", "Tool", "English"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

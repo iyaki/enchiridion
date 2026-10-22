@@ -4,7 +4,7 @@ notion_id: 6cca58c2-3478-4ab5-a0bb-d4df9d2f1bfe
 notion_url: https://app.notion.com/p/Microservices-maybe-not-6cca58c234784ab5a0bbd4df9d2f1bfe
 last_edited: 2026-09-21T17:10:00.000Z
 source_url: https://www.notion.so/6cca58c234784ab5a0bbd4df9d2f1bfe
-tags: ["Article", "techblog.hostmoz.net", "English", "System Design / Software Architecture"]
+tags: ["English", "System Design / Software Architecture", "Article", "techblog.hostmoz.net"]
 ---
 ![image](https://techblog.hostmoz.net/wp-content/uploads/sites/2/2021/03/Microservices-maybe-not.png)
 

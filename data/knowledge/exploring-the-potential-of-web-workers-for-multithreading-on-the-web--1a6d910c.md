@@ -4,7 +4,7 @@ notion_id: 1a6d910c-5986-402b-aae7-863663140bfb
 notion_url: https://app.notion.com/p/Exploring-The-Potential-Of-Web-Workers-For-Multithreading-On-The-Web-1a6d910c5986402baae7863663140bfb
 last_edited: 2023-04-26T00:23:00.000Z
 source_url: https://www.smashingmagazine.com/2023/04/potential-web-workers-multithreading-web/
-tags: ["English", "Frontend", "Javascript", "Article", "Guide", "Smashing Magazine"]
+tags: ["Article", "Guide", "Smashing Magazine", "English", "Frontend", "Javascript"]
 ---
 Web Workers are a powerful feature of modern web development and were introduced as part of the [HTML5 specification in 2009](https://en.wikipedia.org/wiki/Web_worker). They were designed to provide a way to execute JavaScript code in the background, separate from the main execution thread of a web page, in order to improve performance and responsiveness.
 

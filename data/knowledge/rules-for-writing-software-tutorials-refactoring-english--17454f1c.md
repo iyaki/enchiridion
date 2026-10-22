@@ -4,7 +4,7 @@ notion_id: 17454f1c-7d23-8175-bb46-c13e1de0c4f3
 notion_url: https://app.notion.com/p/Rules-for-Writing-Software-Tutorials-Refactoring-English-17454f1c7d238175bb46c13e1de0c4f3
 last_edited: 2026-09-21T16:58:00.000Z
 source_url: https://refactoringenglish.com/excerpts/rules-for-software-tutorials/
-tags: ["English", "Writting", "Documentation", "Communication", "Article", "Michael Lynch"]
+tags: ["Article", "Michael Lynch", "English", "Writting", "Documentation", "Communication"]
 ---
 ### **Rules for Writing Software Tutorials**
 

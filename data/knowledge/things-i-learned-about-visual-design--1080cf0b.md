@@ -4,7 +4,7 @@ notion_id: 1080cf0b-70c8-4996-934b-ecbb20117981
 notion_url: https://app.notion.com/p/Things-I-learned-about-visual-design-1080cf0b70c84996934becbb20117981
 last_edited: 2026-09-21T17:02:00.000Z
 source_url: https://www.notion.so/1080cf0b70c84996934becbb20117981
-tags: ["Article", "anthonyhobday", "English", "UI/UX"]
+tags: ["English", "UI/UX", "Article", "anthonyhobday"]
 ---
 1. Beauty and function are not different. Beauty IS a function. And it is important.
 2. Beauty is a result of strong relationships between elements.

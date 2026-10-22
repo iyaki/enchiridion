@@ -4,7 +4,7 @@ notion_id: b36af3f4-cea2-460d-a1b0-95525b7811eb
 notion_url: https://app.notion.com/p/The-C4-model-for-visualising-software-architecture-b36af3f4cea2460da1b095525b7811eb
 last_edited: 2023-01-13T19:20:00.000Z
 source_url: https://c4model.com/
-tags: ["Tool", "Website", "Guide", "English", "Documentation"]
+tags: ["English", "Documentation", "Tool", "Website", "Guide"]
 ---
 In a hurry? Read the [Wikipedia page](https://en.wikipedia.org/wiki/C4_model) and the 5 minute introduction to the C4 model at InfoQ
 

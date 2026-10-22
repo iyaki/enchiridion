@@ -4,7 +4,7 @@ notion_id: a3353cc7-7c2d-41c1-965d-bb46a03b7286
 notion_url: https://app.notion.com/p/The-Work-From-Home-Future-Is-Destroying-Bosses-Brains-a3353cc77c2d41c1965dbb46a03b7286
 last_edited: 2026-09-21T17:00:00.000Z
 source_url: https://www.wheresyoured.at/the-work-from-home-future-is-destroying/
-tags: ["English", "Line/People/Team Management", "Reflection", "Article", "Ed Zitron's Where's Your Ed At"]
+tags: ["Article", "Ed Zitron's Where's Your Ed At", "English", "Line/People/Team Management", "Reflection"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

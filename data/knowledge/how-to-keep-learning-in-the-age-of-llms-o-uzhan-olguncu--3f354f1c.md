@@ -4,7 +4,7 @@ notion_id: 3f354f1c-7d23-81d0-ac07-df5877ae6c91
 notion_url: https://app.notion.com/p/How-to-keep-learning-in-the-age-of-LLMs-O-uzhan-Olguncu-3f354f1c7d2381d0ac07df5877ae6c91
 last_edited: 2026-10-08T04:27:00.000Z
 source_url: https://ogzhanolguncu.com/blog/how-to-keep-learning-in-the-age-of-llms/
-tags: ["Oğuzhan Olguncu", "English", "Learning", "Programming", "Artificial Intelligence (AI)", "Career Growth", "Article", "Note"]
+tags: ["English", "Learning", "Programming", "Artificial Intelligence (AI)", "Career Growth", "Article", "Note", "Oğuzhan Olguncu"]
 ---
 I want to talk about how I keep learning new things in the age of LLMs, because it got really hard. LLMs, AI, agents, whatever you want to call them, can one-shot stuff and kill the entire joy of getting something wrong. I’m mostly talking about programming here, but I think it applies to anything. We used to learn new things like frameworks, programming languages, and patterns by doing something wrong first and then taking a lesson out of it. But now everything is so fast that we don’t want to spend time doing the wrong things, even though it’s more beneficial for us in the long run. That struggle is how your brain actually learns new things.
 

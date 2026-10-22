@@ -4,7 +4,7 @@ notion_id: 83cde714-446a-4ea7-8058-d9145b37ea7b
 notion_url: https://app.notion.com/p/Tech-leadership-mistakes-that-ruin-productivity-and-how-to-fix-them-83cde714446a4ea78058d9145b37ea7b
 last_edited: 2026-09-21T17:01:00.000Z
 source_url: https://leaddev.com/leadership/tech-leadership-mistakes-ruin-productivity-and-how-fix-them
-tags: ["English", "Leadersheep", "Productivity", "Article", "LeadDev"]
+tags: ["Article", "LeadDev", "English", "Leadersheep", "Productivity"]
 ---
 Are you getting in the way of your teams? Here are some ways to create the space for them to ship quickly.
 

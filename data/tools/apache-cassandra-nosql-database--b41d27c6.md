@@ -4,7 +4,7 @@ notion_id: b41d27c6-8eb5-433e-867a-e6f108d392b9
 notion_url: https://app.notion.com/p/Apache-Cassandra-NoSQL-Database-b41d27c68eb5433e867ae6f108d392b9
 last_edited: 2026-09-21T17:15:00.000Z
 source_url: https://cassandra.apache.org/_/index.html
-tags: ["Databases", "Untried", "Tool", "English"]
+tags: ["Tool", "English", "Databases", "Untried"]
 ---
 ## What is Apache Cassandra?
 

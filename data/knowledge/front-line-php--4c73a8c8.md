@@ -4,7 +4,7 @@ notion_id: 4c73a8c8-95d9-4f82-9f83-110004889147
 notion_url: https://app.notion.com/p/Front-Line-PHP-4c73a8c895d94f829f83110004889147
 last_edited: 2026-09-21T17:33:00.000Z
 source_url: https://front-line-php.com/
-tags: ["English", "PHP", "Book"]
+tags: ["PHP", "Book", "English"]
 ---
 [https://front-line-php.com/](https://front-line-php.com/)
 

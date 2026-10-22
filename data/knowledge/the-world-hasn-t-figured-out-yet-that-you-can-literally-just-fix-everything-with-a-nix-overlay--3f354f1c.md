@@ -4,7 +4,7 @@ notion_id: 3f354f1c-7d23-818a-8ac1-df6d8406e388
 notion_url: https://app.notion.com/p/the-world-hasn-t-figured-out-yet-that-you-can-literally-just-fix-everything-with-a-Nix-overlay-3f354f1c7d23818a8ac1df6d8406e388
 last_edited: 2026-10-08T04:27:00.000Z
 source_url: https://ghuntley.com/nix/
-tags: ["English", "DevOps", "Automation", "Continuous Integration/Continuous Delivery", "Programming", "Cloud", "Containerization", "Tool", "Article", "ghuntley.com"]
+tags: ["DevOps", "Automation", "Continuous Integration/Continuous Delivery", "Programming", "Cloud", "Containerization", "Tool", "Article", "ghuntley.com", "English"]
 ---
 There are many things that are uncertain in our industry right now, but one thing I am certain about, and have been for almost 13 years, is that Nix is a _terrible_ programming language.
 

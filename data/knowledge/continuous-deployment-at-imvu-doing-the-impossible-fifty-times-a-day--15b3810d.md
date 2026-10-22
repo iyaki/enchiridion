@@ -4,7 +4,7 @@ notion_id: 15b3810d-72b0-41c0-bb1c-ac2095540062
 notion_url: https://app.notion.com/p/Continuous-Deployment-at-IMVU-Doing-the-impossible-fifty-times-a-day-15b3810d72b041c0bb1cac2095540062
 last_edited: 2026-09-21T17:10:00.000Z
 source_url: https://timothyfitz.com/2009/02/10/continuous-deployment-at-imvu-doing-the-impossible-fifty-times-a-day/
-tags: ["Timothy Fitz", "English", "Continuous Integration/Continuous Delivery", "DevOps", "Article"]
+tags: ["Article", "Timothy Fitz", "English", "Continuous Integration/Continuous Delivery", "DevOps"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

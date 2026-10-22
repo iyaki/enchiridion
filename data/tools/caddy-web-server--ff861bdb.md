@@ -4,7 +4,7 @@ notion_id: ff861bdb-667a-4eb6-a60f-9f27b48e5332
 notion_url: https://app.notion.com/p/Caddy-web-server-ff861bdb667a4eb6a60f9f27b48e5332
 last_edited: 2026-09-21T17:18:00.000Z
 source_url: https://caddyserver.com/
-tags: ["Tool", "English", "Web Development", "SysAdmin", "Network", "Untried"]
+tags: ["Web Development", "SysAdmin", "Network", "Untried", "Tool", "English"]
 ---
 
 

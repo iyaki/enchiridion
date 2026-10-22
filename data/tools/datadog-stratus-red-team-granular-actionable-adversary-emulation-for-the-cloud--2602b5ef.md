@@ -4,7 +4,7 @@ notion_id: 2602b5ef-995d-4aab-b3bd-f2371643e61c
 notion_url: https://app.notion.com/p/DataDog-stratus-red-team-Granular-Actionable-Adversary-Emulation-for-the-Cloud-2602b5ef995d4aabb3bdf2371643e61c
 last_edited: 2023-09-13T13:38:00.000Z
 source_url: https://github.com/DataDog/stratus-red-team
-tags: ["English", "Information Security", "Untried", "Tool"]
+tags: ["Tool", "English", "Information Security", "Untried"]
 ---
 # Stratus Red Team
 

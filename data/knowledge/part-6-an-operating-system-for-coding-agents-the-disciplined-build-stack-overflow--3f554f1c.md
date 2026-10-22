@@ -4,7 +4,7 @@ notion_id: 3f554f1c-7d23-813d-a219-e8f284a56877
 notion_url: https://app.notion.com/p/Part-6-An-operating-system-for-coding-agents-the-disciplined-build-Stack-Overflow-3f554f1c7d23813da219e8f284a56877
 last_edited: 2026-10-10T04:16:00.000Z
 source_url: https://stackoverflow.blog/2026/10/07/part-6-an-operating-system-for-coding-agents-the-disciplined-build/
-tags: ["Article", "Note", "Stack Overflow Blog", "English", "Programming", "Software Architecture", "Productivity", "DevOps", "Machine Learning"]
+tags: ["Programming", "Software Architecture", "Productivity", "DevOps", "Machine Learning", "Article", "Note", "Stack Overflow Blog", "English"]
 ---
 The first session with a coding agent is crisp: it reads the code, makes a clean change, writes a test. By the thirtieth, something has rotted — it re-discovers the same files, contradicts a decision it made three weeks ago, guesses the test command, and quietly stops writing tests because nobody made it. The fix isn’t a better model. It’s an **operating system around the model**: a constitution, an autonomy boundary, tiered context, durable memory, a review panel, and a post-edit hook.
 

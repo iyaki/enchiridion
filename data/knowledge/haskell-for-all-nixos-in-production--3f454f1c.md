@@ -4,7 +4,7 @@ notion_id: 3f454f1c-7d23-815b-bc34-c19ba251cf07
 notion_url: https://app.notion.com/p/Haskell-for-all-NixOS-in-production-3f454f1c7d23815bbc34c19ba251cf07
 last_edited: 2026-10-09T04:31:00.000Z
 source_url: https://haskellforall.com/2018/08/nixos-in-production
-tags: ["English", "DevOps", "NixOS", "Linux", "Deployment", "Automation", "Terraform", "Article", "Tutorial", "Haskell for all"]
+tags: ["DevOps", "NixOS", "Linux", "Deployment", "Automation", "Terraform", "Article", "Tutorial", "Haskell for all", "English"]
 ---
 This is a short post summarizing what I wish I had known when I first started using NixOS in production. Hopefully other people will find this helpful to avoid the pitfalls that I ran into.
 

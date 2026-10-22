@@ -4,7 +4,7 @@ notion_id: a3951225-b26a-4050-b8a9-c37a29173b2a
 notion_url: https://app.notion.com/p/When-Objects-Are-Not-Enough-a3951225b26a4050b8a9c37a29173b2a
 last_edited: 2022-12-21T15:43:00.000Z
 source_url: https://www.tonysm.com/when-objects-are-not-enough/
-tags: ["Article", "Tony Messias", "English", "Object Oriented Programming"]
+tags: ["English", "Object Oriented Programming", "Article", "Tony Messias"]
 ---
 I've been looking up resources on the roots of Object-Oriented Programming - a.k.a. OOP. This journey started because there is a trend in the Laravel community of using Actions, and the saying goes as _that's what "Real OOP" is about_. I had some doubts about it and instead of asking around, I decided to look for references from the Smalltalk days. That's when I found the book [Smalltalk, Objects, and Design](https://www.amazon.com/Smalltalk-Objects-Design-Chamond-Liu/dp/1583484906/). I'm having such a good time researching this that I wanted to share some of my findings so far.
 

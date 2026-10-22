@@ -4,7 +4,7 @@ notion_id: 3ea54f1c-7d23-8189-b10e-f3d2da6b7aaf
 notion_url: https://app.notion.com/p/Web-Workers-A-Second-Thread-for-Your-JavaScript-Tighten-3ea54f1c7d238189b10ef3d2da6b7aaf
 last_edited: 2026-09-29T04:10:00.000Z
 source_url: https://tighten.com/insights/web-workers-a-second-thread-for-your-javascript/
-tags: ["English", "Web Development", "Javascript", "Performance", "Frontend", "Article", "Tighten"]
+tags: ["Web Development", "Javascript", "Performance", "Frontend", "Article", "Tighten", "English"]
 ---
 Suppose you have a web app that lets users **upload photos.** Cool! But there's a catch: photos straight from a phone camera can easily be around 8 MB each. On a weak mobile connection, uploading the full-size file can be painfully slow for them, and expensive for you.
 

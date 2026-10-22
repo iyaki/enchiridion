@@ -4,7 +4,7 @@ notion_id: 26adacc2-1c68-48ac-ad16-1c383132d6d8
 notion_url: https://app.notion.com/p/Don-t-Create-Chaos-26adacc21c6848acad161c383132d6d8
 last_edited: 2023-09-08T17:57:00.000Z
 source_url: https://staysaasy.com/management/2020/07/07/dont-create-chaos.html
-tags: ["English", "Line/People/Team Management", "Leadersheep", "Article", "Stay SaaSy"]
+tags: ["Article", "Stay SaaSy", "English", "Line/People/Team Management", "Leadersheep"]
 ---
 One of the most harmful behaviors I’ve observed in ineffective leadership is a tendency to add chaos when one enters a room. Chaos comes in many flavors: A decision was reached about an important architecture question weeks ago, but someone suddenly insists that you revisit the project’s fundamental goals at the 11th hour. An executive insists that their project is most important, and pushes it onto the roadmap. Or maybe you leave a productive meeting without concrete next steps, and are right back where you started in a week.
 

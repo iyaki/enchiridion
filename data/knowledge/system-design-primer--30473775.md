@@ -4,7 +4,7 @@ notion_id: 30473775-3f8c-44f1-8aa7-0c18fffbbf8a
 notion_url: https://app.notion.com/p/System-Design-Primer-304737753f8c44f18aa70c18fffbbf8a
 last_edited: 2026-09-21T17:11:00.000Z
 source_url: https://github.com/donnemartin/system-design-primer/#the-system-design-primer
-tags: ["Book", "English", "Español", "Others", "System Design / Software Architecture"]
+tags: ["English", "Español", "Others", "System Design / Software Architecture", "Book"]
 ---
 English ∙ 日本語 ∙ 简体中文 ∙ 繁體中文 | العَرَبِيَّة‎ ∙ বাংলা ∙ Português do Brasil ∙ Deutsch ∙ ελληνικά ∙ עברית ∙ Italiano ∙ 한국어 ∙ فارسی ∙ Polski ∙ русский язык ∙ Español ∙ ภาษาไทย ∙ Türkçe ∙ tiếng Việt ∙ Français | Add Translation
 

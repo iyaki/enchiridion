@@ -4,7 +4,7 @@ notion_id: c8ee2299-5d8a-4183-ab66-451e82275550
 notion_url: https://app.notion.com/p/The-9-Character-Traits-of-Great-Product-Leaders-c8ee22995d8a4183ab66451e82275550
 last_edited: 2026-09-21T17:20:00.000Z
 source_url: https://hackernoon.com/the-9-character-traits-of-great-product-leaders-752e3tr7
-tags: ["English", "Product Management", "Article", "Hackernoon"]
+tags: ["Article", "Hackernoon", "English", "Product Management"]
 ---
 [https://hackernoon.com/the-9-character-traits-of-great-product-leaders-752e3tr7](https://hackernoon.com/the-9-character-traits-of-great-product-leaders-752e3tr7)
 

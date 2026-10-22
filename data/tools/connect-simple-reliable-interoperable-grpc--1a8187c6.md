@@ -4,7 +4,7 @@ notion_id: 1a8187c6-1e0d-4042-a4f0-a60bb3c4d4b6
 notion_url: https://app.notion.com/p/Connect-Simple-reliable-interoperable-gRPC-1a8187c61e0d4042a4f0a60bb3c4d4b6
 last_edited: 2026-09-21T17:05:00.000Z
 source_url: https://connectrpc.com/
-tags: ["English", "Web Development", "Framework/Library", "Tool"]
+tags: ["Framework/Library", "Tool", "English", "Web Development"]
 ---
 ## A better gRPC.
 

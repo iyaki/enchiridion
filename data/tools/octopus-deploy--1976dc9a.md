@@ -4,7 +4,7 @@ notion_id: 1976dc9a-1187-4737-8f28-80cd4d16e05f
 notion_url: https://app.notion.com/p/Octopus-Deploy-1976dc9a118747378f2880cd4d16e05f
 last_edited: 2026-09-21T17:15:00.000Z
 source_url: https://octopus.com/
-tags: ["English", "Continuous Integration/Continuous Delivery", "DevOps", "Untried", "Service"]
+tags: ["Service", "English", "Continuous Integration/Continuous Delivery", "DevOps", "Untried"]
 ---
 - Tools like GitHub Actions, Azure DevOps, Jenkins, Gitlab CI, and TeamCity are great for CI
 - Continuous Delivery (CD) functionality with these tools often means a basic ability to call a deployment script

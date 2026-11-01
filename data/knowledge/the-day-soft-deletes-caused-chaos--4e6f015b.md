@@ -4,7 +4,7 @@ notion_id: 4e6f015b-8415-4eb8-9c9e-efacf8b038c2
 notion_url: https://app.notion.com/p/The-Day-Soft-Deletes-Caused-Chaos-4e6f015b84154eb89c9eefacf8b038c2
 last_edited: 2026-09-21T16:58:00.000Z
 source_url: https://blog.bemi.io/soft-deleting-chaos/
-tags: ["English", "Databases", "System Design / Software Architecture", "Article", "Bemi Blog"]
+tags: ["Article", "Bemi Blog", "English", "Databases", "System Design / Software Architecture"]
 ---
 The worst mistake I made in my software engineering career was merging a seemingly harmless pull request 5 years ago.
 

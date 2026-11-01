@@ -4,7 +4,7 @@ notion_id: c7844258-d35c-4376-95e2-241ac4ee31a9
 notion_url: https://app.notion.com/p/210-New-Icebreaker-Questions-That-Aren-t-Cheesy-c7844258d35c437695e2241ac4ee31a9
 last_edited: 2024-08-16T19:29:00.000Z
 source_url: https://toggl.com/blog/icebreaker-questions
-tags: ["Article", "Toggl Blog", "English", "Communication"]
+tags: ["English", "Communication", "Article", "Toggl Blog"]
 ---
 Looking for a way to turn awkward silence into lively chatter? Icebreaker questions are the answer.
 

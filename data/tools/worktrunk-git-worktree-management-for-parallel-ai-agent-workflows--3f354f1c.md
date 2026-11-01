@@ -4,7 +4,7 @@ notion_id: 3f354f1c-7d23-81db-81b9-e8e124dcbbbc
 notion_url: https://app.notion.com/p/Worktrunk-Git-worktree-management-for-parallel-AI-agent-workflows-3f354f1c7d2381db81b9e8e124dcbbbc
 last_edited: 2026-10-08T04:27:00.000Z
 source_url: https://worktrunk.dev/
-tags: ["English", "Git", "DevOps", "Automation", "Programming", "CLI", "Workflow", "Tool", "worktrunk.dev"]
+tags: ["worktrunk.dev", "English", "Git", "DevOps", "Automation", "Programming", "CLI", "Workflow", "Tool"]
 ---
 Worktrunk is a CLI for Git worktree management, designed for **parallel AI agent
 workflows**.

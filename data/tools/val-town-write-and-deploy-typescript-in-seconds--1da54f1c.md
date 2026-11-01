@@ -4,7 +4,7 @@ notion_id: 1da54f1c-7d23-8172-a2e2-c86e0989c628
 notion_url: https://app.notion.com/p/val-town-write-and-deploy-TypeScript-in-seconds-1da54f1c7d238172a2e2c86e0989c628
 last_edited: 2025-06-22T02:08:00.000Z
 source_url: https://www.val.town/
-tags: ["English", "Programming", "Producer (Individual Contributor)", "Service"]
+tags: ["Service", "English", "Programming", "Producer (Individual Contributor)"]
 ---
 [Features](https://www.val.town/features)[Templates](https://www.val.town/explore/use-cases)[Showcase](https://www.val.town/explore/community-showcase)[TownieAI](https://www.val.town/townie)[Blog](https://blog.val.town/)[Docs](https://docs.val.town/)[Pricing](https://www.val.town/pricing)
 

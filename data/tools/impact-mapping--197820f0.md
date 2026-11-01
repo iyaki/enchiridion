@@ -4,7 +4,7 @@ notion_id: 197820f0-7e87-4237-a0e6-76504a79d61a
 notion_url: https://app.notion.com/p/Impact-Mapping-197820f07e874237a0e676504a79d61a
 last_edited: 2025-02-10T18:07:00.000Z
 source_url: https://www.impactmapping.org/
-tags: ["English", "Project Management", "Product Management", "System Design / Software Architecture", "Website", "Guide"]
+tags: ["Website", "Guide", "English", "Project Management", "Product Management", "System Design / Software Architecture"]
 ---
 Impact mapping is a lightweight, collaborative planning technique for teams that want to make a big impact with software products. It is based on user interaction design, outcome driven planning and mind mapping. Impact maps help delivery teams and stakeholders visualise roadmaps, explain how deliverables connect to user needs, and communicate how user outcomes relate to higher level organisational goals.
 

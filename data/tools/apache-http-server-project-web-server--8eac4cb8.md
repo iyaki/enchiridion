@@ -4,7 +4,7 @@ notion_id: 8eac4cb8-e1e1-4b04-b021-86a91e140d16
 notion_url: https://app.notion.com/p/Apache-HTTP-Server-Project-web-server-8eac4cb8e1e14b04b02186a91e140d16
 last_edited: 2026-09-21T17:18:00.000Z
 source_url: https://httpd.apache.org/
-tags: ["English", "Web Development", "SysAdmin", "Network", "Tool"]
+tags: ["Tool", "English", "Web Development", "SysAdmin", "Network"]
 ---
 A fast, reliable, and extensible open-source web server for modern operating systems. Apache httpd powers everything from personal sites to mission-critical production infrastructure with:
 

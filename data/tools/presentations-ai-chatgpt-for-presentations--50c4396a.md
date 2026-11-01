@@ -4,7 +4,7 @@ notion_id: 50c4396a-8077-45d1-ab61-8d430d20fc08
 notion_url: https://app.notion.com/p/Presentations-AI-ChatGPT-for-Presentations-50c4396a807745d1ab618d430d20fc08
 last_edited: 2026-09-21T17:00:00.000Z
 source_url: https://www.presentations.ai/
-tags: ["English", "Office", "Untried", "Service"]
+tags: ["Service", "English", "Office", "Untried"]
 ---
 AI PowerPoint
 

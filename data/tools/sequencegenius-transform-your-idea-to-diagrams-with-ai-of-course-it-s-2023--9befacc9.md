@@ -4,7 +4,7 @@ notion_id: 9befacc9-011a-4e95-b319-5a710d322ff6
 notion_url: https://app.notion.com/p/sequencegenius-Transform-your-idea-to-diagrams-With-AI-of-course-it-s-2023-9befacc9011a4e95b3195a710d322ff6
 last_edited: 2026-09-21T17:01:00.000Z
 source_url: https://www.notion.so/9befacc9011a4e95b3195a710d322ff6
-tags: ["Service", "Tool", "English", "Office", "Product Management", "Productivity", "Untried"]
+tags: ["English", "Office", "Product Management", "Productivity", "Untried", "Service", "Tool"]
 ---
 # SequenceGenius
 

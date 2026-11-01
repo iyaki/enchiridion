@@ -4,7 +4,7 @@ notion_id: 3f454f1c-7d23-8119-8145-e98bd912f71c
 notion_url: https://app.notion.com/p/Part-3-Knowing-when-your-agent-doesn-t-know-the-confidence-layer-Stack-Overflow-3f454f1c7d2381198145e98bd912f71c
 last_edited: 2026-10-09T04:31:00.000Z
 source_url: https://stackoverflow.blog/2026/10/07/part-3-knowing-when-your-agent-doesn-t-know-the-confidence-layer/
-tags: ["English", "Artificial Intelligence (AI)", "Machine Learning", "DevOps", "Automation", "Systems Design / Software Architecture", "Article", "Stack Overflow Blog"]
+tags: ["Article", "Stack Overflow Blog", "English", "Artificial Intelligence (AI)", "Machine Learning", "DevOps", "Automation", "Systems Design / Software Architecture"]
 ---
 The most important number an agent produces isn’t its answer — it’s how sure it is. Compose that number from independent signals, check it’s calibrated, grade the high-stakes calls with a second model, and route the _rest to humans well._
 

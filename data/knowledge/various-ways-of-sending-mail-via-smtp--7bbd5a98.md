@@ -4,7 +4,7 @@ notion_id: 7bbd5a98-b6dd-4eac-ac01-d61626072d9f
 notion_url: https://app.notion.com/p/Various-Ways-of-Sending-Mail-via-SMTP-7bbd5a98b6dd4eacac01d61626072d9f
 last_edited: 2023-02-01T17:04:00.000Z
 source_url: https://blog.bityard.net/articles/2023/January/various-ways-of-sending-mail-via-smtp
-tags: ["English", "Network", "Email", "Article", "Tutorial"]
+tags: ["Network", "Email", "Article", "Tutorial", "English"]
 ---
 Internet Mail, or email, or whatever kids these days call it, was one of those things that terrified me very early on when I was a strapping young System Administrator. Everything else that I was doing at the time seemed comparitively easy: Linux/BSD installs, system setup, automation, and such. Learning how various Unix shells and relational databases worked was a joy. But mail server administration... now _that_ scared the hell out of me.
 

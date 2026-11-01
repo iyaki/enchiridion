@@ -4,7 +4,7 @@ notion_id: e20f03d9-20b1-4c30-a1f1-2a24f8f286a2
 notion_url: https://app.notion.com/p/Low-Context-DevOps-e20f03d920b14c30a1f12a24f8f286a2
 last_edited: 2024-01-30T14:11:00.000Z
 source_url: https://www.usenix.org/publications/loginonline/low-context-devops#:~:text=A%20low%2Dcontext%20environment%20is,RC)%20needed%20to%20be%20successful.
-tags: ["Article", "USENIX | The Advanced Computing Systems Association", "English", "DevOps", "Productivity"]
+tags: ["English", "DevOps", "Productivity", "Article", "USENIX | The Advanced Computing Systems Association"]
 ---
 How often is your work blocked as you wait for an answer from a coworker, spend hours researching how to do something that should be trivial, or waste days on a task only to later find out there was an easier way? These are red-flags that you work in a high-context environment and you lack context. Let’s fix this!
 

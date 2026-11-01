@@ -4,7 +4,7 @@ notion_id: d89e7019-e47d-42f9-ab2e-4ad16054b362
 notion_url: https://app.notion.com/p/Six-ways-security-teams-can-build-better-relationships-with-engineering-d89e7019e47d42f9ab2e4ad16054b362
 last_edited: 2026-09-21T17:38:00.000Z
 source_url: https://leaddev.com/communication/six-ways-security-teams-can-build-better-relationships-engineering
-tags: ["English", "DevOps", "Information Security", "Site Reliability Engineering", "Article", "LeadDev"]
+tags: ["LeadDev", "English", "DevOps", "Information Security", "Site Reliability Engineering", "Article"]
 ---
 [https://leaddev.com/security/six-ways-security-teams-can-build-better-relationships-engineering](https://leaddev.com/security/six-ways-security-teams-can-build-better-relationships-engineering)
 

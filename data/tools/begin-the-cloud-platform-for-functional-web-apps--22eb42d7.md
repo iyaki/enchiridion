@@ -4,7 +4,7 @@ notion_id: 22eb42d7-0f0e-450f-a0ad-d5f5216ff66c
 notion_url: https://app.notion.com/p/Begin-The-Cloud-Platform-for-Functional-Web-Apps-22eb42d70f0e450fa0add5f5216ff66c
 last_edited: 2026-09-21T16:59:00.000Z
 source_url: https://forms.launch.co/apply?Src=begin&prog=domains&mkt=direct
-tags: ["English", "Hosting", "Serverless", "Untried", "Service"]
+tags: ["Service", "English", "Hosting", "Serverless", "Untried"]
 ---
 ![image](https://begin.com/_public/animations/deploy-271479de42.gif)
 

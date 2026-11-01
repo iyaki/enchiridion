@@ -4,7 +4,7 @@ notion_id: 31354f1c-7d23-813e-ba0b-f1a944547ca8
 notion_url: https://app.notion.com/p/Default-Alive-or-Default-Dead-31354f1c7d23813eba0bf1a944547ca8
 last_edited: 2026-02-26T01:55:00.000Z
 source_url: https://www.paulgraham.com/aord.html
-tags: ["English", "Entrepreneurship", "Career Growth", "Decision Making", "Article", "Paul Graham"]
+tags: ["Entrepreneurship", "Career Growth", "Decision Making", "Article", "Paul Graham", "English"]
 ---
 When I talk to a startup that's been operating for more than 8 or 9 months, the first thing I want to know is almost always the same. Assuming their expenses remain constant and their revenue growth is what it has been over the last several months, do they make it to profitability on the money they have left? Or to put it more dramatically, by default do they live or die?
 

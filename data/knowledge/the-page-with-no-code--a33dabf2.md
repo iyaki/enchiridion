@@ -4,7 +4,7 @@ notion_id: a33dabf2-2372-4c65-9885-3f6c9799a3a8
 notion_url: https://app.notion.com/p/The-Page-With-No-Code-a33dabf223724c6598853f6c9799a3a8
 last_edited: 2023-01-23T18:06:00.000Z
 source_url: https://danq.me/2023/01/11/nocode/
-tags: ["English", "Web Development", "Article"]
+tags: ["Article", "English", "Web Development"]
 ---
 It all started when I saw [no-ht.ml](https://no-ht.ml/), [Terence Eden](https://shkspr.mobi/)‘s hilarious response to [Salma Alam-Naylor](https://whitep4nth3r.com/)‘s excellent [_HTML is all you need to make a website_](https://whitep4nth3r.com/blog/html-is-all-you-need-to-make-a-website/). The latter is an argument against both the silly amount of JavaScript with which websites routinely burden their users, but also even against depending on CSS. As a fan of [CSS Naked Day](https://css-naked-day.github.io/) and a firm believer in using JS only for progressive enhancement, I’m obviously in favour.
 

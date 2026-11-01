@@ -4,7 +4,7 @@ notion_id: 3e354f1c-7d23-81b7-9f23-e6a16e5121d7
 notion_url: https://app.notion.com/p/Grit-your-teeth-and-ship-it-3e354f1c7d2381b79f23e6a16e5121d7
 last_edited: 2026-09-22T03:15:00.000Z
 source_url: https://www.seangoedecke.com/grit-your-teeth-and-ship-it/
-tags: ["English", "Programming", "Productivity", "Career Growth", "Article", "Sean Goedecke"]
+tags: ["Sean Goedecke", "English", "Programming", "Productivity", "Career Growth", "Article"]
 ---
 Being good at building and being good at shipping are two separate skills. In the short term, they’re actually countervailing: if you have a gift for building, you’re likely to be _worse_ at shipping. Ira Glass has a classic quote about this.
 

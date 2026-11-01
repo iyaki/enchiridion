@@ -4,7 +4,7 @@ notion_id: b5ba9919-2d10-477b-971e-d48870d20a09
 notion_url: https://app.notion.com/p/tl-dr-The-Staff-Engineer-s-Path-b5ba99192d10477b971ed48870d20a09
 last_edited: 2026-09-21T17:03:00.000Z
 source_url: https://olano.dev/blog/tldr-the-staff-engineers-path/
-tags: ["Español", "Career Growth", "Article", "Apuntes inchequeables (Facundo Olano)"]
+tags: ["Article", "Apuntes inchequeables (Facundo Olano)", "Español", "Career Growth"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

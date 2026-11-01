@@ -4,7 +4,7 @@ notion_id: e0e2dbdd-ae2d-4a65-a32a-d92e00423983
 notion_url: https://app.notion.com/p/Designing-for-Performance-Weighing-Aesthetics-and-Speed-e0e2dbddae2d4a65a32ad92e00423983
 last_edited: 2023-09-13T14:44:00.000Z
 source_url: https://designingforperformance.com/
-tags: ["English", "Web Development", "Book"]
+tags: ["Web Development", "Book", "English"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

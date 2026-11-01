@@ -4,7 +4,7 @@ notion_id: 3f454f1c-7d23-815f-bd50-cb2c96429ec3
 notion_url: https://app.notion.com/p/Part-1-Make-your-AI-agents-boring-the-determinism-layer-Stack-Overflow-3f454f1c7d23815fbd50cb2c96429ec3
 last_edited: 2026-10-09T04:31:00.000Z
 source_url: https://stackoverflow.blog/2026/10/07/part-1-make-your-ai-agents-boring-the-determinism-layer/
-tags: ["English", "Artificial Intelligence (AI)", "Programming", "Software Architecture", "Testing", "High Availability", "Article", "Stack Overflow Blog"]
+tags: ["Stack Overflow Blog", "English", "Artificial Intelligence (AI)", "Programming", "Software Architecture", "Testing", "High Availability", "Article"]
 ---
 The trick to putting LLM agents in high-stakes systems isn’t a smarter model — it’s containing the model to one node so the rest of the system is ordinary, testable code. Here are the structural moves, with the contracts _and types to implement them._
 

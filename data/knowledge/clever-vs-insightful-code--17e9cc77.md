@@ -4,7 +4,7 @@ notion_id: 17e9cc77-a6bb-4f8f-b5cf-f7f4f38473dd
 notion_url: https://app.notion.com/p/Clever-vs-Insightful-Code-17e9cc77a6bb4f8fb5cff7f4f38473dd
 last_edited: 2023-04-22T20:10:00.000Z
 source_url: https://www.hillelwayne.com/post/cleverness/
-tags: ["English", "Programming", "Article", "Hillel Wayne"]
+tags: ["Programming", "Article", "Hillel Wayne", "English"]
 ---
 “Don’t write clever code.” Why not? “Because it’s hard to understand.” People who say this think of clever code such as [Duff’s Device](https://en.wikipedia.org/wiki/Duff%27s_device):
 

@@ -4,7 +4,7 @@ notion_id: 9ed294fa-29a6-41e6-9d7a-f67eb8813f42
 notion_url: https://app.notion.com/p/The-URL-is-the-ultimate-global-state-management-tool-9ed294fa29a641e69d7af67eb8813f42
 last_edited: 2026-09-21T17:00:00.000Z
 source_url: https://www.notion.so/9ed294fa29a641e69d7af67eb8813f42
-tags: ["English", "Web Development", "Article", "Jacob Paris"]
+tags: ["Jacob Paris", "English", "Web Development", "Article"]
 ---
 [← Back to guides](https://www.jacobparis.com/guides)
 

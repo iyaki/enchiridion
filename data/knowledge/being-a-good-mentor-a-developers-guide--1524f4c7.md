@@ -4,7 +4,7 @@ notion_id: 1524f4c7-4770-48bb-a396-e97214f87e8a
 notion_url: https://app.notion.com/p/Being-a-good-mentor-a-developers-guide-1524f4c7477048bba396e97214f87e8a
 last_edited: 2023-07-10T18:12:00.000Z
 source_url: https://vadimkravcenko.com/shorts/good-mentor/
-tags: ["English", "Career Growth", "Communication", "Article", "Vadim Kravcenko"]
+tags: ["Article", "Vadim Kravcenko", "English", "Career Growth", "Communication"]
 ---
 Let’s talk about the process where the experienced welcome the inexperienced under their wing and illuminate the path ahead. I’ve worn many hats over the years — mentor and mentee are one of them. I've seen the good, the bad, the ugly, and let me tell you - it's mostly good. Not implying in any way that I’m the best mentor to software developers, I just learned a thing or two over the course of my career, that I think will be useful to people who want to start mentoring.
 

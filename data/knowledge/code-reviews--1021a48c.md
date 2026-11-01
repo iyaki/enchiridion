@@ -4,7 +4,7 @@ notion_id: 1021a48c-e6aa-4d74-ab95-341929197be4
 notion_url: https://app.notion.com/p/Code-Reviews-1021a48ce6aa4d74ab95341929197be4
 last_edited: 2026-09-18T00:53:00.000Z
 source_url: https://vadimkravcenko.com/shorts/code-reviews/
-tags: ["English", "Producer (Individual Contributor)", "Programming", "System Design / Software Architecture", "Project Management", "Productivity", "Change Management", "Article", "Vadim Kravcenko"]
+tags: ["Article", "Vadim Kravcenko", "English", "Producer (Individual Contributor)", "Programming", "System Design / Software Architecture", "Project Management", "Productivity", "Change Management"]
 ---
 Let me tell you a story. I worked with a client in the early days of my career. It was a social media sentiment analysis platform when Twitter was still called Twitter, but that’s irrelevant to the story. We were a team of seven. We were young, enthusiastic, and clueless. Code reviews? We thought they were a bureaucratic relic from the corporate world. "We're agile, we move fast, we break things!” we'd say, patting ourselves on the back for our speed. Fast forward a few months, and our codebase had turned into a minefield. Bugs were the least of our worries, though there were many. The real problem was that no one could understand what the hell anyone else had written; we had duplicate logic in many places and different code styles in our modules, which was weird to read.
 

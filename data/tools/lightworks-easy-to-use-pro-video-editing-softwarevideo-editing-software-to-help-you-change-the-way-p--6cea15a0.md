@@ -4,7 +4,7 @@ notion_id: 6cea15a0-c4d0-4437-bfc8-151fe3f096e5
 notion_url: https://app.notion.com/p/Lightworks-Easy-to-Use-Pro-Video-Editing-SoftwareVideo-editing-software-to-help-you-change-the-way-6cea15a0c4d04437bfc8151fe3f096e5
 last_edited: 2026-09-21T17:04:00.000Z
 source_url: https://lwks.com/
-tags: ["Tool", "English", "Untried", "Multimedia"]
+tags: ["English", "Untried", "Multimedia", "Tool"]
 ---
 
 

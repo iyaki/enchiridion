@@ -4,7 +4,7 @@ notion_id: 6c35d7d4-9b40-41ae-bee1-9864faddc984
 notion_url: https://app.notion.com/p/The-Eleven-Defining-Characteristics-of-Modern-Software-Architecture-6c35d7d49b4041aebee19864faddc984
 last_edited: 2026-09-21T17:19:00.000Z
 source_url: https://hackernoon.com/the-eleven-defining-characteristics-of-modern-software-architecture-o8113ehc
-tags: ["English", "System Design / Software Architecture", "Article", "Hackernoon"]
+tags: ["Hackernoon", "English", "System Design / Software Architecture", "Article"]
 ---
 [https://hackernoon.com/the-eleven-defining-characteristics-of-modern-software-architecture-o8113ehc](https://hackernoon.com/the-eleven-defining-characteristics-of-modern-software-architecture-o8113ehc)
 

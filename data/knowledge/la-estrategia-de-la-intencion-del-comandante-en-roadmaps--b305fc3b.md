@@ -4,7 +4,7 @@ notion_id: b305fc3b-c704-401c-9382-cdf9fc39b84c
 notion_url: https://app.notion.com/p/La-estrategia-de-la-intenci-n-del-comandante-en-Roadmaps-b305fc3bc704401c9382cdf9fc39b84c
 last_edited: 2026-09-21T17:00:00.000Z
 source_url: https://www.notion.so/b305fc3bc704401c9382cdf9fc39b84c
-tags: ["English", "Agile", "Project Management", "Product Management", "Leadersheep", "Article", "This is the Agile Way (Javier Garzas)"]
+tags: ["This is the Agile Way (Javier Garzas)", "English", "Agile", "Project Management", "Product Management", "Leadersheep", "Article"]
 ---
 > _Cuando una medida se convierte en un objetivo, deja de ser una buena medida_
 

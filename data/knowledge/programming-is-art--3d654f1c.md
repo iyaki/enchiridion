@@ -4,7 +4,7 @@ notion_id: 3d654f1c-7d23-81ab-8eba-fd52829884bf
 notion_url: https://app.notion.com/p/Programming-is-art-3d654f1c7d2381ab8ebafd52829884bf
 last_edited: 2026-09-18T00:52:00.000Z
 source_url: https://orchidfiles.com/programming-is-art/
-tags: ["Article", "Tutorial", "FreeCodeCamp", "English", "Programming", "Career Growth", "Product Management"]
+tags: ["English", "Programming", "Career Growth", "Product Management", "Article", "Tutorial", "FreeCodeCamp"]
 ---
 When I started programming, my whole day revolved around development. I’d wake up, write code, and go to sleep. And that’s how it was day in and day out. My entire social circle consisted of people who also wrote code. I studied frameworks, libraries, and various programming languages.
 

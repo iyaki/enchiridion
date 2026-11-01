@@ -4,7 +4,7 @@ notion_id: 3df54f1c-7d23-81e3-9ab2-cd1504922aff
 notion_url: https://app.notion.com/p/Hatchet-The-startup-s-Postgres-survival-guide-3df54f1c7d2381e39ab2cd1504922aff
 last_edited: 2026-09-18T01:19:00.000Z
 source_url: https://hatchet.run/blog/postgres-survival-guide
-tags: ["English", "Databases", "PostgreSQL", "Performance", "Software Development", "Productivity", "Article", "Guide", "Hatchet"]
+tags: ["Databases", "PostgreSQL", "Performance", "Software Development", "Productivity", "Article", "Guide", "Hatchet", "English"]
 ---
 Over the past half year or so, I’ve been writing an internal doc for our engineers trying to distill two years of Postgres battles into a somewhat cohesive document. While I love [the Postgres manual](https://www.postgresql.org/docs/18/index.html), I find it’s hard to turn to when shit hits the fan because it’s just so darn comprehensive. I thought this might be useful for others and would appreciate feedback (or other tidbits that you’ve learned running Postgres in production).
 

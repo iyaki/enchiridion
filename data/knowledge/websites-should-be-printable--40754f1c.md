@@ -4,7 +4,7 @@ notion_id: 40754f1c-7d23-8150-a016-d9a0840840b2
 notion_url: https://app.notion.com/p/Websites-Should-Be-Printable-40754f1c7d238150a016d9a0840840b2
 last_edited: 2026-10-28T03:56:00.000Z
 source_url: https://brennenputh.me/blog/printable-websites/
-tags: ["Article", "Guide", "brennenputh.me", "English", "Web Development", "CSS", "UI/UX", "Frontend", "Productivity"]
+tags: ["brennenputh.me", "English", "Web Development", "CSS", "UI/UX", "Frontend", "Productivity", "Article", "Guide"]
 ---
 2026-10-24
 

@@ -4,7 +4,7 @@ notion_id: 40354f1c-7d23-81f1-90cd-ffcbdcdc041e
 notion_url: https://app.notion.com/p/I-don-t-trust-ON-DELETE-CASCADE-PlanetScale-40354f1c7d2381f190cdffcbdcdc041e
 last_edited: 2026-10-24T03:13:00.000Z
 source_url: https://planetscale.com/blog/i-dont-like-delete-cascade
-tags: ["PlanetScale Blog", "English", "Databases", "PostgreSQL", "Error Handling", "On Call", "Performance", "Article"]
+tags: ["Article", "PlanetScale Blog", "English", "Databases", "PostgreSQL", "Error Handling", "On Call", "Performance"]
 ---
 Postgres `ON DELETE CASCADE` is very tempting to use at first. Fully integrity checked, atomic deletion of your data. You don't need to write any application code to clean up related rows, you simply set up your foreign keys, then issue a single `DELETE` statement, Postgres takes care of the rest.
 

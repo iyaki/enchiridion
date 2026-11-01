@@ -4,7 +4,7 @@ notion_id: 37e363a0-ca85-476e-9f99-0b455b4f7e0d
 notion_url: https://app.notion.com/p/The-Tao-of-Go-37e363a0ca85476e9f990b455b4f7e0d
 last_edited: 2026-09-21T16:59:00.000Z
 source_url: https://bitfieldconsulting.com/posts/tao-of-go
-tags: ["English", "Principles", "Programming", "Go", "Article", "BITFIELD CONSULTING"]
+tags: ["Principles", "Programming", "Go", "Article", "BITFIELD CONSULTING", "English"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

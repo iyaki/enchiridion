@@ -4,7 +4,7 @@ notion_id: 40354f1c-7d23-81bf-94a1-def85829b92b
 notion_url: https://app.notion.com/p/Why-DDD-is-more-important-than-ever-40354f1c7d2381bf94a1def85829b92b
 last_edited: 2026-10-24T03:14:00.000Z
 source_url: https://madewithlove.com/blog/why-ddd-is-more-important-than-ever/
-tags: ["English", "Domain Driven Design", "Software Development", "Product Management", "System Design / Software Architecture", "Agile", "Article", "Tutorial", "madewithlove Blog"]
+tags: ["madewithlove Blog", "English", "Domain Driven Design", "Software Development", "Product Management", "System Design / Software Architecture", "Agile", "Article", "Tutorial"]
 ---
 AI has made writing code cheap. Building the _right_ thing is just as hard as it always was.
 

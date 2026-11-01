@@ -4,7 +4,7 @@ notion_id: 38c54f1c-7d23-81e2-82ca-f95d94be815f
 notion_url: https://app.notion.com/p/Less-is-more-more-or-less-38c54f1c7d2381e282caf95d94be815f
 last_edited: 2026-09-18T00:52:00.000Z
 source_url: https://jakub.kr/writing/less-is-more
-tags: ["Article", "Thoughts on Software Blog (Gordon Cassie)", "English", "Productivity", "Quality", "Artificial Intelligence (AI)", "User Experience", "Software Development"]
+tags: ["English", "Productivity", "Quality", "Artificial Intelligence (AI)", "User Experience", "Software Development", "Article", "Thoughts on Software Blog (Gordon Cassie)"]
 ---
 Today, with AI, it's very easy to fall into the trap of producing more just _because_ you can. Every idea, every new feature, every animation you've always wanted to build is just a couple of prompts away. It’s amazing. It feels like having a superpower.
 

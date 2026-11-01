@@ -4,7 +4,7 @@ notion_id: 3f954f1c-7d23-8131-8e69-da39a5d02f1f
 notion_url: https://app.notion.com/p/Fingerprints-are-the-new-cookies-3f954f1c7d2381318e69da39a5d02f1f
 last_edited: 2026-10-14T03:29:00.000Z
 source_url: https://royfish.dev/fingerprints-are-the-new-cookies
-tags: ["Article", "Note", "Medium", "English", "Information Security", "Privacy", "Web Development", "Communication"]
+tags: ["English", "Information Security", "Privacy", "Web Development", "Communication", "Article", "Note", "Medium"]
 ---
 ## From now on I’ll call you:
 

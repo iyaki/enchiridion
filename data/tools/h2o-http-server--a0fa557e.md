@@ -4,7 +4,7 @@ notion_id: a0fa557e-f43d-4ce8-b247-e1e20a308cf3
 notion_url: https://app.notion.com/p/H2O-HTTP-server-a0fa557ef43d4ce8b247e1e20a308cf3
 last_edited: 2026-09-21T17:18:00.000Z
 source_url: https://h2o.examp1e.net/
-tags: ["English", "Web Development", "Network", "SysAdmin", "Untried", "Tool"]
+tags: ["Tool", "English", "Web Development", "Network", "SysAdmin", "Untried"]
 ---
 H2O is a new generation HTTP server that provides quicker response to users with less CPU, memory bandwidth utilization when compared to older generation of web servers. Designed from ground-up, the server implements of HTTP/2 and HTTP/3 taking the advantages of features including new and old content prioritization schemes, server push, 103 Early Hints, promising outstanding experience to the visitors of the web site.
 

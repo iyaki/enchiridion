@@ -4,7 +4,7 @@ notion_id: 3fa54f1c-7d23-811d-9cb9-f86f9f028a42
 notion_url: https://app.notion.com/p/debpalash-VoiceStudio-VoiceStudio-is-the-open-source-fully-local-ElevenLabs-alternative-voice-cl-3fa54f1c7d23811d9cb9f86f9f028a42
 last_edited: 2026-10-15T03:08:00.000Z
 source_url: https://github.com/debpalash/VoiceStudio
-tags: ["Tool", "Service", "GitHub", "English", "Web Development", "Voice Cloning", "Open Source", "Automation"]
+tags: ["Web Development", "Voice Cloning", "Open Source", "Automation", "Tool", "Service", "GitHub", "English"]
 ---
 ![image](https://github.com/debpalash/VoiceStudio/raw/main/docs/media/electron/voicestudio.gif)
 

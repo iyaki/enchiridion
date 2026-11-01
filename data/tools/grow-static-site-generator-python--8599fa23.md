@@ -4,7 +4,7 @@ notion_id: 8599fa23-715b-42ec-be35-7de49484a2c2
 notion_url: https://app.notion.com/p/Grow-Static-site-generator-Python-8599fa23715b42ecbe357de49484a2c2
 last_edited: 2026-09-21T17:14:00.000Z
 source_url: https://grow.io/
-tags: ["Tool", "English", "Frontend", "Untried"]
+tags: ["English", "Frontend", "Untried", "Tool"]
 ---
 ## A declarative, file-based static website generator
 

@@ -4,7 +4,7 @@ notion_id: 825ee350-6e20-4fe4-8c97-5a134129866a
 notion_url: https://app.notion.com/p/Contract-Tests-825ee3506e204fe48c975a134129866a
 last_edited: 2026-09-21T17:33:00.000Z
 source_url: https://www.kai-sassnowski.com/post/contract-tests/
-tags: ["English", "Testing", "Object Oriented Programming", "Article", "on error resume next (Kai Sassnowski)"]
+tags: ["on error resume next (Kai Sassnowski)", "English", "Testing", "Object Oriented Programming", "Article"]
 ---
 [https://www.kai-sassnowski.com/post/contract-tests/](https://www.kai-sassnowski.com/post/contract-tests/)
 

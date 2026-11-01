@@ -4,7 +4,7 @@ notion_id: f68968c1-3210-414a-a321-051b2bc02f68
 notion_url: https://app.notion.com/p/Don-t-be-STUPID-GRASP-SOLID-f68968c13210414aa321051b2bc02f68
 last_edited: 2022-12-21T15:42:00.000Z
 source_url: https://www.npopov.com/2011/12/27/Dont-be-STUPID-GRASP-SOLID.html
-tags: ["Article", "nikic's Blog", "English", "Object Oriented Programming"]
+tags: ["English", "Object Oriented Programming", "Article", "nikic's Blog"]
 ---
 Ever heard of [SOLID](https://en.wikipedia.org/wiki/SOLID_%28object-oriented_design%29) code? Probably: It is a term describing a collection of design principles for “good code” that was coined by Robert C. Martin (aka [“uncle bob”](http://cleancoder.posterous.com/)), our beloved evangelist of clean code.
 

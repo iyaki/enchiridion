@@ -4,7 +4,7 @@ notion_id: cbb06710-72ae-4b0f-a4cc-badc371ddaa9
 notion_url: https://app.notion.com/p/soupault-a-static-website-management-tool-cbb0671072ae4b0fa4ccbadc371ddaa9
 last_edited: 2023-07-10T18:09:00.000Z
 source_url: https://soupault.app/
-tags: ["English", "Web Development", "Untried", "Tool"]
+tags: ["Tool", "English", "Web Development", "Untried"]
 ---
 Soupault (_soup-oh_) is a static website generator/framework that works with HTML element trees and can automatically manipulate them. It can be described as a robotic webmaster that can edit HTML pages according to your rules, but doesn’t get tired of editing them.
 

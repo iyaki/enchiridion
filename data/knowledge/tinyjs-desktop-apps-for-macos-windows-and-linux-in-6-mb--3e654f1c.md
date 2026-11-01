@@ -4,7 +4,7 @@ notion_id: 3e654f1c-7d23-8144-a413-c250d84154c5
 notion_url: https://app.notion.com/p/tinyjs-desktop-apps-for-macOS-Windows-and-Linux-in-6-MB-3e654f1c7d238144a413c250d84154c5
 last_edited: 2026-09-25T03:23:00.000Z
 source_url: https://tinyjs.app/
-tags: ["Tool", "Article", "Official Website", "English", "Web Development", "Javascript", "Backend", "Automation"]
+tags: ["English", "Web Development", "Javascript", "Backend", "Automation", "Tool", "Article", "Official Website"]
 ---
 ## Desktop appsin _~6 MB_.
 

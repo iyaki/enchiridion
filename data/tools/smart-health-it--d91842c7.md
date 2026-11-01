@@ -4,7 +4,7 @@ notion_id: d91842c7-fcf8-400d-b2d8-ab906b0150b5
 notion_url: https://app.notion.com/p/SMART-Health-IT-d91842c7fcf8400db2d8ab906b0150b5
 last_edited: 2026-09-21T17:11:00.000Z
 source_url: https://smarthealthit.org/
-tags: ["English", "HealthCare", "Programming", "Website"]
+tags: ["HealthCare", "Programming", "Website", "English"]
 ---
 The SMART vision of substitutable healthcare applications holds many benefits for app developers, healthcare providers, patients, healthcare institutions and public health. Many projects and products incorporate SMART on FHIR APIs, including:
 

@@ -71,6 +71,7 @@ type apiBlock struct {
 	Heading1     *textPayload        `json:"heading_1"`
 	Heading2     *textPayload        `json:"heading_2"`
 	Heading3     *textPayload        `json:"heading_3"`
+	Heading4     *textPayload        `json:"heading_4"`
 	BulletedItem *textPayload        `json:"bulleted_list_item"`
 	NumberedItem *textPayload        `json:"numbered_list_item"`
 	Quote        *textPayload        `json:"quote"`
@@ -103,6 +104,7 @@ func (b apiBlock) text() *textPayload {
 		{model.TypeHeading1, b.Heading1},
 		{model.TypeHeading2, b.Heading2},
 		{model.TypeHeading3, b.Heading3},
+		{model.TypeHeading4, b.Heading4},
 		{model.TypeBulletedItem, b.BulletedItem},
 		{model.TypeNumberedItem, b.NumberedItem},
 		{model.TypeQuote, b.Quote},

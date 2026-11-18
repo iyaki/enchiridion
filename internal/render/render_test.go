@@ -29,9 +29,10 @@ func TestHeadingLevels(t *testing.T) {
 		{Type: model.TypeHeading1, RichText: []model.RichText{rt("One")}},
 		{Type: model.TypeHeading2, RichText: []model.RichText{rt("Two")}},
 		{Type: model.TypeHeading3, RichText: []model.RichText{rt("Three")}},
+		{Type: model.TypeHeading4, RichText: []model.RichText{rt("Four")}},
 	}
 
-	want := "# One\n\n## Two\n\n### Three"
+	want := "# One\n\n## Two\n\n### Three\n\n#### Four"
 	if got := Markdown(blocks); got != want {
 		t.Fatalf("got %q, want %q", got, want)
 	}

@@ -67,7 +67,7 @@ func writeTextBlock(b *strings.Builder, blk model.Block, numbered *int) bool {
 	switch blk.Type {
 	case model.TypeParagraph:
 		b.WriteString(inline(blk.RichText))
-	case model.TypeHeading1, model.TypeHeading2, model.TypeHeading3:
+	case model.TypeHeading1, model.TypeHeading2, model.TypeHeading3, model.TypeHeading4:
 		writeHeading(b, blk)
 	case model.TypeBulletedItem, model.TypeToDo:
 		b.WriteString(listMark(blk) + inline(blk.RichText))
@@ -95,6 +95,8 @@ func writeHeading(b *strings.Builder, blk model.Block) {
 		b.WriteString("## " + inline(blk.RichText))
 	case model.TypeHeading3:
 		b.WriteString("### " + inline(blk.RichText))
+	case model.TypeHeading4:
+		b.WriteString("#### " + inline(blk.RichText))
 	}
 }
 

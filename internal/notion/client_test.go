@@ -514,6 +514,7 @@ func flattenChildrenHandler(t *testing.T, w http.ResponseWriter, r *http.Request
 			{Type: "synced_block", ID: "sb-1", HasChildren: true},
 			{Type: "synced_block", ID: "sb-2"},
 			{Type: "column_list", ID: "cl-1", HasChildren: true},
+			{Type: model.TypeHeading4, Heading4: &textPayload{RichText: []richRun{{PlainText: "deep heading"}}}},
 			{Type: model.TypeTable, ID: "tbl-1", HasChildren: true,
 				Table: &tablePayload{HasColumnHeader: false}},
 		}})
@@ -542,6 +543,7 @@ func TestPageBlocksFlattensAllChildren(t *testing.T) {
 		{model.TypeBulletedItem, "nested", false},
 		{model.TypeHeading2, "synced content", false},
 		{model.TypeBulletedItem, "in column", false},
+		{model.TypeHeading4, "deep heading", false},
 		{model.TypeTable, "", false},
 	}
 	if len(blocks) != len(want) {

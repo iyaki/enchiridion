@@ -150,7 +150,7 @@ The **why** is often itself the output of a decision (e.g. a compliance check or
 
 - **No lost data.** Current state alone can’t answer an audit’s questions; only the full history can.
 
-<!-- unsupported block: heading_4 -->
+#### Event sourcing
 
 Event sourcing is probably the most principled and systemic approach to building an audit trail. In ES, instead of storing current state with a log next to it, you store only the events and derive state from them. The double-entry ledger is an example of this pattern applied to money - balance is never stored, it is calculated from the stored entries. With this approach the trail is a primary artifact and cannot drift away from reality.
 
@@ -167,7 +167,7 @@ In other words: event sourcing is a very good solution when an audit trail is re
 
 - **No lost data.** When state is derived from events, the trail can’t drift out of sync with reality because it _is_ the source of truth.
 
-<!-- unsupported block: heading_4 -->
+#### Immutability
 
 An audit trail that can be edited proves nothing, hence records can never be updated or deleted. Our log must be append-only, and every correction should be a new record (see below).
 
@@ -183,7 +183,7 @@ When building a real system bugs are unavoidable and might require you to fix th
 
 - **No trust.** An editable history proves nothing; immutability and tamper evidence make the trail trustworthy to an outsider, including yourself investigating an incident.
 
-<!-- unsupported block: heading_4 -->
+#### Reversals and corrections
 
 Mistakes still happen, for example a wrong amount gets posted or a transaction lands on the wrong account. Immutability means fixing forward - post a new compensating entry and link it to the record it corrects, in both directions.
 
@@ -197,7 +197,7 @@ The last point is particularly important - when posting corrections/reversals yo
 
 - **No invented data.** Mistakes are fixed by posting linked compensating entries that offset the original record.
 
-<!-- unsupported block: heading_4 -->
+#### Immutability vs GDPR
 
 GDPR’s right to erasure appears to contradict an immutable ledger. In practice it’s quite easy to make it a non-problem:
 

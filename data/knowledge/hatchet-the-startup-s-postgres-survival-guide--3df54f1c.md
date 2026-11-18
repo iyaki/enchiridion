@@ -4,7 +4,7 @@ notion_id: 3df54f1c-7d23-81e3-9ab2-cd1504922aff
 notion_url: https://app.notion.com/p/Hatchet-The-startup-s-Postgres-survival-guide-3df54f1c7d2381e39ab2cd1504922aff
 last_edited: 2026-09-18T01:19:00.000Z
 source_url: https://hatchet.run/blog/postgres-survival-guide
-tags: ["Databases", "PostgreSQL", "Performance", "Software Development", "Productivity", "Article", "Guide", "Hatchet", "English"]
+tags: ["English", "Databases", "PostgreSQL", "Performance", "Software Development", "Productivity", "Article", "Guide", "Hatchet"]
 ---
 Over the past half year or so, I’ve been writing an internal doc for our engineers trying to distill two years of Postgres battles into a somewhat cohesive document. While I love [the Postgres manual](https://www.postgresql.org/docs/18/index.html), I find it’s hard to turn to when shit hits the fan because it’s just so darn comprehensive. I thought this might be useful for others and would appreciate feedback (or other tidbits that you’ve learned running Postgres in production).
 
@@ -14,11 +14,11 @@ _And if Claude is writing all of your queries, this might be a waste of ti
 
 ---
 
-<!-- unsupported block: heading_4 -->
+#### [A quick note on ORMs](https://hatchet.run/blog/postgres-survival-guide#a-quick-note-on-orms)
 
 This guide should still be useful, but you might need to translate some of these tips into your ORM of choice. Lots of optimizations as you scale just aren’t possible with ORMs unless you can break past the abstraction layer and write SQL. You can do this gracefully or non-gracefully; [Prisma TypedSQL](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/typedsql) or equivalents look interesting for this. We use `sqlc` at Hatchet which gets us very similar behavior; highly recommend if you’re a Go stack.
 
-<!-- unsupported block: heading_4 -->
+#### [Table of contents](https://hatchet.run/blog/postgres-survival-guide#table-of-contents)
 
 - [The simple stuff: good reads, writes and schemas](https://hatchet.run/blog/postgres-survival-guide#the-simple-stuff-good-reads-writes-and-schemas)
 - [Intermediate: the query planner, bulk updates, and autovacuum](https://hatchet.run/blog/postgres-survival-guide#intermediate-the-query-planner-bulk-updates-and-autovacuum)
@@ -28,7 +28,7 @@ This guide should still be useful, but you might need to translate some of th
 
 Let’s start with the basics: queries and schemas at low volume.
 
-<!-- unsupported block: heading_4 -->
+#### [Writing a good schema](https://hatchet.run/blog/postgres-survival-guide#writing-a-good-schema)
 
 After you’re deployed, schemas are by far the hardest to change moving forward, so it’s worth spending some time on them. I’d recommend building your schema iteratively: start with a rough approximation for your tables and primary keys, then write some queries on those tables based on your application needs. You can approximate this with some questions: _Is this a high-read and/or high-write table? What are the most common filters on reads? Which columns am I updating the most?_
 
@@ -41,7 +41,7 @@ My rules of thumb for schemas are:
 - Always use primary keys
 - Use foreign keys with cascading deletes for low-volume tables, particularly where database consistency and correctness are important. Careful at higher volume.
 
-<!-- unsupported block: heading_4 -->
+#### [Writing good read queries](https://hatchet.run/blog/postgres-survival-guide#writing-good-read-queries)
 
 Let’s start with `SELECT` queries. A useful—albeit slightly inaccurate—mental model for fast selects is: under the hood, Postgres is either going to find a single row in a table very quickly, or it’s going to read every single row in your table using something called a _sequential scan_ 😞.
 
@@ -55,11 +55,11 @@ Indexes by default use a `btree` implementation. It’s most helpful to thin
 
 When Postgres can’t use an index, it’ll use something called a sequential scan, or `seq scan`. Seq scans are much slower than index lookups, but modern databases are so fast at loading rows into memory that you probably won’t even notice at first: seq scans on tables with less than 20k rows are pretty much instant.
 
-<!-- unsupported block: heading_4 -->
+#### [Writing performant joins](https://hatchet.run/blog/postgres-survival-guide#writing-performant-joins)
 
 For inner joins, there’s rarely an argument for not using primary keys as the inner join; it usually speaks to a schema design or normalization problem. Treat `ON` clauses with the same respect as a `WHERE` clause—the same principles apply. Use an index.
 
-<!-- unsupported block: heading_4 -->
+#### [Compound indexes and aligning ORDER BY to your indexes](https://hatchet.run/blog/postgres-survival-guide#compound-indexes-and-aligning-order-by-to-your-indexes)
 
 Often the first slow query in your application will be a list query across a large table. Something like:
 
@@ -81,7 +81,7 @@ CREATE INDEX CONCURRENTLY idx_documents_org_created
 
 In more complex cases, a good rule of thumb is: the `ORDER BY` columns should be the last columns in the index, and you should align columns to the ordering in the `ORDER BY`. Note that Postgres can scan btrees in both directions, so sometimes the `DESC` is irrelevant—but for compound indexes it’s good practice. More information [here](https://www.cybertec-postgresql.com/en/benefits-of-a-descending-index).
 
-<!-- unsupported block: heading_4 -->
+#### [Writing good write queries](https://hatchet.run/blog/postgres-survival-guide#writing-good-write-queries)
 
 The premise of successful writes is:
 
@@ -90,13 +90,13 @@ The premise of successful writes is:
 
 As your system gets busier, you’re going to start noticing the impact of locks more. In particular, you might try to create an index at some point in the future with a simple `CREATE INDEX` command: turns out this locks your table and prevents inserts and updates! When creating an index on an existing large table, always use `CREATE INDEX CONCURRENTLY`.
 
-<!-- unsupported block: heading_4 -->
+#### [Migrations](https://hatchet.run/blog/postgres-survival-guide#migrations)
 
 Getting really good at writing migrations is an important technical advantage: it helps you iterate much faster and increases your uptime. As a starting point, try to keep migrations additive (in other words, don’t delete or remove columns) and run them in a transaction wherever possible; this will make rollbacks and partial migrations much easier to deal with. As you get more advanced, you can start looking into [expand and contract](https://martinfowler.com/bliki/ParallelChange.html) migrations.
 
 The simplest mental model for good migrations is: does this block all of my writes, or does it not? Creating an index without `CONCURRENTLY` blocks all your writes, so you might see downtime. Generally, operations which call `ALTER TABLE` should be worth a second look; for example, adding a new check constraint to a very large table can block your writes as well (unless you add it with the `NOT VALID` keyword).
 
-<!-- unsupported block: heading_4 -->
+#### [Connection management](https://hatchet.run/blog/postgres-survival-guide#connection-management)
 
 Every time you execute a transaction or query against your database, you’re utilizing a connection. Connections are expensive in a number of dimensions (cpu and memory), and high connection churn can lead to a lot of unnecessary resource waste, so connections should be long-lived. Connection storms (when you start using up a ton of new connections at the same time) can also lead to very hard to debug edge cases related to internal Postgres locks.
 
@@ -104,7 +104,7 @@ Because of all these connection footguns, external connection poolers like pgbo
 
 ### [Intermediate: the query planner, bulk updates, and autovacuum](https://hatchet.run/blog/postgres-survival-guide#intermediate-the-query-planner-bulk-updates-and-autovacuum)
 
-<!-- unsupported block: heading_4 -->
+#### [Introducing the leakiest of abstractions, the query planner](https://hatchet.run/blog/postgres-survival-guide#introducing-the-leakiest-of-abstractions-the-query-planner)
 
 At a certain point, your queries might become complex enough that a simple index won’t cut it (and you shouldn’t endlessly add indexes to your tables—they come with overhead). The queries might involve many `JOIN` statements or different types of joins where the correct path for querying the data isn’t clear.
 
@@ -132,19 +132,19 @@ psql -XqAt -f explain.sql -d $DATABASE_URL> analyze.json
 
 And then use [explain.dalibo.com](https://explain.dalibo.com/) to visualize the execution plan.
 
-<!-- unsupported block: heading_4 -->
+#### [Sometimes it just makes sense to seq scan](https://hatchet.run/blog/postgres-survival-guide#sometimes-it-just-makes-sense-to-seq-scan)
 
 There are cases where you think an index should be used, but the query planner is still seq scanning anyway, despite table statistics being up to date and the index being valid. In these cases, Postgres is usually estimating that the cost of the seq scan will be smaller than the cost of the index scan. Index scans do come with some overhead; indexes are stored separately from the actual data in the table (called the heap)—finding all of the rows in the heap can be expensive!
 
 Unless you can dramatically restructure your query, you might have to accept that it’s going to seq scan, or think about something like partitioning (more on that below).
 
-<!-- unsupported block: heading_4 -->
+#### [Writing lots of data](https://hatchet.run/blog/postgres-survival-guide#writing-lots-of-data)
 
 Let’s say your application is scaling and you need to write a lot of data fast. Each query has some overhead associated with it (separate from the connection overhead we talked about before): this includes the round-trip time to the database, the time it takes the internal application connection pool to acquire a connection, and the time it takes Postgres to process the query (including a set of [internal Postgres locks](https://github.com/postgres/postgres/blob/master/src/backend/storage/lmgr/README) which can be bottlenecks in high-throughput scenarios).
 
 To reduce this overhead, we can pack a batch of rows into each query. The simplest way to do this is to send all queries to the Postgres server at once in an implicit transaction (in Go, we can use `pgx` to execute a `SendBatch`). Batching is very powerful: we found that it can ~10× your throughput. I wrote more about this plus some other tips for writing data quickly [here](https://hatchet.run/blog/fastest-postgres-inserts).
 
-<!-- unsupported block: heading_4 -->
+#### [Default autovacuum settings can kill your database](https://hatchet.run/blog/postgres-survival-guide#default-autovacuum-settings-can-kill-your-database)
 
 Autovacuum is a critical operation in Postgres databases that sometimes needs to be tuned, especially in high-write scenarios. The autovacuum daemon is responsible for a number of things, including cleaning up dead tuples and managing transaction ids.
 
@@ -173,7 +173,7 @@ If you see an autovacuum query running for more than ~1 hour, you might want t
 
 It’s worth monitoring this: if you use up all transaction ids in the system before they can be reclaimed by autovacuum, you’ll reach a dreaded state called **transaction id wraparound**. This will mean a big chunk of downtime.
 
-<!-- unsupported block: heading_4 -->
+#### [Other types of bloat](https://hatchet.run/blog/postgres-survival-guide#other-types-of-bloat)
 
 Besides dead tuples, there are two other kinds of bloat you’ll often encounter in a busy Postgres system:
 
@@ -184,7 +184,7 @@ Besides dead tuples, there are two other kinds of bloat you’ll often encount
 
 I wanted to end with a set of advanced Postgres features which have been particularly useful for us at Hatchet.
 
-<!-- unsupported block: heading_4 -->
+#### [FOR UPDATE SKIP LOCKED](https://hatchet.run/blog/postgres-survival-guide#for-update-skip-locked)
 
 The best way to think about this Postgres feature is that it reserves the rows that you’re selecting for use in your transaction without interfering with other queries. We use it primarily for implementing our [job queue](https://hatchet.run/blog/multi-tenant-queues); a single-query queue in Postgres can be implemented like this:
 
@@ -207,7 +207,7 @@ RETURNING tasks.*;
 
 It’s also very useful in cases where you’re doing many independent updates of rows, or you’re managing leases on objects in your system across many instances of your application (for example, we use this to distribute tenant leases across Hatchet engines).
 
-<!-- unsupported block: heading_4 -->
+#### [Partitioning](https://hatchet.run/blog/postgres-survival-guide#partitioning)
 
 Postgres has built-in partitioning which allows you to subdivide your tables based on row values, like timestamps or hashes. This can be incredibly useful for time-series data (in our case, historical task data) because:
 
@@ -218,7 +218,7 @@ Partitioning does come with drawbacks: there can be overhead on read queries i
 
 I’ve written more about our experience with partitioning [here](https://hatchet.run/blog/postgres-partitioning).
 
-<!-- unsupported block: heading_4 -->
+#### [Tricks for large table migrations](https://hatchet.run/blog/postgres-survival-guide#tricks-for-large-table-migrations)
 
 (note that this isn’t referring to a database migration, but rather moving large amounts of data from one table to another, which we find ourselves doing a few times a year)
 

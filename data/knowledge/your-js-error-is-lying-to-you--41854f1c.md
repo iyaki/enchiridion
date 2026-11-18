@@ -4,7 +4,7 @@ notion_id: 41854f1c-7d23-81f5-bffd-e70521d838d3
 notion_url: https://app.notion.com/p/Your-JS-Error-Is-Lying-to-You-41854f1c7d2381f5bffde70521d838d3
 last_edited: 2026-11-14T04:53:00.000Z
 source_url: https://blog.gaborkoos.com/posts/2026-11-12-Your-JS-Error-Is-Lying-to-You/
-tags: ["English", "Programming", "Javascript", "Error Handling", "Debugging", "Article", "Gabor Koos Blog"]
+tags: ["Article", "Gabor Koos Blog", "English", "Programming", "Javascript", "Error Handling", "Debugging"]
 ---
 _Featured in _[_Node Weekly - 2026-11-10_](https://nodeweekly.com/issues/647)_ and _[_TLDR Dev 2026-11-12_](https://tldr.tech/dev/2026-11-12)
 

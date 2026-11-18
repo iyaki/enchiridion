@@ -4,7 +4,7 @@ notion_id: f305d4bb-409e-49df-be5a-43f066708705
 notion_url: https://app.notion.com/p/Visual-guide-to-SSH-tunnels-f305d4bb409e49dfbe5a43f066708705
 last_edited: 2022-12-21T18:06:00.000Z
 source_url: https://robotmoon.com/ssh-tunnels/
-tags: ["English", "Network", "SysAdmin", "Article"]
+tags: ["Article", "English", "Network", "SysAdmin"]
 ---
 This page explains use cases and examples of SSH tunnels while visually presenting the traffic flows. For example, here's a reverse tunnel that allows only users from IP address 1.2.3.4 access to port 80 on the SSH client through an SSH server.
 

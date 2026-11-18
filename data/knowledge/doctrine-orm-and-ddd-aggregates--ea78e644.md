@@ -4,7 +4,7 @@ notion_id: ea78e644-1181-4883-98cc-380bee22e42d
 notion_url: https://app.notion.com/p/Doctrine-ORM-and-DDD-aggregates-ea78e6441181488398cc380bee22e42d
 last_edited: 2026-09-21T17:27:00.000Z
 source_url: https://matthiasnoback.nl/2018/06/doctrine-orm-and-ddd-aggregates/
-tags: ["Matthias Noback Blog", "English", "Web Development", "System Design / Software Architecture", "PHP", "Object Oriented Programming", "Domain Driven Design", "Article"]
+tags: ["Article", "Matthias Noback Blog", "English", "Web Development", "System Design / Software Architecture", "PHP", "Object Oriented Programming", "Domain Driven Design"]
 ---
 [https://matthiasnoback.nl/2018/06/doctrine-orm-and-ddd-aggregates/](https://matthiasnoback.nl/2018/06/doctrine-orm-and-ddd-aggregates/)
 

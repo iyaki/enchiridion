@@ -4,7 +4,7 @@ notion_id: 54cdab8d-b0e2-41c5-8766-d604b8d5a892
 notion_url: https://app.notion.com/p/APIs-Argentina-54cdab8db0e241c58766d604b8d5a892
 last_edited: 2026-09-21T17:12:00.000Z
 source_url: https://www.argentina.gob.ar/jefatura/innovacion/autenticar
-tags: ["Website", "Service", "Español", "Programming"]
+tags: ["Español", "Programming", "Website", "Service"]
 ---
 [https://www.argentina.gob.ar/jefatura/innovacion-publica/innovacion-administrativa/autenticar](https://www.argentina.gob.ar/jefatura/innovacion-publica/innovacion-administrativa/autenticar)
 

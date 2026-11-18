@@ -4,7 +4,7 @@ notion_id: 91160a7f-f31e-4ee1-a717-71b9304b6014
 notion_url: https://app.notion.com/p/SingleStoreDB-The-Real-Time-Distributed-SQL-Database-designed-for-data-intensive-applications-91160a7ff31e4ee1a71771b9304b6014
 last_edited: 2023-05-03T19:07:00.000Z
 source_url: https://www.singlestore.com/
-tags: ["Tool", "Service", "English", "Databases", "Untried"]
+tags: ["English", "Databases", "Untried", "Tool", "Service"]
 ---
 With a unified data engine for transactional and analytical workloads, SingleStoreDB powers fast, real-time analytics and applications.
 

@@ -4,7 +4,7 @@ notion_id: 3fa54f1c-7d23-8174-8ae3-d0d848cd8bb9
 notion_url: https://app.notion.com/p/ghuntley-underclass-at-ghuntley-com-3fa54f1c7d2381748ae3d0d848cd8bb9
 last_edited: 2026-10-15T03:08:00.000Z
 source_url: https://github.com/ghuntley/underclass
-tags: ["English", "DevOps", "Automation", "Programming", "APIs", "GitHub", "Docker", "Tool", "GitHub"]
+tags: ["Tool", "GitHub", "English", "DevOps", "Automation", "Programming", "APIs", "GitHub", "Docker"]
 ---
 **A local proxy that pools multiple ChatGPT/Codex and GitHub Copilot subscriptions behind one OpenAI-compatible endpoint.**
 

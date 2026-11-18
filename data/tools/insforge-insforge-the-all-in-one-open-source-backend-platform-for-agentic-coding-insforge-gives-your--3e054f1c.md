@@ -4,7 +4,7 @@ notion_id: 3e054f1c-7d23-81bb-9d08-dc13125e1b0b
 notion_url: https://app.notion.com/p/InsForge-InsForge-The-all-in-one-open-source-backend-platform-for-agentic-coding-InsForge-gives-y-3e054f1c7d2381bb9d08dc13125e1b0b
 last_edited: 2026-09-19T03:05:00.000Z
 source_url: https://github.com/InsForge/insforge
-tags: ["English", "Backend", "Open Source", "Programming", "DevOps", "APIs", "Cloud", "Containers", "Database", "Authentication", "Serverless", "Tool", "Service", "GitHub"]
+tags: ["Backend", "Open Source", "Programming", "DevOps", "APIs", "Cloud", "Containers", "Database", "Authentication", "Serverless", "Tool", "Service", "GitHub", "English"]
 ---
 ⭐ _Help us reach more developers and grow the InsForge community. Star this repo!_
 
@@ -77,7 +77,7 @@ If you find InsForge useful or interesting, a GitHub Star ⭐️ would be greatl
 
 Prerequisites: [Docker](https://www.docker.com/) with Compose v2.
 
-<!-- unsupported block: heading_4 -->
+#### 1. Setup
 
 ```plain text
 curl -fsSL https://raw.githubusercontent.com/InsForge/InsForge/main/deploy/setup.sh | sh -s ~/insforge
@@ -102,7 +102,7 @@ directory — no `-f` flags to remember.
 
 **Building from source instead**
 
-<!-- unsupported block: heading_4 -->
+#### 2. Connect InsForge MCP
 
 Open [http://localhost:7130](http://localhost:7130/)
 
@@ -110,7 +110,7 @@ Follow the steps to connect InsForge MCP Server.
 
 ![image](https://github.com/InsForge/InsForge/raw/main/assets/connect.png)
 
-<!-- unsupported block: heading_4 -->
+#### 3. Verify installation
 
 To verify the connection, send the following prompt to your agent:
 
@@ -118,7 +118,7 @@ To verify the connection, send the following prompt to your agent:
 I'm using InsForge as my backend platform, call InsForge MCP's fetch-docs tool to learn about InsForge instructions.
 ```
 
-<!-- unsupported block: heading_4 -->
+#### 4. Running Multiple Projects
 
 Give each project its own directory:
 
@@ -162,7 +162,7 @@ cd ~/project2 && docker compose up -d
 `docker compose ps`, `logs -f`, and `down` operate on whichever directory you
 run them from.
 
-<!-- unsupported block: heading_4 -->
+#### 5. Storage Backends (Optional)
 
 InsForge stores files on the local filesystem by default. Backing storage with an S3-compatible store also enables the S3-compatible gateway at `/storage/v1/s3` (use `aws` CLI, rclone, or any AWS SDK against your InsForge Storage).
 

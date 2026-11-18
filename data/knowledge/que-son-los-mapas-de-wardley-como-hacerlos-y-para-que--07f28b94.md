@@ -4,7 +4,7 @@ notion_id: 07f28b94-a08a-4e48-b880-8342ee5e4bc4
 notion_url: https://app.notion.com/p/Qu-son-los-mapas-de-Wardley-c-mo-hacerlos-y-para-qu-07f28b94a08a4e48b8808342ee5e4bc4
 last_edited: 2026-09-21T17:00:00.000Z
 source_url: https://javiergarzas.com/2023/06/los-mapas-de-wardley-que-son-como-hacerlos-y-para-que-sirven.html
-tags: ["Español", "Product Management", "Article", "Javier Garzas Blog"]
+tags: ["Article", "Javier Garzas Blog", "Español", "Product Management"]
 ---
 # Qué son los mapas de Wardley, cómo hacerlos y para qué
 

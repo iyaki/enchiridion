@@ -4,7 +4,7 @@ notion_id: 21854f1c-7d23-81ff-9b4e-d3e051645bf7
 notion_url: https://app.notion.com/p/Things-You-Should-Never-Do-21854f1c7d2381ff9b4ed3e051645bf7
 last_edited: 2025-07-26T22:39:00.000Z
 source_url: https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/
-tags: ["Article", "Joel Spolsky", "English", "Entrepreneurship", "Product Management"]
+tags: ["English", "Entrepreneurship", "Product Management", "Article", "Joel Spolsky"]
 ---
 Netscape 6.0 is finally going into its first public beta. There never was a version 5.0. The last major release, version 4.0, was released almost three years ago. Three years is an _awfully_ long time in the Internet world. During this time, Netscape sat by, helplessly, as their market share plummeted.
 

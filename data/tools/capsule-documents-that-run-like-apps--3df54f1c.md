@@ -4,7 +4,7 @@ notion_id: 3df54f1c-7d23-810f-9d61-fef4222687cf
 notion_url: https://app.notion.com/p/Capsule-Documents-that-run-like-apps-3df54f1c7d23810f9d61fef4222687cf
 last_edited: 2026-09-18T01:17:00.000Z
 source_url: https://withcapsule.app/
-tags: ["official", "English", "Web Development", "Software Development", "Productivity", "SQL", "Automation", "Tool"]
+tags: ["English", "Web Development", "Software Development", "Productivity", "SQL", "Automation", "Tool", "official"]
 ---
 Capsule packs your entire app — UI, data, and everything — into a single portable `.capsule` file. No cloud. No accounts. Just share it.
 
@@ -12,20 +12,20 @@ Capsule packs your entire app — UI, data, and everything — into a single por
 
 01 / PROMPT YOUR IDEA
 
-<!-- unsupported block: heading_4 -->
+#### Describe what you need
 
 Describe the application, layout, or features you want to build.
 
 02 / INSTANT CAPSULE APP
 
-<!-- unsupported block: heading_4 -->
+#### Self-contained output
 
 Generates a complete single-file `.capsule` container with HTML UI, schema, and local
           SQLite data.
 
 03 / ITERATE ON THE FLY
 
-<!-- unsupported block: heading_4 -->
+#### Live AI updates
 
 Modify features, dark mode, or schemas on the fly via direct AI prompts or MCP coding
           tools.

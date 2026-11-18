@@ -4,7 +4,7 @@ notion_id: 055a5955-d3d6-400c-83bc-e3182dc86b5c
 notion_url: https://app.notion.com/p/statsd-stats-aggregation-055a5955d3d6400c83bce3182dc86b5c
 last_edited: 2026-09-21T17:07:00.000Z
 source_url: https://github.com/statsd/statsd#statsd---
-tags: ["English", "DevOps", "Site Reliability Engineering", "Untried", "Tool"]
+tags: ["Tool", "English", "DevOps", "Site Reliability Engineering", "Untried"]
 ---
 A network daemon that runs on the Node.js platform and listens for statistics, like counters and timers, sent over UDP or TCP and sends aggregates to one or more pluggable backend services (e.g., Graphite).
 

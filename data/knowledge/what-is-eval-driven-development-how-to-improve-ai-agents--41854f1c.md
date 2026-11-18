@@ -4,7 +4,7 @@ notion_id: 41854f1c-7d23-8191-be18-c9bc8d72cab5
 notion_url: https://app.notion.com/p/What-Is-Eval-Driven-Development-How-to-Improve-AI-Agents-41854f1c7d238191be18c9bc8d72cab5
 last_edited: 2026-11-14T04:53:00.000Z
 source_url: https://www.langchain.com/blog/what-is-eval-driven-development
-tags: ["English", "Artificial Intelligence (AI)", "Development", "Productivity", "Software Development", "Testing", "Article", "Tutorial", "LangChain Blog"]
+tags: ["Article", "Tutorial", "LangChain Blog", "English", "Artificial Intelligence (AI)", "Development", "Productivity", "Software Development", "Testing"]
 ---
 ## Key Takeaways
 
@@ -160,7 +160,7 @@ For more info about building agent evals, check out this webinar on [Agent Evals
 
 ![image](https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6aea10da672af68b149a7fc2_6aea100d5e02bf39048b42b8_byoc-multicloud-cover.png)
 
-<!-- unsupported block: heading_4 -->
+#### LangSmith BYOC is now available on AWS, Azure, and Google Cloud
 
 ![image](https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6ab43e723b026a19d87bf6d2_Karthic%20S.jpg)
 
@@ -168,13 +168,13 @@ For more info about building agent evals, check out this webinar on [Agent Evals
 
 ![image](https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6ac98333d970ebc162805c63_agent-evals-faq-cover-1200x675.png)
 
-<!-- unsupported block: heading_4 -->
+#### The Most Common Questions About Agent Evals, Answered
 
 ![image](https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6ac97dfca101bc80e9f2d64d_divya-santhanam.png)
 
 ![image](https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6acd66ed592eea4558483d0f_Search%20agent%20traces%20by%20behavior%20with%20AI%20Search%20in%20LangSmith-blog.png)
 
-<!-- unsupported block: heading_4 -->
+#### Search agent traces by behavior with AI Search in LangSmith
 
 ![image](https://cdn.prod.website-files.com/65b8cd72835ceeacd4449a53/69ce01ea562f8cc223cabf25_Frame%202147254328.svg)
 

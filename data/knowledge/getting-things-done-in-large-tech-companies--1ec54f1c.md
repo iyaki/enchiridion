@@ -4,7 +4,7 @@ notion_id: 1ec54f1c-7d23-81d7-bd6f-fe3ce78ae25f
 notion_url: https://app.notion.com/p/Getting-things-done-in-large-tech-companies-1ec54f1c7d2381d7bd6ffe3ce78ae25f
 last_edited: 2025-07-26T22:54:00.000Z
 source_url: https://www.seangoedecke.com/getting-things-done/
-tags: ["English", "Producer (Individual Contributor)", "Career Growth", "Article", "Sean Goedecke"]
+tags: ["Article", "Sean Goedecke", "English", "Producer (Individual Contributor)", "Career Growth"]
 ---
 What does it mean to get things done? In the abstract, you can complete a mathematical proof or a problem set, but the real world is much fuzzier. Suppose I plant a tree in my backyard. Once the sapling is in the ground, is that done? Not really. There’s always more work to do: clearing the ground around it, watering, keeping pests away, pruning, and so on. Programming large web applications is more like planting a tree than completing a mathematical proof. Once you write a service, you can keep working on it forever if you want to.
 

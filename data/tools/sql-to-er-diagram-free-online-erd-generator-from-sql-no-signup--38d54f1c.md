@@ -4,7 +4,7 @@ notion_id: 38d54f1c-7d23-8186-80ac-e87281c55f07
 notion_url: https://app.notion.com/p/SQL-to-ER-Diagram-Free-Online-ERD-Generator-from-SQL-no-signup-38d54f1c7d23818680ace87281c55f07
 last_edited: 2026-09-18T00:52:00.000Z
 source_url: https://sqltoerdiagram.com/
-tags: ["English", "Databases", "SQL", "Web Development", "Design", "User Experience", "Tool", "Website", "unknown"]
+tags: ["Tool", "Website", "unknown", "English", "Databases", "SQL", "Web Development", "Design", "User Experience"]
 ---
 SQL to ER Diagram is a free, open-source tool that converts a SQL schema into an interactive entity-relationship diagram (ERD) right in your browser. Paste your `CREATE TABLE` statements and instantly visualize tables, columns, primary keys, foreign keys and relationships. Works with PostgreSQL, MySQL, SQLite and SQL Server. Drag tables, auto-arrange the layout, add notes, and export to PNG or SVG. Nothing is uploaded — your schema stays on your machine.
 

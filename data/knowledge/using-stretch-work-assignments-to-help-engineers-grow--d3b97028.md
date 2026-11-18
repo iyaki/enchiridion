@@ -4,7 +4,7 @@ notion_id: d3b97028-6bba-4698-b783-e6ad577ffb2e
 notion_url: https://app.notion.com/p/Using-stretch-work-assignments-to-help-engineers-grow-d3b970286bba4698b783e6ad577ffb2e
 last_edited: 2026-09-21T17:33:00.000Z
 source_url: https://stackoverflow.blog/2021/08/16/using-stretch-work-assignments-to-help-engineers-grow/
-tags: ["English", "Line/People/Team Management", "Article", "Stack Overflow Blog"]
+tags: ["Article", "Stack Overflow Blog", "English", "Line/People/Team Management"]
 ---
 [https://stackoverflow.blog/2021/08/16/using-stretch-work-assignments-to-help-engineers-grow/](https://stackoverflow.blog/2021/08/16/using-stretch-work-assignments-to-help-engineers-grow/)
 

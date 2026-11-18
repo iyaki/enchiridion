@@ -4,7 +4,7 @@ notion_id: 969aa5f5-c2f0-4519-b830-d1a8f4c9ed2a
 notion_url: https://app.notion.com/p/How-Exit-Traps-Can-Make-Your-Bash-Scripts-Way-More-Robust-And-Reliable-969aa5f5c2f04519b830d1a8f4c9ed2a
 last_edited: 2023-06-27T22:03:00.000Z
 source_url: http://redsymbol.net/articles/bash-exit-traps/
-tags: ["English", "Shell/Bash", "Guide"]
+tags: ["Guide", "English", "Shell/Bash"]
 ---
 There is a simple, useful idiom to make your bash scripts more robust - ensuring they always perform necessary cleanup operations, even when something unexpected goes wrong. The secret sauce is a pseudo-signal provided by bash, called EXIT, that you can [trap](http://www.gnu.org/software/bash/manual/bashref.html#index-trap); commands or functions trapped on it will execute when the script exits for any reason. Let's see how this works.
 

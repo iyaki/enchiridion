@@ -4,7 +4,7 @@ notion_id: 3ee54f1c-7d23-8149-be22-c5d3b0dfc0a1
 notion_url: https://app.notion.com/p/Hiring-Breakpoints-Stay-SaaSy-3ee54f1c7d238149be22c5d3b0dfc0a1
 last_edited: 2026-10-03T03:45:00.000Z
 source_url: https://staysaasy.com/hiring-breakpoints/
-tags: ["Article", "Guide", "Stay SaaSy", "English", "Team Management", "Product Management", "Career Growth", "Decision Making"]
+tags: ["English", "Team Management", "Product Management", "Career Growth", "Decision Making", "Article", "Guide", "Stay SaaSy"]
 ---
 As part of writing Stay SaaSy we speak with and advise a fair number of startups, and one of the most common topics of conversation is how many people they should hire.
 

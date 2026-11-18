@@ -4,7 +4,7 @@ notion_id: 879251d0-e6c0-4a83-a499-c169fa74449a
 notion_url: https://app.notion.com/p/Pure-bash-bible-879251d0e6c04a83a499c169fa74449a
 last_edited: 2026-09-21T17:09:00.000Z
 source_url: https://github.com/dylanaraps/pure-bash-bible#pure-bash-bible
-tags: ["English", "Shell/Bash", "Book"]
+tags: ["Shell/Bash", "Book", "English"]
 ---
 NEW: pure sh bible (📖 A collection of pure POSIX sh alternatives to external processes).
 

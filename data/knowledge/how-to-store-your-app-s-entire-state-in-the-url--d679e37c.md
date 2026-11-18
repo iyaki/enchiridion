@@ -4,7 +4,7 @@ notion_id: d679e37c-3bda-4448-a7d5-8289d4c23b34
 notion_url: https://app.notion.com/p/How-to-store-your-app-s-entire-state-in-the-url-d679e37c3bda4448a7d58289d4c23b34
 last_edited: 2023-01-21T19:23:00.000Z
 source_url: https://www.scottantipa.com/store-app-state-in-urls
-tags: ["English", "Web Development", "Article"]
+tags: ["Article", "English", "Web Development"]
 ---
 I'm working on [a flowchart editor](https://www.knotend.com/) that runs in the browser, and I wanted a way for people to use it without having to sign in, or store any data on our server. I wanted to give them control over their data and to be able to store it locally to open and edit later. And also easily share it with other people. It's easy to do this by supporting file upload/download, but I wanted something simpler, like the ability to share by sending a url. I also didn't want to store anything on the backend (at least for the free tier).
 

@@ -4,7 +4,7 @@ notion_id: 7c8c063f-bbf3-488c-839a-34f55fc15ec3
 notion_url: https://app.notion.com/p/Empowering-engineering-teams-to-perform-code-reviews-7c8c063fbbf3488c839a34f55fc15ec3
 last_edited: 2026-09-21T17:01:00.000Z
 source_url: https://leaddev.com/software-quality/empowering-engineering-teams-perform-code-reviews
-tags: ["English", "Programming", "Article", "LeadDev"]
+tags: ["Programming", "Article", "LeadDev", "English"]
 ---
 You don't have time to review every pull request. Here's how to empower developers to perform code reviews instead.
 

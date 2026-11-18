@@ -4,7 +4,7 @@ notion_id: 147efbf4-c308-4068-9bc9-b07f9e6d9029
 notion_url: https://app.notion.com/p/FrankenPHP-PHP-Application-Server-147efbf4c30840689bc9b07f9e6d9029
 last_edited: 2026-09-21T17:18:00.000Z
 source_url: https://frankenphp.dev/
-tags: ["English", "Web Development", "PHP", "Untried", "Tool"]
+tags: ["Tool", "English", "Web Development", "PHP", "Untried"]
 ---
 API Platform Conference 2026 Sep 17-18, 2026 Connect with the FrankenPHP creators and explore real-world case studies at the API Platform Conference.
 

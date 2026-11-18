@@ -4,7 +4,7 @@ notion_id: 7950cdf5-3fc9-4575-8505-84555a9cdf2c
 notion_url: https://app.notion.com/p/Private-PHP-Package-Repository-Manager-7950cdf53fc94575850584555a9cdf2c
 last_edited: 2026-09-21T17:09:00.000Z
 source_url: https://repman.io/
-tags: ["English", "PHP", "Untried", "Tool"]
+tags: ["PHP", "Untried", "Tool", "English"]
 ---
 Add and manage private PHP Composer dependencies in cloud or behind your firewall. Dedicated integration with GitHub, GitLab and Bitbucket.
 

@@ -4,7 +4,7 @@ notion_id: 40654f1c-7d23-816a-bd7e-e13e98e44c1d
 notion_url: https://app.notion.com/p/UTS-39-Unicode-Security-Mechanisms-40654f1c7d23816abd7ee13e98e44c1d
 last_edited: 2026-10-27T03:40:00.000Z
 source_url: https://unicode.org/reports/tr39/
-tags: ["English", "Information Security", "Unicode", "Security", "Documentation", "Article", "Note", "Unicode"]
+tags: ["Article", "Note", "Unicode", "English", "Information Security", "Unicode", "Security", "Documentation"]
 ---
 ## Unicode® Technical Standard #39
 
@@ -360,7 +360,7 @@ More advanced implementations may use script-specific information for more detai
 
 > /$L ZWNJ $V $L/
 
-<!-- unsupported block: heading_4 -->
+#### 3.1.1.1 [Limited Contexts for Joining Controls](https://unicode.org/reports/tr39/#Limited_Contexts_for_Joining_Controls)
 
 An implementation that
 			attempts to provide more natural representations of terms in "modern, customary usage" should allow the
@@ -448,7 +448,7 @@ Figure 3. [Sinhala Example with
 
 > **Note:**
 
-<!-- unsupported block: heading_4 -->
+#### 3.1.1.2 [Limitations](https://unicode.org/reports/tr39/#Limitations)
 
 While the restrictions in [A1](https://unicode.org/reports/tr39/#A1), [A2](https://unicode.org/reports/tr39/#A2), and [B](https://unicode.org/reports/tr39/#B) greatly
 			limit visual confusability, they do not prevent it. For example,
@@ -545,13 +545,13 @@ An email address is formed from three main parts. (There are more elements of an
 To meet the requirements of the **Email Security Profiles for Identifiers** section of this specification, an identifier must satisfy the following
 		  conditions for the specified <restriction level>.
 
-<!-- unsupported block: heading_4 -->
+#### Domain-Part
 
 The domain-part of an email address must satisfy _Section 3.2, _[_IDN
 					Security Profiles for Identifiers_](https://unicode.org/reports/tr39/#IDN_Security_Profiles), and satisfy the conformance
 				clauses of [[UTS46](https://unicode.org/reports/tr39/#UTS46)].
 
-<!-- unsupported block: heading_4 -->
+#### Local-Part
 
 The local-part of an email address must satisfy all the following conditions:
 
@@ -583,7 +583,7 @@ Note that bidirectional controls and other format characters are
                 specifically disallowed in the local-part, according to the
                 above.
 
-<!-- unsupported block: heading_4 -->
+#### Quoted-String-Part
 
 The quoted-string-part of an email address  must
           satisfy the following conditions:
@@ -593,7 +593,7 @@ The quoted-string-part of an email address  must
 3. It must not contain more than four nonspacing marks in a row, and no sequence of two of the same nonspacing marks.
 4. It may contain mixed scripts, symbols (including emoji), and so on.
 
-<!-- unsupported block: heading_4 -->
+#### Other Issues
 
 The restrictions above are insufficient to
 			prevent bidirectional-reordering that could intermix the quoted-string-part

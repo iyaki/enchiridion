@@ -4,7 +4,7 @@ notion_id: 2da28f8f-bc4d-40c4-be31-8a181f03bc62
 notion_url: https://app.notion.com/p/Contracts-you-should-never-sign-2da28f8fbc4d40c4be318a181f03bc62
 last_edited: 2023-02-01T16:49:00.000Z
 source_url: https://vadimkravcenko.com/shorts/contracts-you-should-never-sign/
-tags: ["English", "Jobs", "Career Growth", "Article"]
+tags: ["Article", "English", "Jobs", "Career Growth"]
 ---
 When it comes to software engineering and the IT industry in general, contracts are a necessary part of doing business. Here and there, you sign NDAs — as an employee, contractor, or company — which nowadays are a necessary evil. I'm not a fan of confidentiality agreements, as companies usually include clauses that have no place to be there. So, the best thing we as engineers can do is be aware of the types of contracts we're signing. Even better, if we know the contracts that we should avoid signing. In this article, I'll share some of my experience with legal documents.
 

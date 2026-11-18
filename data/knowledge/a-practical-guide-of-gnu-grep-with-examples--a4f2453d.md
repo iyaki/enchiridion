@@ -4,7 +4,7 @@ notion_id: a4f2453d-0d05-4f87-aa3c-107055cf1184
 notion_url: https://app.notion.com/p/A-Practical-Guide-of-GNU-grep-With-Examples-a4f2453d0d054f87aa3c107055cf1184
 last_edited: 2023-09-04T18:33:00.000Z
 source_url: https://thevaluable.dev/grep-cli-guide-examples/
-tags: ["English", "Shell/Bash", "Article", "Guide", "The Valuable Dev"]
+tags: ["Shell/Bash", "Article", "Guide", "The Valuable Dev", "English"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

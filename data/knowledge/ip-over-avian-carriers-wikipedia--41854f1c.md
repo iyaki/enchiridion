@@ -4,7 +4,7 @@ notion_id: 41854f1c-7d23-810c-9737-e21838e4b1cc
 notion_url: https://app.notion.com/p/IP-over-Avian-Carriers-Wikipedia-41854f1c7d23810c9737e21838e4b1cc
 last_edited: 2026-11-14T04:53:00.000Z
 source_url: https://en.wikipedia.org/wiki/IP_over_Avian_Carriers
-tags: ["Article", "Wikipedia", "English", "Networking", "Communication", "Humor", "Protocols"]
+tags: ["Networking", "Communication", "Humor", "Protocols", "Article", "Wikipedia", "English"]
 ---
 From Wikipedia, the free encyclopedia
 

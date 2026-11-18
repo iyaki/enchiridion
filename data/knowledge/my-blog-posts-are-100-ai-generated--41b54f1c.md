@@ -4,7 +4,7 @@ notion_id: 41b54f1c-7d23-81c9-9f42-c5ef1d74159d
 notion_url: https://app.notion.com/p/My-blog-posts-are-100-AI-generated-41b54f1c7d2381c99f42c5ef1d74159d
 last_edited: 2026-11-17T06:29:00.000Z
 source_url: https://madewithlove.com/blog/my-blog-posts-are-100-ai-generated/
-tags: ["English", "AI", "Blogging/Content Creation", "Writing", "Creativity", "Article", "Blog", "madewithlove Blog"]
+tags: ["AI", "Blogging/Content Creation", "Writing", "Creativity", "Article", "Blog", "madewithlove Blog", "English"]
 ---
 I'm coming clean. I use AI for my blog posts.
 

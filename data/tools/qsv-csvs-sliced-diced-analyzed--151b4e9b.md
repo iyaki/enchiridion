@@ -4,7 +4,7 @@ notion_id: 151b4e9b-c431-4c46-87f1-8acdd848a1ff
 notion_url: https://app.notion.com/p/qsv-CSVs-sliced-diced-analyzed-151b4e9bc4314c4687f18acdd848a1ff
 last_edited: 2026-09-21T16:58:00.000Z
 source_url: https://github.com/dathere/qsv
-tags: ["English", "Programming", "Office", "Databases", "Untried", "Tool"]
+tags: ["Tool", "English", "Programming", "Office", "Databases", "Untried"]
 ---
 ## qsv: Blazing-fast CSV data-wrangling toolkit
 

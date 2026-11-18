@@ -4,7 +4,7 @@ notion_id: 0523f8d4-c717-46af-ae2e-0d044e7d136b
 notion_url: https://app.notion.com/p/LanguageTool-Grammar-Style-Spell-Checker-0523f8d4c71746afae2e0d044e7d136b
 last_edited: 2026-09-21T17:13:00.000Z
 source_url: https://languagetool.org/
-tags: ["English", "Español", "Others", "Writting", "Tool"]
+tags: ["Writting", "Tool", "English", "Español", "Others"]
 ---
 ### 2000+ organizations trust our AI-based writing tools
 

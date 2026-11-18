@@ -4,7 +4,7 @@ notion_id: ff89f897-6cc7-4769-aa43-071ddbd3baa9
 notion_url: https://app.notion.com/p/Understanding-Domain-Driven-Design-ff89f8976cc74769aa43071ddbd3baa9
 last_edited: 2024-01-29T11:22:00.000Z
 source_url: https://compiler.blog/series/domain-driven-design
-tags: ["English", "Domain Driven Design", "Article", "Ozan Akman"]
+tags: ["Ozan Akman", "English", "Domain Driven Design", "Article"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

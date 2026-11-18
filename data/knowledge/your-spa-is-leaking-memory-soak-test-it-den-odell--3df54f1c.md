@@ -4,7 +4,7 @@ notion_id: 3df54f1c-7d23-81dc-96fe-e0d2b7a1f845
 notion_url: https://app.notion.com/p/Your-SPA-Is-Leaking-Memory-Soak-Test-It-Den-Odell-3df54f1c7d2381dc96fee0d2b7a1f845
 last_edited: 2026-09-18T01:18:00.000Z
 source_url: https://denodell.com/blog/your-spa-is-leaking-memory-soak-test-it
-tags: ["English", "Web Development", "Javascript", "Performance", "Frontend", "Testing", "Article", "Tutorial", "Den Odell"]
+tags: ["Article", "Tutorial", "Den Odell", "English", "Web Development", "Javascript", "Performance", "Frontend", "Testing"]
 ---
 Memory leaks are a constant battle for backend teams. A server stays up for weeks, responding to requests the whole time, and if any part of the code running on it has a memory leak, even a small one, that server will eventually run out of memory and crash or restart. So how do these teams know their services won’t end up like this? They _soak test_ them.
 

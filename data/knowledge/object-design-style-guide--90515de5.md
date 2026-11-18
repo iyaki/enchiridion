@@ -4,7 +4,7 @@ notion_id: 90515de5-27ce-42ad-8691-ba8152080e1d
 notion_url: https://app.notion.com/p/Object-Design-Style-Guide-90515de527ce42ad8691ba8152080e1d
 last_edited: 2026-09-21T17:28:00.000Z
 source_url: https://livebook.manning.com/book/object-design-style-guide/table-of-contents/
-tags: ["English", "Object Oriented Programming", "PHP", "Book"]
+tags: ["Book", "English", "Object Oriented Programming", "PHP"]
 ---
 [https://livebook.manning.com/book/object-design-style-guide/table-of-contents/](https://livebook.manning.com/book/object-design-style-guide/table-of-contents/)
 

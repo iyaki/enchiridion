@@ -4,7 +4,7 @@ notion_id: 8e107131-60e3-4a47-b889-77bbc6f4dfa6
 notion_url: https://app.notion.com/p/How-I-give-formal-written-feedback-8e10713160e34a47b88977bbc6f4dfa6
 last_edited: 2023-02-23T00:13:00.000Z
 source_url: https://quad.writeas.com/how-i-give-formal-written-feedback
-tags: ["English", "Line/People/Team Management", "Article"]
+tags: ["Article", "English", "Line/People/Team Management"]
 ---
 At least every year, colleagues express surprise and delight at how I give formal written feedback. That is, the kind of feedback that corporate employers request annually. I've meant to write down my process for over a decade; so, better late than never!
 

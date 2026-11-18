@@ -25,13 +25,13 @@ Un día me di cuenta de que tener una checklist podía ayudarme a identificar r�
 
 Estas son las preguntas que me hago para poder compartir contexto con confianza cuando pido algo:
 
-<!-- unsupported block: heading_4 -->
+#### 1. ¿Qué sabe esta persona? ¿Qué es nuevo para ella?
 
 Considerar lo que ya sabe tu colega te ayuda a salirte de tu propia cabeza y meterte en la suya. Solo con esta pregunta te vas a acordar de lo que ya sabe (que podés explicar más rápido o construir encima) y de lo que es nuevo para él/ella (que probablemente no te acordarías de que era nuevo hasta que lo pensaras conscientemente). Esto tiene el efecto positivo de volverte más empático y paciente.
 
 Cada situación, proyecto, etc. va a ser distinta, así que usá tu criterio. Por ejemplo, compartirías un contexto distinto si tu colega ya está trabajando en una parte del proyecto y ahora lo estás metiendo en otra parte, versus si esa misma persona está escuchando del proyecto por primera vez.
 
-<!-- unsupported block: heading_4 -->
+#### 2. ¿Por qué estamos haciendo esto?
 
 Si la tarea requiere criterio (y casi todas las que van más allá de lo muy básico lo requieren), querés ayudarlos a tomar la decisión correcta cuando no los estás mirando por encima del hombro. Compartir el “por qué” detrás de la tarea hace que no dependan demasiado de seguir instrucciones mecánicas o paso a paso.
 
@@ -39,11 +39,11 @@ Además, saber cómo tu parte encaja en un proyecto más grande hace que cualqui
 
 > 🚫: [Silencio]
 
-<!-- unsupported block: heading_4 -->
+#### 3. ¿Qué necesitan para hacer esta tarea?
 
 Esto incluye acceso a herramientas, plataformas, planillas, documentos, assets, presupuesto, personas, etc. Tenelo listo de antemano, o prepárate para listarlo verbalmente para que la persona pueda conseguir esos recursos por su cuenta. Es como el _mise en place_ en la cocina. Querés reunir todo lo que la persona podría necesitar.
 
-<!-- unsupported block: heading_4 -->
+#### 4. ¿Cómo se ve “excelente”?
 
 Tratá de _“mostrar, no contar”_ cómo se ve lo excelente. Por ejemplo, compartí mockups, ejemplos, screenshots, documentos, analogías, etc. Querés ayudarlos a hacer pattern matching y entender visceralmente lo que estás diciendo. Acá un ejemplo puede valer más que mil palabras.
 
@@ -51,7 +51,7 @@ Incluso si no tenés un ejemplo uno a uno porque lo que estás pidiendo es nuevo
 
 > 🚫: [Silencio]
 
-<!-- unsupported block: heading_4 -->
+#### 5. ¿Cuál es el timeline y el nivel de prioridad?
 
 Vas a querer aclarar si es una tarea de “hacelo en las próximas horas”, “en algún momento de esta semana” o “en algún momento de las próximas dos semanas”. **Evitá frases como “ASAP”, “urgente” y “prioridad”** porque son demasiado vagas y pueden aumentar el estrés de forma innecesaria.
 
@@ -59,7 +59,7 @@ Sobre cuánto tiempo invertir en una tarea: no siempre es obvio qué se consider
 
 Me gusta pedirle a mis colegas que me avisen si van a mitad del proyecto y se dan cuenta de que mi estimación está errada. No hay vergüenza en eso, así que no los culpes ni asumas que “están trabajando muy lento”. Si estás delegando a gente más junior del equipo, tener visibilidad de su proceso te va a permitir ayudarlos a ser más eficientes. En mi experiencia, sin embargo, lo que parece un problema de velocidad suele ser en realidad un problema de alcance, así que no se resuelve simplemente intentando trabajar más rápido.
 
-<!-- unsupported block: heading_4 -->
+#### 6. ¿Qué es lo más probable que salga mal? ¿Qué puedo hacer para evitar que pase?
 
 Estas dos preguntas cubren **prácticamente el 99 % de la reducción de riesgos**. Si las apuestas son bajas, dedicá menos tiempo a esto. Si las apuestas son altas, armá un set más completo de riesgos para poder evaluar la probabilidad y el impacto de cada problema. ¿Qué no querés que haga la persona?
 

@@ -4,7 +4,7 @@ notion_id: 41854f1c-7d23-8145-a94b-d410caefba9b
 notion_url: https://app.notion.com/p/the-answer-to-ai-is-engineering-41854f1c7d238145a94bd410caefba9b
 last_edited: 2026-11-14T04:53:00.000Z
 source_url: https://ghuntley.com/answer/
-tags: ["Information Security", "DevOps", "Software Development", "Agile", "Incident Response", "Article", "Tutorial", "ghuntley.com", "English"]
+tags: ["English", "Information Security", "DevOps", "Software Development", "Agile", "Incident Response", "Article", "Tutorial", "ghuntley.com"]
 ---
 The security take-off is here, and the answer isn't more AI. It's engineering. I gave a talk at AI DevCon New York about patching the planet with Nix and agents, how I got through the last round of security incidents without losing any sleep, and a bonus round on loops, back pressure and property-based testing.
 

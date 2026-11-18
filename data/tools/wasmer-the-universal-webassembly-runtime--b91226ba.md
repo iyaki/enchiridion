@@ -4,7 +4,7 @@ notion_id: b91226ba-8911-4004-ab2e-e3372da9b4a6
 notion_url: https://app.notion.com/p/Wasmer-The-Universal-WebAssembly-Runtime-b91226ba89114004ab2ee3372da9b4a6
 last_edited: 2023-04-23T04:24:00.000Z
 source_url: https://wasmer.io/
-tags: ["Tool", "English", "Programming", "WebAssembly (WASM)", "Untried"]
+tags: ["Programming", "WebAssembly (WASM)", "Untried", "Tool", "English"]
 ---
 ```plain text
 curl https://get.wasmer.io -sSfL | sh

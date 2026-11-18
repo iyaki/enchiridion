@@ -4,7 +4,7 @@ notion_id: 68b74614-6cbb-4bf6-8e5e-babd20990fb7
 notion_url: https://app.notion.com/p/How-to-lead-your-junior-engineers-to-success-68b746146cbb4bf68e5ebabd20990fb7
 last_edited: 2026-09-21T17:36:00.000Z
 source_url: https://leaddev.com/culture/how-lead-your-junior-engineers-success
-tags: ["English", "Line/People/Team Management", "Article", "LeadDev"]
+tags: ["Article", "LeadDev", "English", "Line/People/Team Management"]
 ---
 [https://leaddev.com/hiring-onboarding-retention/how-lead-your-junior-engineers-success](https://leaddev.com/hiring-onboarding-retention/how-lead-your-junior-engineers-success)
 

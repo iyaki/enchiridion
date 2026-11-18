@@ -4,7 +4,7 @@ notion_id: 4476809d-27fa-473b-9e89-71245c55fdab
 notion_url: https://app.notion.com/p/Windmill-Open-source-platform-to-build-internal-tools-with-scripts-4476809d27fa473b9e8971245c55fdab
 last_edited: 2023-06-05T19:27:00.000Z
 source_url: https://www.windmill.dev/
-tags: ["English", "Programming", "Untried", "Low code / No code", "Tool", "Service"]
+tags: ["Programming", "Untried", "Low code / No code", "Tool", "Service", "English"]
 ---
 ## Easily create internal apps and invincible workflows with code only where it matters.Self-hostable **worker infrastructure**: scalable, reliable, fast.[Fully Open-source](https://github.com/windmill-labs/windmill) alternative to _Airplane_, _Superblocks_ & _Retool_.
 

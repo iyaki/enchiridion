@@ -4,7 +4,7 @@ notion_id: 3f454f1c-7d23-81e9-81ba-e7f401b0c9a1
 notion_url: https://app.notion.com/p/morluto-rea-Reverse-engineer-anything-with-agents-from-app-behavior-down-to-native-binaries-3f454f1c7d2381e981bae7f401b0c9a1
 last_edited: 2026-10-09T04:31:00.000Z
 source_url: https://github.com/morluto/rea
-tags: ["English", "Programming", "Automation", "Developer Tools", "Research", "Tool", "Article", "GitHub"]
+tags: ["Tool", "Article", "GitHub", "English", "Programming", "Automation", "Developer Tools", "Research"]
 ---
 ---
 

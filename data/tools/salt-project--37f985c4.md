@@ -4,7 +4,7 @@ notion_id: 37f985c4-4b48-4c2e-8065-a0266f51c7de
 notion_url: https://app.notion.com/p/Salt-Project-37f985c44b484c2e8065a0266f51c7de
 last_edited: 2026-09-21T17:14:00.000Z
 source_url: https://saltproject.io/
-tags: ["English", "Infrastructure", "Untried", "Tool"]
+tags: ["Tool", "English", "Infrastructure", "Untried"]
 ---
 Salt is an open-source automation framework for remote execution, configuration management, and infrastructure orchestration — used by teams to manage thousands of systems from a single control plane.
 

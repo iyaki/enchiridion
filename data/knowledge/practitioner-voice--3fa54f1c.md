@@ -4,7 +4,7 @@ notion_id: 3fa54f1c-7d23-814d-a6b7-ef929356f64e
 notion_url: https://app.notion.com/p/Practitioner-Voice-3fa54f1c7d23814da6b7ef929356f64e
 last_edited: 2026-10-15T03:08:00.000Z
 source_url: https://martinfowler.com/articles/practitioner-voice.html#TheCraftOfPractitionerVoice
-tags: ["English", "Agile", "Career Growth", "Communication", "Article", "martinfowler"]
+tags: ["Agile", "Career Growth", "Communication", "Article", "martinfowler", "English"]
 ---
 I've been called a Thought Leader.
 
@@ -669,7 +669,7 @@ We keep reaching for old words. Did the machine write it for me? Did
         handed the result. Nothing finished. The thinking got made in the
         exchange, as it went.
 
-<!-- unsupported block: heading_4 -->
+#### The roles you keep
 
 The clearest way to see this third kind of thinking is to watch the
         roles: what the machine does, and what that leaves you to do. They come
@@ -715,7 +715,7 @@ Drop the higher task and the room doesn’t grow. The machine takes
         your place inside it, and the work looks the same while you are less.
         Keep it and the room is genuinely larger, and you are more.
 
-<!-- unsupported block: heading_4 -->
+#### What’s at stake
 
 Every tool that reaches into how we think produces the same argument.
         Plato feared writing would hollow out memory. McLuhan argued print
@@ -793,7 +793,7 @@ So let us name it, even without a settled word. This is thinking with
         particular way — and the same task, arranged well or badly, can leave
         you sharper or leave you slack.
 
-<!-- unsupported block: heading_4 -->
+#### This has happened before
 
 None of this is as new as it feels. Every time a tool has reached
         into how we think, we have had this argument. Plato, in the Phaedrus,
@@ -810,7 +810,7 @@ None of this is as new as it feels. Every time a tool has reached
         responsive one yet. That is the deepening: not a new human faculty, but
         an old arrangement suddenly, startlingly alive.
 
-<!-- unsupported block: heading_4 -->
+#### The roles you keep
 
 The clearest way to see this third kind of thinking is to notice the
         roles — what the machine is doing, and what that leaves you to do. They
@@ -857,7 +857,7 @@ Notice what runs through all three. Each time, the machine takes on
         Keep it and the room is genuinely larger, and you are more. The pairing
         means something only when both halves are kept.
 
-<!-- unsupported block: heading_4 -->
+#### What is at stake
 
 So return to the question the old words could not settle. Is the
         machine thinking for you, or are you only reading what it made? Both

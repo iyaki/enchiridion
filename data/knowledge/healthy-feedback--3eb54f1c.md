@@ -4,7 +4,7 @@ notion_id: 3eb54f1c-7d23-81be-aaf2-c4e142509549
 notion_url: https://app.notion.com/p/Healthy-Feedback-3eb54f1c7d2381beaaf2c4e142509549
 last_edited: 2026-09-30T03:56:00.000Z
 source_url: https://martinfowler.com/articles/healthy-peer-feedback.html
-tags: ["English", "Communication", "Team Management", "Productivity", "Culture", "Leadersheep", "Article", "Martin Fowler"]
+tags: ["Communication", "Team Management", "Productivity", "Culture", "Leadersheep", "Article", "Martin Fowler", "English"]
 ---
 At Thoughtworks, “cultivation”—helping each other grow—has been a big
     part of how we work. Our collaboration practices make software development a
@@ -248,7 +248,7 @@ When we share feedback early, often, and close to the context of the work
         we do, we can match it to the level of impact. The level of impact can
         escalate between feedback-sharing moments.
 
-<!-- unsupported block: heading_4 -->
+#### Level 1: content
 
 The first time you notice a behaviour you want to give feedback about,
           your feedback will most likely focus on the content of the incident. For
@@ -261,7 +261,7 @@ The first time you notice a behaviour you want to give feedback about,
           content-level feedback often creates problems, especially when repeated
           infractions lead to greater impact.
 
-<!-- unsupported block: heading_4 -->
+#### Level 2: pattern
 
 Imagine the next time you see a commit from the same colleague. What if
           their commit message hasn’t improved? Should you share the same feedback
@@ -280,7 +280,7 @@ Hey Harish. If you remember, we discussed your commit messages last
 By referencing your last discussion and establishing the pattern, you
           raise the stakes and make the feedback harder to ignore.
 
-<!-- unsupported block: heading_4 -->
+#### Level 3: relationship
 
 If you’ve shared feedback about the content, saw a pattern developing,
           and still don’t see a change in behaviour, the stakes might be even higher
@@ -552,7 +552,7 @@ The path to hell is paved with good intentions. Most teams will say
         teams orchestrate feedback events that are downright harmful. Here are two
         examples.
 
-<!-- unsupported block: heading_4 -->
+#### Public 360 feedback
 
 In such events, people praise and criticise each other in an open
           meeting. Most people are unlikely to be honest when sharing criticism in
@@ -566,7 +566,7 @@ Team dynamics, on the other hand, benefit from a more open
           retrospectives](https://leanpub.com/the-retrospective-handbook) come in handy. And retrospectives are _not_
           a forum for peer-to-peer feedback.
 
-<!-- unsupported block: heading_4 -->
+#### Speedback
 
 This is a speed-dating approach to feedback, where teammates pair
           with a random colleague every few minutes and exchange feedback.

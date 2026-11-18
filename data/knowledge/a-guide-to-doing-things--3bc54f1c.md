@@ -4,7 +4,7 @@ notion_id: 3bc54f1c-7d23-8100-bcde-d97839d2e825
 notion_url: https://app.notion.com/p/A-Guide-To-Doing-Things-3bc54f1c7d238100bcded97839d2e825
 last_edited: 2026-08-14T01:43:00.000Z
 source_url: https://grahamhelton.com/blog/doingthings
-tags: ["Productivity", "Career Growth", "Learning", "Article", "Guide", "Graham Helton Blogs", "English"]
+tags: ["Article", "Guide", "Graham Helton Blogs", "English", "Productivity", "Career Growth", "Learning"]
 ---
 After having a conversation with some coworkers recently, I’ve
 realized that I subconsciously do _a lot_ to maximize my
@@ -252,7 +252,7 @@ Motivation Myth](https://www.goodreads.com/en/book/show/34962304)
 [How to
 Burn Out In Infosec (and what you can do next)](https://www.youtube.com/watch?v=rfm0Mwq4_t4&t=)
 
-<!-- unsupported block: heading_4 -->
+#### Reach Out To Me
 
 Want to reach out to me? [Here are some places you can do
 that](https://grahamhelton.com/links).

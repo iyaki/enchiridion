@@ -4,7 +4,7 @@ notion_id: 41854f1c-7d23-811c-9cbe-da28e77f3c30
 notion_url: https://app.notion.com/p/Optimising-Docker-Layers-for-Better-Caching-with-Nix-Graham-Christensen-41854f1c7d23811c9cbeda28e77f3c30
 last_edited: 2026-11-14T04:53:00.000Z
 source_url: https://grahamc.com/blog/nix-and-layered-docker-images/
-tags: ["Article", "Blog", "Graham Christensen", "English", "DevOps", "Docker", "Nix", "Containerization", "Performance"]
+tags: ["English", "DevOps", "Docker", "Nix", "Containerization", "Performance", "Article", "Blog", "Graham Christensen"]
 ---
 posted on October 01 2018
 
@@ -91,7 +91,7 @@ If we had to flatten this to an ordered sequence, obviously `bash-interactive-4.
 
 It turns out we don’t have to solve this problem exactly, because I lied about how Docker represents layers.
 
-<!-- unsupported block: heading_4 -->
+#### How Docker _really_ represents an Image
 
 Docker’s layers are _content addressable_ and aren’t required to explicitly reference a parent layer. This means a layer for `readline-7.0p5` doesn’t have to mention that it has any relationship to `ncurses-6.1` or `glibc-2.27` at all.
 
@@ -119,7 +119,7 @@ In the interest of shortness, let’s pretend Docker only lets you have **four**
 - `ncurses-6.1`
 - `glibc-2.27`
 
-<!-- unsupported block: heading_4 -->
+#### Smushing Layers
 
 I decided the best solution is to combine the layers which are less likely to be a cache hit with other software. Picking the most low level, fundamental paths and making them a separate layer means my next image will most likely also share some of those layers too.
 

@@ -4,7 +4,7 @@ notion_id: f7ff9d6f-b12b-4690-8fa4-f81604ff5d97
 notion_url: https://app.notion.com/p/FREE-Excel-Timesheet-Templates-f7ff9d6fb12b46908fa4f81604ff5d97
 last_edited: 2026-09-21T17:06:00.000Z
 source_url: https://toggl.com/templates/timesheet-templates/excel-template
-tags: ["English", "Project Management", "Line/People/Team Management", "Productivity", "Article", "Tool", "Toggl Blog"]
+tags: ["Article", "Tool", "Toggl Blog", "English", "Project Management", "Line/People/Team Management", "Productivity"]
 ---
 <!-- image hosted by Notion: its URL expires and is not preserved (ADR-05) -->
 

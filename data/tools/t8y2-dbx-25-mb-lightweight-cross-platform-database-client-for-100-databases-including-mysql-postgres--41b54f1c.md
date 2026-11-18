@@ -4,7 +4,7 @@ notion_id: 41b54f1c-7d23-81a0-ab56-dc7faede0e25
 notion_url: https://app.notion.com/p/t8y2-dbx-25-MB-lightweight-cross-platform-database-client-for-100-databases-including-MySQL-Post-41b54f1c7d2381a0ab56dc7faede0e25
 last_edited: 2026-11-17T06:29:00.000Z
 source_url: https://github.com/t8y2/dbx
-tags: ["English", "Others", "Databases", "SQL", "DevOps", "Developer Tools", "Cloud", "CLI", "Automation", "Tool", "GitHub"]
+tags: ["Tool", "GitHub", "English", "Others", "Databases", "SQL", "DevOps", "Developer Tools", "Cloud", "CLI", "Automation"]
 ---
 ## ❤️ Sponsors
 
@@ -283,7 +283,7 @@ When building the frontend yourself with an absolute asset base, set
 - [pnpm](https://pnpm.io/)
 - [Rust](https://www.rust-lang.org/tools/install) >= 1.88
 
-<!-- unsupported block: heading_4 -->
+#### System Dependencies
 
 **macOS:**
 

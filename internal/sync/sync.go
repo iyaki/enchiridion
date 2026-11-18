@@ -8,12 +8,12 @@ import (
 	"time"
 
 	"github.com/iyaki/enchiridion/internal/model"
-	"github.com/iyaki/enchiridion/internal/notion"
 )
 
 const (
 	// FullInterval is the age after which the last full sync forces another
-	// one: the only mode that propagates deletions (ADR-04).
+	// one: full mode re-renders every page under the current renderer and
+	// resets the last-full date (both modes propagate deletions, ADR-21).
 	FullInterval = 30 * 24 * time.Hour
 	// OverlapMargin re-synchronizes this much before the watermark so clock
 	// drift between Notion and the local machine never skips an edit.
@@ -26,7 +26,7 @@ const (
 
 // NotionAPI is the client surface the engine consumes.
 type NotionAPI interface {
-	QueryPages(dataSourceID string, filter notion.QueryFilter) ([]model.PageMeta, error)
+	QueryPages(dataSourceID string) ([]model.PageMeta, error)
 	PageBlocks(pageID string) ([]model.Block, error)
 }
 
@@ -83,20 +83,25 @@ func Run(api NotionAPI, opts Options) (Stats, error) {
 	}
 	mode := SelectMode(state, mirrorIsEmpty(dirs[dirKnowledge]) && mirrorIsEmpty(dirs[dirTools]), opts.Now, opts.ForceFull)
 
-	metas, err := query(api, opts, state, mode)
+	metas, err := query(api, opts)
 	if err != nil {
 		return Stats{}, err
 	}
 
-	stats, keptByDir := syncAll(api, dirs, mode, metas, opts.Progress)
-	if mode == modeFull {
-		for _, name := range []string{dirKnowledge, dirTools} {
-			removed, sweepErr := Sweep(dirs[name], keptByDir[name])
-			if sweepErr != nil {
-				return stats, sweepErr
-			}
-			stats.Removed += len(removed)
+	toWrite := metas
+	if mode == modeIncremental {
+		toWrite = editedSince(metas, state.Watermark.Add(-OverlapMargin))
+	}
+
+	stats := syncAll(api, dirs, toWrite, opts.Progress)
+	stats.Mode = mode
+	keptByDir := keptSets(metas)
+	for _, name := range []string{dirKnowledge, dirTools} {
+		removed, sweepErr := Sweep(dirs[name], keptByDir[name])
+		if sweepErr != nil {
+			return stats, sweepErr
 		}
+		stats.Removed += len(removed)
 	}
 
 	if stats.Failed > 0 {
@@ -126,35 +131,49 @@ func classDirs(home string) (map[string]string, error) {
 	return dirs, nil
 }
 
-// query fetches page metadata for the mode: everything on full, only pages
-// edited since the watermark (minus the overlap margin) on incremental.
-func query(api NotionAPI, opts Options, state *State, mode string) ([]model.PageMeta, error) {
-	filter := notion.QueryFilter{}
-	if mode == modeIncremental {
-		filter.LastEditedAfter = state.Watermark.Add(-OverlapMargin).Format(time.RFC3339)
-	}
-
-	return api.QueryPages(opts.DataSourceID, filter)
+// query fetches the full page manifest: one unfiltered metadata query per run
+// (~⌈N/100⌉ requests, ADR-21). What to rewrite is selected client-side.
+func query(api NotionAPI, opts Options) ([]model.PageMeta, error) {
+	return api.QueryPages(opts.DataSourceID)
 }
 
-// syncAll writes every page, logging and counting failures without stopping
-// (specs/architecture.md — error behavior). Returns the stats and, per class
-// directory, the set of page IDs that must remain there (a page reclassified
-// in Notion must be swept from its old directory on the next full run).
-// progress (nullable) is called once before the loop and after every page;
-// done counts processed pages, failures included.
-func syncAll(api NotionAPI, dirs map[string]string, mode string, metas []model.PageMeta,
+// editedSince keeps pages edited at or after cutoff; a page whose timestamp
+// fails to parse is kept (conservative: rewrite it).
+func editedSince(metas []model.PageMeta, cutoff time.Time) []model.PageMeta {
+	var out []model.PageMeta
+	for _, meta := range metas {
+		edited, err := time.Parse(time.RFC3339, meta.LastEdited)
+		if err != nil || !edited.Before(cutoff) {
+			out = append(out, meta)
+		}
+	}
+
+	return out
+}
+
+// keptSets maps, per class directory, the set of page IDs the manifest says
+// belong there: the sweep baseline (ADR-21).
+func keptSets(metas []model.PageMeta) map[string]map[string]bool {
+	kept := map[string]map[string]bool{dirKnowledge: {}, dirTools: {}}
+	for _, meta := range metas {
+		kept[Class(meta)][meta.ID] = true
+	}
+
+	return kept
+}
+
+// syncAll writes every page in metas, logging and counting failures without
+// stopping (specs/architecture.md — error behavior). progress (nullable) is
+// called once before the loop and after every page; done counts processed
+// pages, failures included.
+func syncAll(api NotionAPI, dirs map[string]string, metas []model.PageMeta,
 	progress func(done, total int),
-) (
-	Stats, map[string]map[string]bool,
-) {
-	stats := Stats{Mode: mode, Kept: len(metas)}
-	keptByDir := map[string]map[string]bool{dirKnowledge: {}, dirTools: {}}
+) Stats {
+	stats := Stats{Kept: len(metas)}
 	if progress != nil {
 		progress(0, len(metas))
 	}
 	for i, meta := range metas {
-		keptByDir[Class(meta)][meta.ID] = true
 		if err := writeOne(api, dirs[Class(meta)], meta); err != nil {
 			fmt.Fprintf(os.Stderr, "sync: page %s: %v\n", meta.ID, err)
 			stats.Failed++
@@ -166,7 +185,7 @@ func syncAll(api NotionAPI, dirs map[string]string, mode string, metas []model.P
 		}
 	}
 
-	return stats, keptByDir
+	return stats
 }
 
 // persistState advances the watermark to the run instant; incremental runs

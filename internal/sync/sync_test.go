@@ -10,26 +10,20 @@ import (
 	"time"
 
 	"github.com/iyaki/enchiridion/internal/model"
-	"github.com/iyaki/enchiridion/internal/notion"
 )
 
 // fakeAPI is a map-backed NotionAPI: deterministic, no HTTP.
 type fakeAPI struct {
-	pages       map[string]model.PageMeta
-	blocks      map[string][]model.Block
-	errPage     string // page whose blocks fetch fails
-	queryFilter notion.QueryFilter
+	pages   map[string]model.PageMeta
+	blocks  map[string][]model.Block
+	errPage string // page whose blocks fetch fails
+	queries int
 }
 
-func (f *fakeAPI) QueryPages(_ string, filter notion.QueryFilter) ([]model.PageMeta, error) {
-	f.queryFilter = filter
-	marked, err := time.Parse(time.RFC3339, filter.LastEditedAfter)
+func (f *fakeAPI) QueryPages(string) ([]model.PageMeta, error) {
+	f.queries++
 	var metas []model.PageMeta
 	for _, meta := range f.pages {
-		edited, _ := time.Parse(time.RFC3339, meta.LastEdited)
-		if err == nil && edited.Before(marked) {
-			continue // the real API filters server-side
-		}
 		metas = append(metas, meta)
 	}
 
@@ -47,7 +41,7 @@ func (f *fakeAPI) PageBlocks(pageID string) ([]model.Block, error) {
 // queryErrAPI fails the page query itself: the data source is unreachable.
 type queryErrAPI struct{ err error }
 
-func (f *queryErrAPI) QueryPages(string, notion.QueryFilter) ([]model.PageMeta, error) {
+func (f *queryErrAPI) QueryPages(string) ([]model.PageMeta, error) {
 	return nil, f.err
 }
 
@@ -172,15 +166,15 @@ func TestIncrementalRun(t *testing.T) {
 
 	later := now.Add(time.Hour)
 	api.pages["p2"] = model.PageMeta{ID: "p2", Title: "Beta 2", LastEdited: editedNew}
+	api.queries = 0
 	stats, err := Run(api, Options{Home: home, Now: later})
 	if err != nil {
 		t.Fatalf("incremental run: %v", err)
 	}
 
 	wantStats(t, stats, Stats{Mode: modeIncremental, Kept: 1, Written: 1})
-	wantFilter := now.Add(-OverlapMargin).Format(time.RFC3339)
-	if api.queryFilter.LastEditedAfter != wantFilter {
-		t.Fatalf("filter = %q, want %q", api.queryFilter.LastEditedAfter, wantFilter)
+	if api.queries != 1 {
+		t.Fatalf("queries = %d, want 1 (one unfiltered metadata query per run, ADR-21)", api.queries)
 	}
 
 	wantState(t, home, now, later)
@@ -383,7 +377,7 @@ func TestFullSweepRemovesReclassified(t *testing.T) {
 	}
 }
 
-func TestIncrementalReclassifyKeepsStaleCopy(t *testing.T) {
+func TestIncrementalSweepRemovesReclassified(t *testing.T) {
 	home := t.TempDir()
 	api := &fakeAPI{pages: map[string]model.PageMeta{
 		"p1": {ID: "p1", Title: "Once A Tool", Tags: []string{"Tool"}, LastEdited: editedOld},
@@ -398,13 +392,37 @@ func TestIncrementalReclassifyKeepsStaleCopy(t *testing.T) {
 		t.Fatalf("incremental run: %v", err)
 	}
 
-	// Documented ADR-15 exception: reclassification propagates on the next
-	// full sync, same cadence as deletions (ADR-04).
-	wantStats(t, stats, Stats{Mode: modeIncremental, Kept: 1, Written: 1})
+	// ADR-21: the manifest sweep runs in both modes, so a reclassification
+	// propagates on the next incremental run instead of waiting for full.
+	wantStats(t, stats, Stats{Mode: modeIncremental, Kept: 1, Written: 1, Removed: 1})
 	if n := countDirMD(t, home, dirKnowledge); n != 1 {
 		t.Fatalf("knowledge/ has %d files, want 1", n)
 	}
-	if n := countDirMD(t, home, dirTools); n != 1 {
-		t.Fatalf("tools/ has %d files, want 1 (stale copy until next full)", n)
+	if n := countDirMD(t, home, dirTools); n != 0 {
+		t.Fatalf("tools/ has %d files, want 0 (stale copy swept)", n)
+	}
+}
+
+func TestIncrementalSweepsDeletedPages(t *testing.T) {
+	home := t.TempDir()
+	api := &fakeAPI{pages: map[string]model.PageMeta{
+		"p1": {ID: "p1", Title: "Alpha", LastEdited: editedOld},
+		"p2": {ID: "p2", Title: "Beta", LastEdited: editedOld},
+	}}
+	if _, err := Run(api, Options{Home: home, Now: now}); err != nil {
+		t.Fatalf("seed full run: %v", err)
+	}
+
+	delete(api.pages, "p2")
+	stats, err := Run(api, Options{Home: home, Now: now.Add(time.Hour)})
+	if err != nil {
+		t.Fatalf("incremental run: %v", err)
+	}
+
+	// ADR-21: deletion detection needs only the manifest, so the sweep
+	// removes the ghost even though no body was rewritten.
+	wantStats(t, stats, Stats{Mode: modeIncremental, Kept: 0, Written: 0, Removed: 1})
+	if n := countMD(t, home); n != 1 {
+		t.Fatalf("got %d mirror files, want 1", n)
 	}
 }

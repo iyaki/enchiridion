@@ -26,13 +26,6 @@ const (
 	maxErrorBody   = 4096
 )
 
-// QueryFilter narrows a data source query. Empty fields mean "no filter".
-type QueryFilter struct {
-	// LastEditedAfter (RFC3339) keeps only pages edited on or after the
-	// instant — the incremental sync filter.
-	LastEditedAfter string
-}
-
 // Client talks to the Notion API over HTTP.
 type Client struct {
 	baseURL string
@@ -51,21 +44,16 @@ func NewClient(token string) *Client {
 	}
 }
 
-// QueryPages returns every page of the data source — or only those edited on
-// or after filter.LastEditedAfter — following pagination.
-func (c *Client) QueryPages(dataSourceID string, filter QueryFilter) ([]model.PageMeta, error) {
+// QueryPages returns every page of the data source, following pagination.
+// One unfiltered metadata query per sync run; page selection happens
+// client-side (ADR-21).
+func (c *Client) QueryPages(dataSourceID string) ([]model.PageMeta, error) {
 	var metas []model.PageMeta
 	cursor := ""
 	for {
 		body := map[string]any{"page_size": pageSize}
 		if cursor != "" {
 			body["start_cursor"] = cursor
-		}
-		if filter.LastEditedAfter != "" {
-			body["filter"] = map[string]any{
-				"timestamp":        "last_edited_time",
-				"last_edited_time": map[string]string{"on_or_after": filter.LastEditedAfter},
-			}
 		}
 
 		var out struct {

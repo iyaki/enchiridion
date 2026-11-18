@@ -122,7 +122,7 @@ func TestQueryPagesPaginatesInOrder(t *testing.T) {
 		writeJSON(t, w, queryResponse{Results: []page{pg}})
 	}
 
-	metas, err := c.QueryPages("ds123", QueryFilter{})
+	metas, err := c.QueryPages("ds123")
 	if err != nil {
 		t.Fatalf("QueryPages: %v", err)
 	}
@@ -154,7 +154,7 @@ func TestQueryPagesMapsProperties(t *testing.T) {
 		}}})
 	}
 
-	metas, err := c.QueryPages("ds123", QueryFilter{})
+	metas, err := c.QueryPages("ds123")
 	if err != nil {
 		t.Fatalf("QueryPages: %v", err)
 	}
@@ -163,35 +163,6 @@ func TestQueryPagesMapsProperties(t *testing.T) {
 	}
 	if got := strings.Join(metas[0].Tags, ","); got != "arquitectura,articulo" {
 		t.Errorf("tags = %q", got)
-	}
-}
-
-func TestQueryPagesIncrementalFilter(t *testing.T) {
-	rec := &recorder{}
-	c := newTestClient(t, rec)
-	rec.handler = func(w http.ResponseWriter, _ *http.Request) {
-		writeJSON(t, w, queryResponse{})
-	}
-
-	_, err := c.QueryPages("ds123", QueryFilter{LastEditedAfter: "2026-01-02T00:00:00Z"})
-	if err != nil {
-		t.Fatalf("QueryPages: %v", err)
-	}
-
-	var body struct {
-		Filter struct {
-			Timestamp      string `json:"timestamp"`
-			LastEditedTime struct {
-				OnOrAfter string `json:"on_or_after"`
-			} `json:"last_edited_time"`
-		} `json:"filter"`
-	}
-	if err := json.Unmarshal([]byte(rec.bodies[0]), &body); err != nil {
-		t.Fatalf("decode request body: %v", err)
-	}
-	if body.Filter.Timestamp != "last_edited_time" ||
-		body.Filter.LastEditedTime.OnOrAfter != "2026-01-02T00:00:00Z" {
-		t.Errorf("filter = %+v", body.Filter)
 	}
 }
 
@@ -212,7 +183,7 @@ func TestNilAndEmptyPropertiesMapSafely(t *testing.T) {
 		}}})
 	}
 
-	metas, err := c.QueryPages("ds123", QueryFilter{})
+	metas, err := c.QueryPages("ds123")
 	if err != nil {
 		t.Fatalf("QueryPages: %v", err)
 	}
@@ -353,7 +324,7 @@ func TestRetries429HonoringRetryAfter(t *testing.T) {
 		writeJSON(t, w, queryResponse{})
 	}
 
-	if _, err := c.QueryPages("ds123", QueryFilter{}); err != nil {
+	if _, err := c.QueryPages("ds123"); err != nil {
 		t.Fatalf("QueryPages: %v", err)
 	}
 	if rec.requests != 2 {
@@ -376,7 +347,7 @@ func TestRateLimitWithoutRetryAfterUsesBackoff(t *testing.T) {
 		writeJSON(t, w, queryResponse{})
 	}
 
-	if _, err := c.QueryPages("ds123", QueryFilter{}); err != nil {
+	if _, err := c.QueryPages("ds123"); err != nil {
 		t.Fatalf("QueryPages: %v", err)
 	}
 	if len(rec.sleeps) != 1 || rec.sleeps[0] != 1*time.Second {
@@ -391,7 +362,7 @@ func TestGivesUpAfterThreeAttemptsOnServerError(t *testing.T) {
 		w.WriteHeader(http.StatusInternalServerError)
 	}
 
-	_, err := c.QueryPages("ds123", QueryFilter{})
+	_, err := c.QueryPages("ds123")
 	if err == nil || !strings.Contains(err.Error(), "gave up after 3 attempts") {
 		t.Fatalf("err = %v, want give-up after 3 attempts", err)
 	}
@@ -443,7 +414,7 @@ func TestUnauthorizedFailsFastWithoutRetries(t *testing.T) {
 		w.WriteHeader(http.StatusUnauthorized)
 	}
 
-	_, err := c.QueryPages("ds123", QueryFilter{})
+	_, err := c.QueryPages("ds123")
 	if err == nil || !strings.Contains(err.Error(), "credentials") {
 		t.Fatalf("err = %v, want credential error", err)
 	}
@@ -463,7 +434,7 @@ func TestClientErrorSurfacesBody(t *testing.T) {
 		_, _ = w.Write([]byte(`{"message":"Invalid data source"}`))
 	}
 
-	_, err := c.QueryPages("nope", QueryFilter{})
+	_, err := c.QueryPages("nope")
 	if err == nil || !strings.Contains(err.Error(), "Invalid data source") {
 		t.Fatalf("err = %v, want surfaced API message", err)
 	}

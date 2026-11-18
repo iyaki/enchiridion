@@ -87,7 +87,7 @@ Each user provides their own values — the binary knows no one's token
 
 ```sh
 enchiridion sync          # automatic mode (see below)
-enchiridion sync --full   # forced full: the only mode that propagates deletions
+enchiridion sync --full   # forced full: re-renders every page and resets the full-sync date (both modes propagate deletions)
 enchiridion doctor        # read-only config and connectivity check; never syncs
 enchiridion search --dir data accessibility   # query the mirror, best-ranked first
 ```
@@ -98,7 +98,9 @@ and `--quiet` silences it; stdout carries only the final summary line.
 
 The mode is selected automatically (ADR-07): no prior state or empty mirror →
 full (auto-backfill); last full sync older than 30 days → full; otherwise →
-incremental with a 60-second overlap margin. Per-page failures are logged,
+incremental with a 60-second overlap margin. Both modes reconcile the manifest
+against a full metadata query, so deletions and reclassifications propagate on
+every run (ADR-21). Per-page failures are logged,
 the rest continues, and a partial run exits non-zero without advancing the
 watermark — the next run retries every edit since the old mark. A sync run
 takes an exclusive lock on the cache: a second simultaneous invocation fails

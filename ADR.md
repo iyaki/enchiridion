@@ -1,7 +1,7 @@
 # ADR — enchiridion decision record
 
 Each entry: context → decision → consequences. Rejected alternatives are
-recorded so we don't repeat the same discussions. Last updated: 2026-09-20.
+recorded so we don't repeat the same discussions. Last updated: 2026-11-18.
 
 ## Project status
 
@@ -390,6 +390,33 @@ touches the project tree (a typo can no longer litter a repository).
 `sync` remains the only writer of Notion-sourced content and `pull` of
 published content; either can now target the machine cache, so the cache's
 freshness no longer requires Notion credentials.
+
+---
+
+## ADR-21 — Deletions and reclassifications propagate on every sync
+
+**Context**: ADR-04 made the monthly full sync the only propagator of
+deletions, so a page removed in Notion lingered as a ghost in the mirror for
+up to 31 days — in a repository that claims to be a source of truth. The
+sweep-only-on-full restriction was an implementation artifact: deletion
+detection needs only page IDs from the manifest, not page bodies, and the
+engine already had the sweep machinery.
+
+**Decision**: every sync run — full and incremental — issues one unfiltered
+metadata query (~⌈N/100⌉ requests: ≈27 for today's 2,651 pages) and sweeps
+both class directories against the manifest, removing ghosts and stale
+copies of reclassified pages. The server-side `last_edited_time` filter is
+removed: on incremental runs the engine selects the pages to rewrite
+client-side against the watermark minus the overlap margin. This supersedes
+ADR-04's monthly-only sweep line and closes ADR-15's stale-copy consequence.
+
+**Consequences**: the incremental cost grows by the metadata scan — still
+seconds against the nightly schedule. The monthly full remains valuable as a
+full re-render under the current renderer plus the last-full date reset; it
+is no longer the deletion propagator. A manifest query failure fails the run
+before the watermark advances. A general family fallback for unknown block
+types is deliberately not built (see the v0.4.x `heading_4` regression):
+revisit only on a third renderer regression.
 
 ---
 

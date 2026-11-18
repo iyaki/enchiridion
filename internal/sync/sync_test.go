@@ -22,7 +22,7 @@ type fakeAPI struct {
 
 func (f *fakeAPI) QueryPages(string) ([]model.PageMeta, error) {
 	f.queries++
-	var metas []model.PageMeta
+	metas := make([]model.PageMeta, 0, len(f.pages))
 	for _, meta := range f.pages {
 		metas = append(metas, meta)
 	}

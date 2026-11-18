@@ -178,15 +178,21 @@ func extract(r io.Reader, out string) (Stats, error) {
 		if err := writeFile(tr, target); err != nil {
 			return stats, err
 		}
-		switch {
-		case strings.HasPrefix(rel, "knowledge/"):
-			stats.Knowledge++
-		case strings.HasPrefix(rel, "tools/"):
-			stats.Tools++
-		}
+		countClass(&stats, rel)
 	}
 
 	return stats, nil
+}
+
+// countClass tallies one extracted file by its class directory; the sync
+// state file is not a mirror page and stays uncounted.
+func countClass(stats *Stats, rel string) {
+	switch {
+	case strings.HasPrefix(rel, "knowledge/"):
+		stats.Knowledge++
+	case strings.HasPrefix(rel, "tools/"):
+		stats.Tools++
+	}
 }
 
 // mirrorRelPath strips the tarball's top-level directory and reports the

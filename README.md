@@ -10,7 +10,7 @@ patterns, or assisting decisions.
 
 ## Status
 
-`v0.4.1` — shipped and validated against the live API: sync engine, CLI,
+`v0.5.0` — shipped and validated against the live API: sync engine, CLI,
 nightly/monthly sync workflows (this repository keeps a committed mirror
 under [`data/`](data/)), multi-platform releases, the public repository
 (ADR-19; releases download without authentication), the published devcontainer
@@ -18,9 +18,11 @@ feature
 ([`ghcr.io/iyaki/devcontainer-features/enchiridion`](https://github.com/iyaki/devcontainer-features/tree/main/src/enchiridion))
 and the consumption triggers below. Content completeness: every block's
 children fetched and flattened, to-do checkboxes, media links, synced-block
-resolution (ADR-17). Consumer projects vendor the mirror with
-`enchiridion pull` (ADR-18). The CLI follows standard help conventions
-(`--help`/`-h` to stdout, exit 0), reports sync progress on stderr
+resolution (ADR-17), `heading_4` rendering. Deletions and reclassifications
+propagate on every sync via manifest reconciliation (ADR-21), and `pull`
+carries the published sync state (ADR-22). Consumer projects vendor the
+mirror with `enchiridion pull` (ADR-18). The CLI follows standard help
+conventions (`--help`/`-h` to stdout, exit 0), reports sync progress on stderr
 (`--quiet` silences it), and ships two read-only commands: `enchiridion
 doctor` (configuration and connectivity without syncing) and `enchiridion
 search` (ranks mirror files by term matches over title, tags, filename and
@@ -33,9 +35,9 @@ The repository is public: download a release from the release page or with
 plain `gh` — no token needed.
 
 ```sh
-gh release download v0.4.1 --repo iyaki/enchiridion \
+gh release download v0.5.0 --repo iyaki/enchiridion \
     --pattern '*linux_amd64.tar.gz'
-tar xzf enchiridion_0.4.1_linux_amd64.tar.gz
+tar xzf enchiridion_0.5.0_linux_amd64.tar.gz
 install -m 0755 enchiridion /usr/local/bin/enchiridion
 enchiridion version
 ```
@@ -148,6 +150,9 @@ Cite the entries used (file + `source_url`; `notion_url` only when the
 entry has no web source). With no precedent, say so explicitly. Missing or
 stale mirror: run `enchiridion pull --project` and commit the result —
 never invent precedents.
+
+Precedence: this repository's own ADRs override the mirror; the mirror
+overrides generic best practice. Say which one you are citing.
 ```
 
 ## Development

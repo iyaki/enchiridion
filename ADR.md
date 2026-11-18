@@ -439,6 +439,57 @@ commit the state file with the mirror.
 
 ---
 
+## ADR-23 — Web enrichment rejected (phase 8 = never)
+
+**Context**: pages whose Notion body is only a bookmark carry almost no
+mirror content; the real content lives at `source_url`. Phase 8 asked
+whether sync should fetch it (network in the sync path, caching, failure
+budget) or consumption should.
+
+**Decision**: enchiridion never fetches `source_url` content at sync.
+Citation (ADR-16) already delegates live content to consumption time, where
+agents with web access fetch on demand. Fetching at sync would turn the
+tool into a web archiver: size explosion, link rot, licensing questions,
+and a failure budget inside the sync path. Phase 8 closes as rejected; the
+visible-comment markers remain the honest representation of a thin page.
+
+**Consequences**: thin pages stay thin, by design; completeness work
+(ADR-17) remains scoped to the Notion page boundary.
+
+---
+
+## ADR-24 — `enchiridion search` recorded
+
+**Context**: the search CLI shipped in the v0.4.x line when ADR-12's
+"grep falls short" trigger fired, but the decision was never recorded.
+
+**Decision**: `enchiridion search` is a read-only command: case-insensitive
+substring over title, tags, filename and body; title-weighted ranking; one
+`path — title — source` line per hit (`source` = `source_url`, falling back
+to `notion_url`); exit 1 when nothing matches. It operates on any directory
+of the mirror layout (`--dir`), machine cache or vendored copy alike.
+
+**Consequences**: grep stays valid for ad-hoc queries; the CLI adds ranked
+output and citation URLs. Rank tuning stays out of scope until grep
+evidence says otherwise.
+
+---
+
+## ADR-25 — Anonymous pull recorded
+
+**Context**: anonymous access shipped unrecorded alongside ADR-19.
+
+**Decision**: `pull` and `check` omit the `Authorization` header when no
+token is set (GitHub rejects a bare `Bearer `); anonymous works for the
+public distribution repository, and `doctor` reports anonymous access.
+ADR-19's consequence line "the CLI still requires GITHUB_TOKEN today" is
+historical, not current behavior.
+
+**Consequences**: `GITHUB_TOKEN` is needed only for private
+`ENCHIRIDION_REPO` overrides and rate-limit headroom.
+
+---
+
 ## Verification of the real sync (pending implementation)
 
 The only piece not verifiable offline: live API calls. Manual smoke with an

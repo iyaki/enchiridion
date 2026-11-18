@@ -44,7 +44,7 @@ that obliges agents to consult and cite them before recommending.
 
 | Feature | Included when |
 |---|---|
-| Search CLI with ranking | grep falls short in practice |
+| Search CLI with ranking | Shipped (v0.4.x, ADR-24) |
 | MCP adapter | first-class tool-calls are wanted |
 | RAG / embeddings | grep measures semantics poorly |
 | Downloading internal assets | internal Notion images appear in the KB |
@@ -54,8 +54,9 @@ that obliges agents to consult and cite them before recommending.
 
 1. An agent in any project on the machine finds and cites KB precedents by
    grepping the cache, with no Notion credentials in the project.
-2. A consumer project's CI reads the mirror with only `GITHUB_TOKEN`
-   (checkout of the private repo), without a Notion token.
+2. A consumer project reads the vendored mirror with zero credentials
+   (public default-branch tarball; `GITHUB_TOKEN` only for private
+   overrides), without a Notion token.
 3. Invisible incremental sync (< 1 min for a ~1000-entry KB); monthly full
    tolerable in a nightly job.
 4. Zero third-party dependencies (ADR-08).

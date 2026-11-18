@@ -194,8 +194,8 @@ func idOf(root *os.Root, name string) string {
 }
 
 // Sweep removes every mirror file whose page no longer exists in the source
-// (or carries no notion_id at all) and returns the removed file names. Full
-// mode only: it is the sole propagator of deletions (ADR-04).
+// (or carries no notion_id at all) and returns the removed file names. Runs
+// in both sync modes: deletions propagate per run (ADR-21).
 func Sweep(dir string, keptIDs map[string]bool) ([]string, error) {
 	root, err := os.OpenRoot(dir)
 	if err != nil {

@@ -33,11 +33,12 @@ The command chooses the mode automatically; an explicit flag forces full mode.
 | Last full sync older than ~30 days | **Full** |
 | Any other case | **Incremental** |
 
-- **Full**: synchronizes all pages of the data source, cleans the mirrors of
-  pages that no longer exist (sweep) and resets the watermark. It is the only
-  mode that propagates deletions (~monthly, accepted in ADR-04).
-- **Incremental**: synchronizes only the pages edited since the watermark,
-  with an overlap margin that absorbs clock drift. It performs no sweep.
+- **Full**: re-renders every page of the data source, sweeps both mirrors
+  against the manifest, and resets the watermark date (last-full date).
+- **Incremental**: re-renders only the pages edited since the watermark
+  (client-side selection, with an overlap margin that absorbs clock drift)
+  **and reconciles the manifest**: deletions and reclassifications propagate
+  per run (ADR-21).
 
 **Identity consistency**: if the title of an edited page changes, the existing
 file is updated in-place (identified by `notion_id` in the frontmatter) —
@@ -110,6 +111,7 @@ original text.
 | Rejected credentials | explicit and immediate failure with a solution-oriented message — never a silent fallback |
 | Rate limit or transient API error | retry with backoff, respecting the API's signals |
 | Failure to synchronize a page | it is logged, the rest continues |
+| Metadata query failure | the run fails; the watermark is not advanced |
 | Run ends with partial failures | error exit code + summary (`X of N failed`) |
 
 ## Non-functional requirements

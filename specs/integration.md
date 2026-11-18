@@ -21,7 +21,8 @@ knowledge base data source, plus — only when present — nested table blocks.
 **Budget**: a full sync of N pages costs ~N+1+T requests (T = tables).
 For N ≈ 1000 that means minutes — invisible in a nightly job, intolerable
 inside an agent session: another reason for the sync model (ADR-02). The
-incremental sync only touches edited pages.
+incremental sync costs one full metadata scan (~⌈N/100⌉ requests, ADR-21)
+plus the bodies of edited pages.
 
 ## Property Mapping (real schema, confirmed in production)
 
@@ -113,5 +114,5 @@ switched without a signal (organizer pattern).
 - Notion internal images remain as a placeholder (ADR-05); the current ingest
   already discards them when copying triage → KB, so ~zero presence is
   expected.
-- Deletions in Notion take up to the monthly full sync to be reflected
-  (ADR-04).
+- Deletions and reclassifications propagate on every sync via the manifest
+  sweep (ADR-21); the remaining latency is only the nightly schedule.

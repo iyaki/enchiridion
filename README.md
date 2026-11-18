@@ -63,7 +63,10 @@ git add data && git commit -m "vendor: enchiridion mirror"
 
 `pull` replaces the two directories on every run (deletions propagate), and
 only touches them — the download completes before the replacement starts, so
-a failed pull never damages an existing mirror. The source is the
+a failed pull never damages an existing mirror. It also extracts the
+published `.sync-state.json` (ADR-22), so the machine cache's freshness
+becomes observable (`enchiridion doctor`) and a later `sync` resumes
+incrementally from the published watermark. The source is the
 distribution repository's default branch (`ENCHIRIDION_REPO` to override);
 freshness is bounded by its sync cadence (nightly incremental, monthly
 full). To refresh: run `enchiridion pull --project` again and commit the

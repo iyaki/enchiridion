@@ -170,6 +170,56 @@ func TestPullReplacesTargetDirsForDeletionPropagation(t *testing.T) {
 	}
 }
 
+// TestPullExtractsSyncState: the published .sync-state.json travels with the
+// mirror (ADR-22) so a pull-populated cache has an observable watermark.
+func TestPullExtractsSyncState(t *testing.T) {
+	c := newTestClient(t, func(w http.ResponseWriter, _ *http.Request) {
+		w.Header().Set("Content-Type", "application/x-gtar")
+		_, _ = w.Write(buildTarball(t, "ench-main-abc", map[string]string{
+			"data/knowledge/a.md":       "A",
+			"data/.sync-state.json":     `{"LastFullAt":"2026-11-18T04:00:00Z","Watermark":"2026-11-18T04:00:00Z"}`,
+			"data/knowledge/evil/xx.md": "x",
+		}))
+	})
+
+	out := t.TempDir()
+	stats, err := c.Pull("iyaki/enchiridion", out)
+	if err != nil {
+		t.Fatalf("Pull: %v", err)
+	}
+
+	assertFiles(t, out, map[string]string{
+		".sync-state.json": `{"LastFullAt":"2026-11-18T04:00:00Z","Watermark":"2026-11-18T04:00:00Z"}`,
+		"knowledge/a.md":   "A",
+	})
+	if stats.Knowledge != 2 || stats.Tools != 0 {
+		t.Errorf("stats = %+v, want knowledge=2 tools=0 (state file is not a mirror page)", stats)
+	}
+}
+
+// TestPullRemovesStaleStateWhenTarballLacksIt: replacement semantics — a
+// pull from a mirror without state never leaves a stale watermark behind.
+func TestPullRemovesStaleStateWhenTarballLacksIt(t *testing.T) {
+	c := newTestClient(t, func(w http.ResponseWriter, _ *http.Request) {
+		_, _ = w.Write(buildTarball(t, "ench-main", map[string]string{
+			"data/knowledge/fresh.md": "fresh",
+		}))
+	})
+
+	out := t.TempDir()
+	stale := filepath.Join(out, ".sync-state.json")
+	if err := os.WriteFile(stale, []byte(`{"stale":true}`), 0o644); err != nil {
+		t.Fatal(err)
+	}
+
+	if _, err := c.Pull("iyaki/enchiridion", out); err != nil {
+		t.Fatalf("Pull: %v", err)
+	}
+	if _, err := os.Stat(stale); !os.IsNotExist(err) {
+		t.Errorf("stale .sync-state.json survived the pull")
+	}
+}
+
 func TestPullKeepsOldMirrorWhenDownloadFails(t *testing.T) {
 	c := newTestClient(t, func(w http.ResponseWriter, _ *http.Request) {
 		w.WriteHeader(http.StatusInternalServerError)
@@ -323,6 +373,8 @@ func TestMirrorRelPath(t *testing.T) {
 	}{
 		"knowledge file":            {"ench-main/data/knowledge/a.md", "knowledge/a.md", true},
 		"tools file":                {"ench-main/data/tools/t.md", "tools/t.md", true},
+		"sync state file":           {"ench-main/data/.sync-state.json", ".sync-state.json", true},
+		"other data json":           {"ench-main/data/other.json", "", false},
 		"non-mirror file":           {"ench-main/README.md", "", false},
 		"other data file":           {"ench-main/data/other.txt", "", false},
 		"lookalike prefix":          {"ench-main/data/knowledge-evil/x.md", "", false},

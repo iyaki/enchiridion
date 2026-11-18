@@ -81,9 +81,10 @@ Two contexts that must never be conflated (ADR-18):
    its own repository with `enchiridion pull [--out data]` and commits it.
    The command downloads the distribution repository's default-branch
    tarball with a GitHub token (`GITHUB_TOKEN`; `ENCHIRIDION_REPO` to
-   override the repository) and replaces `out/knowledge` + `out/tools` —
-   replacing propagates deletions, and the replacement starts only after
-   the download succeeded. No Notion credentials and no shared machine with
+   override the repository) and replaces `out/knowledge` + `out/tools` +
+   `out/.sync-state.json` (ADR-22) — replacing propagates deletions, and the
+   replacement starts only after the download succeeded. No Notion
+   credentials and no shared machine with
    an enchiridion installation are involved. Agent guidance comes from the
    project's `AGENTS.md` snippet pointing at the vendored paths.
 2. **The owner's machine**: the synced cache in `$ENCHIRIDION_HOME`

@@ -420,6 +420,25 @@ revisit only on a third renderer regression.
 
 ---
 
+## ADR-22 — pull publishes the sync state
+
+**Context**: `pull` extracted only the two mirror directories, so a
+pull-populated cache carried no watermark: its age was invisible,
+`doctor` misreported "first sync pending", and a later `sync` restarted
+from a full render instead of resuming incrementally.
+
+**Decision**: `pull` extracts the published `data/.sync-state.json`
+alongside the mirror and replaces any local copy. A tarball without state
+removes a stale local copy (replacement semantics; the next `sync`
+auto-backfills full). This amends ADR-18/20: the pull surface is
+`knowledge/ + tools/ + .sync-state.json`.
+
+**Consequences**: `doctor` reports the cache age from the published
+watermark; `sync` after `pull` resumes incrementally; `--project` consumers
+commit the state file with the mirror.
+
+---
+
 ## Verification of the real sync (pending implementation)
 
 The only piece not verifiable offline: live API calls. Manual smoke with an

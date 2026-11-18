@@ -2,7 +2,8 @@
 // repository so a consumer project can vendor it into its own tree — no
 // Notion credentials and no shared machine with an enchiridion installation
 // (ADR-18). The source of the pull is the repository's default-branch
-// tarball; only data/knowledge and data/tools are extracted.
+// tarball; data/knowledge, data/tools and the published .sync-state.json
+// are extracted (ADR-22).
 package pull
 
 import (
@@ -26,6 +27,9 @@ const (
 	topDirParts  = 2 // tarball name split: top-level dir + remainder
 	dirPerm      = 0o755
 	filePerm     = 0o644
+	// stateFile is the published sync state that travels with the mirror
+	// (ADR-22), extracted at the root of the output directory.
+	stateFile = ".sync-state.json"
 )
 
 // Stats reports how many mirror files were written per directory.
@@ -81,6 +85,11 @@ func (c *Client) Pull(repo, out string) (Stats, error) {
 		return Stats{}, err
 	}
 	if err := os.RemoveAll(filepath.Join(out, "tools")); err != nil {
+		return Stats{}, err
+	}
+	// Replacement semantics: a tarball without state never leaves a stale
+	// one behind; the next sync then auto-backfills full.
+	if err := os.RemoveAll(filepath.Join(out, stateFile)); err != nil {
 		return Stats{}, err
 	}
 
@@ -169,9 +178,10 @@ func extract(r io.Reader, out string) (Stats, error) {
 		if err := writeFile(tr, target); err != nil {
 			return stats, err
 		}
-		if strings.HasPrefix(rel, "knowledge/") {
+		switch {
+		case strings.HasPrefix(rel, "knowledge/"):
 			stats.Knowledge++
-		} else {
+		case strings.HasPrefix(rel, "tools/"):
 			stats.Tools++
 		}
 	}
@@ -191,6 +201,8 @@ func mirrorRelPath(name string) (rel string, ok bool) {
 	switch {
 	case strings.HasPrefix(rel, "data/knowledge/"), strings.HasPrefix(rel, "data/tools/"):
 		return strings.TrimPrefix(rel, "data/"), true
+	case rel == "data/"+stateFile:
+		return stateFile, true
 	}
 
 	return "", false

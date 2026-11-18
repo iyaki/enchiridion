@@ -9,8 +9,8 @@ Planning closed, implementation started (2026-09-20):
 - **Phase 0 executed**: JS scaffold removed; Go module initialized
   (`github.com/iyaki/enchiridion`, Go 1.25, zero dependencies).
 - **Harness installed** (reglint/specralph pattern): gates Makefile
-  (`make quality`), lefthook pre-commit (format + coverage + mutation-diff +
-  lint + security + arch), golangci-lint, go-arch-lint (sync→notion+render;
+  (`make quality`), lefthook pre-commit (format + lint + security + arch),
+  pre-push (coverage + mutation-diff), golangci-lint, go-arch-lint (sync→notion+render;
   notion and render pure), gremlins, govulncheck/gosec, goreleaser, workflows
   (quality/security/release/update-agent-skills), devcontainer, editorconfig,
   opencode.jsonc with harness protections.

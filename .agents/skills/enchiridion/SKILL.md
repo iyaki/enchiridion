@@ -77,3 +77,6 @@ the phases order the search, they do not gate it.
    pinned version and works on any machine; the machine cache in
    `~/.local/share/enchiridion` only exists where an installation was
    synced.
+7. **Precedence**: a repository's own recorded decisions (its ADRs /
+   decision records) override the mirror; the mirror overrides generic best
+   practice. Say which one you are citing.

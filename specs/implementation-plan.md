@@ -114,26 +114,23 @@ block types: `link_to_page` (65), `child_database` (8), `table_of_contents`
    surface (new scope, new ADR).
 4. Notion `unsupported` — permanent visible marker by design; document it as
    expected output, no action.
+5. `heading_4` — shipped (renders as `####`, this change).
 
 **AC**: no `link_to_page` / `table_of_contents` / `child_database` marker
 remains without either a rendered form or an explicit ADR/spec line saying
 why it stays; a full-sync regeneration confirms the counts.
 
-### Phase 8 — Web enrichment via `source_url` (pending)
+### Phase 8 — Web enrichment via `source_url` — Decided: rejected (ADR-23)
 
-Pages whose Notion body is only a bookmark carry almost no mirror content;
-the real content lives at `source_url`. ADR-17 deliberately stops
-completeness at the Notion page boundary — this phase decides whether to
-cross it: fetch at sync time (network in the sync path, caching, failure
-budget) vs fetch at consumption time vs never.
+Enchiridion never fetches `source_url` content at sync; agents with web
+access fetch at consumption time when citing demands it (ADR-23).
 
-**AC**: an ADR decides the approach before any code; if fetch-at-sync wins,
-`integration.md` gains the request budget and failure behavior.
-
-### Phase 9 — Consumer vendoring rollout (pending)
+### Phase 9 — Consumer vendoring rollout (in progress)
 
 ADR-18's `enchiridion pull` shipped in `v0.2.3` but is not yet exercised by
-a real consumer project.
+a real consumer project. The drill runs in the 2026-11-18 remediation: the
+record (repo, date, PR URL, citation example) is appended below once the
+consumer PR is open.
 
 **AC**: one real consumer project vendors `data/`, commits it, carries the
 `AGENTS.md` snippet, and an agent session in that project greps the vendored
@@ -148,6 +145,9 @@ installation.
 - **Local refresh cadence**: monthly full (automated in this repo's CI) +
   incremental sync at agent startup; consumer projects refresh via
   `enchiridion pull` + commit.
-- **Deletion latency**: deletions reach the mirror only with the monthly
-  full sync (ADR-04); consumers inherit the same latency through `pull` —
-  accepted.
+- **Deletion latency**: deletions and reclassifications propagate on every
+  sync (ADR-21); consumers inherit the remaining latency through `pull`
+  (bounded by the nightly schedule) — accepted.
+- **Move the committed mirror to a dedicated branch** if/when code
+  development resumes on `main` (bot sync commits currently dominate
+  history).

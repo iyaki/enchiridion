@@ -23,10 +23,13 @@
 
 - Build the CLI binary: `make build`.
 - Run from source (no build): `make run ARGS='<command> [flags]'`.
-- Current state: `v0.4.1` — `sync` (full/incremental, mirror split into
-  `knowledge/` + `tools/` per ADR-15), full content completeness (ADR-17),
+- Current state: `v0.5.0` — `sync` (full/incremental, mirror split into
+  `knowledge/` + `tools/` per ADR-15; both modes propagate deletions and
+  reclassifications via manifest reconciliation, ADR-21), full content
+  completeness including `heading_4` (ADR-17),
   `enchiridion pull` (machine cache by default; `--project` vendors into a
-  consumer project, ADR-18/20), conventional
+  consumer project, ADR-18/20; carries the published sync state, ADR-22),
+  conventional
   `--help`/`-h` (stdout, exit 0), sync progress on stderr (`--quiet` to
   silence), the read-only `enchiridion doctor` diagnostics command, and the
   read-only `enchiridion search` command (ranks mirror files by term

@@ -17,6 +17,8 @@
 - Targeted runs:
   - `make lint|test|test-race|test-flaky|coverage|mutation|security|arch|deps-audit|secrets`.
 - Coverage gate: min 90%.
+- Hooks: lefthook pre-commit runs format + lint + security + arch; coverage
+  and mutation run pre-push (and in CI on pull requests).
 - Execute mutation testing with `make mutation` ONLY in final stages of the task development. **NEVER** execute mutation testing during the Test Driven Development process.
 
 ## Build and Run

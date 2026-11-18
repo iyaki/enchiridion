@@ -8,6 +8,7 @@ const (
 	TypeHeading1     = "heading_1"
 	TypeHeading2     = "heading_2"
 	TypeHeading3     = "heading_3"
+	TypeHeading4     = "heading_4"
 	TypeBulletedItem = "bulleted_list_item"
 	TypeNumberedItem = "numbered_list_item"
 	TypeQuote        = "quote"

@@ -1,0 +1,196 @@
+---
+title: "villadalmine/study-cybercirujas: Plataforma educativa self-service: contenido de certificaciones (LPI, CNCF) generado con AI, labs ejecutables, videos por path/cert"
+notion_id: 41d54f1c-7d23-81ac-b45a-ced9e94d3a76
+notion_url: https://app.notion.com/p/villadalmine-study-cybercirujas-Plataforma-educativa-self-service-contenido-de-certificaciones-LP-41d54f1c7d2381acb45aced9e94d3a76
+last_edited: 2026-11-19T05:52:00.000Z
+source_url: https://github.com/villadalmine/study-cybercirujas
+tags: ["GitHub", "English", "Español", "Education", "Learning", "Open Source", "AI", "Certification", "DevOps", "Tool", "Website"]
+---
+## study.cybercirujas — free, open study material for IT certifications
+
+> 🇪🇸 Material de estudio libre para certificaciones IT (Linux, Kubernetes,
+cloud, IA), en inglés y español. Usalo en el sitio, en tu máquina con Docker,
+o sin internet con un modelo local — todo explicado abajo.
+
+> **Knowledge has no owner and no borders. We build it together, for everyone.**_El conocimiento no tiene dueño ni fronteras. Lo construimos entre todos, para todos._
+
+**Site: **[**https://study.cybercirujas.club**](https://study.cybercirujas.club/) · free, no account, no tracking
+
+![image](https://github.com/villadalmine/study-cybercirujas/raw/main/docs/img/site.png)
+
+For each certification you get the **official syllabus**, frozen from the vendor's own document, and for every objective:
+**theory**, **exercises** and a **break-and-fix lab** that breaks something on purpose for you to repair. All of it is AI-drafted from
+the official syllabus, checked by deterministic scripts and reviewed before a person merges it. The detail is in [docs/USING.md](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/USING.md).
+
+## Start here
+
+1. [**How it works**](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/HOW-IT-WORKS.md): the whole system from one picture down to the scripts, in levels, with what blocks and what only warns ([GUARDRAILS](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/GUARDRAILS.md)).
+2. [**The charter**](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/CHARTER.md): the eleven rules that are not negotiable, each with the check that enforces it.
+3. [**FAQ**](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/FAQ.md): how each part works, in short answers that point to the code that proves them.
+4. [**Using it**](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/USING.md): the site, Docker, an offline local model, the REST API, the command line, MCP.
+5. [**CONTRIBUTING**](https://github.com/villadalmine/study-cybercirujas/blob/main/CONTRIBUTING.md): how to report a mistake, fix a translation, add a lab or change code. How an issue becomes a release: [ISSUE-TO-RELEASE](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/ISSUE-TO-RELEASE.md). Agents read [AGENTS.md](https://github.com/villadalmine/study-cybercirujas/blob/main/AGENTS.md).
+
+## Where we are now
+
+The current work is organised in [milestones](https://github.com/villadalmine/study-cybercirujas/milestones) (releases), grouped under
+epics ([#124 docs](https://github.com/villadalmine/study-cybercirujas/issues/124), [#166 quality](https://github.com/villadalmine/study-cybercirujas/issues/166),
+[#167 labs](https://github.com/villadalmine/study-cybercirujas/issues/167)). What each release changed: [CHANGELOG.md](https://github.com/villadalmine/study-cybercirujas/blob/main/CHANGELOG.md) and
+the [releases page](https://github.com/villadalmine/study-cybercirujas/releases); completeness per language: [docs/STATUS.md](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/STATUS.md).
+What is next and why: [docs/ROADMAP.md](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/ROADMAP.md).
+
+## Certifications
+
+**29 certifications ready to study**, 41 with a frozen syllabus.
+
+| Certification | Vendor | Topics | Complete in |
+| --- | --- | --- | --- |
+| LPI Linux Essentials (`lpi-010-160`) | LPI | 19 | English, Español, Français, Deutsch, 中文, 日本語, Português |
+| LPIC-1: Linux Administrator (`lpic-1`) | LPI | 42 | English, Español |
+| LPIC-3: Security (`lpic-3-303`) | LPI | 15 | English, Español |
+| LPIC-3: Virtualization and Containerization (`lpic-3-305`) | LPI | 13 | English, Español |
+| LPIC-3: High Availability and Storage Clusters (`lpic-3-306`) | LPI | 12 | English, Español |
+| LPI DevOps Tools Engineer (`lpi-devops`) | LPI | 15 | English, Español |
+| Certified Kubernetes Administrator (CKA) (`cka`) | CNCF | 27 | English, Español |
+| Certified Kubernetes Application Developer (CKAD) (`ckad`) | CNCF | 24 | English, Español |
+| Certified Kubernetes Security Specialist (CKS) (`cks`) | CNCF | 26 | English, Español |
+| Kubernetes and Cloud Native Associate (KCNA) (`kcna`) | CNCF | 13 | English, Español |
+| Kubernetes and Cloud Native Security Associate (KCSA) (`kcsa`) | CNCF | 42 | English, Español |
+| Certified GitOps Associate (CGOA) (`cgoa`) | CNCF | 4 | English, Español |
+| Certified Argo Project Associate (CAPA) (`capa`) | CNCF | 5 | English, Español |
+| Certified Cloud Native Platform Engineering Associate (CNPA) (`cnpa`) | CNCF | 27 | English, Español |
+| Certified Cloud Native Platform Engineer (CNPE) (`cnpe`) | CNCF | 18 | English, Español |
+| Cilium Certified Associate (CCA) (`cca`) | CNCF | 5 | English, Español |
+| Istio Certified Associate (ICA) (`ica`) | CNCF | 17 | English, Español |
+| Kyverno Certified Associate (KCA) (`kca`) | CNCF | 31 | English, Español |
+| OpenTelemetry Certified Associate (OTCA) (`otca`) | CNCF | 20 | English, Español |
+| Prometheus Certified Associate (PCA) (`pca`) | CNCF | 26 | English, Español |
+| LPI Web Development Essentials (`lpi-030-100`) | LPI | 18 | English, Español |
+| LPI Open Source Essentials (`lpi-050-100`) | LPI | 18 | English, Español |
+| LPI BSD Specialist (`lpi-702`) | LPI | 28 | English, Español |
+| AWS Certified Cloud Practitioner (CLF-C02) (`aws-clf`) | AWS | 19 | English, Español |
+| Microsoft Azure Fundamentals (AZ-900) (`az-900`) | Microsoft | 11 | English, Español |
+| Google Cloud Digital Leader (`gcp-cdl`) | Google | 14 | English, Español |
+| NVIDIA-Certified Associate: AI Infrastructure and Operations (`nca-aiio`) | NVIDIA | 22 | English |
+| Model Context Protocol Associate (MCPA) (`mcpa`) | Linux Foundation | 17 | English |
+| Certified Kubernetes Network Engineer (CKNE) (`ckne`) | CNCF | 22 | English |
+
+Syllabus frozen, material not written yet: `lpi-020-100`, `lpic-2`, `lpic-3-300`, `lfcs`, `lfca`, `aws-aif`, `ai-901`, `gcp-gail`, `nca-genl`, `ncp-aii`, `terraform-associate`, `terraform-advanced`.
+
+Per-language detail, exam versions and when each was last checked against its
+vendor: [docs/STATUS.md](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/STATUS.md). When a topic is missing in your language the
+site and the API serve English (then Spanish) and say so (`lang_fallback`).
+
+## How to use it
+
+Online at [https://study.cybercirujas.club](https://study.cybercirujas.club/) (nothing to install), with Docker, offline with a local model, from your own AI agent, over
+the REST API or the command line: [**docs/USING.md**](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/USING.md).
+
+## Contributing
+
+- **Found a mistake in the material?** Open an
+[issue](https://github.com/villadalmine/study-cybercirujas/issues) with the
+certification, topic and language (e.g. `cka 1.1 es`), the sentence that is
+wrong, and the **official documentation** that shows it. Content is checked
+against official sources, not opinions — the link is what makes a report
+actionable.
+- **Translation fixes** are welcome as pull requests editing the
+`content.md` / `exercises.md` of that language. Keep code blocks, commands and
+URLs exactly as in the English source.
+- **Code and checks**: `make setup && make test` runs the same offline checks
+as CI (no API key, no model). Before you push, `make pr-check` runs what CI
+runs on a PR (`QUICK=1`: about a minute)
+([how](https://github.com/villadalmine/study-cybercirujas/blob/main/CONTRIBUTING.md#check-before-you-push)).
+
+Everything else — conventions, provenance for hand edits, new labs, the test
+matrix — is in [**CONTRIBUTING.md**](https://github.com/villadalmine/study-cybercirujas/blob/main/CONTRIBUTING.md). How each part works, in short answers:
+[docs/FAQ.md](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/FAQ.md). How decisions are made:
+[docs/GOVERNANCE.md](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/GOVERNANCE.md). [Code of Conduct](https://github.com/villadalmine/study-cybercirujas/blob/main/CODE_OF_CONDUCT.md).
+
+## Contributors
+
+Recognizing code, content, bug reports, ideas, reviews and tests with the
+[All Contributors specification](https://allcontributors.org/en/reference/specification/).
+
+## AI-generated content
+
+Every topic — theory, exercises, labs and translations — was **written by
+large language models** (Anthropic Claude Opus and Fable models, and Google
+Gemini for part of the corpus) from each certification's official syllabus,
+under human direction and with the mechanical checks above. No topic is
+human-authored, and **no check proves that an explanation is true**: a
+confident, well-cited, wrong paragraph passes them all
+([docs/AUDITOR_DESIGN.md](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/AUDITOR_DESIGN.md)). Use it as a study aid; the
+official documentation each topic cites is the authority.
+
+How each topic is generated and checked, what "deterministic" means here, and
+what no check covers yet: [**docs/FAQ.md**](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/FAQ.md).
+
+**Trust & audit.** Do not take our word for it: [docs/audit/](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/audit/README.md) is the self-audit template
+we check this repo with. Run it yourself (a person or an AI agent), compare auditors with
+`scripts/audit_compare.py`, and [propose a criterion](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/audit/README.md#propose-a-new-criterion).
+
+Which model wrote what is recorded per topic in its `meta.yaml`, shown on every
+page of the site and in the API's `generated_by`, and aggregated in
+[docs/MODELS.md](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/MODELS.md). That per-topic provenance and this notice are the
+project's transparency layer under
+[EU AI Act Article 50](https://artificialintelligenceact.eu/article/50/).
+
+## For maintainers
+
+| Document | What it is |
+| --- | --- |
+| [docs/FAQ.md](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/FAQ.md) | how each part works, with links to the code that proves it: generation, determinism, groundedness, sources, translations, labs, Killercoda, the bot, the quality score, reviews, releases, deployment, and the known gaps |
+| [CONTRIBUTING.md](https://github.com/villadalmine/study-cybercirujas/blob/main/CONTRIBUTING.md) · [docs/GOVERNANCE.md](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/GOVERNANCE.md) · [docs/PRINCIPLES.md](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/PRINCIPLES.md) | how to contribute and which tests must pass · how decisions are made · the rules the project holds itself to |
+| [docs/OPERATING.md](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/OPERATING.md) | generating, checking and publishing: `make next`, milestones, backends, `.env`, the quality ladder, the unattended timer |
+| [docs/DEPLOY.md](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/DEPLOY.md) | deploying the site to Kubernetes with Helm: image per architecture, preflight, verify, rollback, upgrade notes |
+| [docs/WORKFLOW.md](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/WORKFLOW.md) | the content cycle (snapshot → generate → audit → publish) and its failure modes |
+| [docs/DEVELOPERS.md](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/DEVELOPERS.md) | the API, running your own copy, building on the corpus |
+| [docs/ROADMAP.md](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/ROADMAP.md) · [docs/BACKLOG.md](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/BACKLOG.md) | what is next and why · open design questions |
+| [CHANGELOG.md](https://github.com/villadalmine/study-cybercirujas/blob/main/CHANGELOG.md) · [docs/HISTORY.md](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/HISTORY.md) | what each release changed · the dated record up to 2026-10-16 |
+| [docs/STATUS.md](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/STATUS.md) · [docs/MODELS.md](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/MODELS.md) | generated: completeness per language · which model wrote what |
+| [docs/](https://github.com/villadalmine/study-cybercirujas/blob/main/docs) | design studies: [study bot](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/STUDY_BOT_DESIGN.md), [auditor](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/AUDITOR_DESIGN.md), [AI certifications](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/AI_ROADMAP.md), [backends](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/BACKEND_COMPARISON.md), [translation](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/TRANSLATION_STUDY.md), [dev tools](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/DEVTOOLS.md), [cleanup: disk and docs](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/CLEANUP.md) |
+
+## Licence
+
+Code and material: [Apache License 2.0](https://github.com/villadalmine/study-cybercirujas/blob/main/LICENSE). The exam syllabi the material
+derives from belong to their vendors; details in
+[docs/DEVELOPERS.md](https://github.com/villadalmine/study-cybercirujas/blob/main/docs/DEVELOPERS.md#licence).
+
+## ⚖️ Aviso Legal y de Marcas Registradas / Legal & Trademark Disclaimer
+
+**Español.** study-cybercirujas es un proyecto educativo independiente y de
+código abierto. No está afiliado, patrocinado, respaldado ni aprobado por el
+Linux Professional Institute (LPI), The Linux Foundation, la Cloud Native
+Computing Foundation (CNCF), la Agentic AI Foundation (AAIF), Amazon Web
+Services (AWS), Google, Microsoft, HashiCorp (una empresa de IBM) ni NVIDIA.
+Los nombres de las certificaciones, los códigos de examen y las marcas
+mencionadas (por ejemplo LPIC, Linux Essentials, CKA, CKAD, CKS, KCNA, LFCS,
+MCPA, AWS Certified, Azure, Google Cloud, Terraform o NVIDIA-Certified)
+pertenecen a sus respectivos dueños y se usan solo con fines descriptivos e
+identificativos (_nominative fair use_). Linux® es marca registrada de Linus
+Torvalds; Kubernetes® es marca registrada de The Linux Foundation. El material
+de estudio (`content.md`, `exercises.md`) y los laboratorios prácticos
+(`break_fix.sh`) son material original, generado de forma independiente a
+partir de los temarios públicos oficiales que cita cada tema. Este repositorio
+no contiene y no acepta _braindumps_, preguntas reales de examen ni material
+protegido por acuerdos de confidencialidad (NDA): una contribución así se
+cierra sin mergear y se puede reportar
+([regla de contribución](https://github.com/villadalmine/study-cybercirujas/blob/main/CONTRIBUTING.md#no-braindumps)).
+
+**English.** study-cybercirujas is an independent, open-source educational
+project. It is not affiliated with, sponsored by, endorsed by or approved by
+the Linux Professional Institute (LPI), The Linux Foundation, the Cloud Native
+Computing Foundation (CNCF), the Agentic AI Foundation (AAIF), Amazon Web
+Services (AWS), Google, Microsoft, HashiCorp (an IBM company) or NVIDIA.
+Certification names, exam codes and the trademarks mentioned (for example
+LPIC, Linux Essentials, CKA, CKAD, CKS, KCNA, LFCS, MCPA, AWS Certified,
+Azure, Google Cloud, Terraform or NVIDIA-Certified) belong to their respective
+owners and are used only for descriptive and identification purposes
+(_nominative fair use_). Linux® is the registered trademark of Linus Torvalds;
+Kubernetes® is a registered trademark of The Linux Foundation. The study
+material (`content.md`, `exercises.md`) and hands-on labs (`break_fix.sh`)
+are original material, produced independently from the public official
+syllabi each topic cites. This repository does not contain and does not
+accept _braindumps_, real exam questions or material covered by
+non-disclosure agreements (NDA): such a contribution is closed without merging
+and can be reported ([contribution rule](https://github.com/villadalmine/study-cybercirujas/blob/main/CONTRIBUTING.md#no-braindumps)).

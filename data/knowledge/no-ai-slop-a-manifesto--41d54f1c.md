@@ -1,0 +1,906 @@
+---
+title: "No AI Slop: A Manifesto"
+notion_id: 41d54f1c-7d23-81ac-b0f6-dbd177368bd9
+notion_url: https://app.notion.com/p/No-AI-Slop-A-Manifesto-41d54f1c7d2381acb0f6dbd177368bd9
+last_edited: 2026-11-19T05:52:00.000Z
+source_url: https://www.slopmanifesto.com/
+tags: ["English", "Agile", "Artificial Intelligence (AI)", "Career Growth", "Article", "Blog", "Medium"]
+---
+## No AI Slop: A Manifesto
+
+_Written by the speakers and attendees of AIE Code Summit 2026_
+
+In 2001, 17 software engineers and leaders got together at a ski lodge in Snowbird, Utah to understand the biggest challenge of their time: heavyweight, documentation-driven software development processes.
+
+Out of this we got the [Agile Manifesto](https://agilemanifesto.org/), four values and twelve principles that changed how most of the industry builds software.
+
+Today we convene to build our own manifesto - the No AI Slop manifesto.
+
+AI increasingly helps us write our code, docs, plans, and messages. We've all been on the receiving end of slop, and most of us have sent some too. Through this work, we have come to value:
+
+**Outcomes** over output
+
+**Understanding** over speed
+
+**Our own thinking** over a model's first draft
+
+**Better work** over easier work
+
+**Improving the system** over patching the output
+
+The world moves especially fast these days, but the goal of these resolutions is to embrace our important human role in harnessing AI safely, responsibly, in a way that creates value for everyone, and that will be relevant for years to come.
+
+**We believe:**
+
+1. AI is the most useful tool most of us have ever worked with, but a swarm of agents can produce more work in a single day than a person can review in our lifetime.
+2. Slop is when we put less effort into producing something than we ask the consumer to spend understanding it.
+3. Using AI doesn't necessarily make something slop. Slop happens when we pass AI output along without taking responsibility for the quality or the reader's experience.
+4. AI cannot replace human judgement, it can only amplify our judgement (or lack thereof).
+5. Slop is asymmetric. The cost of producing a thousand-line PR or a ten-page doc is approaching zero, while the cost of reviewing it remains constant.
+6. In code, even before AI, slop proliferates when we repeatedly work around problems instead of solving them correctly. It comes from tools that lean HEAVILY toward adding rather than subtracting.
+7. A lot of slop comes from pressure. Companies are pushing their people to redefine what is humanly possible.
+8. Slop compounds. The more slop sits in our knowledge base, in chat, in code, the more of it the next agent reads and copies.
+9. The more slop flying around a team, the more we lose the will to fight it. Communication and quality get worse over time, not better.
+
+**Thus we the undersigned resolve that:**
+
+1. Human time and attention is incredibly valuable, so we optimize for using it wisely.
+2. We fight slop because AI should make our work better, not just easier.
+3. We optimize systems, tools, and products for efficient elicitation of human intent and for efficient human understanding.
+4. We do our own thinking when working with a model. We explore resources, code, and prior art to truly understand the problem before the work starts.
+5. We own the intent, taste, and consequences of what we ship, however much AI helps us make it.
+6. When an agent wrote something we're sending, we make that clear, and we check the parts that matter before it goes out.
+7. When someone sends us slop, we tell them, kindly, and ask them to review it first. Most of us have needed that same note at some point.
+8. There will always be alpha in reviewing **something**. As models improve, we may stop reading most of the code. We may still review a plan, design, or result, because if we don't, we just get the same output as everyone else.
+9. Agent reviews, linters, and verifiers are useful but not sufficient. For now, we still review at least some subset of the outputs. What subset depends on the stakes.
+10. What shipped, who's using it, and how it's helping them matters FAR MORE than lines of code, prs merged, tokens spent, or the number of agents running in parallel.
+11. Unreviewed output isn't always necessarily bad. One-shot prompts and vibe coding are high leverage tools. "Slop" is bad when it undermines our outcome -- a useful product, a maintainable system, or saving ourselves and our teammates time and energy.
+12. When a mistake shows up twice, we scale ourselves and our team by improving the system and its guardrails. Anything a linter, type checker, or automated check can catch, we let it catch.
+
+**And finally:**
+
+1. None of us has this figured out. We're each relearning what we will and won't accept, and there's no single right answer.
+
+Again, the world moves especially fast these days, but the goal of these resolutions is to embrace our important human role in harnessing AI safely, responsibly, in a way that creates value for everyone, and that will be relevant for years to come.
+
+We look forward to working with the community to evolve these beliefs as the world changes. Comments and feedback on this document are welcome. What is slop? Why does slop happen? Why is slop worth fighting? How do we fight slop?
+
+Special thanks to Philip Kiely, Swyx, Lucas Meijer, Rebecca Bakels, Tejas Kumar, Natalie Serrino, Francisco Javier Arceo, Kent C. Dodds, Ankit Jain, Brandon Waselnuk, Mihail Eric, Justin McCarthy, Raz Berman Gold, Yacine Mahdid, Justin Poehnelt, Lauren Tan, and Kyle Mistele for contributions to this project.
+
+## More resources
+
+- [No More Slop](https://www.youtube.com/watch?v=IoiHI7p12Ao) - swyx declares war on slop, AIE Code Summit, November 2025
+- [Please stop the slop](https://tej.as/blog/please-stop-the-slop) - Tejas Kumar on how he keeps slop out of his own writing
+- [Vibe Coding Our Way to Disaster](https://www.arthropod.software/p/vibe-coding-our-way-to-disaster) - Jake Nations on why the thinking can't be handed to AI, only made bigger by it
+- [Ghostty AI Usage Policy](https://github.com/ghostty-org/ghostty/blob/main/AI_POLICY.md) - Ghostty Maintainers on the importance of human understanding and care
+- [Why Software Factories Fail](https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/wsff.md) - Dex begs us to please keep reading at least some of the code
+
+## Sign the manifesto
+
+Add a gist comment with any or all of: name, company, X handle, LinkedIn, and we'll regularly pull signatures into the manifesto.
+
+> Signed-off by: [any of: name, company, x, linkedin, etc]
+
+## Signatures (821)
+
+- [Dex Horthy](https://x.com/dexhorthy)
+- [Philip Kiely](https://x.com/philipkiely)
+- [Justin McCarthy](https://x.com/BuiltByJustin)
+- [Kent C. Dodds](https://x.com/kentcdodds)
+- [Lauren Tan](https://x.com/poteto)
+- [Tejas Kumar](https://x.com/TejasKumar_)
+- [Francisco Javier Arceo](https://x.com/franciscojarceo)
+- [Dan Kiuna](https://x.com/nadetastic)
+- [Ankit Jain](https://x.com/ankitxg)
+- [Justin Poehnelt](https://x.com/jpoehnelt)
+- [Brian Kennedy](https://x.com/dans_la_cuisine)
+- [Dominik Kundel](https://x.com/dkundel)
+- [Raymond Weitekamp](https://x.com/raw_works)
+- [Chinmay Goyal](https://www.linkedin.com/in/chinmaygoyal/)
+- [Alex Lebedev](https://x.com/nightowl_coder)
+- [John Tokash](https://x.com/jtokash)
+- [Andrew Baker](https://x.com/andrewtorkbaker)
+- [Jd Fiscus](https://x.com/nerding_io)
+- [Will Schenk](https://x.com/wschenk)
+- [Jon McBee](https://www.linkedin.com/in/jon-mcbee/)
+- [Jaidev Shah](https://x.com/JaidevShah4)
+- [Walker Hildebrand](https://x.com/walk_hild)
+- [Eduardo Ortiz Ramírez](https://x.com/eduardomx)
+- [Marcos Sanz](https://www.linkedin.com/in/marcos-sanz-grosson/)
+- [Jonathan Lam](https://www.linkedin.com/in/jonlam92)
+- [Ian Butler](https://x.com/kinglycrow)
+- [Tom Nagengast](https://x.com/tomnagengast)
+- [Alex Volkov](https://x.com/altryne)
+- Chris Hart
+- [Nick Nisi](https://x.com/nicknisi)
+- [Mika Sagindyk](https://x.com/heymikasagi)
+- [Julián Cruciani](https://x.com/crucianijm)
+- Oren Mittman
+- [Eduardo Urias](https://x.com/larsx2)
+- [Carter Leffen](https://x.com/carterleffen)
+- [Nigel Campbell](https://linkedin.com/in/nigel-campbell)
+- [Savva Bojko](https://x.com/savboj)
+- [Josef Fuchshuber](https://www.linkedin.com/in/fuchshuber/)
+- [Neel Modi](https://x.com/stuckinforloop)
+- [Ashley Ha](https://x.com/ashleybchae)
+- [Pierson Marks](https://x.com/piersonmarks)
+- [Jaeyun Ha](https://x.com/jaeyun_ha)
+- [Travis Cline](https://x.com/traviscline)
+- [Abdul Samad MJ](https://x.com/abdulsamadmj)
+- [Siva Nookala](https://www.linkedin.com/in/sivanookala/)
+- [Morten Laursen](https://dk.linkedin.com/in/morten-laursen-b516a61)
+- [Arihant Bansal](https://x.com/arihantbansal)
+- [Farhan Hammad](https://www.linkedin.com/in/farhan-hammad)
+- [Sidhant Goyal](https://x.com/SidhantGoyal8)
+- [Alosh Denny](https://www.linkedin.com/in/aloshdenny/)
+- [Galih Pratama](https://www.linkedin.com/in/galihpratama/)
+- [Yadullah Duman](https://www.linkedin.com/in/yadullah-duman/)
+- [Rizky Faza](https://www.linkedin.com/in/mrfzy)
+- [Stefan Garofalo](https://x.com/stefangarofalo)
+- [Aryan Sharma](https://x.com/aryan2090)
+- [Constantin Rusu](https://x.com/constantin_e21)
+- [Rustan Corpuz](https://x.com/acewhocares)
+- [Otavio Lemos](https://www.linkedin.com/in/otaviolemos)
+- [Glaucia Lemos](https://www.linkedin.com/in/glaucialemos/)
+- [Gabriel Roriz](https://www.linkedin.com/in/gabriel-roriz/)
+- [Thomas Benhamou](https://www.linkedin.com/in/thomas-benhamou/)
+- [Jose Soares](https://www.linkedin.com/in/jphjs/)
+- [Gabriel Medeiros](https://www.linkedin.com/in/gabriel-nunes1/)
+- [Caio Melo](https://www.linkedin.com/in/caio-melo-8b3063188/)
+- [Lucas Forato](https://www.linkedin.com/in/lucas-forato/)
+- [Adrian Kepka](https://www.linkedin.com/in/akepka/)
+- [Mage Deungaro](https://www.linkedin.com/in/magedeungaro)
+- [Adriano Araujo](https://www.linkedin.com/in/araujocode/)
+- [Jesiel Viana](https://www.linkedin.com/in/jesielviana)
+- [Thang Chung](https://www.linkedin.com/in/thangchungatwork)
+- [Pablo Brenner](https://www.linkedin.com/in/brennerpablo)
+- [Felipe Marques](https://www.linkedin.com/in/felipe-marques-89b22538)
+- [Luan F. Oliveira](https://www.linkedin.com/in/luanfelipe1994/)
+- [Leonardo Cândido](https://www.linkedin.com/in/leonardo-teixeira-candido/)
+- [Emile Bergeron](https://www.linkedin.com/in/emilebergeron/)
+- [Pedro Soares](https://www.linkedin.com/in/pedromsoares/)
+- [Kaio Gerhardt](https://www.linkedin.com/in/kaiogerhardt/)
+- [Saulo Castillo](https://www.linkedin.com/in/saulocastillo/)
+- [Jo Van Eyck](https://x.com/jovaneyck/)
+- [Julio Vieira](https://www.linkedin.com/in/juliocvieira/)
+- [Irlan Cidade](https://www.linkedin.com/in/irlancidade)
+- [Yasin Aydın](https://x.com/thediavall)
+- [Andherson Maeda](https://www.linkedin.com/in/andherson-maeda-7bb3771a/)
+- @saariuslystoned
+- [Lucas Pauzies](https://www.linkedin.com/in/lucas-pauzies/)
+- [Romerito Morais](https://www.linkedin.com/in/r0m-m0r/)
+- [Jonathan Loth](https://www.linkedin.com/in/jonathanloth/)
+- [Auri Vincenzi](https://www.linkedin.com/in/aurimrv)
+- [Lonnie James McRorey](https://www.linkedin.com/in/lonnie)
+- [Luc Letoffe](https://x.com/lucletoffe)
+- [David Szczesniak](https://www.linkedin.com/in/david-szczesniak/)
+- [Jean-Mark Wright](https://www.linkedin.com/in/jean-mark-wright/)
+- [Florian Heysen](https://www.linkedin.com/in/florian-heysen/)
+- [Jonny Paylor](https://x.com/jpaylor)
+- Simon Gagnon
+- Nico van Zyl
+- [Joseph Hajjar](https://x.com/hajjarjoseph97)
+- [Eduardo Moreno](https://www.linkedin.com/in/eduardomoreno7)
+- [Hassan Akaou](https://www.linkedin.com/in/comhassan)
+- Swizec Teller
+- Mathieu Audebert
+- [Jo Mändle](https://www.linkedin.com/in/johannes-maendle)
+- [Eduardo Pontes](https://www.linkedin.com/in/oeduardopontes/)
+- [Lyndon Leong](https://www.linkedin.com/in/lyndon-leong-25b704b2/)
+- [Patrick Adamek](https://www.linkedin.com/in/patrick-adamek-codekonzept)
+- [Nicholas Arcolano](https://x.com/arcolano)
+- [Sherwood Callaway](https://x.com/shcallaway)
+- [Rafael Rêgo](https://www.linkedin.com/in/rafael-da-silva/)
+- [James Haworth](https://www.linkedin.com/in/jameshaworthcs/)
+- aspizu
+- [Otavio Siste](https://www.linkedin.com/in/otavio-siste/)
+- mager
+- [Martin Dinstuhl](https://github.com/mdinstuhl)
+- [Susanne Oberhauser-Hirschoff](https://www.linkedin.com/in/susanneoberhauser)
+- [georgeben](https://www.linkedin.com/in/georgeben/)
+- [Mateusz Trybulec](https://github.com/ultcyber/)
+- [Rogério Chaves](https://www.linkedin.com/in/rgrchvs)
+- [Mohab El-Shishtawy](https://www.linkedin.com/in/mohabelshishtawy)
+- [dested](https://x.com/dested)
+- [Brian Stauff](https://x.com/brayneard)
+- [Siyuan Ma](https://github.com/smy20011)
+- [Daniel Vieites](https://www.linkedin.com/in/daniel-vieites)
+- [Robert Poley](https://github.com/sinbhad)
+- Alexander James King
+- [Audrey Tang](https://github.com/audreyt)
+- [John Lester](https://x.com/pathfinder)
+- Achraf Elgh
+- [Guilherme de Almeida](https://www.linkedin.com/in/guilherme-de-almeida-173874295/)
+- @randomcat7815
+- Eric Rizzo
+- [Thiago Anjos](https://github.com/tianjos)
+- [Boris Ozegovic](https://github.com/borisozegovic)
+- [Ivan Pereira](https://x.com/ivanrvpereira)
+- [Ian Lamont](https://www.linkedin.com/in/ianlamont/)
+- [lambda0xe](https://x.com/lambda0xE)
+- [Dale Seo](https://www.linkedin.com/in/daleseo)
+- [V. Sri](https://www.linkedin.com/in/vsrixyz/)
+- [Sebas](https://github.com/sebas5384)
+- [Victor Lis Bronzo](https://www.linkedin.com/in/victor-lis-bronzo/)
+- [JuanMa](https://www.linkedin.com/in/juancamachop/)
+- Erenay
+- [andybak](https://github.com/andybak)
+- [Mihail Istrate](https://www.linkedin.com/in/mihail-istrate/)
+- [Neko Ayaka](https://github.com/nekomeowww)
+- [Brandon Kaplan](https://www.linkedin.com/in/brandonkaplan/)
+- Prakhar SInha
+- Jeremy Orlow
+- [Roman Barlos](https://www.linkedin.com/in/roman-barlos)
+- [J M Rossy](https://www.linkedin.com/in/jmrossy1/)
+- Teejay VanSlyke
+- Nimo Beeren
+- [Stanislav Müller](https://x.com/stanislav)
+- [Justin Bériot](https://www.linkedin.com/in/justinberiot)
+- [Pranav Dhamanage](https://x.com/pranavdhamanage)
+- [Maiquel Leonel](https://linkedin.com/in/maiquelleonel)
+- Dmitry Logvinov
+- Yingchao Huang
+- [Cody Fingerson](https://www.linkedin.com/in/codyfingerson/)
+- [Sam Morrow](https://x.com/sammorrowdrums)
+- [Jonathan Henrique](https://github.com/jonathanmdr)
+- Patrick Covaci
+- [Lucas Santos](https://github.com/LucasSantos27)
+- [Kenji Hiraoka](https://github.com/kenjihiraoka)
+- [Felipe Valencia](https://github.com/felipeva)
+- [Louaye Kazar](https://x.com/louayekazar)
+- [Minho Jang](https://github.com/miinhho)
+- Jack Ammon
+- [Michał Jabczyk](https://github.com/jabczyk)
+- [Nguyen Nguyen](https://github.com/nnguyen)
+- [Brijesh Patel](https://www.linkedin.com/in/brijpatel/)
+- [Haithem Khelif](https://www.linkedin.com/in/haithem-khelif)
+- [Adam Bandel](https://www.linkedin.com/in/adam-bandel/)
+- AL Richi
+- [Neviton Santana](https://github.com/nevitonsantana)
+- [Paulo Reis](https://x.com/paulovitin)
+- [Rafaella Duarte](https://github.com/rafaelladuarte)
+- [Jimmy Jansen](https://www.linkedin.com/in/jimmyjansen93)
+- [Junior paula](https://www.linkedin.com/in/junior-paula)
+- swyx
+- [John Philip](https://github.com/dxphilo)
+- [Diego Chavão](https://www.linkedin.com/in/chavao/)
+- [Abdul Sultan](https://x.com/abd_ulll16)
+- Ivan Vetoshkin
+- Mikey O'Brien
+- [Jagan](https://www.linkedin.com/in/jaganshanmugam/)
+- Aryan Poonacha
+- Isaac Martinez
+- Barry van Oudtshoorn
+- Eero Ruohola
+- Viktor Lee
+- [Rharison Abreu](https://github.com/rharison)
+- [Linghua Jin](https://x.com/LinghuaJ)
+- [Alex Sidorenko](https://x.com/asidorenko_)
+- [Morten Rand-Hendriksen](https://www.linkedin.com/in/mortenrandhendriksen)
+- [Rob Spectre](https://x.com/dn0t)
+- [Justine Akehurst](https://www.linkedin.com/in/justine-akehurst/)
+- Muhammad Zulfikar
+- [Richard Tibbles](https://bsky.app/profile/richardtibbles.bsky.social)
+- [Miles Parker](https://www.linkedin.com/in/milestparker/)
+- [Wolfgang Schmaltz](https://www.linkedin.com/in/wolfgang-schmaltz/)
+- [Jeahong Hwang](https://www.linkedin.com/in/jeahonghwang/)
+- Kiril Angov
+- [Tatiana Ensslin](https://x.com/tatianajiselle)
+- Marco Falcioni
+- [Jan Ruettinger](https://x.com/jan_ruettinger)
+- [Maxime St-Laurent](https://www.linkedin.com/in/maxime-stlaurent)
+- [Junghyun Nam](https://www.linkedin.com/in/rkttu)
+- [Jeayoung Jeon](https://www.linkedin.com/in/jyje)
+- [Nick Heggø](https://github.com/nheggoe)
+- [Yuriy Yarosh](https://github.com/yuriy-yarosh)
+- [Thewind Mom](https://x.com/Thewimo)
+- George Jones
+- [Jongchan Kim](https://www.linkedin.com/in/ace-jckim/)
+- [Nicolas Melo](https://x.com/nicolasmelo)
+- [Seongsu Park](https://www.linkedin.com/in/seongsu-park-ai-engineer)
+- 019ec6e2
+- Oliver Ash
+- [Nathan Broadbent](https://x.com/ndbroadbent)
+- [Alper Halil](https://www.linkedin.com/in/aktasalper)
+- [Hansol Lim](https://www.linkedin.com/in/hsolim/)
+- [Daniel Jeong](https://www.linkedin.com/in/daniel-jeong-aa97b3195/)
+- [Fei CHEN](https://x.com/feichen78)
+- [Jiaqi SHAO](https://x.com/shaojiaqi)
+- Gao Fei
+- [Jarbas Gouveia](https://br.linkedin.com/in/jarbasgouveia)
+- [Kamran Ayub](https://bsky.app/profile/kamranicus.com)
+- Yang Ji
+- Nadir Mims
+- [Wantaek Choi](https://github.com/wantaekchoi)
+- Pablo Gracia
+- [Henrique Mariano](https://www.linkedin.com/in/henrique-mariano21)
+- [Idan Freiberg](https://www.linkedin.com/in/idan-freiberg-b7641738/)
+- Ashton Fagg
+- [YanZhen LI](https://github.com/Edward-lyz)
+- [Lucas Belmont](https://github.com/LucasBelmont)
+- [Geon-Gyu Oh](https://github.com/magatonman)
+- [Yulong He](https://github.com/yulonghe97)
+- [Dominick Thakur](https://www.linkedin.com/in/dominick-thakur)
+- [Sookyom Kim](https://github.com/lordang)
+- [Rizky](https://github.com/rahXephonz)
+- [Nnenna Ndukwe](https://x.com/nnennahacks)
+- [Nicolas Borboën](https://github.com/ponsfrilus)
+- [Ivan Nikolić](https://github.com/niksy)
+- [Saurabh Kumar](https://github.com/theskumar)
+- Aya Hohner
+- Steven Langbroek
+- [Namuk Kim](https://github.com/wsh6922)
+- Max Coplan
+- [Agustin Carrasco](https://github.com/asermax)
+- [Rahul Mansharamani](https://github.com/rahulmansharamani14)
+- Lars Kappert
+- [Suho Han](https://gist.github.com/suho-han)
+- Vincent Driessen
+- [Mathieu Amiot](https://github.com/OtaK)
+- [Francesco Gadaleta](https://github.com/fgadaleta)
+- [Claudio Carcaci](https://github.com/ccarcaci)
+- [Thomas Neil](https://github.com/tn819)
+- @Xelaflash
+- Andrew vdH
+- [Nicolas Cerny](https://x.com/NicolasC3rny)
+- @d3flex
+- [Ravi Ramchandran](https://www.linkedin.com/in/raviramchandran/)
+- [Steve Haupt](https://www.linkedin.com/in/stevehaupt)
+- [Mihai Ciprian Luput](https://github.com/mihaizaurus)
+- [Nemanja Malesija](https://github.com/nemanjamalesija)
+- [Adam Hathcock](https://github.com/adamhathcock/)
+- [Timo Zikeli](https://www.linkedin.com/in/timo-zikeli-ab503a18a)
+- [Daniel Murga Blanca](https://github.com/danimurga)
+- [Rakesh Menon](https://x.com/SublimeCoderX)
+- [Jaeyoon Han](https://www.linkedin.com/in/jaeyoon-han-41a431112/)
+- @isnbh0
+- Jaen S
+- [busiel](https://github.com/aizzia/)
+- [Briggs Song](https://github.com/bunzzeok)
+- Travis Fischer
+- [Luis Dourado](https://x.com/Lutefd)
+- [Mihail Eric](https://x.com/mihail_eric)
+- Emil Stenström
+- [@estebandee](https://github.com/estebandee)
+- Eu-Bin Kim
+- [Benjamin Seidler](https://www.linkedin.com/in/benjamin-seidler)
+- Abhinav Omprakash
+- [Christian Parsons](https://www.linkedin.com/in/chparsons/)
+- [Youngkwon Ko](https://github.com/codeption)
+- [Victor Araújo](https://x.com/verymuchvictor)
+- [Gustavo de Santos](https://www.linkedin.com/in/gustavo-de-santos-garcia)
+- [Dave Doolin](https://github.com/doolin)
+- [@zsgg](https://github.com/zsgg)
+- [Michael Hartman](https://www.linkedin.com/in/michaelahartman/)
+- [Joss Smith](https://www.linkedin.com/in/joss-smith)
+- [Vladimirs Mihailicenko](https://www.linkedin.com/in/vladimirs-mihailicenko-98477278/)
+- [Roland Kákonyi](https://x.com/rolandkdev)
+- [Corentin Méhat](https://www.linkedin.com/in/mehat)
+- [Misho Dungarov](https://www.linkedin.com/in/mihail-dungarov-cfa)
+- [Emilio Núñez Sánchez](https://www.linkedin.com/in/emilionunezsanchez)
+- Jamie Warburton
+- [Saulo Aguiar](https://www.linkedin.com/in/saulo-henrique-a428861aa/)
+- [Andreas Wehr](https://github.com/grmlin)
+- [Mike Watkins](https://www.linkedin.com/in/mikewatkins-net/)
+- [Volodymyr Tsukur](https://github.com/vtsukur)
+- Ivan Zakutni
+- [Manosai Eerabathini](https://x.com/manosaie)
+- [Gabor Schmied](https://www.linkedin.com/in/gabor-schmied)
+- Sonja Musicki
+- [Isaac Maciel](https://www.linkedin.com/in/isaac-maciel-araujo/)
+- Ping Lu
+- [Vikas Jadhav](https://www.linkedin.com/in/vikascjadhav/)
+- Aleksander Palamar
+- [Nicolas Siver](https://www.linkedin.com/in/nicolassiver/)
+- [Nathan Baines](https://www.linkedin.com/in/nathan-baines-023260331)
+- [Chris Weed](https://github.com/Kikketer)
+- [Yaping Xin](https://github.com/XinYaping)
+- [Islem Maboud](https://x.com/Ipenywis)
+- [Pedro Sales](https://www.linkedin.com/in/pedrohen8)
+- [Michael Ludden](https://x.com/michael_ludden)
+- [Minki Cho](https://www.linkedin.com/in/akirose/)
+- [Max Hager](https://x.com/yachty66)
+- [Ben Cipollini](https://www.linkedin.com/in/ai-for-startups/)
+- [James Landon](https://github.com/jly36963)
+- [Russ Poldrack](https://github.com/poldrack/)
+- [Aleksa Šuković](https://x.com/aleksa_sukovic)
+- [Jiri Maly](https://www.linkedin.com/in/jirimaly/)
+- [R. Alex Anderson](https://github.com/alexanderson1993)
+- Sebastian Mauch
+- Kush Srivastava
+- [Adnan Ahmed Khan](https://www.linkedin.com/in/adnahmed)
+- [Tiago Rodrigues](https://www.linkedin.com/in/tiagaoum)
+- [Julie Vogelman](https://www.linkedin.com/in/julie-vogelman)
+- [Antonio Cardenas](https://www.linkedin.com/in/antoniocardenas1/)
+- Kohányi Róbert
+- [Pedro Ribeiro](https://www.linkedin.com/in/pedro-ribeiro-dev/)
+- [Cleidy Fumança](https://github.com/cleidyDev)
+- [Jean-Christophe Praud](https://www.linkedin.com/in/jcpraud)
+- [Anil Okay](https://www.linkedin.com/in/anilokay)
+- [Thoriq Akbar](https://www.linkedin.com/in/thoriqakbar0/)
+- [Naufal](https://linkedin.com/in/m-naufal-i)
+- [Kyle Mistele](https://x.com/0xblacklight)
+- [Marcin Gościniak](https://www.linkedin.com/in/marcin-go%C5%9Bciniak-6631a263/)
+- [Satish Gannu](https://www.linkedin.com/in/sgannu/)
+- [Danylo Fedorov](https://linkedin.com/in/danylo-fedorov)
+- [Mehul Mehta](https://github.com/kloudtaxi)
+- ToinsWellness LLC
+- [Sam Vloeberghs](https://be.linkedin.com/in/samvloeberghs)
+- [Samet Alpdeger](https://www.linkedin.com/in/samet-alpdeger-291a132b5/)
+- [Tereza Tizkova](https://x.com/tereza_tizkova)
+- [@soetang](https://github.com/soetang)
+- Ashik Nesin
+- [Benjamin Doherty](https://www.linkedin.com/in/bangpound)
+- [Damian Galetto](https://www.linkedin.com/in/damiangaletto/)
+- [Philip Agenmonmen](https://x.com/AgenP_)
+- [Jay Hilwig](https://www.linkedin.com/in/jayhilwig/)
+- [Farzad Majidfayyaz](https://www.linkedin.com/in/farzad-majidfayyaz/)
+- [Łukasz Czarnecki](https://gist.github.com/lookashc)
+- [Max Kanat-Alexander](https://x.com/mkanat)
+- [Khalid Alhazmi](https://www.linkedin.com/in/khalidalhazmi)
+- [Indranil Palit](https://x.com/IndranilPalit1)
+- [Olle Friman](https://github.com/helloimwit)
+- [Taras Yaremkiv](https://www.linkedin.com/in/taras-yaremkiv-a44217ab/)
+- [Hanson Wang](https://github.com/hansonw)
+- [Kenneth Ahlstrom](https://x.com/AtSynct)
+- Joshua Spingler
+- [Avery Jones](https://x.com/Avery_Jones)
+- [Jaroslav Svarc](https://www.linkedin.com/in/svrc/)
+- [AfnanElnomrosy](https://www.linkedin.com/in/afnanelnomrosy89/)
+- [Christoph Baker](https://x.com/epanopticon)
+- [Devin Stein](https://github.com/devstein)
+- [Jan Zubíček](https://www.linkedin.com/in/janzubicek/)
+- [Torben Haack](https://github.com/t128n)
+- [Lakshya Agarwal](https://github.com/lakshyaag/)
+- [Kevin McBride](https://github.com/krmcbride/)
+- [Alex Cavalcante](https://www.linkedin.com/in/alxcaval/)
+- [Gabriel Oliveira](https://github.com/oliveigah)
+- [Garry Pshonik](https://www.linkedin.com/in/garry-pshonik/)
+- [Isaac Whitfield](https://github.com/whitfin)
+- Hojae Lee
+- Jimmy Hartzell
+- [Nader Dabit](https://x.com/dabit3)
+- [Peter Trizuliak](https://x.com/trizo_za)
+- [Prajwal DSouza](https://github.com/prajwalsouza)
+- @gabrielbnadev
+- John Mondano
+- [Bob Sullivan](https://x.com/bsulivn)
+- [Igor Bracic](https://www.linkedin.com/in/igorbracic)
+- [Karen Sarkisyan](https://github.com/ksarkisyan)
+- [Mark Oliinyk](https://www.linkedin.com/in/markoliinyk/)
+- [dsaccon](https://x.com/dsaccon)
+- [Sérgio Ramos](https://github.com/sergioramos/)
+- [Zayd Mohammed](https://gist.github.com/Zaydiscool777)
+- [basteau](https://x.com/itsbasteau)
+- [Josh Teperman](https://github.com/JoshTeperman)
+- [Chris Covington](https://x.com/_ChrisCovington)
+- [Nick Checan](https://x.com/nickchecan)
+- [erastudil](https://github.com/erastudil)
+- @asherccohen
+- [Abdullah Yildirim](https://www.linkedin.com/in/ayildirim21/)
+- [Aditya Khandelwal](https://www.linkedin.com/in/aditya-khandelwal)
+- [Siddharth Sharma](https://www.linkedin.com/in/siddharth-sharma-714136a3)
+- [Panu Horsmalahti](https://x.com/panuhorsmalahti)
+- [Chris Rickard](https://www.linkedin.com/in/chrickard)
+- [Simon Quick](https://www.linkedin.com/in/simonquick/)
+- Kai.hamburg
+- [Vinicius de Moura Silveira](https://x.com/vmsilveira_dev)
+- @tiagoweb
+- @deminoth
+- Mac Shine
+- [Jeriel del Prado](https://github.com/jerieljan)
+- [Marcin Kossakowski](https://x.com/martez81)
+- [Zane](https://x.com/xvin_zr)
+- [Tyler Barstow](https://x.com/tylerbarstow)
+- [Oleg Puzanov](https://x.com/pu3an0v)
+- [Lukas Indre](https://github.com/lukasindre)
+- [Pete Murphy](https://github.com/pete-murphy)
+- [Juan Escalada](https://github.com/jescalada)
+- [Tutku Güngör](https://github.com/IcyPassionis)
+- [Paul Vixie](https://github.com/vixie)
+- [Hyeonggeun Oh](https://www.linkedin.com/in/hyeonggeun-oh-760a5b240)
+- [Tomohiro Nishimura](https://github.com/sixeight)
+- [Seb Garrioch](https://github.com/SebGSX)
+- [Manish Bhatt](https://www.linkedin.com/in/manishbhatt132123/)
+- [Cheongsan Kim](https://www.linkedin.com/in/cheongsan)
+- Yoseph Leonardo Samodra
+- [Hyunwoo Kim](https://github.com/Kcrong)
+- [Ulderico Cirello](https://x.com/ucirello)
+- [Harris Malik](https://www.linkedin.com/in/harrismalik04)
+- Paul Kuruvilla
+- [Sam Morgan](https://x.com/sjmog1)
+- Micr0
+- [Dmytro Hoi](https://www.linkedin.com/in/dmytrohoi)
+- @iwt-brianudensi
+- [Simon Gyimah](https://github.com/S1riU5)
+- [Berit Brouer](https://www.linkedin.com/in/beritbrouer)
+- [Kaan Ozdokmeci](https://x.com/kaanozdokmeci)
+- [Marco Luciano](https://www.linkedin.com/in/mluciano/)
+- [Felipe Rosa](https://x.com/ferosa888)
+- [Beomjin Ahn](https://github.com/beomjin-ahn)
+- [João Galego](https://github.com/JGalego)
+- [Genesis Tadeo](https://github.com/getadeo)
+- [Mohsin Iqbal](https://github.com/mohsincsv)
+- [Yoav Tigerman](https://www.linkedin.com/in/yoav-tigerman/)
+- [Moetazbellah Samy](https://www.linkedin.com/in/moetazbellah-samy)
+- [Eaon Pritchard](https://www.linkedin.com/in/eaonpritchard)
+- Holger Franzen
+- [Beat Fluri](https://www.linkedin.com/in/bfluri/)
+- [Rakim](https://x.com/_rakim0)
+- [Clément Chardine](https://github.com/eyusd)
+- [Alberto Dorizza](https://www.linkedin.com/in/albertodorizza/)
+- [Alessandro Cancemi](https://www.linkedin.com/in/cancemi/)
+- [click6067](https://github.com/click6067-ship-it)
+- [Yuri Andriaccio](https://github.com/Yurand2000)
+- @cod0216
+- Christian Rotzoll
+- [Jeonghun Choi](https://github.com/sambamons)
+- [VincentH.NET](https://github.com/VincentH-Net)
+- [Saahitya E](https://www.linkedin.com/in/saahitya-edamadaka/)
+- [Dragos Musetescu](https://x.com/dragosdm)
+- [Rémi Prévost](https://x.com/remi)
+- Johann-Peter Hartmann
+- [Vasiliki Doropoulou](https://www.linkedin.com/in/vasilikidoropoulou/)
+- [Christopher Neff](https://x.com/chris_neff_pgh)
+- [Seb Ben M'Barek](https://x.com/sebbenmbarek)
+- @congard
+- [Antonino Rau](https://github.com/cnantoninor)
+- Kamol Treewatchararat
+- [Diego Paniago](https://www.linkedin.com/in/diego-garcia-bernardes-paniago-87238653/)
+- [Sahil Bansal](https://x.com/bansal_saahil)
+- [Paulo Brito](https://x.com/paulorsbrito)
+- [Dario Djuric](https://x.com/dario_djuric)
+- Sven Zemp
+- [Larry Swanson](https://www.linkedin.com/in/larryswanson)
+- Gautam Guliani
+- [Julf Helsingius](https://www.linkedin.com/in/julfhelsingius/)
+- [Ian Cooper](https://x.com/ICooper)
+- [Antonio Prado](https://github.com/Antonio-Prado)
+- Pierre Etchemaite
+- [Wilson Capitão](https://github.com/wcapitao)
+- Sam Keen
+- [Sepand Dyanatkar](https://x.com/sepandd)
+- [Mack Nagashima](https://www.linkedin.com/in/mackn)
+- Jan Terpstra
+- Artem Strakhov
+- [Ben Link](https://www.linkedin.com/in/benjamindlink/)
+- [Tino Thamjarat](https://www.linkedin.com/in/tino-thamjarat-632550a5/)
+- [Daniel Taveras](https://www.linkedin.com/in/taveras/)
+- [Mikel Ros](https://www.linkedin.com/in/mikelros/)
+- Drew Hoover
+- [Apostolos Karavias](https://www.linkedin.com/in/apostoloskaravias)
+- Claude promonet
+- [Martin Lichtin](https://www.linkedin.com/in/lichtin/)
+- [John Kronenberg](https://www.linkedin.com/in/johnkronenberg)
+- [Michal Formánek](https://x.com/miformanek)
+- Phil Cockfield
+- Chris Williams
+- Jonah Langenbeck
+- [Nathaniel Williams](https://www.linkedin.com/in/natewilliams-xyz/)
+- [Brian Carpio](https://www.linkedin.com/in/briancarpio/)
+- [Luís Patrāo](https://www.linkedin.com/in/lpatrao)
+- [Aparna Prabhu](https://www.linkedin.com/in/aparna-prabhu-a5a1868)
+- Marco Polita
+- [Jesse Harlin](https://x.com/5imian)
+- Abdelkader Boudih
+- Kyungha Jeong
+- [@GreentimeSolutions](https://github.com/gts1andy)
+- [@quadrified](https://x.com/quadrified)
+- [brooklyn!](https://github.com/OutThisLife)
+- [Sim Jun Bo](https://www.linkedin.com/in/simuelunbo)
+- [Kevin Aleman](https://www.linkedin.com/in/kevin-alem%C3%A1n)
+- @0tany
+- @muldercw
+- @shllomi
+- [Vishal Sharma](https://www.linkedin.com/in/makeavish)
+- [CJ Na](https://www.linkedin.com/in/cj-na-carvis/)
+- [Mikhail Sholokhov](https://www.linkedin.com/in/-mikhail-sholokhov)
+- [Baishampayan Ghose](https://github.com/ghoseb/)
+- [Changsoo Han](https://github.com/hanc1208)
+- [Kang Hyojun](https://github.com/kanghyojun)
+- [Kavii Suri](https://www.linkedin.com/in/kavii-suri)
+- [EungHyun Kim](https://www.linkedin.com/in/eunghyunkim24)
+- [Dimitar Tnokovski](https://www.linkedin.com/in/tnokovski)
+- [Wonyoung Yoo](https://github.com/yoowonyoung)
+- [Pratap Bhaskar](https://www.linkedin.com/in/pratapbhaskar/)
+- [Sean Handley](https://linkedin.com/in/slhandley)
+- [Isaac Ferreira @ Wellhub](https://www.linkedin.com/in/isaac-luiz-vieira-ferreira)
+- [Jackson Kelly](https://x.com/_j6js)
+- Dandi Wong
+- [@kerkkoh](https://github.com/kerkkoh)
+- @kaiwalter
+- [Bernardino Sassoli de Bianchi](https://www.linkedin.com/in/bsassoli)
+- [Horace Chan](https://www.linkedin.com/in/horacechan/)
+- [Jocelyn Englund](https://github.com/jocelynenglund)
+- [Parker Grimes](https://x.com/pagrimes)
+- Mirco Poretti
+- @thiyageshvenkat
+- [Dmytro Usik](https://www.linkedin.com/in/dmytro-usik-a29479132/)
+- @Tihan-Nico
+- @javigutierrezfer
+- Jaehong Oh
+- [Mathieu Cartoixa](https://www.linkedin.com/in/cartoixa/)
+- @ruslan-sedziukh
+- [Álvaro Orduna León](https://github.com/alorle)
+- lurgi
+- [Youwan Mahé](https://github.com/youwanM/)
+- [Ahmet Atay](https://github.com/atayahmet/)
+- [Simon Slănină](https://www.linkedin.com/in/sslanina/)
+- @tanguyantoine
+- [Ishaan Mehta](https://www.linkedin.com/in/ishaan-mehta)
+- @tertek
+- Bae Donghoon
+- Stefano Perfili
+- ChrisCoCreated
+- [Yevgen Kovalienia](https://www.linkedin.com/in/kovalienia/)
+- Daniel Gomez
+- [Dipta Mahardhika](https://www.linkedin.com/in/dmahardhika/)
+- [Martin Keiblinger](https://www.linkedin.com/in/martin-keiblinger-8204871a9/)
+- [Nicolas Rouanne](https://x.com/nicolasrouanne)
+- Fiodar Sazanavets
+- [Simon Hohenadl](https://www.linkedin.com/in/simon-hohenadl/)
+- [Caybo Kotzé](https://www.linkedin.com/in/caybo-kotze/)
+- [Gavin Thomas](https://www.linkedin.com/in/gavinthomas/)
+- [Steve Fenton](https://www.linkedin.com/in/stevefenton/)
+- [Héloïse Gaidon](https://github.com/heloise-insify)
+- [Pierre Louis Guidez](https://www.linkedin.com/in/guidezpl/)
+- [Nikhil Mehra](https://in.linkedin.com/in/nikhilm98)
+- [Konstantin Escher](https://www.linkedin.com/in/konstantinescher/)
+- [Tiago Oliveira](https://github.com/tiagoliveira9)
+- [Thiago Lunardi](https://gist.github.com/thiagolunardi)
+- Zahle Khan
+- [Dimitris Athanasiou](https://www.linkedin.com/in/dimitrios-athanasiou-9a554a25/)
+- [Taehee Lee](https://www.linkedin.com/in/taehee-brad-lee)
+- [Martin O'Gorman](https://www.linkedin.com/in/martin0gorman/)
+- [Reinout van Schouwen](https://linkedin.com/in/reinoutvanschouwen)
+- [Xmarlandoj](https://x.com/Xmarlandoj)
+- Roman Pfarrhofer
+- [Patrick Metzdorf](https://x.com/batjko_pat)
+- [Ofek Shilon](https://www.linkedin.com/in/ofekshilon/)
+- [Martin Gabriel Fleck](https://www.linkedin.com/in/martin-fleck/)
+- [Hristiyan Dodov](https://x.com/yandodov)
+- Aashrith Katukuri
+- [David Palma](https://github.com/PalmaITEM)
+- [Federico Zuppa](https://www.linkedin.com/in/federicozuppa/)
+- [doohyun cho](https://github.com/doocho)
+- [Marty Masliukas](https://www.linkedin.com/in/marty-m-938b22189/)
+- [Valentin Kiselev](https://github.com/mrexox)
+- [Marcos Marano](https://www.linkedin.com/in/marcos-marano/)
+- [Denis Tokarev](https://www.linkedin.com/in/devlato/)
+- [Vytautas Virkietis](https://www.linkedin.com/in/vytautas-virkietis-a8a28b154)
+- [Iván Mosquera Paulo](https://github.com/ivmos)
+- [Bey Alivand](https://www.linkedin.com/in/beyalivand/)
+- [Alexander Polevoy](https://www.linkedin.com/in/0xai001)
+- [Owen Valentine](https://github.com/chessmango)
+- [Ren Karuizawa](https://github.com/yeahhren)
+- [Konstantinos Stoupas](https://github.com/wakahuula)
+- [Nate Young](https://www.linkedin.com/in/nate-io)
+- Rahul Singh
+- [Ray Djajadinata](https://www.linkedin.com/in/rayfdj/)
+- [Peter Siska](https://github.com/peschee)
+- [Allan Wiese](https://www.linkedin.com/in/allan-wiese/)
+- [Myriam Gantner](https://www.linkedin.com/in/myriam-gantner-42313a201/)
+- [Johnny LeHane](https://linkedin.com/in/jwlehane)
+- [Daroo Choi](https://www.linkedin.com/in/daroo-choi-9729571b5)
+- [Kevin Cupp](https://www.linkedin.com/in/kevincupp/)
+- [Neill Robson](https://www.linkedin.com/in/neillrobson/)
+- [Eugenio Rovira](https://www.linkedin.com/in/eugenio-rovira-68168193/)
+- [Lawrence Gray](https://www.linkedin.com/in/larry-gray-phd/)
+- [Xavier San Sebastián](https://www.linkedin.com/in/xsansebastian/)
+- [Andre Paim](https://github.com/andrepaim)
+- [Stan Paulides](https://www.linkedin.com/in/stanpaulides/)
+- Gabo Esquivel
+- [Nick Lucas](https://x.com/NckLcs)
+- Lucas Souto
+- [Victor Salles](https://www.linkedin.com/in/victor-salles-dev/)
+- [Murugappan](https://github.com/murugu-21)
+- [Tristan Jacobs](https://github.com/TristanJacobs89)
+- Patrick Xin
+- [Murilo Mendonca](https://github.com/murilommen)
+- [Og J. Ramos](https://github.com/jamiros)
+- [Juan Escobar](https://github.com/juanescobarsv)
+- [Russell Slater](https://github.com/russellslater/)
+- [Alain Papazoglou](https://linkedin.com/in/alain)
+- [@DaveMcComb](https://www.linkedin.com/in/davemccomb/)
+- [Roger Collins](https://www.linkedin.com/in/roger-collins-a34508109/)
+- [Tobias Kocur](https://github.com/tobiaskocur)
+- [Jaewoo Song](https://www.linkedin.com/in/jaewoo-song)
+- @tropin
+- [Felipe Reis](https://www.linkedin.com/in/felipe7/)
+- [Dominik Kropp](https://www.linkedin.com/in/dominik-kr/)
+- [Devang Borkar](https://x.com/DevangBorkar)
+- [Leonie Sophie Weber](https://www.linkedin.com/in/leonie-sophie-weber/)
+- [Felix Balaev](https://x.com/daadaptar)
+- [Thomas-Louis Simard](https://github.com/ThomZz)
+- [Cameron Wortlehock](https://www.linkedin.com/in/cameron-wortlehock/)
+- @igor-matsuzaki
+- @oz-gd
+- [Tamas Kurics](https://github.com/ghostrider77)
+- [Zlatko Alomerovic](https://github.com/zalom)
+- [Denver Peterson](https://x.com/denverpeterson)
+- [Omer Gilad](https://www.linkedin.com/in/omer-gilad)
+- [Emmanuel Donnet](https://x.com/its_hebilicious)
+- [Jonathan Selander](https://www.linkedin.com/in/jonathan-selander/)
+- Trent Nix
+- [Christopher Story](https://www.linkedin.com/in/christory)
+- [Till Hoffmann](https://www.linkedin.com/in/tillahoffmann/)
+- [Thomas Mustier](https://x.com/thomasmustier)
+- [Philip Brembeck](https://github.com/philipbrembeck)
+- [Viktor Charypar](https://github.com/charypar/)
+- [Maxence LEFEBVRE](https://github.com/maxence-lefebvre)
+- [Shawn Kelley](https://github.com/shawn-kelley)
+- [Michael Stricklen](https://x.com/AlabamaMike)
+- [Patrick Kolencherry](https://x.com/kolencherry)
+- [Reza Arani](https://www.linkedin.com/in/reza-arani/)
+- [Tiago Sousa](https://www.linkedin.com/in/tiagojoao/)
+- Kirk Ismay
+- Malcollm Hollmes
+- Bruno Panuto
+- [Sha Liu](https://www.linkedin.com/in/shaliu26/)
+- [Erik Nayan](https://www.linkedin.com/in/eriknayan/)
+- [George Sakkis](https://github.com/gsakkis)
+- [Alex Godfrey](https://x.com/onetwentyone)
+- [@lucasmeijer](https://x.com/lucasmeijer)
+- [Steve Della Valentina](https://github.com/sdvim)
+- [Hurchel Young](https://github.com/3MUl0R)
+- [Jasper Croome](https://x.com/CrasperJoome)
+- [Rodrigo Melo](https://github.com/rodrigodma)
+- [Pavel Potáček](https://www.linkedin.com/in/pavelpotacek/)
+- [Adrianno Esnarriaga](https://www.linkedin.com/in/adrianno)
+- Jonas Eriksson
+- [Tim Horlacher](https://www.linkedin.com/in/tim-horlacher)
+- [Anwar MEQOR](https://x.com/runtimebug)
+- [Panos Dalitsouris](https://www.linkedin.com/in/panoscodes)
+- Roberto Martinez
+- [Aditya Lahiri](https://www.linkedin.com/in/adityalahiri)
+- [Marc Hamel](https://www.linkedin.com/in/hamelcubsfan/)
+- Nicolás Bottarini
+- [Mannendri Olivares](https://x.com/mannendri)
+- [Pepijn Senders](https://x.com/p3pijn_jasper)
+- [Alex Rukletsov](https://github.com/rukletsov/)
+- [Lorena S. de Oliveira](https://www.linkedin.com/in/lorena-sa-de-oliveira/)
+- [Christos Pantoleon](https://www.linkedin.com/in/cpantoleon)
+- [Jon Zeolla](https://www.linkedin.com/in/jonzeolla)
+- [Priyank Vora](https://www.linkedin.com/in/priyankvora/)
+- [Rishni Ratnam](https://www.linkedin.com/in/rishniratnam/)
+- [Alan R. Fachini](https://linkedin.com/in/alanfachini)
+- [Dave Smith](https://x.com/devunwired)
+- [Haoxiang Jia](https://x.com/jiatastic520)
+- narayann
+- c4rras
+- [Joshua Aung](https://github.com/joshuaaung)
+- [Juan Gaitán-Villamizar](https://github.com/0xjgv/)
+- [Dan Shaw](https://twitter.com/dshaw)
+- Fernando Carvalho
+- [John Yu](https://x.com/yubrew)
+- [Engin Diri](https://www.linkedin.com/in/engin-diri/)
+- [Nihaal Manaf](https://www.linkedin.com/in/nihaal-manaf/)
+- [Michele Giacobazzi](https://www.linkedin.com/in/michelegiacobazzi)
+- [Ali Aliyev](https://www.linkedin.com/in/alialiev)
+- [Pierre Tomasina](https://x.com/pierozi)
+- [Nick Trierweiler](https://x.com/siroccomask)
+- Richo
+- [James C. Davis](https://www.linkedin.com/in/jamescaffalldavis/)
+- [Emilio Spatola](https://www.linkedin.com/in/emilio-spatola/)
+- [Amber Bennoui](https://www.linkedin.com/in/amber-bennoui/)
+- [Hitesh Kumar Saini](https://github.com/alexmercerind)
+- [Gilson Urbano](https://www.linkedin.com/in/gilsonurbano)
+- [Stephen O'Neil](https://github.com/Stephen-ONeil)
+- [Kevin Li](https://x.com/_outsidertrader)
+- [Raid Teyar](https://x.com/RaidTeyar)
+- Bishoy Youssef
+- [David Iglesias](https://x.com/fr0ziisc2)
+- [Vicente Garofalo](https://www.linkedin.com/in/vicente-garofalo-5b989319a/)
+- [Andrei Maxim](https://x.com/rockatanescu)
+- [Kieran Kearney](https://x.com/Kieranrl6)
+- [Juan Gonzalez](https://github.com/JuanJo4)
+- [Kaveh Ranjbar](https://x.com/kakooch)
+- [Tilde Thurium](https://www.linkedin.com/in/annthurium/)
+- [Alfonso Campodonico](https://x.com/0x23alfonso)
+- [Rebecca Bakels](https://x.com/Beccalytics)
+- [Selili](https://x.com/SeliliPona)
+- Ram Kizhakelath
+- [Nur Azhar](https://github.com/nurazhardotcom)
+- [Masato Inoue](https://x.com/marc326marcy)
+- [Christopher Wenzel](https://www.linkedin.com/in/christopher-w-208560101/)
+- [Heyward Fann](https://x.com/fannheyward)
+- [Karl Jankowski](https://www.linkedin.com/in/kwja/)
+- [Ian Fosbery](https://x.com/fozcodes)
+- [Charlie Bailey](https://x.com/charliebailey24)
+- [Mohammed Farmaan](https://x.com/zxcodes)
+- [Carlos Durán](https://x.com/cdurex)
+- [Facundo Giuliani](https://x.com/facundozurdo)
+- [Thomas](https://www.linkedin.com/in/thomasjongwhi)
+- [Aleks Sotirovski](https://x.com/leksinteractive)
+- [Camilo Díaz Repka](https://www.linkedin.com/in/camilo-repka)
+- [Esa Firman](https://github.com/esafirm/)
+- [Shumin Liu](https://github.com/Liu233w/)
+- [Jens Günther](https://www.linkedin.com/in/jens-guenther/)
+- [yuta](https://github.com/yuta-97/)
+- [Oğulcan Arabacı](https://www.linkedin.com/in/oglcnarbc/)
+- [Frenky Harry](https://github.com/hyknerf)
+- [Victor Murcia](https://www.linkedin.com/in/vmmr5596/)
+- [Tomas Climente](https://www.linkedin.com/in/tomas-climente/)
+- [Matthias Als](https://www.linkedin.com/in/matthiasals/)
+- [Jorge Loaiza](https://www.linkedin.com/in/jlloaiza04/)
+- [Seunghwan Lee](https://github.com/sonic8-8)
+- [Chetanya Shrimali](https://github.com/chetanya-shrimali)
+- [Guido van der Meer](https://www.linkedin.com/in/guido-vandermeer/)
+- [TheCodeCafe](https://github.com/thecodecafe)
+- [Sven Wienand](https://www.linkedin.com/in/sven-wienand-b12063198)
+- [Gorka Moreno](https://x.com/gorkma)
+- [Dmitrii Spazhev](https://linkedin.com/in/dspazhev)
+- [jonathanaberman](https://www.linkedin.com/in/jonathanaberman/)
+- [SeungRyong Jung](https://github.com/brithely)
+- [Vladimir Goncharov](https://www.linkedin.com/in/vladimir-goncharov-b746811a7/)
+- [Barthélemy Paléologue](https://github.com/BarthPaleologue/)
+- [Thorsten Göckeler](https://www.linkedin.com/in/thorsten-goeckeler/)
+- [lan3stone](https://github.com/lan3stone)
+- [ypoulakas](https://github.com/ypoulakas)
+- [Jan Król](https://www.linkedin.com/in/krol-jan/)
+- [Retroman445](https://github.com/Retroman445)
+- [Jesús María Villar](https://github.com/geeksusma/geeksusma/blob/master/README.md)
+- [Ege Can Taslicukur](https://github.com/can-taslicukur)
+- [Oleg Melnychuk](https://gist.github.com/melnychuk)
+- [Pablo Albizu Balerdi](https://www.linkedin.com/in/pabloalbizubalerdi/)
+- [Jaeyoung Jang](https://github.com/SmileJayden)
+- Andrea Brandi
+- [Alberto Vergara](https://www.linkedin.com/in/alberto-vergara-ferreira/)
+- [Ignas Jankauskas](https://www.linkedin.com/in/ignas-jankauskas)
+- [Ronnie Nyaga](https://www.linkedin.com/in/ronnie-nyaga-83467b89)
+- [Alejandro Reyes](https://github.com/alejandroreba/)
+- [Claudio Vilas Boas](https://github.com/claudiovb/)
+- Harsh .H. Nikarsa
+- [Dennis Yurkevich](https://www.linkedin.com/in/dennisyurkevich/)
+- [Stefan Schneider](https://www.linkedin.com/in/stefan-schneider-361b08122)
+- [Roman Solomatin](https://gist.github.com/Samoed)
+- [Federico Mastrini](https://gist.github.com/mastro993)
+- [Miguel de Lucas](https://github.com/migueldelucasdoit)
+- [Alessio Fagnani](https://github.com/Alemagpie)
+- [Vladimir Perepelita](https://github.com/qStentyq)
+- [Alessandro Zanatta](https://github.com/AlessandroZanatta)
+- [Ronny Coste](https://www.linkedin.com/in/ronnycoste/)
+- [Szilveszter Erdős](https://www.linkedin.com/in/erdosszilveszter/)
+- [Nicolas Guarini](https://www.linkedin.com/in/nicolasguarini/)
+- [Adam Coxson](https://www.linkedin.com/in/adam-coxson-a737081ab/)
+- [Steffi Kieffer](https://www.linkedin.com/in/steffikieffer/)
+- [Luis Miguel Gil Olivert @ PopiAI Software Services](https://www.linkedin.com/in/lmgilolivert/)
+- [fbaldacci-zio](https://gist.github.com/fbaldacci-zio)
+- [Gibran Alfarizi](https://www.linkedin.com/in/gibranalfa/)
+- [Yash Dubey](https://github.com/yashdubey132/yashdubey132)
+- [Vasyl Novikov](https://gist.github.com/vasiliynovikov)
+- [Robert Fry](https://www.linkedin.com/in/robertefry/)
+- [Jacob Chappell](https://www.linkedin.com/in/jacob-chappell/)
+- [Tushar Tripathi](https://x.com/tushartrip)
+- [Michael Voronin](https://github.com/survivorm)
+- [divb](https://github.com/dasinnere/)
+- [Agustín Borrego](https://www.linkedin.com/in/agustin-borrego)
+- [Maurice Elliott](https://github.com/MauriceElliott/)
+- [ProDeh](https://github.com/PDgaming)
+- [Fabricio Pinto](https://www.linkedin.com/in/pferreirafabricio/)
+- [Vilhelm von Ehrenheim](https://x.com/while)
+- [Rodrigo Oliveira](https://www.linkedin.com/in/rodrigocode4/)
+- [Eduardo Bizarro](https://www.linkedin.com/in/edbizarro/)
+- [Paul Gellai](https://www.linkedin.com/in/paul-gellai/)
+- @marcioc0sta
+- [Deep Ode](https://gist.github.com/DeepOde)
+- [Jose Luis Cases](https://www.linkedin.com/in/jose-luis-cases-lozano/)
+- [Simon Eggert](https://github.com/SimonEggert)
+- Emile Girard
+- [Justin Herrick](https://github.com/jah2488)
+- [Artem Serbin](https://www.linkedin.com/in/itsserbin/)
+- [Jeff Auriemma](https://www.linkedin.com/in/jeffreyauriemma/)
+- [Eugenio Arévalo](https://es.linkedin.com/in/eugenio-ar%C3%A9valo-gonz%C3%A1lez-2ba63629)
+- Tyler Lemburg
+- Daniel Kohtes
+- [Hamza Zaib](https://www.linkedin.com/in/mhamzazaib/)
+- [Bizhan Aminipour](https://www.linkedin.com/in/bizhan-aminipour)
+- [Daniele Giannini](https://www.linkedin.com/in/daniele-giannini-281570335)
+- [Smitha Kolan](https://www.linkedin.com/in/smithakolan/)
+- [Paul Londino](https://www.linkedin.com/in/paul-londino-47749947)
+- [Louk de Loijer](https://www.linkedin.com/in/louk-de-loijer/)
+- [Nikolay Malkovsky](https://www.linkedin.com/in/nikolay-malkovsky-a5479b140/)
+- [Dominik Szczepaniak](https://www.linkedin.com/in/dominik-szczepaniak/)
+- [Mesha Sacirbegovic](https://www.linkedin.com/in/sacirbey/)
+- [PatrickPrakash](https://www.linkedin.com/in/patrickprakash/)
+- robertoRomero
